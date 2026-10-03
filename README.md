@@ -213,6 +213,82 @@ problem can still be hard to formalize a proof of; `source_has_lean_proof` in ea
 module's metadata is the separate, almost always false, claim that the upstream
 corpus holds a machine-checked proof.
 
+## Using this in research
+
+### The answer is often written in the problem
+
+This is not the usual training-data worry. It is in the artifact. Each module
+carries the problem as the source poses it, in a `- prose:` field the solver
+reads, and that prose frequently goes on to say how the problem was resolved.
+
+Measured over the 345 `decide` obligations — the ones where the task *is* to say
+which way it goes — a conservative keyword scan finds **190 (55%) whose prose
+states the resolution outright**: 61 saying false against a `False` gold, 119
+saying true against a `True` gold, 10 ambiguous. Inspected samples show the scan
+under-reports rather than over-reports, and nothing was found where the prose
+contradicts the gold. Examples, verbatim:
+
+```
+E1022  "… This is false, and c_t < 2 for all t: a counterexample is provided by Wood [Wo13b]"
+E1000  "… This was solved by Haight [Ha] who proved that such a sequence does exist"
+```
+
+Over all 1106 obligations: **374 proses carry a literature citation** such as
+`[Wo13b]` (326 of them on `solved` problems), and **all 1106** carry an
+`erdosproblems.com` URL in `- notes:`, which is a direct route to the problem's
+public page.
+
+So a reader of the problem gets, for a majority of `decide` tasks, the direction
+for free. It does not hand them the score — the obligation is
+`verdict ↔ statement`, and the proof is still the work — but it does mean a
+`decide` number is not a measurement of deciding. **If deciding is what you are
+measuring, strip `prose` and `notes`, or report the 155 silent ones separately.**
+`verify.py` keeps working either way; it hashes the published module, so note that
+stripping fields changes the text and therefore the `target_hash`. Strip at load
+time, not on disk.
+
+### Nothing here has been read by a person
+
+All 1106 are `reviewed_by_a_person = false`. A faithfulness error — Lean that does
+not state the mathematics the source poses — is possible in any individual
+problem, and a score computed over these is a score over propositions no human has
+confirmed. Say so when you report one.
+
+### What a result may and may not claim
+
+- **`value` is not "answered correctly".** None of the 19 has a gold, because the
+  answer is not known. An accepted `value` submission proved the statement of the
+  object it supplied — a verified witness. Reporting it as a match against a known
+  answer overstates it, and ftp-eval's own verdict text says
+  `verified witness; no fixed gold` for exactly this reason.
+- **`decide` is graded against a frozen gold**, fixed before any submission is
+  read. The golds are 219 `True` to 126 `False`: a blanket `True` matches 63% of
+  the verdicts and scores nothing without the equivalence proof. Report verdict
+  accuracy and proof success separately, or the two get conflated.
+- **Keep pairs whole when you subset.** `prove` and `refute` share a `pair_id`.
+  Shipping one side tells the solver which direction the setter believed, so a
+  subset that splits a pair measures something easier than the benchmark does.
+  `verify.py` refuses a split pair.
+- **`open` and `solved` are not difficulty.** They say whether mathematics has
+  settled the problem. 672 obligations are open and 434 solved, and a number
+  averaged over both says little: the solved ones have a proof in the literature
+  that a model may have read, the open ones have none that anyone has.
+- **`track` is not `source_has_lean_proof`.** The latter is almost always false:
+  upstream is a statement repository, so "solved" rarely means a machine-checked
+  proof exists.
+
+### Citing it
+
+`CITATION.cff` is in the repository, and GitHub renders it as *Cite this
+repository*. Pin two things or the citation does not identify what you ran:
+
+- the **`release_id`** from `benchmark.json` — `erdos-reviewed` here — which fixes
+  which problems and which environment;
+- the **commit** of this repository, which fixes the bytes.
+
+`benchmark.json.report.release` also carries `environment_hash`, `profile_hash`
+and `manifest_hash`; quoting `manifest_hash` identifies the release in one value.
+
 ## `problem.toml`
 
 One per folder, generated from `benchmark.json`. It carries the problem's identity

@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: >-
+  If you use this benchmark in research, cite it with the release_id and the
+  commit, not the repository alone. A release is a pinned set of problems and
+  environment; the repository moves.
+title: "mathdb-lean problems"
+abstract: >-
+  Mathematical problems formalized as frozen Lean 4 propositions, one folder per
+  problem, with the pinned Lean project they compile against and the record of
+  what was released. The erdos-reviewed release holds 704 problems and 1106 proof
+  obligations derived from the Erdos problems collection. Every obligation
+  elaborates, reaches only propext, Classical.choice and Quot.sound, matches its
+  declared interface, and survived a tactic suite; none has been read by a person.
+type: dataset
+license: Apache-2.0
+repository-code: "https://github.com/mathdb-lean/problems"
+authors:
+  # Add individual authors here. The copyright headers throughout this
+  # repository name the collective, so that is what is cited until they do.
+  - name: "The mathdb-lean Authors"
+version: "erdos-reviewed"
+date-released: "2026-10-01"
+keywords:
+  - lean4
+  - formal mathematics
+  - theorem proving
+  - benchmark
+  - erdos problems
+references:
+  - type: software
+    title: "Formal Conjectures"
+    abstract: >-
+      The upstream corpus these problems and the vendored support libraries are
+      derived from, at revision e04cc601840dd7a37f89b821a67f3a9e3c38d9c3.
+    repository-code: "https://github.com/google-deepmind/formal-conjectures"
+    license: Apache-2.0
+    authors:
+      - name: "Google DeepMind and the Formal Conjectures Authors"
