@@ -81,7 +81,7 @@ silently, so the gap between 1146 and 1106 is accounted for.
 | obligations | 1106 |
 | obligations per problem | 415 problems have 1, 237 have 2, 52 have 3–9 |
 | track | 672 open, 434 solved |
-| shape | 345 `decide`, 300 `prove`, 300 `refute`, 142 `proof`, 19 `value` |
+| shape | 345 `decide`, 300 `prove`, 300 `refute`, 142 `proof`, 19 `value` — see below |
 | source | [formal-conjectures](https://github.com/google-deepmind/formal-conjectures) at `e04cc601840dd7a37f89b821a67f3a9e3c38d9c3` |
 
 `track` says whether the problem is **solved in the literature** — a fact about
@@ -93,6 +93,94 @@ The 300 `prove` and 300 `refute` modules are **300 complete pairs**: the two
 directions of one open question, either of which settles it. A pair always sits in
 one folder, because half a pair tells a solver which direction is true. `verify.py`
 refuses a split pair.
+
+## The five kinds of obligation
+
+An obligation's `shape` is not a difficulty label. It fixes the **arity of
+`Problem.Target`**, which is to say: what the submitter has to hand over.
+
+| shape | `Problem.Target` | submitter supplies | count | open / solved | frozen gold |
+|---|---|---|---|---|---|
+| `proof` | `Target : Prop` | a proof | 142 | 55 / 87 | — |
+| `prove` | `Target : Prop` | a proof | 300 | 299 / 1 | — |
+| `refute` | `Target : Prop` | a proof | 300 | 299 / 1 | — |
+| `decide` | `Target (verdict : Prop) : Prop` | a verdict **and** a proof | 345 | 0 / 345 | all 345 |
+| `value` | `Target (value : τ) : Prop` | a value **and** a proof | 19 | 19 / 0 | — |
+
+The split that matters to a solver is the parameter. Three shapes want only a
+proof of a fixed proposition. Two want an *answer* as well, and the proof is
+about the answer the submitter chose.
+
+### `proof` — prove the statement
+
+```lean
+abbrev Target : Prop := …
+```
+
+The plain case: one proposition, prove it. 87 of the 142 are `solved` in the
+literature, so a proof exists somewhere; 55 are open.
+
+### `prove` / `refute` — the two directions of one open question
+
+Published as **300 complete pairs**, both members in the same folder. The pair
+shares a `pair_id`; `prove` states the conjecture and `refute` states its
+negation, built as `¬ ( … )` around the same body. Settling either settles the
+problem, so a solver may attack whichever side they believe.
+
+This is why a pair is never split: seeing only the `prove` side of a question
+tells you the setter believed it was provable. 299 of the 300 pairs are open. The
+one exception is `erdos-1119`, which the source marks `research solved` with
+`source_has_lean_proof: false` — settled in the literature, not in Lean, and
+published as a pair because nothing here knows which direction the literature
+settled it in.
+
+### `decide` — say which way it goes, then prove that
+
+```lean
+abbrev Target (verdict : Prop) : Prop :=
+    verdict ↔ ∃ n : ℕ → ℕ, StrictMono n ∧ 0 < n 0 ∧ …
+```
+
+The submitter supplies `verdict` and proves `verdict ↔ <the statement>`. Answering
+`True` claims the statement holds; `False` claims it fails. Either way the proof is
+the work — a verdict with no proof of the equivalence earns nothing.
+
+All 345 are `solved`, and all 345 carry a frozen `gold_arguments`, so these are
+graded against a known answer. The golds are **219 `True` and 126 `False`**: the
+verdict is a real question, not a formality. Answering `True` everywhere would
+match 63% of the verdicts and still prove nothing. The gold is fixed before any
+submission is read, never after.
+
+### `value` — supply the object, then prove the statement about it
+
+```lean
+abbrev Target (value : ℝ) : Prop := …
+```
+
+The submitter supplies the answer itself and proves the statement holds of it.
+The 19 answer types, as published:
+
+| type | count | |
+|---|---|---|
+| `ℕ → ℝ` | 11 | a real-valued sequence or bound |
+| `ℝ` | 5 | a constant |
+| `ℕ` | 1 | |
+| `ℕ → ℕ` | 1 | |
+| `∀ {U₁ U₂ : Type}, SimpleGraph U₁ → SimpleGraph U₂ → Prop` | 1 | a relation between graphs |
+
+All 19 are open and **none has a gold**, because the answer is not known. They are
+graded as a verified witness rather than against a fixed answer: an accepted
+submission has proved the statement of the object it chose, which is a weaker
+claim than matching a known answer, and a grader that conflates the two overstates
+the result.
+
+### `track` is about the literature, not the task
+
+`open` and `solved` say whether mathematics has settled the problem — a fact about
+the world, not about this repository and not a difficulty ranking. A `solved`
+problem can still be hard to formalize a proof of; `source_has_lean_proof` in each
+module's metadata is the separate, almost always false, claim that the upstream
+corpus holds a machine-checked proof.
 
 ## `problem.toml`
 
