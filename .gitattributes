@@ -1,15 +1,8 @@
-# core.autocrlf is on globally on some machines; the generator writes LF and
-# tools/verify_format.py compares text, so pin LF in the working copy too.
+# core.autocrlf is on globally on some machines, and `verify.py` hashes the text
+# of every module against the digest the release recorded. One CRLF conversion on
+# checkout makes all 1106 hashes fail, so the working copy is pinned to LF too.
 * text=auto eol=lf
 *.lean text eol=lf
 *.json text eol=lf
+*.toml text eol=lf
 *.py text eol=lf
-
-# The record store is bytes, not text. `text=auto` above normalises line endings,
-# and these files are hashed: `data/artifacts/<name>` IS its content's sha256, and
-# `problems/index.json` carries a digest of every problem document. Normalising
-# one byte makes a content-addressed file stop matching its own name and makes a
-# clone look like an interrupted save. No artifact contains CRLF today (0 of
-# 2654), so this prevents the day one arrives from an upstream file written on
-# Windows.
-data/** -text
