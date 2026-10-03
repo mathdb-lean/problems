@@ -107,9 +107,40 @@ An obligation's `shape` is not a difficulty label. It fixes the **arity of
 | `decide` | `Target (verdict : Prop) : Prop` | a verdict **and** a proof | 345 | 0 / 345 | all 345 |
 | `value` | `Target (value : τ) : Prop` | a value **and** a proof | 19 | 19 / 0 | — |
 
-The split that matters to a solver is the parameter. Three shapes want only a
-proof of a fixed proposition. Two want an *answer* as well, and the proof is
-about the answer the submitter chose.
+Two questions separate all five. Everything else about a shape follows from them.
+
+```
+Does the submitter supply an answer?
+│
+├── no ──→ How many obligations does the question become?
+│          ├── one  ────────────────→  proof
+│          └── two, as a pair  ─────→  prove / refute      settle either side
+│
+└── yes ─→ Is the answer already known?
+           ├── yes, a Prop  ───────→  decide    graded against frozen gold
+           └── no, an object  ─────→  value     graded as a verified witness
+```
+
+**The first question is the parameter**, and it is the one that changes the work.
+`proof`, `prove` and `refute` state a fixed proposition and ask only for a proof.
+`decide` and `value` leave a hole: the submitter fills it, and the proof is then
+about the answer they chose, not about a proposition anyone handed them.
+
+**The second question only separates shapes that share a signature.** `proof`,
+`prove` and `refute` are all `Target : Prop` — identical in Lean. What differs is
+how a question was cut into obligations: `proof` is one obligation, while `prove`
+and `refute` are two halves of one question, the second being `¬ ( … )` around the
+same body. So 300 `prove` plus 300 `refute` is **300 questions, not 600** — and a
+solver picks whichever direction they believe. `proof` is the case where the setter
+took the direction as known, which is why 87 of its 142 are `solved` while 299 of
+the 300 pairs are open.
+
+For the two that take an answer, what differs is whether the answer exists to be
+checked against. `decide`'s hole is a `Prop` with two useful values and the answer
+is known for all 345, so they are graded against a frozen gold. `value`'s hole is a
+mathematical object and **none of the 19 has a gold**, because nobody knows the
+answer — so the strongest thing a grader can say is that the submitter proved the
+statement of the object they produced.
 
 ### `proof` — prove the statement
 
