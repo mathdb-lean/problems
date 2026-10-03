@@ -36,26 +36,6 @@ Each obligation is a frozen `Problem.Target` — a proposition stated in Lean, w
 no proof. A grader elaborates one module at a time against the project in
 `project/` and checks what it denotes.
 
-## Read this before using it as a benchmark
-
-**No problem here has been read by a person.** Every obligation is marked
-`reviewed_by_a_person = false`: machine checks passed, no human has confirmed that
-the Lean states the mathematics the source poses.
-
-The release's `release_id` is `erdos-reviewed`. That is the name of the *admission
-policy*, **not** a claim that anything was reviewed. The release record says so
-itself:
-
-```
-"note": "1106 of 1106 have not been read by a person yet"
-```
-
-The name is kept as published rather than corrected after the fact, because the
-record is the record. Read it as "admitted by the erdos-reviewed policy".
-
-So a faithfulness error in any individual problem is possible, and finding one is
-useful. What *is* machine-established is below.
-
 ## What was established by machine
 
 Every published obligation:
@@ -253,10 +233,17 @@ success, which is the thing the kernel decides.
 
 ### Nothing here has been read by a person
 
-All 1106 are `reviewed_by_a_person = false`. A faithfulness error — Lean that does
-not state the mathematics the source poses — is possible in any individual
-problem, and a score computed over these is a score over propositions no human has
-confirmed. Say so when you report one.
+All 1106 are `reviewed_by_a_person = false`. The machine checks above passed; no
+human has confirmed that the Lean states the mathematics the source poses. So a
+faithfulness error in any individual problem is possible — finding one is useful —
+and a score computed over these is a score over propositions nobody has read. Say
+so when you report one.
+
+One name misleads and is worth knowing about: the `release_id` is `erdos-reviewed`,
+which is the name of the *admission policy*, not a claim of review. The release
+record says as much in its own `note` — `1106 of 1106 have not been read by a
+person yet` — and the name is kept as published rather than corrected after the
+fact, because the record is the record.
 
 ### What a result may and may not claim
 
