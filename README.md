@@ -271,8 +271,7 @@ fact, because the record is the record.
 
 ### Citing it
 
-`CITATION.cff` is in the repository, and GitHub renders it as *Cite this
-repository*. Pin two things or the citation does not identify what you ran:
+Pin two things, or the citation does not identify what you ran:
 
 - the **`release_id`** from `benchmark.json` — `erdos-reviewed` here — which fixes
   which problems and which environment;
