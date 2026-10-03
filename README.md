@@ -215,37 +215,41 @@ corpus holds a machine-checked proof.
 
 ## Using this in research
 
-### The answer is often written in the problem
+### Knowing the answer is not knowing the proof
 
-This is not the usual training-data worry. It is in the artifact. Each module
-carries the problem as the source poses it, in a `- prose:` field the solver
-reads, and that prose frequently goes on to say how the problem was resolved.
+Nothing is accepted here without a proof Lean's kernel checks. That is what makes
+the benchmark robust to its own openness, and it is deliberate: a `prove`/`refute`
+pair publishes **both** directions so a solver may pick one, and a `proof`
+obligation publishes only the direction that holds. Telling the solver which way
+to go was never the difficulty being withheld.
 
-Measured over the 345 `decide` obligations — the ones where the task *is* to say
-which way it goes — a conservative keyword scan finds **190 (55%) whose prose
-states the resolution outright**: 61 saying false against a `False` gold, 119
-saying true against a `True` gold, 10 ambiguous. Inspected samples show the scan
-under-reports rather than over-reports, and nothing was found where the prose
-contradicts the gold. Examples, verbatim:
+So the following is a description of what a solver is told, not a defect. Each
+module carries the problem as the source poses it in a `- prose:` field, and that
+prose often says how the problem was resolved. Over the 345 `decide` obligations,
+a conservative keyword scan finds **190 (55%) whose prose states the resolution
+outright** — 61 false against a `False` gold, 119 true against a `True` gold, 10
+ambiguous, 155 silent. Inspected samples show the scan under-reports, and nothing
+was found where the prose contradicts the gold. Verbatim:
 
 ```
 E1022  "… This is false, and c_t < 2 for all t: a counterexample is provided by Wood [Wo13b]"
 E1000  "… This was solved by Haight [Ha] who proved that such a sequence does exist"
 ```
 
-Over all 1106 obligations: **374 proses carry a literature citation** such as
-`[Wo13b]` (326 of them on `solved` problems), and **all 1106** carry an
-`erdosproblems.com` URL in `- notes:`, which is a direct route to the problem's
-public page.
+Across all 1106, **374 proses carry a literature citation** such as `[Wo13b]` (326
+of them on `solved` problems) and **all 1106** carry an `erdosproblems.com` URL in
+`- notes:`.
 
-So a reader of the problem gets, for a majority of `decide` tasks, the direction
-for free. It does not hand them the score — the obligation is
-`verdict ↔ statement`, and the proof is still the work — but it does mean a
-`decide` number is not a measurement of deciding. **If deciding is what you are
-measuring, strip `prose` and `notes`, or report the 155 silent ones separately.**
-`verify.py` keeps working either way; it hashes the published module, so note that
-stripping fields changes the text and therefore the `target_hash`. Strip at load
-time, not on disk.
+None of that is removable in any meaningful sense: 434 of these obligations are on
+problems mathematics has already settled, so their answers and often their proofs
+are in the literature whatever this repository prints. Stripping the prose would
+hide a pointer, not the fact.
+
+The one thing it does rule out is a **verdict-only metric**. Scoring a model on
+picking `True` or `False` without the equivalence proof measures nothing here —
+the direction is in the problem text for a majority of them, and a blanket `True`
+matches 63% regardless. This benchmark defines no such metric; report proof
+success, which is the thing the kernel decides.
 
 ### Nothing here has been read by a person
 
@@ -262,9 +266,10 @@ confirmed. Say so when you report one.
   answer overstates it, and ftp-eval's own verdict text says
   `verified witness; no fixed gold` for exactly this reason.
 - **`decide` is graded against a frozen gold**, fixed before any submission is
-  read. The golds are 219 `True` to 126 `False`: a blanket `True` matches 63% of
-  the verdicts and scores nothing without the equivalence proof. Report verdict
-  accuracy and proof success separately, or the two get conflated.
+  read, and what is scored is the proof of `verdict ↔ statement`. The verdict on
+  its own is not a result: the golds are 219 `True` to 126 `False`, a blanket
+  `True` matches 63% of them, and the direction is already in the problem text for
+  a majority. Report proof success.
 - **Keep pairs whole when you subset.** `prove` and `refute` share a `pair_id`.
   Shipping one side tells the solver which direction the setter believed, so a
   subset that splits a pair measures something easier than the benchmark does.
