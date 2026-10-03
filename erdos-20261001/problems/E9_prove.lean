@@ -1,0 +1,94 @@
+/-
+Copyright 2025 The Formal Conjectures Authors.
+Copyright 2026 The mathdb-lean Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+import MathdbUtil
+
+/-!
+Converted from another corpus. `source` names it, `source_version`
+pins the revision, and `source_locator` points at the one
+declaration this came from. Every `source_` field describes that
+declaration as it stands there, not as it stands here.
+
+Read `track` for whether the problem is solved, which is a fact
+about mathematics. `source_has_lean_proof` is a different claim --
+whether that corpus holds a machine-checked proof -- and is false
+for almost every problem, because it is a statement repository.
+
+- problem_id: E9_prove
+- collection: erdos
+- question_id: erdos:9
+- source: formal-conjectures
+- source_locator: FormalConjectures/ErdosProblems/9.lean#erdos_9
+- source_version: e04cc601840dd7a37f89b821a67f3a9e3c38d9c3
+- prose: Is the upper density of the set of odd numbers that cannot be expressed as a prime plus two powers of 2 positive?
+- notes: Erdos Problem 9 -- https://www.erdosproblems.com/9
+- track: open
+- answer_shape: prove
+- pair_id: E9
+- pair_role: prove
+- source_stem: 9
+- mathdb_ref: erdos:9
+- source_namespace: Erdos9
+- source_theorem: erdos_9
+- source_category: research open
+- source_ams: 5 11
+- source_has_lean_proof: false
+- source_lean_proof_kernel_clean: n/a
+- context_lemmas: erdos9A_contains_one erdos9A_contains_three erdos9A_not_contains_five
+- generator: adapters/formal_conjectures/adapter.py
+-/
+
+namespace Problem
+
+/--
+The set of odd numbers that cannot be expressed as a prime plus two powers of 2.
+-/
+def Erdos9A : Set ℕ := { n | Odd n ∧ ¬ ∃ (p k l : ℕ), (Nat.Prime p) ∧ n = p + 2 ^ k + 2 ^ l }
+
+/-! Auxiliary lemmas upstream proves in the same file, frozen in with
+the definitions: an answer may cite them or prove its own. Each is
+tagged `API` or `test` upstream and is listed in `context_lemmas`
+above. See docs/CONVERSION.md for what is deliberately not here. -/
+
+@[category test, AMS 5 11]
+theorem erdos9A_contains_one : 1 ∈ Erdos9A := by
+  constructor
+  · decide
+  · push Not
+    intro p k l hp
+    linarith [Nat.Prime.two_le hp, @Nat.one_le_two_pow k, @Nat.one_le_two_pow l]
+
+@[category test, AMS 5 11]
+theorem erdos9A_contains_three : 3 ∈ Erdos9A := by
+  constructor
+  · decide
+  · push Not
+    intro p k l hp
+    linarith [Nat.Prime.two_le hp, @Nat.one_le_two_pow k, @Nat.one_le_two_pow l]
+
+@[category test, AMS 5 11]
+theorem erdos9A_not_contains_five : 5 ∉ Erdos9A := by
+  unfold Erdos9A
+  simp only [exists_and_left, not_exists, not_and, Set.mem_ofPred_eq, not_forall, Decidable.not_not]
+  intro
+  use 3, Nat.prime_three, 0, 0
+  simp only [pow_zero, Nat.reduceAdd]
+
+abbrev Target : Prop :=
+    0 < Erdos9A.upperDensity
+
+end Problem

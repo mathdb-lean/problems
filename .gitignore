@@ -1,0 +1,3 @@
+# Lake's build output and the fetched dependency checkouts.
+.lake/
+build/

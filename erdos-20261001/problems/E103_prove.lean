@@ -1,0 +1,83 @@
+/-
+Copyright 2025 The Formal Conjectures Authors.
+Copyright 2026 The mathdb-lean Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+import MathdbUtil
+
+/-!
+Converted from another corpus. `source` names it, `source_version`
+pins the revision, and `source_locator` points at the one
+declaration this came from. Every `source_` field describes that
+declaration as it stands there, not as it stands here.
+
+Read `track` for whether the problem is solved, which is a fact
+about mathematics. `source_has_lean_proof` is a different claim --
+whether that corpus holds a machine-checked proof -- and is false
+for almost every problem, because it is a statement repository.
+
+- problem_id: E103_prove
+- collection: erdos
+- question_id: erdos:103
+- source: formal-conjectures
+- source_locator: FormalConjectures/ErdosProblems/103.lean#erdos_103
+- source_version: e04cc601840dd7a37f89b821a67f3a9e3c38d9c3
+- prose: Let $h(n)$ count the number of incongruent sets of $n$ points in $\mathbb{R}^2$ which minimise the diameter subject to the constraint that $d(x,y)\geq 1$ for all points $x\neq y$. Is it true that $h(n)\to \infty$?
+- notes: Erdos Problem 103 -- https://www.erdosproblems.com/103
+- track: open
+- answer_shape: prove
+- pair_id: E103
+- pair_role: prove
+- source_stem: 103
+- mathdb_ref: erdos:103
+- source_namespace: Erdos103
+- source_theorem: erdos_103
+- source_category: research open
+- source_ams: 52
+- source_has_lean_proof: false
+- source_lean_proof_kernel_clean: n/a
+- generator: adapters/formal_conjectures/adapter.py
+-/
+
+open Filter EuclideanGeometry
+
+namespace Problem
+
+/-- The sets of $n$ points in $\mathbb{R}^2$ whose pairwise distances are all at least $1$. -/
+def separatedSets (n : ℕ) : Set (Finset ℝ²) :=
+  {B | B.card = n ∧ Metric.IsSeparated' 1 (B : Set ℝ²)}
+
+/-- `A` is a *minimiser* for `n` if it is a separated set of `n` points whose diameter is at
+most the diameter of every separated set of `n` points (compare `Erdos99.erdos_99`). -/
+def IsMinimiser (n : ℕ) (A : Finset ℝ²) : Prop :=
+  A ∈ separatedSets n ∧
+    IsMinOn (fun B : Finset ℝ² => Metric.diam (B : Set ℝ²)) (separatedSets n) A
+
+/-- Two finite sets of points are *congruent* if an isometry of the plane maps one onto the
+other. -/
+def Congruent (A B : Finset ℝ²) : Prop :=
+  ∃ f : ℝ² ≃ᵢ ℝ², f '' A = B
+
+/-- `h n` is the number of congruence classes of minimisers for `n` points, as an element of
+`ℕ∞`: the supremum of the cardinalities of finite families of pairwise incongruent minimisers,
+which is `⊤` when there are infinitely many classes. -/
+noncomputable def h (n : ℕ) : ℕ∞ :=
+  ⨆ (S : Finset (Finset ℝ²)) (_ : (∀ A ∈ S, IsMinimiser n A) ∧
+      ∀ A ∈ S, ∀ B ∈ S, A ≠ B → ¬ Congruent A B), (S.card : ℕ∞)
+
+abbrev Target : Prop :=
+    Tendsto h atTop (nhds ⊤)
+
+end Problem

@@ -1,0 +1,64 @@
+/-
+Copyright 2025 The Formal Conjectures Authors.
+Copyright 2026 The mathdb-lean Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+import MathdbUtil
+
+/-!
+Converted from another corpus. `source` names it, `source_version`
+pins the revision, and `source_locator` points at the one
+declaration this came from. Every `source_` field describes that
+declaration as it stands there, not as it stands here.
+
+Read `track` for whether the problem is solved, which is a fact
+about mathematics. `source_has_lean_proof` is a different claim --
+whether that corpus holds a machine-checked proof -- and is false
+for almost every problem, because it is a statement repository.
+
+- problem_id: E855_refute
+- collection: erdos
+- question_id: erdos:855
+- source: formal-conjectures
+- source_locator: FormalConjectures/ErdosProblems/855.lean#erdos_855
+- source_version: e04cc601840dd7a37f89b821a67f3a9e3c38d9c3
+- prose: Erdős Problem 855 (Segal's conjecture): $\pi(x + y) \le \pi(x) + \pi(y)$ for all sufficiently large $x, y$, i.e. for all $x, y \ge N$ for some $N$.
+- notes: Erdos Problem 855 -- https://www.erdosproblems.com/855
+- track: open
+- answer_shape: refute
+- pair_id: E855
+- pair_role: refute
+- source_stem: 855
+- mathdb_ref: erdos:855
+- source_namespace: Erdos855
+- source_theorem: erdos_855
+- source_category: research open
+- source_ams: 11
+- source_has_lean_proof: false
+- source_lean_proof_kernel_clean: n/a
+- generator: adapters/formal_conjectures/adapter.py
+-/
+
+open Filter
+open scoped Nat.Prime
+
+namespace Problem
+
+abbrev Target : Prop :=
+    ¬ (
+      ∀ᶠ (xy : ℕ × ℕ) in atTop ×ˢ atTop, π (xy.1 + xy.2) ≤ π xy.1 + π xy.2
+    )
+
+end Problem

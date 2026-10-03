@@ -1,0 +1,48 @@
+# Copyright 2025 The Formal Conjectures Authors.
+# Copyright 2026 The mathdb-lean Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#     https://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# This project exists to be a *built Lean project* that a grader can point
+# `project_dir` at. It carries the vendored statement-support libraries that
+# every problem module imports, and nothing else.
+#
+# The problem modules under `erdos-20261001/problems/` are deliberately NOT a
+# `lean_lib` here. They are the benchmark: a grader elaborates each one against
+# this project, one at a time, in isolation. Do not add a `lean_lib` named
+# `FtpEvalBench`, `FtpEvalGoal` or `Submission` -- a grader that generates a
+# module under one of those roots refuses when a project library collides with
+# it.
+
+name = "mathdb_lean"
+keywords = ["math", "benchmark"]
+defaultTargets = ["MathdbUtil", "MathdbMathlib"]
+
+[leanOptions]
+# Carried over from formal-conjectures: the vendored libraries were written
+# under these options and do not build cleanly without them.
+pp.unicode.fun = true
+autoImplicit = false
+relaxedAutoImplicit = false
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.33.1"
+
+[[lean_lib]]
+name = "MathdbMathlib"
+srcDir = "lean"
+
+[[lean_lib]]
+name = "MathdbUtil"
+srcDir = "lean"
+globs = ["MathdbUtil.*"]
