@@ -1,0 +1,46 @@
+# erdos:519 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:519"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $z_1,\\ldots,z_n\\in \\mathbb{C}$ with $z_1=1$. Must there exist an absolute constant $c>0$ such that $$ \\max_{1\\leq k\\leq n}\\left\\lvert \\sum_{i}z_i^k\\right\\rvert>c? $$ Atkinson proved that $c=1/6$ suffices."
+notes = "Erdos Problem 519 -- https://www.erdosproblems.com/519"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/519.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E519"
+file = "E519.lean"
+module = "FtpEvalBench.E519"
+shape = "decide"
+track = "solved"
+declaration = "erdos_519"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/519.lean#erdos_519"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ad229ce9743e035e"
+  conversion_hash = "3bc336d15ea0f187c39d3195b3e1ea1fe515a85cac7ee716ef54cb1fdd3352f3"
+  semantic_anchor = "d6cc5c90a56399eec9020597ef69632caf04c9d399587df9737aef605838ef2a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

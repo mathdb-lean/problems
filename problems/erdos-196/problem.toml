@@ -1,0 +1,68 @@
+# erdos:196 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:196"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Must every permutation of $\\mathbb{N}$, contain a monotone 4-term arithmetic progression?"
+notes = "Erdos Problem 196 -- https://www.erdosproblems.com/196"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/196.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E196_prove"
+file = "E196_prove.lean"
+module = "FtpEvalBench.E196_prove"
+shape = "prove"
+track = "open"
+pair_id = "E196"
+declaration = "erdos_196"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/196.lean#erdos_196"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "81e717aacf4bafe0"
+  conversion_hash = "a985aaed60db74c11845dcb33185e8abcf42292685b1a34950d5720e1767e41e"
+  semantic_anchor = "2d0504b23d0077727b4e53e4e7d0adecc879033fc81afcd58dddc604d14f255a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E196_refute"
+file = "E196_refute.lean"
+module = "FtpEvalBench.E196_refute"
+shape = "refute"
+track = "open"
+pair_id = "E196"
+declaration = "erdos_196"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/196.lean#erdos_196"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "06fc5d43b7b06ea5"
+  conversion_hash = "3f8cb465add4a142d2601b438f217ae578d964a24b0a4590573edb2f8bb463f0"
+  semantic_anchor = "6e01efe06b800af4e2a18279b33fda17967eebca0501126acc330e87fc641b8c"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

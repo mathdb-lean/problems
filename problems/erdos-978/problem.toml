@@ -1,0 +1,135 @@
+# erdos:978 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:978"
+collection = "erdos"
+tasks = 5
+reviewed_by_a_person = false
+prose = "Let `f ∈ ℤ[X]` be an irreducible polynomial with positive leading coefficient. Suppose that the degree `k` of `f` is larger than `2`, is not equal to a power of `2`, and `f n` has no fixed `(k - 1)`-th power divisors other than `1`. Then the set of `n` such that `f n` is `(k - 1)`-th power free has positive density, and this is proved in [Ho67]."
+notes = "Erdos Problem 978 -- https://www.erdosproblems.com/978"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/978.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E978_parts_i"
+file = "E978_parts_i.lean"
+module = "FtpEvalBench.E978_parts_i"
+shape = "proof"
+track = "solved"
+part = "i"
+declaration = "erdos_978.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/978.lean#erdos_978.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9c45ca198b58d466"
+  conversion_hash = "42a8be297b87c93826d076c52ff70af0ad48ef2ac2bf0cc1b06b179cb8082a4e"
+  semantic_anchor = "0127fcf0f9bd0bbd50c82beac82192d85920b4910f527637a12fd6326eff62d3"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E978_parts_ii_prove"
+file = "E978_parts_ii_prove.lean"
+module = "FtpEvalBench.E978_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E978_parts_ii"
+declaration = "erdos_978.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/978.lean#erdos_978.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "986485abe12a18aa"
+  conversion_hash = "79a62e94043dde636b76e4b6ae91840384aed67b4781f72f4c6fffb5343742e3"
+  semantic_anchor = "9ef732d49220dc9af0adc008393a0068a7d8685c5f06aa9060c1d021e17e5f8e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E978_parts_ii_refute"
+file = "E978_parts_ii_refute.lean"
+module = "FtpEvalBench.E978_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E978_parts_ii"
+declaration = "erdos_978.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/978.lean#erdos_978.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b2944a0342dab079"
+  conversion_hash = "49d28ed242f6c8cc8a4c9ce8a0a74c8182c83532f50a44db888621924393e959"
+  semantic_anchor = "e8e94e5e84e2e8aec673c57fd24073683d08fa5119ca999ca3ef923308aee00b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E978_parts_iii_prove"
+file = "E978_parts_iii_prove.lean"
+module = "FtpEvalBench.E978_parts_iii_prove"
+shape = "prove"
+track = "open"
+part = "iii"
+pair_id = "E978_parts_iii"
+declaration = "erdos_978.parts.iii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/978.lean#erdos_978.parts.iii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "04ccecdf60bccf93"
+  conversion_hash = "82776a8ce63b19ad5941f034dd35d9b4b56efb28419aeac7f9eff5b55fe5f223"
+  semantic_anchor = "9785c0d70814a26b095ba004fc668a8d44ac706c49bd745a847890c8f2372232"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E978_parts_iii_refute"
+file = "E978_parts_iii_refute.lean"
+module = "FtpEvalBench.E978_parts_iii_refute"
+shape = "refute"
+track = "open"
+part = "iii"
+pair_id = "E978_parts_iii"
+declaration = "erdos_978.parts.iii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/978.lean#erdos_978.parts.iii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "f2241e3e6ebffa99"
+  conversion_hash = "f43b6437910f44f918822339487cdc833e6f53a2ebcaa13156da02bc00767362"
+  semantic_anchor = "03794e9bf6f7af9fe2b1c5432fb44f1fff7dcabf2030605489ed8ca3794c5701"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,68 @@
+# erdos:681 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:681"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "**Erdős problem 681.** Is it true that for all large $n$ there exists $k$ such that $n + k$ is composite and $p(n+k) > k^2$, where $p(m)$ is the least prime factor of $m$ ?"
+notes = "Erdos Problem 681 -- https://www.erdosproblems.com/681"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/681.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E681_prove"
+file = "E681_prove.lean"
+module = "FtpEvalBench.E681_prove"
+shape = "prove"
+track = "open"
+pair_id = "E681"
+declaration = "erdos_681"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/681.lean#erdos_681"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "0404688bedb288d5"
+  conversion_hash = "1145f3477c3296fd7e7d60f03b04e40c85838e03f5e3ca75479279e6c544d60e"
+  semantic_anchor = "f11b35bdd34750afa5468464da32194af6ee1f60410858122ba986e2831b3258"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E681_refute"
+file = "E681_refute.lean"
+module = "FtpEvalBench.E681_refute"
+shape = "refute"
+track = "open"
+pair_id = "E681"
+declaration = "erdos_681"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/681.lean#erdos_681"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b473432c03972f4a"
+  conversion_hash = "2a82733edc783709d2f27b9534998618744c6b33c83ebe5dffc35085f3b5213c"
+  semantic_anchor = "776b7866c8a47b0ad2f7390d37ebd748beb9247769476036738430a2863155dd"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

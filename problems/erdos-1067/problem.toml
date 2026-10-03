@@ -1,0 +1,46 @@
+# erdos:1067 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1067"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Does every graph with chromatic number $\\aleph_1$ contain an infinitely connected subgraph with chromatic number $\\aleph_1$? Komjáth [Ko13] proved that it is consistent that the answer is no. This was improved by Soukup [So15], who constructed a counterexample using no extra set-theoretical assumptions. A simpler elementary example was given by Bowler and Pitz [BoPi24]. This was formalized in Lean by Alexeev using Aristotle and Aleph Prover."
+notes = "Erdos Problem 1067 -- https://www.erdosproblems.com/1067"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1067.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1067"
+file = "E1067.lean"
+module = "FtpEvalBench.E1067"
+shape = "decide"
+track = "solved"
+declaration = "erdos_1067"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1067.lean#erdos_1067"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "28643e16351304db"
+  conversion_hash = "d3795234fd2d93da6040ceee6ce64f73ee24179022af51ac1c44e4ed44ae320d"
+  semantic_anchor = "a54436163ebaf83afa8fdb8928518f018b925eaaf73aed9cb611dc1496dfa44a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

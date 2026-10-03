@@ -1,0 +1,46 @@
+# erdos:282 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:282"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $A\\subseteq \\mathbb{N}$ be an infinite set and consider the following greedy algorithm for a rational $x\\in (0,1)$: choose the minimal $n\\in A$ not used so far such that $n\\geq 1/x$ and repeat with $x$ replaced by $x-\\frac{1}{n}$. If this terminates after finitely many steps then this produces a representation of $x$ as the sum of distinct unit fractions with denominators from $A$. Does this process always terminate if $x$ has odd denominator and $A$ is the set of odd numbers?"
+notes = "Erdos Problem 282 -- https://www.erdosproblems.com/282"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/282.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E282"
+file = "E282.lean"
+module = "FtpEvalBench.E282"
+shape = "proof"
+track = "open"
+declaration = "erdos_282"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/282.lean#erdos_282"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9ee20c2b50048776"
+  conversion_hash = "b968f777d12c5e5f0ab201bba85a89918209e05e6fd1ff32f63aeea33c6ba462"
+  semantic_anchor = "c5a81ed1139ac973fae1c2ab7892d0c0c87df8ba0f7f13ff74e89ca6d3478850"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

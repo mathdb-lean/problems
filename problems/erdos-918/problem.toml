@@ -1,0 +1,114 @@
+# erdos:918 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:918"
+collection = "erdos"
+tasks = 4
+reviewed_by_a_person = false
+prose = "Is there a graph with $\\aleph_2$ vertices and chromatic number $\\aleph_2$ such that every subgraph on $\\aleph_1$ vertices has chromatic number $\\leq\\aleph_0$?"
+notes = "Erdos Problem 918 -- https://www.erdosproblems.com/918"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/918.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E918_parts_i_prove"
+file = "E918_parts_i_prove.lean"
+module = "FtpEvalBench.E918_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E918_parts_i"
+declaration = "erdos_918.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/918.lean#erdos_918.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c35e9fa28573ea84"
+  conversion_hash = "8780601143456ba5ee4e29f64cdafa2381e0a8229ec4a694dbe28087a1a681a3"
+  semantic_anchor = "fe83e58b38e5add3031ed4f10659169dcf7886112ead8af63e2dde7b2a4cbf54"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E918_parts_i_refute"
+file = "E918_parts_i_refute.lean"
+module = "FtpEvalBench.E918_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E918_parts_i"
+declaration = "erdos_918.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/918.lean#erdos_918.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7bad1bf47b0639fc"
+  conversion_hash = "732976c2416bdc7e9a71cdfd55fe8f7f85efbcd74d5ef9cd21cd7e9da7252a9c"
+  semantic_anchor = "f818bb119263ad4c09b78f710d916ff640b85a0056e894f2225491d4e5317c5e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E918_parts_ii_prove"
+file = "E918_parts_ii_prove.lean"
+module = "FtpEvalBench.E918_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E918_parts_ii"
+declaration = "erdos_918.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/918.lean#erdos_918.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8e0b31ff9c6b4762"
+  conversion_hash = "55547260ad51901862fd854789eafa7927888cf76154a17f32eb18a315cbf716"
+  semantic_anchor = "0f43f1a49c86b7171fd18472d888974558d86074a757148d5b810bb8a343aa73"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E918_parts_ii_refute"
+file = "E918_parts_ii_refute.lean"
+module = "FtpEvalBench.E918_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E918_parts_ii"
+declaration = "erdos_918.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/918.lean#erdos_918.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "47dabf62d86d587b"
+  conversion_hash = "c5425f2805c67b7bc3b05e20f96e9b61495e9b12b9fdbab865745db33dc1878c"
+  semantic_anchor = "5dc6a498c0480c0b43da40f9476914d72388d85af8222d9c74e6514ebca7291c"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,68 @@
+# erdos:86 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:86"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $Q_n$ be the $n$-dimensional hypercube graph (so that $Q_n$ has $2^n$ vertices and $n2^{n-1}$ edges). Is it true that every subgraph of $Q_n$ with $$\\geq \\left(\\frac{1}{2}+o(1)\\right)n2^{n-1}$$ many edges contains a $C_4$?"
+notes = "Erdos Problem 86 -- https://www.erdosproblems.com/86"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/86.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E86_prove"
+file = "E86_prove.lean"
+module = "FtpEvalBench.E86_prove"
+shape = "prove"
+track = "open"
+pair_id = "E86"
+declaration = "erdos_86"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/86.lean#erdos_86"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "274f5f8721317ae3"
+  conversion_hash = "5330d374d0457a8100487505a825f8d2faf3b95e104d6b6e65e9bf6fef8aa60d"
+  semantic_anchor = "0325d647157ab3b920f72b66272d47ba4267ac5506e910ef9fc762b33f06deaf"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E86_refute"
+file = "E86_refute.lean"
+module = "FtpEvalBench.E86_refute"
+shape = "refute"
+track = "open"
+pair_id = "E86"
+declaration = "erdos_86"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/86.lean#erdos_86"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "91aab68b0e1d87cc"
+  conversion_hash = "5b6e5f5b064124f9238f1ff27c1f0f5bd51e0f794a6bdb88ae89dcfe05d31b4c"
+  semantic_anchor = "5ffb776e4c28de7d69859624a07f5e6c73ea76969deae91c759a911b3d8170d2"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

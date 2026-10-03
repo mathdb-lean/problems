@@ -1,0 +1,68 @@
+# erdos:10 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:10"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Is there some $k$ such that every large integer is the sum of a prime and at most $k$ powers of $2$?"
+notes = "Erdos Problem 10 -- https://www.erdosproblems.com/10"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/10.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E10_prove"
+file = "E10_prove.lean"
+module = "FtpEvalBench.E10_prove"
+shape = "prove"
+track = "open"
+pair_id = "E10"
+declaration = "erdos_10"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/10.lean#erdos_10"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "2d890a19444c857a"
+  conversion_hash = "3b1bad242c71266e5c7ea684316cbf1b33abbd22e723b665626ee7c9b4bceada"
+  semantic_anchor = "23e24b7e8dc34fafa0296b029142c67855d26c5794438930f20a15906d6185b0"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E10_refute"
+file = "E10_refute.lean"
+module = "FtpEvalBench.E10_refute"
+shape = "refute"
+track = "open"
+pair_id = "E10"
+declaration = "erdos_10"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/10.lean#erdos_10"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d902e97328d06b32"
+  conversion_hash = "b7e9bb056e30dc26ccf31e25fea8109ca7e89e1a6e2fea38c29dc717e49505d1"
+  semantic_anchor = "0be15c4939def744c6d34992ab22351e81c152c64f38613ed00a5250b70448be"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

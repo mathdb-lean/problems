@@ -1,0 +1,68 @@
+# erdos:701 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:701"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $\\mathcal{F}$ be a family of sets closed under taking subsets (i.e. if $B\\subseteq A\\in\\mathcal{F}$ then $B\\in \\mathcal{F}$). There exists some element $x$ such that whenever $\\mathcal{F}'\\subseteq \\mathcal{F}$ is an intersecting subfamily we have $$\\lvert \\mathcal{F}'\\rvert \\leq \\lvert \\{ A\\in \\mathcal{F} : x\\in A\\}\\rvert.$$"
+notes = "Erdos Problem 701 -- https://www.erdosproblems.com/701"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/701.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E701_prove"
+file = "E701_prove.lean"
+module = "FtpEvalBench.E701_prove"
+shape = "prove"
+track = "open"
+pair_id = "E701"
+declaration = "erdos_701"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/701.lean#erdos_701"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ed336a661e491cdc"
+  conversion_hash = "74b7abb674baca8367a248a48c2b338f16653bb6d5849f2371ee24c16df5ec17"
+  semantic_anchor = "3ecbf828069e6f80571e3190aafee2fcda753c2afb749b7c5a2d59113baad5e9"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E701_refute"
+file = "E701_refute.lean"
+module = "FtpEvalBench.E701_refute"
+shape = "refute"
+track = "open"
+pair_id = "E701"
+declaration = "erdos_701"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/701.lean#erdos_701"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "f5da984e909d94e0"
+  conversion_hash = "fb4a69e9d0c0c3413c155d8028e8e7340fe2bf880425f6c227c471a441dc991a"
+  semantic_anchor = "1f88261af4b34fa796f2dc6d1df06c5d47e50711a749fb20b0896e53c6d36352"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

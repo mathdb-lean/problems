@@ -1,0 +1,68 @@
+# erdos:428 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:428"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Is there a set $A\\subseteq \\mathbb{N}$ such that, for infinitely many $n$, all of $n-a$ are prime for all $a\\in A$ with $0 < a < n$ and $$\\liminf\\frac{\\lvert A\\cap [1,x]\\rvert}{\\pi(x)}>0?$$"
+notes = "Erdos Problem 428 -- https://www.erdosproblems.com/428"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/428.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E428_prove"
+file = "E428_prove.lean"
+module = "FtpEvalBench.E428_prove"
+shape = "prove"
+track = "open"
+pair_id = "E428"
+declaration = "erdos_428"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/428.lean#erdos_428"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "3f022a8eb0f4a0ee"
+  conversion_hash = "2fcca2e11da1fffa366cf3f1f4bf45d590ad6c5241f9f46c6431a2fa81896352"
+  semantic_anchor = "9d39b0ddd8e8b0b6dfca8b8d32f6ce04899d633c4f0f9e643e89fe8466e4b2d5"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E428_refute"
+file = "E428_refute.lean"
+module = "FtpEvalBench.E428_refute"
+shape = "refute"
+track = "open"
+pair_id = "E428"
+declaration = "erdos_428"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/428.lean#erdos_428"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e32d49d9a324e799"
+  conversion_hash = "81c50226bfcf9ebddf5d06eeead3d4c79b32a3ebfd0548962f57cded14f0e8c9"
+  semantic_anchor = "87d71faae826c9cb5b77c51502ddcea5b25b10a2024cb0cecc0a37fa02a1c852"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

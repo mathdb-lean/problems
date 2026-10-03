@@ -1,0 +1,91 @@
+# erdos:264 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:264"
+collection = "erdos"
+tasks = 3
+reviewed_by_a_person = false
+prose = "Is $2^n$ an example of an irrationality sequence? Kovač and Tao proved that it is not [KoTa24] [KoTa24] Kovač, V. and Tao T., On several irrationality problems for Ahmes series. arXiv:2406.17593 (2024)."
+notes = "Erdos Problem 264 -- https://www.erdosproblems.com/264"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/264.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E264_parts_i"
+file = "E264_parts_i.lean"
+module = "FtpEvalBench.E264_parts_i"
+shape = "proof"
+track = "solved"
+part = "i"
+declaration = "erdos_264.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/264.lean#erdos_264.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "47a50964f4219b5f"
+  conversion_hash = "1993b74717b86a195a285982dc1f2ca7af86356ccfe33236efc18d90382201e0"
+  semantic_anchor = "dfc642b13862b0c0f756ce299cc66acc8013772c1ed1ece2b4a0319e9a381471"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E264_parts_ii_prove"
+file = "E264_parts_ii_prove.lean"
+module = "FtpEvalBench.E264_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E264_parts_ii"
+declaration = "erdos_264.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/264.lean#erdos_264.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "bc45762ccc640dde"
+  conversion_hash = "350b02058d60f61b4685ae393973efb131093a03aa592d18a95232273a2659a9"
+  semantic_anchor = "bb05f1c6162e5ee85f176f5193f915da0e26a661bc7d91d688e4cd58be886ad8"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E264_parts_ii_refute"
+file = "E264_parts_ii_refute.lean"
+module = "FtpEvalBench.E264_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E264_parts_ii"
+declaration = "erdos_264.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/264.lean#erdos_264.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8d4177f4f1d52f20"
+  conversion_hash = "bf97afb1d330704fd8aef5626de66a9cc396a3c5e7713923088b440df151cb62"
+  semantic_anchor = "b232fbb81f63237986b065852cb9b8247f9be102170fcbbaf54277459e1e5755"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

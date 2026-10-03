@@ -1,0 +1,68 @@
+# erdos:1193 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1193"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $A\\subset \\mathbb{N}$ and let $g(n)$ be a non-decreasing function of $n$ which is always $>0$. Is the lower density of $$\\{ n : 1_A\\ast 1_A(n)=g(n)\\}$$ always $0$? The answer is trivially no to both questions: indeed if $A=\\mathbb{N}$ (assuming $0\\in\\mathbb{N}$) then $1_A\\ast 1_A(n)=n+1$ for all $n$. Presumably Erdős had some additional restrictions on either $g$ or $A$ in mind, but these are not recorded in [Er80]."
+notes = "Erdos Problem 1193 -- https://www.erdosproblems.com/1193"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1193.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1193_parts_i"
+file = "E1193_parts_i.lean"
+module = "FtpEvalBench.E1193_parts_i"
+shape = "decide"
+track = "solved"
+part = "i"
+declaration = "erdos_1193.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1193.lean#erdos_1193.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "f83b8e315edb1bd7"
+  conversion_hash = "17b70178ef1a60663fde8cda77f24c1a78dce598cb5b6cf4ed331771a882506f"
+  semantic_anchor = "46af74b8ebeec545ba6bbd48497782696c84013b44e8df219fb04dcc15b965e1"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1193_parts_ii"
+file = "E1193_parts_ii.lean"
+module = "FtpEvalBench.E1193_parts_ii"
+shape = "decide"
+track = "solved"
+part = "ii"
+declaration = "erdos_1193.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1193.lean#erdos_1193.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "3cc23f2b502ee9ab"
+  conversion_hash = "169c7d4b5e93e8e5992ca7d7ffd67d158e4a5863d204c1bfc469c480c9c9445e"
+  semantic_anchor = "792c4f4129cfd03397e83543af17272c214ada5d97152a375d7a60baf0daeb29"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

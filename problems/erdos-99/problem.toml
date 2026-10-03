@@ -1,0 +1,68 @@
+# erdos:99 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:99"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "For sufficiently large n, is it the case that any set of n points with minimum distance $1$ that minimizes diameter must contain an equilateral triangle of side length 1?"
+notes = "Erdos Problem 99 -- https://www.erdosproblems.com/99"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/99.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E99_prove"
+file = "E99_prove.lean"
+module = "FtpEvalBench.E99_prove"
+shape = "prove"
+track = "open"
+pair_id = "E99"
+declaration = "erdos_99"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/99.lean#erdos_99"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "3d168c763729f11a"
+  conversion_hash = "fa56d88b810d7f6f12fbffca987032e3a0683abbb6f1d804b275ce472c9ce626"
+  semantic_anchor = "f4b1d93adcae999f894d84d28668495b336f3fb9e65b927a237bff9d7f717f8a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E99_refute"
+file = "E99_refute.lean"
+module = "FtpEvalBench.E99_refute"
+shape = "refute"
+track = "open"
+pair_id = "E99"
+declaration = "erdos_99"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/99.lean#erdos_99"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "6bc8ebf94f0beca1"
+  conversion_hash = "d71aa6f84a66cfb92ebea5d16f2d611c71a17b84a47fc05500e1e932f03f0f24"
+  semantic_anchor = "4c816b4461301176c81b16e057cfda714818b0d86488c0ec38005fa9b6e6d6cd"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

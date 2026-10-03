@@ -1,0 +1,46 @@
+# erdos:1107 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1107"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $r \\ge 2$. Is every large integer the sum of at most $r + 1$ many $r$-powerful numbers?"
+notes = "Erdos Problem 1107 -- https://www.erdosproblems.com/1107"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1107.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1107"
+file = "E1107.lean"
+module = "FtpEvalBench.E1107"
+shape = "proof"
+track = "open"
+declaration = "erdos_1107"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1107.lean#erdos_1107"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "fcebdbb7380dbccc"
+  conversion_hash = "9f5f9b9df53c389e90c2e58b84e76b868ef9903366d49618015f6f85b8d57696"
+  semantic_anchor = "5a26b498c23e60a33438568e57b4ba7b9877d65ccef3396fa147b0391c505be6"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

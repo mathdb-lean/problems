@@ -1,0 +1,46 @@
+# erdos:1020 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1020"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $f(n;r,k)$ be the maximal number of edges in an $r$-uniform hypergraph which contains no set of $k$ many independent edges. For all $r\\geq 3$, $$f(n;r,k)=\\max\\left(\\binom{rk-1}{r}, \\binom{n}{r}-\\binom{n-k+1}{r}\\right).$$ Note: the source states the formula with no range on `n` or `k`, but some restriction is needed: e.g. for `r = 3`, `k = 2`, `n = 4` no two disjoint triples fit in `4` vertices, so the left-hand side is `4.choose 3 = 4` while the right-hand side is `5.choose 3 = 10`. We require `k ≥ 1` and `n ≥ r*k - 1`: this is the smallest `n` accommodating the construction counted by the first term (all `r`-subsets of a fixed `(r*k - 1)`-set), and at `n = r*k - 1` the equality holds trivially, since the complete `r`-uniform hypergraph has no `k`-matching. The source's commentary likewise calls the case `n < k*r` trivial."
+notes = "Erdos Problem 1020 -- https://www.erdosproblems.com/1020"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1020.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1020"
+file = "E1020.lean"
+module = "FtpEvalBench.E1020"
+shape = "proof"
+track = "open"
+declaration = "erdos_1020"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1020.lean#erdos_1020"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "12837fd2361cb40b"
+  conversion_hash = "8d4236449c49b139a482a4e520f2ea4221769f9736bdb4864dccf682559d616c"
+  semantic_anchor = "148caec61406d0cbec3449058434ceadf0d22787d31424e5de126ac68d3fb227"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

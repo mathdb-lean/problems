@@ -1,0 +1,46 @@
+# erdos:974 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:974"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $z_1,\\ldots,z_n\\in \\mathbb{C}$ be a sequence such that $z_1=1$. Suppose that the sequence of $$s_k=\\sum_{1\\leq i\\leq n}z_i^k$$ contains infinitely many $(n-1)$-tuples of consecutive values of $s_k$ which are all $0$. Then (essentially) $$z_j=e(j/n),$$ where $e(x)=e^{2\\pi ix}$. A conjecture of Turán. This is true (in the stronger form with only two such tuples) - in fact if $n$ is odd then the $z_i$ must be exactly the $n$th roots of unity, and if $n$ is even they must be the vertices of two regular $(n/2)$-gons with the same circumscribed circle centred at the origin. This was first proved by Tijdeman [Ti66]. An independent proof of this was given in the comments section by Hu, Tang, and Zhang."
+notes = "Erdos Problem 974 -- https://www.erdosproblems.com/974"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/974.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E974"
+file = "E974.lean"
+module = "FtpEvalBench.E974"
+shape = "proof"
+track = "solved"
+declaration = "erdos_974"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/974.lean#erdos_974"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "95a7df42d4c10284"
+  conversion_hash = "4c8b957890021e30bacd1f7d2326770f599999c18817feda21f550671ee29f55"
+  semantic_anchor = "e903e44c5cf45e9f6b53a29fd96aea8c12e4214b23d83dc3978925e3caf6faf7"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

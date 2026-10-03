@@ -1,0 +1,46 @@
+# erdos:77 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:77"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If $R(k)$ is the Ramsey number for $K_k$, the minimal $n$ such that every $2$-colouring of the edges of $K_n$ contains a monochromatic copy of $K_k$, then find the value of $$\\lim_{k\\to \\infty}R(k)^{1/k}.$$ This problem is #3 in Ramsey Theory in the graphs problem collection."
+notes = "Erdos Problem 77 -- https://www.erdosproblems.com/77"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/77.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E77"
+file = "E77.lean"
+module = "FtpEvalBench.E77"
+shape = "value"
+track = "open"
+declaration = "erdos_77"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/77.lean#erdos_77"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "650ace9420131cec"
+  conversion_hash = "4242a25a5c9f329f1b03f9bff7e5ddd83d8370f27167ab780ab561c6f644a7a2"
+  semantic_anchor = "9453c957c04ed1792984c56fbe22378d08e23a6f069b052f6ea366344a6329d1"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

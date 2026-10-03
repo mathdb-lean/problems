@@ -1,0 +1,68 @@
+# erdos:1142 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1142"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Are there infinitely many $n > 2$ such that $n - 2^k$ is prime for all $k \\geq 1$ with $2^k < n$? The only known such $n$ are $4, 7, 15, 21, 45, 75, 105$ (OEIS [A039669](https://oeis.org/A039669))."
+notes = "Erdos Problem 1142 -- https://www.erdosproblems.com/1142"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1142.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1142_prove"
+file = "E1142_prove.lean"
+module = "FtpEvalBench.E1142_prove"
+shape = "prove"
+track = "open"
+pair_id = "E1142"
+declaration = "erdos_1142"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1142.lean#erdos_1142"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d6860028852ea048"
+  conversion_hash = "f9ecad4397fd8cfd33e163b6d0433b6df60bcae4a8fa86adf5cc2fe6ad935976"
+  semantic_anchor = "6f252fe71a86db1e011e536181ad57360443f332dc985dc681cf7052d017c921"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1142_refute"
+file = "E1142_refute.lean"
+module = "FtpEvalBench.E1142_refute"
+shape = "refute"
+track = "open"
+pair_id = "E1142"
+declaration = "erdos_1142"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1142.lean#erdos_1142"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "566a47668aab4eb4"
+  conversion_hash = "b4fdcc7cf2cfad508019f4417e25c4ceed0dda5a24e8f7171e5904207a2e3d0e"
+  semantic_anchor = "4d0887514cb1a718b615baa13028b42186a96ff3b44d17428d17e38fce7b0234"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

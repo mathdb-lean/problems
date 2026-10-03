@@ -1,0 +1,68 @@
+# erdos:312 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:312"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Does there exist a constant `c > 0` such that, for any `K > 1`, whenever `A` is a sufficiently large finite multiset of integers with $\\sum_{n \\in A} 1/n > K$ there exists some $S \\subseteq A$ such that $1 - \\exp(-(c*K)) < \\sum_{n \\in S} 1/n \\le 1$?"
+notes = "Erdos Problem 312 -- https://www.erdosproblems.com/312"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/312.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E312_prove"
+file = "E312_prove.lean"
+module = "FtpEvalBench.E312_prove"
+shape = "prove"
+track = "open"
+pair_id = "E312"
+declaration = "erdos_312"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/312.lean#erdos_312"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "3f89e9ca51deca81"
+  conversion_hash = "b38a381212e8b2301301824cb423d582164ab5349b13778e1581ec25b29e4851"
+  semantic_anchor = "0ec74fd3db7393c6f199d0a5b8878ce21207003cc3775b4d5e52a468080c7c21"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E312_refute"
+file = "E312_refute.lean"
+module = "FtpEvalBench.E312_refute"
+shape = "refute"
+track = "open"
+pair_id = "E312"
+declaration = "erdos_312"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/312.lean#erdos_312"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "1d07cf60ce7be944"
+  conversion_hash = "bac521405674f92cadf1987717ca3a842dc652c40eed14eb104c73ceacdd4120"
+  semantic_anchor = "d19df090555a86d16866a7b7e229e7323d1577f9ac5c26ab8637c83782d5e407"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

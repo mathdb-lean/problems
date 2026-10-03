@@ -1,0 +1,114 @@
+# erdos:839 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:839"
+collection = "erdos"
+tasks = 4
+reviewed_by_a_person = false
+prose = "Erdős Problem 839 (Part 1) [Er78f][Er92c]: Let $1 \\leq a_1 < a_2 < \\cdots$ be a strictly increasing sequence of positive integers such that no $a_i$ is the sum of consecutive $a_j$ for $j < i$. Is it true that $\\limsup a_n / n = \\infty$?"
+notes = "Erdos Problem 839 -- https://www.erdosproblems.com/839"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/839.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E839_parts_i_prove"
+file = "E839_parts_i_prove.lean"
+module = "FtpEvalBench.E839_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E839_parts_i"
+declaration = "erdos_839.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/839.lean#erdos_839.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "2de5f2d2beb5757b"
+  conversion_hash = "8f073e9275ce0d9977626272c0dd0f726adb673d70b50d3ea9f391cd2bd13c97"
+  semantic_anchor = "858133c0d1533f7fcdd3aa90c78db9cec46c99c3976d5195a7382d0b6e731f0b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E839_parts_i_refute"
+file = "E839_parts_i_refute.lean"
+module = "FtpEvalBench.E839_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E839_parts_i"
+declaration = "erdos_839.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/839.lean#erdos_839.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7efe636972067372"
+  conversion_hash = "6eb55fd5a1c5fe21504f50160e1997079f9bddae929b285bcb69f2b09f701a1d"
+  semantic_anchor = "c574e2668a182fd9b83c523bb7454561f9390dec05295ece3ccc5ba252388748"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E839_parts_ii_prove"
+file = "E839_parts_ii_prove.lean"
+module = "FtpEvalBench.E839_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E839_parts_ii"
+declaration = "erdos_839.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/839.lean#erdos_839.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d4250ebb6c52a1c8"
+  conversion_hash = "53a4355c30fe64d3ade1ef7dd8fc66fb6a5734bb9482a17c97e25614d2bfd191"
+  semantic_anchor = "5784fee08ab1c6644965f41a4a835769ad82247735a0a9f1a903546a31b62595"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E839_parts_ii_refute"
+file = "E839_parts_ii_refute.lean"
+module = "FtpEvalBench.E839_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E839_parts_ii"
+declaration = "erdos_839.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/839.lean#erdos_839.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "6210c651b260c428"
+  conversion_hash = "0753469cb7984b7f9d1dc076cb69d631ec2c11b442f59dc7a4dd3d3d33404430"
+  semantic_anchor = "1ab28f9f63dc3ea29f5a4a95469b0cf1115a59835e51ebe3b66ab8d2fae8e9dd"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

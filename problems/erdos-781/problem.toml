@@ -1,0 +1,68 @@
+# erdos:781 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:781"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $f(k)$ be the minimal $n$ such that any $2$-colouring of $\\{1,\\ldots,n\\}$ contains a monochromatic $k$-term descending wave: a sequence $x_1<\\cdots <x_k$ such that, for $1<j<k$, $$x_j \\geq \\frac{x_{j+1}+x_{j-1}}{2}.$$ Estimate $f(k)$. Brown, Erdős, and Freedman [BEF90] proved $k^2-k+1\\leq f(k) \\leq \\frac{k^3-4k+9}{3}$. Resolved by Alon and Spencer [AlSp89] who proved that in fact $f(k) \\gg k^3$, so that $f(k)\\asymp k^3$."
+notes = "Erdos Problem 781 -- https://www.erdosproblems.com/781"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/781.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E781_parts_i"
+file = "E781_parts_i.lean"
+module = "FtpEvalBench.E781_parts_i"
+shape = "proof"
+track = "solved"
+part = "i"
+declaration = "erdos_781.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/781.lean#erdos_781.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "bda47ab2ab410640"
+  conversion_hash = "9832285b4dd7569f9cb4e0a86567e7f21af335ff4abe5c9f99c659c3317a6b67"
+  semantic_anchor = "db262805e9f608a56e24ed40998bcac0d55434987d6146c6441b1583327b4803"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E781_parts_ii"
+file = "E781_parts_ii.lean"
+module = "FtpEvalBench.E781_parts_ii"
+shape = "decide"
+track = "solved"
+part = "ii"
+declaration = "erdos_781.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/781.lean#erdos_781.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "978799867bb0eba2"
+  conversion_hash = "41bfe9516cc3c142910b0433bed5b88807403f05f1a83e3efe271c2b26cc99b6"
+  semantic_anchor = "5b037fb0b4486c3ffe0434a5c25fb1575e8727a4fa7a0d2b1b6b0fad8d047ee9"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

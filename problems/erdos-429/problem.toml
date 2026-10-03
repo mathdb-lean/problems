@@ -1,0 +1,46 @@
+# erdos:429 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:429"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Is it true that, if $A\\subseteq \\mathbb{N}$ is sparse enough and does not cover all residue classes modulo $p$ for any prime $p$, then there exists some $n\\in \\mathbb{Z}$ such that $n+a$ is prime for all $a\\in A$? Weisenberg [We24] has shown the answer is no: $A$ can be arbitrarily sparse and missing at least one residue class modulo every prime $p$, and yet $A+n$ is not contained in the primes for any $n\\in \\mathbb{Z}$. (Weisenberg gives several constructions of such an $A$.)"
+notes = "Erdos Problem 429 -- https://www.erdosproblems.com/429"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/429.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E429"
+file = "E429.lean"
+module = "FtpEvalBench.E429"
+shape = "decide"
+track = "solved"
+declaration = "erdos_429"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/429.lean#erdos_429"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9e6886be37914fbc"
+  conversion_hash = "f66010913f45639bf32855eea1f7ea28620719c4398166e11431e370b50e5914"
+  semantic_anchor = "cdacdfd721c6bb928a7bf4767094762fd8c1935ac542bc98ec3b8206a4c734f7"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

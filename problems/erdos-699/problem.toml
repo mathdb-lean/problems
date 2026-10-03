@@ -1,0 +1,68 @@
+# erdos:699 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:699"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "**Erdős Problem 699.** Is it true that for every $1 \\le i < j \\le n / 2$ there exists a prime $p \\ge i$ with $p \\mid \\gcd\\big(\\binom{n}{i}, \\binom{n}{j}\\big)$?"
+notes = "Erdos Problem 699 -- https://www.erdosproblems.com/699"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/699.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E699_prove"
+file = "E699_prove.lean"
+module = "FtpEvalBench.E699_prove"
+shape = "prove"
+track = "open"
+pair_id = "E699"
+declaration = "erdos_699"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/699.lean#erdos_699"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "753523a7ab717615"
+  conversion_hash = "474481fa27c7c8e2182c00069b213ea68a13e060a0e6f823e7a0688328745310"
+  semantic_anchor = "4a607ab7c79110d8aab2a2667eab6080608f27059c0adf4c606ea8d5c4a1b236"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E699_refute"
+file = "E699_refute.lean"
+module = "FtpEvalBench.E699_refute"
+shape = "refute"
+track = "open"
+pair_id = "E699"
+declaration = "erdos_699"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/699.lean#erdos_699"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ff687042918ae45e"
+  conversion_hash = "a0431f88b914747bf18951e568dac666193646af2610df33dba2b2bb71349e6f"
+  semantic_anchor = "4ec956ba7dede82fab8df57fb059a787a597cd735a8462f7c47a283b8cde26b2"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,46 @@
+# erdos:401 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:401"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Is there some function $f(r)$ such that $f(r)\\to \\infty$ as $r\\to\\infty$, such that, for infinitely many $n$, there exist $a_1,a_2$ with $$a_1+a_2> n+f(r)\\log n$$ such that $a_1!a_2! \\mid n!2^n3^n\\cdots p_r^n$? It is ambiguous in [ErGr80] what the intended quantifiers are on the variables (they write 'is it true that we can find $a_1+a_2>n+f(r)\\log n$...'). Comparing to previous problems such as [728] and [729] it seems most likely that they intended to ask the formulation in the problem statement. The answer is yes: Barreto and Leeham have used ChatGPT to provide a proof of the stated problem (in fact essentially the same construction as their solution to [729])."
+notes = "Erdos Problem 401 -- https://www.erdosproblems.com/401"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/401.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E401"
+file = "E401.lean"
+module = "FtpEvalBench.E401"
+shape = "decide"
+track = "solved"
+declaration = "erdos_401"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/401.lean#erdos_401"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7b4803b4d4d9fbe8"
+  conversion_hash = "2c2fa1b66eca770a4699e133575e5dfbb9bf5b71099a40e57c4a8c33826515c1"
+  semantic_anchor = "d89eae356d51eca3c94fc62fb270d02f4c8eef4c90c89b9c63e47c490d283398"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

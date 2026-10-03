@@ -1,0 +1,68 @@
+# erdos:972 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:972"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "**Erdős problem 972.** Let $\\alpha > 1$ be irrational. Are there infinitely many primes $p$ such that $\\lfloor p\\alpha \\rfloor$ is also prime?"
+notes = "Erdos Problem 972 -- https://www.erdosproblems.com/972"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/972.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E972_prove"
+file = "E972_prove.lean"
+module = "FtpEvalBench.E972_prove"
+shape = "prove"
+track = "open"
+pair_id = "E972"
+declaration = "erdos_972"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/972.lean#erdos_972"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "02e0f2d5767d9be9"
+  conversion_hash = "2faad0a51335dbbf2f5598e667472420e4a9b376b02d001ce47a0aedaec5810f"
+  semantic_anchor = "e02b69cf6b9df31933c0fc7584f8453445f5c3ca4c7f063e272894a3e1426580"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E972_refute"
+file = "E972_refute.lean"
+module = "FtpEvalBench.E972_refute"
+shape = "refute"
+track = "open"
+pair_id = "E972"
+declaration = "erdos_972"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/972.lean#erdos_972"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e7787e14200c381f"
+  conversion_hash = "9ea2e7d62ada1d6a462b37011d2cf2ad44e5cd3e3402b5b30bf434fd7d6592ce"
+  semantic_anchor = "0cb7b406813afc34ab25094a5211bdb9d3e4a47f5d7a1b59dafee2e43a5616f0"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

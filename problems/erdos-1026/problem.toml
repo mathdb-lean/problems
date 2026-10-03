@@ -1,0 +1,46 @@
+# erdos:1026 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1026"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $x_1,\\ldots,x_n$ be a sequence of distinct real numbers. Determine $$ \\max\\left(\\sum x_{i_r}\\right), $$ where the maximum is taken over all monotonic subsequences. This is as Erdős posed the problem in [Er71], which is rather ambiguous. Discussion between several users in the comments section has led to the following precise possible question, as posed by van Doorn: What is the largest constant $c$ such that, for all sequences of $n$ real numbers $x_1,\\ldots,x_n$, $$ \\max\\left(\\sum x_{i_r}\\right) > (c-o(1))\\frac{1}{\\sqrt{n}}\\sum x_i $$ (where again the maximum is taken over all monotonic subsequences)? Cambie makes the stronger conjecture that if $x_1,\\ldots,x_{k^2}$ are distinct positive real numbers with $\\sum x_i=1$ then there is always a monotonic subsequence with sum at least $1/k$. This stronger conjecture appears to have been first proved by Tidor, Wang, and Yang [TWY16], and is also implicit in work of Wagner [Wa17]. A proof was given and formalised by Aristotle (see the comments), with an alternative proof provided by Chan. In particular, this shows that $c=1$."
+notes = "Erdos Problem 1026 -- https://www.erdosproblems.com/1026"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1026.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1026"
+file = "E1026.lean"
+module = "FtpEvalBench.E1026"
+shape = "proof"
+track = "solved"
+declaration = "erdos_1026"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1026.lean#erdos_1026"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "bf80ad32a70126e9"
+  conversion_hash = "c19dbf1b92f702c0229e08a4e02ad8c933c5d4fc16a9eb86b83cdc6bb79c213b"
+  semantic_anchor = "ffd7638cbc2ecb639dd19f477e1d59c06a79c27f6173bdc5ca69d9d38b72e240"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

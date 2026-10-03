@@ -1,0 +1,46 @@
+# erdos:405 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:405"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $p$ be an odd prime. Is it true that the equation $(p-1)!+a^{p-1}=p^k$ has only finitely many solutions? Originally proposed by Erdős and Graham [ErGr80]. Brindza and Erdős [BrEr91] proved that there are finitely many such solutions."
+notes = "Erdos Problem 405 -- https://www.erdosproblems.com/405"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/405.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E405"
+file = "E405.lean"
+module = "FtpEvalBench.E405"
+shape = "proof"
+track = "solved"
+declaration = "erdos_405"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/405.lean#erdos_405"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "5fa092c576c6dfeb"
+  conversion_hash = "fb64205a745ab50f333c6507c0604fa338edf121c310b130b8ea9e87f443b380"
+  semantic_anchor = "4ae9d51c6cd7f523cd5acaff0515a39651a13fa3be2ee6087942765319e98b39"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

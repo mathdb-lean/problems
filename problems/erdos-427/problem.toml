@@ -1,0 +1,46 @@
+# erdos:427 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:427"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "**Erdős Problem 427**: is it true that, for every $n$ and $d$, there exists $k$ such that $$ d \\mid p_{n + 1} + \\cdots + p_{n + k}, $$ where $p_r$ denotes the $r$th prime?"
+notes = "Erdos Problem 427 -- https://www.erdosproblems.com/427"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/427.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E427"
+file = "E427.lean"
+module = "FtpEvalBench.E427"
+shape = "decide"
+track = "solved"
+declaration = "erdos_427"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/427.lean#erdos_427"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "49e30379fe847254"
+  conversion_hash = "f0ba0379102c816d0bb20b733e813fa4869e2a3bb6c0e94cd130c65c12f4f7e7"
+  semantic_anchor = "da4f23a3b52d3e9d8a1d93ae6547b69da8121cfe29069dbbbdab1070c591bb11"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

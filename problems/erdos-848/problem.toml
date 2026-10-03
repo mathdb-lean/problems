@@ -1,0 +1,46 @@
+# erdos:848 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:848"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Is the maximum size of a set $A ⊆ \\{1, \\dots, N\\}$ such that $ab + 1$ is never squarefree (for all $a, b ∈ A$) achieved by taking those $n ≡ 7 \\pmod{25}$? This asks whether `Erdos848 N` holds for all $N$ (formulated using `A ⊆ Finset.range N`). This was solved for all sufficiently large $N$ by Sawhney in this note. In fact, Sawhney proves something slightly stronger, that there exists some constant $c>0$ such that if $\\lvert A\\rvert \\geq (\\frac{1}{25}-c)N$ and $N$ is large then $A$ is contained in either $\\{ n\\equiv 7\\pmod{25}\\}$ or $\\{n\\equiv 18\\pmod{25}\\}$."
+notes = "Erdos Problem 848 -- https://www.erdosproblems.com/848"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/848.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E848"
+file = "E848.lean"
+module = "FtpEvalBench.E848"
+shape = "decide"
+track = "solved"
+declaration = "erdos_848"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/848.lean#erdos_848"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "dff0aa3dde4da38f"
+  conversion_hash = "2d585b7dbe3bba8e5c916fe7515444abb0d125c849e533ced272c71938034566"
+  semantic_anchor = "201d344ec3eb49af978db80900eeeed13feaf6ab8bc9022dc6cbc7f0fa19cb2f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,68 @@
+# erdos:313 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:313"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Are there infinitely many pairs `(m, P)` where `m ≥ 2` is an integer and `P` is a set of distinct primes such that the following equation holds: $\\sum_{p \\in P} \\frac{1}{p} = 1 - \\frac{1}{m}$?"
+notes = "Erdos Problem 313 -- https://www.erdosproblems.com/313"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/313.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E313_prove"
+file = "E313_prove.lean"
+module = "FtpEvalBench.E313_prove"
+shape = "prove"
+track = "open"
+pair_id = "E313"
+declaration = "erdos_313"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/313.lean#erdos_313"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "1148771f007964a7"
+  conversion_hash = "2c453ef103b690c6f5851624b46c4e54f0b58c0051606f8d97bfb7a85676a437"
+  semantic_anchor = "364aaf3927f6546073e4cdbae8304087498b77a0c98d0b061f72472531f9b16c"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E313_refute"
+file = "E313_refute.lean"
+module = "FtpEvalBench.E313_refute"
+shape = "refute"
+track = "open"
+pair_id = "E313"
+declaration = "erdos_313"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/313.lean#erdos_313"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d64fa49dfc3d1d51"
+  conversion_hash = "9ec6e92163d0090c1aa80b6942aa59e293edb5bd5272e2854fba7e000673e9bd"
+  semantic_anchor = "9b29ae47ed2deb68179942eda363c0d0c260b9b8c137f0d276e5ddbfc547d329"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

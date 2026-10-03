@@ -1,0 +1,46 @@
+# erdos:283 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:283"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $p\\colon \\mathbb{Z} \\rightarrow \\mathbb{Z}$ be a polynomial (with rational coefficients, taking integer values at all integers) whose leading coefficient is positive and such that there exists no $d≥2$ with $d ∣ p(n)$ for all $n≥1$. Is it true that, for all sufficiently large $m$, there exist integers $1≤n_1<\\dots < n_k$ such that $$1=\\frac{1}{n_1}+\\cdots+\\frac{1}{n_k}$$ and $$m=p(n_1)+\\cdots+p(n_k)$$? GPT 5.5 Pro (prompted by Price) has given a proof that the answer is yes, for the stronger version with $1$ replaced by any rational $\\alpha>0$. This was formalized in Lean by Ammanamanchi using Opus 4.6 and GPT 5.5 Pro."
+notes = "Erdos Problem 283 -- https://www.erdosproblems.com/283"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/283.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E283"
+file = "E283.lean"
+module = "FtpEvalBench.E283"
+shape = "decide"
+track = "solved"
+declaration = "erdos_283"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/283.lean#erdos_283"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c4c96c5cce8ce99e"
+  conversion_hash = "23e649aed1dd5e6ad428553c88c665f2b0342df49597eaeaebc87800fa529982"
+  semantic_anchor = "4f883acad665bd39a14448df362e2a5df1d12a6e7bff889ac1b584853dba2c3b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

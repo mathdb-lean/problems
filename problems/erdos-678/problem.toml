@@ -1,0 +1,46 @@
+# erdos:678 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:678"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Write $M(n, k)$ be the least common multiple of $\\{n+1, \\dotsc, n+k\\}$. Let $k$ be sufficiently large. Are there infinitely many $m, n$ with $m \\geq n + k$ such that $$ M(n, k) > M(m, k + 1) $$? The answer is yes, as proved in a strong form by Cambie [Ca24]. [Ca24] S. Cambie, Resolution of an Erdős' problem on least common multiples. arXiv:2410.09138 (2024). This was formalized in Lean by Alexeev using Aristotle, on top of the PNT+ project. For a fixed $k$ there are only finitely many such pairs, so \"infinitely many\" is read here as ranging over $k$ as well: for every sufficiently large $k$ at least one pair $(m, n)$ occurs. See `erdos_678.variants.infinitely_many_triples` for the reading in which the infinitude is stated directly, and `erdos_678.variants.not_infinitely_many_pairs` for why it cannot be asked of a single $k$."
+notes = "Erdos Problem 678 -- https://www.erdosproblems.com/678"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/678.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E678"
+file = "E678.lean"
+module = "FtpEvalBench.E678"
+shape = "decide"
+track = "solved"
+declaration = "erdos_678"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/678.lean#erdos_678"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "98b27144421fae05"
+  conversion_hash = "b098ce587af4d783b452c00c7e15bf50d9a94c68602fbf717510ab3604a6df97"
+  semantic_anchor = "060609273ba8df76f52ceadec1daf5b2cdf5c3192354e0f050a0eaecb966da2f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

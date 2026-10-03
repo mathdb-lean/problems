@@ -1,0 +1,46 @@
+# erdos:180 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:180"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If $\\mathcal{F}$ is a finite set of finite graphs then $\\mathrm{ex}(n;\\mathcal{F})$ is the maximum number of edges a graph on $n$ vertices can have without containing any subgraphs from $\\mathcal{F}$. Note that it is trivial that $\\mathrm{ex}(n;\\mathcal{F})\\leq \\mathrm{ex}(n;G)$ for every $G\\in\\mathcal{F}$. Is it true that, for every $\\mathcal{F}$, there exists $G\\in\\mathcal{F}$ such that $$\\mathrm{ex}(n;G)\\ll_{\\mathcal{F}}\\mathrm{ex}(n;\\mathcal{F})?$$ This is the Erdős–Simonovits compactness conjecture. The answer is no: OpenAI [OpenAI26] give a family of connected bipartite graphs, none of them acyclic, for which no single member controls the family extremal number. See `erdos_180.variants.counterexample`."
+notes = "Erdos Problem 180 -- https://www.erdosproblems.com/180"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/180.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E180"
+file = "E180.lean"
+module = "FtpEvalBench.E180"
+shape = "decide"
+track = "solved"
+declaration = "erdos_180"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/180.lean#erdos_180"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "bce2753d74a1fd1d"
+  conversion_hash = "e125e1684af4c7bb0770fb42d74c7347470e64b069c728b5be0987481fcf78ed"
+  semantic_anchor = "beb6b929da5b777b90c9f853e77cd89c7423f7eabeb739b587fa2868df1455d7"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

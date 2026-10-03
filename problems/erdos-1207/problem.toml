@@ -1,0 +1,68 @@
+# erdos:1207 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1207"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $P_d(n)$ be such that in any set of $n$ points in $\\mathbb{R}^d$ there exist at least $P_d(n)$ many points which do not contain an isosceles triangle. Estimate $P_d(n)$ - in particular, is it true that $$P_2(n)<n^{1-c}$$ for some constant $c>0$?"
+notes = "Erdos Problem 1207 -- https://www.erdosproblems.com/1207"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1207.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1207_prove"
+file = "E1207_prove.lean"
+module = "FtpEvalBench.E1207_prove"
+shape = "prove"
+track = "open"
+pair_id = "E1207"
+declaration = "erdos_1207"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1207.lean#erdos_1207"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b81db237ce683d69"
+  conversion_hash = "5ecf31c4f3865c15c2f3c7720f6cf61d4945c124ac8ff15b90006f2515757cb2"
+  semantic_anchor = "d1c640272ece850fcef448854c8a415886d8c026a4b5adbd7efc379d742afdf3"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1207_refute"
+file = "E1207_refute.lean"
+module = "FtpEvalBench.E1207_refute"
+shape = "refute"
+track = "open"
+pair_id = "E1207"
+declaration = "erdos_1207"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1207.lean#erdos_1207"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7e753005deb145ef"
+  conversion_hash = "f8bcb94a0815afe2073da75cfe4d6b694689c7d68ca82f7fb563f82b1a4a8925"
+  semantic_anchor = "948bac8c5212dbf3705a12541d31c9a4f3557ba6a6f347990eeba6e7311c58c7"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

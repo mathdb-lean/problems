@@ -1,0 +1,46 @@
+# erdos:664 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:664"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $c<1$ be some constant and $A_1,\\ldots,A_m\\subseteq \\{1,\\ldots,n\\}$ be such that $\\lvert A_i\\rvert >c\\sqrt{n}$ for all $i$ and $\\lvert A_i\\cap A_j\\rvert\\leq 1$ for all $i\\neq j$. Must there exist some set $B$ such that $B\\cap A_i\\neq \\emptyset$ and $\\lvert B\\cap A_i\\rvert \\ll_c 1$ for all $i$? The answer is no, proved by Alon: if $q$ is a large prime power and $n=m=q^2+q+1$ then there exist $A_1,\\ldots,A_m\\subseteq \\{1,\\ldots,n\\}$ such that $\\lvert A_i\\rvert \\geq \\tfrac{2}{5}\\sqrt{n}$ for all $i$ and $\\lvert A_i\\cap A_j\\rvert\\leq 1$ for all $i\\neq j$, and yet if $B$ has non-empty intersection with all $A_i$ then there exists $A_j$ such that $\\lvert B\\cap A_j\\rvert \\gg \\log n$."
+notes = "Erdos Problem 664 -- https://www.erdosproblems.com/664"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/664.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E664"
+file = "E664.lean"
+module = "FtpEvalBench.E664"
+shape = "decide"
+track = "solved"
+declaration = "erdos_664"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/664.lean#erdos_664"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "66cecd23dfafd33d"
+  conversion_hash = "3d727c44cf69b609d90c53d5645a770f34573158a5fbbe35ba1a31c3e0e55029"
+  semantic_anchor = "74487a253ad51601188fa26f3092fced9237f6ffc45874686287189b66b28d2f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

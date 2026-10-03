@@ -1,0 +1,68 @@
+# erdos:108 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:108"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "For every r ≥ 4 and k ≥ 2 is there some finite f(k,r) such that every graph of chromatic number ≥ f(k,r) contains a subgraph of girth ≥ r and chromatic number ≥ k?"
+notes = "Erdos Problem 108 -- https://www.erdosproblems.com/108"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/108.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E108_prove"
+file = "E108_prove.lean"
+module = "FtpEvalBench.E108_prove"
+shape = "prove"
+track = "open"
+pair_id = "E108"
+declaration = "erdos_108"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/108.lean#erdos_108"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "f1d879eae6421c03"
+  conversion_hash = "5de5dec285c98c2b0e88f6675c36f67bcc3e7c837975a155f855d87b06bef606"
+  semantic_anchor = "52d5c600efa25bbba21ae693a3726d7e912142bc59fe277eaf2acdb30db51033"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E108_refute"
+file = "E108_refute.lean"
+module = "FtpEvalBench.E108_refute"
+shape = "refute"
+track = "open"
+pair_id = "E108"
+declaration = "erdos_108"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/108.lean#erdos_108"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "811145a14fbbb86f"
+  conversion_hash = "2f542f388ba179527d92a34d6f588a20dc2b7d1721b891f4c00508dcf339408b"
+  semantic_anchor = "214f0581ec68d41b61cd4d39c5b3c4798b837d2b5d42626e4c8930ed30f106ad"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

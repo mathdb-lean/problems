@@ -1,0 +1,158 @@
+# erdos:342 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:342"
+collection = "erdos"
+tasks = 6
+reviewed_by_a_person = false
+prose = "Do infinitely many pairs $(a, a+2)$ occur in Ulam's sequence?"
+notes = "Erdos Problem 342 -- https://www.erdosproblems.com/342"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/342.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E342_parts_i_prove"
+file = "E342_parts_i_prove.lean"
+module = "FtpEvalBench.E342_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E342_parts_i"
+declaration = "erdos_342.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/342.lean#erdos_342.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "24e1a9462e1176f7"
+  conversion_hash = "d24703e93526e6832a97386acd6d3c2adce1aa60c52849e31866164c5f6927c8"
+  semantic_anchor = "98d6d6b6622196f2c6cdf4a218cc5defab6ed63a79796c7f6e3e9fb6bffc38ee"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E342_parts_i_refute"
+file = "E342_parts_i_refute.lean"
+module = "FtpEvalBench.E342_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E342_parts_i"
+declaration = "erdos_342.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/342.lean#erdos_342.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "32091e2e46a2e484"
+  conversion_hash = "cbedc18a5aedc0e9843d1fde9129e5eaecd0e84daeb4aee79d6e1075f24cdfd9"
+  semantic_anchor = "42f0a2a08a3ade35c62c9fc351e5f0f92af35ab26ae3a10d7631e599691d6482"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E342_parts_ii_prove"
+file = "E342_parts_ii_prove.lean"
+module = "FtpEvalBench.E342_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E342_parts_ii"
+declaration = "erdos_342.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/342.lean#erdos_342.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e006e11494ec14eb"
+  conversion_hash = "b17aa4a2d71e64e14d5d143f424de3f9289232d3e97c75353d1e598138cb66c9"
+  semantic_anchor = "b422fb162912d14b2d564a067310c41e7ead423893c4b9b48030ff7fa9475cc4"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E342_parts_ii_refute"
+file = "E342_parts_ii_refute.lean"
+module = "FtpEvalBench.E342_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E342_parts_ii"
+declaration = "erdos_342.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/342.lean#erdos_342.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "87c57fb4362baa02"
+  conversion_hash = "fced688cb93d8988055b3ab18e335fdb8fa3e11c10d5e4a15ab4dee9d4889303"
+  semantic_anchor = "06d2439fc4c7b9436cb847a7415964be82a8a1e3d9d09e4b7690da825639788a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E342_parts_iii_prove"
+file = "E342_parts_iii_prove.lean"
+module = "FtpEvalBench.E342_parts_iii_prove"
+shape = "prove"
+track = "open"
+part = "iii"
+pair_id = "E342_parts_iii"
+declaration = "erdos_342.parts.iii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/342.lean#erdos_342.parts.iii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ff3d7aa6371bb802"
+  conversion_hash = "23062e26af5ff4e93a45de894c24e159401c90615221140ea085a3f189d46524"
+  semantic_anchor = "ce5cd26c3e38b433abf58f8df41fa824b25f0f0206a937580f592cef18d221f2"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E342_parts_iii_refute"
+file = "E342_parts_iii_refute.lean"
+module = "FtpEvalBench.E342_parts_iii_refute"
+shape = "refute"
+track = "open"
+part = "iii"
+pair_id = "E342_parts_iii"
+declaration = "erdos_342.parts.iii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/342.lean#erdos_342.parts.iii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "cb1d67732c89d873"
+  conversion_hash = "5fee1a3d2576e344d62bae5e9dcc6383d8fb53bbfb544288e9637afab3ac7aa6"
+  semantic_anchor = "e55824eddba27a1215d4cc581f75d1d0c433481075a8825ae72ed03f8ee90113"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

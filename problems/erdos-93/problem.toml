@@ -1,0 +1,46 @@
+# erdos:93 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:93"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If $n$ distinct points in $\\mathbb{R}^2$ form a convex polygon then they determine at least $\\lfloor \\frac{n}{2}\\rfloor$ distinct distances. Solved by Altman [Al63]."
+notes = "Erdos Problem 93 -- https://www.erdosproblems.com/93"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/93.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E93"
+file = "E93.lean"
+module = "FtpEvalBench.E93"
+shape = "proof"
+track = "solved"
+declaration = "erdos_93"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/93.lean#erdos_93"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "98c1eae3af01e63a"
+  conversion_hash = "be1f728191063d42b04820282cb36a1a747bfecc4abbe68172f3208fac0b54a6"
+  semantic_anchor = "94793a20a03b3597f06cd0051cb3bc9582b983fe2d6b2fd66ee21567e692b076"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

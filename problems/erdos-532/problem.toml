@@ -1,0 +1,46 @@
+# erdos:532 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:532"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If $\\mathbb{N}$ is 2-coloured then is there some infinite set $A\\subseteq \\mathbb{N}$ such that all finite subset sums$$ \\sum_{n\\in S}n$$(as $S$ ranges over all non-empty finite subsets of $A$) are monochromatic? Asked by Graham and Rothschild. Proved by Hindman [Hi74] (for any number of colours)."
+notes = "Erdos Problem 532 -- https://www.erdosproblems.com/532"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/532.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E532"
+file = "E532.lean"
+module = "FtpEvalBench.E532"
+shape = "decide"
+track = "solved"
+declaration = "erdos_532"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/532.lean#erdos_532"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "a7a6f9d4491b2472"
+  conversion_hash = "a96148ed35e4d7fcb462e67f2503f9bd365c8e758bb8625f2524cba657e36796"
+  semantic_anchor = "de498de441efbbbb4e9dfe63f34d991e7e9b3aa292d1f30f98873c85c1983eec"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

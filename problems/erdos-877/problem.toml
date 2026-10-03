@@ -1,0 +1,46 @@
+# erdos:877 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:877"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $f_m(n)$ count the number of maximal sum-free subsets $A\\subseteq\\{1,\\ldots,n\\}$ - that is, there are no solutions to $a=b+c$ in $A$ and $A$ is maximal with this property. Estimate $f(n)$ - is it true that $f_m(n)=o(2^{n/2})$? A problem of Cameron and Erdős. Łuczak and Schoen [LuSc01] proved that there exists a constant $c<1/2$ such that $f_m(n)<2^{cn}$, resolving this question. Balogh, Liu, Sharifzadeh, and Treglown [BLST15] proved that $f_m(n)=2^{(\\frac{1}{4}+o(1))n}$. See [748](https://www.erdosproblems.com/748) for the non-maximal case."
+notes = "Erdos Problem 877 -- https://www.erdosproblems.com/877"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/877.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E877"
+file = "E877.lean"
+module = "FtpEvalBench.E877"
+shape = "decide"
+track = "solved"
+declaration = "erdos_877"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/877.lean#erdos_877"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e9f6fd8bdec46fe7"
+  conversion_hash = "e08cb3646011ee4f9eafa0f66d1ef72a5b4d42fc10c29a99563b9c53b64c683e"
+  semantic_anchor = "002c31fc76a41c57e46088c84aa8f08d57d250f2f41d4903828ef034fb9c50a5"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

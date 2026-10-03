@@ -1,0 +1,46 @@
+# erdos:243 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:243"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $a_1 < a_2 < \\dots$ be a sequence of integers such that $\\lim_{n\\to\\infty} \\frac{a_n}{a_{n-1}^2} = 1$ and $\\sum \\frac{1}{a_n} \\in \\mathbb{Q}$. Then, for all sufficiently large $n \\ge 1$, $a_n = a_{n-1}^2 - a_{n-1} + 1$."
+notes = "Erdos Problem 243 -- https://www.erdosproblems.com/243"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/243.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E243"
+file = "E243.lean"
+module = "FtpEvalBench.E243"
+shape = "proof"
+track = "open"
+declaration = "erdos_243"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/243.lean#erdos_243"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "38b21f24f714d815"
+  conversion_hash = "56c2986af1c434b806a6e4b9c387cd25cf5efd349333bf4fe80fedf9c7482808"
+  semantic_anchor = "f777c00c0ab88fc4687ba1cea176aaa2de39d0015bd6cfabaf26d1a8cab55845"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,46 @@
+# erdos:489 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:489"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $A\\subseteq \\mathbb{N}$ be a set such that $\\lvert A\\cap [1,x]\\rvert=o(x^{1/2})$. Let $B=\\{ n\\geq 1 : a\\nmid n\\textrm{ for all }a\\in A\\}$. If $B=\\{b_1 < b_2 < \\cdots\\}$ then is it true that $$\\lim_{x \\to \\infty} \\frac{1}{x}\\sum_{b_i < x}(b_{i+1}-b_i)^2$$ exists (and is finite)? For example, when $A=\\{p^2: p\\textrm{ prime}\\}$ then $B$ is the set of squarefree numbers, and the existence of this limit was proved by Erdős. See also [208]."
+notes = "Erdos Problem 489 -- https://www.erdosproblems.com/489"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/489.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E489"
+file = "E489.lean"
+module = "FtpEvalBench.E489"
+shape = "decide"
+track = "solved"
+declaration = "erdos_489"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/489.lean#erdos_489"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d85019785ab1b027"
+  conversion_hash = "5b9564b6d8cce0f769d670ecd14c5bdfd8c7161ee51b508d4edbe345f28643d7"
+  semantic_anchor = "20f633e9b944946df6159feee84d5e7a06f532522e7883ec4cac602a3c931619"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

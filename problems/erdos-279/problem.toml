@@ -1,0 +1,68 @@
+# erdos:279 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:279"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $k\\geq 3$. Is there a choice of congruence classes $a_p\\pmod{p}$ for every prime $p$ such that all sufficiently large integers can be written as $a_p+tp$ for some prime $p$ and integer $t\\geq k$?"
+notes = "Erdos Problem 279 -- https://www.erdosproblems.com/279"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/279.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E279_prove"
+file = "E279_prove.lean"
+module = "FtpEvalBench.E279_prove"
+shape = "prove"
+track = "open"
+pair_id = "E279"
+declaration = "erdos_279"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/279.lean#erdos_279"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8cdab85ce1444b17"
+  conversion_hash = "c2de43c88124acb9947bb95895d9c34b2814a96cff6674c0be5f591d5dee3d62"
+  semantic_anchor = "f3ee43512eed2b106adf559949e2d14ba098293cf97fa45f2e7eae6a243a8166"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E279_refute"
+file = "E279_refute.lean"
+module = "FtpEvalBench.E279_refute"
+shape = "refute"
+track = "open"
+pair_id = "E279"
+declaration = "erdos_279"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/279.lean#erdos_279"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "0483e41d0b409318"
+  conversion_hash = "7666381430f78da210a1e2b3f2b00755560d5bbba90652f956ce8a28753ff550"
+  semantic_anchor = "940f8727afd58f27284d5bdfcca3439f6245c92c799a12a1b640c337828cd4dd"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

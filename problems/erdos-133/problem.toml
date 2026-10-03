@@ -1,0 +1,46 @@
+# erdos:133 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:133"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $f(n)$ be minimal such that every triangle-free graph $G$ with $n$ vertices and diameter $2$ contains a vertex with degree $\\geq f(n)$. What is the order of growth of $f(n)$? Does $f(n)/\\sqrt{n}\\to \\infty$? Asked by Erdős and Pach. The lower bound $f(n)\\geq (1-o(1))\\sqrt{n}$ follows from the fact that a graph with maximum degree $d$ and diameter $2$ has at most $1+d+d(d-1)=d^2+1$ many vertices. Hanson and Seyffarth [HaSe84] proved that $f(n)\\leq (\\sqrt{2}+o(1))\\sqrt{n}$ using a Cayley graph on $\\mathbb{Z}/n\\mathbb{Z}$, with the generating set given by some symmetric complete sum-free set of size $\\sim \\sqrt{n}$. An alternative construction of such a complete sum-free set was given by Haviv and Levy [HaLe18]. Füredi and Seress [FuSe94] proved that $f(n)\\leq (\\frac{2}{\\sqrt{3}}+o(1))\\sqrt{n}$. In particular $f(n)/\\sqrt{n}\\not\\to\\infty$. The precise asymptotics of $f(n)$ are unknown; Alon believes that the truth is $f(n)\\sim \\sqrt{n}$."
+notes = "Erdos Problem 133 -- https://www.erdosproblems.com/133"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/133.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E133"
+file = "E133.lean"
+module = "FtpEvalBench.E133"
+shape = "decide"
+track = "solved"
+declaration = "erdos_133"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/133.lean#erdos_133"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "6708139663248917"
+  conversion_hash = "3f90919cefc8c4a515041631348f21463dfbc2fc0dc363502ba64ff14739af8e"
+  semantic_anchor = "bcd130b2c321e84ba54360ed029f33841596bc831cc6c4b0d14744108b5a1afd"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

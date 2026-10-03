@@ -1,0 +1,46 @@
+# erdos:694 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:694"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $f_\\max(n)$ be the largest $m$ such that $\\phi(m) = n$, and $f_\\min(n)$ be the smallest such $m$, where $\\phi$ is Euler's totient function. Investigate $$ \\max_{n\\leq x}\\frac{f_\\max(n)}{f_\\min(n)}. $$ GPT-5.5 Pro (prompted by Price) has proved (see also the comments for a summary) that $$ \\max_{n\\leq x}\\frac{f_{\\max}(n)}{f_{\\min}(n)}=(e^\\gamma+o(1))\\log\\log x. $$ A Lean formalisation of the reduction exists, conditional on Mertens' product theorem and Linnik's theorem; see the [formal proof](https://github.com/Shashi456/erdos-formalizations/blob/main/Erdos/P694/Proof.lean). The extrema are only required on nonempty fibres of the totient (values such as $3$ have no preimage), and the identity is asked for sufficiently large $x$: at $x = 1$ the maximum is $f_\\max(1) / f_\\min(1) = 2$ while $\\log \\log 1 = 0$."
+notes = "Erdos Problem 694 -- https://www.erdosproblems.com/694"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/694.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E694"
+file = "E694.lean"
+module = "FtpEvalBench.E694"
+shape = "proof"
+track = "solved"
+declaration = "erdos_694"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/694.lean#erdos_694"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "80809e9064e4ed8b"
+  conversion_hash = "1e6e4ffb1964329c882d71201d983b5f1304f3a777cc43afde0746a9645187a1"
+  semantic_anchor = "3905ac8ee07c0eec9eaa5794b22016308b4f629f945430623cf6c4eb352b2da7"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

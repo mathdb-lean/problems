@@ -1,0 +1,68 @@
+# erdos:970 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:970"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $h(k)$ be Jacobsthal's function, defined to as the minimal $m$ such that, if $n$ has at most $k$ prime factors, then in any set of $m$ consecutive integers there exists an integer coprime to $n$. Determine the order of magnitude of $h(k)$. In particular, is it true that $$h(k) \\ll k^2?$$"
+notes = "Erdos Problem 970 -- https://www.erdosproblems.com/970"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/970.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E970_prove"
+file = "E970_prove.lean"
+module = "FtpEvalBench.E970_prove"
+shape = "prove"
+track = "open"
+pair_id = "E970"
+declaration = "erdos_970"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/970.lean#erdos_970"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c450bf387e7dc9f6"
+  conversion_hash = "acbbd5eec5d66539603d73db1ea2ba9ba689823ce3f98e05598e609a3481ad5b"
+  semantic_anchor = "86efee3c2452a9dbf2be4b7ac8a7ff346a73ba60870cebe629568675469b7d4e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E970_refute"
+file = "E970_refute.lean"
+module = "FtpEvalBench.E970_refute"
+shape = "refute"
+track = "open"
+pair_id = "E970"
+declaration = "erdos_970"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/970.lean#erdos_970"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8947e5f9482289e0"
+  conversion_hash = "9a56e3605c06bc9d72a0d53916c6f4293178d3c64d64a8be946732c8777b5d02"
+  semantic_anchor = "1af6d3390c1a4ce9e51003cdeccd2b07556fc3b1cff4667e1952474146f0ca73"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

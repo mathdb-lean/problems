@@ -1,0 +1,46 @@
+# erdos:487 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:487"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $A\\subseteq \\mathbb{N}$ have positive density. Must there exist distinct $a,b,c\\in A$ such that $[a,b]=c$ (where $[a,b]$ is the least common multiple of $a$ and $b$)? This is true, a consequence of the positive solution to [447] by Kleitman [Kl71]. Davenport and Erdős [DaEr36] showed that there must exist an infinite sequence $a_1<a_2\\cdots$ in $A$ such that $a_i\\mid a_j$ for all $i\\leq j$, under the assumption that the upper logarithmic density of $A$ is positive."
+notes = "Erdos Problem 487 -- https://www.erdosproblems.com/487"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/487.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E487"
+file = "E487.lean"
+module = "FtpEvalBench.E487"
+shape = "decide"
+track = "solved"
+declaration = "erdos_487"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/487.lean#erdos_487"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "86a3c58d5e82de05"
+  conversion_hash = "dffe7941faa5e787213dcf293c2df15f0dbb804e225f42d12f1e14ad0e21d30e"
+  semantic_anchor = "522a53f1615567a3e5c0e3958d5526e7387717fd9c86a9c39d5c63ff4cbafd77"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

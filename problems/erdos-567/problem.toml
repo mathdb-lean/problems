@@ -1,0 +1,158 @@
+# erdos:567 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:567"
+collection = "erdos"
+tasks = 6
+reviewed_by_a_person = false
+prose = "**Erdős Problem 567 (Q3)** Is $Q_3$ (the 3-dimensional hypercube) Ramsey size linear?"
+notes = "Erdos Problem 567 -- https://www.erdosproblems.com/567"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/567.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E567_parts_i_prove"
+file = "E567_parts_i_prove.lean"
+module = "FtpEvalBench.E567_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E567_parts_i"
+declaration = "erdos_567.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/567.lean#erdos_567.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "75b683e799584520"
+  conversion_hash = "0538a2d64c25911668595bb066bd1ce83b4e050be8babe5c13166c483fdeb770"
+  semantic_anchor = "637356925224644a4de792562ee322c842af97fce48055ee4795026392e46416"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E567_parts_i_refute"
+file = "E567_parts_i_refute.lean"
+module = "FtpEvalBench.E567_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E567_parts_i"
+declaration = "erdos_567.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/567.lean#erdos_567.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "928fcb562f7af10a"
+  conversion_hash = "1254a527ecb1edf5a13c657e4c4dff15a4b9fe3a1e534d4affc8f2e29b64059d"
+  semantic_anchor = "ccf0b367b253d89a1dc9d10c11e683e1e4e0dd13ffbefa49adc15417485b2021"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E567_parts_ii_prove"
+file = "E567_parts_ii_prove.lean"
+module = "FtpEvalBench.E567_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E567_parts_ii"
+declaration = "erdos_567.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/567.lean#erdos_567.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9bdaf3d0dce69bcc"
+  conversion_hash = "d334124f41012db49b0ff4b9a3317ca522c2973172ab888e874bf973c24e566e"
+  semantic_anchor = "9dec71514130e608d25afe61515ea719396506b7d62adc562c46301498143b04"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E567_parts_ii_refute"
+file = "E567_parts_ii_refute.lean"
+module = "FtpEvalBench.E567_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E567_parts_ii"
+declaration = "erdos_567.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/567.lean#erdos_567.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "f4f828345eb11a71"
+  conversion_hash = "3a9cd70eef05ff3b8184292fe1c206aac2cb50dfe7b8611e3035cd64a7936e9f"
+  semantic_anchor = "58a2e478afec26e0f6b42c50ec30a8c1095ca32f529ec14be28d408ed07e9748"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E567_parts_iii_prove"
+file = "E567_parts_iii_prove.lean"
+module = "FtpEvalBench.E567_parts_iii_prove"
+shape = "prove"
+track = "open"
+part = "iii"
+pair_id = "E567_parts_iii"
+declaration = "erdos_567.parts.iii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/567.lean#erdos_567.parts.iii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "020621425048ef98"
+  conversion_hash = "1dfb535bbb14a0f912feb2433d0f5bef723c92e5e1480006eb913dbd8289f073"
+  semantic_anchor = "5b416230b6eb979d5892bf2fa3bd57ccd28fc9528781258cb909308aa5f37de7"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E567_parts_iii_refute"
+file = "E567_parts_iii_refute.lean"
+module = "FtpEvalBench.E567_parts_iii_refute"
+shape = "refute"
+track = "open"
+part = "iii"
+pair_id = "E567_parts_iii"
+declaration = "erdos_567.parts.iii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/567.lean#erdos_567.parts.iii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d7428468752833e5"
+  conversion_hash = "4c12a94226ce03cc991a27f1f4bf637a5b27dad234671565b44baa754ebbe768"
+  semantic_anchor = "16e66e69892d9fc011010aa080e8af823f910e4ccc7e9d2d53848ddb68317b79"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

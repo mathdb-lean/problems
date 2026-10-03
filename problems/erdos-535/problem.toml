@@ -1,0 +1,46 @@
+# erdos:535 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:535"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $r \\geq 3$, and let $f_r(N)$ denote the size of the largest subset of $\\{1,\\ldots,N\\}$ such that no subset of size $r$ has the same pairwise greatest common divisor between all elements. Erdős [Er64] proved that $f_3(N) > N^{c/\\log\\log N}$ for some constant $c > 0$, and conjectured this should also be an upper bound; here we state the conjectural upper bound for all $r \\geq 3$. See also [536]."
+notes = "Erdos Problem 535 -- https://www.erdosproblems.com/535"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/535.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E535"
+file = "E535.lean"
+module = "FtpEvalBench.E535"
+shape = "proof"
+track = "open"
+declaration = "erdos_535"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/535.lean#erdos_535"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "98f3af44a41d4143"
+  conversion_hash = "cd7e815e66fc9198576b7f4b5c3e8a3bcf74a2802f841362332452cd152513da"
+  semantic_anchor = "ab51a5a40ade9faf5fc8714bf2f6903e5abba8875472de8c2968fb82d20441be"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

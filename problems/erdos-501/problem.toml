@@ -1,0 +1,68 @@
+# erdos:501 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:501"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "For every $x \\in \\mathbb{R}$ let $A_x \\subset \\mathbb{R}$ be a bounded set with outer measure $< 1$. Must there exist an infinite independent set, that is, some infinite $X \\subseteq \\mathbb{R}$ such that $x \\notin A_y$ for all $x \\neq y \\in X$? If the sets $A_x$ are closed and have measure $< 1$, then must there exist an independent set of size $3$? Known results: Erdős–Hajnal [ErHa60] proved the existence of arbitrarily large finite independent sets. Hechler [He72] showed the answer is **no** assuming the continuum hypothesis."
+notes = "Erdos Problem 501 -- https://www.erdosproblems.com/501"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/501.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E501_prove"
+file = "E501_prove.lean"
+module = "FtpEvalBench.E501_prove"
+shape = "prove"
+track = "open"
+pair_id = "E501"
+declaration = "erdos_501"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/501.lean#erdos_501"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "3c18c2bd21f3004e"
+  conversion_hash = "68fe0a3acd3a7155ffc7fab45ca30d1a8ea53e29a88c4701fe02db3b16fdd965"
+  semantic_anchor = "47a7375afd9651eb84fbec557e04b76705c97bc90f0c10fee54dc8fd86a1f6bb"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E501_refute"
+file = "E501_refute.lean"
+module = "FtpEvalBench.E501_refute"
+shape = "refute"
+track = "open"
+pair_id = "E501"
+declaration = "erdos_501"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/501.lean#erdos_501"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "165f5680d729cbb6"
+  conversion_hash = "05c319e393c54c20234c3cffc0890b639646d594e0b63cf4e96fbd85002ae257"
+  semantic_anchor = "34d628c7a74678f6fff4c04ac97d1b97f13e5a7f313fe36f8e80e2a66b2cf189"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,46 @@
+# erdos:895 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:895"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Is it true that, for all sufficiently large $n$, if $G$ is a triangle-free graph on $\\{1,\\ldots,n\\}$ then there must exist three independent points $a,b,a+b$? A problem of Erdős and Hajnal [Er95d]. The stated problem has been resolved by Barber (personal communication) who verified using a SAT solver that this is true for all $n\\geq 18$."
+notes = "Erdos Problem 895 -- https://www.erdosproblems.com/895"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/895.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E895"
+file = "E895.lean"
+module = "FtpEvalBench.E895"
+shape = "decide"
+track = "solved"
+declaration = "erdos_895"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/895.lean#erdos_895"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "18ce9cc33199c7d3"
+  conversion_hash = "c211d4eec4a9a1fa4f962a4831bb912b84515ebd01001b9352e7d00ff368f8a4"
+  semantic_anchor = "750e03d7b31063154991a5e1f74a5e990ed15a7877d927d8264e752522ee7c80"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

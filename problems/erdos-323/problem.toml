@@ -1,0 +1,114 @@
+# erdos:323 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:323"
+collection = "erdos"
+tasks = 4
+reviewed_by_a_person = false
+prose = "Is it true that $f_{k,k}(x) \\gg_\\epsilon x^{1-\\epsilon}$ for all $\\epsilon>0$? This would have significant applications to Waring's problem. Erdős and Graham describe this as 'unattackable by the methods at our disposal'."
+notes = "Erdos Problem 323 -- https://www.erdosproblems.com/323"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/323.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E323_parts_i_prove"
+file = "E323_parts_i_prove.lean"
+module = "FtpEvalBench.E323_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E323_parts_i"
+declaration = "erdos_323.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/323.lean#erdos_323.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "a60a27bdea14dc61"
+  conversion_hash = "9b8065e1312aaea253ce4e07e00e56378b1021a43d406517f859d120b30c7d83"
+  semantic_anchor = "3a208aa92b80beffc9ccebaad15d9656c4636c2abd78ef3646eddf7afe5c8653"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E323_parts_i_refute"
+file = "E323_parts_i_refute.lean"
+module = "FtpEvalBench.E323_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E323_parts_i"
+declaration = "erdos_323.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/323.lean#erdos_323.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "18354e5608c4c2e5"
+  conversion_hash = "b95fb8c6b03182695ef541c04ca5630fa0c1f10e3f4603defcee1891f87aac5f"
+  semantic_anchor = "6f9c278d55c42f415c465ad027573718ada01c8d64db342abfdd0bfdb06081bb"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E323_parts_ii_prove"
+file = "E323_parts_ii_prove.lean"
+module = "FtpEvalBench.E323_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E323_parts_ii"
+declaration = "erdos_323.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/323.lean#erdos_323.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "eab10641b3382fc3"
+  conversion_hash = "70ecf2a65d98728163f3a12af9374b7dfb93a51608765889ad64f1babfcb5947"
+  semantic_anchor = "128760fb9e9da60759a88579b377512be1d2cab97332704e431b29445c2769a2"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E323_parts_ii_refute"
+file = "E323_parts_ii_refute.lean"
+module = "FtpEvalBench.E323_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E323_parts_ii"
+declaration = "erdos_323.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/323.lean#erdos_323.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ce7beb33142cff06"
+  conversion_hash = "6700ea47253b72d0ff3eb875b3a1f999d79475d1b6444cdf8e42538c23096791"
+  semantic_anchor = "ee8074295e479ac6a9ba54e3e35f59471d343cea73de7842565cc5bd9d31535b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,46 @@
+# erdos:617 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:617"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $r\\geq 3$. If the edges of $K_{r^2+1}$ are $r$-coloured then there exist $r+1$ vertices with at least one colour missing on the edges of the induced $K_{r+1}$. In other words, there is no balanced colouring. A conjecture of Erdős and Gyárfás [ErGy99]."
+notes = "Erdos Problem 617 -- https://www.erdosproblems.com/617"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/617.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E617"
+file = "E617.lean"
+module = "FtpEvalBench.E617"
+shape = "proof"
+track = "open"
+declaration = "erdos_617"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/617.lean#erdos_617"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "81dac73cc9aad217"
+  conversion_hash = "c5ceaa2e8f03a1eaee07b81098ee1f14ebe6b6e0ca7ba691c50bac8fd186a00a"
+  semantic_anchor = "faa7fef712554969f66895e4b6b187a484bddb4c3bf56ac1da8998a0836c2319"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

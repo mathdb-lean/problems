@@ -1,0 +1,158 @@
+# erdos:770 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:770"
+collection = "erdos"
+tasks = 6
+reviewed_by_a_person = false
+prose = "For every prime `p`, does the density of integers with `h n = p` exist?"
+notes = "Erdos Problem 770 -- https://www.erdosproblems.com/770"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/770.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E770_parts_i_prove"
+file = "E770_parts_i_prove.lean"
+module = "FtpEvalBench.E770_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E770_parts_i"
+declaration = "erdos_770.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/770.lean#erdos_770.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "860899ecb68f10c2"
+  conversion_hash = "aeffe1e8faf3cf1f7ba6a4daf7bfdf79a3eda0c83191bfc3b1ee27317b973039"
+  semantic_anchor = "72750a2fb9f1b4b836d97aefa42f5e4d00f0722940b4ea2088d4a34e32bda5ea"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E770_parts_i_refute"
+file = "E770_parts_i_refute.lean"
+module = "FtpEvalBench.E770_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E770_parts_i"
+declaration = "erdos_770.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/770.lean#erdos_770.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9242cf09bc745fda"
+  conversion_hash = "f3db08bf88a5a3ec413e29fc08a0a6848317090eea347884df3a1fea6bd12ee3"
+  semantic_anchor = "105fee5c07a85799d7372ab4ee11a3f5fc207ea3e43ec66dae5c679ec2c8481d"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E770_parts_ii_prove"
+file = "E770_parts_ii_prove.lean"
+module = "FtpEvalBench.E770_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E770_parts_ii"
+declaration = "erdos_770.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/770.lean#erdos_770.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b315bda9d0442816"
+  conversion_hash = "6f8c6644bf71b777afb48baf6b88c1aa86f0697b15dc2852bf2d88d4ca9e2e55"
+  semantic_anchor = "0daf369cce8ec797d4d539652594b5b31c32d0c3eb041d136df3e2f27895dd46"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E770_parts_ii_refute"
+file = "E770_parts_ii_refute.lean"
+module = "FtpEvalBench.E770_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E770_parts_ii"
+declaration = "erdos_770.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/770.lean#erdos_770.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7cc76d6504da99a7"
+  conversion_hash = "576e575fbd7a6fdd27b66b621f1fb00a17620e58876c03f6e90d37d51a5a84fb"
+  semantic_anchor = "b2f286952c5c8654b509872db3441b9e5350583de4b4ee728ac038a332abbf16"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E770_parts_iii_prove"
+file = "E770_parts_iii_prove.lean"
+module = "FtpEvalBench.E770_parts_iii_prove"
+shape = "prove"
+track = "open"
+part = "iii"
+pair_id = "E770_parts_iii"
+declaration = "erdos_770.parts.iii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/770.lean#erdos_770.parts.iii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c099227cb17cb310"
+  conversion_hash = "c49e8c5135a8eee1bc5f9be55e32de28ddae173aaec7c7f20c0581af149e578e"
+  semantic_anchor = "d18144e3f35233ca737c8fe054acc8d02729510be660a52bc6412d6adff7403d"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E770_parts_iii_refute"
+file = "E770_parts_iii_refute.lean"
+module = "FtpEvalBench.E770_parts_iii_refute"
+shape = "refute"
+track = "open"
+part = "iii"
+pair_id = "E770_parts_iii"
+declaration = "erdos_770.parts.iii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/770.lean#erdos_770.parts.iii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "a59920b638e9267c"
+  conversion_hash = "2bcb86949479efb5d980751dbd9a4fe3fa7b48cbfdfd9b1f66ed1275c95a7114"
+  semantic_anchor = "fd23b360fe5344d75f9958e87dfe6298ea7ce9ca99509b86d3ba9322026e1955"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

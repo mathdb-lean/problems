@@ -1,0 +1,89 @@
+# erdos:119 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:119"
+collection = "erdos"
+tasks = 3
+reviewed_by_a_person = false
+prose = "Is it true that $\\limsup M_n = \\infty$? This is Problem 4.1 in [Ha74] where it is attributed to Erdős. The weaker conjecture that $\\limsup M_n=\\infty$ was proved by Wagner [Wa80], who show that there is some $c>0$ with $M_n>(\\log n)^c$ infinitely often."
+notes = "Erdos Problem 119 -- https://www.erdosproblems.com/119"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/119.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E119_parts_i"
+file = "E119_parts_i.lean"
+module = "FtpEvalBench.E119_parts_i"
+shape = "decide"
+track = "solved"
+part = "i"
+declaration = "erdos_119.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/119.lean#erdos_119.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "44cad31798e1146e"
+  conversion_hash = "c8461dc27d1ec76905c72b2a3f14731609efb6bf2227087cd2559cf95b593350"
+  semantic_anchor = "0beb58e02b6c551f812e515fe7ca056e558fdc37d796313cf99f75847d5a6634"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E119_parts_ii"
+file = "E119_parts_ii.lean"
+module = "FtpEvalBench.E119_parts_ii"
+shape = "decide"
+track = "solved"
+part = "ii"
+declaration = "erdos_119.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/119.lean#erdos_119.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "10f21275fdc4d26d"
+  conversion_hash = "7f6075796f50fa3f3804c4e263212ff1a44763233721ec6b63b9b7221a1adfac"
+  semantic_anchor = "a468d82c2694d75494a06c42e714e24b02ea24e1e7a1fde7c420c5f349d50037"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E119_parts_iii"
+file = "E119_parts_iii.lean"
+module = "FtpEvalBench.E119_parts_iii"
+shape = "decide"
+track = "solved"
+part = "iii"
+declaration = "erdos_119.parts.iii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/119.lean#erdos_119.parts.iii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7643d89d9bfb3d11"
+  conversion_hash = "4f099bc358c78da31c47f31f778c46db89bc800c13b98c828a0498fbbcbb2994"
+  semantic_anchor = "a338d347509877f857a29c50ac02bf326874984c966a75485858eb15ccc65a8a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

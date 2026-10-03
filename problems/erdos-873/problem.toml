@@ -1,0 +1,68 @@
+# erdos:873 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:873"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $A = \\{a_1 < a_2 < \\dots\\} \\subseteq \\mathbb{N}$ and let $F(A,X,k)$ count the number of $i$ such that $[a_i,a_{i+1}, \\dots ,a_{i+k−1}] < X$, where the left-hand side is the least common multiple. Is it true that, for every $\\epsilon > 0$, there exists some $k$ such that $F(A,X,k) < X^\\epsilon$?"
+notes = "Erdos Problem 873 -- https://www.erdosproblems.com/873"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/873.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E873_prove"
+file = "E873_prove.lean"
+module = "FtpEvalBench.E873_prove"
+shape = "prove"
+track = "open"
+pair_id = "E873"
+declaration = "erdos_873"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/873.lean#erdos_873"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ab4c45a37d882949"
+  conversion_hash = "0e9c1ec3c0688468551946fcc72afa91a2111fc7a6bf27088d434f95fc0b45ad"
+  semantic_anchor = "d8b20f7a8b2f4df0d3a3a3f72c3d0aed105154ed3681dd00e32a6dee455f2de4"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E873_refute"
+file = "E873_refute.lean"
+module = "FtpEvalBench.E873_refute"
+shape = "refute"
+track = "open"
+pair_id = "E873"
+declaration = "erdos_873"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/873.lean#erdos_873"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "09d00328d7b58084"
+  conversion_hash = "79555f89f0628f8f5b9e23f17cba26c2ef66b1feeb6f66aebdf806bdd4db0609"
+  semantic_anchor = "18705d1940175c69c4f9a7d9bb97c0b01746bd90038bb0a42129b9c792f6d443"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

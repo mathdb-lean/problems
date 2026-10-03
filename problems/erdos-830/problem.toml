@@ -1,0 +1,114 @@
+# erdos:830 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:830"
+collection = "erdos"
+tasks = 4
+reviewed_by_a_person = false
+prose = "**Erdos Problem 830, Part 1** We say that $a,b\\in \\mathbb{N}$ are an amicable pair if $\\sigma(a)=\\sigma(b)=a+b$. Are there infinitely many amicable pairs?"
+notes = "Erdos Problem 830 -- https://www.erdosproblems.com/830"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/830.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E830_parts_i_prove"
+file = "E830_parts_i_prove.lean"
+module = "FtpEvalBench.E830_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E830_parts_i"
+declaration = "erdos_830.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/830.lean#erdos_830.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ca0baef4f4996efa"
+  conversion_hash = "71c91f111c75f288f019807a09721daedcfed824a3284dbb76397118a9e16d65"
+  semantic_anchor = "9785630c081057f8c70575a5cf66485e986fe2a385c7519383e3fc1e0fc5177f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E830_parts_i_refute"
+file = "E830_parts_i_refute.lean"
+module = "FtpEvalBench.E830_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E830_parts_i"
+declaration = "erdos_830.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/830.lean#erdos_830.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "6686ed9253127b7f"
+  conversion_hash = "f7f72ef418a2e2aab9a5c1faec49568f75c325c7acc33234e540118fe855baa2"
+  semantic_anchor = "3e94d6003e9542d243d9dcc0e87d941e91d61eca25435bf59550a2f922cd8110"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E830_parts_ii_prove"
+file = "E830_parts_ii_prove.lean"
+module = "FtpEvalBench.E830_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E830_parts_ii"
+declaration = "erdos_830.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/830.lean#erdos_830.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9ea689cb7a07d5f0"
+  conversion_hash = "58e22ba1cea1df40139f2b0fcf01f30048c772b3b7313045839cbbd2b808b196"
+  semantic_anchor = "184ef16ae7daaeab72a840cd3b82fb14620c736be34c311ac5b2887ff8fca5ea"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E830_parts_ii_refute"
+file = "E830_parts_ii_refute.lean"
+module = "FtpEvalBench.E830_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E830_parts_ii"
+declaration = "erdos_830.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/830.lean#erdos_830.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "634a9af0172d5678"
+  conversion_hash = "fdb347cdf0ff3beecba9ffbe2904009fde4d14e01268ef0513229701c9a025af"
+  semantic_anchor = "d012cbcb0b0160bc77bbee245dc3e3c8082d78f840ddc2a7310ecafe7e4cb163"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

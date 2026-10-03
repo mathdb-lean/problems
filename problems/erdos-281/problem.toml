@@ -1,0 +1,46 @@
+# erdos:281 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:281"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $n_1<n_2<\\cdots$ be an infinite sequence such that, for any choice of congruence classes $a_i\\pmod{n_i}$, the set of integers not satisfying any of the congruences $a_i\\pmod{n_i}$ has density $0$. Is it true that for every $\\epsilon>0$ there exists some $k$ such that, for every choice of congruence classes $a_i$, the density of integers not satisfying any of the congruences $a_i\\pmod{n_i}$ for $1\\leq i\\leq k$ is less than $\\epsilon$? The answer is yes; the linked Lean proof formalizes Somani's argument."
+notes = "Erdos Problem 281 -- https://www.erdosproblems.com/281"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/281.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E281"
+file = "E281.lean"
+module = "FtpEvalBench.E281"
+shape = "decide"
+track = "solved"
+declaration = "erdos_281"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/281.lean#erdos_281"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "3d8298ceb406d5ad"
+  conversion_hash = "28109529276015ba208151ad8d973bfa9bb7103d7278eab871960157d3735c84"
+  semantic_anchor = "b56190767f5938b91eb3b227f649ee9948ab4aabe2c21bc06c98953dbe8fae31"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

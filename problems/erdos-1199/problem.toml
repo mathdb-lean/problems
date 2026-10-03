@@ -1,0 +1,68 @@
+# erdos:1199 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1199"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Is it true that in any 2-colouring of $\\mathbb{N}$ there exists an infinite set $A$ such that all elements of $A+A$ are the same colour? A conjecture of Owings [Ow74]."
+notes = "Erdos Problem 1199 -- https://www.erdosproblems.com/1199"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1199.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1199_prove"
+file = "E1199_prove.lean"
+module = "FtpEvalBench.E1199_prove"
+shape = "prove"
+track = "open"
+pair_id = "E1199"
+declaration = "erdos_1199"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1199.lean#erdos_1199"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e7a8fd9fb57c8994"
+  conversion_hash = "6467edae5e803d58b81873416a4a5f275852140527ea2eeb22d36d08d953f5c3"
+  semantic_anchor = "41184726709b081d02d7d7ab7e43adf4d412527f6959c252ad52c73e099888b1"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1199_refute"
+file = "E1199_refute.lean"
+module = "FtpEvalBench.E1199_refute"
+shape = "refute"
+track = "open"
+pair_id = "E1199"
+declaration = "erdos_1199"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1199.lean#erdos_1199"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "5c648bb122548ff5"
+  conversion_hash = "cd020afd4177ff7d0ab64920e2eb4a16e7be3db81d514bd8e4b507f7ff6ad488"
+  semantic_anchor = "e0d2b6c81024ca21aee557d4722de50b27c45bb32843fe14073d7d129568a80f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

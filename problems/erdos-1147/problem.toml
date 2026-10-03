@@ -1,0 +1,46 @@
+# erdos:1147 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1147"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $\\alpha>0$ be an irrational number. Is the set $$A=\\left\\{ n\\geq 1: \\| \\alpha n^2\\| < \\frac{1}{\\log n}\\right\\},$$ where $\\|\\cdot\\|$ denotes the distance to the nearest integer, an additive basis of order $2$? This was disproved by Konieczny [Ko16b], and is false both for almost every $\\alpha>0$, and also is false specifically for $\\alpha=\\sqrt{2}$. More generally, given any $\\epsilon(n)\\to 0$, the set $A=\\{ n\\geq 1: \\| \\alpha n^2\\| < \\epsilon(n)\\}$ is not an additive basis of order $2$ for almost every $\\alpha>0$."
+notes = "Erdos Problem 1147 -- https://www.erdosproblems.com/1147"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1147.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1147"
+file = "E1147.lean"
+module = "FtpEvalBench.E1147"
+shape = "decide"
+track = "solved"
+declaration = "erdos_1147"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1147.lean#erdos_1147"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b391d1ddc17a1332"
+  conversion_hash = "7de3a2820486fee6454f507ad37ab18e9ee897cc10490fb61e649c7166f2455e"
+  semantic_anchor = "75d49e4920a44af81649ab6d3f1d691161cb8c739089ed2d59bceb213d5cd0d1"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

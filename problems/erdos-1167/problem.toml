@@ -1,0 +1,68 @@
+# erdos:1167 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1167"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "**Erdős Problem 1167.** Let $r \\geq 2$ be finite, $\\gamma \\geq 2$, and $\\lambda$ be an infinite cardinal. Let $\\kappa_\\alpha > r$ be cardinals for all $\\alpha < \\gamma$. Is it true that $$2^\\lambda \\to (\\kappa_\\alpha + 1)_{\\alpha < \\gamma}^{r+1}$$ implies $$\\lambda \\to (\\kappa_\\alpha)_{\\alpha < \\gamma}^r?$$ Here $+$ means cardinal addition, so that $\\kappa_\\alpha + 1 = \\kappa_\\alpha$ if $\\kappa_\\alpha$ is infinite. A problem of Erdős, Hajnal, and Rado."
+notes = "Erdos Problem 1167 -- https://www.erdosproblems.com/1167"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1167.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1167_prove"
+file = "E1167_prove.lean"
+module = "FtpEvalBench.E1167_prove"
+shape = "prove"
+track = "open"
+pair_id = "E1167"
+declaration = "erdos_1167"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1167.lean#erdos_1167"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "457f457ba5fdb4c2"
+  conversion_hash = "e10f4e4a68a4698ab15d7bfb67e13e40f0d4664901b1d2ab865edbc3b8c6fd0a"
+  semantic_anchor = "a15a90530e214d75de9d621bb0fa2f551ee6f30ce947b331259c996416482197"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1167_refute"
+file = "E1167_refute.lean"
+module = "FtpEvalBench.E1167_refute"
+shape = "refute"
+track = "open"
+pair_id = "E1167"
+declaration = "erdos_1167"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1167.lean#erdos_1167"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d932708c30d416e5"
+  conversion_hash = "0009b1eca3e9dee9c083560c51bb4b8151e8bdbb2ac95c7bf14a73836753e4c8"
+  semantic_anchor = "b602f88aa5984fb960c85d59378f47fd3dc3a43b33c2202afa1b90e342ad0017"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

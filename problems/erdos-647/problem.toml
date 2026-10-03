@@ -1,0 +1,68 @@
+# erdos:647 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:647"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $\\tau(n)$ count the number of divisors of $n$. Is there some $n > 24$ such that $$ \\max_{m < n}(m + \\tau(m)) \\leq n + 2? $$"
+notes = "Erdos Problem 647 -- https://www.erdosproblems.com/647"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/647.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E647_prove"
+file = "E647_prove.lean"
+module = "FtpEvalBench.E647_prove"
+shape = "prove"
+track = "open"
+pair_id = "E647"
+declaration = "erdos_647"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/647.lean#erdos_647"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "968738b7537e05c4"
+  conversion_hash = "7df8469fcb4566076e8771f67c668134e732bc39eacd2c24d60f54f5df384b4d"
+  semantic_anchor = "904df964929975cb6ecf09842526f00fe942a6ea4668cfe0d8d4cf6a0f99d75e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E647_refute"
+file = "E647_refute.lean"
+module = "FtpEvalBench.E647_refute"
+shape = "refute"
+track = "open"
+pair_id = "E647"
+declaration = "erdos_647"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/647.lean#erdos_647"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "45362f43f5bff84b"
+  conversion_hash = "023bd6e57b1f1c476f7ef313c7d2039af89725980ac3493475ed9f492b2f5505"
+  semantic_anchor = "7334bff7efeb25bc9caa6545d2210371ac26fa4a7407999396df223783bb163d"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

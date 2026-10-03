@@ -1,0 +1,68 @@
+# erdos:849 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:849"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Is it true that, for every integer $t\\geq1$, there is some integer $a$ such that ${n \\choose k} = a$ with $1\\leq k \\le \\frac{n}{2}$ has exactly $t$ solutions?"
+notes = "Erdos Problem 849 -- https://www.erdosproblems.com/849"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/849.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E849_prove"
+file = "E849_prove.lean"
+module = "FtpEvalBench.E849_prove"
+shape = "prove"
+track = "open"
+pair_id = "E849"
+declaration = "erdos_849"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/849.lean#erdos_849"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "39103a743fd7c7aa"
+  conversion_hash = "9fa0b2caea69a64dfa00c24a2c719f5b4feae35feccdd5c6a6e19e9103eb02bf"
+  semantic_anchor = "381ef534dd8044b7ea47677736f13c7014492d84504d74048058fd54bcc2be08"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E849_refute"
+file = "E849_refute.lean"
+module = "FtpEvalBench.E849_refute"
+shape = "refute"
+track = "open"
+pair_id = "E849"
+declaration = "erdos_849"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/849.lean#erdos_849"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9b7bf21770990536"
+  conversion_hash = "447f3594532f687b7f2fefd7ab770e72af31f15518995b75afe3798538e4207b"
+  semantic_anchor = "f7511a096764951e467abf1391fc853b508bf0f4cbaabc2a2c06c7e2dc0b9aad"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

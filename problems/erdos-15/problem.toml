@@ -1,0 +1,68 @@
+# erdos:15 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:15"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Is it true that $\\sum_{n=1}^\\infty(-1)^n\\frac{n}{p_n}$ converges, where $p_n$ is the sequence of primes? Note: In the problem statement, $p_n$ is the $n$-th prime, indexed such that $p_1=2, p_2=3, \\ldots$. We 0-index here to reflect how Nat.nth works. Note: convergence here is convergence of the sequence of partial sums, which is what the problem asks about. `Summable` would be the wrong notion: it is unconditional summability, equivalent over $\\mathbb{R}$ to absolute convergence, and $\\sum_n n/p_n$ diverges."
+notes = "Erdos Problem 15 -- https://www.erdosproblems.com/15"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/15.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E15_prove"
+file = "E15_prove.lean"
+module = "FtpEvalBench.E15_prove"
+shape = "prove"
+track = "open"
+pair_id = "E15"
+declaration = "erdos_15"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/15.lean#erdos_15"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "25d9067b9f831840"
+  conversion_hash = "342f7f6bc5647e9f5bafc3c6b724650c736f66f29696fab7b4d4e9d62144facc"
+  semantic_anchor = "3e38a362f16bf91da3ec21ba7dfcfe7393fcb37015a952cb4bab1cc4e78d4621"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E15_refute"
+file = "E15_refute.lean"
+module = "FtpEvalBench.E15_refute"
+shape = "refute"
+track = "open"
+pair_id = "E15"
+declaration = "erdos_15"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/15.lean#erdos_15"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c4ad45b6a79f8e37"
+  conversion_hash = "ffb57b4aa79a3b1b9c1da8382ae23dc4746b1edcd8c2141d11899d918cc4885e"
+  semantic_anchor = "d6132bec0e78bd1125ecb1623de58b0a54e7dcdb59b9f41570e98eaddcf43900"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

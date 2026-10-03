@@ -1,0 +1,114 @@
+# erdos:87 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:87"
+collection = "erdos"
+tasks = 4
+reviewed_by_a_person = false
+prose = "Let $0 < \\epsilon < 1$. Is it true that, if $k$ is sufficiently large, then $$R(G) > (1-\\epsilon)^k R(k)$$ for every graph $G$ with chromatic number $\\chi(G)=k$? The restriction $\\epsilon < 1$ excludes negative bases in $(1-\\epsilon)^k$. This problem is #12 in Ramsey Theory in the graphs problem collection."
+notes = "Erdos Problem 87 -- https://www.erdosproblems.com/87"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/87.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E87_parts_i_prove"
+file = "E87_parts_i_prove.lean"
+module = "FtpEvalBench.E87_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E87_parts_i"
+declaration = "erdos_87.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/87.lean#erdos_87.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d6effbd794d842e7"
+  conversion_hash = "4be089c126cc2d54b60ce2abc206e624ecc243bd4fcaf198891ff9b53a8d9ab8"
+  semantic_anchor = "03e393595843344afffa2811584bf47059b19f225f8a3a0d83259aaff343bfbb"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E87_parts_i_refute"
+file = "E87_parts_i_refute.lean"
+module = "FtpEvalBench.E87_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E87_parts_i"
+declaration = "erdos_87.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/87.lean#erdos_87.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c64b73648d98ca22"
+  conversion_hash = "673bfbdc0bb62365d870286eb2686c753be40b917b60f37b16a7ee0ad3c80a90"
+  semantic_anchor = "14ac9ef1f724700c996bbfa5b040586813ef334d2e6be9da048ae9c5f017155f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E87_parts_ii_prove"
+file = "E87_parts_ii_prove.lean"
+module = "FtpEvalBench.E87_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E87_parts_ii"
+declaration = "erdos_87.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/87.lean#erdos_87.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "1b219016ff657dff"
+  conversion_hash = "8d922e5809ae1d32fbdfad9bc0c4a6be282d5e14288510210cd1fcaeae8a7546"
+  semantic_anchor = "c917266e61808fa6ee931f21fd9a5f8fa61240210319537d7d9d61e36f51eaa5"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E87_parts_ii_refute"
+file = "E87_parts_ii_refute.lean"
+module = "FtpEvalBench.E87_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E87_parts_ii"
+declaration = "erdos_87.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/87.lean#erdos_87.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "00ad00d1d16f7808"
+  conversion_hash = "f6db4ec112cc992f4657eea1fd5f274ba74ce04da515083797ebae2b7f98948e"
+  semantic_anchor = "643250467a69a97861a44b66a2e42b988e12c12985d7d0f50716a3c2dcc16a03"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

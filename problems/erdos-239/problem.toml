@@ -1,0 +1,46 @@
+# erdos:239 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:239"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $f:\\mathbb{N}\\to \\{-1,1\\}$ be a multiplicative function. Is it true that $$ \\lim_{N\\to \\infty}\\frac{1}{N}\\sum_{n\\leq N}f(n)$$ always exists? The answer is yes, as proved by Wirsing [Wi67], and generalised by Halász [Ha68]."
+notes = "Erdos Problem 239 -- https://www.erdosproblems.com/239"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/239.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E239"
+file = "E239.lean"
+module = "FtpEvalBench.E239"
+shape = "decide"
+track = "solved"
+declaration = "erdos_239"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/239.lean#erdos_239"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "167ec78d4f59e0d0"
+  conversion_hash = "33a84ab0cbf4933ad97847a0cc4cfa9abf22425822c9f8e3d7032432757d4692"
+  semantic_anchor = "16b8fddf5958b90e541158ab734872031a55e74daa51499d912891881d99ae5d"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

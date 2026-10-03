@@ -1,0 +1,46 @@
+# erdos:215 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:215"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Does there exist $S\\subseteq \\mathbb{R}^2$ such that every set congruent to $S$ (that is, $S$ after some translation and rotation) contains exactly one point from $\\mathbb{Z}^2$? An old question of Steinhaus. Erdős was 'almost certain that such a set does not exist'. In fact, such a set does exist, as proved by Jackson and Mauldin [JaMa02]. Their construction depends on the axiom of choice. The plane is identified with $\\mathbb{C}$: the sets congruent to $S$ are the sets $uS + t$ with $\\lvert u\\rvert = 1$ and $t \\in \\mathbb{C}$, and $\\mathbb{Z}^2$ is the set of Gaussian integers."
+notes = "Erdos Problem 215 -- https://www.erdosproblems.com/215"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/215.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E215"
+file = "E215.lean"
+module = "FtpEvalBench.E215"
+shape = "decide"
+track = "solved"
+declaration = "erdos_215"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/215.lean#erdos_215"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7568ddd38dab2fbd"
+  conversion_hash = "639973386e094944a878cc6f493ff181e3ff44764bee8eeaa046283f010be6db"
+  semantic_anchor = "a08146d76e234e4c74ec56f89cb8a6f6e466512fb430c69a5397abe1f99b01e2"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

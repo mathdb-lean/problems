@@ -1,0 +1,46 @@
+# erdos:801 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:801"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If $G$ is a graph on $n$ vertices containing no independent set on $>n^{1/2}$ vertices then there is a set of $\\leq n^{1/2}$ vertices containing $\\gg n^{1/2}\\log n$ edges. Proved by Alon [Al96b]."
+notes = "Erdos Problem 801 -- https://www.erdosproblems.com/801"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/801.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E801"
+file = "E801.lean"
+module = "FtpEvalBench.E801"
+shape = "decide"
+track = "solved"
+declaration = "erdos_801"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/801.lean#erdos_801"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9b1edc3cd1e0bacb"
+  conversion_hash = "ef75a8be0d1d9d70dbdd63baec4e30311d5ab187bb5be82606caddd2f6f01e01"
+  semantic_anchor = "03f743119c69e266178c476a4ba9c7b8a1fed100c92aab79ea0d2a443581b4ed"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,68 @@
+# erdos:396 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:396"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Is it true that for every $k$ there exists $n$ such that $$\\prod_{0\\leq i\\leq k}(n-i) \\mid \\binom{2n}{n}?$$"
+notes = "Erdos Problem 396 -- https://www.erdosproblems.com/396"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/396.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E396_prove"
+file = "E396_prove.lean"
+module = "FtpEvalBench.E396_prove"
+shape = "prove"
+track = "open"
+pair_id = "E396"
+declaration = "erdos_396"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/396.lean#erdos_396"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c98d7837d80c0acf"
+  conversion_hash = "025205bf589e6f173b6cc8a29d825dfeaa51ceb0cb839610de43f8e7483e989c"
+  semantic_anchor = "25110432c5a77c912d7c36884b3eb3e7c3ffdc9cd384d534ad10293b36b7b85b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E396_refute"
+file = "E396_refute.lean"
+module = "FtpEvalBench.E396_refute"
+shape = "refute"
+track = "open"
+pair_id = "E396"
+declaration = "erdos_396"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/396.lean#erdos_396"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b26098e83de8ec34"
+  conversion_hash = "79f51e76794064f4f6c9155ee72312cb3efcbce2debc9461acf0c2fb4219d22a"
+  semantic_anchor = "490934bca070cc7c4ff36d3f3061f6aef90b9e21647aa5945740802ebff52303"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

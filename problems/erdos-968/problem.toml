@@ -1,0 +1,68 @@
+# erdos:968 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:968"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Does the set `{n | u n < u (n+1)}` have positive lower density?"
+notes = "Erdos Problem 968 -- https://www.erdosproblems.com/968"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/968.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E968_prove"
+file = "E968_prove.lean"
+module = "FtpEvalBench.E968_prove"
+shape = "prove"
+track = "open"
+pair_id = "E968"
+declaration = "erdos_968"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/968.lean#erdos_968"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e5c6ecd49c131279"
+  conversion_hash = "fc339fac92063ab9551b5702ee4d697cbbefc9a56b24e2d3a5e7bb883bcc5d22"
+  semantic_anchor = "b031ae2a5b2b2ed78ee0f4e69ec411ea173184cbc96be6185bcda2300312e416"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E968_refute"
+file = "E968_refute.lean"
+module = "FtpEvalBench.E968_refute"
+shape = "refute"
+track = "open"
+pair_id = "E968"
+declaration = "erdos_968"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/968.lean#erdos_968"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "383c0545830a7e36"
+  conversion_hash = "9a13b709e462f3d2b9afd64e569f08f942414c257244bdb83d2b4c3ec70bc5a0"
+  semantic_anchor = "958567959f41e5b75d5d8889bd16db1bfb7eb248e6977339e64ddbaeea80b38b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

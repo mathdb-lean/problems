@@ -1,0 +1,46 @@
+# erdos:485 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:485"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $f(k)$ be the minimum number of terms in $P(x)^2$, where $P \\in \\mathbb{Q}[x]$ ranges over all polynomials with exactly $k$ non-zero terms. Is it true that $f(k) \\to \\infty$ as $k \\to \\infty$? A conjecture of Erdős and Rényi (this is Problem 4.4 in [Ha74], attributed to Erdős); the function was first investigated by Rényi and Rédei [Re47], and Erdős [Er49b] proved that $f(k) < k^{1-c}$ for some $c > 0$. The answer is yes: Schinzel [Sc87] proved $f(k) > \\log \\log k / \\log 2$, and Schinzel and Zannier [ScZa09] improved this to $f(k) \\gg \\log k$."
+notes = "Erdos Problem 485 -- https://www.erdosproblems.com/485"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/485.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E485"
+file = "E485.lean"
+module = "FtpEvalBench.E485"
+shape = "decide"
+track = "solved"
+declaration = "erdos_485"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/485.lean#erdos_485"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d4ea233432f21771"
+  conversion_hash = "0d2afd6236675c1d1f521c1ef290c9e0a25a8845a8ff36c6752932926a99ab04"
+  semantic_anchor = "8559c58e714689d98644dcb872cd2c83f087453b1bddf8b73243083466a6a472"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

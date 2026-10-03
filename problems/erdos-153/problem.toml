@@ -1,0 +1,68 @@
+# erdos:153 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:153"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $A$ be a finite Sidon set and $A+A=\\{s_1<\\cdots<s_t\\}$. Is it true that $$\\frac{1}{t}\\sum_{1\\leq i<t}(s_{i+1}-s_i)^2 \\to \\infty$$ as $\\lvert A\\rvert\\to \\infty$?"
+notes = "Erdos Problem 153 -- https://www.erdosproblems.com/153"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/153.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E153_prove"
+file = "E153_prove.lean"
+module = "FtpEvalBench.E153_prove"
+shape = "prove"
+track = "open"
+pair_id = "E153"
+declaration = "erdos_153"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/153.lean#erdos_153"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "5789fe536f8c92dc"
+  conversion_hash = "8c65a3f89fa2c28e6841c699be5c5ca8fe6a70699be7f02cfeaf65cfe52704bd"
+  semantic_anchor = "0e2ba050cd6e31907872612cc11014684c02fb798ea22be620b1974a06be9f2a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E153_refute"
+file = "E153_refute.lean"
+module = "FtpEvalBench.E153_refute"
+shape = "refute"
+track = "open"
+pair_id = "E153"
+declaration = "erdos_153"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/153.lean#erdos_153"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d503342cb089dc8d"
+  conversion_hash = "bf29be6fbd3bca9db738b5cff39d179c815fef1227627cc2a10380d435283340"
+  semantic_anchor = "1ad4cffd2eeb4bc140c2974b5f05580271c6cfb5ee2e4d665d3164f56b6aec0e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,68 @@
+# erdos:1101 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1101"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "1. There is NO good sequence with polynomial growth."
+notes = "Erdos Problem 1101 -- https://www.erdosproblems.com/1101"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1101.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1101_parts_i"
+file = "E1101_parts_i.lean"
+module = "FtpEvalBench.E1101_parts_i"
+shape = "proof"
+track = "open"
+part = "i"
+declaration = "erdos_1101.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1101.lean#erdos_1101.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "4b1bd2d3ea48aae4"
+  conversion_hash = "f48b00595818bebcd6b9aeb51fe33c5504c12e52578aaa060c2d0f41bd9a479b"
+  semantic_anchor = "9090cfdf22918ec3894585f27e1e555402b6aefbc635c7fa939c37910c047e98"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1101_parts_ii"
+file = "E1101_parts_ii.lean"
+module = "FtpEvalBench.E1101_parts_ii"
+shape = "proof"
+track = "open"
+part = "ii"
+declaration = "erdos_1101.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1101.lean#erdos_1101.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "5af7436d5ac54a84"
+  conversion_hash = "590219866a6daadbb77d3bc53e0a55b5deaba4622a1f8c79f51a01661c2959f7"
+  semantic_anchor = "61fc09c1c8879f6cefec4b9f76009b76dd505ad3feb13ddd83e5aa65e3e23b0c"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

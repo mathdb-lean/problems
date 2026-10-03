@@ -1,0 +1,68 @@
+# erdos:50 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:50"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $f$ be the asymptotic distribution function of $\\varphi(n)/n$, so that for each $c \\in [0,1]$, $f(c)$ is the natural density of $\\{n : \\varphi(n) < cn\\}$. Is it true that there is no $x$ such that the derivative $f'(x)$ exists and is positive?"
+notes = "Erdos Problem 50 -- https://www.erdosproblems.com/50"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/50.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E50_prove"
+file = "E50_prove.lean"
+module = "FtpEvalBench.E50_prove"
+shape = "prove"
+track = "open"
+pair_id = "E50"
+declaration = "erdos_50"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/50.lean#erdos_50"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c5ace3fd6bbe8c2b"
+  conversion_hash = "bf08ef117bb90a6aea29c7bd0588a735ebec898a10c00307816981cfbfde8d90"
+  semantic_anchor = "c674081cc6d64bec676f6a0b417f2fbd66e4cc61bca6bffb0b928532ed53a729"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E50_refute"
+file = "E50_refute.lean"
+module = "FtpEvalBench.E50_refute"
+shape = "refute"
+track = "open"
+pair_id = "E50"
+declaration = "erdos_50"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/50.lean#erdos_50"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7f5c045c344f4103"
+  conversion_hash = "d36d5957cc39cc54bdf3941d256ab220078842e6799909a6b3245442ce76ca58"
+  semantic_anchor = "af2d767555392f5d424a4d9997f50c608383867805196c3f74bdb16c59372734"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

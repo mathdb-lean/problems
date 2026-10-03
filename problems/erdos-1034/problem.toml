@@ -1,0 +1,46 @@
+# erdos:1034 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1034"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $G$ be a graph on $n$ vertices with $>n^2/4$ many edges. Must there be a triangle $T$ in $G$ and vertices $y_1,\\ldots,y_t$, where $t>(\\frac{1}{2}-o(1))n$, such that every $y_i$ is joined to at least two vertices of $T$? A conjecture of Erdős and Faudree; a stronger version of [905]. This has been solved in the negative by Ma and Tang [MaTa25], who construct a graph with $n$ vertices and $>n^2/4$ edges in which every triangle has at most $(2-(5/2)^{1/2}+o(1))n$ vertices adjacent to at least two of its vertices (note that $2-(5/2)^{1/2}\\approx 0.4189$)."
+notes = "Erdos Problem 1034 -- https://www.erdosproblems.com/1034"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1034.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1034"
+file = "E1034.lean"
+module = "FtpEvalBench.E1034"
+shape = "decide"
+track = "solved"
+declaration = "erdos_1034"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1034.lean#erdos_1034"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9dbaa1dba6492dfc"
+  conversion_hash = "56646dada535d296869106b4db06ee1d1a6a44aaf30bd45e4170c7610fb593f1"
+  semantic_anchor = "9b18eaad1434440768e89b791e369539368d9a33dd6aaf887faecf6a7aa294c5"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,68 @@
+# erdos:30 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:30"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Is it true that, for every $\\varepsilon > 0$, $h(N) = \\sqrt N + O_{\\varepsilon}(N^\\varepsilon)$"
+notes = "Erdos Problem 30 -- https://www.erdosproblems.com/30"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/30.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E30_prove"
+file = "E30_prove.lean"
+module = "FtpEvalBench.E30_prove"
+shape = "prove"
+track = "open"
+pair_id = "E30"
+declaration = "erdos_30"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/30.lean#erdos_30"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "0ab724da6bf8e5dd"
+  conversion_hash = "8e50ed0583f1b07bad3ecbc5f50fe0a4910d615c108b1dd06cc64b84e8d54393"
+  semantic_anchor = "4b2ad7572269487bb44d5d4b5fb58752057910f3fc551e51b9a2d7b2344fc2eb"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E30_refute"
+file = "E30_refute.lean"
+module = "FtpEvalBench.E30_refute"
+shape = "refute"
+track = "open"
+pair_id = "E30"
+declaration = "erdos_30"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/30.lean#erdos_30"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "acf963a7502015cd"
+  conversion_hash = "fcb039b53dfaa0084142a6915e3f16067478f21bd928d8676350aa0064133a19"
+  semantic_anchor = "48421735a458e005b5d2f598841a27a98f643c3f76e1fd380e104aca86ad301e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,68 @@
+# erdos:200 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:200"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Does the longest arithmetic progression of primes in $\\{1,\\ldots,N\\}$ have length $o(\\log N)$?"
+notes = "Erdos Problem 200 -- https://www.erdosproblems.com/200"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/200.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E200_prove"
+file = "E200_prove.lean"
+module = "FtpEvalBench.E200_prove"
+shape = "prove"
+track = "open"
+pair_id = "E200"
+declaration = "erdos_200"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/200.lean#erdos_200"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "a3e6d0f01934715c"
+  conversion_hash = "572e7bbfc3ce120d7f0f0c56ce08c5ceff46e994f5a00bfbb17089b66c95bd8b"
+  semantic_anchor = "0ef84977a11ef5677abff41d71ace56f8f1b05390ca2fdd478f4c6ba6c058ded"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E200_refute"
+file = "E200_refute.lean"
+module = "FtpEvalBench.E200_refute"
+shape = "refute"
+track = "open"
+pair_id = "E200"
+declaration = "erdos_200"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/200.lean#erdos_200"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "cf8cce864a503b33"
+  conversion_hash = "5a103596d18a593c34a6c4e713b2d01e0640acbdb24d4622f5b62f5bd277d202"
+  semantic_anchor = "19dc3d9f3490b3eb538b89111b696967b9b1ef36aac5e49484973020167d0508"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

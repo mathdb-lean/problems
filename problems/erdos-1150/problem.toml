@@ -1,0 +1,68 @@
+# erdos:1150 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1150"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Is there some constant $c > 0$ such that, for all large enough $n$ and all polynomials $P$ of degree $n$ with coefficients in $\\{-1, 1\\}$, $$\\max_{|z|=1} |P(z)| > (1 + c) \\sqrt{n}?$$"
+notes = "Erdos Problem 1150 -- https://www.erdosproblems.com/1150"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1150.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1150_prove"
+file = "E1150_prove.lean"
+module = "FtpEvalBench.E1150_prove"
+shape = "prove"
+track = "open"
+pair_id = "E1150"
+declaration = "erdos_1150"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1150.lean#erdos_1150"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "133bfd28488eeaae"
+  conversion_hash = "defa57701c10709d6946d227a8252bafebbe6d16ed18c41ef80afee5e1cb7116"
+  semantic_anchor = "f7d17e0d842cfcd85c3dff2dfcd8111380303bf5abd8cb3e6a758e8e0efe4ecf"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1150_refute"
+file = "E1150_refute.lean"
+module = "FtpEvalBench.E1150_refute"
+shape = "refute"
+track = "open"
+pair_id = "E1150"
+declaration = "erdos_1150"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1150.lean#erdos_1150"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "352fea09959c2843"
+  conversion_hash = "af0e986f7597ff68d8e5b7e225bf6165951f422c43de2a94a9a2a0d2a29ed12d"
+  semantic_anchor = "073cabb9353848e65ef19f2e7bb6ed82e6e0c9f0625efaa5c509f485c1e918b6"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

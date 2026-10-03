@@ -1,0 +1,68 @@
+# erdos:455 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:455"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let `q : ℕ → ℕ` be a strictly increasing sequence of primes such that `q (n + 2) - q (n + 1) ≥ q (n + 1) - q n`. Must `lim q n / (n ^ 2) = ∞`?"
+notes = "Erdos Problem 455 -- https://www.erdosproblems.com/455"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/455.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E455_prove"
+file = "E455_prove.lean"
+module = "FtpEvalBench.E455_prove"
+shape = "prove"
+track = "open"
+pair_id = "E455"
+declaration = "erdos_455"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/455.lean#erdos_455"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "4e7bdc591fc8e484"
+  conversion_hash = "bfc0e44821832393dfedbfded5d3a0915e42bf014d9851bdbf76690b5699979a"
+  semantic_anchor = "7b758dc7cdb5233adb674ec4f41afcb28178cad8dd6d0dcdb8a7a8686779cfea"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E455_refute"
+file = "E455_refute.lean"
+module = "FtpEvalBench.E455_refute"
+shape = "refute"
+track = "open"
+pair_id = "E455"
+declaration = "erdos_455"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/455.lean#erdos_455"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "33807195e1d94bfe"
+  conversion_hash = "032135e9d664127be465400d71e1226cc07e909f3a21e2b0b0a647c2cfab762f"
+  semantic_anchor = "78d03a68a6f65d570c97783a2b11900705945b5435a3d788d3ea7620d01253e8"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

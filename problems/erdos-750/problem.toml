@@ -1,0 +1,46 @@
+# erdos:750 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:750"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $f(m)$ be some function such that $f(m)\\to \\infty$ as $m\\to \\infty$. Does there exist a graph $G$ of infinite chromatic number such that every subgraph on $m$ vertices contains an independent set of size at least $\\frac{m}{2}-f(m)$? Note that in [Er94b] the function $f$ generalises a (proven) result for $f(m) = \\epsilon m$, where $\\epsilon > 0$. Hence we should assume it is non-negative valued. The existence of such a graph was proved [UlamErdos750] by GPT 5.5 Pro (prompted by Chojecki). Indeed, this constructs a graph with infinite chromatic number such that every subgraph on $m$ vertices can be made bipartite after deleting at most $f(m)$ many vertices."
+notes = "Erdos Problem 750 -- https://www.erdosproblems.com/750"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/750.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E750"
+file = "E750.lean"
+module = "FtpEvalBench.E750"
+shape = "decide"
+track = "solved"
+declaration = "erdos_750"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/750.lean#erdos_750"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8a0c8ed9de21a380"
+  conversion_hash = "8a19362a1c96864d1b9335b358d0c377ad3ac389fa45528f0a6c5e3c6ff0b67a"
+  semantic_anchor = "ab63204ec7aa51525fa14f22dbb67fa8869622880b782abb1b5a78d304e32291"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,46 @@
+# erdos:369 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:369"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $\\epsilon>0$ and $k\\geq 2$. Is it true that, for all sufficiently large $n$, there is a sequence of $k$ consecutive integers in $\\{1,\\ldots,n\\}$ all of which are $n^\\epsilon$-smooth? The problem is trivially true as written (simply taking $\\{1,\\ldots,k\\}$ and $n>k^{1/\\epsilon}$). There are (at least) two possible variants which are non-trivial, and it is not clear which Erdős and Graham meant. We formalize the second: each $m\\in P$ (where $P$ is the sequence of $k$ consecutive integers sought for) must be in $[n/2,n]$. In this case a positive answer also follows directly from the result of Balog and Wooley [BaWo98] for infinitely many $n$. Proving this is true for all large $n$ does not follow immediately from [BaWo98], but can be deduced using a similar construction, as shown by SkyYang."
+notes = "Erdos Problem 369 -- https://www.erdosproblems.com/369"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/369.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E369"
+file = "E369.lean"
+module = "FtpEvalBench.E369"
+shape = "decide"
+track = "solved"
+declaration = "erdos_369"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/369.lean#erdos_369"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "366caf679a9ed9b4"
+  conversion_hash = "b4f22d91b4b3eab4643fdf363dba67476d77a5d9e45f792c37c277fcb1cf7225"
+  semantic_anchor = "a4187f618cbd9a555d2dcbbe65669de6106da29211b35ffdcd62f41687ebe0cf"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

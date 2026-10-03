@@ -1,0 +1,68 @@
+# erdos:568 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:568"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $G$ be a graph such that $R(G,T_n)\\ll n$ for any tree $T_n$ on $n$ vertices and $R(G,K_n)\\ll n^2$. Is it true that, for any $H$ with $m$ edges and no isolated vertices, $$R(G,H)\\ll m?$$ In other words, is $G$ Ramsey size linear? This problem is #33 in Ramsey Theory in the graphs problem collection."
+notes = "Erdos Problem 568 -- https://www.erdosproblems.com/568"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/568.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E568_prove"
+file = "E568_prove.lean"
+module = "FtpEvalBench.E568_prove"
+shape = "prove"
+track = "open"
+pair_id = "E568"
+declaration = "erdos_568"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/568.lean#erdos_568"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "fa32f56737f11379"
+  conversion_hash = "1858f4e51f3888b53a0cf4f4c319dd65b49eae2c3ef10b5250269bf5e2c4da76"
+  semantic_anchor = "9e13ac475dc395c7bbf4888d991a870a6a3ab5054646fa66d6fd509b09e0a5d1"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E568_refute"
+file = "E568_refute.lean"
+module = "FtpEvalBench.E568_refute"
+shape = "refute"
+track = "open"
+pair_id = "E568"
+declaration = "erdos_568"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/568.lean#erdos_568"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d648bc06291c27b1"
+  conversion_hash = "d951445c3b8f404874fdc1069999fad79415a457b509c6c549a701c69236c552"
+  semantic_anchor = "a9e55e73d930c8f51f3dbcca2c70387a9f654363aa6ff63a682509657a1b9cb8"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

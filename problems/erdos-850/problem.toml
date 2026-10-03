@@ -1,0 +1,68 @@
+# erdos:850 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:850"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Can there exist two distinct integers $x$ and $y$ such that $x,y$ have the same prime factors, $x+1,y+1$ have the same prime factors, and $x+2,y+2$ also have the same prime factors?"
+notes = "Erdos Problem 850 -- https://www.erdosproblems.com/850"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/850.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E850_prove"
+file = "E850_prove.lean"
+module = "FtpEvalBench.E850_prove"
+shape = "prove"
+track = "open"
+pair_id = "E850"
+declaration = "erdos_850"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/850.lean#erdos_850"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "79405973bef261ba"
+  conversion_hash = "cb63166a0b7a1bb6fc7e5c6e72b676226562c349af4b9848fd9cb49fc7094650"
+  semantic_anchor = "fe7939202cd92aa4af68cc4bfdde5bab6f19ecb30246fabdfe2deb592bdcc63b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E850_refute"
+file = "E850_refute.lean"
+module = "FtpEvalBench.E850_refute"
+shape = "refute"
+track = "open"
+pair_id = "E850"
+declaration = "erdos_850"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/850.lean#erdos_850"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "86f6a797895f9808"
+  conversion_hash = "743c88e281a18c3cd4b8d944453c734eb49511dcba9c8d8271800a80b75c891a"
+  semantic_anchor = "6ac4da90c7b57b72465e576968f1564dc6ca3927c355931fd57b7a4839070ea1"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

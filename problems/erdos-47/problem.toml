@@ -1,0 +1,46 @@
+# erdos:47 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:47"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If $\\delta>0$ and $N$ is sufficiently large in terms of $\\delta$, and $A\\subseteq\\{1,\\ldots,N\\}$ is such that $\\sum_{a\\in A}\\frac{1}{a}>\\delta \\log N$ then must there exist $S\\subseteq A$ such that $\\sum_{n\\in S}\\frac{1}{n}=1$? Bloom [Bl21] proved this in the affirmative."
+notes = "Erdos Problem 47 -- https://www.erdosproblems.com/47"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/47.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E47"
+file = "E47.lean"
+module = "FtpEvalBench.E47"
+shape = "decide"
+track = "solved"
+declaration = "erdos_47"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/47.lean#erdos_47"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "3eed31404f1204a3"
+  conversion_hash = "901cfe6f177441ed0d8bfc3ba1a16ad27bb10711a0254ca378ebcbb2b3da5135"
+  semantic_anchor = "86f32df33a3895433f5da06fed4e73730f77e305a7ae3fba10e55dcc622668c9"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

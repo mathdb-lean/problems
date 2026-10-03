@@ -1,0 +1,68 @@
+# erdos:1145 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1145"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $A=\\{1\\leq a_1 < a_2 < \\cdots\\}$ and $B=\\{1\\leq b_1 < b_2 < \\cdots\\}$ be sets of integers with $a_n/b_n\\to 1$. If $A+B$ contains all sufficiently large positive integers then is it true that $\\limsup 1_A\\ast 1_B(n)=\\infty$? A conjecture of Erdős and Sárközy."
+notes = "Erdos Problem 1145 -- https://www.erdosproblems.com/1145"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1145.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1145_prove"
+file = "E1145_prove.lean"
+module = "FtpEvalBench.E1145_prove"
+shape = "prove"
+track = "open"
+pair_id = "E1145"
+declaration = "erdos_1145"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1145.lean#erdos_1145"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "0d3769ff30850998"
+  conversion_hash = "4394916f6457aac1348baf865ef5e57844a5decba2781e2b3dc342356eb5e578"
+  semantic_anchor = "eb07ef1a67d3d0c266a885620b2f17de49b34441f45d4b0a9596ab15406978ca"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1145_refute"
+file = "E1145_refute.lean"
+module = "FtpEvalBench.E1145_refute"
+shape = "refute"
+track = "open"
+pair_id = "E1145"
+declaration = "erdos_1145"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1145.lean#erdos_1145"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e7881673bf5f7730"
+  conversion_hash = "79d2111487994ea811bfa64d67cf91dea53c2c7ba4655499cd7c5bae03051fb5"
+  semantic_anchor = "59d9b2b155d84816e5c25625b4e220b29e8ec4698bff1813dcd6652c877d24d8"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

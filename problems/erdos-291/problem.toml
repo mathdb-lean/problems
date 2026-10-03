@@ -1,0 +1,91 @@
+# erdos:291 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:291"
+collection = "erdos"
+tasks = 3
+reviewed_by_a_person = false
+prose = "Let $n\\geq 1$ and define $L_n$ to be the least common multiple of $\\{1,\\ldots,n\\}$ and $a_n$ by $\\sum_{1\\leq k\\leq n}\\frac{1}{k}=\\frac{a_n}{L_n}$. Is it true that $(a_n,L_n)=1$ occurs for infinitely many $n$?"
+notes = "Erdos Problem 291 -- https://www.erdosproblems.com/291"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/291.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E291_parts_i_prove"
+file = "E291_parts_i_prove.lean"
+module = "FtpEvalBench.E291_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E291_parts_i"
+declaration = "erdos_291.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/291.lean#erdos_291.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "79e71bbd8ad1bb7f"
+  conversion_hash = "2c8c75799133846f515c2f9c9fcb03b969af5f312c4208562cabdcbb0652c52d"
+  semantic_anchor = "54dae1fd92167d30e17c4d90a68328ce1d777ba93df990155278919edf26c742"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E291_parts_i_refute"
+file = "E291_parts_i_refute.lean"
+module = "FtpEvalBench.E291_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E291_parts_i"
+declaration = "erdos_291.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/291.lean#erdos_291.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "75adbdc57a25a3d5"
+  conversion_hash = "a280bdc01e6ed46d465837ac64f83ffd6b06a0f33951173e14b04984e7dfe1c5"
+  semantic_anchor = "0879fbcdd3bd66ad7119f91a0f9d7cf5d1f8554e9b7f75e18ae18c69d7b0d266"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E291_parts_ii"
+file = "E291_parts_ii.lean"
+module = "FtpEvalBench.E291_parts_ii"
+shape = "decide"
+track = "solved"
+part = "ii"
+declaration = "erdos_291.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/291.lean#erdos_291.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "5ebee3e98c67e2b3"
+  conversion_hash = "feef705ae33d83f16532ba4eddc81b5db36693279f6c171968589ca62bbe18e3"
+  semantic_anchor = "cede183de574e616f3938f1b7f4be2e12f321787f505e21e62819f008e153104"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

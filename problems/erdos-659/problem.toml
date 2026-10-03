@@ -1,0 +1,46 @@
+# erdos:659 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:659"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Is there a set of $n$ points in $\\mathbb{R}^2$ such that every subset of $4$ points determines at least $3$ distances, yet the total number of distinct distances is $\\ll \\frac{n}{\\sqrt{\\log n}}$? There does exist such a set: a suitable truncation of the lattice $\\{(a,b\\sqrt{2}): a,b\\in\\mathbb{Z}\\}$ suffices. This construction appears to have been first considered by Moree and Osburn \\cite{MoOs06}, who proved that it has $\\ll \\frac{n}{\\sqrt{\\log n}}$ many distinct distances. This construction was independently found by [Lund and Sheffer](https://adamsheffer.wordpress.com/2014/07/16/point-sets-with-few-distinct-distances/), who further noted that this configuration contains no squares or equilateral triangles. There are only six possible configurations of $4$ points which determine only $2$ distances (first noted by Erdős and Fishburn [ErFi96]), and five of them contain either a square or an equilateral triangle. The remaining configuration contains four points from a regular pentagon, and Grayzel [Gr26] (using Gemini) has noted in the comments that this configuration can also be ruled out, thus giving a complete solution to this problem. Boris Alexeev provides a formalisation of the reduction, which is conditional on Bernays' theorem (assumed as an axiom in the proof to obtain the $O(n/\\sqrt{\\log n})$ bound). See the [formal proof](https://github.com/plby/lean-proofs/blob/226d5fad7143dcebea2bbb5ec87f18a3a1dcea69/src/v4.24.0/ErdosProblems/Erdos659.lean)."
+notes = "Erdos Problem 659 -- https://www.erdosproblems.com/659"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/659.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E659"
+file = "E659.lean"
+module = "FtpEvalBench.E659"
+shape = "decide"
+track = "solved"
+declaration = "erdos_659"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/659.lean#erdos_659"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "bbf6c6965e8da4e8"
+  conversion_hash = "bc598e5e835e172bc20a7e59ddc79e59330eb4beb0e756e75e83468bad49e6aa"
+  semantic_anchor = "f29499a102b53953eadf8dc5019942abcad9d34f39d5b0e02cd37f75657afac2"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

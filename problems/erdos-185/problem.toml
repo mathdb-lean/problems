@@ -1,0 +1,46 @@
+# erdos:185 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:185"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $f_3(n)$ be the maximal size of a subset of $\\{0,1,2\\}^n$ which contains no three points on a line. Is it true that $f_3(n)=o(3^n)$? Originally considered by Moser. It is trivial that $f_3(n)\\geq R_3(3^n)$, the maximal size of a subset of $\\{1,\\ldots,3^n\\}$ without a three-term arithmetic progression. Moser showed that $$f_3(n) \\gg \\frac{3^n}{\\sqrt{n}}.$$ The answer is yes, which is a corollary of the density Hales-Jewett theorem, proved by Furstenberg and Katznelson [FuKa91]."
+notes = "Erdos Problem 185 -- https://www.erdosproblems.com/185"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/185.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E185"
+file = "E185.lean"
+module = "FtpEvalBench.E185"
+shape = "decide"
+track = "solved"
+declaration = "erdos_185"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/185.lean#erdos_185"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "32291cdeadb7a5c9"
+  conversion_hash = "1df44a0dfa85ff434539ee0c2d2745ba9ca60bc7ec26bf890748b2c8eb95b6bb"
+  semantic_anchor = "c4642346e950195678d61a56736593b80ff5b43b84bf9ec2e81f6bc653e2249b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

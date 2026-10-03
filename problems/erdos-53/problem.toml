@@ -1,0 +1,46 @@
+# erdos:53 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:53"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $A$ be a finite set of integers. Is it true that, for every $k$, if $\\lvert A\\rvert$ is sufficiently large depending on $k$, then there are least $\\lvert A\\rvert^k$ many integers which are either the sum or product of distinct elements of $A$? Asked by Erdős and Szemerédi [ErSz83]. Solved in this form by Chang [Ch03]. Erdős and Szemerédi proved that there exist arbitrarily large sets $A$ such that the number of integers which are the sum or product of distinct elements of $A$ is at most $$\\exp\\left(c \\frac{(\\log \\lvert A\\rvert)^2}{\\log\\log\\lvert A\\rvert}\\right)$$ for some constant $c>0$. (erdosproblems.com multiplies by $\\log\\log\\lvert A\\rvert$; [ErSz83, Theorem 2] divides by it.) See also [52](https://www.erdosproblems.com/52)."
+notes = "Erdos Problem 53 -- https://www.erdosproblems.com/53"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/53.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E53"
+file = "E53.lean"
+module = "FtpEvalBench.E53"
+shape = "decide"
+track = "solved"
+declaration = "erdos_53"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/53.lean#erdos_53"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7cdcf98fbc214ac4"
+  conversion_hash = "7d2fd2623bd87499a74779ded4068d2ceecb45009d2fb3f1ed17cae9a7311dcf"
+  semantic_anchor = "4a04346388801bc98bf74f01c34632c02df35efcbbdc041dc6778d6f14097c1d"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

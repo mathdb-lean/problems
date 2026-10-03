@@ -1,0 +1,68 @@
+# erdos:17 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:17"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "**Erdős Problem 17.** Are there infinitely many cluster primes?"
+notes = "Erdos Problem 17 -- https://www.erdosproblems.com/17"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/17.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E17_prove"
+file = "E17_prove.lean"
+module = "FtpEvalBench.E17_prove"
+shape = "prove"
+track = "open"
+pair_id = "E17"
+declaration = "erdos_17"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/17.lean#erdos_17"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "84c2735f059c512a"
+  conversion_hash = "8e64a4403b93e2c871c62ef18a00048076b0b6673af64d399b513eacbd3d6acb"
+  semantic_anchor = "d551a1b48fb76f93064eab7d138aa4022bee3333ece4000ca3ff64fdb0cb0a20"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E17_refute"
+file = "E17_refute.lean"
+module = "FtpEvalBench.E17_refute"
+shape = "refute"
+track = "open"
+pair_id = "E17"
+declaration = "erdos_17"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/17.lean#erdos_17"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "5aa223dbe6f8633f"
+  conversion_hash = "bfa32100febbd9219c914a12131ab9378997e62f201c1705bf07f8d2f78f5d18"
+  semantic_anchor = "b4c5d66a4656c45c64fd076bcfeea72a15469cc87ba6caf93127788fb756149e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

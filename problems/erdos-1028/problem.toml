@@ -1,0 +1,46 @@
+# erdos:1028 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1028"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $$H(n)=\\min_f \\max_{X\\subseteq \\{1,\\ldots,n\\}} \\left\\lvert \\sum_{x<y\\in X} f(x,y)\\right\\rvert,$$ where $f$ ranges over all functions $f:\\{1,\\ldots,n\\}^2\\to \\{-1,1\\}$. Estimate $H(n)$. Erdős [Er63d] proved $$\\frac{n}{4}\\leq H(n) \\ll n^{3/2}.$$ Erdős and Spencer [ErSp71] proved that $H(n)\\gg n^{3/2}$."
+notes = "Erdos Problem 1028 -- https://www.erdosproblems.com/1028"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1028.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1028"
+file = "E1028.lean"
+module = "FtpEvalBench.E1028"
+shape = "proof"
+track = "solved"
+declaration = "erdos_1028"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1028.lean#erdos_1028"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "015858119657c32e"
+  conversion_hash = "b5bf742f925ef88f99566330699680eaf10cd4420d230e74e2de9c8e5079b997"
+  semantic_anchor = "f33821b7eb91a80c81d554460d9f9d2b9786d0f503bd86ffa92fda4ab9088a7b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

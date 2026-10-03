@@ -1,0 +1,68 @@
+# erdos:366 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:366"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Are there any $2$-full $n$ such that $n+1$ is $3$-full?"
+notes = "Erdos Problem 366 -- https://www.erdosproblems.com/366"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/366.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E366_prove"
+file = "E366_prove.lean"
+module = "FtpEvalBench.E366_prove"
+shape = "prove"
+track = "open"
+pair_id = "E366"
+declaration = "erdos_366"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/366.lean#erdos_366"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "2f871e7533bdccf4"
+  conversion_hash = "f0e2eba9f9598f879ef015cbda7fb04192f0d057a131889b60c43cc18f774e58"
+  semantic_anchor = "00ae9e3c44eff9d2074da7d749d039ea1ef137d967b7f227ad17c2b6e31fcf75"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E366_refute"
+file = "E366_refute.lean"
+module = "FtpEvalBench.E366_refute"
+shape = "refute"
+track = "open"
+pair_id = "E366"
+declaration = "erdos_366"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/366.lean#erdos_366"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "2c73dd9370ad38fb"
+  conversion_hash = "971999fbb4f70614e8ac1816e954838d72de2ade144aceadf1dc1088924edc9d"
+  semantic_anchor = "d1b85b7b1e8bd82f49445c832bc9675bc0c93b1f2fc38743d7537be10b68abf5"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

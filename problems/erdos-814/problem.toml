@@ -1,0 +1,46 @@
+# erdos:814 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:814"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $k\\geq 2$ and $G$ be a graph with $n\\geq k-1$ vertices and $$(k-1)(n-k+2)+\\binom{k-2}{2}+1$$ edges. Does there exist some $c_k>0$ such that $G$ must contain an induced subgraph on at most $(1-c_k)n$ vertices with minimum degree at least $k$? The case $k=3$ was a problem of Erdős and Hajnal [Er91]. The question for general $k$ was a conjecture of Erdős, Faudree, Rousseau, and Schelp [EFRS90], who proved that such a subgraph exists with at most $n-c_k\\sqrt{n}$ vertices. Mousset, Noever, and Skorić [MNS17] improved this to $n-c_k\\frac{n}{\\log n}$. The full conjecture was proved by Sauermann [Sa19], who proved this with $c_k \\gg 1/k^3$."
+notes = "Erdos Problem 814 -- https://www.erdosproblems.com/814"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/814.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E814"
+file = "E814.lean"
+module = "FtpEvalBench.E814"
+shape = "decide"
+track = "solved"
+declaration = "erdos_814"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/814.lean#erdos_814"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "cbf14258847364ea"
+  conversion_hash = "c3b723290feae9d53142961d8060e706550b3a325cde5b4436d9d081dbdd7a1d"
+  semantic_anchor = "e358cc73551559cd5181f3c1359d7dec95333d01465c9d31d4d476e7c0cd515b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

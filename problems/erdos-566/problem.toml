@@ -1,0 +1,68 @@
+# erdos:566 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:566"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $G$ be such that any subgraph on $k$ vertices has at most $2k-3$ edges. Is it true that, if $H$ has $m$ edges and no isolated vertices, then $R(G,H) \\ll m$? In other words: if $G$ is sparse (every induced subgraph on $k$ vertices has $≤ 2k-3$ edges), is $G$ Ramsey size linear?"
+notes = "Erdos Problem 566 -- https://www.erdosproblems.com/566"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/566.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E566_prove"
+file = "E566_prove.lean"
+module = "FtpEvalBench.E566_prove"
+shape = "prove"
+track = "open"
+pair_id = "E566"
+declaration = "erdos_566"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/566.lean#erdos_566"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9c59159af9ed318a"
+  conversion_hash = "5165e8bf97eec988f3ab2fd163c75bc77239d75fffcc62f13046773b2e21a1d3"
+  semantic_anchor = "005c4d26f0cb7730287a3cb7dd8473be1356fd142f7463c7e3aa73a69e39301f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E566_refute"
+file = "E566_refute.lean"
+module = "FtpEvalBench.E566_refute"
+shape = "refute"
+track = "open"
+pair_id = "E566"
+declaration = "erdos_566"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/566.lean#erdos_566"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "4affc7c1cd1fada3"
+  conversion_hash = "4fe5b0f4c4e6d9738e47ca75fdf72734655cd8dcc8c9efcbc03deadff3073ea0"
+  semantic_anchor = "ecf525efd47c59f72e47dcb2c47874584edadcff3aa2fe02294a82dc8c25f9fd"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

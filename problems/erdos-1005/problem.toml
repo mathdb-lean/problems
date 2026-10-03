@@ -1,0 +1,46 @@
+# erdos:1005 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1005"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $\\frac{a_1}{b_1}, \\frac{a_2}{b_2}, \\ldots$ be the Farey fractions of order $n \\geq 4$. Let $f(n)$ be the largest integer such that if $1 \\leq k < l \\leq k + f(n)$ then $\\frac{a_k}{b_k}$ and $\\frac{a_l}{b_l}$ are similarly ordered, in other words $(a_k - a_l)(b_k - b_l) \\geq 0$. Estimate $f(n)$: in particular, is there a constant $c > 0$ such that $f(n) = (c + o(1)) n$ for all large $n$? Mayer [Ma42] proved that $f(n) \\to \\infty$ and Erdős [Er43] that $f(n) \\gg n$. Van Doorn [vD25b] proved $(1/12 - o(1)) n \\le f(n) \\le n / 4 + O(1)$ and conjectured that $f(n) = (1/4 + o(1)) n$, which was proved by Cipollini and GPT-5.5; see `erdos_1005.variants.constant`."
+notes = "Erdos Problem 1005 -- https://www.erdosproblems.com/1005"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1005.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1005"
+file = "E1005.lean"
+module = "FtpEvalBench.E1005"
+shape = "decide"
+track = "solved"
+declaration = "erdos_1005"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1005.lean#erdos_1005"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "2b228360dbb14492"
+  conversion_hash = "42635508fab74e295ae92980bef448899f3235bed412d6dd9a81ee7cf1adbb48"
+  semantic_anchor = "b94215a99a727d126c7814ee2c5fba20fe3bc85249109301709e6d5babe28cfb"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

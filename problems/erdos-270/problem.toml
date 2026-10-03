@@ -1,0 +1,46 @@
+# erdos:270 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:270"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $f(n)\\to \\infty$ as $n\\to \\infty$. Is it true that $$\\sum_{n\\geq 1} \\frac{1}{(n+1)\\cdots (n+f(n))}$$ is irrational? Erdős and Graham [ErGr80] write 'the answer is almost surely in the affirmative if $f(n)$ is assumed to be nondecreasing'. Even the case $f(n)=n$ is unknown, although Hansen [Ha75] has shown that $$\\sum_n \\frac{1}{\\binom{2n}{n}}=\\sum_n \\frac{n!}{(n+1)\\cdots (n+n)}=\\frac{1}{3}+\\frac{2\\pi}{3^{5/2}}$$ is transcendental. Crmarić and Kovač [CrKo25] have shown that the answer to this question is no in a strong sense: for any $\\alpha \\in (0,\\infty)$ there exists a function $f:\\mathbb{N}\\to\\mathbb{N}$ such that $f(n)\\to \\infty$ as $n\\to\\infty$ and $$\\sum_{n\\geq 1} \\frac{1}{(n+1)\\cdots (n+f(n))}=\\alpha.$$"
+notes = "Erdos Problem 270 -- https://www.erdosproblems.com/270"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/270.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E270"
+file = "E270.lean"
+module = "FtpEvalBench.E270"
+shape = "decide"
+track = "solved"
+declaration = "erdos_270"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/270.lean#erdos_270"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "13d4fbac1c77b4c8"
+  conversion_hash = "337923535ea57c5fa92b24591951c5c9189ded82f9fbdf7791f815466dba7773"
+  semantic_anchor = "4e0ee87384a62a83e3b518fb63e1f0ea67a5b747161b4e0743d1fb111ae40300"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

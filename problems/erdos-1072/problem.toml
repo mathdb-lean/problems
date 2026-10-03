@@ -1,0 +1,114 @@
+# erdos:1072 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1072"
+collection = "erdos"
+tasks = 4
+reviewed_by_a_person = false
+prose = "Is it true that there are infinitely many $p$ for which $f(p) = p − 1$?"
+notes = "Erdos Problem 1072 -- https://www.erdosproblems.com/1072"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1072.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1072_parts_i_prove"
+file = "E1072_parts_i_prove.lean"
+module = "FtpEvalBench.E1072_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E1072_parts_i"
+declaration = "erdos_1072.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1072.lean#erdos_1072.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9a774e9914acbefb"
+  conversion_hash = "7e40199a6ca24cc30fd6a8bcf4a7c2f2ddb57727fd2d97a5697a242b5b5696ec"
+  semantic_anchor = "a32013fe0487bc6f577b655e0c29544ab0ea66b6bce93ccd16d2363e8ddc978d"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1072_parts_i_refute"
+file = "E1072_parts_i_refute.lean"
+module = "FtpEvalBench.E1072_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E1072_parts_i"
+declaration = "erdos_1072.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1072.lean#erdos_1072.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "4de19d914be80329"
+  conversion_hash = "40d214702c45c5fb84cc51d0dd572bb22328ce84816572de17bf6ebcfcb7397d"
+  semantic_anchor = "c13c8cf26c0b336105d443c0cf51ed32d8b29b65e889bf456b937cf7f3592f85"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1072_parts_ii_prove"
+file = "E1072_parts_ii_prove.lean"
+module = "FtpEvalBench.E1072_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E1072_parts_ii"
+declaration = "erdos_1072.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1072.lean#erdos_1072.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7519b5e727423d2f"
+  conversion_hash = "59140f6687369dc0e69a73333c5c8d6fba5477866142456a874c1a8497274642"
+  semantic_anchor = "a991de93e361eec8fe2ef573c5c06428eb3badcf2bcaa7e825fa760d5d363474"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1072_parts_ii_refute"
+file = "E1072_parts_ii_refute.lean"
+module = "FtpEvalBench.E1072_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E1072_parts_ii"
+declaration = "erdos_1072.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1072.lean#erdos_1072.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ffede29885f7e5b3"
+  conversion_hash = "b7bb3ab008daecf35e201dab90b9ba61842db32072c0b23897beafd18418bfd4"
+  semantic_anchor = "7979f96467769fb5802b6d13dc1764a65c55ca1ec52e9e4b5078553d6d997b5b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

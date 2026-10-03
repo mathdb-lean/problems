@@ -1,0 +1,46 @@
+# erdos:437 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:437"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $1\\leq a_1<\\cdots<a_k\\leq x$. How many of the partial products $a_1,a_1a_2,\\ldots,a_1\\cdots a_k$ can be squares? Is it true that, for any $\\epsilon>0$, there can be more than $x^{1-\\epsilon}$ squares? The answer is yes, which follows from work of Bui, Pratt, and Zaharescu [BPZ24], as noted by Tao [Ta24]."
+notes = "Erdos Problem 437 -- https://www.erdosproblems.com/437"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/437.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E437"
+file = "E437.lean"
+module = "FtpEvalBench.E437"
+shape = "decide"
+track = "solved"
+declaration = "erdos_437"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/437.lean#erdos_437"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "6902dfd982b50f3f"
+  conversion_hash = "c7515f5bf5456bb6d8e4446a7889f4ea51c3e949d541d00f221b9976141c193a"
+  semantic_anchor = "e78e5500612f46980e92f2dab67bd2123970eadefb78a27badf1454b984a003e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

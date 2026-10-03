@@ -1,0 +1,46 @@
+# erdos:765 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:765"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Give an asymptotic formula for $\\mathrm{ex}(n; C_4)$. Erdős and Klein [Er38] proved $\\mathrm{ex}(n; C_4) \\asymp n^{3/2}$, and Reiman [Re58] proved $$\\frac{1}{2\\sqrt 2} \\le \\lim \\frac{\\mathrm{ex}(n; C_4)}{n^{3/2}} \\le \\frac12.$$ Erdős and Rényi [ERS66], and independently Brown [Br66], gave a construction showing that if $n = q^2 + q + 1$ with $q$ a prime power then $\\mathrm{ex}(n; C_4) \\ge \\frac12 q (q+1)^2$; together with Reiman's upper bound this gives $\\mathrm{ex}(n; C_4) \\sim \\frac12 n^{3/2}$. Füredi [Fu83] proved $\\mathrm{ex}(n; C_4) = \\frac12 q (q+1)^2$ for $q > 13$."
+notes = "Erdos Problem 765 -- https://www.erdosproblems.com/765"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/765.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E765"
+file = "E765.lean"
+module = "FtpEvalBench.E765"
+shape = "proof"
+track = "solved"
+declaration = "erdos_765"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/765.lean#erdos_765"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "56d47ba652f9efa4"
+  conversion_hash = "c43f16acb81f0b3d8d0b041980b0f1ef595e8c6376b1b380c4064852fb464810"
+  semantic_anchor = "047ab1d4bd3f0d36a685ce8aca52fb64d955ec5e516b21401feed53f6f68c5b9"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

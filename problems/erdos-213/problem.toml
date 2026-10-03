@@ -1,0 +1,68 @@
+# erdos:213 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:213"
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $n \\geq 4$. Are there $n$ points in $\\mathbb{R}^2$, no three on a line and no four on a circle, such that all pairwise distances are integers?"
+notes = "Erdos Problem 213 -- https://www.erdosproblems.com/213"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/213.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E213_prove"
+file = "E213_prove.lean"
+module = "FtpEvalBench.E213_prove"
+shape = "prove"
+track = "open"
+pair_id = "E213"
+declaration = "erdos_213"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/213.lean#erdos_213"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c1157dcda0041dc2"
+  conversion_hash = "14c8a3c3afa2f7a4c25b2a91881656b3d9cb89efd2794b15de89f5cdc047217c"
+  semantic_anchor = "9acd952b548cab6f60c5ba86d98aa372c6f12ce1be37f9d4f4f8ff03bd299341"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E213_refute"
+file = "E213_refute.lean"
+module = "FtpEvalBench.E213_refute"
+shape = "refute"
+track = "open"
+pair_id = "E213"
+declaration = "erdos_213"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/213.lean#erdos_213"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8b65fb61b6cd1f62"
+  conversion_hash = "fc3eb38f7949a0f7a03f2805ebb9c1502b859650954f71045cb93e788cef317e"
+  semantic_anchor = "8b1b61c15358f8eef05a95d74a3ccdd547c5ccf3283f045bbeb493b13bd5e1a2"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

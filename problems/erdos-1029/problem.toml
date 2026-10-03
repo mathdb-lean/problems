@@ -1,0 +1,46 @@
+# erdos:1029 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1029"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If $R(k)$ is the Ramsey number for $K_k$, the minimal $n$ such that every $2$-colouring of the edges of $K_n$ contains a monochromatic copy of $K_k$, then $$\\frac{R(k)}{k2^{k/2}}\\to \\infty.$$ In [Er93] Erdős offers $100 for a proof of this and $1000 for a disproof, but says 'this last offer is to some extent phoney: I am sure that this is true (but I have been wrong before).'"
+notes = "Erdos Problem 1029 -- https://www.erdosproblems.com/1029"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1029.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1029"
+file = "E1029.lean"
+module = "FtpEvalBench.E1029"
+shape = "proof"
+track = "open"
+declaration = "erdos_1029"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1029.lean#erdos_1029"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "fcc6d9c9f26a151d"
+  conversion_hash = "3c9bd945b94811e9d379f12cb9d8f9d7ea4848bd044944e1d85bb0a7d852684a"
+  semantic_anchor = "b99d9819908201183e1093e49a80425c8ba528ac55bc1a709beecad3365c6b1c"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

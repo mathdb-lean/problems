@@ -1,0 +1,46 @@
+# erdos:1148 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1148"
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Can every large integer $n$ be written as $n=x^2+y^2-z^2$ with $\\max(x^2,y^2,z^2)\\leq n$? This was proved affirmatively by Chojecki [Ch26], using a Duke-type equidistribution theorem. A Lean formalisation of the reduction (conditional on a Duke-type equidistribution theorem) exists; see the [forum discussion](https://www.erdosproblems.com/forum/thread/1148#post-4849). The linked formal proof (plby/lean-proofs) removes the Duke hypothesis; it is stated over `ℤ`, as `∃ N, ∀ n ≥ N, ∃ x y z : ℤ, n = x ^ 2 + y ^ 2 - z ^ 2 ∧ max (x ^ 2) (max (y ^ 2) (z ^ 2)) ≤ n`, which gives the statement below by taking absolute values."
+notes = "Erdos Problem 1148 -- https://www.erdosproblems.com/1148"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1148.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1148"
+file = "E1148.lean"
+module = "FtpEvalBench.E1148"
+shape = "decide"
+track = "solved"
+declaration = "erdos_1148"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1148.lean#erdos_1148"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "fb632dbfd4bd285d"
+  conversion_hash = "0569d1ab17ae3560385735f4d4bfc4c45190c0894ec5fcfad583c3cefd71ac9f"
+  semantic_anchor = "05e5ed627dfd6617ed5789f194bf8ec266cceaedecdc32281991f2e72776cc3a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
