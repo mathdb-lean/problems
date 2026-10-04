@@ -30109,7 +30109,7 @@
           "change": "reconciled seven provisional dev folders with newly created production MathDB pages; Lean modules unchanged"
         }
       ],
-      "manifest_hash": "a1a94491c8f3833e"
+      "manifest_hash": "76a8ac5dec956961"
     }
   },
   "mathdb": {
@@ -30122,7 +30122,8 @@
     "resolved_at": "2026-10-04T04:41:55+00:00",
     "counts": {
       "resolved": 704,
-      "problems": 704
+      "problems": 704,
+      "dev_only": 0
     },
     "note": "All folders use production MathDB numeric handles, matched by Erdős source identity. The Erdős number remains problem_id.",
     "problems": {
