@@ -279,6 +279,8 @@ Pin two things, or the citation does not identify what you ran:
 
 `benchmark.json.report.release` also carries `environment_hash`, `profile_hash`
 and `manifest_hash`; quoting `manifest_hash` identifies the release in one value.
+It is recomputed whenever the manifest is amended, and `amends` keeps every earlier
+hash, so a citation to a superseded one still resolves to a file that names it.
 
 ## `problem.toml`
 
@@ -356,6 +358,36 @@ instead — `glob("problems/*/*.lean")` rather than `glob("*.lean")`. The file s
 is still the obligation's id, which is what submission filenames and result
 directories key on.
 
+## MathDB handles
+
+`benchmark.json` carries a `mathdb` block: MathDB's own post number and row id for
+each problem it has a record of, plus `mathdb_number` beside each obligation that
+has one. Matching is on the Erdős number, which both collections key on — no text
+similarity was used.
+
+| | |
+|---|---|
+| resolved | **498** of 704 |
+| absent from MathDB | 6 — it answered 404 |
+| unresolved | 200 — the lookup's daily quota ran out before reaching them |
+
+Those three states are kept apart on purpose: a problem the lookup never got an
+answer for is **not** evidence that MathDB lacks it. `mathdb.problems` gives the
+state per problem and `by_mathdb_number` is the reverse map, so a `/p/<n>` resolves
+back to a problem folder.
+
+`mathdb_number` is MathDB's handle behind `/p/<n>`: permanent within a MathDB
+database and never reused, but issued per row at creation, so it is not derivable
+and could not be a folder name — a second MathDB instance numbers the same problems
+differently. **It is not the Erdős number.** The two coincide for 42 of these,
+because MathDB's counter started at 1 long before the Erdős import; everything else
+is in the 39xxxx range.
+
+Because this block was added after the release was first exported, the manifest's
+own fingerprint was recomputed and `report.release.amends` records the chain,
+starting with the hash the release carried when first published. The remaining 200
+will be resolved in a later amendment.
+
 ## Verifying the release against this repository
 
 `python verify.py` does all of it, and exits non-zero on any mismatch:
@@ -364,7 +396,9 @@ directories key on.
 - every `problem.toml` field re-derives from `benchmark.json`;
 - every released obligation appears in exactly one folder, and no folder holds a
   module the release does not list;
-- no `pair_id` is split across or out of a folder.
+- no `pair_id` is split across or out of a folder;
+- the `mathdb` block agrees with itself: each obligation's `mathdb_number` matches
+  its problem's, the reverse map round-trips, and the counts match the entries.
 
 The environment is pinned by content too:
 `benchmark.json.report.release.environment_hash` is derived from the toolchain, the

@@ -144,6 +144,45 @@ def main(argv: list[str]) -> int:
                 faults.append("%s: pair %s is split -- here %s, released %s"
                               % (folder.name, pair, sorted(here), sorted(whole)))
 
+    # The MathDB block, if the manifest carries one. It states the same number in
+    # two places -- beside each obligation and once per problem -- so the two have
+    # to be checked against each other, and the file's own fingerprint has to still
+    # be the one it claims, or a citation to `manifest_hash` identifies nothing.
+    held_mathdb = manifest.get("mathdb")
+    if held_mathdb:
+        entries = held_mathdb.get("problems") or {}
+        for task_id, task in released.items():
+            entry = entries.get(task["question_id"])
+            if entry is None:
+                faults.append("mathdb: %s names no state for %s"
+                              % (task_id, task["question_id"]))
+                continue
+            resolved = entry.get("state") == "resolved"
+            if ("mathdb_number" in task) is not resolved:
+                faults.append("mathdb: %s carries a number but its problem is %r"
+                              % (task_id, entry.get("state")) if "mathdb_number" in task
+                              else "mathdb: %s has no number but its problem is resolved" % task_id)
+            elif resolved and task["mathdb_number"] != entry["mathdb_number"]:
+                faults.append("mathdb: %s says %r, its problem says %r"
+                              % (task_id, task["mathdb_number"], entry["mathdb_number"]))
+
+        counted = {"resolved": 0, "absent_from_mathdb": 0, "unresolved": 0}
+        for ref, entry in entries.items():
+            state = entry.get("state")
+            if state not in counted:
+                faults.append("mathdb: %s has unknown state %r" % (ref, state))
+                continue
+            counted[state] += 1
+            if state == "resolved":
+                where = held_mathdb.get("by_mathdb_number", {}).get(str(entry["mathdb_number"]))
+                if where != ref:
+                    faults.append("mathdb: the reverse map sends %s to %r, not %s"
+                                  % (entry["mathdb_number"], where, ref))
+        for state, n in counted.items():
+            if held_mathdb.get("counts", {}).get(state) != n:
+                faults.append("mathdb: counts say %s=%r, the entries hold %d"
+                              % (state, held_mathdb.get("counts", {}).get(state), n))
+
     for fault in faults[:40]:
         print("  %s" % fault)
     if len(faults) > 40:
