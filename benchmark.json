@@ -665,8 +665,8 @@
       "gold_arguments": [
         "True"
       ],
-      "mathdb_number": 403685,
-      "mathdb_id": "8e3f366c-15a9-4077-80d2-3d2f5bb9630c"
+      "mathdb_number": 405989,
+      "mathdb_id": "6fc24215-bd9a-4aea-b4b4-406ff2c4f5d7"
     },
     "E1047": {
       "module": "FtpEvalBench.E1047",
@@ -2337,8 +2337,8 @@
       "gold_arguments": [
         "False"
       ],
-      "mathdb_number": 403686,
-      "mathdb_id": "1b0ac96a-21f5-4e3c-b492-21a8e6be79ee"
+      "mathdb_number": 405990,
+      "mathdb_id": "e454f66a-764e-4225-b67d-09a9f40a6fa6"
     },
     "E1136": {
       "module": "FtpEvalBench.E1136",
@@ -3491,8 +3491,8 @@
       "gold_arguments": [
         "True"
       ],
-      "mathdb_number": 403687,
-      "mathdb_id": "485287a0-8d6f-41af-a9fa-625adc69cd31"
+      "mathdb_number": 405991,
+      "mathdb_id": "41dde8df-59db-46db-a794-afc3d519c774"
     },
     "E1214": {
       "module": "FtpEvalBench.E1214",
@@ -8138,8 +8138,8 @@
       "gold_arguments": [
         "True"
       ],
-      "mathdb_number": 403688,
-      "mathdb_id": "47e53772-afcb-4ebb-9571-91f41002fb58"
+      "mathdb_number": 405992,
+      "mathdb_id": "34b1cb68-13b1-4911-b709-f465ba4736c0"
     },
     "E363": {
       "module": "FtpEvalBench.E363",
@@ -11491,8 +11491,8 @@
       "gold_arguments": [
         "True"
       ],
-      "mathdb_number": 403689,
-      "mathdb_id": "2a947c79-d049-4e53-bfb6-1c0b27fb8164"
+      "mathdb_number": 405993,
+      "mathdb_id": "cdb013be-80aa-46b9-9466-6f80a8b7d0be"
     },
     "E542_parts_ii": {
       "module": "FtpEvalBench.E542_parts_ii",
@@ -11510,8 +11510,8 @@
       "gold_arguments": [
         "False"
       ],
-      "mathdb_number": 403689,
-      "mathdb_id": "2a947c79-d049-4e53-bfb6-1c0b27fb8164"
+      "mathdb_number": 405993,
+      "mathdb_id": "cdb013be-80aa-46b9-9466-6f80a8b7d0be"
     },
     "E544_parts_i": {
       "module": "FtpEvalBench.E544_parts_i",
@@ -13172,8 +13172,8 @@
       "gold_arguments": [
         "True"
       ],
-      "mathdb_number": 403690,
-      "mathdb_id": "6933820b-174a-4329-bb5f-77d2dd3c746a"
+      "mathdb_number": 405994,
+      "mathdb_id": "068269da-08cb-415d-9dbe-60d0147e82a0"
     },
     "E673_parts_ii": {
       "module": "FtpEvalBench.E673_parts_ii",
@@ -13188,8 +13188,8 @@
       "source": "formal-conjectures",
       "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
       "source_locator": "FormalConjectures/ErdosProblems/673.lean#erdos_673.parts.ii",
-      "mathdb_number": 403690,
-      "mathdb_id": "6933820b-174a-4329-bb5f-77d2dd3c746a"
+      "mathdb_number": 405994,
+      "mathdb_id": "068269da-08cb-415d-9dbe-60d0147e82a0"
     },
     "E674": {
       "module": "FtpEvalBench.E674",
@@ -16761,8 +16761,8 @@
       "gold_arguments": [
         "True"
       ],
-      "mathdb_number": 403691,
-      "mathdb_id": "5cb1ad7d-40d1-48f2-8cbc-265f683fc14b"
+      "mathdb_number": 405995,
+      "mathdb_id": "767b8d05-3852-4221-a2a4-4f0776a538ef"
     },
     "E897_parts_i": {
       "module": "FtpEvalBench.E897_parts_i",
@@ -30102,9 +30102,14 @@
           "manifest_hash": "66a79069371f1afc",
           "amended_at": "2026-10-04T04:41:55+00:00",
           "change": "completed the MathDB mapping from read-only database queries; 697 production and 7 provisional dev handles; renamed folders to numeric handles"
+        },
+        {
+          "manifest_hash": "87a2b5ab2d7447d1",
+          "amended_at": "2026-10-04T07:46:37.737351+00:00",
+          "change": "reconciled seven provisional dev folders with newly created production MathDB pages; Lean modules unchanged"
         }
       ],
-      "manifest_hash": "87a2b5ab2d7447d1"
+      "manifest_hash": "a1a94491c8f3833e"
     }
   },
   "mathdb": {
@@ -30116,11 +30121,10 @@
     ],
     "resolved_at": "2026-10-04T04:41:55+00:00",
     "counts": {
-      "resolved": 697,
-      "dev_only": 7,
+      "resolved": 704,
       "problems": 704
     },
-    "note": "Folders use MathDB's numeric handles, matched by Erdős source identity. Production handles are used for all 697 production records. Seven dev-only records use provisional dev handles and must be reconciled before production links are published. The Erdős number remains problem_id.",
+    "note": "All folders use production MathDB numeric handles, matched by Erdős source identity. The Erdős number remains problem_id.",
     "problems": {
       "erdos:1": {
         "state": "resolved",
@@ -34589,11 +34593,11 @@
         "resolved_via": "read-only:prod:posts.import_ref/post_aliases.alias"
       },
       "erdos:362": {
-        "state": "dev_only",
-        "mathdb_number": 403688,
-        "mathdb_id": "47e53772-afcb-4ebb-9571-91f41002fb58",
-        "mathdb_url": "https://dev.mathdb.com/p/403688",
-        "resolved_via": "read-only:dev:posts.import_ref/post_aliases.alias"
+        "state": "resolved",
+        "mathdb_number": 405992,
+        "mathdb_id": "34b1cb68-13b1-4911-b709-f465ba4736c0",
+        "mathdb_url": "https://mathdb.com/p/405992",
+        "resolved_via": "approved:production:posts.import_ref"
       },
       "erdos:363": {
         "state": "resolved",
@@ -35915,11 +35919,11 @@
         "resolved_via": "read-only:prod:posts.import_ref/post_aliases.alias"
       },
       "erdos:542": {
-        "state": "dev_only",
-        "mathdb_number": 403689,
-        "mathdb_id": "2a947c79-d049-4e53-bfb6-1c0b27fb8164",
-        "mathdb_url": "https://dev.mathdb.com/p/403689",
-        "resolved_via": "read-only:dev:posts.import_ref/post_aliases.alias"
+        "state": "resolved",
+        "mathdb_number": 405993,
+        "mathdb_id": "cdb013be-80aa-46b9-9466-6f80a8b7d0be",
+        "mathdb_url": "https://mathdb.com/p/405993",
+        "resolved_via": "approved:production:posts.import_ref"
       },
       "erdos:544": {
         "state": "resolved",
@@ -36627,11 +36631,11 @@
         "resolved_via": "read-only:prod:posts.import_ref/post_aliases.alias"
       },
       "erdos:673": {
-        "state": "dev_only",
-        "mathdb_number": 403690,
-        "mathdb_id": "6933820b-174a-4329-bb5f-77d2dd3c746a",
-        "mathdb_url": "https://dev.mathdb.com/p/403690",
-        "resolved_via": "read-only:dev:posts.import_ref/post_aliases.alias"
+        "state": "resolved",
+        "mathdb_number": 405994,
+        "mathdb_id": "068269da-08cb-415d-9dbe-60d0147e82a0",
+        "mathdb_url": "https://mathdb.com/p/405994",
+        "resolved_via": "approved:production:posts.import_ref"
       },
       "erdos:674": {
         "state": "resolved",
@@ -37746,11 +37750,11 @@
         "resolved_via": "read-only:prod:posts.import_ref/post_aliases.alias"
       },
       "erdos:895": {
-        "state": "dev_only",
-        "mathdb_number": 403691,
-        "mathdb_id": "5cb1ad7d-40d1-48f2-8cbc-265f683fc14b",
-        "mathdb_url": "https://dev.mathdb.com/p/403691",
-        "resolved_via": "read-only:dev:posts.import_ref/post_aliases.alias"
+        "state": "resolved",
+        "mathdb_number": 405995,
+        "mathdb_id": "767b8d05-3852-4221-a2a4-4f0776a538ef",
+        "mathdb_url": "https://mathdb.com/p/405995",
+        "resolved_via": "approved:production:posts.import_ref"
       },
       "erdos:897": {
         "state": "resolved",
@@ -38694,11 +38698,11 @@
         "resolved_via": "read-only:prod:posts.import_ref/post_aliases.alias"
       },
       "erdos:1046": {
-        "state": "dev_only",
-        "mathdb_number": 403685,
-        "mathdb_id": "8e3f366c-15a9-4077-80d2-3d2f5bb9630c",
-        "mathdb_url": "https://dev.mathdb.com/p/403685",
-        "resolved_via": "read-only:dev:posts.import_ref/post_aliases.alias"
+        "state": "resolved",
+        "mathdb_number": 405989,
+        "mathdb_id": "6fc24215-bd9a-4aea-b4b4-406ff2c4f5d7",
+        "mathdb_url": "https://mathdb.com/p/405989",
+        "resolved_via": "approved:production:posts.import_ref"
       },
       "erdos:1047": {
         "state": "resolved",
@@ -39176,11 +39180,11 @@
         "resolved_via": "read-only:prod:posts.import_ref/post_aliases.alias"
       },
       "erdos:1134": {
-        "state": "dev_only",
-        "mathdb_number": 403686,
-        "mathdb_id": "1b0ac96a-21f5-4e3c-b492-21a8e6be79ee",
-        "mathdb_url": "https://dev.mathdb.com/p/403686",
-        "resolved_via": "read-only:dev:posts.import_ref/post_aliases.alias"
+        "state": "resolved",
+        "mathdb_number": 405990,
+        "mathdb_id": "e454f66a-764e-4225-b67d-09a9f40a6fa6",
+        "mathdb_url": "https://mathdb.com/p/405990",
+        "resolved_via": "approved:production:posts.import_ref"
       },
       "erdos:1136": {
         "state": "resolved",
@@ -39517,11 +39521,11 @@
         "resolved_via": "read-only:prod:posts.import_ref/post_aliases.alias"
       },
       "erdos:1213": {
-        "state": "dev_only",
-        "mathdb_number": 403687,
-        "mathdb_id": "485287a0-8d6f-41af-a9fa-625adc69cd31",
-        "mathdb_url": "https://dev.mathdb.com/p/403687",
-        "resolved_via": "read-only:dev:posts.import_ref/post_aliases.alias"
+        "state": "resolved",
+        "mathdb_number": 405991,
+        "mathdb_id": "41dde8df-59db-46db-a794-afc3d519c774",
+        "mathdb_url": "https://mathdb.com/p/405991",
+        "resolved_via": "approved:production:posts.import_ref"
       },
       "erdos:1214": {
         "state": "resolved",
@@ -40229,13 +40233,13 @@
       "391595": "erdos:1210",
       "391597": "erdos:1212",
       "391598": "erdos:1214",
-      "403685": "erdos:1046",
-      "403686": "erdos:1134",
-      "403687": "erdos:1213",
-      "403688": "erdos:362",
-      "403689": "erdos:542",
-      "403690": "erdos:673",
-      "403691": "erdos:895"
+      "405989": "erdos:1046",
+      "405990": "erdos:1134",
+      "405991": "erdos:1213",
+      "405992": "erdos:362",
+      "405993": "erdos:542",
+      "405994": "erdos:673",
+      "405995": "erdos:895"
     }
   }
 }

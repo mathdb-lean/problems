@@ -6,7 +6,7 @@
 # direction is true.
 
 problem_id = "erdos:1134"
-mathdb_number = 403686
+mathdb_number = 405990
 collection = "erdos"
 tasks = 1
 reviewed_by_a_person = false
