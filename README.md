@@ -64,10 +64,11 @@ silently, so the gap between 1146 and 1106 is accounted for.
 | shape | 345 `decide`, 300 `prove`, 300 `refute`, 142 `proof`, 19 `value` — see below |
 | source | [formal-conjectures](https://github.com/google-deepmind/formal-conjectures) at `e04cc601840dd7a37f89b821a67f3a9e3c38d9c3` |
 
-`track` says whether the problem is **solved in the literature** — a fact about
-mathematics, not about this repository. `source_has_lean_proof`, in each module's
-metadata, is a different claim and is false for almost every problem, because the
-upstream corpus is a statement repository.
+`track` describes the **statement that was formalized**, not necessarily the
+problem as posed — see below, where a cross-check against MathDB's own catalog
+disagrees for 74 of them. `source_has_lean_proof`, in each module's metadata, is a
+different claim again and is false for almost every problem, because the upstream
+corpus is a statement repository.
 
 The 300 `prove` and 300 `refute` modules are **300 complete pairs**: the two
 directions of one open question, either of which settles it. A pair always sits in
@@ -185,13 +186,31 @@ submission has proved the statement of the object it chose, which is a weaker
 claim than matching a known answer, and a grader that conflates the two overstates
 the result.
 
-### `track` is about the literature, not the task
+### `track`: what it actually describes, and where it is known to be wrong
 
-`open` and `solved` say whether mathematics has settled the problem — a fact about
-the world, not about this repository and not a difficulty ranking. A `solved`
-problem can still be hard to formalize a proof of; `source_has_lean_proof` in each
-module's metadata is the separate, almost always false, claim that the upstream
-corpus holds a machine-checked proof.
+`open` and `solved` are not a difficulty ranking. They come from
+`formal-conjectures`'s `source_category`, and the thing that category describes is
+**the statement formalized from the problem** — which is not always the problem.
+
+Cross-checked against MathDB's own Erdős catalog on the 697 problems both hold,
+the two agree on 613 and disagree on 74, every one in the same direction: MathDB
+calls the problem open, this benchmark calls it solved. Sampling three, the cause
+is the same each time. `erdos-1` is MathDB's *Maximum size of sets with distinct
+subset sums*, recorded open; the module here says *"This conjecture is false. A
+machine-checked disproof constructs sum-distinct sets for which N / 2^n tends to
+zero."* Both are right about different things: what was formalized is the sharpened
+claim `N ≫ 2^n`, and that is false, while the Erdős problem — the asymptotics of
+`f(n)` — is open.
+
+A further 10 have parts that differ among themselves, which a single status per
+problem cannot express and this one can: `erdos-12` has parts i and ii settled and
+part iii open.
+
+So: do not read `track` as "mathematics has settled this", and do not average a
+figure over `open` versus `solved` without saying which 74 you are standing on.
+The 74 are a list waiting on human review, which is the only thing that can decide
+which label belongs where. `source_has_lean_proof` is the separate, almost always
+false, claim that the upstream corpus holds a machine-checked proof.
 
 ## Using this in research
 
