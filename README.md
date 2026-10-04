@@ -33,8 +33,8 @@ than used as the address — a reference that may be assigned later cannot be an
 address that must not change.
 
 Each obligation is a frozen `Problem.Target` — a proposition stated in Lean, with
-no proof. A grader elaborates one module at a time against the project in
-`project/` and checks what it denotes.
+no proof. A grader elaborates one module at a time against the project in `lean/`
+and checks what it denotes.
 
 ## What was established by machine
 
@@ -321,10 +321,10 @@ problems changes.
 
 ```
 problems/<collection>-<id>/   one folder per problem: its modules and problem.toml
-project/                      the pinned Lean project the modules compile against
+lean/                         the pinned Lean project the modules compile against
   lakefile.toml  lean-toolchain  lake-manifest.json
-  lean/MathdbUtil*            the statement-support library every module imports
-  lean/MathdbMathlib*         vendored Mathlib additions it was written against
+  MathdbUtil*                 the statement-support library every module imports
+  MathdbMathlib*              vendored Mathlib additions it was written against
 benchmark.json                the release record
 verify.py                     checks this repository against that record
 ```
@@ -332,21 +332,21 @@ verify.py                     checks this repository against that record
 Four things, and the root says which is which: the problems, the project to
 compile them against, the record of what was released, and the checker for it.
 
-The modules are deliberately **not** a `lean_lib` in `project/lakefile.toml`. They
-are the benchmark: each is elaborated on its own, against the built project, never
-as part of it.
+The modules are deliberately **not** a `lean_lib` in `lean/lakefile.toml`. They are
+the benchmark: each is elaborated on its own, against the built project, never as
+part of it.
 
 ## Using it
 
 ```sh
-cd project
+cd lean
 lake exe cache get      # mathlib binaries, optional but much faster
 lake build              # builds MathdbUtil and MathdbMathlib
 cd ..
 python verify.py        # every module still hashes to what the release recorded
 ```
 
-Then point a grader's `project_dir` at `project/` and its problem directory at
+Then point a grader's `project_dir` at `lean/` and its problem directory at
 `problems/`. A submission replaces the `sorry` in a copy of one module; the grader
 elaborates the result and compares what `Problem.Target` denotes against that
 task's `semantic_anchor`.
@@ -368,16 +368,15 @@ directories key on.
 
 The environment is pinned by content too:
 `benchmark.json.report.release.environment_hash` is derived from the toolchain, the
-mathlib revision, and a hash over `project/lean/MathdbUtil*` and
-`project/lean/MathdbMathlib*` — all three are in this repository, so the pin is
-reconstructible here.
+mathlib revision, and a hash over `lean/MathdbUtil*` and `lean/MathdbMathlib*` —
+all three are in this repository, so the pin is reconstructible here.
 
 ## Provenance and license
 
 Apache 2.0 — see `LICENSE`. `NOTICE` states what was taken from formal-conjectures
 and how it was changed, as Apache 2.0 section 4(b) requires:
-`project/lean/MathdbUtil*` and `project/lean/MathdbMathlib*` are its
-`FormalConjecturesUtil/` and `FormalConjecturesForMathlib/`, renamed. Upstream's
+`lean/MathdbUtil*` and `lean/MathdbMathlib*` are its `FormalConjecturesUtil/` and
+`FormalConjecturesForMathlib/`, renamed. Upstream's
 author list and the Lean pins are carried over unchanged.
 
 This repository holds **releases**. The library that produces them — the records,

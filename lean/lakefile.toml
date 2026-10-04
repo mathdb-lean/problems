@@ -11,9 +11,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# This project exists to be a *built Lean project* that a grader can point
-# `project_dir` at. It carries the vendored statement-support libraries that
-# every problem module imports, and nothing else.
+# This directory is a *built Lean project* that a grader can point `project_dir`
+# at. It carries the vendored statement-support libraries that every problem
+# module imports, and nothing else. `srcDir = "."` because the libraries sit
+# beside this file rather than one level down: the directory is already named
+# `lean`, and `lean/lean/MathdbUtil` said the same thing twice.
 #
 # The problem modules under `erdos-20261001/problems/` are deliberately NOT a
 # `lean_lib` here. They are the benchmark: a grader elaborates each one against
@@ -40,9 +42,9 @@ rev = "v4.33.1"
 
 [[lean_lib]]
 name = "MathdbMathlib"
-srcDir = "lean"
+srcDir = "."
 
 [[lean_lib]]
 name = "MathdbUtil"
-srcDir = "lean"
+srcDir = "."
 globs = ["MathdbUtil.*"]
