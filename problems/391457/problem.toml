@@ -1,0 +1,69 @@
+# erdos:1004 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1004"
+mathdb_number = 391457
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "For any fixed c > 0, if x is sufficiently large then there exists n ≤ x such that the values of φ(n+k) are all distinct for 1 ≤ k ≤ (log x)^c. This is an open problem."
+notes = "Erdos Problem 1004 -- https://www.erdosproblems.com/1004"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1004.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1004_prove"
+file = "E1004_prove.lean"
+module = "FtpEvalBench.E1004_prove"
+shape = "prove"
+track = "open"
+pair_id = "E1004"
+declaration = "erdos_1004"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1004.lean#erdos_1004"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ad087c8d641e5760"
+  conversion_hash = "ec5fa4943e079e173ea41fbf3eadebcc7d18f4b418d641a0c4e352a4d9bfb499"
+  semantic_anchor = "8a52e348ef15f7acdf5a2ce4e04e67bd6dd8e2fff479f596f116c15bd2c9b17f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1004_refute"
+file = "E1004_refute.lean"
+module = "FtpEvalBench.E1004_refute"
+shape = "refute"
+track = "open"
+pair_id = "E1004"
+declaration = "erdos_1004"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1004.lean#erdos_1004"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d1566409b06439e5"
+  conversion_hash = "de218b158559de0dd91d220cbf80d78c0a4bb48bd1a4997d64877a2fa79d675f"
+  semantic_anchor = "d3457e93942f83e4fb7d40f50ff2d5b6228d814846295b70aaed5dfb68cfb02b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

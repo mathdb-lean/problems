@@ -1,0 +1,92 @@
+# erdos:688 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:688"
+mathdb_number = 391185
+collection = "erdos"
+tasks = 3
+reviewed_by_a_person = false
+prose = "Estimate $\\epsilon_n$."
+notes = "Erdos Problem 688 -- https://www.erdosproblems.com/688"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/688.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E688_parts_i"
+file = "E688_parts_i.lean"
+module = "FtpEvalBench.E688_parts_i"
+shape = "value"
+track = "open"
+part = "i"
+declaration = "erdos_688.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/688.lean#erdos_688.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c5ee0eea9e74377d"
+  conversion_hash = "20ab161e194f022c8ff14a0ae3284f1c669b58191e174f0d4f923ef882cca2bd"
+  semantic_anchor = "ac9a5ad1ab3b49b5098e801226245ec39d3d4949648d3dced4ffb493f17b3ddd"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E688_parts_ii_prove"
+file = "E688_parts_ii_prove.lean"
+module = "FtpEvalBench.E688_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E688_parts_ii"
+declaration = "erdos_688.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/688.lean#erdos_688.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b586119c0deaeccd"
+  conversion_hash = "f2ca2b9ba948f35ccb8be29a04d752a9a997344a73373d1073d556c0afcb3d01"
+  semantic_anchor = "f7516092daa041aac7bdd0fe16ea161d136be8bcb5b051143f7c5778f1d55ee2"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E688_parts_ii_refute"
+file = "E688_parts_ii_refute.lean"
+module = "FtpEvalBench.E688_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E688_parts_ii"
+declaration = "erdos_688.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/688.lean#erdos_688.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9e47dceae5d8f2d7"
+  conversion_hash = "6c1f36417b35e24ae47a36649a836995445fe795d13ac53bbbfa6e53c2194ab7"
+  semantic_anchor = "41204e199ad297d6c96b01bab7d22ba6c121af64f3d5f2e41eccee5073426b3e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

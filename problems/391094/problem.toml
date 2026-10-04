@@ -1,0 +1,47 @@
+# erdos:582 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:582"
+mathdb_number = 391094
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Does there exist a graph $G$ which contains no $K_4$, and yet any $2$-colouring of the edges produces a monochromatic $K_3$? Erdős and Hajnal [ErHa67] first asked for the existence of any such graph. Existence was proved by Folkman [Fo70], but with very poor quantitative bounds. (As a result these quantities are often called Folkman numbers.) The current best bounds on the minimal number of vertices $N$ of such a graph are $21 \\leq N \\leq 786$, where the lower bound is due to Bikov and Nenov [BiNe20] and the upper bound is due to Lange, Radziszowski, and Xu [LRX14]."
+notes = "Erdos Problem 582 -- https://www.erdosproblems.com/582"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/582.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E582"
+file = "E582.lean"
+module = "FtpEvalBench.E582"
+shape = "decide"
+track = "solved"
+declaration = "erdos_582"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/582.lean#erdos_582"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ff8def7ea9838dd1"
+  conversion_hash = "e8da2838fac6a146b71b723d7e165aa660f0b234c0b621295cee1c8f47163fab"
+  semantic_anchor = "61213bbcfaa4e6d1df10abf0a6b9d178d882a3ba679a397d7eac81b3197ae6b5"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

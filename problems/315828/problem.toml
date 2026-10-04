@@ -1,0 +1,47 @@
+# erdos:888 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:888"
+mathdb_number = 315828
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "What is the size of the largest $A\\subseteq \\{1,\\ldots,n\\}$ such that if $a\\leq b\\leq c\\leq d\\in A$ are such that $abcd$ is a square then $ad=bc$? This was proved by GPT-5.5 Pro (prompted by Chojecki)."
+notes = "Erdos Problem 888 -- https://www.erdosproblems.com/888"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/888.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E888"
+file = "E888.lean"
+module = "FtpEvalBench.E888"
+shape = "proof"
+track = "solved"
+declaration = "erdos_888"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/888.lean#erdos_888"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "116bbeaf92e92d46"
+  conversion_hash = "e46bd0046c3b71d55aa90fec45654db083b7d675672be07cf6f48872c12d8e6a"
+  semantic_anchor = "a7ae89a60c375d076a1648f4f3718ec95fa3dc592672ddba784c4d3803e1c7ab"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

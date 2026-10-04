@@ -1,0 +1,47 @@
+# erdos:845 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:845"
+mathdb_number = 391326
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $C > 0$. Is it true that the set of integers of the form $n = b_1 + \\cdots + b_t$, with $b_1 < \\cdots < b_t$, where $b_i = 2^{k_i}3^{l_i}$ for $1 \\leq i\\leq t$ and $b_t \\leq Cb_1$ has density $0$? van Doorn and Everts \\cite{vDEv25} have disproved this with $C=6$ - in fact, they prove that all integers can be written as such a sum in which $b_t<6b_1$. This was formalized in Lean by Alexeev using Aristotle."
+notes = "Erdos Problem 845 -- https://www.erdosproblems.com/845"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/845.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E845"
+file = "E845.lean"
+module = "FtpEvalBench.E845"
+shape = "decide"
+track = "solved"
+declaration = "erdos_845"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/845.lean#erdos_845"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "a59d281d052ee1cc"
+  conversion_hash = "af55d6279c8430d836b7c1045ade333c1656515463e7aaaeab0e501a86d98f72"
+  semantic_anchor = "f2fe8c9b279391b921bd3a3f1841b4cf12221064ca4fa8f5fdbea7350f8c3752"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

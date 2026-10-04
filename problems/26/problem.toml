@@ -1,0 +1,47 @@
+# erdos:26 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:26"
+mathdb_number = 26
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $A\\subset\\mathbb{N}$ be infinite such that $\\sum_{a \\in A} \\frac{1}{a} = \\infty$. Must there exist some $k\\geq 1$ such that almost all integers have a divisor of the form $a+k$ for some $a\\in A$? This was formalized in Lean by Alexeev using Aristotle."
+notes = "Erdos Problem 26 -- https://www.erdosproblems.com/26"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/26.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E26"
+file = "E26.lean"
+module = "FtpEvalBench.E26"
+shape = "decide"
+track = "solved"
+declaration = "erdos_26"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/26.lean#erdos_26"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "409fed696300bcab"
+  conversion_hash = "2941b0628a819125b660472678defb0d52044bfe05cdb93a7d79ed0374d6a952"
+  semantic_anchor = "496e593e4a9bea832419b0bc34a6611f9cdc41efc6eb4975b663060980178667"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,47 @@
+# erdos:1021 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1021"
+mathdb_number = 391470
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Is it true that, for every $k \\geq 3$, there is a constant $c_k > 0$ such that $$\\mathrm{ex}(n, G_k) \\ll n^{3/2 - c_k},$$ where $G_k$ is the bipartite graph between $\\{y_1, \\ldots, y_k\\}$ and $\\{z_1, \\ldots, z_{\\binom{k}{2}}\\}$, with each $z_j$ joined to a unique pair of $y_i$? A conjecture of Erdős and Simonovits [Er71, Er74c], who proved (in unpublished work) that one must have $c_k \\to 0$ as $k \\to \\infty$. The graph $G_k$ is the $1$-subdivision of $K_k$; for $k = 3$ it is the $6$-cycle. This was proved by Conlon and Lee [CoLe21] with $c_k = 6^{-k}$, improved to $c_k = \\frac{1}{4k - 6}$ by Janzer [Ja19]; see `erdos_1021.variants.janzer`."
+notes = "Erdos Problem 1021 -- https://www.erdosproblems.com/1021"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1021.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1021"
+file = "E1021.lean"
+module = "FtpEvalBench.E1021"
+shape = "decide"
+track = "solved"
+declaration = "erdos_1021"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1021.lean#erdos_1021"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "dc55d15e2cd43850"
+  conversion_hash = "39515e570b2008589a5a817e696557e4f01e2237c34fb2caacb9e7ff6ce5a88d"
+  semantic_anchor = "a9b9cb9e7139613f8b5b15719e71b5cc78c0c35bb8d757ba66fc6f9533c4b21f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

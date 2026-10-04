@@ -1,0 +1,47 @@
+# erdos:658 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:658"
+mathdb_number = 391160
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $\\delta>0$ and $N$ be sufficiently large depending on $\\delta$. Is it true that if $A\\subseteq \\{1,\\ldots,N\\}^2$ has $\\lvert A\\rvert \\geq \\delta N^2$ then $A$ must contain the vertices of a square? A problem of Graham, if the square is restricted to be axis-aligned. (It is unclear whether in [Er97e] had this restriction in mind.) This qualitative statement follows from the density Hales-Jewett theorem proved by Furstenberg and Katznelson [FuKa91]. A quantitative proof (yet with very poor bounds) was given by Solymosi [So04]. The square is taken to be axis-aligned (Graham's version), which implies the version allowing arbitrary squares."
+notes = "Erdos Problem 658 -- https://www.erdosproblems.com/658"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/658.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E658"
+file = "E658.lean"
+module = "FtpEvalBench.E658"
+shape = "decide"
+track = "solved"
+declaration = "erdos_658"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/658.lean#erdos_658"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d2f5aecff36d29c6"
+  conversion_hash = "803ab678282fa74d6e8dac96bd0ea84a7955517784ce355f53a26fc693ee07b2"
+  semantic_anchor = "cdd7191363e942db217a39e207802b15fb5a376e1eb27e56736f841a878db71f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

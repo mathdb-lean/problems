@@ -1,0 +1,92 @@
+# erdos:367 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:367"
+mathdb_number = 390910
+collection = "erdos"
+tasks = 3
+reviewed_by_a_person = false
+prose = "Let $B_2(n)$ be the $2$-full part of $n$ (that is, $B_2(n)=n/n'$ where $n'$ is the product of all primes that divide $n$ exactly once). Is it true that, for every fixed $k \\geq 1$, $\\prod_{n \\leq m < n+k} B_2(m) \\ll n^{2+o(1)}$?"
+notes = "Erdos Problem 367 -- https://www.erdosproblems.com/367"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/367.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E367_parts_i_prove"
+file = "E367_parts_i_prove.lean"
+module = "FtpEvalBench.E367_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E367_parts_i"
+declaration = "erdos_367.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/367.lean#erdos_367.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "bcf85f1779f9ede3"
+  conversion_hash = "2884ad501616ce707a8be183ffbcf75c43a601179f689ffff595e5e6c736f27a"
+  semantic_anchor = "cfb930da13583ac692b650f7828b061d80bb4d67b6e882507ad75c74f34953c4"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E367_parts_i_refute"
+file = "E367_parts_i_refute.lean"
+module = "FtpEvalBench.E367_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E367_parts_i"
+declaration = "erdos_367.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/367.lean#erdos_367.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "82d64e217493dece"
+  conversion_hash = "3320a43389b5eec9f8f2eef23bb29badd56087abc635dc6d6cb123d6016f7a93"
+  semantic_anchor = "11e0c76b700a220867c1fa1d7284bbeab75016320e823c01475dd486e14c5776"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E367_parts_ii"
+file = "E367_parts_ii.lean"
+module = "FtpEvalBench.E367_parts_ii"
+shape = "decide"
+track = "solved"
+part = "ii"
+declaration = "erdos_367.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/367.lean#erdos_367.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "94101cad04c398fb"
+  conversion_hash = "fdb10c3e5d472577924ecbf657868eed254a9a4fdeaec300c201d07470acfa22"
+  semantic_anchor = "14a9c7785f4718d0320f5b37c9532dabbc26bb391b5899d69b4478d22f3b661f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

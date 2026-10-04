@@ -1,0 +1,115 @@
+# erdos:1206 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1206"
+mathdb_number = 391591
+collection = "erdos"
+tasks = 4
+reviewed_by_a_person = false
+prose = "Does $\\{1,2^3,\\ldots,N^3\\}$ contain a Sidon set of size $\\gg N$?"
+notes = "Erdos Problem 1206 -- https://www.erdosproblems.com/1206"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1206.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1206_parts_i_prove"
+file = "E1206_parts_i_prove.lean"
+module = "FtpEvalBench.E1206_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E1206_parts_i"
+declaration = "erdos_1206.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1206.lean#erdos_1206.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "31e6f1da747f43f1"
+  conversion_hash = "847678e13cf2e8a5f5d93e138c01bd067b2b381fe9e3f198b6131003e96468d2"
+  semantic_anchor = "95c2ecbb7def25ad93075687ff61ce3d76bb0487b899403dd6b43557bbcecc81"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1206_parts_i_refute"
+file = "E1206_parts_i_refute.lean"
+module = "FtpEvalBench.E1206_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E1206_parts_i"
+declaration = "erdos_1206.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1206.lean#erdos_1206.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "df2b5244f38a7788"
+  conversion_hash = "9964d5117ea181903ef861e6007c88e81373a62b47ba212c17a12e8dec54b1bd"
+  semantic_anchor = "5fbe40aca1d875bafa744a04481e40320610d68251ab20a9407a393aec82b77b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1206_parts_ii_prove"
+file = "E1206_parts_ii_prove.lean"
+module = "FtpEvalBench.E1206_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E1206_parts_ii"
+declaration = "erdos_1206.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1206.lean#erdos_1206.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "6f692f3a91d4fafb"
+  conversion_hash = "f964ea46aa0cf9dca1b97e9574c133db14af75c54bea03afb5867cb2a0649df3"
+  semantic_anchor = "33a653e5629a8da05d6e95abdac85ff290f0d929cd04d01eb5deda144e641f76"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1206_parts_ii_refute"
+file = "E1206_parts_ii_refute.lean"
+module = "FtpEvalBench.E1206_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E1206_parts_ii"
+declaration = "erdos_1206.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1206.lean#erdos_1206.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9337bcb3c1d9996e"
+  conversion_hash = "88aa70959c3dbaceb179a86a50586c5c484f3b92ce11524ba36d4be6636b3174"
+  semantic_anchor = "1be9648562ee01c9f7ea7c44f36defcddd88a148ae5166653d6fd53ebf9c7b34"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

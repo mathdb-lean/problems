@@ -1,0 +1,47 @@
+# erdos:1089 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1089"
+mathdb_number = 315839
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $g_d(n)$ be minimal such that every collection of $g_d(n)$ points in $\\mathbb{R}^d$ determines at least $n$ many distinct distances. Estimate $g_d(n)$. In particular, does $$\\lim_{d \\to \\infty} \\frac{g_d(n)}{d^{n-1}}$$ exist? A problem of Erdős [Er75f, p.105]. The answer is yes: for $n \\ge 2$, $$\\binom{d+1}{n-1} + 1 \\le g_d(n) \\le \\binom{d+n-1}{n-1} + 1,$$ where the upper bound is due to Bannai, Bannai and Stanton [BBS83] and the lower bound to a construction of Aletheia (generalising constructions for Problem 502), so that $g_d(n) / d^{n-1} \\to 1/(n-1)!$ as $d \\to \\infty$."
+notes = "Erdos Problem 1089 -- https://www.erdosproblems.com/1089"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1089.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1089"
+file = "E1089.lean"
+module = "FtpEvalBench.E1089"
+shape = "decide"
+track = "solved"
+declaration = "erdos_1089"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1089.lean#erdos_1089"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "255850710996a4a8"
+  conversion_hash = "e4b63bb53efe90b67ae0c70c9a29f00d81efeab1dbb137c14af489ee41c3ec92"
+  semantic_anchor = "dbafb527b499cd34fe2d5333764d43d429181e659398051783fa5106c95129b0"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

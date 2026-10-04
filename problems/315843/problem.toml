@@ -1,0 +1,47 @@
+# erdos:1141 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1141"
+mathdb_number = 315843
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Are there infinitely many $n$ such that $n-k^2$ is prime for all $k$ with $(n,k)=1$ and $k^2 < n$? In [Va99] it is asked whether $968$ is the largest integer with this property, but this is an error, since for example $968-9=7\\cdot 137$. The list of $n$ satisfying the given property is [A214583] in the OEIS. The largest known such $n$ is $1722$. The answer is negative: [APSSV26b] proves a stronger finiteness theorem, deducing it from Pollack [Po17]. Oriike [Or26] formalised the deduction in Lean."
+notes = "Erdos Problem 1141 -- https://www.erdosproblems.com/1141"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1141.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1141"
+file = "E1141.lean"
+module = "FtpEvalBench.E1141"
+shape = "decide"
+track = "solved"
+declaration = "erdos_1141"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1141.lean#erdos_1141"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ac946f2387648b50"
+  conversion_hash = "803b63b3f825dd199f965e22b0b10e62d3b2058032002383100ed414842f6af8"
+  semantic_anchor = "0fafcafa2bb6f1f318e3f9b93ec756052d7567f271d2ede23e962ddf533e5bb9"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

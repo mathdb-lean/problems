@@ -1,0 +1,115 @@
+# erdos:713 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:713"
+mathdb_number = 391206
+collection = "erdos"
+tasks = 4
+reviewed_by_a_person = false
+prose = "Is it true that, for every bipartite graph $G$, there exists some $\\alpha\\in [1,2)$ and $c>0$ such that $$\\mathrm{ex}(n;G)\\sim cn^\\alpha?$$ The condition that $G$ have at least two edges excludes degenerate forbidden graphs whose extremal number is eventually zero, for which the displayed asymptotic with $c>0$ is impossible."
+notes = "Erdos Problem 713 -- https://www.erdosproblems.com/713"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/713.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E713_parts_i_prove"
+file = "E713_parts_i_prove.lean"
+module = "FtpEvalBench.E713_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E713_parts_i"
+declaration = "erdos_713.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/713.lean#erdos_713.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e04ece011cef24df"
+  conversion_hash = "04709a6921497353a2c9850e987ba393f2b6def83855dc8ee3626bbb155d821e"
+  semantic_anchor = "146504a069c38b1dd4c5d43b939b2e150191905b7876ae53ff965f15517c9a13"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E713_parts_i_refute"
+file = "E713_parts_i_refute.lean"
+module = "FtpEvalBench.E713_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E713_parts_i"
+declaration = "erdos_713.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/713.lean#erdos_713.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e55c99f3b20a88e0"
+  conversion_hash = "dd925eaf6c2bc7dab97f15762ccd14faf8386e455f66c643ef3868acda87f241"
+  semantic_anchor = "b3c8fa7ea456996ecc3c70e32f0a83990cc96225e1322e2fd946190fe7d9760b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E713_parts_ii_prove"
+file = "E713_parts_ii_prove.lean"
+module = "FtpEvalBench.E713_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E713_parts_ii"
+declaration = "erdos_713.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/713.lean#erdos_713.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7b9fc5a811159133"
+  conversion_hash = "a53a74443eac273ff4996606e57c7a8306492c79d805ab5ae8e6aa9b792038d8"
+  semantic_anchor = "efa05dc8a51436121a4a0e4c4c99f2e07aef76b1662834f47086819242adf1e6"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E713_parts_ii_refute"
+file = "E713_parts_ii_refute.lean"
+module = "FtpEvalBench.E713_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E713_parts_ii"
+declaration = "erdos_713.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/713.lean#erdos_713.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "30968297a63c2ab4"
+  conversion_hash = "3a4d3317b72e9859628abd419de7a250ab49d3d5efd90c84ed7e5277be585546"
+  semantic_anchor = "995d61bb9232bde1ebbe6246735da507bcd7be1060317683d5e0b94c44c79b48"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

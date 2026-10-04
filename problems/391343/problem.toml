@@ -1,0 +1,47 @@
+# erdos:869 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:869"
+mathdb_number = 391343
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If $A_1, A_2$ are disjoint additive bases of order $2$ (i.e. $A_i + A_i$ contains all large integers) then must $A = A_1 \\cup A_2$ contain a minimal additive basis of order $2$ (one such that deleting any element creates infinitely many $n \\notin A + A$)? A question of Erdős and Nathanson [ErNa88, Er92c]. The answer is no: Larsen [La26] constructed disjoint bases $A_1, A_2$ of order $2$ such that $A_1 \\cup A_2$ contains no minimal basis of order $2$."
+notes = "Erdos Problem 869 -- https://www.erdosproblems.com/869"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/869.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E869"
+file = "E869.lean"
+module = "FtpEvalBench.E869"
+shape = "decide"
+track = "solved"
+declaration = "erdos_869"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/869.lean#erdos_869"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d679e3476da0c1ca"
+  conversion_hash = "6dfeb9c041886d47c5e8c1aa4775ad626f913cc7d832d6e1aeced8be0353f136"
+  semantic_anchor = "e8ec3a32a4cecfa65dbfeb69655d4c81b9b59d5c66836022ef1a6b0da8fb516e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

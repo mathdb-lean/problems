@@ -1,0 +1,71 @@
+# erdos:409 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:409"
+mathdb_number = 390945
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Can infinitely many $n$ reach the same prime under the iteration $n\\mapsto\\phi(n) + 1$?"
+notes = "Erdos Problem 409 -- https://www.erdosproblems.com/409"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/409.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E409_parts_ii_prove"
+file = "E409_parts_ii_prove.lean"
+module = "FtpEvalBench.E409_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E409_parts_ii"
+declaration = "erdos_409.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/409.lean#erdos_409.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "af364fe30278bf11"
+  conversion_hash = "79a3b982d2e9818027d586a49caa07849ebe56fb91867f784adef077773686b0"
+  semantic_anchor = "2839138ebd685041bc97be71aa81e685918dd0ea3099e885fb784733c5b3f047"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E409_parts_ii_refute"
+file = "E409_parts_ii_refute.lean"
+module = "FtpEvalBench.E409_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E409_parts_ii"
+declaration = "erdos_409.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/409.lean#erdos_409.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "bd2781deb9d40236"
+  conversion_hash = "f4517ab03518e6fc7c300577bcd8759b81e6fecc830c2101d85e36d26a9107cf"
+  semantic_anchor = "193771f46e1a7a3ad54864203165a5a3a40834ceaee92dc6cc56e6eab0dfa3a1"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

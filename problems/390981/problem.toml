@@ -1,0 +1,69 @@
+# erdos:447 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:447"
+mathdb_number = 390981
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "How large can a union-free collection $\\mathcal{F}$ of subsets of $[n]$ be? By union-free we mean there are no solutions to $A\\cup B=C$ with distinct $A,B,C\\in \\mathcal{F}$. Must $\\lvert \\mathcal{F}\\rvert =o(2^n)$? In [Er65b] Erdős reported that the estimate $\\lvert \\mathcal{F}\\rvert=o(2^n)$ was proved in unpublished work by Sárközy and Szemerédi."
+notes = "Erdos Problem 447 -- https://www.erdosproblems.com/447"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/447.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E447_parts_i"
+file = "E447_parts_i.lean"
+module = "FtpEvalBench.E447_parts_i"
+shape = "decide"
+track = "solved"
+part = "i"
+declaration = "erdos_447.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/447.lean#erdos_447.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8ee05d5380c41f97"
+  conversion_hash = "f1402ac24387aeacd6334d7d83edc7e7a1b8eb3bd5f91e33cbbd6692eed7e9ca"
+  semantic_anchor = "a4427dd37b9a23bb1e5a1bccb5c5a32f6129734cd80429a6cb341d689f9802b5"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E447_parts_ii"
+file = "E447_parts_ii.lean"
+module = "FtpEvalBench.E447_parts_ii"
+shape = "decide"
+track = "solved"
+part = "ii"
+declaration = "erdos_447.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/447.lean#erdos_447.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "74451101b8a648ce"
+  conversion_hash = "515daa4a20b37989d543cbbb2442f8b48f0db1bfc8900c491750c47475c172b6"
+  semantic_anchor = "c23fc98ae8153db33fd4c7433ba3118fa643d437ded23dff540b1cd403419084"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

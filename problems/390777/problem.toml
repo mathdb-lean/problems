@@ -1,0 +1,47 @@
+# erdos:191 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:191"
+mathdb_number = 390777
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $C>0$ be arbitrary. Is it true that, if $n$ is sufficiently large depending on $C$, then in any $2$-colouring of $\\binom{\\{2,\\ldots,n\\}}{2}$ there exists some $X\\subseteq \\{2,\\ldots,n\\}$ such that $\\binom{X}{2}$ is monochromatic and $$\\sum_{x\\in X}\\frac{1}{\\log x}\\geq C?$$ The answer is yes, which was proved by Rödl [Ro03]. In the same article Rödl also proved a lower bound for this problem, constructing, for all $n$, a $2$-colouring of $\\binom{\\{2,\\ldots,n\\}}{2}$ such that if $X\\subseteq \\{2,\\ldots,n\\}$ is such that $\\binom{X}{2}$ is monochromatic then $$\\sum_{x\\in X}\\frac{1}{\\log x}\\ll \\log\\log\\log n.$$ In the same paper Rödl proves that the answer to the main problem is negative if we consider $3$-colourings. This bound is best possible, as proved by Conlon, Fox, and Sudakov [CFS13], who proved that, if $n$ is sufficiently large, then in any $2$-colouring of $\\binom{\\{2,\\ldots,n\\}}{2}$ there exists some $X\\subseteq \\{2,\\ldots,n\\}$ such that $\\binom{X}{2}$ is monochromatic and $$\\sum_{x\\in X}\\frac{1}{\\log x}\\geq 2^{-8}\\log\\log\\log n.$$ A $2$-colouring of the pairs of $\\{2,\\ldots,n\\}$ is a graph `G` on this vertex set; a monochromatic set is a clique or an independent set of `G`."
+notes = "Erdos Problem 191 -- https://www.erdosproblems.com/191"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/191.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E191"
+file = "E191.lean"
+module = "FtpEvalBench.E191"
+shape = "decide"
+track = "solved"
+declaration = "erdos_191"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/191.lean#erdos_191"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7aa7a125ea308f69"
+  conversion_hash = "d30d27487097832a0e46863dcb8134b41640a9d63ccce4c510432e26fa7a1e85"
+  semantic_anchor = "5be447b821dca67acc8e49ca283c774bb19e6f55627e34f02cd9c1e1393dbc22"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

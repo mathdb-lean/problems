@@ -1,0 +1,69 @@
+# erdos:325 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:325"
+mathdb_number = 390878
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Writing $f_{k, 3}(x)$ for the number of integers $\\leq x$ which are the sum of three $k$th powers, is it true that $f_{k, 3}(x) \\gg x ^ (3 / k)$?"
+notes = "Erdos Problem 325 -- https://www.erdosproblems.com/325"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/325.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E325_prove"
+file = "E325_prove.lean"
+module = "FtpEvalBench.E325_prove"
+shape = "prove"
+track = "open"
+pair_id = "E325"
+declaration = "erdos_325"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/325.lean#erdos_325"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "131725e95144e62f"
+  conversion_hash = "d44ae050e632d1cb618866be2c8265946d9688848d244ca144d260adf20b2496"
+  semantic_anchor = "b235d0933d97e759fb2c58885440abc8fae79d62b4be8ca20b20f13a0dea8151"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E325_refute"
+file = "E325_refute.lean"
+module = "FtpEvalBench.E325_refute"
+shape = "refute"
+track = "open"
+pair_id = "E325"
+declaration = "erdos_325"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/325.lean#erdos_325"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "382b9858472148e2"
+  conversion_hash = "c17ab53d404a4e161ffc4b606fcbbe395521a89266553070955a8666f504f88c"
+  semantic_anchor = "d842292340ee9e13ef685b417bdc9a5dffb60916c14d3e18d39d872fa247e84b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

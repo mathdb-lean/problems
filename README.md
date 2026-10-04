@@ -6,14 +6,14 @@ obligations and a `problem.toml` describing them.
 
 ```
 problems/
-  erdos-1/
+  1/
     E1.lean                  one proof obligation
     problem.toml
-  erdos-1002/
+  391455/
     E1002_prove.lean         the two directions of one open question,
     E1002_refute.lean        published together
     problem.toml
-  erdos-1209/
+  391594/
     E1209_parts_i.lean       nine obligations: three parts, one of them
     E1209_parts_ii.lean      in four sub-parts, most as prove/refute pairs
     …
@@ -21,16 +21,17 @@ problems/
 ```
 
 Currently **704 problems / 1106 obligations**, all from the
-[Erdős problems](https://www.erdosproblems.com/) collection. Nothing in the layout
-is specific to it: a folder is named `<collection>-<id>` after the id the
-**source** gives the problem — `erdos-1209` is Erdős problem 1209 — so another
-collection's problems sit beside these without rearranging anything.
+[Erdős problems](https://www.erdosproblems.com/) collection. Each folder uses the
+problem's numeric MathDB handle. Erdős problem 1002, for example, is MathDB problem
+391455. Its source identity remains `problem_id = "erdos:1002"`; Lean filenames
+and module names keep their existing obligation IDs.
 
-That source id is the problem's permanent identity here, which is why it is the
-folder name: a link, a bookmark or a submission path keeps working. An external
-reference, including a MathDB key, is recorded as a field once it is known rather
-than used as the address — a reference that may be assigned later cannot be an
-address that must not change.
+For a MathDB problem number `n`, its GitHub folder is:
+
+`https://github.com/mathdb-lean/problems/tree/main/problems/{n}`
+
+Production numbers are used wherever the problem exists in production. Seven
+problems currently exist only on dev and use provisional dev numbers, listed below.
 
 Each obligation is a frozen `Problem.Target` — a proposition stated in Lean, with
 no proof. A grader elaborates one module at a time against the project in `lean/`
@@ -140,7 +141,7 @@ problem, so a solver may attack whichever side they believe.
 
 This is why a pair is never split: seeing only the `prove` side of a question
 tells you the setter believed it was provable. 299 of the 300 pairs are open. The
-one exception is `erdos-1119`, which the source marks `research solved` with
+one exception is Erdős problem 1119 (`problems/391543`), which the source marks `research solved` with
 `source_has_lean_proof: false` — settled in the literature, not in Lean, and
 published as a pair because nothing here knows which direction the literature
 settled it in.
@@ -322,7 +323,7 @@ problems changes.
 ## Layout
 
 ```
-problems/<collection>-<id>/   one folder per problem: its modules and problem.toml
+problems/<mathdb_number>/     one folder per problem: its modules and problem.toml
 lean/                         the pinned Lean project the modules compile against
   lakefile.toml  lean-toolchain  lake-manifest.json
   MathdbUtil*                 the statement-support library every module imports
@@ -360,45 +361,49 @@ directories key on.
 
 ## MathDB handles
 
-`benchmark.json` carries a `mathdb` block: MathDB's own post number and row id for
-each problem it has a record of, plus `mathdb_number` beside each obligation that
-has one. Matching is on the Erdős number, which both collections key on — no text
-similarity was used.
+`benchmark.json` carries MathDB's numeric handle and row UUID for all 704 problems,
+matched by Erdős source identity using read-only database queries. Each obligation
+and `problem.toml` carries the same `mathdb_number` as its folder. The existing
+`mathdb.by_mathdb_number` index maps that number back to the source identity.
 
 | | |
 |---|---|
-| resolved | **498** of 704 |
-| absent from MathDB | 6 — it answered 404 |
-| unresolved | 200 — the lookup's daily quota ran out before reaching them |
+| production | **697** of 704 |
+| dev only | **7** of 704, with provisional numbers |
 
-Those three states are kept apart on purpose: a problem the lookup never got an
-answer for is **not** evidence that MathDB lacks it. `mathdb.problems` gives the
-state per problem and `by_mathdb_number` is the reverse map, so a `/p/<n>` resolves
-back to a problem folder.
+MathDB's numbers differ between production and dev. `state = "resolved"` identifies
+a production record and `state = "dev_only"` identifies a provisional dev record;
+each entry includes its actual `mathdb_url`. **The MathDB number is not the Erdős
+number.**
 
-`mathdb_number` is MathDB's handle behind `/p/<n>`: permanent within a MathDB
-database and never reused, but issued per row at creation, so it is not derivable
-and could not be a folder name — a second MathDB instance numbers the same problems
-differently. **It is not the Erdős number.** The two coincide for 42 of these,
-because MathDB's counter started at 1 long before the Erdős import; everything else
-is in the 39xxxx range.
+The following numbers must be reconciled with assigned production numbers before
+publishing production links for these seven problems:
 
-Because this block was added after the release was first exported, the manifest's
-own fingerprint was recomputed and `report.release.amends` records the chain,
-starting with the hash the release carried when first published. The remaining 200
-will be resolved in a later amendment.
+| Erdős problem | Provisional dev number |
+|---|---|
+| 1046 | 403685 |
+| 1134 | 403686 |
+| 1213 | 403687 |
+| 362 | 403688 |
+| 542 | 403689 |
+| 673 | 403690 |
+| 895 | 403691 |
+
+`report.release.amends` records earlier manifest fingerprints. The current
+fingerprint is recomputed after the metadata amendment; statement hashes are unchanged.
 
 ## Verifying the release against this repository
 
 `python verify.py` does all of it, and exits non-zero on any mismatch:
 
 - every module hashes to the `target_hash` the release recorded (1106 of 1106);
-- every `problem.toml` field re-derives from `benchmark.json`;
+- every `problem.toml` release field agrees with `benchmark.json`, including the folder's `mathdb_number`;
 - every released obligation appears in exactly one folder, and no folder holds a
   module the release does not list;
 - no `pair_id` is split across or out of a folder;
-- the `mathdb` block agrees with itself: each obligation's `mathdb_number` matches
-  its problem's, the reverse map round-trips, and the counts match the entries.
+- the `mathdb` block agrees with itself: obligation handles match their problem,
+  the reverse map round-trips, and the counts match the entries;
+- the manifest matches its recorded fingerprint.
 
 The environment is pinned by content too:
 `benchmark.json.report.release.environment_hash` is derived from the toolchain, the

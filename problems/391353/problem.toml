@@ -1,0 +1,69 @@
+# erdos:881 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:881"
+mathdb_number = 391353
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let `A ⊂ ℕ` be an additive basis of order `k` which is minimal in the sense that if `B ⊂ A` is any infinite set, then `A \\ B` is not a basis of order `k`. Must there exist an infinite `B ⊂ A` such that `A \\ B` is an additive basis of order `k + 1`?"
+notes = "Erdos Problem 881 -- https://www.erdosproblems.com/881"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/881.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E881_prove"
+file = "E881_prove.lean"
+module = "FtpEvalBench.E881_prove"
+shape = "prove"
+track = "open"
+pair_id = "E881"
+declaration = "erdos_881"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/881.lean#erdos_881"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ea98a9797f319cef"
+  conversion_hash = "4599ebc35315ecb492212a89c66f8604abf55763e5cfe93e309ee8cda997ac96"
+  semantic_anchor = "65544838b51fa55c474c8b52a76e5824673691a01e7cbda156a8e75e4f07956e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E881_refute"
+file = "E881_refute.lean"
+module = "FtpEvalBench.E881_refute"
+shape = "refute"
+track = "open"
+pair_id = "E881"
+declaration = "erdos_881"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/881.lean#erdos_881"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "61651c962b93ba6a"
+  conversion_hash = "ccdfc81999150c9d2b062f069952c3c0c67d98bcb1fd04e9b2365dd2667ebe8a"
+  semantic_anchor = "a23d4a698020d369cd8f4a8b830784b32710af085ae2aaedae55274496e17cbd"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

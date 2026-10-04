@@ -1,0 +1,153 @@
+# erdos:357 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:357"
+mathdb_number = 390901
+collection = "erdos"
+tasks = 6
+reviewed_by_a_person = false
+prose = "Let $f(n)$ be the maximal $k$ such that there exist integers $1 \\le a_1 < \\dotsc < a_k \\le n$ such that all sums of the shape $\\sum_{u \\le i \\le v} a_i$ are distinct. Is $f(n)=o(n)$?"
+notes = "Erdos Problem 357 -- https://www.erdosproblems.com/357"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/357.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E357_parts_i"
+file = "E357_parts_i.lean"
+module = "FtpEvalBench.E357_parts_i"
+shape = "proof"
+track = "open"
+part = "i"
+declaration = "erdos_357.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/357.lean#erdos_357.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d9719d3f4dc2bde6"
+  conversion_hash = "4d1c6d40b4328b869777748dfab3b14b13fe9c44a17872dbedc41187b2b8a9ee"
+  semantic_anchor = "3d0afe43a1b4a0819edfeae1815053acd22f342ba343a166c27b72361a44084b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E357_parts_ii_bigO_version"
+file = "E357_parts_ii_bigO_version.lean"
+module = "FtpEvalBench.E357_parts_ii_bigO_version"
+shape = "value"
+track = "open"
+part = "ii.bigO_version"
+declaration = "erdos_357.parts.ii.bigO_version"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/357.lean#erdos_357.parts.ii.bigO_version"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d7688b46558b9038"
+  conversion_hash = "13b9088a525866039659e0d1d03718b565f968e4762b4f026bd5cbb002578035"
+  semantic_anchor = "fa531815e5f028b0c8fe64ead701b3649010fad6f70b4f5e7e1fd18ad525cad9"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E357_parts_ii_bigO_version_symm"
+file = "E357_parts_ii_bigO_version_symm.lean"
+module = "FtpEvalBench.E357_parts_ii_bigO_version_symm"
+shape = "value"
+track = "open"
+part = "ii.bigO_version_symm"
+declaration = "erdos_357.parts.ii.bigO_version_symm"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/357.lean#erdos_357.parts.ii.bigO_version_symm"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "326d4b7a83028eb2"
+  conversion_hash = "b3358ae4a2283727caac739ba0896e59acb94e11e361cb254ee962036641b660"
+  semantic_anchor = "4c3eda5edb64bbf37103f912b7f8e20b15288676a59b0f7d99dd374f801197d4"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E357_parts_ii_bigTheta_version"
+file = "E357_parts_ii_bigTheta_version.lean"
+module = "FtpEvalBench.E357_parts_ii_bigTheta_version"
+shape = "value"
+track = "open"
+part = "ii.bigTheta_version"
+declaration = "erdos_357.parts.ii.bigTheta_version"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/357.lean#erdos_357.parts.ii.bigTheta_version"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "4e483013282f8b9f"
+  conversion_hash = "1d958fc61517fc06b06afc51b5df71e05ab3fadd742850e16993f55dd01b0844"
+  semantic_anchor = "d9413aafa6bd10f991ea587a01157b710c7714dcbbcb13fc9be370af27f494ae"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E357_parts_ii_littleO_version"
+file = "E357_parts_ii_littleO_version.lean"
+module = "FtpEvalBench.E357_parts_ii_littleO_version"
+shape = "value"
+track = "open"
+part = "ii.littleO_version"
+declaration = "erdos_357.parts.ii.littleO_version"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/357.lean#erdos_357.parts.ii.littleO_version"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ae23ca00f36f67da"
+  conversion_hash = "d6bc514714a0c8e65df39120353c20f358909513dcbb59cfa1f5d45afdd39b53"
+  semantic_anchor = "58edf9ae3e9e5d0305315f597ba3dd5ee1b6487f9af5dbe52f7d8e0d82c1804b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E357_parts_ii_littleO_version_symm"
+file = "E357_parts_ii_littleO_version_symm.lean"
+module = "FtpEvalBench.E357_parts_ii_littleO_version_symm"
+shape = "value"
+track = "open"
+part = "ii.littleO_version_symm"
+declaration = "erdos_357.parts.ii.littleO_version_symm"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/357.lean#erdos_357.parts.ii.littleO_version_symm"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "aa639ff976513c3a"
+  conversion_hash = "cc4a34ce8e9ac0f19427b347850173a65c5d9ebdaefd6f49bdd09cab6441c5b4"
+  semantic_anchor = "7855ba751e7594326fb44ee6eec33e6d5e2426199fbb70e579d8f81ef3dcd591"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

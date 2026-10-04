@@ -1,0 +1,47 @@
+# erdos:973 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:973"
+mathdb_number = 391431
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Does there exist a constant $C>1$ such that, for every $n\\geq 2$, there exists a sequence $z_i\\in \\mathbb{C}$ with $z_1=1$ and $\\lvert z_i\\rvert \\geq 1$ for all $1\\leq i\\leq n$ with $\\max_{2\\leq k\\leq n+1}\\left\\lvert \\sum_{1\\leq i\\leq n}z_i^k\\right\\rvert < C^{-n}$? This is Problem 7.3 in [Ha74], where it is attributed to Erdős. The answer is no, by Luo, Yang and Zhu [LYZ26]: the maximum exceeds $e^{-\\lambda n}$ for every fixed $\\lambda>0$ once $n$ is large, so it decays subexponentially and no such $C$ exists. See `erdos_973.variants.luo_yang_zhu` below."
+notes = "Erdos Problem 973 -- https://www.erdosproblems.com/973"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/973.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E973"
+file = "E973.lean"
+module = "FtpEvalBench.E973"
+shape = "decide"
+track = "solved"
+declaration = "erdos_973"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/973.lean#erdos_973"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "61f68f7579cf4289"
+  conversion_hash = "61fe2a1674dd3d98d0cc5f2036220c6c734451a389da83e692d9c5ccb6a51086"
+  semantic_anchor = "fef1bfbdbb90ae2c25cc2de09752d6b39ac861e182116f5f518156aff3897ce3"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

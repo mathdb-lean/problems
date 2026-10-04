@@ -1,0 +1,47 @@
+# erdos:355 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:355"
+mathdb_number = 390899
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Is there a lacunary sequence $A\\subseteq \\mathbb{N}$ (so that $A=\\{a_1 < \\cdots\\}$ and there exists some $\\lambda > 1$ such that $a_{n+1}/a_n\\geq \\lambda$ for all $n\\geq 1$) such that $$\\left\\{ \\sum_{a\\in A'}\\frac{1}{a} : A'\\subseteq A\\textrm{ finite}\\right\\}$$ contain all rationals in some open interval? Bleicher and Erdős conjectured the answer is no. In fact the answer is yes, with any lacunarity constant $\\lambda\\in (1,2)$ (though not $\\lambda=2$), as proved by van Doorn and Kova\\v{c} [DoKo25]. This was formalized in Lean by van Doorn using Aristotle."
+notes = "Erdos Problem 355 -- https://www.erdosproblems.com/355"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/355.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E355"
+file = "E355.lean"
+module = "FtpEvalBench.E355"
+shape = "decide"
+track = "solved"
+declaration = "erdos_355"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/355.lean#erdos_355"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ea1041fa76e31778"
+  conversion_hash = "3fd7f8eb55d4b45ad3446cd5d0f5cd272a88a2374781c44d030f9b7af695240b"
+  semantic_anchor = "ebce7d76ae7093d0bca9c5338d80730a8969d20dca26007030a08d6d6543ea49"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

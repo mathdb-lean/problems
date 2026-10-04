@@ -1,0 +1,47 @@
+# erdos:130 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:130"
+mathdb_number = 315695
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $A\\subset\\mathbb{R}^2$ be an infinite set which contains no three points on a line and no four points on a circle. Consider the graph with vertices the points in $A$, where two vertices are joined by an edge if and only if they are an integer distance apart. How large can the chromatic number and clique number of this graph be? In particular, can the chromatic number be infinite? The chromatic number can be infinite: there is an infinite general-position set whose integer-distance graph admits no finite proper colouring. How large the *clique* number can be is not addressed here."
+notes = "Erdos Problem 130 -- https://www.erdosproblems.com/130"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/130.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E130"
+file = "E130.lean"
+module = "FtpEvalBench.E130"
+shape = "decide"
+track = "solved"
+declaration = "erdos_130"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/130.lean#erdos_130"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "4287f648d551d44b"
+  conversion_hash = "5c91ffe90465381ae6b01baf2ca72d6bb8043ac60c9840a8d3148b045f1c670f"
+  semantic_anchor = "f563ab45f7e719982164ed12c62078540611fcdffe366839f2b7ddf1d991459e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

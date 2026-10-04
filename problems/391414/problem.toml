@@ -1,0 +1,159 @@
+# erdos:950 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:950"
+mathdb_number = 391414
+collection = "erdos"
+tasks = 6
+reviewed_by_a_person = false
+prose = "Is it true that $\\liminf f(n)=1$?"
+notes = "Erdos Problem 950 -- https://www.erdosproblems.com/950"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/950.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E950_parts_i_prove"
+file = "E950_parts_i_prove.lean"
+module = "FtpEvalBench.E950_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E950_parts_i"
+declaration = "erdos_950.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/950.lean#erdos_950.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "855b896b2a6dfc8d"
+  conversion_hash = "49fbc0d46418b9a2c50c4afb228cc5e864e14b1a26b855b16dbb190dde01d91a"
+  semantic_anchor = "431e8102199549059503d07fb3fafc273881f330663ac170e3e8398ecd92f5ed"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E950_parts_i_refute"
+file = "E950_parts_i_refute.lean"
+module = "FtpEvalBench.E950_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E950_parts_i"
+declaration = "erdos_950.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/950.lean#erdos_950.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "55c39ab532962366"
+  conversion_hash = "4e4e482c0fa9b97bdea5c80280b1deeb2334c05a30e708a24841f066e542085b"
+  semantic_anchor = "5e444c72e86bf5f801c51e7d7d016b6e6a29b6864fa7dad0983d54d8e818842a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E950_parts_ii_prove"
+file = "E950_parts_ii_prove.lean"
+module = "FtpEvalBench.E950_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E950_parts_ii"
+declaration = "erdos_950.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/950.lean#erdos_950.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "00474bb7a43304d4"
+  conversion_hash = "0ac6e6c5cccdcad2a7103a39d3497d01865d84c17d9ac8fa845d67477241b651"
+  semantic_anchor = "76d7348cd2757713bbbf3fb081bce7884921917094088282197748afbd553b06"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E950_parts_ii_refute"
+file = "E950_parts_ii_refute.lean"
+module = "FtpEvalBench.E950_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E950_parts_ii"
+declaration = "erdos_950.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/950.lean#erdos_950.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "24a906e210f18338"
+  conversion_hash = "2fadbfacbd10fff870065bded0438a63bdb231abd49659d06ead6ce4b27082a2"
+  semantic_anchor = "2a8458545637363350806e25cc186352b615d243082220147e36b4f0cf7b7dc2"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E950_parts_iii_prove"
+file = "E950_parts_iii_prove.lean"
+module = "FtpEvalBench.E950_parts_iii_prove"
+shape = "prove"
+track = "open"
+part = "iii"
+pair_id = "E950_parts_iii"
+declaration = "erdos_950.parts.iii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/950.lean#erdos_950.parts.iii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "5aee6b9f6e33cd97"
+  conversion_hash = "6aecda1a1f59502b47e1c95ab3f180223b657edadc49c6fcfc9c1063360ab21a"
+  semantic_anchor = "69d242640cc998377f90dadd2132846c39e2aac3f219483f2b411e39eee007db"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E950_parts_iii_refute"
+file = "E950_parts_iii_refute.lean"
+module = "FtpEvalBench.E950_parts_iii_refute"
+shape = "refute"
+track = "open"
+part = "iii"
+pair_id = "E950_parts_iii"
+declaration = "erdos_950.parts.iii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/950.lean#erdos_950.parts.iii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9a6daecb75bbfd7c"
+  conversion_hash = "593b8d8371ef75fd8b250c9a3570696d50d09548cee43fe185a894edcd82653d"
+  semantic_anchor = "d0a3b16e3b8643afa182df40f217d50735e603725011045c886fbb553c9731e1"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

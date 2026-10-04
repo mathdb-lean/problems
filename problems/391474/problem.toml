@@ -1,0 +1,47 @@
+# erdos:1025 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1025"
+mathdb_number = 391474
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $f$ be a function from all pairs of elements in $\\{1,\\ldots,n\\}$ to $\\{1,\\ldots,n\\}$ such that $f(x,y)\\neq x$ and $\\neq y$ for all $x,y$. We call $X\\subseteq \\{1,\\ldots,n\\}$ independent if whenever $x,y\\in X$ we have $f(x,y)\\not\\in X$. Let $g(n)$ be such that, in every function $f$, there is an independent set of size at least $g(n)$. Estimate $g(n)$. A question of Erdős and Hajnal [ErHa58], who could prove $n^{1/3} \\ll g(n) \\ll (n\\log n)^{1/2}$. Spencer [Sp72] proved $g(n)\\gg n^{1/2}$. Conlon, Fox, and Sudakov [CFS16] proved $g(n)\\ll n^{1/2}$."
+notes = "Erdos Problem 1025 -- https://www.erdosproblems.com/1025"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1025.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1025"
+file = "E1025.lean"
+module = "FtpEvalBench.E1025"
+shape = "proof"
+track = "solved"
+declaration = "erdos_1025"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1025.lean#erdos_1025"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "86837a079e98a12c"
+  conversion_hash = "9b25f4a825394db5a8eb1f6db9bf9aaa8194ea4c37c41d87147bf8a4a049a72a"
+  semantic_anchor = "13c8d3acdb5aefd21d6817ddfb471ab470f41e3ef98d984ae5e7622a98bc909a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

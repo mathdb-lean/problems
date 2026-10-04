@@ -1,0 +1,47 @@
+# erdos:967 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:967"
+mathdb_number = 391425
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $1<a_1<\\cdots$ be a sequence of integers such that $\\sum\\frac{1}{a_i}<\\infty$. Is it true that, for every $t\\in \\mathbb{R}$, $$1+\\sum_{k}\\frac{1}{a_k^{1+it}}\\neq 0?$$ Yip [Yi25] has proved that this is not always true - in fact, for any real $t\\neq 0$, there exists a sequence of integers $1<a_1<\\cdots$ such that $\\sum \\frac{1}{a_i}<\\infty$ and $1+\\sum_{k}\\frac{1}{a_k^{1+it}}=0$. This was formalized in Lean by Wu using Aristotle."
+notes = "Erdos Problem 967 -- https://www.erdosproblems.com/967"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/967.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E967"
+file = "E967.lean"
+module = "FtpEvalBench.E967"
+shape = "decide"
+track = "solved"
+declaration = "erdos_967"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/967.lean#erdos_967"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "77258a7a276135d0"
+  conversion_hash = "17ec6e7815360763e0b441eb7b8d73e7fdb4dd473ee36d44296ccfba4dd866c2"
+  semantic_anchor = "aaa2a816759d2470c514e460d1e497349d2c8bf7d3fb73797d0d55ea1b0968ff"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

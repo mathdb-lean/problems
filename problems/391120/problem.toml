@@ -1,0 +1,47 @@
+# erdos:613 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:613"
+mathdb_number = 391120
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "**Erdős Problem 613:** Let $n \\geq 3$ and $G$ be a graph with $\\binom{2n+1}{2} - \\binom{n}{2} - 1$ edges. Must $G$ be the union of a bipartite graph and a graph with maximum degree less than $n$?"
+notes = "Erdos Problem 613 -- https://www.erdosproblems.com/613"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/613.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E613"
+file = "E613.lean"
+module = "FtpEvalBench.E613"
+shape = "decide"
+track = "solved"
+declaration = "erdos_613"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/613.lean#erdos_613"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e638c30d07a1bae4"
+  conversion_hash = "af8b1b097adfb5b853c17f18bcfdff91be8d0dab6858cb17f898273b21112013"
+  semantic_anchor = "df86c6215d57798ea18264ea4ec0bb4f1232f6d5ddedb41cb90d167579d721c7"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

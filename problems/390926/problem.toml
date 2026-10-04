@@ -1,0 +1,69 @@
+# erdos:386 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:386"
+mathdb_number = 390926
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $2 \\le k \\le n - 2$. Can $\\binom{n}{k}$ be the product of consecutive primes infinitely often? Here $k$ may vary with $n$: the question asks for infinitely many admissible binomial coefficients, not for a single $k$ that works infinitely often."
+notes = "Erdos Problem 386 -- https://www.erdosproblems.com/386"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/386.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E386_prove"
+file = "E386_prove.lean"
+module = "FtpEvalBench.E386_prove"
+shape = "prove"
+track = "open"
+pair_id = "E386"
+declaration = "erdos_386"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/386.lean#erdos_386"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9cb489d64bdb29ab"
+  conversion_hash = "a968e219bf6fc29816b504719366a87e313c5a6f88b372c3804dc4d689a3b282"
+  semantic_anchor = "6412bd99a8d8bb1e2055a92a862fe82889957f103e069292eae8e99d2082a934"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E386_refute"
+file = "E386_refute.lean"
+module = "FtpEvalBench.E386_refute"
+shape = "refute"
+track = "open"
+pair_id = "E386"
+declaration = "erdos_386"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/386.lean#erdos_386"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e254e07f0ffc2ae9"
+  conversion_hash = "672805f2c599ff84e9a0b0b808eb16245a385f4793883b80879d522afdbcbc84"
+  semantic_anchor = "5f784ae908b4b14df7549a6f8f3c8f6c45efdaad14a2045acc256e914eb29b81"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

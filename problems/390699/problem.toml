@@ -1,0 +1,47 @@
+# erdos:90 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:90"
+mathdb_number = 390699
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Does every set of $n$ distinct points in $\\mathbb{R}^2$ contain at most $n^{1+O(\\frac{1}{\\log\\log n})}$ many pairs which are distance $1$ apart? This was [disproved](https://cdn.openai.com/pdf/74c24085-19b0-4534-9c90-465b8e29ad73/unit-distance-proof.pdf) by an internal model at OpenAI, which constructed (for infinitely many $n$) a set $P$ of $n$ points in $\\mathbb{R}^2$ such that the number of unit distance pairs in $P$ is at least $n^{1+c}$, where $c > 0$ is an absolute constant."
+notes = "Erdos Problem 90 -- https://www.erdosproblems.com/90"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/90.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E90"
+file = "E90.lean"
+module = "FtpEvalBench.E90"
+shape = "decide"
+track = "solved"
+declaration = "erdos_90"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/90.lean#erdos_90"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "3e6a490c9c228e1f"
+  conversion_hash = "6b6d7befea7557adc42bf6b9e4d95f7b87b969d5808d7d2a590f5ec8654bb093"
+  semantic_anchor = "217c273eafa3c944daba31bf15fa1512586a9dfb23094f1dcd99514a675e2f8f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

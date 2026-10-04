@@ -1,0 +1,47 @@
+# erdos:486 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:486"
+mathdb_number = 391011
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $A \\subseteq \\mathbb{N}$, and for each $n \\in A$ choose some $X_n \\subseteq \\mathbb{Z}/n\\mathbb{Z}$. Let $B = \\{m \\in \\mathbb{N} : m \\not\\in X_n \\pmod{n} \\text{ for all } n \\in A \\text{ with } m > n\\}$. Must $B$ have a logarithmic density? The set $A$ is encoded by taking $X_n = \\emptyset$ for $n \\notin A$. Only positive moduli $n$ are considered, since $\\mathbb{Z}/0\\mathbb{Z} = \\mathbb{Z}$ would allow $B$ to be an arbitrary set. The answer is no: Wang [Wa26] (with GPT-5.6) constructed a congruence system whose survivor set $B$ has lower logarithmic density at most $177/200$ and upper logarithmic density at least $49/50$. The first linked formal proof establishes this for the real-cutoff normalisation $\\frac{1}{\\log x}\\sum_{m < x, m \\in B} \\frac{1}{m}$ with the moduli restricted to $A$; the second derives the statement below (`Set.HasLogDensity`, all moduli) from it."
+notes = "Erdos Problem 486 -- https://www.erdosproblems.com/486"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/486.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E486"
+file = "E486.lean"
+module = "FtpEvalBench.E486"
+shape = "decide"
+track = "solved"
+declaration = "erdos_486"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/486.lean#erdos_486"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "4c00aee886810469"
+  conversion_hash = "383a76a6383d9ba5b72d089696391204fd35db7807c8d88209d5e2ecad7794e4"
+  semantic_anchor = "fff66e17e0853f5479e8db10b1111fcb652bfe8a948d7fe1f2a7986c4239db84"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

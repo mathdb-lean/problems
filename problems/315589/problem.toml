@@ -1,0 +1,47 @@
+# erdos:350 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:350"
+mathdb_number = 315589
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If `A ⊂ ℕ` is a finite set of integers all of whose subset sums are distinct then `∑ n ∈ A, 1/n < 2`. Proved by Ryavec. This was proved by Ryavec, who did not appear to ever publish the proof. Ryavec's proof is reproduced in [BeEr74]. More generally, Ryavec's proof delivers that $\\sum_{n\\in A}\\frac{1}{n}\\leq 2-2^{1-\\lvert A\\rvert},$ with equality if and only if $A=\\{1,2,\\ldots,2^k\\}$. This was formalized in Lean by Alexeev using Aristotle."
+notes = "Erdos Problem 350 -- https://www.erdosproblems.com/350"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/350.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E350"
+file = "E350.lean"
+module = "FtpEvalBench.E350"
+shape = "proof"
+track = "solved"
+declaration = "erdos_350"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/350.lean#erdos_350"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "1bdbe6259dff8ce2"
+  conversion_hash = "4cd9cb786f3bc19b4c1eb03554fc2db402a612bd3cb8f15105dedc48448fd149"
+  semantic_anchor = "c6385bed0173a571478c9bcaec9ea36433949dc5cb0da71c732f3de038720373"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

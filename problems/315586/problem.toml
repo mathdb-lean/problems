@@ -1,0 +1,47 @@
+# erdos:328 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:328"
+mathdb_number = 315586
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Suppose $A\\subseteq\\mathbb{N}$ and $C>0$ is such that $1_A\\ast 1_A(n)\\leq C$ for all $n\\in\\mathbb{N}$. Can $A$ be partitioned into $t$ many subsets $A_1,\\ldots,A_t$ (where $t=t(C)$ depends only on $C$) such that $1_{A_i}\\ast 1_{A_i}(n)<C$ for all $1\\leq i\\leq t$ and $n\\in \\mathbb{N}$? The answer is no. Asked by Erdős and Newman. Nešetřil and Rödl [NeRo85] have shown the answer is no for all $C$ (even if $t$ is also allowed to depend on $A$). Erdős [Er80e] had previously shown the answer is no for $C=3,4$ and infinitely many other values of $C$. See also [774]. The linked proof writes the representation function as `Set.ncard {p : ℕ × ℕ | p.1 ∈ A ∧ p.2 ∈ A ∧ p.1 + p.2 = n}`, which counts the same ordered pairs as `sumRep`, and states the partition condition as a named definition with the same two conjuncts used below. Its `∃ t` additionally carries `1 ≤ t`, which costs nothing: `t = 0` forces `A = ∅`, and `A = {1}` has all representation counts at most `C` for `C ≥ 1`."
+notes = "Erdos Problem 328 -- https://www.erdosproblems.com/328"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/328.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E328"
+file = "E328.lean"
+module = "FtpEvalBench.E328"
+shape = "decide"
+track = "solved"
+declaration = "erdos_328"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/328.lean#erdos_328"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "2d675805f54fe655"
+  conversion_hash = "6cdfe86256377080528476025882c9ba23f8860de116a106dc6d06f8ed3f7900"
+  semantic_anchor = "c457643f72dd68b93c7c805374dfcba23e04c3fcf89093079e7bd8915af63615"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

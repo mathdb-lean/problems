@@ -1,0 +1,47 @@
+# erdos:1046 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1046"
+mathdb_number = 403685
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $f\\in \\mathbb{C}[x]$ be a monic polynomial and $$E=\\{ z: \\lvert f(z)\\rvert <1\\}.$$ If $E$ is connected then is $E$ contained in a disc of radius $2$? A problem of Erdős, Herzog, and Piranian [EHP58], who also ask, if $\\{ z: \\lvert f(z)\\rvert\\leq 1\\}$ is connected, then what are the least possible diameter and greatest possible width of this set, and conjecture the answer is $2$ in both cases. Their guess that the width is always at most $2$ is false, as Pommerenke [Po59] gave an example with width $>\\sqrt{3}2^{1/3}\\approx 2.18$. The condition that $E$ is connected is equivalent to $E$ containing all zeros of $f'$. The answer is yes, and in fact the centre of this disc can be taken to be $\\frac{z_1+\\cdots+z_n}{n}$, where the $z_i$ are the roots of $f$, as shown by Pommerenke [Po59]."
+notes = "Erdos Problem 1046 -- https://www.erdosproblems.com/1046"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1046.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1046"
+file = "E1046.lean"
+module = "FtpEvalBench.E1046"
+shape = "decide"
+track = "solved"
+declaration = "erdos_1046"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1046.lean#erdos_1046"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "aeb40439ce8985b5"
+  conversion_hash = "4c219e3db375ba35a71da3cdde97ea63ac7e0f5a5dc24cefcd5bd5482283b456"
+  semantic_anchor = "e16b3cbd2ef7c5b64548c562c2c253e1874d7ee3ad75636d7cf2c629f59c98d7"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,69 @@
+# erdos:673 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:673"
+mathdb_number = 403690
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $1=d_1<\\cdots <d_{\\tau(n)}=n$ be the divisors of $n$ and $$G(n) = \\sum_{1\\leq i<\\tau(n)}\\frac{d_i}{d_{i+1}}.$$ Is it true that $G(n)\\to \\infty$ for almost all $n$? The answer is yes: Tao observed that $\\tau(n/m)/m\\leq G(n)\\leq \\tau(n)$ for any $m\\mid n$ with $m>1$, so that $G(n)$ behaves very similarly to $\\tau(n)$. In [Er82e] Erdős recalls this conjecture and observes that it is indeed trivial that $G(n)\\to \\infty$ for almost all $n$."
+notes = "Erdos Problem 673 -- https://www.erdosproblems.com/673"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/673.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E673_parts_i"
+file = "E673_parts_i.lean"
+module = "FtpEvalBench.E673_parts_i"
+shape = "decide"
+track = "solved"
+part = "i"
+declaration = "erdos_673.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/673.lean#erdos_673.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b9a07bf79aaceb65"
+  conversion_hash = "d985f6d78e8152fa24aa2812349b701753d2a85503de699313e285a89bc2a5be"
+  semantic_anchor = "650e0fb9edd2069efe8b1ffc9caede855d2c08b52a8c2c24b43c8182ee7a8974"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E673_parts_ii"
+file = "E673_parts_ii.lean"
+module = "FtpEvalBench.E673_parts_ii"
+shape = "proof"
+track = "solved"
+part = "ii"
+declaration = "erdos_673.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/673.lean#erdos_673.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8dcd704570207d33"
+  conversion_hash = "6e80dd1e066229d57c68a568f2f3883a5ab86ddd4869425327d38f879ea7a647"
+  semantic_anchor = "bd86a2abb6180a2d9e2194a2558ccbc5037a11d51953b888e984689cd13b8ef1"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

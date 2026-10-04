@@ -1,0 +1,69 @@
+# erdos:102 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:102"
+mathdb_number = 390709
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $c > 0$ and let $h_c(n)$ be such that for any $n$ points in $\\mathbb{R}^2$ with at least $cn^2$ lines that each contain more than three of the points, some line contains $h_c(n)$ of the points. Is it true that, for fixed $c > 0$, $h_c(n) \\to \\infty$?"
+notes = "Erdos Problem 102 -- https://www.erdosproblems.com/102"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/102.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E102_prove"
+file = "E102_prove.lean"
+module = "FtpEvalBench.E102_prove"
+shape = "prove"
+track = "open"
+pair_id = "E102"
+declaration = "erdos_102"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/102.lean#erdos_102"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8bd42ed9b992778d"
+  conversion_hash = "56096417a905598e177016c85127cf9aad86abc14f4767e0197ad78676c7b198"
+  semantic_anchor = "97ece46a8a7a6b06a62af1b1781e0c1f0d4b2585e07ef94a164cee12f848dca8"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E102_refute"
+file = "E102_refute.lean"
+module = "FtpEvalBench.E102_refute"
+shape = "refute"
+track = "open"
+pair_id = "E102"
+declaration = "erdos_102"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/102.lean#erdos_102"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "920dbef7264b4a60"
+  conversion_hash = "ac3c41b3f7aa13495add41fadc38b4ee43c7e02bee4611c4075cac23abbceea9"
+  semantic_anchor = "0d0588c92692920eaed35919e4d9cbf7522066afebe401a828290349e41fb391"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,69 @@
+# erdos:488 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:488"
+mathdb_number = 315790
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $A$ be a finite set and $$B=\\{ n \\geq 1 : a\\mid n\\textrm{ for some }a\\in A\\}.$$ Is it true that, for every $m>n\\geq \\max(A)$, $$\\frac{\\lvert B\\cap [1,m]\\rvert }{m}< 2\\frac{\\lvert B\\cap [1,n]\\rvert}{n}?$$"
+notes = "Erdos Problem 488 -- https://www.erdosproblems.com/488"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/488.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E488_prove"
+file = "E488_prove.lean"
+module = "FtpEvalBench.E488_prove"
+shape = "prove"
+track = "open"
+pair_id = "E488"
+declaration = "erdos_488"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/488.lean#erdos_488"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d7c721d599d781c0"
+  conversion_hash = "d38704860d66a1379694232ce9d35e465f1dd490f73564322e68e3b095787524"
+  semantic_anchor = "5f0abfeb0a20931c45789b90da143ce5bbcc587171b314ccb33a61971df1fa5e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E488_refute"
+file = "E488_refute.lean"
+module = "FtpEvalBench.E488_refute"
+shape = "refute"
+track = "open"
+pair_id = "E488"
+declaration = "erdos_488"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/488.lean#erdos_488"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e15b4fe41739be9a"
+  conversion_hash = "0606e50a305d038fa9d493596f760e2d7e7de3e3325616ead5e0b92383f17ed1"
+  semantic_anchor = "db4d035bb2e74516e60fc74ff2d9370c5076353ed463c945746ed636f625228e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

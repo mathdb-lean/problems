@@ -1,0 +1,69 @@
+# erdos:695 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:695"
+mathdb_number = 391190
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $q_1 < q_2 < \\cdots$ be a sequence of primes such that $q_{i + 1} \\equiv 1 \\pmod{q_i}$. Is it true that $$ \\lim_{k \\to \\infty} q_k^{1/k} = \\infty? $$"
+notes = "Erdos Problem 695 -- https://www.erdosproblems.com/695"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/695.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E695_prove"
+file = "E695_prove.lean"
+module = "FtpEvalBench.E695_prove"
+shape = "prove"
+track = "open"
+pair_id = "E695"
+declaration = "erdos_695"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/695.lean#erdos_695"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b07f48275bbd73c9"
+  conversion_hash = "bf39d9e448f8aa4e16e0825feb01fbf762d096dfb036470d60c3abf234fa2cc3"
+  semantic_anchor = "069121050fd60a66a796c5542509b6129d9298cc788596f8a0d8ad24a06c2aa2"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E695_refute"
+file = "E695_refute.lean"
+module = "FtpEvalBench.E695_refute"
+shape = "refute"
+track = "open"
+pair_id = "E695"
+declaration = "erdos_695"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/695.lean#erdos_695"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9389900df9c072f5"
+  conversion_hash = "36be25397f33da6e159b7d3fc9fb73a10e66b038f98427efcf4a0ad31296e775"
+  semantic_anchor = "f6a41404641204ff2e2c81865d208420fe2653394975ae0cb1540b3f9993054c"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

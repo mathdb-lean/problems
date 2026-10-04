@@ -1,0 +1,69 @@
+# erdos:564 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:564"
+mathdb_number = 391077
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $R_3(n)$ be the minimal $m$ such that if the edges of the $3$-uniform hypergraph on $m$ vertices are $2$-coloured then there is a monochromatic copy of the complete $3$-uniform hypergraph on $n$ vertices. Is there some constant $c>0$ such that $$ R_3(n) \\geq 2^{2^{cn}}? $$"
+notes = "Erdos Problem 564 -- https://www.erdosproblems.com/564"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/564.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E564_prove"
+file = "E564_prove.lean"
+module = "FtpEvalBench.E564_prove"
+shape = "prove"
+track = "open"
+pair_id = "E564"
+declaration = "erdos_564"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/564.lean#erdos_564"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "40982509f4a15f6c"
+  conversion_hash = "8a0b5b7e41edad7584d3d6e687dc05a4afe4c4bdf31da480cd69cfd0b3257368"
+  semantic_anchor = "5c5a42b6e69ef9caf8f3e6c5e7e8d3f406617c16f991bace2bb2f5005d9b3119"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E564_refute"
+file = "E564_refute.lean"
+module = "FtpEvalBench.E564_refute"
+shape = "refute"
+track = "open"
+pair_id = "E564"
+declaration = "erdos_564"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/564.lean#erdos_564"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d7ef73f248698885"
+  conversion_hash = "c02a246c8c10445d87c2c34649d9d05b58c09b6e0dae7f3c838f1b8449184431"
+  semantic_anchor = "3ce0177bd5a607d20fc3c240bbd299640226d69fd5ab71cc68f98cf6f54826c3"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,47 @@
+# erdos:57 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:57"
+mathdb_number = 390667
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If $G$ is a graph with infinite chromatic number and $a_1 < a_2 < \\cdots$ are lengths of the odd cycles of $G$ then $\\sum \\frac{1}{a_i} = \\infty$. Conjectured by Erdős and Hajnal [ErHa66], and solved by Liu and Montgomery [LiMo20]. The linked formal proof (Codex and GPT-5.6 Sol) states the conclusion as `¬ Summable (oddCycleReciprocal G)`, where `oddCycleReciprocal G n` is `n⁻¹` if `n` is an odd cycle length of `G` and `0` otherwise; this is the indicator form of the sum below."
+notes = "Erdos Problem 57 -- https://www.erdosproblems.com/57"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/57.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E57"
+file = "E57.lean"
+module = "FtpEvalBench.E57"
+shape = "proof"
+track = "solved"
+declaration = "erdos_57"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/57.lean#erdos_57"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "19e5db66baba43e0"
+  conversion_hash = "a706361d546b4cc0d685f03cb03511518de21bf3210d8f7561a0f9ac43af9584"
+  semantic_anchor = "69b6f6e0d90ca48a13f0ad9055572e7e313025fc2c6c500c075ff35f1c866524"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

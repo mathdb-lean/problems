@@ -1,0 +1,47 @@
+# erdos:221 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:221"
+mathdb_number = 315572
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Is there a set $A\\subset\\mathbb{N}$ such that, for all large $N$, $$\\lvert A\\cap\\{1,\\ldots,N\\}\\rvert \\ll N/\\log N$$ and such that every large integer can be written as $2^k+a$ for some $k\\geq 0$ and $a\\in A$? Lorentz [Lo54] proved there is such a set with, for all large $N$, $$\\lvert A\\cap\\{1,\\ldots,N\\}\\rvert \\ll \\frac{\\log\\log N}{\\log N}N$$ The answer is yes, proved by Ruzsa [Ru72]."
+notes = "Erdos Problem 221 -- https://www.erdosproblems.com/221"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/221.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E221"
+file = "E221.lean"
+module = "FtpEvalBench.E221"
+shape = "decide"
+track = "solved"
+declaration = "erdos_221"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/221.lean#erdos_221"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "fbeee8ade113f741"
+  conversion_hash = "7ddf3f97787498a8094278c52376a8be397eace727bb40427dbee6f0076336fc"
+  semantic_anchor = "78549b2d4929350a236f56bb7654b9538da8788c0628f8d7cbc4e1c85fd4e0d1"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

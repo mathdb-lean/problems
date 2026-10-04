@@ -1,0 +1,47 @@
+# erdos:21 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:21"
+mathdb_number = 21
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $f(n)$ be minimal such that there is an intersecting family $\\mathcal{F}$ of sets of size $n$ (so $A\\cap B\\neq\\emptyset$ for all $A,B\\in \\mathcal{F}$) with $\\lvert \\mathcal{F}\\rvert=f(n)$ such that any set $S$ with $\\lvert S\\rvert \\leq n-1$ is disjoint from at least one $A\\in \\mathcal{F}$. Is it true that $$f(n) \\ll n?$$ Conjectured by Erdős and Lovász [ErLo75], who proved that $$\\frac{8}{3}n-3\\leq f(n) \\ll n^{3/2}\\log n$$ for all $n$. The upper bound was improved by Kahn [Ka92b] to $f(n) \\ll n\\log n$. (The upper bound constructions in both cases are formed by taking a random set of lines from a projective plane of order $n-1$, assuming $n-1$ is a prime power.) This problem was solved by Kahn [Ka94] who proved the upper bound $f(n) \\ll n$. The Erdős-Lovász lower bound of $\\frac{8}{3}n-O(1)$ has not been improved, and it has been speculated (see e.g. [Ka94]) that the correct answer is $3n+O(1)$. It is trivial that $f(1)=1$ and $f(2)=3$. The values $f(3)=6$ and $f(4)=9$ were established by Tripathi [Tr14]. Barát and Wanless [BaWa21] proved that $f(5)=13$, and that $13\\leq f(6)\\leq 18$."
+notes = "Erdos Problem 21 -- https://www.erdosproblems.com/21"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/21.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E21"
+file = "E21.lean"
+module = "FtpEvalBench.E21"
+shape = "decide"
+track = "solved"
+declaration = "erdos_21"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/21.lean#erdos_21"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d16bd74927df1cd3"
+  conversion_hash = "df9577cc841e3dd5862bf9dfbc103367e23593a496a49e095ca3a11cfe43e654"
+  semantic_anchor = "2441ecfea2f54d0b50d62100d3a8324c4b9b8ea8d26bc8fbebd969e916c7e13a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

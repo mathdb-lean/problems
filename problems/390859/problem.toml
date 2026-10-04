@@ -1,0 +1,47 @@
+# erdos:300 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:300"
+mathdb_number = 390859
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $A(N)$ denote the maximal cardinality of $A\\subseteq \\{1,\\ldots,N\\}$ such that $\\sum_{n\\in S}\\frac{1}{n}\\neq 1$ for all $S\\subseteq A$. Estimate $A(N)$. Erdős and Graham [ErGr80] believe the answer is $A(N)=(1+o(1))N$. Croot [Cr03] disproved this, showing the existence of some constant $c<1$ such that $A(N)<cN$ for all large $N$. It is trivial that $A(N)\\geq (1-\\frac{1}{e}+o(1))N$. Liu and Sawhney [LiSa24] have proved that $A(N)=(1-1/e+o(1))N$."
+notes = "Erdos Problem 300 -- https://www.erdosproblems.com/300"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/300.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E300"
+file = "E300.lean"
+module = "FtpEvalBench.E300"
+shape = "proof"
+track = "solved"
+declaration = "erdos_300"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/300.lean#erdos_300"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ce893da564794269"
+  conversion_hash = "e72ce23d6dfd36f145dc10ca89d88995f873ec4de5668e9e3ffc96599c1102fe"
+  semantic_anchor = "e5abac4c018ffeec484cca16859948fe71164ad9c24b7333a442971ab9d8d7aa"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

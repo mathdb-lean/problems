@@ -1,0 +1,69 @@
+# erdos:913 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:913"
+mathdb_number = 391379
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Are there infinitely many $n$ such that if $$ n(n + 1) = \\prod_i p_i^{k_i} $$ is the factorisation into distinct primes then all exponents $k_i$ are distinct?"
+notes = "Erdos Problem 913 -- https://www.erdosproblems.com/913"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/913.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E913_prove"
+file = "E913_prove.lean"
+module = "FtpEvalBench.E913_prove"
+shape = "prove"
+track = "open"
+pair_id = "E913"
+declaration = "erdos_913"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/913.lean#erdos_913"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "a3f7e3c2277ec528"
+  conversion_hash = "270b94705b59db1a24b1105d0b7539828a1b98c535a561d1cf9c576578134421"
+  semantic_anchor = "02eab349a07faf086e33f47a14e9c94c43bf00e671ea296851402f23fafc22ed"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E913_refute"
+file = "E913_refute.lean"
+module = "FtpEvalBench.E913_refute"
+shape = "refute"
+track = "open"
+pair_id = "E913"
+declaration = "erdos_913"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/913.lean#erdos_913"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7dbd408257a5ef26"
+  conversion_hash = "fba7c63ba25662d126e64c507e8125c849cc38764c4d0f05da5099dac3f89cf2"
+  semantic_anchor = "b5098e607ff59d5ee2584352e743fd9538c0d63346e53c3b2b00df10cc9d2ac9"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

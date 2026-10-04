@@ -1,0 +1,69 @@
+# erdos:1060 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1060"
+mathdb_number = 391496
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "The conjecture is about the function $f(n)$ which counts the number of solutions to $k\\sigma(k)=n$, where $\\sigma(k)$ is the sum of divisors of $k$. The first bound is that $f(n)$ grows slower than any power of $n^(\\frac{1}{\\log\\log n})$. The second bound is that $f(n)$ is at most a power of $\\log n$."
+notes = "Erdos Problem 1060 -- https://www.erdosproblems.com/1060"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1060.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1060_parts_i"
+file = "E1060_parts_i.lean"
+module = "FtpEvalBench.E1060_parts_i"
+shape = "proof"
+track = "open"
+part = "i"
+declaration = "erdos_1060.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1060.lean#erdos_1060.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d859a40ea8e4d9c0"
+  conversion_hash = "d0b3ea099b6c28414fe05e5b20befa575bd6df82749698ae7930a73f032ba5ae"
+  semantic_anchor = "aed2b2c8bf4044c24bc812f0d6be5df6734d39322f7accec7e42b2bdb3109e3b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1060_parts_ii"
+file = "E1060_parts_ii.lean"
+module = "FtpEvalBench.E1060_parts_ii"
+shape = "proof"
+track = "open"
+part = "ii"
+declaration = "erdos_1060.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1060.lean#erdos_1060.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "15db3d93aad4bc71"
+  conversion_hash = "7c3b5dab3da1112798bbbe03c5ba08497966d0ef90b6d6eaa3d704bacc6de46b"
+  semantic_anchor = "c7251d871410bc02656096c189d1054b97a5674b43dfa9e738f1965d24f4f570"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

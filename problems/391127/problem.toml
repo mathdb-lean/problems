@@ -1,0 +1,47 @@
+# erdos:621 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:621"
+mathdb_number = 391127
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $G$ be a graph on $n$ vertices, $\\alpha_1(G)$ be the maximum number of edges that contain at most one edge from every triangle, and $\\tau_1(G)$ be the minimum number of edges that contain at least one edge from every triangle. Is it true that$$\\alpha_1(G)+\\tau_1(G) \\leq \\frac{n^2}{4}?$$ A problem of Erdős, Gallai, and Tuza [EGT96], who observe that this is probably quite difficult since there are different examples where equality hold: the complete graph, the complete bipartite graph, and the graph obtained from $K_{m,m}$ by adding one vertex joined to every other. This is true, and was proved by Norin and Sun [NoSu16], who in fact proved that$$\\alpha_1(G)+\\tau_B(G) \\leq \\frac{n^2}{4},$$where $\\tau_B(G)$ is the minimum number of edges that need to be removed to make the graph bipartite. Here $\\alpha_1(G)$ and $\\tau_1(G)$ are taken over subsets of the edge set of $G$, and the inequality is stated multiplied through by $4$ so that it lives in the natural numbers. The linked file states $\\tau_1$ as the least number of edges whose deletion leaves $G$ triangle-free, which is the same as meeting every triangle of $G$, and quantifies over an arbitrary `Fintype V` rather than `Fin n`."
+notes = "Erdos Problem 621 -- https://www.erdosproblems.com/621"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/621.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E621"
+file = "E621.lean"
+module = "FtpEvalBench.E621"
+shape = "decide"
+track = "solved"
+declaration = "erdos_621"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/621.lean#erdos_621"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b56b2ad62713665a"
+  conversion_hash = "640b729f689f73944cc7b180519d4720a0396dbf5f3c220dfb2d60a714efb51c"
+  semantic_anchor = "2c75d99aa13e21e8bb61257b52e4e1a1d2d3c1f998f9e0077f22e96522c2aa7b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

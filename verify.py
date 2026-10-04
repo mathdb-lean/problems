@@ -21,7 +21,7 @@ module is the artifact, and an edited problem must be visible even when every
 sidecar still agrees with itself.
 
     python verify.py                 # every problem
-    python verify.py erdos-1 erdos-1209
+    python verify.py 1 391594
 
 Exit status is 0 only if every check passed. Needs Python 3.11+ for tomllib.
 """
@@ -78,6 +78,11 @@ def main(argv: list[str]) -> int:
             faults.append("%s: problem.toml does not parse (%s)" % (folder.name, error))
             continue
 
+        number = held.get("mathdb_number")
+        if type(number) is not int or number <= 0 or folder.name != str(number):
+            faults.append("%s: folder must match its positive mathdb_number, got %r"
+                          % (folder.name, number))
+
         entries = held.get("task") or []
         modules = sorted(p.stem for p in folder.glob("*.lean"))
         if sorted(e.get("id", "") for e in entries) != modules:
@@ -107,6 +112,7 @@ def main(argv: list[str]) -> int:
 
             evidence = recorded.get(task_id, {})
             for where, key, expected in (
+                (held, "mathdb_number", task.get("mathdb_number")),
                 (entry, "module", task.get("module")),
                 (entry, "shape", task.get("shape")),
                 (entry, "track", task.get("track")),
@@ -157,7 +163,7 @@ def main(argv: list[str]) -> int:
                 faults.append("mathdb: %s names no state for %s"
                               % (task_id, task["question_id"]))
                 continue
-            resolved = entry.get("state") == "resolved"
+            resolved = entry.get("state") in {"resolved", "dev_only"}
             if ("mathdb_number" in task) is not resolved:
                 faults.append("mathdb: %s carries a number but its problem is %r"
                               % (task_id, entry.get("state")) if "mathdb_number" in task
@@ -166,22 +172,30 @@ def main(argv: list[str]) -> int:
                 faults.append("mathdb: %s says %r, its problem says %r"
                               % (task_id, task["mathdb_number"], entry["mathdb_number"]))
 
-        counted = {"resolved": 0, "absent_from_mathdb": 0, "unresolved": 0}
+        counted = {"resolved": 0, "dev_only": 0}
         for ref, entry in entries.items():
             state = entry.get("state")
             if state not in counted:
                 faults.append("mathdb: %s has unknown state %r" % (ref, state))
                 continue
             counted[state] += 1
-            if state == "resolved":
-                where = held_mathdb.get("by_mathdb_number", {}).get(str(entry["mathdb_number"]))
-                if where != ref:
-                    faults.append("mathdb: the reverse map sends %s to %r, not %s"
-                                  % (entry["mathdb_number"], where, ref))
+            where = held_mathdb.get("by_mathdb_number", {}).get(str(entry["mathdb_number"]))
+            if where != ref:
+                faults.append("mathdb: the reverse map sends %s to %r, not %s"
+                              % (entry["mathdb_number"], where, ref))
         for state, n in counted.items():
             if held_mathdb.get("counts", {}).get(state) != n:
                 faults.append("mathdb: counts say %s=%r, the entries hold %d"
                               % (state, held_mathdb.get("counts", {}).get(state), n))
+
+    release = manifest["report"]["release"]
+    expected_hash = release.pop("manifest_hash", None)
+    manifest_hash = hashlib.sha256(
+        json.dumps(manifest, sort_keys=True, ensure_ascii=False).encode("utf-8")
+    ).hexdigest()[:16]
+    if manifest_hash != expected_hash:
+        faults.append("manifest_hash: computed %s, release says %r"
+                      % (manifest_hash, expected_hash))
 
     for fault in faults[:40]:
         print("  %s" % fault)

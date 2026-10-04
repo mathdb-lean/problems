@@ -1,0 +1,47 @@
+# erdos:793 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:793"
+mathdb_number = 315653
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $F(n)$ be the maximum possible size of a subset $A \\subseteq \\{1, \\ldots, n\\}$ such that $a \\nmid bc$ whenever $a, b, c \\in A$ with $a \\neq b$ and $a \\neq c$. Is there a constant $c$ such that $$F(n) = \\pi(n) + (c + o(1)) n^{2/3} (\\log n)^{-2}?$$ A problem of Erdős [Er69, Er70b], who proved in [Er38] that $F(n) = \\pi(n) + O(n^{2/3} (\\log n)^{-2})$. The answer is yes, with $c = 27/2$: this was proved by GPT-5.6 Sol (prompted by Chojecki), refining the argument of [Er38]; see `erdos_793.variants.constant`."
+notes = "Erdos Problem 793 -- https://www.erdosproblems.com/793"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/793.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E793"
+file = "E793.lean"
+module = "FtpEvalBench.E793"
+shape = "decide"
+track = "solved"
+declaration = "erdos_793"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/793.lean#erdos_793"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "a3971f8ec633d9ab"
+  conversion_hash = "d1e82ac2c8bdc6651451c56c0c4b1a2e4c7f1ee1560487091d2514df307f2051"
+  semantic_anchor = "63ea01b48fbef1b598f6d23e7bd6dc6391122a7353a9e3f437ce6f652888f253"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

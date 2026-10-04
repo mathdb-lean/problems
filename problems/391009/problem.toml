@@ -1,0 +1,47 @@
+# erdos:484 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:484"
+mathdb_number = 391009
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Prove that there exists an absolute constant $c>0$ such that, whenever $\\{1,\\ldots,N\\}$ is $k$-coloured (and $N$ is large enough depending on $k$) then there are at least $cN$ many integers in $\\{1,\\ldots,N\\}$ which are representable as a monochromatic sum (that is, $a+b$ where $a,b\\in \\{1,\\ldots,N\\}$ are in the same colour class and $a\\neq b$). A conjecture of Roth. Solved by Erdős, Sárközy, and Sós [ESS89], who in fact prove that there are at least $\\frac{N}{2}-O(N^{1-1/2^{k+1}})$ many even numbers which are of this form."
+notes = "Erdos Problem 484 -- https://www.erdosproblems.com/484"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/484.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E484"
+file = "E484.lean"
+module = "FtpEvalBench.E484"
+shape = "proof"
+track = "solved"
+declaration = "erdos_484"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/484.lean#erdos_484"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "1f8b00426fa2ffca"
+  conversion_hash = "b861d06d6541f3274ac1a84ef7e3e2e96045f0e67fff40217d51a02ebdfda0b1"
+  semantic_anchor = "e36581cb9cc695c910145ba97526ac6c24551c3e216fdc09402f7e9c9a005e93"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,69 @@
+# erdos:660 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:660"
+mathdb_number = 391161
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $x_1, \\ldots, x_n \\in \\mathbb{R}^3$ be the vertices of a convex polyhedron. Are there at least $$(1 - o(1)) \\frac{n}{2}$$ many distinct distances between the $x_i$? The $(1 - o(1)) \\frac{n}{2}$ lower bound is formalised as: for every $\\varepsilon > 0$, every set of $n$ vertices of a convex polyhedron with $n$ sufficiently large determines at least $(1 - \\varepsilon) \\frac{n}{2}$ distinct distances."
+notes = "Erdos Problem 660 -- https://www.erdosproblems.com/660"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/660.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E660_prove"
+file = "E660_prove.lean"
+module = "FtpEvalBench.E660_prove"
+shape = "prove"
+track = "open"
+pair_id = "E660"
+declaration = "erdos_660"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/660.lean#erdos_660"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "69d8d3db1d4f3266"
+  conversion_hash = "75c9ba0719a9a31a61e4901a51fee756bc5a842d30179d6a529b5757420e9635"
+  semantic_anchor = "7e8d55e18a738c3ba240ce181ef1e74e8a7016dea6cfe78dea840d6f12857114"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E660_refute"
+file = "E660_refute.lean"
+module = "FtpEvalBench.E660_refute"
+shape = "refute"
+track = "open"
+pair_id = "E660"
+declaration = "erdos_660"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/660.lean#erdos_660"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "63a05d5ff3b872cd"
+  conversion_hash = "41b0c3a97da36a7b733ffe90c4d4de21b7cbc7ba1b610913d54ab45fb1f59bd5"
+  semantic_anchor = "1e151b8a8c593014992666efd07a0a1c28b717372b6c1831e6270dd11918cfe7"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

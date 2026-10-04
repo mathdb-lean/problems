@@ -1,0 +1,113 @@
+# erdos:12 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:12"
+mathdb_number = 12
+collection = "erdos"
+tasks = 4
+reviewed_by_a_person = false
+prose = "Let $A$ be an infinite set such that there are no distinct $a,b,c \\in A$ such that $a \\mid (b+c)$ and $b,c > a$. Is there such an $A$ with $\\liminf \\frac{|A \\cap \\{1, \\dotsc, N\\}|}{N^{1/2}} > 0$ ? The DeepMind prover agent has found a formal proof of this statement."
+notes = "Erdos Problem 12 -- https://www.erdosproblems.com/12"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/12.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E12_parts_i"
+file = "E12_parts_i.lean"
+module = "FtpEvalBench.E12_parts_i"
+shape = "decide"
+track = "solved"
+part = "i"
+declaration = "erdos_12.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/12.lean#erdos_12.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "1382464ca3428fbd"
+  conversion_hash = "ff41b6b9386191a981eab2f8d46fcefd57e16bad86a4423f4399fc9e3dbabc63"
+  semantic_anchor = "67ade73008627548c511ff5f73bad04bc6b968f13bdd1429759dc05ff2063074"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E12_parts_ii"
+file = "E12_parts_ii.lean"
+module = "FtpEvalBench.E12_parts_ii"
+shape = "decide"
+track = "solved"
+part = "ii"
+declaration = "erdos_12.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/12.lean#erdos_12.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "324e9bdbf79f4a34"
+  conversion_hash = "1e8c753b2634c3087849299cb01c00f05df0af38e771cfcdd53a016741782be2"
+  semantic_anchor = "e9033618cad95634b0c1fe40366005c2b87fb4b0ebce907c728ade5d604bbe23"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E12_parts_iii_prove"
+file = "E12_parts_iii_prove.lean"
+module = "FtpEvalBench.E12_parts_iii_prove"
+shape = "prove"
+track = "open"
+part = "iii"
+pair_id = "E12_parts_iii"
+declaration = "erdos_12.parts.iii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/12.lean#erdos_12.parts.iii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9cf75e932b4372d9"
+  conversion_hash = "e761a4e6335ffff0c0ab27752460d8018cc0c84ba191d39a4389573c44c10ba8"
+  semantic_anchor = "7ff53d18e5e6e3b5f5847cd0c867a068bf5f8c4e915b9f7f7e6b5a2a30325b52"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E12_parts_iii_refute"
+file = "E12_parts_iii_refute.lean"
+module = "FtpEvalBench.E12_parts_iii_refute"
+shape = "refute"
+track = "open"
+part = "iii"
+pair_id = "E12_parts_iii"
+declaration = "erdos_12.parts.iii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/12.lean#erdos_12.parts.iii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e487f69f496250a3"
+  conversion_hash = "fca5d6ec945667287b062db647fc169958073e160ed86af52897894edef731a6"
+  semantic_anchor = "71e0fd2ca7382e94692cd2117011da7fc3ed378f7d200bee56d410dd7439f25f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

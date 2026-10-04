@@ -1,0 +1,47 @@
+# erdos:363 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:363"
+mathdb_number = 390906
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Is it true that, for each fixed $n$ and fixed sizes $k_1,\\ldots,k_n \\geq 4$, there are only finitely many collections of disjoint intervals $I_1,\\ldots,I_n$ of size $\\lvert I_i\\rvert = k_i$ for $1\\leq i\\leq n$ such that$$\\prod_{1\\leq i\\leq n}\\prod_{m\\in I_i}m$$is a square? The number of intervals and their sizes are fixed: the list `ks` of sizes determines both. Without this restriction finiteness fails, by a result of Skałba (see [Ul05]). This is false: Ulas [Ul05] constructed infinitely many such collections with $n = 4$ and $k_1 = \\cdots = k_4 = 4$."
+notes = "Erdos Problem 363 -- https://www.erdosproblems.com/363"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/363.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E363"
+file = "E363.lean"
+module = "FtpEvalBench.E363"
+shape = "decide"
+track = "solved"
+declaration = "erdos_363"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/363.lean#erdos_363"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "28dc5c4f7b99ca0c"
+  conversion_hash = "b90b98afcaa267d0f35fd91485442dfa56ebe0da11ccbb05d5e3a90fcbb4feb5"
+  semantic_anchor = "3442d1d5edf424c4a81cd8a37c349a93bd5b8cf7e7a03a9ac29dfccfe8df47bf"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

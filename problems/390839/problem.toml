@@ -1,0 +1,69 @@
+# erdos:274 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:274"
+mathdb_number = 390839
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "If $G$ is a group, can there exist an exact covering of $G$ by more than one coset of different sizes? (i.e. each element is contained in exactly one of the cosets.) The conjectured answer is no: in every such exact covering, two of the subgroups have the same cardinality."
+notes = "Erdos Problem 274 -- https://www.erdosproblems.com/274"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/274.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E274_prove"
+file = "E274_prove.lean"
+module = "FtpEvalBench.E274_prove"
+shape = "prove"
+track = "open"
+pair_id = "E274"
+declaration = "erdos_274"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/274.lean#erdos_274"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b4b9fb952c4c1148"
+  conversion_hash = "474f6fac3a8c3a10e2e7057b222fa34949df36cb45b395b4797da4e8b698713e"
+  semantic_anchor = "b5bda83cfdd3622704dc652081cbb58fea404b8fdca971297d7860ad1fe7a29b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E274_refute"
+file = "E274_refute.lean"
+module = "FtpEvalBench.E274_refute"
+shape = "refute"
+track = "open"
+pair_id = "E274"
+declaration = "erdos_274"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/274.lean#erdos_274"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e28fbcece83c8e55"
+  conversion_hash = "c43468502d5d935343d3fdf1892075417f44f79ff4381b30cf459802a03fc565"
+  semantic_anchor = "2d48358a9bf7392513515b051c5b58b5b9c58ff20132a5daed0753a73c8335dc"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

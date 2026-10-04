@@ -1,0 +1,69 @@
+# erdos:979 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:979"
+mathdb_number = 391437
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $k ≥ 2$, and let $f_k(n)$ count the number of solutions to $n = p_1^k + \\dots + p_k^k$, where the $p_i$ are prime numbers. Is it true that $\\limsup f_k(n) = \\infty$?"
+notes = "Erdos Problem 979 -- https://www.erdosproblems.com/979"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/979.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E979_prove"
+file = "E979_prove.lean"
+module = "FtpEvalBench.E979_prove"
+shape = "prove"
+track = "open"
+pair_id = "E979"
+declaration = "erdos_979"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/979.lean#erdos_979"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "95076817e6977558"
+  conversion_hash = "2559fc0e360e23d7d1eb42a8ae2710c6eaa69dce02ff436c8537f8bbac3dff64"
+  semantic_anchor = "26e0525d737289a1dd515ce0b6e4490fc5f97b2dc8910e853eb933c81af77486"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E979_refute"
+file = "E979_refute.lean"
+module = "FtpEvalBench.E979_refute"
+shape = "refute"
+track = "open"
+pair_id = "E979"
+declaration = "erdos_979"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/979.lean#erdos_979"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "f1bdeaea38dafd93"
+  conversion_hash = "c4a24c9a7e497ddb510a0b8f7609cc0ee8789da7fded9494cbe5f3b2bcda08bc"
+  semantic_anchor = "659cebc048c0e6da0030bf2ab3032e57b6f03ff4b96ceb6007ab15f7a0af968d"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

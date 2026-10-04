@@ -1,0 +1,47 @@
+# erdos:22 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:22"
+mathdb_number = 22
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $\\epsilon > 0$ and let $n$ be sufficiently large depending on $\\epsilon$. Is there a graph on $n$ vertices with at least $n^2/8$ many edges which contains no $K_4$, such that the largest independent set has size at most $\\epsilon n$? This is true, as proved by Fox, Loh, and Zhao [FLZ15]."
+notes = "Erdos Problem 22 -- https://www.erdosproblems.com/22"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/22.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E22"
+file = "E22.lean"
+module = "FtpEvalBench.E22"
+shape = "decide"
+track = "solved"
+declaration = "erdos_22"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/22.lean#erdos_22"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "1ffe2b950c8b9566"
+  conversion_hash = "a40a8c0225e48f08754116a494bd26720a2fa1035c7247567f773fe95b84317a"
+  semantic_anchor = "5249f4b0c7b33f552dc1d5b3f4056819d8060df8a8dd511a3598dfe009a3d8b0"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

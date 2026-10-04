@@ -1,0 +1,47 @@
+# erdos:353 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:353"
+mathdb_number = 390897
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $A\\subseteq \\mathbb{R}^2$ be a measurable set with infinite measure. Must $A$ contain the vertices of an isosceles trapezoid of area $1$? What about an isosceles triangle, or a right-angled triangle, or a cyclic quadrilateral, or a convex polygon with congruent sides? Koizumi [Ko25] has resolved this question, proving that any set with infinite measure must contain the vertices of an isosceles trapezoid, an isosceles triangle, and a right-angled triangle, all of area $1$. This statement formalizes the leading question, for isosceles trapezoids; the remaining configurations are given as variants below. The area of a polygon is taken to be the Lebesgue measure of the convex hull of its vertices."
+notes = "Erdos Problem 353 -- https://www.erdosproblems.com/353"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/353.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E353"
+file = "E353.lean"
+module = "FtpEvalBench.E353"
+shape = "decide"
+track = "solved"
+declaration = "erdos_353"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/353.lean#erdos_353"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e8984f383fc46e90"
+  conversion_hash = "5ae5488ecce51c5b8281a91d6369f35695145868ec32236bf28dd7ce3a0db853"
+  semantic_anchor = "1b9ab5490216fbd8be0a883a091305041a559c69f05cae96dda233bf00118ab1"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
