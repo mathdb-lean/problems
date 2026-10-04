@@ -1,0 +1,69 @@
+# erdos:542 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:542"
+mathdb_number = 403689
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Is it true that if $A\\subseteq\\{1,\\ldots,n\\}$ is a set such that $[a,b]>n$ for all $a\\neq b$, where $[a,b]$ is the least common multiple, then $$\\sum_{a\\in A}\\frac{1}{a}\\leq \\frac{31}{30}?$$ The answer is yes, proved by Schinzel and Szekeres [ScSz59]. The bound is best possible as $A=\\{2,3,5\\}$ demonstrates."
+notes = "Erdos Problem 542 -- https://www.erdosproblems.com/542"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/542.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E542_parts_i"
+file = "E542_parts_i.lean"
+module = "FtpEvalBench.E542_parts_i"
+shape = "decide"
+track = "solved"
+part = "i"
+declaration = "erdos_542.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/542.lean#erdos_542.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "951d3aa38ff91bb8"
+  conversion_hash = "f54c4069263234878e14a3a919c470e63214073a9e83186a2fb85cedb019a001"
+  semantic_anchor = "3f2e257849c8ad5860ba5a41a672c2d68fc5051802529e67bed975690e8dd4ec"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E542_parts_ii"
+file = "E542_parts_ii.lean"
+module = "FtpEvalBench.E542_parts_ii"
+shape = "decide"
+track = "solved"
+part = "ii"
+declaration = "erdos_542.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/542.lean#erdos_542.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "0c01c622600e2cee"
+  conversion_hash = "a151c453e0c4a0b366b81caff94b11e556145e4327dd70be3001f6cd791530fd"
+  semantic_anchor = "71e266e7a8e89c214572417b74c2d5917ab0991c11ca788a1543f1a98efaced1"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

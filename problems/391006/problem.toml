@@ -1,0 +1,47 @@
+# erdos:481 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:481"
+mathdb_number = 391006
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $a_1,\\ldots,a_r,b_1,\\ldots,b_r\\in \\mathbb{N}$ such that $\\sum_{i}\\frac{1}{a_i}>1$. For any finite sequence of $n$ (not necessarily distinct) integers $A=(x_1,\\ldots,x_n)$ let $T(A)$ denote the sequence of length $rn$ given by $$(a_ix_j+b_i)_{1\\leq j\\leq n, 1\\leq i\\leq r}.$$ Prove that, if $A_1=(1)$ and $A_{i+1}=T(A_i)$, then there must be some $A_k$ with repeated elements. This is true. This appears to have first been shown by Klarner [Kl82], with a generalisation given by Kolpakov and Talambutsa [KoTa22]. Essentially the same proof was found independently by Barreto in the comment section."
+notes = "Erdos Problem 481 -- https://www.erdosproblems.com/481"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/481.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E481"
+file = "E481.lean"
+module = "FtpEvalBench.E481"
+shape = "proof"
+track = "solved"
+declaration = "erdos_481"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/481.lean#erdos_481"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "0d7e1e327591c26d"
+  conversion_hash = "90f7778d5412bccde6111309da05fd1f2346518df7fa2baf8ea815ae4fa50a5e"
+  semantic_anchor = "a9bc718b333dd7ab9fac2197e22286514174f962a93385782df71b3b89720875"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

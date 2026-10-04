@@ -1,0 +1,69 @@
+# erdos:1109 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1109"
+mathdb_number = 391538
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $f(N)$ be the size of the largest subset $A\\subseteq \\{1,\\ldots,N\\}$ such that every $n\\in A+A$ is squarefree. Estimate $f(N)$. In particular, is it true that $f(N)\\leq N^{o(1)}$, or even $f(N) \\leq (\\log N)^{O(1)}$? This theorem formalizes the subpolynomial bound as `f(N) = O(N^ε)` for every `ε > 0`."
+notes = "Erdos Problem 1109 -- https://www.erdosproblems.com/1109"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1109.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1109_prove"
+file = "E1109_prove.lean"
+module = "FtpEvalBench.E1109_prove"
+shape = "prove"
+track = "open"
+pair_id = "E1109"
+declaration = "erdos_1109"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1109.lean#erdos_1109"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "3b4069f23b1d9ecf"
+  conversion_hash = "442e96cfa94cd77214b760eb8a8a77708e33605f32492f6e6c8c238aac3e77fc"
+  semantic_anchor = "ee4b060c322d3708cacb6d139fa06f539b4aaf62823e6c9adeaf258d7cc8cba9"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1109_refute"
+file = "E1109_refute.lean"
+module = "FtpEvalBench.E1109_refute"
+shape = "refute"
+track = "open"
+pair_id = "E1109"
+declaration = "erdos_1109"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1109.lean#erdos_1109"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "038dd77195b44273"
+  conversion_hash = "4b5742b5c14a5ab749d2e19f4f9954b7916b1b0899d32c9ce75e48c0d8c40d3a"
+  semantic_anchor = "99cd1d49910966369c4c955dc58236a0415c5d88b20fe24c331176f9cefc3f9b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

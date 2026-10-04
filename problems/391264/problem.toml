@@ -1,0 +1,47 @@
+# erdos:780 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:780"
+mathdb_number = 391264
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Suppose $n\\geq kr+(t-1)(k-1)$ and the edges of the complete $r$-uniform hypergraph on $n$ vertices are $t$-coloured. Prove that some colour class must contain $k$ pairwise disjoint edges. In other words, this problem asks to determine the chromatic number of the Kneser hypergraph. When $k=2$ this was conjectured by Kneser and proved by Lovász [Lo78]. The general case was proved by Alon, Frankl, and Lovász [AFL86]."
+notes = "Erdos Problem 780 -- https://www.erdosproblems.com/780"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/780.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E780"
+file = "E780.lean"
+module = "FtpEvalBench.E780"
+shape = "proof"
+track = "solved"
+declaration = "erdos_780"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/780.lean#erdos_780"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "fab831daf3f66e53"
+  conversion_hash = "6a891a601d88f20439011cda0132cef853d2cfc87fab1fe31539471d1f15bd5d"
+  semantic_anchor = "dbeb55dc3c95de87abc60b691ee7ab2af02dc779fc31ed9896010c197f3497de"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

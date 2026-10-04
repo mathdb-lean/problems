@@ -1,0 +1,47 @@
+# erdos:56 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:56"
+mathdb_number = 315543
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Suppose $A \\subseteq \\{1,\\dots,N\\}$ is such that there are no $k+1$ elements of $A$ which are relatively prime. An example is the set of all multiples of the first $k$ primes. Is this the largest such set? To avoid trivial counterexamples, we must insist that $N$ be at least the $k$th prime."
+notes = "Erdos Problem 56 -- https://www.erdosproblems.com/56"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/56.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E56"
+file = "E56.lean"
+module = "FtpEvalBench.E56"
+shape = "decide"
+track = "solved"
+declaration = "erdos_56"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/56.lean#erdos_56"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "f37d1098af806b2d"
+  conversion_hash = "262757497c3e8c62a2d8c80df0b0703b69098a45dbae48c3545efcc284baa1ca"
+  semantic_anchor = "81bcea51075f909f321ce6bb44d83d2d29cad51f098e70ed82f4f91894b09127"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,47 @@
+# erdos:1090 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1090"
+mathdb_number = 315564
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $k\\geq 3$. Does there exist a finite set $A\\subset \\mathbb{R}^2$ such that, in any $2$-colouring of $A$, there exists a line which contains at least $k$ points from $A$, and all the points of $A$ on the line have the same colour? Erdős [Er75f] says Graham and Selfridge proved the answer is yes when $k=3$. Hunter has observed that, for sufficiently large $n$, a generic projection of $[k]^n$ into $\\mathbb{R}^2$ has this property, by the Hales-Jewett theorem."
+notes = "Erdos Problem 1090 -- https://www.erdosproblems.com/1090"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1090.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1090"
+file = "E1090.lean"
+module = "FtpEvalBench.E1090"
+shape = "decide"
+track = "solved"
+declaration = "erdos_1090"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1090.lean#erdos_1090"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "61ac30c9a18e9e5c"
+  conversion_hash = "0fe301dad9aa468cebbdf15620130c0d8180700eaa8cecf680b3eed958604d45"
+  semantic_anchor = "0e26912e51df75dc635bcdf770866bae0d1bb822019d546035f9524d69d1506b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

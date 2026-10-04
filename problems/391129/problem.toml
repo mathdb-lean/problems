@@ -1,0 +1,69 @@
+# erdos:623 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:623"
+mathdb_number = 391129
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $X$ be a set of cardinality $\\aleph_\\omega$ and $f$ be a function from the finite subsets of $X$ to $X$ such that $f(A)\\not\\in A$ for all $A$. Must there exist an infinite $Y\\subseteq X$ that is independent - that is, for all finite $B\\subset Y$ we have $f(B)\\not\\in Y$?"
+notes = "Erdos Problem 623 -- https://www.erdosproblems.com/623"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/623.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E623_prove"
+file = "E623_prove.lean"
+module = "FtpEvalBench.E623_prove"
+shape = "prove"
+track = "open"
+pair_id = "E623"
+declaration = "erdos_623"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/623.lean#erdos_623"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "43815b97cad196e7"
+  conversion_hash = "5c253828e6575e312f70101fbe942eb64d164b1cac5f2af9f88bfa8e3819e354"
+  semantic_anchor = "244aabf9b0c7539906accb4de1ad48c7bea93ba65c5f94b0d8ff8b2bd1d2ae05"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E623_refute"
+file = "E623_refute.lean"
+module = "FtpEvalBench.E623_refute"
+shape = "refute"
+track = "open"
+pair_id = "E623"
+declaration = "erdos_623"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/623.lean#erdos_623"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "50a4eabc275980ae"
+  conversion_hash = "39f9f4a970c7c080d7933e37fc701cfefae9d7bbc5fe9c8d9f6b9e87ba07e7ea"
+  semantic_anchor = "00cb07d7ca50a234e71553722bf17c061b29a7feb27ad55e8bc2f44525638c8a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

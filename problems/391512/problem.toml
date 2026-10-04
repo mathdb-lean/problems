@@ -1,0 +1,47 @@
+# erdos:1077 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1077"
+mathdb_number = 391512
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "We call a graph $D$-balanced (or $D$-almost-regular) if the maximum degree is at most $D$ times the minimum degree. Let $ε, α > 0$ and $D$ and $n$ be sufficiently large. If $G$ is a graph on $n$ vertices with at least $n^{1+α}$ edges, then must $G$ contain a $D$-balanced subgraph on $m > n^{1-α}$ vertices with at least $εm^{1+α}$ edges?"
+notes = "Erdos Problem 1077 -- https://www.erdosproblems.com/1077"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1077.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1077"
+file = "E1077.lean"
+module = "FtpEvalBench.E1077"
+shape = "decide"
+track = "solved"
+declaration = "erdos_1077"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1077.lean#erdos_1077"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8e8c396f50d6d93e"
+  conversion_hash = "7b8119cb08ca716701efa2659c1b0fb3e72a96da1787e8d9bb726ab0ed56cc2c"
+  semantic_anchor = "ebec2c8f1a46df59da73dce4088cea05b9554c5188dfd2aea7b8f26717e76e19"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

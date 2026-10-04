@@ -1,0 +1,47 @@
+# erdos:947 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:947"
+mathdb_number = 391412
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "There is no exact covering system - that is, a finite collection of congruence classes $a_i\\pmod{n_i}$ with distinct $n_i$ such that every integer satisfies exactly one of these congruence classes. This is true, and was proved independently by Mirsky and Newman and by Davenport and Rado; the Mirsky–Newman proof first appeared in [Er50]. See also [Er77c]. A `StrictCoveringSystem ℤ` is a finite family of congruence classes with distinct moduli $n_i \\geq 2$ covering $\\mathbb{Z}$; the trivial exact covering system consisting of the single class $0 \\pmod 1$ is therefore excluded."
+notes = "Erdos Problem 947 -- https://www.erdosproblems.com/947"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/947.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E947"
+file = "E947.lean"
+module = "FtpEvalBench.E947"
+shape = "proof"
+track = "solved"
+declaration = "erdos_947"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/947.lean#erdos_947"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "71de51176a156b69"
+  conversion_hash = "f02bb7830de902458a29802405faffc54556df9e2e4ffc6e47f01b8c70e71955"
+  semantic_anchor = "eb62a2656d262d340531248b9067eeb9d646a8dc2a924f790f72d06adeb8b73a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

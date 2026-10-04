@@ -1,0 +1,47 @@
+# erdos:785 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:785"
+mathdb_number = 391268
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $A,B\\subseteq \\mathbb{N}$ be infinite sets of positive integers such that $A+B$ contains all large integers. Let $A(x)=\\lvert A\\cap [1,x]\\rvert$ and similarly for $B(x)$. Is it true that if $A(x)B(x)\\sim x$ then $$A(x)B(x)-x\\to \\infty$$ as $x\\to \\infty$? A conjecture of Erdős and Danzer. The answer is yes, proved by Sárközy and Szemerédi [SaSz94], who actually proved that it is impossible for $$A(x)B(x)-x=o(A(x)).$$ This was formalized in Lean by van Doorn using Aristotle."
+notes = "Erdos Problem 785 -- https://www.erdosproblems.com/785"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/785.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E785"
+file = "E785.lean"
+module = "FtpEvalBench.E785"
+shape = "decide"
+track = "solved"
+declaration = "erdos_785"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/785.lean#erdos_785"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c6ec0c610b980ecf"
+  conversion_hash = "cca7c1963cbcd5c53f73d7be293aef721dfd1d6a8d65ed797cacdaf868e6f414"
+  semantic_anchor = "df5a0d3a04e9dc1b1e116a540e0d5567b0781667be52cf0b49c99a0054bbf708"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

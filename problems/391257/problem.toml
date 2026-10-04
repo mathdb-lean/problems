@@ -1,0 +1,69 @@
+# erdos:773 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:773"
+mathdb_number = 391257
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "What is the size of the largest Sidon subset $A\\subseteq\\{1,2^2,\\ldots,N^2\\}$? Is it $N^{1-o(1)}$?"
+notes = "Erdos Problem 773 -- https://www.erdosproblems.com/773"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/773.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E773_prove"
+file = "E773_prove.lean"
+module = "FtpEvalBench.E773_prove"
+shape = "prove"
+track = "open"
+pair_id = "E773"
+declaration = "erdos_773"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/773.lean#erdos_773"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "dbaed6589d07db5e"
+  conversion_hash = "40f8d8e74ea3f039a1fa4698867a3da8b43f6d58bc93b93532ed0090da845afa"
+  semantic_anchor = "8c97a2956f2f4c75cb2d6eb700ee3e2c8b722b7a3bf252b7e5584c3420953fc4"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E773_refute"
+file = "E773_refute.lean"
+module = "FtpEvalBench.E773_refute"
+shape = "refute"
+track = "open"
+pair_id = "E773"
+declaration = "erdos_773"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/773.lean#erdos_773"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c48cf30bd6dc46d6"
+  conversion_hash = "4eb19362e7338adff2a00818e35423fb7d3e3ccb0ca2e60565dba3c3216ac65b"
+  semantic_anchor = "a231f440164c7a18d20ceab288a9aed8dd66f21e230d4cac2602b8c1bcd87d0d"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

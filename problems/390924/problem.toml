@@ -1,0 +1,47 @@
+# erdos:384 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:384"
+mathdb_number = 390924
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If $1<k<n-1$ then $\\binom{n}{k}$ is divisible by a prime $p\\leq n/2$ (except $\\binom{7}{3}=\\binom{7}{4}=5\\cdot 7$). A conjecture of Erdős and Selfridge [ErGr80]. Proved by Ecklund [Ec69], who made the stronger conjecture that whenever $n>k^2$ the binomial coefficient $\\binom{n}{k}$ is divisible by a prime $p<n/k$. Discussed in problem B31 and B33 of Guy's collection [Gu04]. Stronger forms of this conjecture are [1094](https://www.erdosproblems.com/1094) and [1095](https://www.erdosproblems.com/1095). Ecklund's theorem is stated for $n \\geq 2k$ with the single exception $\\binom{7}{3}$; by the symmetry $\\binom{n}{k} = \\binom{n}{n-k}$ this is the form above, where $\\binom{7}{4}$ is the second exception. The prime bound is $p \\leq n/2$ (that is, $2p \\leq n$); see `erdos_384.variants.strict` for the strict inequality."
+notes = "Erdos Problem 384 -- https://www.erdosproblems.com/384"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/384.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E384"
+file = "E384.lean"
+module = "FtpEvalBench.E384"
+shape = "proof"
+track = "solved"
+declaration = "erdos_384"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/384.lean#erdos_384"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "68a8c0bcd1218484"
+  conversion_hash = "be5ec543107fed849d864a00ca7c2362ec0f6086a2199dee30364ed3c1a47020"
+  semantic_anchor = "ca4197443f839e57994eef9c6e1e1aa63bf8e1b9fef49790a5b24fed20bd0384"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

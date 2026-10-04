@@ -1,0 +1,69 @@
+# erdos:1176 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1176"
+mathdb_number = 391573
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $G$ be a graph with chromatic number $\\aleph_1$. Is it true that there is a colouring of the edges with $\\aleph_1$ many colours such that, in any countable colouring of the vertices, there exists a vertex colour containing all edge colours? A problem of Erdős, Galvin, and Hajnal. The consistency of this was proved by Hajnal and Komjáth."
+notes = "Erdos Problem 1176 -- https://www.erdosproblems.com/1176"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1176.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1176_prove"
+file = "E1176_prove.lean"
+module = "FtpEvalBench.E1176_prove"
+shape = "prove"
+track = "open"
+pair_id = "E1176"
+declaration = "erdos_1176"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1176.lean#erdos_1176"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "02f58d6cf7f504af"
+  conversion_hash = "ceadcd3805a2df9a7ba22dd1b8b3065b30a4bcbd7d5088e4fe90d8f7067a9873"
+  semantic_anchor = "9d8a729b8751a060caeac5e2e121f74a492089a2f60d35fff9db2e608973744d"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1176_refute"
+file = "E1176_refute.lean"
+module = "FtpEvalBench.E1176_refute"
+shape = "refute"
+track = "open"
+pair_id = "E1176"
+declaration = "erdos_1176"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1176.lean#erdos_1176"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "94865919c3b6d2d7"
+  conversion_hash = "c5a19238c9e882cdc358737f0f0690933299e6dbe265cadae2a504b18054e52a"
+  semantic_anchor = "50993e053aa18ff1141527f9134ad2a0ef7445fbe2ae1deebd9ba8136db8fc77"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

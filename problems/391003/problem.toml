@@ -1,0 +1,47 @@
+# erdos:476 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:476"
+mathdb_number = 391003
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $A\\subseteq \\mathbb{F}_p$. Let $$ A\\hat{+}A = \\{ a+b : a\\neq b \\in A\\}. $$ Is it true that $$ \\lvert A\\hat{+}A\\rvert \\geq \\min(2\\lvert A\\rvert-3,p)? $$ This is the Erdős-Heilbronn inequality, proved by Dias da Silva and Hamidoune."
+notes = "Erdos Problem 476 -- https://www.erdosproblems.com/476"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/476.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E476"
+file = "E476.lean"
+module = "FtpEvalBench.E476"
+shape = "decide"
+track = "solved"
+declaration = "erdos_476"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/476.lean#erdos_476"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "038478bbef37090d"
+  conversion_hash = "9e429d5833952cb1697a33eee36e6552179b2d05b477e5f62d39173f285c497c"
+  semantic_anchor = "a503c9005c7ed0b6cd2ec60f8f6a238d416bd5a3f93ee7585d2914a14eba35d9"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

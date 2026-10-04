@@ -1,0 +1,47 @@
+# erdos:373 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:373"
+mathdb_number = 390915
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Show that the equation `n!=a_1!a_2!···a_k!`, with `n−1 > a_1 ≥ a_2 ≥ ··· ≥ a_k`, has only finitely many solutions."
+notes = "Erdos Problem 373 -- https://www.erdosproblems.com/373"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/373.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E373"
+file = "E373.lean"
+module = "FtpEvalBench.E373"
+shape = "proof"
+track = "open"
+declaration = "erdos_373"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/373.lean#erdos_373"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "f24f04bc0544e759"
+  conversion_hash = "0c522ede8b08578a56f6ff9f3eb3fc90a0df90a3f8e9932978be2a7eb33b99e9"
+  semantic_anchor = "647e6405f5f43e99997350a715d675ff4dbe115728a6866f857fec6e0c530ac5"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

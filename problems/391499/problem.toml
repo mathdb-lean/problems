@@ -1,0 +1,47 @@
+# erdos:1064 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1064"
+mathdb_number = 391499
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $ϕ(n)$ be the Euler's totient function, then the $n$ satisfies $ϕ(n)>ϕ(n - ϕ(n))$ have asymptotic density 1. Reference: [LuPo02] Luca, Florian and Pomerance, Carl, On some problems of {M}\\polhk akowski-{S}chinzel and {E}rd\\H os concerning the arithmetical functions {$\\phi$} and {$\\sigma$}. Colloq. Math."
+notes = "Erdos Problem 1064 -- https://www.erdosproblems.com/1064"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1064.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1064"
+file = "E1064.lean"
+module = "FtpEvalBench.E1064"
+shape = "proof"
+track = "solved"
+declaration = "erdos_1064"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1064.lean#erdos_1064"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "dd2854788097f905"
+  conversion_hash = "655f086649743e47aa758768417c99af49125af189b4e7fd8ec39609b0eae589"
+  semantic_anchor = "dac451a8079d04acf991f6f05a585ab11e1544fa0498f7c0c9194742ccbd2aad"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

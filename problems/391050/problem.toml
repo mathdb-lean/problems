@@ -1,0 +1,47 @@
+# erdos:533 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:533"
+mathdb_number = 391050
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $\\delta > 0$. If $n$ is sufficiently large and $G$ is a graph on $n$ vertices with no $K_5$ and at least $\\delta n^2$ edges, must $G$ contain a set of $\\gg_\\delta n$ vertices spanning no triangle? Equivalently, writing $\\mathrm{RT}_3(n, K_5, m)$ for the maximum number of edges of a $K_5$-free graph on $n$ vertices in which every triangle-free vertex set has fewer than $m$ vertices (the *triangle Ramsey–Turán number*), is $$\\delta_3(5) = \\lim_{\\epsilon \\to 0} \\lim_{n \\to \\infty} \\frac{\\mathrm{RT}_3(n, K_5, \\epsilon n)}{n^2} = 0?$$ This is a problem of Erdős, Hajnal, Simonovits, Sós, and Szemerédi [EHSSS94], who proved $\\delta_3(5) \\leq 1/12$ and the analogous $\\delta_3(4) = 0$, and observed $\\delta_3(7) \\geq 1/4$ via a construction of Erdős and Rogers [ErRo62]. The answer is **no**: Balogh and Lenz [BaLe13] disproved it by showing $\\delta_3(5) > 0$, and the exact value $\\delta_3(5) = 1/12$ was determined by the matching lower-bound construction of Liu, Reiher, Sharifzadeh, and Staden [LRSS21] (see `erdos_533.variants.lrss_lower`)."
+notes = "Erdos Problem 533 -- https://www.erdosproblems.com/533"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/533.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E533"
+file = "E533.lean"
+module = "FtpEvalBench.E533"
+shape = "decide"
+track = "solved"
+declaration = "erdos_533"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/533.lean#erdos_533"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7d2319e6c9a04c97"
+  conversion_hash = "4839ac462a783559954617c7f42dbac155aaee3f462bcefc88cd5156299384e9"
+  semantic_anchor = "8d1b0cc0ad0b5300bac60dbef53e41c0b654be35ad22dde7ca62f7b2ba137460"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

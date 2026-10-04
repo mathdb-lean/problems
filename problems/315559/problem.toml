@@ -1,0 +1,47 @@
+# erdos:958 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:958"
+mathdb_number = 315559
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $A\\subset \\mathbb{R}^2$ be a finite set of size $n$, and let $\\{d_1,\\ldots,d_k\\}$ be the set of distances determined by $A$. Let $f(d)$ be the multiplicity of $d$, that is, the number of unordered pairs from $A$ of distance $d$ apart. Is it true that $k=n-1$ and $\\{f(d_i)\\}=\\{n-1,\\ldots,1\\}$ if and only if $A$ is a set of equidistant points on a line or a circle? Erdős conjectured that the answer is no, and other such configurations exist. This was proved by Clemen, Dumitrescu, and Liu [CDL25], who observed that equidistant points on a short circular arc on a circle of radius $1$, together with the centre, are also an example. The classification is asked for all sufficiently large $n$. Small exceptions such as $\\{(0,0), (1,0), (0,1), (0,-1)\\}$ exist, so the negative answer asserts counterexamples of arbitrarily large size, as in [CDL25]."
+notes = "Erdos Problem 958 -- https://www.erdosproblems.com/958"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/958.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E958"
+file = "E958.lean"
+module = "FtpEvalBench.E958"
+shape = "decide"
+track = "solved"
+declaration = "erdos_958"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/958.lean#erdos_958"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "342cd4fc3a99607a"
+  conversion_hash = "7cdc73a277aa553c36caa4ec3d396840f1a033398c296bf3fb08e7adad2abcdd"
+  semantic_anchor = "24639d802a46eb69f1c6f4aaafb80937c891edfe91ba20033c8135ab1bb3693c"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

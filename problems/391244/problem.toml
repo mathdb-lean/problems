@@ -1,0 +1,47 @@
+# erdos:756 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:756"
+mathdb_number = 391244
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $A\\subset \\mathbb{R}^2$ be a set of $n$ points. Can there be $\\gg n$ many distinct distances each of which occurs for more than $n$ many pairs from $A$? The answer is yes: Bhowmick [Bh24] constructs a set of $n$ points in $\\mathbb{R}^2$ such that $\\lfloor\\frac{n}{4}\\rfloor$ distances occur at least $n+1$ times."
+notes = "Erdos Problem 756 -- https://www.erdosproblems.com/756"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/756.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E756"
+file = "E756.lean"
+module = "FtpEvalBench.E756"
+shape = "decide"
+track = "solved"
+declaration = "erdos_756"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/756.lean#erdos_756"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "623eb762f912b3e9"
+  conversion_hash = "515cd5e65433c50069a790f910c82ecbc8a32ba2203294e26d15da2fbb1b9db9"
+  semantic_anchor = "19a12701314c90fe95e2175e875083e2e86e61f8f2cd07155ddcc67661701e64"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

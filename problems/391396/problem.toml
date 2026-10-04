@@ -1,0 +1,69 @@
+# erdos:930 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:930"
+mathdb_number = 391396
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Is it true that, for every $r$, there is a $k$ such that if $I_1,\\ldots,I_r$ are disjoint intervals of consecutive integers, all of length at least $k$, then $$ \\prod_{1\\leq i\\leq r}\\prod_{m\\in I_i}m $$ is not a perfect power?"
+notes = "Erdos Problem 930 -- https://www.erdosproblems.com/930"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/930.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E930_prove"
+file = "E930_prove.lean"
+module = "FtpEvalBench.E930_prove"
+shape = "prove"
+track = "open"
+pair_id = "E930"
+declaration = "erdos_930"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/930.lean#erdos_930"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "6622509b4350341e"
+  conversion_hash = "7c3eca1a4cf34c9e74c425addf314ec26a2648d3d5ce3e610490f684768f2489"
+  semantic_anchor = "7ae31882c0b383abfa1c99eb1a633a60607ee22eeebf871b3de586703136576e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E930_refute"
+file = "E930_refute.lean"
+module = "FtpEvalBench.E930_refute"
+shape = "refute"
+track = "open"
+pair_id = "E930"
+declaration = "erdos_930"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/930.lean#erdos_930"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d95db7a218aa2550"
+  conversion_hash = "dd8a5cc86b31aa92c0453b610c868ee6589caeaee69b9d729bf57d4516285d18"
+  semantic_anchor = "58ca218bf72239f5102e52781b1c5f2cb3252cac5f2616d556e34fe40280f2bd"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

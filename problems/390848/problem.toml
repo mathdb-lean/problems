@@ -1,0 +1,69 @@
+# erdos:287 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:287"
+mathdb_number = 390848
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $k\\geq2$. Is it true that, for any distinct integers $1 < n_1 < \\cdots < n_k$ such that $\\sum_{i=1}^k \\frac{1}{n_i} = 1$, we must have $\\max(n_{i+1} - n_i) \\geq 3$?"
+notes = "Erdos Problem 287 -- https://www.erdosproblems.com/287"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/287.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E287_prove"
+file = "E287_prove.lean"
+module = "FtpEvalBench.E287_prove"
+shape = "prove"
+track = "open"
+pair_id = "E287"
+declaration = "erdos_287"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/287.lean#erdos_287"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "19c3b5797afd03cb"
+  conversion_hash = "bb023e89172dc4684c3d1916c78bdc08ce1d8710aea37b88cfd46f468a7ccfed"
+  semantic_anchor = "df1c6dd6057a7646e4707177b6cf96a96c404073a57377431212eb537f3fcad8"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E287_refute"
+file = "E287_refute.lean"
+module = "FtpEvalBench.E287_refute"
+shape = "refute"
+track = "open"
+pair_id = "E287"
+declaration = "erdos_287"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/287.lean#erdos_287"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "a4b9e0ec7c5258a9"
+  conversion_hash = "261d8ef0f86136f5061f417efd1d7da84ceec967705b8f2a352469b62b44b97c"
+  semantic_anchor = "b812e21a187c4db019c3787c215ce771ddf8a15026bbd6c6d109d0ff589bf7a9"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

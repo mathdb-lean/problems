@@ -1,0 +1,47 @@
+# erdos:171 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:171"
+mathdb_number = 390762
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Is it true that for every $\\epsilon>0$ and integer $t\\geq 1$, if $N$ is sufficiently large and $A$ is a subset of $[t]^N$ of size at least $\\epsilon t^N$ then $A$ must contain a combinatorial line $P$ (a set $P=\\{p_1,\\ldots,p_t\\}$ where for each coordinate $1\\leq j\\leq t$ the $j$th coordinate of $p_i$ is either $i$ or constant). The 'density Hales-Jewett' problem. This was proved by Furstenberg and Katznelson [FuKa91]. A new elementary proof, which gives quantitative bounds, was proved by the Polymath project [Po12]. Combinatorial lines are Mathlib's `Combinatorics.Line (Fin t) (Fin N)` (which have at least one non-constant coordinate)."
+notes = "Erdos Problem 171 -- https://www.erdosproblems.com/171"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/171.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E171"
+file = "E171.lean"
+module = "FtpEvalBench.E171"
+shape = "decide"
+track = "solved"
+declaration = "erdos_171"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/171.lean#erdos_171"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c91bd5ecb78dd79c"
+  conversion_hash = "d65a771db310fde9636b0c9560cb0dca29df9d237f652ecaf0b1c9e344dc150c"
+  semantic_anchor = "1571eed5e0665d44d0af4e2d9dac916f3da46d9921dbcfe6807cfd2354504cb7"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

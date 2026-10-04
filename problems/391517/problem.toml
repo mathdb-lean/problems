@@ -1,0 +1,69 @@
+# erdos:1083 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1083"
+mathdb_number = 391517
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $d\\geq 3$, and let $f_d(n)$ be the minimal $m$ such that every set of $n$ points in $\\mathbb{R}^d$ determines at least $m$ distinct distances. Estimate $f_d(n)$ - in particular, is it true that $$f_d(n)=n^{\\frac{2}{d}-o(1)}?$$"
+notes = "Erdos Problem 1083 -- https://www.erdosproblems.com/1083"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1083.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1083_prove"
+file = "E1083_prove.lean"
+module = "FtpEvalBench.E1083_prove"
+shape = "prove"
+track = "open"
+pair_id = "E1083"
+declaration = "erdos_1083"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1083.lean#erdos_1083"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c80d8d6b76b7c48d"
+  conversion_hash = "71f0ea403c625cf1685f7eed72323c52c5078ed9927f317761f2a9e44f8ae4c5"
+  semantic_anchor = "f073f61c7443b6d46920de1378c97862b2028347e7797322e8c6adfc8967efdb"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1083_refute"
+file = "E1083_refute.lean"
+module = "FtpEvalBench.E1083_refute"
+shape = "refute"
+track = "open"
+pair_id = "E1083"
+declaration = "erdos_1083"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1083.lean#erdos_1083"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "f4da22af9ce98b06"
+  conversion_hash = "ef0b67ed546300234511f0dc8373dbb595b0e13f890bb579ef9d2abd1e73dcc0"
+  semantic_anchor = "e40ef53608d5b163779bc7ee5f08a58001ab96398f59b8210598d1346ea328ac"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

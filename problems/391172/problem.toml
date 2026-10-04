@@ -1,0 +1,69 @@
+# erdos:672 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:672"
+mathdb_number = 391172
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Can the product of an arithmetic progression of positive integers $n, n + d, ..., n + (k - 1)d$ of length $k ≥ 4$, with $(n, d) = 1$, be a perfect power? Erdős believed not, i.e. that `Erdos672With k l` holds for all $k ≥ 4$ and $l > 1$."
+notes = "Erdos Problem 672 -- https://www.erdosproblems.com/672"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/672.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E672_prove"
+file = "E672_prove.lean"
+module = "FtpEvalBench.E672_prove"
+shape = "prove"
+track = "open"
+pair_id = "E672"
+declaration = "erdos_672"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/672.lean#erdos_672"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "2ff32ba65f9c7b05"
+  conversion_hash = "763ade4dc48f186595f330411776e6ca695b7427ad790c42b6135df94b68fdba"
+  semantic_anchor = "df7ec0cc7856abc45aedd99595947a3c0ce5877ee4f2f551c5cb046b946a31f2"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E672_refute"
+file = "E672_refute.lean"
+module = "FtpEvalBench.E672_refute"
+shape = "refute"
+track = "open"
+pair_id = "E672"
+declaration = "erdos_672"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/672.lean#erdos_672"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "960dac8f20e2ca12"
+  conversion_hash = "9842b5c6ec631dc2a7c4d89895fac28a5ecd3925ff3afb5ad3b9827da56bde10"
+  semantic_anchor = "ee142a16f2d2dce8b64502c0a2e15052acb095ac601c00af2aa97610d0ff21f3"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

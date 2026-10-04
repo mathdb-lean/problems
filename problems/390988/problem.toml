@@ -1,0 +1,47 @@
+# erdos:459 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:459"
+mathdb_number = 390988
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $f(u)$ be the largest $v$ such that no $m\\in (u,v)$ is composed entirely of primes dividing $uv$. Estimate $f(u)$. The estimate $u + 2 \\le f(u) \\le u^2$ holds for every $u \\ge 2$. The upper bound is attained when $u$ is prime, and the lower bound when $u = 2^k - 2$ with $k \\ge 2$; Cambie further showed that $f(n) = (1 + o(1))n$ for almost all $n$."
+notes = "Erdos Problem 459 -- https://www.erdosproblems.com/459"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/459.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E459"
+file = "E459.lean"
+module = "FtpEvalBench.E459"
+shape = "proof"
+track = "solved"
+declaration = "erdos_459"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/459.lean#erdos_459"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "de5d001d54c17752"
+  conversion_hash = "176803eed45ee452ac10cc61e8263ae866e8288f89b473f0f4e96eca8038ec7c"
+  semantic_anchor = "7382860ad63cc8042cbb0fb60f596cf348b6fcb318f90c4152d35e9731f16145"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

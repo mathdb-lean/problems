@@ -1,0 +1,69 @@
+# erdos:740 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:740"
+mathdb_number = 391230
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $\\mathfrak{m}$ be an infinite cardinal and $G$ be a graph with chromatic number $\\mathfrak{m}$. Let $r\\geq 1$. Must $G$ contain a subgraph of chromatic number $\\mathfrak{m}$ which does not contain any odd cycle of length $\\leq r$?"
+notes = "Erdos Problem 740 -- https://www.erdosproblems.com/740"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/740.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E740_prove"
+file = "E740_prove.lean"
+module = "FtpEvalBench.E740_prove"
+shape = "prove"
+track = "open"
+pair_id = "E740"
+declaration = "erdos_740"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/740.lean#erdos_740"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8e35f702bd7c215f"
+  conversion_hash = "9c9c83bc8c2cae3becb5adda580d47455c186bf5a8b314fa6ac98e3362431029"
+  semantic_anchor = "567914819e03429753034c7f310be82893bde6acd8e3511a0c883a59a907d6da"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E740_refute"
+file = "E740_refute.lean"
+module = "FtpEvalBench.E740_refute"
+shape = "refute"
+track = "open"
+pair_id = "E740"
+declaration = "erdos_740"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/740.lean#erdos_740"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c48fa6c81eba59b3"
+  conversion_hash = "6dac63c428e52c4c0f043ba93f4f458d90de2cabd7587fe00842e0a85bb65550"
+  semantic_anchor = "d526625e84225201d6d9f0d714fa90f91ad217c3dde04576d3e24cf21d8b45dc"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

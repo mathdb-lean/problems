@@ -1,0 +1,47 @@
+# erdos:789 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:789"
+mathdb_number = 391272
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $h(n)$ be maximal such that if $A\\subseteq \\mathbb{Z}$ with $\\lvert A\\rvert=n$ then there is $B\\subseteq A$ with $\\lvert B\\rvert \\geq h(n)$ such that if $a_1+\\cdots+a_r=b_1+\\cdots+b_s$ with $a_i,b_i\\in B$ then $r=s$. Estimate $h(n)$."
+notes = "Erdos Problem 789 -- https://www.erdosproblems.com/789"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/789.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E789"
+file = "E789.lean"
+module = "FtpEvalBench.E789"
+shape = "value"
+track = "open"
+declaration = "erdos_789"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/789.lean#erdos_789"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d9667c2826d31cc6"
+  conversion_hash = "3439dc7189ec5dc6bd823ab8d98150de59eab62ef4b2299186f95b867abc3012"
+  semantic_anchor = "4fee04531c1dc0bd5a6f9e97a238f85a0f9e61347dbd5af343a7d188af85bd60"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,69 @@
+# erdos:1159 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1159"
+mathdb_number = 391568
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Determine whether there exists a constant $C>1$ such that the following holds. Let $P$ be a finite [projective plane](https://en.wikipedia.org/wiki/Projective_plane). Must there exist a set of points $S$ such that $1\\leq \\lvert S\\cap \\ell\\rvert \\leq C$ for all lines $\\ell$?"
+notes = "Erdos Problem 1159 -- https://www.erdosproblems.com/1159"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1159.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1159_prove"
+file = "E1159_prove.lean"
+module = "FtpEvalBench.E1159_prove"
+shape = "prove"
+track = "open"
+pair_id = "E1159"
+declaration = "erdos_1159"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1159.lean#erdos_1159"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "a0f59848b4900ab9"
+  conversion_hash = "f36d2787dcc483331afb236047c20e9c19349bf1adaf234368af6a0441d76f25"
+  semantic_anchor = "68c7a6bc044b0a2850781d2f85ad69db4cad31dbaa4b1d056702fba0d00990d4"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1159_refute"
+file = "E1159_refute.lean"
+module = "FtpEvalBench.E1159_refute"
+shape = "refute"
+track = "open"
+pair_id = "E1159"
+declaration = "erdos_1159"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1159.lean#erdos_1159"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "86f8124df3f59998"
+  conversion_hash = "2a50452fb2173ddb6c5884e906f4323818e13de01ff4c5aa375ceed149546e25"
+  semantic_anchor = "6abeffa07f508cb04628fcf16c4e0debe81379cd90bba9e8763233df63f7bc56"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

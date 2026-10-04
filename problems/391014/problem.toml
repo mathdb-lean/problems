@@ -1,0 +1,47 @@
+# erdos:491 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:491"
+mathdb_number = 391014
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $f : \\mathbb{N} \\to \\mathbb{R}$ be an additive function (so that $f(ab) = f(a) + f(b)$ whenever $(a, b) = 1$). If $|f(n+1) - f(n)| < c$ for some constant $c$ and all $n$, then must there exist some $c'$ such that $f(n) = c' \\log n + O(1)$? A question of Erdős [Er61, p.237; Er82e, p.65], who had proved that $f(n) = c' \\log n$ under the stronger hypotheses $f(n+1) - f(n) = o(1)$ or $f(n+1) \\ge f(n)$. The answer is yes, proved by Wirsing [Wi70]. See also `erdos_897.variants.log_growth`."
+notes = "Erdos Problem 491 -- https://www.erdosproblems.com/491"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/491.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E491"
+file = "E491.lean"
+module = "FtpEvalBench.E491"
+shape = "decide"
+track = "solved"
+declaration = "erdos_491"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/491.lean#erdos_491"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "a8a10134aa12e750"
+  conversion_hash = "6335d291a162e59a85161d37d7d0178bcb985bbb65d0246997a8b45f03b5d333"
+  semantic_anchor = "54b6abf9d3d0001042ba0845f626755c76319f1232186a6a4afa69c81ac15ebb"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

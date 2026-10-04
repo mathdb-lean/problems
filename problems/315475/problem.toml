@@ -1,0 +1,47 @@
+# erdos:146 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:146"
+mathdb_number = 315475
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If $H$ is bipartite and is $r$-degenerate, that is, every induced subgraph of $H$ has minimum degree $\\leq r$, then $$\\mathrm{ex}(n;H) \\ll n^{2-1/r}.$$ The answer is no. OpenAI [OpenAI26] give a connected bipartite `2`-degenerate `H` and constants `c, ε > 0` with $\\mathrm{ex}(n;H)\\geq cn^{3/2+\\epsilon}$ for all large `n`, which exceeds the conjectured $n^{2-1/2}=n^{3/2}$. See `erdos_146.variants.two_degenerate_counterexample`."
+notes = "Erdos Problem 146 -- https://www.erdosproblems.com/146"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/146.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E146"
+file = "E146.lean"
+module = "FtpEvalBench.E146"
+shape = "decide"
+track = "solved"
+declaration = "erdos_146"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/146.lean#erdos_146"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9e44d1bc37f28533"
+  conversion_hash = "74166a99132925eaafe40cc9af10ae3d70e9848db23fbce428e1ff5cd10fc26c"
+  semantic_anchor = "f9340074c72f17c2b889868a113ed3f3c39ded74c310c0506a552706c4c746ae"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

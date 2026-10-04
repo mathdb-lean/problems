@@ -1,0 +1,115 @@
+# erdos:470 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:470"
+mathdb_number = 390998
+collection = "erdos"
+tasks = 4
+reviewed_by_a_person = false
+prose = "Are there any odd weird numbers?"
+notes = "Erdos Problem 470 -- https://www.erdosproblems.com/470"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/470.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E470_parts_i_prove"
+file = "E470_parts_i_prove.lean"
+module = "FtpEvalBench.E470_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E470_parts_i"
+declaration = "erdos_470.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/470.lean#erdos_470.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "44da492b433dea79"
+  conversion_hash = "8bf454d412b9a48123b0fcc2bd9f0e332a1c429f0b064e858c7529c29640a24b"
+  semantic_anchor = "e5e5c995b59d33ea576d025d0c9c80bb5d25ca251cd78f3fa86601db6a09bdd0"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E470_parts_i_refute"
+file = "E470_parts_i_refute.lean"
+module = "FtpEvalBench.E470_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E470_parts_i"
+declaration = "erdos_470.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/470.lean#erdos_470.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7639e3a4546c515a"
+  conversion_hash = "dd6a9178e96ed7f1ac09252135899dcde8a9decd11d06105346251a9f67d7d0f"
+  semantic_anchor = "e67292239f89404939f5b1ed5574737bd721777b1746af7dba2f4c20c0972962"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E470_parts_ii_prove"
+file = "E470_parts_ii_prove.lean"
+module = "FtpEvalBench.E470_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E470_parts_ii"
+declaration = "erdos_470.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/470.lean#erdos_470.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "bf9b19cce5422195"
+  conversion_hash = "596d7c14d66af4f1fd9f5195d7225fde47e7f8f7582c45691ef0b312e1d0ea8f"
+  semantic_anchor = "1be30fea2254917e1084cdd3abcfee4acaf7df1a511189ed602df5e3c2bf5b15"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E470_parts_ii_refute"
+file = "E470_parts_ii_refute.lean"
+module = "FtpEvalBench.E470_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E470_parts_ii"
+declaration = "erdos_470.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/470.lean#erdos_470.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "fcb29e28f4240067"
+  conversion_hash = "7e2661d210c85ffaafb887a94211488ef371d542d4f1ecdb1331edbb6d5c1db3"
+  semantic_anchor = "19f5ac074f41f8866d591459cc2cec52c9b757691c3a0890b85be79f491c6e65"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

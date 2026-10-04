@@ -1,0 +1,47 @@
+# erdos:95 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:95"
+mathdb_number = 390702
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $x_1,\\ldots,x_n\\in\\mathbb{R}^2$ determine the set of distances $\\{u_1,\\ldots,u_t\\}$. Suppose $u_i$ appears as the distance between $f(u_i)$ many pairs of points. Then for all $\\epsilon>0$ $$\\sum_i f(u_i)^2 \\ll_\\epsilon n^{3+\\epsilon}.$$ The case when the points determine a convex polygon was solved by Altman [Al63]. Note it is trivial that $\\sum f(u_i)=\\binom{n}{2}$. Solved by Guth and Katz [GuKa15] who proved the upper bound $$\\sum_i f(u_i)^2 \\ll n^3\\log n.$$ See also [94](https://www.erdosproblems.com/94)."
+notes = "Erdos Problem 95 -- https://www.erdosproblems.com/95"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/95.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E95"
+file = "E95.lean"
+module = "FtpEvalBench.E95"
+shape = "decide"
+track = "solved"
+declaration = "erdos_95"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/95.lean#erdos_95"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b4a9e057947ae4cc"
+  conversion_hash = "5bf73287864a915b3feb25e17f3a21d88b63eb17fed9e3108be50955f4b69077"
+  semantic_anchor = "8ea16ade0e7d1d33dd74cc25092632c941dc8036bdbce5598f72cbb6959dee8e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

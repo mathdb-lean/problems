@@ -1,0 +1,47 @@
+# erdos:202 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:202"
+mathdb_number = 315792
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $n_1<\\cdots < n_r\\leq N$ with associated $a_i\\pmod{n_i}$ such that the congruence classes are disjoint (that is, every integer is $\\equiv a_i\\pmod{n_i}$ for at most one $1\\leq i\\leq r$). How large can $r$ be in terms of $N$? Let $f(N)$ be the maximum possible $r$, and let $L(N)=\\exp(\\sqrt{\\log N\\log\\log N})$. This was proved by GPT-5.4 Pro (prompted by Ho Boon Suan), using the argument of [BFV13] together with the resolution of the Kahn-Kalai conjecture by Park and Pham [PaPh24], so that $$f(N)= N L(N)^{-1+o(1)}.$$"
+notes = "Erdos Problem 202 -- https://www.erdosproblems.com/202"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/202.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E202"
+file = "E202.lean"
+module = "FtpEvalBench.E202"
+shape = "proof"
+track = "solved"
+declaration = "erdos_202"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/202.lean#erdos_202"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "3bdfe3c990627458"
+  conversion_hash = "f5bffc978c882febf3803dea7c13bd1c5e8ef22da01c23076cdf432bac9548a4"
+  semantic_anchor = "a485d305b12ad7eb16dfb02e1c29f277dd3fa01b9f0553c732a6a478a3fe8a2b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,69 @@
+# erdos:949 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:949"
+mathdb_number = 391413
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $S \\subseteq \\mathbb{R}$ be a set containing no solutions to $a + b = c$. Must there be a set $A \\subseteq \\mathbb{R} \\setminus S$ of cardinality continuum such that $A + A \\subseteq \\mathbb{R}\\setminus S$?"
+notes = "Erdos Problem 949 -- https://www.erdosproblems.com/949"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/949.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E949_prove"
+file = "E949_prove.lean"
+module = "FtpEvalBench.E949_prove"
+shape = "prove"
+track = "open"
+pair_id = "E949"
+declaration = "erdos_949"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/949.lean#erdos_949"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "96f7ad13f378fac8"
+  conversion_hash = "c6f3b5c4e5367364a6b1d56af1a9e2b631e5c0486824d9ff9c6b6cb502997921"
+  semantic_anchor = "a28c885b2d0848cccb077b7e54ed1f6c20583077884a741465fee8b786384f31"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E949_refute"
+file = "E949_refute.lean"
+module = "FtpEvalBench.E949_refute"
+shape = "refute"
+track = "open"
+pair_id = "E949"
+declaration = "erdos_949"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/949.lean#erdos_949"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "1654df4bf549f71f"
+  conversion_hash = "6bfc091ad1421451511103fe152f2c3f366973e93e4c21e3df77552bc468ed6b"
+  semantic_anchor = "2e02be604687cdf134d03a3d98ec69e255b69a7ae495a87657515cbf5052f155"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

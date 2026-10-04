@@ -1,0 +1,47 @@
+# erdos:806 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:806"
+mathdb_number = 391287
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $A\\subseteq \\{1,\\ldots,n\\}$ with $\\lvert A\\rvert \\leq n^{1/2}$. Must there exist some $B\\subset\\mathbb{Z}$ with $\\lvert B\\rvert=o(n^{1/2})$ such that $A\\subseteq B+B$? A problem of Erdős and Newman [ErNe77], who proved that there exist $A$ with $\\lvert A\\rvert\\asymp n^{1/2}$ such that if $A\\subseteq B+B$ then $$\\lvert B\\rvert \\gg \\frac{\\log\\log n}{\\log n}n^{1/2}.$$ Resolved by Alon, Bukh, and Sudakov [ABS09], who proved that for any $A\\subseteq \\{1,\\ldots,n\\}$ with $\\lvert A\\rvert \\leq n^{1/2}$ there exists some $B$ such that $A\\subseteq B+B$ and $$\\lvert B\\rvert \\ll \\frac{\\log\\log n}{\\log n}n^{1/2}.$$ See also [333](https://www.erdosproblems.com/333)."
+notes = "Erdos Problem 806 -- https://www.erdosproblems.com/806"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/806.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E806"
+file = "E806.lean"
+module = "FtpEvalBench.E806"
+shape = "decide"
+track = "solved"
+declaration = "erdos_806"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/806.lean#erdos_806"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "bfbe05a522bdc509"
+  conversion_hash = "70502ef0a83db82efcc07a60c1496c6e1f1810e641a7e232267ebd3c0643c55e"
+  semantic_anchor = "836c4b6212511afb5962614d304ee085619ff37875a7f43c7dd037aec2666d2f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

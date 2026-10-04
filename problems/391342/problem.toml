@@ -1,0 +1,69 @@
+# erdos:868 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:868"
+mathdb_number = 391342
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $A$ be an additive basis of order $2$, let $f(n)$ denote the number of ways in which $n$ can be written as the sum of two elements from $A$. If $f(n) \\to \\infty$ as $n \\to \\infty$, then must $A$ contain a minimal additive basis of order $2$? Larsen and Larsen [LaLa26] answered this in the negative."
+notes = "Erdos Problem 868 -- https://www.erdosproblems.com/868"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/868.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E868_parts_i"
+file = "E868_parts_i.lean"
+module = "FtpEvalBench.E868_parts_i"
+shape = "decide"
+track = "solved"
+part = "i"
+declaration = "erdos_868.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/868.lean#erdos_868.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d489f4ccd4f904b9"
+  conversion_hash = "02f85cadb15f8b406dfd81e086cbc7d8b434058ecb5b965d28f9ea7c754990f6"
+  semantic_anchor = "1404a7ef073da0557983ee7ee1aa83d38dcd95251f8e0f099238a8c6b844ec51"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E868_parts_ii"
+file = "E868_parts_ii.lean"
+module = "FtpEvalBench.E868_parts_ii"
+shape = "decide"
+track = "solved"
+part = "ii"
+declaration = "erdos_868.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/868.lean#erdos_868.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "86d683182fd0d039"
+  conversion_hash = "30623ab36a665f05ffc2146904dbc04f0ecf5d8ca4059221b1def3110a62f43f"
+  semantic_anchor = "bfb7978236413a48987ee3aa031bb714ad22d5556b9a612c55c5f4012bf5029e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

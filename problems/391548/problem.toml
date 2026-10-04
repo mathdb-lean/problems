@@ -1,0 +1,47 @@
+# erdos:1126 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1126"
+mathdb_number = 391548
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If $$f(x+y)=f(x)+f(y)$$ for almost all $x,y\\in \\mathbb{R}$ then there exists a function $g$ such that $$g(x+y)=g(x)+g(y)$$ for all $x,y\\in\\mathbb{R}$ such that $f(x)=g(x)$ for almost all $x$. Proved independently by de Bruijn [dB66] and Jurkat [Ju65]."
+notes = "Erdos Problem 1126 -- https://www.erdosproblems.com/1126"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1126.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1126"
+file = "E1126.lean"
+module = "FtpEvalBench.E1126"
+shape = "decide"
+track = "solved"
+declaration = "erdos_1126"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1126.lean#erdos_1126"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "2818b99b8e46ae0f"
+  conversion_hash = "f259e4d97cc7c9cf7854ef40618ca00b77f064e4606e595096c58acc84a64c4f"
+  semantic_anchor = "81869d0a0b38aebcc902367059fd11275a18cd16dd531ad1ac83d2e2b32d4024"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

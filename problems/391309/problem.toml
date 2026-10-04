@@ -1,0 +1,69 @@
+# erdos:828 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:828"
+mathdb_number = 391309
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Is it true that, for any $a \\in \\mathbb{Z}$, there are infinitely many $n$ such that $$\\phi(n) | n + a$$?"
+notes = "Erdos Problem 828 -- https://www.erdosproblems.com/828"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/828.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E828_prove"
+file = "E828_prove.lean"
+module = "FtpEvalBench.E828_prove"
+shape = "prove"
+track = "open"
+pair_id = "E828"
+declaration = "erdos_828"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/828.lean#erdos_828"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "0083dc9eca24cefe"
+  conversion_hash = "ec8a632881b0f81d60e4506595ac8da1562cf598fff568b899eab1ce8770a96e"
+  semantic_anchor = "afb3e1f7a38e2c4247e515c0651676315c9f6ad9ca8a63b969f86e891c1d9aff"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E828_refute"
+file = "E828_refute.lean"
+module = "FtpEvalBench.E828_refute"
+shape = "refute"
+track = "open"
+pair_id = "E828"
+declaration = "erdos_828"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/828.lean#erdos_828"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "fad6030458a2b1ec"
+  conversion_hash = "79ff2de66d220d513e44e631c8f9f60eb50187b60c18aeb5d09726a10f543046"
+  semantic_anchor = "422e6d3e3c3458df8bde0530464d99e6272f2ee93fa4c887f40b05eb889b417e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

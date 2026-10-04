@@ -1,0 +1,92 @@
+# erdos:1093 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1093"
+mathdb_number = 391523
+collection = "erdos"
+tasks = 3
+reviewed_by_a_person = false
+prose = "Are there infinitely many binomial coefficients with deficiency 1?"
+notes = "Erdos Problem 1093 -- https://www.erdosproblems.com/1093"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1093.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1093_parts_i_prove"
+file = "E1093_parts_i_prove.lean"
+module = "FtpEvalBench.E1093_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E1093_parts_i"
+declaration = "erdos_1093.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1093.lean#erdos_1093.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "163e13562e0e300f"
+  conversion_hash = "0d697681a38355ca58c62d5910b08248666ccdf18db4f2a4db8a5de3de820a89"
+  semantic_anchor = "4462379718a04759816b6fd8c5b6601fef110b97c122a95b01e724a29422407c"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1093_parts_i_refute"
+file = "E1093_parts_i_refute.lean"
+module = "FtpEvalBench.E1093_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E1093_parts_i"
+declaration = "erdos_1093.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1093.lean#erdos_1093.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d446104eb768a8e8"
+  conversion_hash = "899079748c44597fa4b8b84412a7505d45332d0ae7466f43a95e80aa51e0374b"
+  semantic_anchor = "aaa6721b82a5053aea1dcbbf167415e40a3d3cf7d04aa1de2c17843450811d05"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E1093_parts_ii"
+file = "E1093_parts_ii.lean"
+module = "FtpEvalBench.E1093_parts_ii"
+shape = "proof"
+track = "open"
+part = "ii"
+declaration = "erdos_1093.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1093.lean#erdos_1093.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c5c63c523c34077a"
+  conversion_hash = "75370a7f42895e79df5e656d4536dfc611d4db364f8b7036f6f88c699fb1f120"
+  semantic_anchor = "14fda09d2ae6cfb82158fdaae1eb1f6138a8783ad55356a3eacec6044c60d385"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

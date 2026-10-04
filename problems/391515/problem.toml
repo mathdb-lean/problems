@@ -1,0 +1,47 @@
+# erdos:1080 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1080"
+mathdb_number = 391515
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $G$ be a bipartite graph on $n$ vertices such that one part has $\\lfloor n^{2/3}\\rfloor$ vertices. Is there a constant $c>0$ such that if $G$ has at least $cn$ edges then $G$ must contain a $C_6$? The answer is no, as shown by De Caen and Székely [DeSz92], who in fact show a stronger result. Let $f(n,m)$ be the maximum number of edges of a bipartite graph between $n$ and $m$ vertices which does not contain either a $C_4$ or $C_6$. A positive answer to this question would then imply $f(n,\\lfloor n^{2/3}\\rfloor)\\ll n$. De Caen and Székely prove $n^{10/9}\\gg f(n,\\lfloor n^{2/3}\\rfloor) \\gg n^{58/57+o(1)}$ for $m\\sim n^{2/3}$. They also prove more generally that, for $n^{1/2}\\leq m\\leq n$, $f(n,m) \\ll (nm)^{2/3},$ which was also proved by Faudree and Simonovits. This was formalized in Lean by Alexeev using Aristotle."
+notes = "Erdos Problem 1080 -- https://www.erdosproblems.com/1080"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1080.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1080"
+file = "E1080.lean"
+module = "FtpEvalBench.E1080"
+shape = "decide"
+track = "solved"
+declaration = "erdos_1080"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1080.lean#erdos_1080"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "268ac3fae6f38863"
+  conversion_hash = "e1c66bd504a799cdd4e3a36ba07f20932a088302d5e75d2557abec0d4bb92121"
+  semantic_anchor = "afd09c1227743e5fd9d38df1b1a298f054b0de1073e97f3184df370403c6c100"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

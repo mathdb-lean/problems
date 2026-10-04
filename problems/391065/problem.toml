@@ -1,0 +1,71 @@
+# erdos:552 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:552"
+mathdb_number = 391065
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "In particular, is it true that, for any $c > 0$, there are infinitely many $n$ such that $$R(C_4, S_n) \\leq n + \\sqrt{n} - c?$$"
+notes = "Erdos Problem 552 -- https://www.erdosproblems.com/552"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/552.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E552_parts_ii_prove"
+file = "E552_parts_ii_prove.lean"
+module = "FtpEvalBench.E552_parts_ii_prove"
+shape = "prove"
+track = "open"
+part = "ii"
+pair_id = "E552_parts_ii"
+declaration = "erdos_552.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/552.lean#erdos_552.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "4f5f147342635faa"
+  conversion_hash = "d1887c7d38d7d04a114d57009fb7004ac14e139525d2df8f83cf7af34501ff4c"
+  semantic_anchor = "f68486c8fd0623309fc492733bf141111d9dbc11e457b4008e3995a826c34e7a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E552_parts_ii_refute"
+file = "E552_parts_ii_refute.lean"
+module = "FtpEvalBench.E552_parts_ii_refute"
+shape = "refute"
+track = "open"
+part = "ii"
+pair_id = "E552_parts_ii"
+declaration = "erdos_552.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/552.lean#erdos_552.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8a2106a8ac674ae9"
+  conversion_hash = "210331beddf9dabb6f92c627d5ce7d269d01f8ebcd0f217ea0a36cccf1534b81"
+  semantic_anchor = "a269d0c92c108f0dc8861f9b26e8371277d3686d0382902443e2e28f1b118814"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

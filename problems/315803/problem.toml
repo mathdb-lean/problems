@@ -1,0 +1,90 @@
+# erdos:205 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:205"
+mathdb_number = 315803
+collection = "erdos"
+tasks = 3
+reviewed_by_a_person = false
+prose = "Is it true that all sufficiently large $n$ can be written as $2^k+m$ for some $k\\geq 0$, where $\\Omega(m)<\\log\\log m$? (Here $\\Omega(m)$ is the number of prime divisors of $m$ counted with multiplicity.) Barreto and Leeham, using ChatGPT and Aristotle, have proved a negative answer, which was quantified by Tao and Alexeev (see the comments): in fact there are infinitely many $n$ such that, for all $k$ with $2^k<n$, $n-2^k$ has at least $$\\gg \\left(\\frac{\\log n}{\\log\\log n}\\right)^{1/2}$$ many prime factors."
+notes = "Erdos Problem 205 -- https://www.erdosproblems.com/205"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/205.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E205_parts_i"
+file = "E205_parts_i.lean"
+module = "FtpEvalBench.E205_parts_i"
+shape = "decide"
+track = "solved"
+part = "i"
+declaration = "erdos_205.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/205.lean#erdos_205.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "0e3d319cfc52056e"
+  conversion_hash = "2a6596e9de26507459f6daf01a24df2dd896b4f8a29a67fe4ba21f29514dc2ce"
+  semantic_anchor = "65ed000aa529f567e3e248f8ab2a7b3edd82e8a20e00784ae019ba83e484790b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E205_parts_ii"
+file = "E205_parts_ii.lean"
+module = "FtpEvalBench.E205_parts_ii"
+shape = "decide"
+track = "solved"
+part = "ii"
+declaration = "erdos_205.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/205.lean#erdos_205.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "454918681cff2de9"
+  conversion_hash = "da63d3d4b3dfe4281182ef9feca34227a65daa3ba370c313e5798d8c9d2f8e88"
+  semantic_anchor = "a033f762573945bf0cf1810390e69995e5d2a7ddeda51640390b5ced7889a93a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E205_parts_iii"
+file = "E205_parts_iii.lean"
+module = "FtpEvalBench.E205_parts_iii"
+shape = "decide"
+track = "solved"
+part = "iii"
+declaration = "erdos_205.parts.iii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/205.lean#erdos_205.parts.iii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "beb91a7252df5d12"
+  conversion_hash = "209e508932705d040406ad8fc97e7012f8224ac7b2f20770eeb1b858bc8413c2"
+  semantic_anchor = "899e6c8624583798ccfbd7653d725fe21930cd4fc77b5d78b3804bb200620b1f"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

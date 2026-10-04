@@ -1,0 +1,69 @@
+# erdos:525 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:525"
+mathdb_number = 391042
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Is it true that all except at most $o(2^n)$ many degree $n$ polynomials with $\\pm 1$-valued coefficients $f(z)$ have $\\lvert f(z)\\rvert <1$ for some $\\lvert z\\rvert=1$? The answer is yes: Littlewood [Li66] conjectured the stronger $m(f)=o(1)$ almost surely, which was proved by Kashin [Ka87]."
+notes = "Erdos Problem 525 -- https://www.erdosproblems.com/525"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/525.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E525_parts_i"
+file = "E525_parts_i.lean"
+module = "FtpEvalBench.E525_parts_i"
+shape = "decide"
+track = "solved"
+part = "i"
+declaration = "erdos_525.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/525.lean#erdos_525.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "460b6229ff2a9bda"
+  conversion_hash = "b650ee5df9311958551c193df704a4347dd6e63689e902de28660358c1085cc1"
+  semantic_anchor = "b2f0bbd1cc5bf9e5cd953ebc9d247b4f94ccaea9bf01760c89970c6216d1a738"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E525_parts_ii"
+file = "E525_parts_ii.lean"
+module = "FtpEvalBench.E525_parts_ii"
+shape = "proof"
+track = "solved"
+part = "ii"
+declaration = "erdos_525.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/525.lean#erdos_525.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d29affd2d952db63"
+  conversion_hash = "daf4f476c234b3e57b38517197d9149295856e99b536dc6bd313ba6986d0bcb8"
+  semantic_anchor = "e21b718fef212a71c7dd76adb655915ef5c4dd0fcad5594b0c2d3be5aae98ec1"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

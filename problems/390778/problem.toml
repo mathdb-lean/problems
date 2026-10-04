@@ -1,0 +1,47 @@
+# erdos:193 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:193"
+mathdb_number = 390778
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $S \\subseteq \\mathbb{Z}^3$ be a finite set and let $A = \\lbrace a_1, a_2, \\ldots \\rbrace$ be an infinite $S$-walk, so that $a_{i+1} - a_i \\in S$ for all $i$. Must $A$ contain three collinear points? Cambie and Kalviainen [CaKa26] answered this question in the negative by constructing an infinite walk in $\\mathbb{Z}^3$ with a finite set of steps and no three collinear points."
+notes = "Erdos Problem 193 -- https://www.erdosproblems.com/193"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/193.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E193"
+file = "E193.lean"
+module = "FtpEvalBench.E193"
+shape = "decide"
+track = "solved"
+declaration = "erdos_193"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/193.lean#erdos_193"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "68141d86a21b0285"
+  conversion_hash = "a6a04f78a83695ad36e19d4a0396f79d19647d4a83555cb37ac84a4a38fe9b3c"
+  semantic_anchor = "337d537522556ad7d75ea3b806cce5f7044548ab53142401c9758c4f9ef478c4"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

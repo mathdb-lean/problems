@@ -1,0 +1,92 @@
+# erdos:883 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:883"
+mathdb_number = 391354
+collection = "erdos"
+tasks = 3
+reviewed_by_a_person = false
+prose = "For $A\\subseteq \\{1,\\ldots,n\\}$ let $G(A)$ be the graph with vertex set $A$, where two integers are joined by an edge if they are coprime. Is it true that if $$|A| > \\lfloor n/2 \\rfloor + \\lfloor n/3 \\rfloor - \\lfloor n/6 \\rfloor$$ then $G(A)$ contains all odd cycles of length $\\leq n/3 + 1$? A problem of Erdős and Sárközy [ErSa97]."
+notes = "Erdos Problem 883 -- https://www.erdosproblems.com/883"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/883.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E883_parts_i_prove"
+file = "E883_parts_i_prove.lean"
+module = "FtpEvalBench.E883_parts_i_prove"
+shape = "prove"
+track = "open"
+part = "i"
+pair_id = "E883_parts_i"
+declaration = "erdos_883.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/883.lean#erdos_883.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9ee69014e008eb6e"
+  conversion_hash = "277127b549307c11377096a1210298e19e31b62875117c221fe464b7b220bf8d"
+  semantic_anchor = "40f5e7b66aac7f8dc94561a65030bff5a12dd45a46d3bc34f28ef04849dfc6f9"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E883_parts_i_refute"
+file = "E883_parts_i_refute.lean"
+module = "FtpEvalBench.E883_parts_i_refute"
+shape = "refute"
+track = "open"
+part = "i"
+pair_id = "E883_parts_i"
+declaration = "erdos_883.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/883.lean#erdos_883.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "f572e0b12cfc5949"
+  conversion_hash = "c67aaaaecf93ce12b6a5ebaf97f378c96ba405964620c350ad2100ba13ba2b65"
+  semantic_anchor = "4ae222c16f94628af8b734ed5309de97ea407b7085ebf5c98f5a085d2aa3e044"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E883_parts_ii"
+file = "E883_parts_ii.lean"
+module = "FtpEvalBench.E883_parts_ii"
+shape = "decide"
+track = "solved"
+part = "ii"
+declaration = "erdos_883.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/883.lean#erdos_883.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c6d6aef942ea044d"
+  conversion_hash = "311f09d918f112b724be0ba7f91e0b7b596cba39634ba6777879e4b4a43b53f2"
+  semantic_anchor = "3323df44299a2de182598973b2eb9e97b4613bb64b967b0f8e2c0aa7d04dc34a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

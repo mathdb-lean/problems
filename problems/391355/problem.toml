@@ -1,0 +1,69 @@
+# erdos:885 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:885"
+mathdb_number = 391355
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Is it true that, for every $k \\geq 1$, there exist integers $N_1 < \\dots < N_k$ such that $|\\cap_i D(N_i)| \\geq k$?"
+notes = "Erdos Problem 885 -- https://www.erdosproblems.com/885"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/885.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E885_prove"
+file = "E885_prove.lean"
+module = "FtpEvalBench.E885_prove"
+shape = "prove"
+track = "open"
+pair_id = "E885"
+declaration = "erdos_885"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/885.lean#erdos_885"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "fe76fc7c4edef74e"
+  conversion_hash = "d98fc2c127e750c957aee868884623186dc0fab3f1549ce94e96ba0db7f610a7"
+  semantic_anchor = "e1bcdddcff8ec1b7025342e81fb0c25b2da3c686173c2b6cec63e7fd383345a1"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E885_refute"
+file = "E885_refute.lean"
+module = "FtpEvalBench.E885_refute"
+shape = "refute"
+track = "open"
+pair_id = "E885"
+declaration = "erdos_885"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/885.lean#erdos_885"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "4321c3840a63927f"
+  conversion_hash = "9181e80cfe690b7d040c1d7f3dc969b299733ff8753dc9943ba0985ebd0b011f"
+  semantic_anchor = "20f0081577ce4cc06150231a646b68c0d2ceba377c026c7b6c68a1c39121be2b"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

@@ -1,0 +1,47 @@
+# erdos:986 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:986"
+mathdb_number = 315834
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "For any fixed $s\\geq 3$, $$R(s,k) \\gg \\frac{k^{s-1}}{(\\log k)^c}$$ for some constant $c=c(s)>0$. According to Chung and Graham [ChGr98] this was first conjectured by Erdős in 1947. Proved by Bradač [Br26], with $c=2s-4$. The linked formal proof (Codex and GPT-5.6 Sol) gives `k ^ (s - 1) / (log k) ^ c = O(R(s, k))` for a natural `c > 0`, with the Ramsey number defined through `CliqueFree`/`IndepSetFree`; this implies the statement below."
+notes = "Erdos Problem 986 -- https://www.erdosproblems.com/986"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/986.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E986"
+file = "E986.lean"
+module = "FtpEvalBench.E986"
+shape = "proof"
+track = "solved"
+declaration = "erdos_986"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/986.lean#erdos_986"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "00f90bc2ba0541c2"
+  conversion_hash = "631a0c123179b5a0db09701d4623c25d60198c3c91514e9007de31d8b9d9fe66"
+  semantic_anchor = "7f749ce282582a3e46fff0847b63d5fdc7f4d9663ad64b0f9a8ea1a7b7ce682e"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

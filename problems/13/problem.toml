@@ -1,0 +1,47 @@
+# erdos:13 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:13"
+mathdb_number = 13
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If $A \\subseteq \\{1, ..., N\\}$ is a set with no $a, b, c \\in A$ such that $a | (b+c)$ and $a < \\min(b,c)$, then $|A| \\le N/3 + O(1)$. This has been solved by Bedert [Be23]. [Be23] Bedert, B., _On a problem of Erdős and Sárközy about sequences with no term dividing the sum of two larger terms_. arXiv:2301.07065 (2023)."
+notes = "Erdos Problem 13 -- https://www.erdosproblems.com/13"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/13.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E13"
+file = "E13.lean"
+module = "FtpEvalBench.E13"
+shape = "proof"
+track = "solved"
+declaration = "erdos_13"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/13.lean#erdos_13"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "3fa77680ec7a6f18"
+  conversion_hash = "fe2c84cfaf257d80f28bb947991fede75afe4d1f17d84f9c2b5cfdd6f244a0df"
+  semantic_anchor = "04f639a1e4581c44701f4aab87127023068e98dab435c5f89cd6dfedcf7406b3"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

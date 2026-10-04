@@ -1,0 +1,47 @@
+# erdos:1009 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1009"
+mathdb_number = 391461
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Is it true that, for every $c>0$, there exists $f(c)$ such that every graph on $n$ vertices with at least $\\lfloor n^2/4\\rfloor+k$ edges, where $k<c n$, contains at least $k-f(c)$ many edge disjoint triangles? Erdős [Er71] proved this for $c<1/2$ using a theorem of Erdős and Gallai, which says that every graph on $n$ vertices with at least $(n-1)^2/4+2$ many edges, with chromatic number $3$, must contain a triangle. In fact, Erdős proved this is true with $f(c)=0$ for $c<1/2$. At first Erdős thought $f(c)=0$ for larger values of $c$ but this is false: an example of Sauer proves that $f(2)\\geq 1$. This is true, and was proved by Győri [Gy88] who proved that this is true with $f(c)\\ll c^2$, and also that $f(c)=0$ if $c<2$ for odd $n$ or $c<3/2$ for even $n$. A family of edge disjoint triangles is a finite set of $3$-cliques of $G$ any two of which share at most one vertex."
+notes = "Erdos Problem 1009 -- https://www.erdosproblems.com/1009"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1009.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1009"
+file = "E1009.lean"
+module = "FtpEvalBench.E1009"
+shape = "decide"
+track = "solved"
+declaration = "erdos_1009"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1009.lean#erdos_1009"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "0b7396110ea82d7f"
+  conversion_hash = "0f97537c14d48873dc428f2d480c08436b662cd466d84dc8612a73126621da79"
+  semantic_anchor = "c74dc537265239a8eedca0ea5da994c9fdb83d2b6c8ed7afe316147f6e6c2d8a"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

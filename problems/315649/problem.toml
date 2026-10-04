@@ -1,0 +1,47 @@
+# erdos:1188 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:1188"
+mathdb_number = 315649
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Call a set of distinct integers $1<n_1<\\cdots<n_k$ with associated congruence classes $a_i\\pmod{n_i}$ a distinct covering system if every integer satisfies at least one of these congruences. A minimal distinct covering system is one such that no proper subset forms a covering system. Let $F(x)$ count the number of minimal distinct covering systems with all moduli in $[1,x]$. Estimate $F(x)$. The estimate is `log(log F(x)) / log x → 1`."
+notes = "Erdos Problem 1188 -- https://www.erdosproblems.com/1188"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/1188.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E1188"
+file = "E1188.lean"
+module = "FtpEvalBench.E1188"
+shape = "proof"
+track = "solved"
+declaration = "erdos_1188"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/1188.lean#erdos_1188"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "648cd2f70c4802d9"
+  conversion_hash = "fc8a5218785a30e950ede42ab6be793278f57eec92550790bc8a936242702880"
+  semantic_anchor = "0c8351010ed13b3f8262440570cd74379b32e671d16e6d9f5975616a0db705af"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

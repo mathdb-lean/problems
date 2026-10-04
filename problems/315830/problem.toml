@@ -1,0 +1,69 @@
+# erdos:897 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:897"
+mathdb_number = 315830
+collection = "erdos"
+tasks = 2
+reviewed_by_a_person = false
+prose = "Let $f(n)$ be an additive function (so that $f(ab)=f(a)+f(b)$ if $(a,b)=1$ such that $\\limsup_{p,k} f(p^k) / \\log(p^k) = ∞$. Is it true that $\\limsup_n (f(n+1)−f(n))/ \\log n = ∞$? The answer is no; this follows from a construction of Wirsing [Wi81], rediscovered by Archivara [Ar25] and formalised in Lean by Aristotle [ArWu25]."
+notes = "Erdos Problem 897 -- https://www.erdosproblems.com/897"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/897.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E897_parts_i"
+file = "E897_parts_i.lean"
+module = "FtpEvalBench.E897_parts_i"
+shape = "decide"
+track = "solved"
+part = "i"
+declaration = "erdos_897.parts.i"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/897.lean#erdos_897.parts.i"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e50b68d53d5541aa"
+  conversion_hash = "591c3f7fe5b078ee5fc2433a4e372226aa69e6b09915688710938c82a2697cc1"
+  semantic_anchor = "98612cba555372dc04efb3841c9e2bb53f1f56520453e78eceba934feebb3fc8"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "E897_parts_ii"
+file = "E897_parts_ii.lean"
+module = "FtpEvalBench.E897_parts_ii"
+shape = "decide"
+track = "solved"
+part = "ii"
+declaration = "erdos_897.parts.ii"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/897.lean#erdos_897.parts.ii"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "4984e5dbaa43a948"
+  conversion_hash = "4ace8f7416ca100d13838a4e3183f12a82c023e62069cf4c261c715406955c87"
+  semantic_anchor = "2c264c3590c6b804aff681e2177c9c954f8da646ef9f35edce822033f0225fd2"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false

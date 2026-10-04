@@ -1,0 +1,47 @@
+# erdos:867 -- generated from benchmark.json. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations: parts of the question, and prove/refute pairs whose
+# two directions must stay together -- half a pair tells a solver which
+# direction is true.
+
+problem_id = "erdos:867"
+mathdb_number = 391341
+collection = "erdos"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Is it true that if $A=\\{a_1<\\cdots <a_t\\}\\subseteq \\{1,\\ldots,N\\}$ has no solutions to $$a_i+a_{i+1}+\\cdots+a_j\\in A$$ then $$\\lvert A\\rvert \\leq \\frac{N}{2}+O(1)?$$ In fact this problem is false. Freud [Fr93] constructed a sequence with density $\\geq 19/36$. The current best bounds are due to Coppersmith and Phillips [CoPh96], who prove that the maximal size of such an $A$ satisfies $$\\frac{13}{24}N -O(1)\\leq \\lvert A\\rvert \\leq \\left(\\frac{2}{3}-\\frac{1}{512}\\right)N+\\log N.$$"
+notes = "Erdos Problem 867 -- https://www.erdosproblems.com/867"
+
+[source]
+name = "formal-conjectures"
+revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
+file = "FormalConjectures/ErdosProblems/867.lean"
+
+[policy]
+# The admission policy this release was exported under; the full record,
+# including what was omitted and why, is in benchmark.json.
+release_id = "erdos-reviewed"
+released_at = "2026-10-01T12:13:07+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+
+[[task]]
+id = "E867"
+file = "E867.lean"
+module = "FtpEvalBench.E867"
+shape = "decide"
+track = "solved"
+declaration = "erdos_867"
+statement_id = "formal-conjectures:FormalConjectures/ErdosProblems/867.lean#erdos_867"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "5d154473e0465b52"
+  conversion_hash = "50bf65f45ac4c1504e908aa780ee27f899614ff22658a3ca2821e01401d77a2a"
+  semantic_anchor = "c2eb24daf805153881acea4bd95857217453c0c43bf92b3ab203b352a46d3737"
+  conversion_run_id = "import-20261001T013211Z-499396"
+  reviewed_by_a_person = false
