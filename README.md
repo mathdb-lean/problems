@@ -30,8 +30,7 @@ For a MathDB problem number `n`, its GitHub folder is:
 
 `https://github.com/mathdb-lean/problems/tree/main/problems/{n}`
 
-Production numbers are used wherever the problem exists in production. Seven
-problems currently exist only on dev and use provisional dev numbers, listed below.
+All 704 folders use production MathDB numbers.
 
 Each obligation is a frozen `Problem.Target` — a proposition stated in Lean, with
 no proof. A grader elaborates one module at a time against the project in `lean/`
@@ -387,26 +386,24 @@ and `problem.toml` carries the same `mathdb_number` as its folder. The existing
 
 | | |
 |---|---|
-| production | **697** of 704 |
-| dev only | **7** of 704, with provisional numbers |
+| production | **704** of 704 |
 
 MathDB's numbers differ between production and dev. `state = "resolved"` identifies
-a production record and `state = "dev_only"` identifies a provisional dev record;
+a production record;
 each entry includes its actual `mathdb_url`. **The MathDB number is not the Erdős
 number.**
 
-The following numbers must be reconciled with assigned production numbers before
-publishing production links for these seven problems:
+Seven formerly provisional mappings now use their assigned production numbers:
 
-| Erdős problem | Provisional dev number |
+| Erdős problem | Production number |
 |---|---|
-| 1046 | 403685 |
-| 1134 | 403686 |
-| 1213 | 403687 |
-| 362 | 403688 |
-| 542 | 403689 |
-| 673 | 403690 |
-| 895 | 403691 |
+| 1046 | 405989 |
+| 1134 | 405990 |
+| 1213 | 405991 |
+| 362 | 405992 |
+| 542 | 405993 |
+| 673 | 405994 |
+| 895 | 405995 |
 
 `report.release.amends` records earlier manifest fingerprints. The current
 fingerprint is recomputed after the metadata amendment; statement hashes are unchanged.
