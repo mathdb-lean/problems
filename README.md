@@ -48,7 +48,7 @@ upstream file rather than built from its name. For `green`, `wotw` and `kourovka
 upstream declares none to carry, and the route back is `- source_locator:`, which
 names the upstream file that does.
 
-### How a folder is named
+## How a folder is named
 
 A folder is **MathDB's problem number** where MathDB has a record of the problem,
 and the **id its source gives it** where MathDB has none. Both are exact, and
@@ -372,51 +372,74 @@ record.
 
 Pin two things, or the citation does not identify what you ran:
 
-- the **`release_id`** from `benchmark.json` — `erdos-reviewed` here — which fixes
-  which problems and which environment;
+- **`report.distribution.manifest_hash`** from `benchmark.json`, a digest over the
+  whole manifest, which fixes which problems, which environment and which evidence
+  in one value;
 - the **commit** of this repository, which fixes the bytes.
 
-`benchmark.json.report.distribution.manifest_hash` is a digest over the whole
-manifest, so quoting it identifies which problems, which environment and which
-evidence in one value — and `python verify.py` recomputes it, so the citation is
-checkable rather than quoted on trust. Each collection was admitted by its own
-release, and `report.releases[]` carries that release's `release_id`,
-`profile_hash`, `environment_hash` and the candidates it omitted; cite one of those
-when you report on a single collection rather than on the whole distribution.
-It is recomputed whenever the manifest is amended, and `amends` keeps every earlier
-hash, so a citation to a superseded one still resolves to a file that names it.
+`python verify.py` recomputes that digest, so a citation to it is checkable rather
+than quoted on trust. It is recomputed whenever the manifest is amended, and
+`report.distribution.amends` keeps every earlier hash in order, so a citation to a
+superseded one still resolves to a file that names it.
+
+Each collection was admitted by **its own release**, and `report.releases[]`
+carries that release's `release_id` — `erdos-reviewed`, `oeis-reviewed`, one per
+collection — along with its `profile_hash`, `environment_hash` and the candidates
+it omitted. Cite one of those when you report on a single collection rather than
+on the whole distribution. The distribution itself is `mathdb-lean-problems`; it is
+not named after any one of its releases.
 
 ## `problem.toml`
 
 One per folder, generated from `benchmark.json`. It carries the problem's identity
 and prose, its upstream source, and one `[[task]]` entry per obligation:
 
+Abridged from `problems/391455/problem.toml`, which is Erdős problem 1002:
+
 ```toml
 problem_id = "erdos:1002"
+mathdb_number = 391455
 collection = "erdos"
 tasks = 2
 reviewed_by_a_person = false
 prose = "…the question, as the source states it…"
+notes = "Erdos Problem 1002 -- https://www.erdosproblems.com/1002"
 
 [source]
 name = "formal-conjectures"
 revision = "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3"
 file = "FormalConjectures/ErdosProblems/1002.lean"
 
+[policy]
+release_id = "erdos-reviewed"
+released_at = "…"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible",
+                   "Mathlib", "MathDBMathlib", "MathDBUtil"]
+
 [[task]]
 id = "E1002_prove"
 file = "E1002_prove.lean"
+module = "FtpEvalBench.E1002_prove"
 shape = "prove"
 track = "open"
-pair_id = "…"
+pair_id = "E1002"
+declaration = "erdos_1002"
+statement_id = "…"
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
   [task.evidence]
   target_hash = "…"
+  conversion_hash = "…"
   semantic_anchor = "…"
   reviewed_by_a_person = false
 ```
+
+`mathdb_number` appears only where MathDB has a record of the problem, which is
+why 704 of the 1027 files carry it; `pair_id` only on the two halves of a pair,
+`gold_arguments` only on the 384 `decide` obligations, and `part` only where the
+question was cut into parts.
 
 The environment pin sits **inside each task**, not once at the root. Today all
 1106 share one Lean and one mathlib revision; an obligation re-verified later

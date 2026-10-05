@@ -1,8 +1,8 @@
 {
-  "name": "erdos-reviewed",
+  "name": "mathdb-lean-problems",
   "version": "1.0.0",
   "language": "lean4",
-  "description": "Tasks admitted by the pinned collection profile and recorded evidence.",
+  "description": "Obligations admitted by each collection's pinned profile and recorded evidence, assembled from one release per collection.",
   "problems": {
     "E1": {
       "module": "FtpEvalBench.E1",
@@ -43813,8 +43813,8 @@
     ],
     "distribution": {
       "schema_version": 1,
-      "assembled_at": "2026-10-05T10:56:28+00:00",
-      "manifest_hash": "8153b73e9d74ec0b",
+      "assembled_at": "2026-10-05T11:48:00+00:00",
+      "manifest_hash": "41bf323b1f7a3129",
       "amends": [
         {
           "manifest_hash": "5869829724d3c957",
@@ -43851,6 +43851,11 @@
           "manifest_hash": "9a81fb598fb3db33",
           "amended_at": "2026-10-05T10:56:28+00:00",
           "change": "republished erdos (1106 tasks), oeis (218 tasks), green (66 tasks), kourovka (8 tasks), wotw (36 tasks), arxiv (13 tasks), books (7 tasks), mathoverflow (10 tasks), millennium (1 tasks), other (1 tasks), paper (16 tasks), wikipedia (68 tasks)"
+        },
+        {
+          "manifest_hash": "8153b73e9d74ec0b",
+          "amended_at": "2026-10-05T11:48:00+00:00",
+          "change": "reassembled"
         }
       ],
       "counts": {
