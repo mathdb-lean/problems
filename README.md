@@ -25,15 +25,28 @@ problems/
     problem.toml
 ```
 
-Currently **930 problems / 1434 obligations** across five collections.
+Currently **1027 problems / 1550 obligations** across twelve collections.
 
 | collection | problems | obligations | what it is |
 |---|---|---|---|
 | `erdos` | 704 | 1106 | [Erdős problems](https://www.erdosproblems.com/) |
 | `oeis` | 146 | 218 | conjectures stated in an [OEIS](https://oeis.org/) entry |
+| `wikipedia` | 54 | 68 | named conjectures with a Wikipedia article |
 | `green` | 39 | 66 | Ben Green's [open problems](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf) |
 | `wotw` | 36 | 36 | Written on the Wall II, a conjecture-generator's output |
+| `paper` | 15 | 16 | problems posed in a specific paper |
+| `arxiv` | 12 | 13 | problems posed in an arXiv preprint |
+| `mathoverflow` | 8 | 10 | questions asked on MathOverflow |
+| `books` | 6 | 7 | problems posed in a book |
 | `kourovka` | 5 | 8 | the [Kourovka Notebook](https://kourovka-notebook.org/) of group theory problems |
+| `millennium` | 1 | 1 | a Clay Millennium Prize problem |
+| `other` | 1 | 1 | what upstream files under no source |
+
+Every problem's `- notes:` line carries the reference its **source** declares — the
+Wikipedia article, the arXiv abstract, the DOI, the Clay PDF — read out of the
+upstream file rather than built from its name. For `green`, `wotw` and `kourovka`
+upstream declares none to carry, and the route back is `- source_locator:`, which
+names the upstream file that does.
 
 ### How a folder is named
 
@@ -48,7 +61,7 @@ problems/oeis-100434/   oeis:100434 — MathDB holds no record keyed to it
 
 For a MathDB problem number `n`, its folder is
 `https://github.com/mathdb-lean/problems/tree/main/problems/{n}`. All 704 Erdős
-problems use production MathDB numbers. The other 226 are not Erdős problems, and
+problems use production MathDB numbers. The other 323 are not Erdős problems, and
 the lookup that pairs the two collections keys on the Erdős number, so there was
 nothing to look up — `benchmark.json`'s `mathdb` block records that as its own
 state rather than as an absence. A local number minted to fill the gap would be an
@@ -82,28 +95,28 @@ Every published obligation:
 Separately, a **tactic suite** is run at the goal to see whether it closes without
 anybody doing the mathematics -- `trivial`, `rfl`, `simp`, `norm_num`, `decide`,
 `omega`, `positivity`. A target that falls to one of those is worthless to score
-on, and only an attack finds that. On 2026-10-05, over the 1203 probes the
-then-published obligations admit, **none fell**. The 24 `value` obligations are not
+on, and only an attack finds that. On 2026-10-05 every published obligation that admits a
+probe was run against it — 1526 of the 1550 — and **none fell**. The 24 `value` obligations are not
 attacked at all: their `Problem.Target` takes the answer the submitter chooses, so
 there is no fixed goal to close. The campaign is re-run rather than cited once,
 because a mathlib upgrade that made a target provable by `norm_num` is the only
 direction that matters.
 
-84 further candidates were **omitted**, each listed with its reason under its own
+98 further candidates were **omitted**, each listed with its reason under its own
 release in `benchmark.json.report.releases[].omitted` — `compile is failed or its
 evidence is stale/missing`, `dependencies is failed …`. They are named rather than
-dropped silently, so the gap between the 1518 obligations generated and the 1434
+dropped silently, so the gap between the 1648 obligations generated and the 1550
 published is accounted for.
 
 ## What is in it
 
 | | |
 |---|---|
-| problems | 930 |
-| obligations | 1434 |
-| obligations per problem | 567 problems have 1, 299 have 2, 63 have 3–9 |
-| track | 902 open, 532 solved |
-| shape | 373 `decide`, 355 `prove`, 355 `refute`, 327 `proof`, 24 `value` — see below |
+| problems | 1027 |
+| obligations | 1550 |
+| obligations per problem | 645 problems have 1, 318 have 2, 63 have 3–9 |
+| track | 995 open, 555 solved |
+| shape | 394 `proof`, 384 `decide`, 374 `prove`, 374 `refute`, 24 `value` — see below |
 | source | [formal-conjectures](https://github.com/google-deepmind/formal-conjectures) at `e04cc601840dd7a37f89b821a67f3a9e3c38d9c3` |
 
 `track` describes the **statement that was formalized**, not necessarily the
@@ -112,7 +125,7 @@ disagrees for 74 of the Erdős problems. `source_has_lean_proof`, in each module
 different claim again and is false for almost every problem, because the upstream
 corpus is a statement repository.
 
-The 355 `prove` and 355 `refute` modules are **355 complete pairs**: the two
+The 374 `prove` and 374 `refute` modules are **374 complete pairs**: the two
 directions of one open question, either of which settles it. A pair always sits in
 one folder, because half a pair tells a solver which direction is true. `verify.py`
 refuses a split pair.
@@ -124,10 +137,10 @@ An obligation's `shape` is not a difficulty label. It fixes the **arity of
 
 | shape | `Problem.Target` | submitter supplies | count | open / solved | frozen gold |
 |---|---|---|---|---|---|
-| `proof` | `Target : Prop` | a proof | 327 | 170 / 157 | — |
-| `prove` | `Target : Prop` | a proof | 355 | 354 / 1 | — |
-| `refute` | `Target : Prop` | a proof | 355 | 354 / 1 | — |
-| `decide` | `Target (verdict : Prop) : Prop` | a verdict **and** a proof | 373 | 0 / 373 | all 373 |
+| `proof` | `Target : Prop` | a proof | 394 | 225 / 169 | — |
+| `prove` | `Target : Prop` | a proof | 374 | 373 / 1 | — |
+| `refute` | `Target : Prop` | a proof | 374 | 373 / 1 | — |
+| `decide` | `Target (verdict : Prop) : Prop` | a verdict **and** a proof | 384 | 0 / 384 | all 384 |
 | `value` | `Target (value : τ) : Prop` | a value **and** a proof | 24 | 24 / 0 | — |
 
 Two questions separate all five. Everything else about a shape follows from them.
@@ -153,14 +166,14 @@ about the answer they chose, not about a proposition anyone handed them.
 `prove` and `refute` are all `Target : Prop` — identical in Lean. What differs is
 how a question was cut into obligations: `proof` is one obligation, while `prove`
 and `refute` are two halves of one question, the second being `¬ ( … )` around the
-same body. So 355 `prove` plus 355 `refute` is **355 questions, not 710** — and a
+same body. So 374 `prove` plus 374 `refute` is **374 questions, not 748** — and a
 solver picks whichever direction they believe. `proof` is the case where the setter
-took the direction as known, which is why 157 of its 327 are `solved` while 354 of
-the 355 pairs are open.
+took the direction as known, which is why 169 of its 394 are `solved` while 373 of
+the 374 pairs are open.
 
 For the two that take an answer, what differs is whether the answer exists to be
 checked against. `decide`'s hole is a `Prop` with two useful values and the answer
-is known for all 373, so they are graded against a frozen gold. `value`'s hole is a
+is known for all 384, so they are graded against a frozen gold. `value`'s hole is a
 mathematical object and **none of the 24 has a gold**, because nobody knows the
 answer — so the strongest thing a grader can say is that the submitter proved the
 statement of the object they produced.
@@ -171,18 +184,18 @@ statement of the object they produced.
 abbrev Target : Prop := …
 ```
 
-The plain case: one proposition, prove it. 157 of the 327 are `solved` in the
-literature, so a proof exists somewhere; 170 are open.
+The plain case: one proposition, prove it. 169 of the 394 are `solved` in the
+literature, so a proof exists somewhere; 225 are open.
 
 ### `prove` / `refute` — the two directions of one open question
 
-Published as **355 complete pairs**, both members in the same folder. The pair
+Published as **374 complete pairs**, both members in the same folder. The pair
 shares a `pair_id`; `prove` states the conjecture and `refute` states its
 negation, built as `¬ ( … )` around the same body. Settling either settles the
 problem, so a solver may attack whichever side they believe.
 
 This is why a pair is never split: seeing only the `prove` side of a question
-tells you the setter believed it was provable. 354 of the 355 pairs are open. The
+tells you the setter believed it was provable. 373 of the 374 pairs are open. The
 one exception is Erdős problem 1119 (`problems/391543`), which the source marks `research solved` with
 `source_has_lean_proof: false` — settled in the literature, not in Lean, and
 published as a pair because nothing here knows which direction the literature
@@ -199,10 +212,10 @@ The submitter supplies `verdict` and proves `verdict ↔ <the statement>`. Answe
 `True` claims the statement holds; `False` claims it fails. Either way the proof is
 the work — a verdict with no proof of the equivalence earns nothing.
 
-All 373 are `solved`, and all 373 carry a frozen `gold_arguments`, so these are
-graded against a known answer. The golds are **228 `True` and 145 `False`**: the
+All 384 are `solved`, and all 384 carry a frozen `gold_arguments`, so these are
+graded against a known answer. The golds are **231 `True` and 153 `False`**: the
 verdict is a real question, not a formality. Answering `True` everywhere would
-match 61% of the verdicts and still prove nothing. The gold is fixed before any
+match 60% of the verdicts and still prove nothing. The gold is fixed before any
 submission is read, never after.
 
 ### `value` — supply the object, then prove the statement about it
@@ -271,8 +284,8 @@ to go was never the difficulty being withheld.
 So the following is a description of what a solver is told, not a defect. Each
 module carries the problem as the source poses it in a `- prose:` field, and that
 prose often says how the problem was resolved. Over the 345 `decide` obligations
-of the Erdős collection — the set this was measured on, before the other four were
-added — a conservative keyword scan finds **190 (55%) whose prose states the
+of the Erdős collection — the set this was measured on, before the other eleven
+were added — a conservative keyword scan finds **190 (55%) whose prose states the
 resolution outright**: 61 false against a `False` gold, 119 true against a `True`
 gold, 10 ambiguous, 155 silent. Inspected samples show the scan under-reports, and nothing
 was found where the prose contradicts the gold. Verbatim:
@@ -284,12 +297,10 @@ E1000  "… This was solved by Haight [Ha] who proved that such a sequence does 
 
 Across the 1106 Erdős obligations, **374 proses carry a literature citation** such
 as `[Wo13b]` (326 of them on `solved` problems) and **all 1106** carry an
-`erdosproblems.com` URL in `- notes:`. The OEIS obligations carry their `oeis.org`
-entry the same way; `green`, `wotw` and `kourovka` carry no reference line, so for
-those the route back to the source is `- source_locator:`, which names the upstream
-file that does carry one.
+`erdosproblems.com` URL in `- notes:`. The other collections carry whatever
+reference their own source declares, in the same field.
 
-None of that is removable in any meaningful sense: 532 of the 1434 obligations are
+None of that is removable in any meaningful sense: 555 of the 1550 obligations are
 on problems mathematics has already settled, so their answers and often their
 proofs are in the literature whatever this repository prints. Stripping the prose
 would hide a pointer, not the fact.
@@ -297,12 +308,12 @@ would hide a pointer, not the fact.
 The one thing it does rule out is a **verdict-only metric**. Scoring a model on
 picking `True` or `False` without the equivalence proof measures nothing here —
 the direction is in the problem text for a majority of them, and a blanket `True`
-matches 61% regardless. This benchmark defines no such metric; report proof
+matches 60% regardless. This benchmark defines no such metric; report proof
 success, which is the thing the kernel decides.
 
 ### Nothing here has been read by a person
 
-All 1434 are `reviewed_by_a_person = false`. The machine checks above passed; no
+All 1550 are `reviewed_by_a_person = false`. The machine checks above passed; no
 human has confirmed that the Lean states the mathematics the source poses. So a
 faithfulness error in any individual problem is possible — finding one is useful —
 and a score computed over these is a score over propositions nobody has read. Say
@@ -324,15 +335,15 @@ record.
   `verified witness; no fixed gold` for exactly this reason.
 - **`decide` is graded against a frozen gold**, fixed before any submission is
   read, and what is scored is the proof of `verdict ↔ statement`. The verdict on
-  its own is not a result: the golds are 228 `True` to 145 `False`, a blanket
-  `True` matches 61% of them, and the direction is already in the problem text for
+  its own is not a result: the golds are 231 `True` to 153 `False`, a blanket
+  `True` matches 60% of them, and the direction is already in the problem text for
   a majority. Report proof success.
 - **Keep pairs whole when you subset.** `prove` and `refute` share a `pair_id`.
   Shipping one side tells the solver which direction the setter believed, so a
   subset that splits a pair measures something easier than the benchmark does.
   `verify.py` refuses a split pair.
 - **`open` and `solved` are not difficulty.** They say whether mathematics has
-  settled the problem. 902 obligations are open and 532 solved, and a number
+  settled the problem. 995 obligations are open and 555 solved, and a number
   averaged over both says little: the solved ones have a proof in the literature
   that a model may have read, the open ones have none that anyone has.
 - **`track` is not `source_has_lean_proof`.** The latter is almost always false:
@@ -439,19 +450,29 @@ directories key on.
 
 ## MathDB handles
 
-`benchmark.json` carries MathDB's numeric handle and row UUID for all 704 problems,
-matched by Erdős source identity using read-only database queries. Each obligation
-and `problem.toml` carries the same `mathdb_number` as its folder. The existing
+`benchmark.json` carries MathDB's numeric handle and row UUID for every problem
+MathDB has a record of, matched by Erdős source identity using read-only database
+queries. Each such obligation and `problem.toml` carries the same `mathdb_number` as
+its folder. The existing
 `mathdb.by_mathdb_number` index maps that number back to the source identity.
 
-| | |
-|---|---|
-| production | **704** of 704 |
+| state | count | |
+|---|---|---|
+| `resolved` | **704** | of the 704 Erdős problems |
+| `not_an_erdos_problem` | 323 | the other eleven collections |
 
 MathDB's numbers differ between production and dev. `state = "resolved"` identifies
-a production record;
-each entry includes its actual `mathdb_url`. **The MathDB number is not the Erdős
-number.**
+a production record; each entry includes its actual `mathdb_url`. **The MathDB
+number is not the Erdős number.**
+
+The 323 problems in the other collections have no entry to resolve: the lookup pairs
+the two catalogues by the Erdős problem number, and they have none. That is kept as
+its own state rather than recorded as an absence, because "MathDB does not have
+this" and "this was never a question MathDB could be asked" are different facts —
+and so is "the lookup never got an answer", which is why recording rate-limited
+requests as absences once turned 311 problems MathDB does have into problems it does
+not. Probing MathDB directly for `oeis:100434`, `oeis:A100434`, `A100434`,
+`green:1`, `kourovka:1_40` and `wotw:1` returns 404 for every spelling.
 
 Seven formerly provisional mappings now use their assigned production numbers:
 
@@ -472,7 +493,7 @@ fingerprint is recomputed after the metadata amendment; statement hashes are unc
 
 `python verify.py` does all of it, and exits non-zero on any mismatch:
 
-- every module hashes to the `target_hash` the release recorded (1106 of 1106);
+- every module hashes to the `target_hash` its own release recorded (1550 of 1550);
 - every `problem.toml` release field agrees with `benchmark.json`, including the folder's `mathdb_number`;
 - every released obligation appears in exactly one folder, and no folder holds a
   module the release does not list;
