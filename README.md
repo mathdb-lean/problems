@@ -124,7 +124,7 @@ published is accounted for.
 
 `track` describes the **statement that was formalized**, not necessarily the
 problem as posed — see below, where a cross-check against MathDB's own catalog
-disagrees for 74 of the Erdős problems. `source_has_lean_proof`, in each module's metadata, is a
+disagrees for 63 of the problems both catalogues carry a status for. `source_has_lean_proof`, in each module's metadata, is a
 different claim again and is false for almost every problem, because the upstream
 corpus is a statement repository.
 
@@ -253,26 +253,41 @@ the result.
 `formal-conjectures`'s `source_category`, and the thing that category describes is
 **the statement formalized from the problem** — which is not always the problem.
 
-Cross-checked against MathDB's own Erdős catalog on the 697 Erdős problems both
-hold,
-the two agree on 613 and disagree on 74, every one in the same direction: MathDB
-calls the problem open, this benchmark calls it solved. Sampling three, the cause
-is the same each time. `erdos-1` is MathDB's *Maximum size of sets with distinct
-subset sums*, recorded open; the module here says *"This conjecture is false. A
-machine-checked disproof constructs sum-distinct sets for which N / 2^n tends to
-zero."* Both are right about different things: what was formalized is the sharpened
-claim `N ≫ 2^n`, and that is false, while the Erdős problem — the asymptotics of
-`f(n)` — is open.
+Cross-checked against MathDB's own catalogue on the **697 problems where both
+carry a status**: the two agree on **625** and disagree on **63**.
 
-A further 10 have parts that differ among themselves, which a single status per
-problem cannot express and this one can: `erdos-12` has parts i and ii settled and
-part iii open.
+| MathDB says | this library says | count |
+|---|---|---|
+| `open` | `solved` | 52 |
+| `claimed_progress` | `solved` | 7 |
+| `claimed_solved` | `open` | 4 |
+
+Sampling the first direction, the cause is the same each time. `problems/1` is
+MathDB's *Maximum size of sets with distinct subset sums*, recorded open; the
+module here says *"This conjecture is false. A machine-checked disproof constructs
+sum-distinct sets for which N / 2^n tends to zero."* Both are right about
+different things: what was formalized is the sharpened claim `N ≫ 2^n`, and that
+is false, while the Erdős problem — the asymptotics of `f(n)` — is open.
+
+A further **9** have obligations that disagree among themselves, which a single
+status per problem cannot express and this one can: Erdős problem 12 has parts i
+and ii settled and part iii open.
+
+Every one of those numbers is **recomputable**, and that is the point: an earlier
+version of this section quoted 613 and 74, and nothing in the published artifact
+let a reader check it, because `mathdb.problems` carries `status` for only some
+entries. The comparison now lives in the library as `tools/track_review.py`,
+which states its rule — MathDB `open` and `claimed_progress` mean nobody has
+settled it; `solved`, `refuted` and `claimed_solved` mean somebody has;
+`claimed_solved` is reported apart because MathDB distinguishing it from `solved`
+is MathDB saying the claim is not accepted yet — and emits the 63 as a queue with
+each problem's folder and MathDB link.
 
 So: do not read `track` as "mathematics has settled this", and do not average a
-figure over `open` versus `solved` without saying which 74 you are standing on.
-The 74 are a list waiting on human review, which is the only thing that can decide
-which label belongs where. `source_has_lean_proof` is the separate, almost always
-false, claim that the upstream corpus holds a machine-checked proof.
+figure over `open` versus `solved` without saying which 63 you are standing on.
+They are waiting on human review, which is the only thing that can decide which
+label belongs where. `source_has_lean_proof` is the separate, almost always false,
+claim that the upstream corpus holds a machine-checked proof.
 
 ## Using this in research
 
