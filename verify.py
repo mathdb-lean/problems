@@ -21,7 +21,7 @@ module is the artifact, and an edited problem must be visible even when every
 sidecar still agrees with itself.
 
     python verify.py                 # every problem
-    python verify.py 1 391594
+    python verify.py 1 391594 wikipedia-collatzconjecture
 
 Exit status is 0 only if every check passed. Needs Python 3.11+ for tomllib.
 """
@@ -29,12 +29,22 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import sys
 import tomllib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 PROBLEMS = ROOT / "problems"
+
+
+def slug(problem_id: str) -> str:
+    """`wikipedia:CollatzConjecture` -> `wikipedia-collatzconjecture`.
+
+    The folder name for a problem MathDB has no number for. A colon is not a
+    path character on Windows, and this repository has to clone there.
+    """
+    return re.sub(r"[^A-Za-z0-9]+", "-", problem_id).strip("-").lower()
 
 
 def digest(text: str) -> str:
@@ -78,8 +88,19 @@ def main(argv: list[str]) -> int:
             faults.append("%s: problem.toml does not parse (%s)" % (folder.name, error))
             continue
 
+        # A folder is addressed by MathDB's number when MathDB has one, and by the
+        # id its source gives the problem when it does not. Both are required to
+        # be exact; what is not required is that every collection have a MathDB
+        # number, because most of them are not Erdos problems and MathDB holds no
+        # record keyed to them. Minting a local number to fill the gap would make
+        # an address out of something nobody issued.
         number = held.get("mathdb_number")
-        if type(number) is not int or number <= 0 or folder.name != str(number):
+        if number is None:
+            expected = slug(held.get("problem_id") or "")
+            if folder.name != expected:
+                faults.append("%s: no mathdb_number, so the folder must be %r"
+                              % (folder.name, expected))
+        elif type(number) is not int or number <= 0 or folder.name != str(number):
             faults.append("%s: folder must match its positive mathdb_number, got %r"
                           % (folder.name, number))
 
@@ -172,30 +193,52 @@ def main(argv: list[str]) -> int:
                 faults.append("mathdb: %s says %r, its problem says %r"
                               % (task_id, task["mathdb_number"], entry["mathdb_number"]))
 
-        counted = {"resolved": 0, "dev_only": 0}
+        # Five states, and no two of them mean the same thing. MathDB has a record;
+        # MathDB answered that it has none; the lookup never got an answer, which
+        # is not evidence of absence; the record was created here rather than
+        # found; and the problem is not an Erdos problem, so the lookup -- which
+        # keys on the Erdos number -- had nothing to ask about. Collapsing any two
+        # is how a count stops meaning anything: recording rate-limited requests
+        # as absences once turned 311 problems MathDB does have into problems it
+        # does not.
+        counted = dict.fromkeys(
+            ("resolved", "dev_only", "absent_from_mathdb", "unresolved",
+             "not_an_erdos_problem"), 0)
         for ref, entry in entries.items():
             state = entry.get("state")
             if state not in counted:
                 faults.append("mathdb: %s has unknown state %r" % (ref, state))
                 continue
             counted[state] += 1
+            if "mathdb_number" not in entry:
+                continue
             where = held_mathdb.get("by_mathdb_number", {}).get(str(entry["mathdb_number"]))
             if where != ref:
                 faults.append("mathdb: the reverse map sends %s to %r, not %s"
                               % (entry["mathdb_number"], where, ref))
         for state, n in counted.items():
-            if held_mathdb.get("counts", {}).get(state) != n:
+            stated = held_mathdb.get("counts", {}).get(state, 0)
+            if stated != n:
                 faults.append("mathdb: counts say %s=%r, the entries hold %d"
-                              % (state, held_mathdb.get("counts", {}).get(state), n))
+                              % (state, stated, n))
 
-    release = manifest["report"]["release"]
-    expected_hash = release.pop("manifest_hash", None)
+    # The manifest's own fingerprint. A single release writes it under
+    # `report.release`; a distribution assembled from several releases writes it
+    # under `report.distribution`, because there is no one release to attribute
+    # it to. Both are excluded from the digest, and whichever is present is the
+    # value a citation identifies this content by.
+    report = manifest["report"]
+    home = "distribution" if "distribution" in report else "release"
+    expected_hash = report[home].pop("manifest_hash", None)
+    for other in ("distribution", "release"):
+        if other != home and other in report:
+            report[other].pop("manifest_hash", None)
     manifest_hash = hashlib.sha256(
         json.dumps(manifest, sort_keys=True, ensure_ascii=False).encode("utf-8")
     ).hexdigest()[:16]
     if manifest_hash != expected_hash:
-        faults.append("manifest_hash: computed %s, release says %r"
-                      % (manifest_hash, expected_hash))
+        faults.append("manifest_hash: computed %s, %s says %r"
+                      % (manifest_hash, home, expected_hash))
 
     for fault in faults[:40]:
         print("  %s" % fault)
