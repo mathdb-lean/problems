@@ -10,7 +10,7 @@ collection = "green"
 tasks = 2
 reviewed_by_a_person = false
 prose = "Suppose that $A$ is an open subset of $[0, 1]^2$ with measure $\\alpha$. Are there four points in $A$ determining an axis-parallel rectangle with area $\\gt c \\alpha^2$?"
-notes = "Green, open problem 85"
+notes = "Green, open problem 85 -- https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.85"
 
 [source]
 name = "formal-conjectures"
@@ -21,33 +21,13 @@ file = "FormalConjectures/GreensOpenProblems/85.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-05T08:40:38+00:00"
+released_at = "2026-10-05T10:54:26+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "3809dc1d-f8d1-4620-a7a5-2e5547f02a71"
-file = "3809dc1d-f8d1-4620-a7a5-2e5547f02a71.lean"
-module = "FtpEvalBench.G85_refute"
-shape = "refute"
-track = "open"
-pair_id = "G85"
-declaration = "green_85"
-statement_id = "89300466-ab25-4bc2-a733-a8e04254d488"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "8dd8901b9dcd54e7"
-  conversion_hash = "2de675a79f6c4fb5002e6ab761b654ba45cd92ac5e9c0ef7a46238081378824f"
-  semantic_anchor = "004228618c86e5e0a6d0939aa147c60741a98553b966350327a0b1e15919f98b"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "5bdcd0f4-aecc-45d2-8648-e69d97f5adf1"
-file = "5bdcd0f4-aecc-45d2-8648-e69d97f5adf1.lean"
+id = "G85_prove"
+file = "G85_prove.lean"
 module = "FtpEvalBench.G85_prove"
 shape = "prove"
 track = "open"
@@ -60,7 +40,27 @@ statement_id = "89300466-ab25-4bc2-a733-a8e04254d488"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "590b81479a6ef80f"
+  target_hash = "fccee6530daed4c6"
   conversion_hash = "24ab84ddfc7d578014870741c45ccc6209b6f9a3966c576c63d460c18a013bc1"
   semantic_anchor = "0e422c6df6234cda81f40f8ee0dcf396c326f03c9c3e674f4b85f68efbd1a473"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "G85_refute"
+file = "G85_refute.lean"
+module = "FtpEvalBench.G85_refute"
+shape = "refute"
+track = "open"
+pair_id = "G85"
+declaration = "green_85"
+statement_id = "89300466-ab25-4bc2-a733-a8e04254d488"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b31e36fc10684f70"
+  conversion_hash = "2de675a79f6c4fb5002e6ab761b654ba45cd92ac5e9c0ef7a46238081378824f"
+  semantic_anchor = "004228618c86e5e0a6d0939aa147c60741a98553b966350327a0b1e15919f98b"
   reviewed_by_a_person = false

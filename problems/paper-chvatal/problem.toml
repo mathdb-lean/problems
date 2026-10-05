@@ -21,13 +21,13 @@ file = "FormalConjectures/Paper/Chvatal.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "paper"
-released_at = "2026-10-05T09:11:28+00:00"
+released_at = "2026-10-05T10:54:52+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "c7f30349-4fe5-44f0-ab4c-3c6867574491"
-file = "c7f30349-4fe5-44f0-ab4c-3c6867574491.lean"
+id = "RChvatal_exists_maximal_star"
+file = "RChvatal_exists_maximal_star.lean"
 module = "FtpEvalBench.RChvatal_exists_maximal_star"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "9567f44c-e8da-422f-80e6-e2645ed0eacc"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "8a6b66d93ee4a0c4"
+  target_hash = "4afcd7911e138682"
   conversion_hash = "74e335224d1af6957087a7270f22b3064f68ade191b40d61ee379341a0b016cd"
   semantic_anchor = "71897a09660ee97042b9ad827b8765ddd2bf8e4183ab59d80a07f14dc5bcf55c"
   reviewed_by_a_person = false

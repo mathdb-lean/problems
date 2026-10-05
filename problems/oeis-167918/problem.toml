@@ -21,13 +21,13 @@ file = "FormalConjectures/OEIS/167918.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "3b91dba8-acf1-4a4a-ad2d-48b9116be4ad"
-file = "3b91dba8-acf1-4a4a-ad2d-48b9116be4ad.lean"
+id = "O167918_conjecture1"
+file = "O167918_conjecture1.lean"
 module = "FtpEvalBench.O167918_conjecture1"
 shape = "proof"
 track = "open"
@@ -39,14 +39,14 @@ statement_id = "533ee30a-6122-4ecf-ad2f-aa14e55f9e04"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "8b34a86cda673824"
+  target_hash = "bce2c864fcaf7340"
   conversion_hash = "b8329ede01377a77fc358b402b800b97f960dd1df9d5e1f091507590e8717a5b"
   semantic_anchor = "15b0964011b96e917314f6f094e4c9f7cf261e2d68003d6d3cb2b688bf611d51"
   reviewed_by_a_person = false
 
 [[task]]
-id = "8ef7b293-4f91-4b32-a589-8ff68a9917d1"
-file = "8ef7b293-4f91-4b32-a589-8ff68a9917d1.lean"
+id = "O167918_conjecture2_prove"
+file = "O167918_conjecture2_prove.lean"
 module = "FtpEvalBench.O167918_conjecture2_prove"
 shape = "prove"
 track = "open"
@@ -59,14 +59,14 @@ statement_id = "2f3e0e81-9bfc-47a9-8bd8-d8cf18bf816f"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "48c0e8f74d36a8eb"
+  target_hash = "7c5bef5d69cce6b3"
   conversion_hash = "f672ec4045b039bafba80b1e086a833396f7bf5f67f035cb7b899d289df326f1"
   semantic_anchor = "1ac12fb7b45e43000901a40d61b71553a4e51535e987a1139b6d91b825a8ff18"
   reviewed_by_a_person = false
 
 [[task]]
-id = "b936d9cd-6f70-4ee7-bc41-513e8802c09a"
-file = "b936d9cd-6f70-4ee7-bc41-513e8802c09a.lean"
+id = "O167918_conjecture2_refute"
+file = "O167918_conjecture2_refute.lean"
 module = "FtpEvalBench.O167918_conjecture2_refute"
 shape = "refute"
 track = "open"
@@ -79,14 +79,14 @@ statement_id = "2f3e0e81-9bfc-47a9-8bd8-d8cf18bf816f"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "2eec2ff24d5b2f94"
+  target_hash = "a1c7e68dfae6ed94"
   conversion_hash = "237fe3edfcf0308c142677fb9fe71edcd059281c0f67b2665ecc0ba002e393b0"
   semantic_anchor = "1b0d406a29a2be069cecb619b35848ef194d617bdd278adb19ef94db01c8154c"
   reviewed_by_a_person = false
 
 [[task]]
-id = "d2a5b376-661b-482b-9f43-4d54046e921b"
-file = "d2a5b376-661b-482b-9f43-4d54046e921b.lean"
+id = "O167918_conjecture_infinite"
+file = "O167918_conjecture_infinite.lean"
 module = "FtpEvalBench.O167918_conjecture_infinite"
 shape = "proof"
 track = "open"
@@ -98,7 +98,7 @@ statement_id = "82ac6dc3-9c9a-41bd-82ea-eaad76ec788b"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "2283b7e08341908e"
+  target_hash = "f1fd2cb4472e1d02"
   conversion_hash = "d12b880c967a48ef5ab8f81395f43121f3a03bc017efabdc2eac164c5f01ab4a"
   semantic_anchor = "74d8fe72b4429230ae777c7529c812e660096433d5f6c7a7375ef248e7930648"
   reviewed_by_a_person = false

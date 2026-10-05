@@ -9,7 +9,7 @@ problem_id = "oeis:141057"
 collection = "oeis"
 tasks = 2
 reviewed_by_a_person = false
-prose = "Conjecture (Peter Bala, 2022): The supercongruences $a(n \\cdot p^k) \\equiv a(n \\cdot p^{k-1}) \\pmod{p^{3k}}$ hold for the integer-indexed extension $a(n)$ for all $n \\in \\mathbb{Z} \\setminus \\{0\\}$, primes $p \\ge 5$, and $k \\ge 1$."
+prose = "Conjecture: the supercongruences $a(n \\cdot p^k) \\equiv a(n \\cdot p^{k-1}) \\pmod{p^{3k}}$ hold for primes $p \\ge 5$ and positive integers $n$ and $k$."
 notes = "OEIS A141057 -- https://oeis.org/A141057"
 
 [source]
@@ -21,32 +21,13 @@ file = "FormalConjectures/OEIS/141057.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "37edc421-a890-4c4d-8c5f-950968e12086"
-file = "37edc421-a890-4c4d-8c5f-950968e12086.lean"
-module = "FtpEvalBench.O141057_conjecture2"
-shape = "proof"
-track = "open"
-declaration = "conjecture2"
-statement_id = "58054e85-4fb4-419a-bcf8-a089a8305dc5"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "4115300bac2ed114"
-  conversion_hash = "809fec32204b0a0c05b300423dfd6618ffdd892ad1869f0a7d14358e833906b9"
-  semantic_anchor = "b23329cf9f77405c16ec781dd34eaaaf1fe6583d4d4443007e987e4dcc27b62f"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "b3691d7c-1662-4dde-8cea-b6f7d2f94c2e"
-file = "b3691d7c-1662-4dde-8cea-b6f7d2f94c2e.lean"
+id = "O141057_conjecture1"
+file = "O141057_conjecture1.lean"
 module = "FtpEvalBench.O141057_conjecture1"
 shape = "proof"
 track = "solved"
@@ -58,7 +39,26 @@ statement_id = "182cd88a-cef1-4752-9ed2-d1f5ac0bed30"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "98b4a265456105ce"
+  target_hash = "90d9ff2033972803"
   conversion_hash = "2e281151fff0c763ee09db6bb66a9dc047fceb1b203543edc84cd993c8eb1f9f"
   semantic_anchor = "c5fd2dc240c7c826966aa209c65509dab1530c9a860c1f876c21467ed390b8c9"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O141057_conjecture2"
+file = "O141057_conjecture2.lean"
+module = "FtpEvalBench.O141057_conjecture2"
+shape = "proof"
+track = "open"
+declaration = "conjecture2"
+statement_id = "58054e85-4fb4-419a-bcf8-a089a8305dc5"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "538422bfc08c6248"
+  conversion_hash = "809fec32204b0a0c05b300423dfd6618ffdd892ad1869f0a7d14358e833906b9"
+  semantic_anchor = "b23329cf9f77405c16ec781dd34eaaaf1fe6583d4d4443007e987e4dcc27b62f"
   reviewed_by_a_person = false

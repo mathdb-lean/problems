@@ -21,13 +21,13 @@ file = "FormalConjectures/Paper/Dubner.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "paper"
-released_at = "2026-10-05T09:11:28+00:00"
+released_at = "2026-10-05T10:54:52+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "2f16d0ad-a09c-4263-bdc6-94a758023100"
-file = "2f16d0ad-a09c-4263-bdc6-94a758023100.lean"
+id = "RDubner_dubner_conjecture"
+file = "RDubner_dubner_conjecture.lean"
 module = "FtpEvalBench.RDubner_dubner_conjecture"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "9777bc3c-0e99-44c7-8340-da594be903cb"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "8401da66b8f6965a"
+  target_hash = "33e8cb38d52c7843"
   conversion_hash = "3b72446d8339aecd0263a36ae9ed842914d9429cde074696121da3a24e67be7d"
   semantic_anchor = "d8b1f72fb1cb1f0fc506f9cdfcc69f912ab277fe48a8e23c1f9e1461e9518a2c"
   reviewed_by_a_person = false

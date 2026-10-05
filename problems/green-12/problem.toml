@@ -10,7 +10,7 @@ collection = "green"
 tasks = 2
 reviewed_by_a_person = false
 prose = "Let $G$ be an abelian group of size $N$, and suppose that $A \\subset G$ has density $\\alpha$. Are there at least $\\alpha^{15} N^{10}$ tuples $(x_1, \\dots, x_5, y_1, \\dots, y_5) \\in G^{10}$ such that $x_i + y_j \\in A$ whenever $j \\in \\{i, i+1, i+2\\}$? Note: We interpret indices modulo 5."
-notes = "Green, open problem 12"
+notes = "Green, open problem 12 -- https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.12"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/GreensOpenProblems/12.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-05T08:40:38+00:00"
+released_at = "2026-10-05T10:54:26+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "ef82adab-5f2e-49cb-bb64-1b9ee88eaadc"
-file = "ef82adab-5f2e-49cb-bb64-1b9ee88eaadc.lean"
+id = "G12_prove"
+file = "G12_prove.lean"
 module = "FtpEvalBench.G12_prove"
 shape = "prove"
 track = "open"
@@ -40,14 +40,14 @@ statement_id = "b795932e-ab4e-4b8e-a08f-80db3c3b900b"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "d35f27bc6db1b2e4"
+  target_hash = "02dcdd44f0ac82cd"
   conversion_hash = "483f9fe4cd91ef7f283cfeab50e14a327b6e0efb4c6ed1a93a0abcf9b6257ed2"
   semantic_anchor = "e8e10db8868c13ac5f0ad10d71e9e2caff83b4e690f46dba427af95ad2083799"
   reviewed_by_a_person = false
 
 [[task]]
-id = "f32dbe10-a866-4b82-8b40-1250f202c1a3"
-file = "f32dbe10-a866-4b82-8b40-1250f202c1a3.lean"
+id = "G12_refute"
+file = "G12_refute.lean"
 module = "FtpEvalBench.G12_refute"
 shape = "refute"
 track = "open"
@@ -60,7 +60,7 @@ statement_id = "b795932e-ab4e-4b8e-a08f-80db3c3b900b"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "cd236948a330958d"
+  target_hash = "5ccdf95cdf0b785f"
   conversion_hash = "6f5eb38f3f70b0b4481ef004e04b12278e6d6c2914e5ca8105e700a3c7ff3285"
   semantic_anchor = "48524855f91fc35fbb8213acae46e60c5078313e6b77deb27b6e678617d41fa1"
   reviewed_by_a_person = false

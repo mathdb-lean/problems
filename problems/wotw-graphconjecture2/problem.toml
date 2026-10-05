@@ -10,7 +10,7 @@ collection = "wotw"
 tasks = 1
 reviewed_by_a_person = false
 prose = "WOWII [Conjecture 2](http://cms.dt.uh.edu/faculty/delavinae/research/wowII/) For a simple connected graph $G$, $Ls(G) \\ge 2 \\cdot (l(G) - 1)$ where $l(G)$ is the average independence number of the neighbourhoods of the vertices of $G$. A formal proof has been found with the methods described in [arxiv/2605.22763](https://arxiv.org/abs/2605.22763), where an informal proof is also provided. Another formal proof combines a spanning-tree leaf bound from connected domination with an ordered-pair double-counting argument for adjacent neighbourhoods. A third formal proof starts from a triangle-free spanning subgraph of $G$ with the maximum number of edges. Maximality bounds the neighbourhood independence number of each vertex by its degree in that subgraph; an edge whose endpoint degrees sum to at least $2 \\cdot l(G)$ then carries a double star, which is acyclic and extends to a spanning tree with at least $2 \\cdot (l(G) - 1)$ leaves."
-notes = "Written on the Wall II, problem GraphConjecture2"
+notes = "Written on the Wall II, problem GraphConjecture2 -- http://cms.dt.uh.edu/faculty/delavinae/research/wowII/"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/WrittenOnTheWallII/GraphConjecture2.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wotw-reviewed"
-released_at = "2026-10-05T08:40:42+00:00"
+released_at = "2026-10-05T10:54:32+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "4b42cd1e-bc89-4214-9f25-4ba1af5b993d"
-file = "4b42cd1e-bc89-4214-9f25-4ba1af5b993d.lean"
+id = "WGraphConjecture2_conjecture2"
+file = "WGraphConjecture2_conjecture2.lean"
 module = "FtpEvalBench.WGraphConjecture2_conjecture2"
 shape = "proof"
 track = "solved"
@@ -39,7 +39,7 @@ statement_id = "dcce7cda-02b1-4fa9-869e-9a7604fb52e8"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "c6dcc0a425bdbec1"
+  target_hash = "e3cca8004e62362c"
   conversion_hash = "9a5fcea48393903d91cf62eeac236c78d53d91d3850f15180d09f3d3fc8bf22e"
   semantic_anchor = "d366945f6b2a2dd703a94a5b21dbc81367ef3df89fe3a7efcff092bd8d7adb24"
   reviewed_by_a_person = false

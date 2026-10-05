@@ -10,7 +10,7 @@ collection = "kourovka"
 tasks = 1
 reviewed_by_a_person = false
 prose = "Are there order automorphisms of Dlab groups that are not induced by conjugation by elements of a (possibly bigger) Dlab group? A Dlab group $G$ (on $I$ or on $\\overline{\\mathbb{R}}$) carries Dlab's order, and $\\alpha$ is an automorphism of $G$ that preserves it. The automorphism $\\alpha$ is induced by conjugation in a bigger Dlab group $A$ if $G$ embeds into $A$ by an injective homomorphism $e$ and some $u \\in A$ satisfies $e(\\alpha(f)) = u^{-1} e(f) u$ for all $f \\in G$. This includes the inclusions and the order-preserving embeddings of [GYZ]. The slope groups are arbitrary."
-notes = "Kourovka Notebook 21_149"
+notes = "Kourovka Notebook 21_149 -- https://arxiv.org/abs/1401.0300v46"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/Kourovka/21_149.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "kourovka-reviewed"
-released_at = "2026-10-05T08:40:40+00:00"
+released_at = "2026-10-05T10:54:29+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "f1375c5d-2014-4a2c-93db-8d29043e64b5"
-file = "f1375c5d-2014-4a2c-93db-8d29043e64b5.lean"
+id = "K21_149"
+file = "K21_149.lean"
 module = "FtpEvalBench.K21_149"
 shape = "decide"
 track = "solved"
@@ -40,7 +40,7 @@ gold_arguments = ["True"]
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "d83821a4e058eaa6"
+  target_hash = "feb2b7eacd63bc4a"
   conversion_hash = "580569d179ec60d09e435a91af455d2dd515ff16afcb9af2f00442937df2c536"
   semantic_anchor = "678c6731951b36cb96d72e90e008f065cc0af2ef2139e190513d18d721ea2b1a"
   reviewed_by_a_person = false

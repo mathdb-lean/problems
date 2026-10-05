@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/ElliottHalberstamConjecture.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "b9d7ff2f-b865-4f31-9b6a-ea8e38e24477"
-file = "b9d7ff2f-b865-4f31-9b6a-ea8e38e24477.lean"
+id = "NElliottHalberstamConjecture_elliott_halberstam"
+file = "NElliottHalberstamConjecture_elliott_halberstam.lean"
 module = "FtpEvalBench.NElliottHalberstamConjecture_elliott_halberstam"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "5e968d66-cc2e-4c82-9739-d661e72a9b11"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "57e7017bfe296c41"
+  target_hash = "2c9d0ec694a4af1e"
   conversion_hash = "c7f21d047f72b8b54e9ceed6b2492ceeee71b11a778e9bc125d5fa4a7a9bc794"
   semantic_anchor = "4239aaf8d7a7127c2c5b77422ba06b8c4a4ff6a178e20ad13551e3cbd14cae27"
   reviewed_by_a_person = false

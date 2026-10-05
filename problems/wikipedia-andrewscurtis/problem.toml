@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/AndrewsCurtis.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "9a96d033-3d60-4832-a926-505d5f18b16e"
-file = "9a96d033-3d60-4832-a926-505d5f18b16e.lean"
+id = "NAndrewsCurtis_andrews_curtis_conjecture"
+file = "NAndrewsCurtis_andrews_curtis_conjecture.lean"
 module = "FtpEvalBench.NAndrewsCurtis_andrews_curtis_conjecture"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "b3be10b2-aaad-4009-8ecc-4a2cd00433e4"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "662c77f1ec2b0676"
+  target_hash = "4abec273181e29b8"
   conversion_hash = "71804abebb8dfab33acfb8589a9f8b1d4361c29b633f8f62b7a7cd125cd26268"
   semantic_anchor = "0cb37cb8c2f4583e4fc8ab38730d6a704b42a7f6bad5bad45d883e0192b78365"
   reviewed_by_a_person = false

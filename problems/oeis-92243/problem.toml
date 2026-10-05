@@ -9,7 +9,7 @@ problem_id = "oeis:92243"
 collection = "oeis"
 tasks = 10
 reviewed_by_a_person = false
-prose = "Is the score $a(n)$ bounded from above?"
+prose = "Is the score $a(n) > 0$ for some $n > 250000$?"
 notes = "OEIS A92243 -- https://oeis.org/A92243"
 
 [source]
@@ -21,193 +21,13 @@ file = "FormalConjectures/OEIS/92243.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "1b95b6e6-657a-4b0d-b0fc-dc9dc25ced61"
-file = "1b95b6e6-657a-4b0d-b0fc-dc9dc25ced61.lean"
-module = "FtpEvalBench.O92243_conjecture3_prove"
-shape = "prove"
-track = "open"
-pair_id = "O92243_conjecture3"
-declaration = "conjecture3"
-statement_id = "e2c7ed63-769d-4ea9-8a9e-b472ef6f7f09"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "336fd6ff75ecae61"
-  conversion_hash = "991411091957ce4fa0775b911231788c38e32ae1f12b8e2f744dddde550463a8"
-  semantic_anchor = "4630dc95c75712c19f02c50648503f813a4905f15653f34c26630b1f34e827a1"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "4725739c-5352-4629-bfd4-502021e06d48"
-file = "4725739c-5352-4629-bfd4-502021e06d48.lean"
-module = "FtpEvalBench.O92243_conjecture5_refute"
-shape = "refute"
-track = "open"
-pair_id = "O92243_conjecture5"
-declaration = "conjecture5"
-statement_id = "60f94073-2aa6-4c39-8200-6e4ee3bd05cc"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "0688a55b7a3b009e"
-  conversion_hash = "c9b52f0d4c001cd07aca688203f648bbb4065ddce19c7347b90cd26c7b7112a7"
-  semantic_anchor = "f9a3583b5f857d55cdba798a57ae1f7ae77bcefc7c57975f6b2e26bb55eec7bc"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "4a8d1957-db13-404a-b398-c0eff53c555c"
-file = "4a8d1957-db13-404a-b398-c0eff53c555c.lean"
-module = "FtpEvalBench.O92243_conjecture3_refute"
-shape = "refute"
-track = "open"
-pair_id = "O92243_conjecture3"
-declaration = "conjecture3"
-statement_id = "e2c7ed63-769d-4ea9-8a9e-b472ef6f7f09"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "3ff6485973659edb"
-  conversion_hash = "37629935408b0d3a9b9da4bf74a2e8623ddd9a3ca7cc74942869a3f7f44624ce"
-  semantic_anchor = "d3d1a98e132dc97a9ca9e03f6bca54e3b5794e7ac2f103021bcf075546a09d60"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "4eca0a46-c891-477b-8fdb-cacf4ff95912"
-file = "4eca0a46-c891-477b-8fdb-cacf4ff95912.lean"
-module = "FtpEvalBench.O92243_conjecture5_prove"
-shape = "prove"
-track = "open"
-pair_id = "O92243_conjecture5"
-declaration = "conjecture5"
-statement_id = "60f94073-2aa6-4c39-8200-6e4ee3bd05cc"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "d7456700c7fbd339"
-  conversion_hash = "81e6b8fc9fa1ce6412afc7f714b648130bbbbd47d97331f091987f1a883a39d6"
-  semantic_anchor = "20695ba83f74f52a6eb76496eba213d18014c42921a44a3d2ced2dd6f568416a"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "5397717a-e5e2-409a-9542-523769c48751"
-file = "5397717a-e5e2-409a-9542-523769c48751.lean"
-module = "FtpEvalBench.O92243_conjecture2_prove"
-shape = "prove"
-track = "open"
-pair_id = "O92243_conjecture2"
-declaration = "conjecture2"
-statement_id = "c4b21115-adc0-47ec-9efa-31be3bfaab41"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "31b5d213a0836c61"
-  conversion_hash = "683ecceb337a67bf1b5e2710c89f134db6719d8fd9c4ec1dca09c33b6d13d39a"
-  semantic_anchor = "88b587d295211b40a6dd757f415792c295888239b854edcc749cf94a607f6d2f"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "5f872d7a-39e2-4003-940d-ef88d03194a9"
-file = "5f872d7a-39e2-4003-940d-ef88d03194a9.lean"
-module = "FtpEvalBench.O92243_conjecture4_prove"
-shape = "prove"
-track = "open"
-pair_id = "O92243_conjecture4"
-declaration = "conjecture4"
-statement_id = "b16c4140-706f-4658-98fa-b2d3227a84f9"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "65828239da734479"
-  conversion_hash = "161fefd34c9c6c2e9cd38dbb31b0be0d04788c58031fa4416293c27711355663"
-  semantic_anchor = "d3f083b7f067a36e692c1d98af6cb2848f045f2e6f13104e35f4e00903b276f5"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "71f6771e-49be-42cd-9353-8143954a7e9e"
-file = "71f6771e-49be-42cd-9353-8143954a7e9e.lean"
-module = "FtpEvalBench.O92243_conjecture4_refute"
-shape = "refute"
-track = "open"
-pair_id = "O92243_conjecture4"
-declaration = "conjecture4"
-statement_id = "b16c4140-706f-4658-98fa-b2d3227a84f9"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "b9592cfa8fa86c5a"
-  conversion_hash = "8821a21cddb162ee88bcb08bd2c63f936e0c803d99f805e3f174ba5ac317a1cc"
-  semantic_anchor = "949c37d277613f5b935eb3cdbf5f9e8bf46a722e549e01c4653a7320c185f1e3"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "7b92094e-5610-4bb3-9d39-3f468e7c2a17"
-file = "7b92094e-5610-4bb3-9d39-3f468e7c2a17.lean"
-module = "FtpEvalBench.O92243_conjecture2_refute"
-shape = "refute"
-track = "open"
-pair_id = "O92243_conjecture2"
-declaration = "conjecture2"
-statement_id = "c4b21115-adc0-47ec-9efa-31be3bfaab41"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "0a9342dccbef0c1e"
-  conversion_hash = "d8d0842af291c6c8e3f44d67e4d89a963db04e1ddc07b2d489b3111ffce4a222"
-  semantic_anchor = "9a3492d723b3f277feef5e3397b6b8e05d4ba9b2a2cc71d5d03b6baeeeddc1fe"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "c2998403-44b6-4814-a38b-33182db51551"
-file = "c2998403-44b6-4814-a38b-33182db51551.lean"
-module = "FtpEvalBench.O92243_conjecture1_refute"
-shape = "refute"
-track = "open"
-pair_id = "O92243_conjecture1"
-declaration = "conjecture1"
-statement_id = "0eb8c747-2a5f-489f-8dae-476a2e17f358"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "cd5aa5aced7cb6d8"
-  conversion_hash = "a6977f0af4863554426e2b7f4e5f48e96b038a77660c12cb0af613d5729b7c08"
-  semantic_anchor = "0b64e97e1afb9116a1a2cb4ce492120a34c28dfafc09e97f8c3810a731ed717b"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "f76fe2e0-2c1b-4d10-afc2-40378fcc707d"
-file = "f76fe2e0-2c1b-4d10-afc2-40378fcc707d.lean"
+id = "O92243_conjecture1_prove"
+file = "O92243_conjecture1_prove.lean"
 module = "FtpEvalBench.O92243_conjecture1_prove"
 shape = "prove"
 track = "open"
@@ -220,7 +40,187 @@ statement_id = "0eb8c747-2a5f-489f-8dae-476a2e17f358"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "c7248f4a50156ddd"
+  target_hash = "bc6b532440dbe06c"
   conversion_hash = "d7f968ca5ff9e3c606d2cce661463f9b38aa807df5d2bbb01aff9ca2d3c7d9d5"
   semantic_anchor = "c4e8a156917f2e4599e45d4b68a65709a08e657515ced082fa245838f8e799dc"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O92243_conjecture1_refute"
+file = "O92243_conjecture1_refute.lean"
+module = "FtpEvalBench.O92243_conjecture1_refute"
+shape = "refute"
+track = "open"
+pair_id = "O92243_conjecture1"
+declaration = "conjecture1"
+statement_id = "0eb8c747-2a5f-489f-8dae-476a2e17f358"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7821dc717eaf17a3"
+  conversion_hash = "a6977f0af4863554426e2b7f4e5f48e96b038a77660c12cb0af613d5729b7c08"
+  semantic_anchor = "0b64e97e1afb9116a1a2cb4ce492120a34c28dfafc09e97f8c3810a731ed717b"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O92243_conjecture2_prove"
+file = "O92243_conjecture2_prove.lean"
+module = "FtpEvalBench.O92243_conjecture2_prove"
+shape = "prove"
+track = "open"
+pair_id = "O92243_conjecture2"
+declaration = "conjecture2"
+statement_id = "c4b21115-adc0-47ec-9efa-31be3bfaab41"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "0609778126008ba7"
+  conversion_hash = "683ecceb337a67bf1b5e2710c89f134db6719d8fd9c4ec1dca09c33b6d13d39a"
+  semantic_anchor = "88b587d295211b40a6dd757f415792c295888239b854edcc749cf94a607f6d2f"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O92243_conjecture2_refute"
+file = "O92243_conjecture2_refute.lean"
+module = "FtpEvalBench.O92243_conjecture2_refute"
+shape = "refute"
+track = "open"
+pair_id = "O92243_conjecture2"
+declaration = "conjecture2"
+statement_id = "c4b21115-adc0-47ec-9efa-31be3bfaab41"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b996fbbdb327e4b8"
+  conversion_hash = "d8d0842af291c6c8e3f44d67e4d89a963db04e1ddc07b2d489b3111ffce4a222"
+  semantic_anchor = "9a3492d723b3f277feef5e3397b6b8e05d4ba9b2a2cc71d5d03b6baeeeddc1fe"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O92243_conjecture3_prove"
+file = "O92243_conjecture3_prove.lean"
+module = "FtpEvalBench.O92243_conjecture3_prove"
+shape = "prove"
+track = "open"
+pair_id = "O92243_conjecture3"
+declaration = "conjecture3"
+statement_id = "e2c7ed63-769d-4ea9-8a9e-b472ef6f7f09"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "e2f4cb540bd594a7"
+  conversion_hash = "991411091957ce4fa0775b911231788c38e32ae1f12b8e2f744dddde550463a8"
+  semantic_anchor = "4630dc95c75712c19f02c50648503f813a4905f15653f34c26630b1f34e827a1"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O92243_conjecture3_refute"
+file = "O92243_conjecture3_refute.lean"
+module = "FtpEvalBench.O92243_conjecture3_refute"
+shape = "refute"
+track = "open"
+pair_id = "O92243_conjecture3"
+declaration = "conjecture3"
+statement_id = "e2c7ed63-769d-4ea9-8a9e-b472ef6f7f09"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ea44ea41ec448024"
+  conversion_hash = "37629935408b0d3a9b9da4bf74a2e8623ddd9a3ca7cc74942869a3f7f44624ce"
+  semantic_anchor = "d3d1a98e132dc97a9ca9e03f6bca54e3b5794e7ac2f103021bcf075546a09d60"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O92243_conjecture4_prove"
+file = "O92243_conjecture4_prove.lean"
+module = "FtpEvalBench.O92243_conjecture4_prove"
+shape = "prove"
+track = "open"
+pair_id = "O92243_conjecture4"
+declaration = "conjecture4"
+statement_id = "b16c4140-706f-4658-98fa-b2d3227a84f9"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "1f62b0e0c25f8b87"
+  conversion_hash = "161fefd34c9c6c2e9cd38dbb31b0be0d04788c58031fa4416293c27711355663"
+  semantic_anchor = "d3f083b7f067a36e692c1d98af6cb2848f045f2e6f13104e35f4e00903b276f5"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O92243_conjecture4_refute"
+file = "O92243_conjecture4_refute.lean"
+module = "FtpEvalBench.O92243_conjecture4_refute"
+shape = "refute"
+track = "open"
+pair_id = "O92243_conjecture4"
+declaration = "conjecture4"
+statement_id = "b16c4140-706f-4658-98fa-b2d3227a84f9"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "01e9f930c747c8e2"
+  conversion_hash = "8821a21cddb162ee88bcb08bd2c63f936e0c803d99f805e3f174ba5ac317a1cc"
+  semantic_anchor = "949c37d277613f5b935eb3cdbf5f9e8bf46a722e549e01c4653a7320c185f1e3"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O92243_conjecture5_prove"
+file = "O92243_conjecture5_prove.lean"
+module = "FtpEvalBench.O92243_conjecture5_prove"
+shape = "prove"
+track = "open"
+pair_id = "O92243_conjecture5"
+declaration = "conjecture5"
+statement_id = "60f94073-2aa6-4c39-8200-6e4ee3bd05cc"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "2753d1e3ac5b331b"
+  conversion_hash = "81e6b8fc9fa1ce6412afc7f714b648130bbbbd47d97331f091987f1a883a39d6"
+  semantic_anchor = "20695ba83f74f52a6eb76496eba213d18014c42921a44a3d2ced2dd6f568416a"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O92243_conjecture5_refute"
+file = "O92243_conjecture5_refute.lean"
+module = "FtpEvalBench.O92243_conjecture5_refute"
+shape = "refute"
+track = "open"
+pair_id = "O92243_conjecture5"
+declaration = "conjecture5"
+statement_id = "60f94073-2aa6-4c39-8200-6e4ee3bd05cc"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "271a38139e9c9563"
+  conversion_hash = "c9b52f0d4c001cd07aca688203f648bbb4065ddce19c7347b90cd26c7b7112a7"
+  semantic_anchor = "f9a3583b5f857d55cdba798a57ae1f7ae77bcefc7c57975f6b2e26bb55eec7bc"
   reviewed_by_a_person = false

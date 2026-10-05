@@ -21,13 +21,13 @@ file = "FormalConjectures/Paper/PrimeTuples.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "paper"
-released_at = "2026-10-05T09:11:28+00:00"
+released_at = "2026-10-05T10:54:52+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "6036c75d-8af4-42f8-a466-ee6cf5f27149"
-file = "6036c75d-8af4-42f8-a466-ee6cf5f27149.lean"
+id = "RPrimeTuples_prime_tuples_conjecture"
+file = "RPrimeTuples_prime_tuples_conjecture.lean"
 module = "FtpEvalBench.RPrimeTuples_prime_tuples_conjecture"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "a3bbe19a-d685-492c-8764-dc95a3963ab8"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "6e61dfbba62de72d"
+  target_hash = "153e7d4dee696f97"
   conversion_hash = "be8e1d5fe256fb1d98a80002fc4a5fc04bcfdce96ec29c6a684d9b3f2cbd5f22"
   semantic_anchor = "5f1aa93a38c1d2c9f26a8fa2747b6c36736d0a0f655cdad68d882da4024122dd"
   reviewed_by_a_person = false

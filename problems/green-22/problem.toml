@@ -10,7 +10,7 @@ collection = "green"
 tasks = 1
 reviewed_by_a_person = false
 prose = "If $\\{1, \\ldots, N\\}$ is $r$-coloured then, for $N \\geqslant N_0(r)$, there are integers $x, y \\geqslant 3$ such that $x + y, xy$ have the same colour. Find reasonable bounds for $N_0(r)$. The goal is to improve upon the Green-Sawhney bound."
-notes = "Green, open problem 22"
+notes = "Green, open problem 22 -- https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.22"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/GreensOpenProblems/22.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-05T08:40:38+00:00"
+released_at = "2026-10-05T10:54:26+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "54c7ebfd-2ade-4434-b7a6-503b0d72f9cc"
-file = "54c7ebfd-2ade-4434-b7a6-503b0d72f9cc.lean"
+id = "G22"
+file = "G22.lean"
 module = "FtpEvalBench.G22"
 shape = "value"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "c72bb0c7-7df2-4e90-8be1-80098240d76d"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "abe76b0517890d57"
+  target_hash = "9dabeb51d67d1c51"
   conversion_hash = "4dbd1ee6058e007e3fdbb9e83fce67b2898cbfb1cceacac0cc68be71d8871189"
   semantic_anchor = "0bc5e7888d8df97fd528be93a67034b3e8eb257a35cd78fa8afaa6474ee537e2"
   reviewed_by_a_person = false

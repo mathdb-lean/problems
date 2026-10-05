@@ -10,7 +10,7 @@ collection = "wotw"
 tasks = 1
 reviewed_by_a_person = false
 prose = "WOWII [Conjecture 3](http://cms.dt.uh.edu/faculty/delavinae/research/wowII/) For a connected simple graph `G`, the number of leaves in a maximum spanning tree satisfies `Ls(G) ≥ G.indepDominationNumber * MaxTemp(G)`, where `G.indepDominationNumber` is the independent domination number and `MaxTemp(G)` is `max_v deg(v)/(n(G) - deg(v))`."
-notes = "Written on the Wall II, problem GraphConjecture3"
+notes = "Written on the Wall II, problem GraphConjecture3 -- http://cms.dt.uh.edu/faculty/delavinae/research/wowII/"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/WrittenOnTheWallII/GraphConjecture3.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wotw-reviewed"
-released_at = "2026-10-05T08:40:42+00:00"
+released_at = "2026-10-05T10:54:32+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "24d177c3-e516-4ce5-b42d-b477dab431e1"
-file = "24d177c3-e516-4ce5-b42d-b477dab431e1.lean"
+id = "WGraphConjecture3_conjecture3"
+file = "WGraphConjecture3_conjecture3.lean"
 module = "FtpEvalBench.WGraphConjecture3_conjecture3"
 shape = "proof"
 track = "solved"
@@ -39,7 +39,7 @@ statement_id = "00d18616-7143-437b-a7d3-756c9c2ea9d8"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "8896ffb580eae097"
+  target_hash = "6fab2bd4043cab12"
   conversion_hash = "bff2e76079385780cd825fd844ee8e50f6ed9435459f5eafbc0f06c00cb08dba"
   semantic_anchor = "7b02a63363a48e2951ce97cda9d3a18bc8bcb78a4364054d3c641c1eb5a7c34d"
   reviewed_by_a_person = false

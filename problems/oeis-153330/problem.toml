@@ -9,7 +9,7 @@ problem_id = "oeis:153330"
 collection = "oeis"
 tasks = 4
 reviewed_by_a_person = false
-prose = "Conjecture 3 (Ya-Ping Lu, 2024): Except 1, 3 and 6, the absolute value of all terms can be written as $5x + 8y$ for $x, y \\in \\mathbb{N}$. (Note: in the OEIS comment, \"x and y are integers\" means $x$ and $y$ have the same sign, i.e., $|v| = 5x + 8y$ with $x, y \\ge 0$, since every integer is a $\\mathbb{Z}$-linear combination of 5 and 8)."
+prose = "Conjecture 1: More than half of the terms are 0. - _Ya-Ping Lu_, May 04 2024"
 notes = "OEIS A153330 -- https://oeis.org/A153330"
 
 [source]
@@ -21,32 +21,13 @@ file = "FormalConjectures/OEIS/153330.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "12509722-bd1f-4b53-8317-793ffb5bd611"
-file = "12509722-bd1f-4b53-8317-793ffb5bd611.lean"
-module = "FtpEvalBench.O153330_conjecture3"
-shape = "proof"
-track = "open"
-declaration = "conjecture3"
-statement_id = "77cb4b30-9f54-4462-b94c-283448a25d2f"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "e78242b0d473d7ef"
-  conversion_hash = "13a2346cfbfc6f03e217d9fe100cb44a291974fdf477c4e0313e8c86df06d7bb"
-  semantic_anchor = "4c68ef7fa98952657a7ed3d6fd0074f9f17a796636c3a984e105b20150cf5b80"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "34cf45cf-dedf-43f0-8977-5fb44bea085a"
-file = "34cf45cf-dedf-43f0-8977-5fb44bea085a.lean"
+id = "O153330_conjecture1"
+file = "O153330_conjecture1.lean"
 module = "FtpEvalBench.O153330_conjecture1"
 shape = "proof"
 track = "open"
@@ -58,14 +39,14 @@ statement_id = "9de664b7-9865-4e93-8b23-c9723a0ed14a"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "4c839c4174c4981a"
+  target_hash = "4e2d67b3465dcc3a"
   conversion_hash = "2d1133938f5b115241722f6cf3e6d94f0670b5197248e53fe88bae115000a36e"
   semantic_anchor = "6cee95e0558040a545bee965974ade433db5e8ef713524394f1490e5e7329eff"
   reviewed_by_a_person = false
 
 [[task]]
-id = "7825223e-a25e-4a63-9212-d3f2005dfb3b"
-file = "7825223e-a25e-4a63-9212-d3f2005dfb3b.lean"
+id = "O153330_conjecture2"
+file = "O153330_conjecture2.lean"
 module = "FtpEvalBench.O153330_conjecture2"
 shape = "proof"
 track = "open"
@@ -77,14 +58,33 @@ statement_id = "9429858a-8a25-4a05-8bae-bd21107e92a9"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "7a94a0dd096be8f7"
+  target_hash = "e3fa607e1a3fdd2e"
   conversion_hash = "47462cdc71b2d26073d2233c5ac38161e2b45d8cfed4fa01084d1fdd62f3f8e3"
   semantic_anchor = "3ec3f065cd06549ba2e11920ea8f1534075d2e7d17baa3bfeff4839cd3d94509"
   reviewed_by_a_person = false
 
 [[task]]
-id = "94a92cf0-eb7b-41eb-9d9e-a20cb5e5aba1"
-file = "94a92cf0-eb7b-41eb-9d9e-a20cb5e5aba1.lean"
+id = "O153330_conjecture3"
+file = "O153330_conjecture3.lean"
+module = "FtpEvalBench.O153330_conjecture3"
+shape = "proof"
+track = "open"
+declaration = "conjecture3"
+statement_id = "77cb4b30-9f54-4462-b94c-283448a25d2f"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "a08fa76903181e72"
+  conversion_hash = "13a2346cfbfc6f03e217d9fe100cb44a291974fdf477c4e0313e8c86df06d7bb"
+  semantic_anchor = "4c68ef7fa98952657a7ed3d6fd0074f9f17a796636c3a984e105b20150cf5b80"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O153330_conjecture4"
+file = "O153330_conjecture4.lean"
 module = "FtpEvalBench.O153330_conjecture4"
 shape = "proof"
 track = "open"
@@ -96,7 +96,7 @@ statement_id = "24d70e86-02a7-4ea7-bdf6-349755c7dccb"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "7be5166c9034ad19"
+  target_hash = "068bc72e4da3bb24"
   conversion_hash = "415cf9d7614c82b26eb92698c0e7df2da0b5b8d134f6e2756471ecee050c1ae1"
   semantic_anchor = "b05433763b65c761fe7ea2f79c9cc23cb4a9f43eebaf547076d18e2d1867f051"
   reviewed_by_a_person = false

@@ -11,22 +11,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# This directory is a *built Lean project* that a grader can point `project_dir`
-# at. It carries the vendored statement-support libraries that every problem
-# module imports, and nothing else. `srcDir = "."` because the libraries sit
-# beside this file rather than one level down: the directory is already named
-# `lean`, and `lean/lean/MathdbUtil` said the same thing twice.
+# This repository root is a *built Lean project* that a grader can point
+# `project_dir` at. It carries the vendored statement-support libraries that every
+# problem module imports. `srcDir = "."` because the libraries sit beside this
+# file.
 #
-# The problem modules under `erdos-20261001/problems/` are deliberately NOT a
-# `lean_lib` here. They are the benchmark: a grader elaborates each one against
-# this project, one at a time, in isolation. Do not add a `lean_lib` named
-# `FtpEvalBench`, `FtpEvalGoal` or `Submission` -- a grader that generates a
-# module under one of those roots refuses when a project library collides with
-# it.
+# The problem modules under `problems/` are deliberately NOT a `lean_lib` here.
+# They are the benchmark: a grader elaborates each one against this project, one at
+# a time, in isolation. Neither library's glob reaches them -- each is rooted at its
+# own name -- so `lake build` builds the project and never the benchmark, and that
+# is the property to preserve. Do not add a `lean_lib` named `FtpEvalBench`,
+# `FtpEvalGoal` or `Submission`: a grader that generates a module under one of those
+# roots refuses when a project library collides with it.
 
 name = "mathdb_lean"
 keywords = ["math", "benchmark"]
-defaultTargets = ["MathdbUtil", "MathdbMathlib"]
+defaultTargets = ["MathDBUtil", "MathDBMathlib"]
 
 [leanOptions]
 # Carried over from formal-conjectures: the vendored libraries were written
@@ -41,10 +41,10 @@ scope = "leanprover-community"
 rev = "v4.33.1"
 
 [[lean_lib]]
-name = "MathdbMathlib"
+name = "MathDBMathlib"
 srcDir = "."
 
 [[lean_lib]]
-name = "MathdbUtil"
+name = "MathDBUtil"
 srcDir = "."
-globs = ["MathdbUtil.*"]
+globs = ["MathDBUtil.*"]

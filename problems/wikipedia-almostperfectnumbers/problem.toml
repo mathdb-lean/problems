@@ -21,33 +21,13 @@ file = "FormalConjectures/Wikipedia/AlmostPerfectNumbers.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "c456bda5-b893-4b64-b7ef-2c14e394873f"
-file = "c456bda5-b893-4b64-b7ef-2c14e394873f.lean"
-module = "FtpEvalBench.NAlmostPerfectNumbers_exists_almost_perfect_not_power_of_two_refute"
-shape = "refute"
-track = "open"
-pair_id = "NAlmostPerfectNumbers_exists_almost_perfect_not_power_of_two"
-declaration = "exists_almost_perfect_not_power_of_two"
-statement_id = "a8af2a54-ba3f-4003-94e9-fb22bbc8a611"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "63af547a92224fe9"
-  conversion_hash = "8df08cb331d7481d21598070fadbff07e27ecf04c5d2bbadeb907c0c85dd9239"
-  semantic_anchor = "7db685a232d97dcbf055403a2ca12f1b8fbd5f64390591b7968c6de00063c96d"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "ecb73d3e-e3f9-4e38-84c5-8e37677c8c5e"
-file = "ecb73d3e-e3f9-4e38-84c5-8e37677c8c5e.lean"
+id = "NAlmostPerfectNumbers_exists_almost_perfect_not_power_of_two_prove"
+file = "NAlmostPerfectNumbers_exists_almost_perfect_not_power_of_two_prove.lean"
 module = "FtpEvalBench.NAlmostPerfectNumbers_exists_almost_perfect_not_power_of_two_prove"
 shape = "prove"
 track = "open"
@@ -60,7 +40,27 @@ statement_id = "a8af2a54-ba3f-4003-94e9-fb22bbc8a611"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "9220fcdf26b6e02b"
+  target_hash = "1c3cc748ca6a1efb"
   conversion_hash = "e893897dd1c63e48753f638c1be8e4d713bf858f7ac1b54d8388684e34fc1141"
   semantic_anchor = "1b9422438cfa116141f0f403d0e02294048a63f70ce7f9a3cf3469034a03f5e1"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "NAlmostPerfectNumbers_exists_almost_perfect_not_power_of_two_refute"
+file = "NAlmostPerfectNumbers_exists_almost_perfect_not_power_of_two_refute.lean"
+module = "FtpEvalBench.NAlmostPerfectNumbers_exists_almost_perfect_not_power_of_two_refute"
+shape = "refute"
+track = "open"
+pair_id = "NAlmostPerfectNumbers_exists_almost_perfect_not_power_of_two"
+declaration = "exists_almost_perfect_not_power_of_two"
+statement_id = "a8af2a54-ba3f-4003-94e9-fb22bbc8a611"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "faa9d7a8dd66b66f"
+  conversion_hash = "8df08cb331d7481d21598070fadbff07e27ecf04c5d2bbadeb907c0c85dd9239"
+  semantic_anchor = "7db685a232d97dcbf055403a2ca12f1b8fbd5f64390591b7968c6de00063c96d"
   reviewed_by_a_person = false

@@ -19,9 +19,9 @@ problems/
     …
     problem.toml
   oeis-100434/
-    63260e69-….lean          a collection MathDB has no record of, addressed
-    b2e26811-….lean          by the id its source gives it; three obligations,
-    b40d4006-….lean          each named by its own task id
+    O100434_conjecture1.lean a collection MathDB has no record of, addressed
+    O100434_conjecture2.lean by the id its source gives it; three obligations,
+    O100434_conjecture3.lean each named by the module it declares
     problem.toml
 ```
 
@@ -71,11 +71,14 @@ Either way the source identity is unchanged: `problem_id = "erdos:1002"` and
 `problem_id = "oeis:100434"` are in each `problem.toml`, and Lean filenames and
 module names keep their own obligation ids.
 
-An obligation's file stem is its **task id**, which is what a submission filename
-and a results directory key on. The Erdős obligations carry readable legacy ids
-(`E1002_prove`); everything exported since carries an opaque one, because an id
-that encodes a name has to change when the name does. The readable handle is each
-task's `module` in `problem.toml`.
+An obligation's file stem is its **published id**, which is what a submission
+filename and a results directory key on. It is the last component of the Lean
+module the file declares: `E1002_prove.lean` declares `FtpEvalBench.E1002_prove`.
+That is unique by construction — two obligations cannot declare the same module —
+and it is what Lean expects a file to be called, so the name a grader keys on and
+the name the compiler resolves are one string. The library's own identity for the
+obligation is opaque and travels in the manifest as `task_id`: an id that encodes
+a name has to change when the name does, and a published address must not.
 
 Each obligation is a frozen `Problem.Target` — a proposition stated in Lean, with
 no proof. **This repository is itself the Lean project** they compile against, so
@@ -412,8 +415,8 @@ problems/<folder>/            one folder per problem: its modules and problem.to
 lakefile.toml                 the pinned Lean project: this root IS the project
 lean-toolchain
 lake-manifest.json
-MathdbUtil*                   the statement-support library every module imports
-MathdbMathlib*                vendored Mathlib additions it was written against
+MathDBUtil*                   the statement-support library every module imports
+MathDBMathlib*                vendored Mathlib additions it was written against
 benchmark.json                the release record
 verify.py                     checks this repository against that record
 ```
@@ -423,7 +426,7 @@ was released, and the checker for it.
 
 The modules are deliberately **not** a `lean_lib` in `lakefile.toml`. They are the
 benchmark: each is elaborated on its own, against the built project, never as part
-of it. Neither library's glob reaches `problems/` — `MathdbUtil` and `MathdbMathlib`
+of it. Neither library's glob reaches `problems/` — `MathDBUtil` and `MathDBMathlib`
 are each rooted at their own name — so `lake build` builds the project and never
 the benchmark. That is the property to preserve if you edit the lakefile.
 
@@ -431,7 +434,7 @@ the benchmark. That is the property to preserve if you edit the lakefile.
 
 ```sh
 lake exe cache get      # mathlib binaries, optional but much faster
-lake build              # builds MathdbUtil and MathdbMathlib
+lake build              # builds MathDBUtil and MathDBMathlib
 python verify.py        # every module still hashes to what the release recorded
 ```
 
@@ -504,7 +507,7 @@ fingerprint is recomputed after the metadata amendment; statement hashes are unc
 
 The environment is pinned by content too:
 `report.releases[].release.environment_hash` is derived from the toolchain, the
-mathlib revision, and a hash over `MathdbUtil*` and `MathdbMathlib*` — all three
+mathlib revision, and a hash over `MathDBUtil*` and `MathDBMathlib*` — all three
 are in this repository, so the pin is reconstructible here, and it reproduces the
 value the releases recorded: `project_hash` is computed from the sources' content
 relative to the project, not from where the project sits.
@@ -513,7 +516,7 @@ relative to the project, not from where the project sits.
 
 Apache 2.0 — see `LICENSE`. `NOTICE` states what was taken from formal-conjectures
 and how it was changed, as Apache 2.0 section 4(b) requires:
-`MathdbUtil*` and `MathdbMathlib*` are its `FormalConjecturesUtil/` and
+`MathDBUtil*` and `MathDBMathlib*` are its `FormalConjecturesUtil/` and
 `FormalConjecturesForMathlib/`, renamed. Upstream's
 author list and the Lean pins are carried over unchanged.
 

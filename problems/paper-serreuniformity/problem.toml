@@ -21,13 +21,13 @@ file = "FormalConjectures/Paper/SerreUniformity.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "paper"
-released_at = "2026-10-05T09:11:28+00:00"
+released_at = "2026-10-05T10:54:52+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "0abcc17c-c280-40b0-bcf3-5e3493636b53"
-file = "0abcc17c-c280-40b0-bcf3-5e3493636b53.lean"
+id = "RSerreUniformity_serre_uniformity_prove"
+file = "RSerreUniformity_serre_uniformity_prove.lean"
 module = "FtpEvalBench.RSerreUniformity_serre_uniformity_prove"
 shape = "prove"
 track = "open"
@@ -40,14 +40,14 @@ statement_id = "1432500f-5a1c-48a5-ac84-c9846d6441c1"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "dc555518fb072bb2"
+  target_hash = "cd09f1515c64dfdd"
   conversion_hash = "91ce24e1504e0fa3f7eb80dfdca4c3899c329fb535e2e793fe57d7b15caeaa2b"
   semantic_anchor = "4886e8ea22d4feab11d267fc7b5041feb69cff0775bc724a084f673b575bb49f"
   reviewed_by_a_person = false
 
 [[task]]
-id = "1abea852-cc6a-4b4a-b01b-1c1a5fc19edd"
-file = "1abea852-cc6a-4b4a-b01b-1c1a5fc19edd.lean"
+id = "RSerreUniformity_serre_uniformity_refute"
+file = "RSerreUniformity_serre_uniformity_refute.lean"
 module = "FtpEvalBench.RSerreUniformity_serre_uniformity_refute"
 shape = "refute"
 track = "open"
@@ -60,7 +60,7 @@ statement_id = "1432500f-5a1c-48a5-ac84-c9846d6441c1"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "e7018dc0d25b7b7a"
+  target_hash = "2bf89014fe3c786e"
   conversion_hash = "6330be511835a601eeebd3c6983a66f5202a03a798ccac52d53554dc2d46978f"
   semantic_anchor = "5faf20133d71f4b43f842f497f36ae955ac8c6b0bf2b918c581ebf12f3fa89d5"
   reviewed_by_a_person = false

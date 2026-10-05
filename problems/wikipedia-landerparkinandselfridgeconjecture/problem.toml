@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/LanderParkinAndSelfridgeConjecture.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "6d1c55dd-84c3-4e6a-80a3-ef0744c32b66"
-file = "6d1c55dd-84c3-4e6a-80a3-ef0744c32b66.lean"
+id = "NLanderParkinAndSelfridgeConjecture_lander_parkin_selfridge"
+file = "NLanderParkinAndSelfridgeConjecture_lander_parkin_selfridge.lean"
 module = "FtpEvalBench.NLanderParkinAndSelfridgeConjecture_lander_parkin_selfridge"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "83106dcf-4dbb-4049-ab39-1d1fd5743413"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "0863014348a818ca"
+  target_hash = "fb91002a0411c1a6"
   conversion_hash = "5c4277aaad9f434bfb938c03a6fbfbbe641959d17394e4705847733e1a75390e"
   semantic_anchor = "c7e30ddb05a63931c6d35c39500f8eff697d12dd96a1058a550dfdf720f847b8"
   reviewed_by_a_person = false

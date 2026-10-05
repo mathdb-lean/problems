@@ -21,13 +21,13 @@ file = "FormalConjectures/OEIS/114137.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "3337c039-930c-4198-9bf4-1a91f4b3958a"
-file = "3337c039-930c-4198-9bf4-1a91f4b3958a.lean"
+id = "O114137_conjecture1_prove"
+file = "O114137_conjecture1_prove.lean"
 module = "FtpEvalBench.O114137_conjecture1_prove"
 shape = "prove"
 track = "open"
@@ -40,34 +40,14 @@ statement_id = "d19c1dc7-a850-4671-8a0b-fc6add75e4aa"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "e3f016811556da90"
+  target_hash = "a030b5f21d4b1139"
   conversion_hash = "ec3edfaa5119170af3188af6b923ee139a9244c18317b4c94acc8741c3840ef1"
   semantic_anchor = "158767aad535822bd828ef4052da7ac4f26ec8e7a304a3e1fcad77dba8ad3407"
   reviewed_by_a_person = false
 
 [[task]]
-id = "4cbf763d-83b2-4af9-a710-ea2f80ddc1a3"
-file = "4cbf763d-83b2-4af9-a710-ea2f80ddc1a3.lean"
-module = "FtpEvalBench.O114137_conjecture2_refute"
-shape = "refute"
-track = "open"
-pair_id = "O114137_conjecture2"
-declaration = "conjecture2"
-statement_id = "28db5db8-ff9b-4b5d-81f8-8694b4ca084f"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "744b06929ac909c5"
-  conversion_hash = "7006244182abd52bee47e6591c990d1b730ce7b57f6336e0d959f3fa9d7abd75"
-  semantic_anchor = "cf0f2190184314a376ab619db5ed812a860db57ee3264d3a6946a202fec8b545"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "7e9a2dfc-973a-43ee-9dca-f27227579166"
-file = "7e9a2dfc-973a-43ee-9dca-f27227579166.lean"
+id = "O114137_conjecture1_refute"
+file = "O114137_conjecture1_refute.lean"
 module = "FtpEvalBench.O114137_conjecture1_refute"
 shape = "refute"
 track = "open"
@@ -80,14 +60,14 @@ statement_id = "d19c1dc7-a850-4671-8a0b-fc6add75e4aa"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "57e144dbd03e6607"
+  target_hash = "c54795484515205d"
   conversion_hash = "06fabf959d029c43281fb5a361b831cf8068e959ba3b85a2a11825df03478a17"
   semantic_anchor = "3728bc29f2b26d61603f5a5c5127e742297708226f1764327ca04e60f8d34321"
   reviewed_by_a_person = false
 
 [[task]]
-id = "8a7d05d1-098f-4bae-95cb-d91f8c99ec71"
-file = "8a7d05d1-098f-4bae-95cb-d91f8c99ec71.lean"
+id = "O114137_conjecture2_prove"
+file = "O114137_conjecture2_prove.lean"
 module = "FtpEvalBench.O114137_conjecture2_prove"
 shape = "prove"
 track = "open"
@@ -100,7 +80,27 @@ statement_id = "28db5db8-ff9b-4b5d-81f8-8694b4ca084f"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "be5e960f3b757e58"
+  target_hash = "3b29840aee346cde"
   conversion_hash = "3095905fc816cf9d995e2adcf01b5b88ff71c675dd76ea29605388f0c8d640b0"
   semantic_anchor = "6c19ca9c5ec942636066c9b4699d0968346ed54cbd8bb3feb2c7156207bdf0d8"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O114137_conjecture2_refute"
+file = "O114137_conjecture2_refute.lean"
+module = "FtpEvalBench.O114137_conjecture2_refute"
+shape = "refute"
+track = "open"
+pair_id = "O114137_conjecture2"
+declaration = "conjecture2"
+statement_id = "28db5db8-ff9b-4b5d-81f8-8694b4ca084f"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "444fa5b29dcfb7ad"
+  conversion_hash = "7006244182abd52bee47e6591c990d1b730ce7b57f6336e0d959f3fa9d7abd75"
+  semantic_anchor = "cf0f2190184314a376ab619db5ed812a860db57ee3264d3a6946a202fec8b545"
   reviewed_by_a_person = false

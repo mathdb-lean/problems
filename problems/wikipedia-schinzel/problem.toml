@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/Schinzel.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "a814a4d0-408e-4017-b4a7-827574664926"
-file = "a814a4d0-408e-4017-b4a7-827574664926.lean"
+id = "NSchinzel_schinzel_conjecture"
+file = "NSchinzel_schinzel_conjecture.lean"
 module = "FtpEvalBench.NSchinzel_schinzel_conjecture"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "90c14a26-5f12-4cd0-98db-78993edbf4d2"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "6b0bdbffc7cbcf9f"
+  target_hash = "334a0165c2b68848"
   conversion_hash = "817e131147499012d3b53d0f7144fedeff86e29a9c95ea7e6113efdc13cc6eb0"
   semantic_anchor = "43f5e5c7bceef7956bf545191699a2ae5777d04dba957d878538ed1029fe1a90"
   reviewed_by_a_person = false

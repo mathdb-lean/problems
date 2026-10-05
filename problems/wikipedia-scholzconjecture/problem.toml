@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/ScholzConjecture.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "9c49132b-35e7-4bd4-b40c-229c05a7e161"
-file = "9c49132b-35e7-4bd4-b40c-229c05a7e161.lean"
+id = "NScholzConjecture_scholz_conjecture_prove"
+file = "NScholzConjecture_scholz_conjecture_prove.lean"
 module = "FtpEvalBench.NScholzConjecture_scholz_conjecture_prove"
 shape = "prove"
 track = "open"
@@ -40,14 +40,14 @@ statement_id = "6b7d9eec-0cc1-4b3b-9a88-aa098f1ff9fd"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "b10483845173649d"
+  target_hash = "1ed8dc97ddd9055e"
   conversion_hash = "10c5bee35f123680088bb7fc9b66f99e2232566cb1862157e236bcc5f8af65bb"
   semantic_anchor = "60b9ec2993f7eb03053e18e02b8c75f3e4f42934c753e1a0956f2a2f41d8fe99"
   reviewed_by_a_person = false
 
 [[task]]
-id = "d37015be-8ace-4b5c-95d2-ca812e21acb5"
-file = "d37015be-8ace-4b5c-95d2-ca812e21acb5.lean"
+id = "NScholzConjecture_scholz_conjecture_refute"
+file = "NScholzConjecture_scholz_conjecture_refute.lean"
 module = "FtpEvalBench.NScholzConjecture_scholz_conjecture_refute"
 shape = "refute"
 track = "open"
@@ -60,7 +60,7 @@ statement_id = "6b7d9eec-0cc1-4b3b-9a88-aa098f1ff9fd"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "caa793a4d020cf99"
+  target_hash = "c623faf03c664a60"
   conversion_hash = "12f2e12604a4f12d6ad73071d295652157e32b1a7bdf9473b476333c112ba50d"
   semantic_anchor = "501b9af8d58f1d540950f198c78590fc69975417d78aecf537a6446820b3bd61"
   reviewed_by_a_person = false

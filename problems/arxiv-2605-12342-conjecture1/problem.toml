@@ -21,13 +21,13 @@ file = "FormalConjectures/Arxiv/2605.12342/Conjecture1.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "arxiv"
-released_at = "2026-10-05T09:11:18+00:00"
+released_at = "2026-10-05T10:54:36+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "685b9c9f-e347-45a9-b190-85f0831cf854"
-file = "685b9c9f-e347-45a9-b190-85f0831cf854.lean"
+id = "X2605_12342_Conjecture1_conjecture_1"
+file = "X2605_12342_Conjecture1_conjecture_1.lean"
 module = "FtpEvalBench.X2605_12342_Conjecture1_conjecture_1"
 shape = "proof"
 track = "solved"
@@ -39,7 +39,7 @@ statement_id = "3c07e6b2-a3f0-4db2-a9e3-618510cddb00"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "cf3e1e0514c0690a"
+  target_hash = "b96fa40ae64d088b"
   conversion_hash = "6baa8d89c5b0b2f8b7e49ec7e0e1cc38cc3686d4179b7b9904629e4a186ad5a6"
   semantic_anchor = "8096932284928257a34ed7a8e38a690724154053f3d7d22e0e50d7e954d3737e"
   reviewed_by_a_person = false

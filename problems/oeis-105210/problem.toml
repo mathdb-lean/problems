@@ -21,13 +21,13 @@ file = "FormalConjectures/OEIS/105210.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "3a4c5a53-7488-4e75-880f-dc130d405798"
-file = "3a4c5a53-7488-4e75-880f-dc130d405798.lean"
+id = "O105210_conjecture"
+file = "O105210_conjecture.lean"
 module = "FtpEvalBench.O105210_conjecture"
 shape = "proof"
 track = "open"
@@ -39,14 +39,14 @@ statement_id = "1f52c229-15d7-484e-8d7a-54d60bcb785d"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "b5b7d61e8cdfb38f"
+  target_hash = "766e8a600c45d97f"
   conversion_hash = "cad7c34f7be4d731c017786f3e82e0c40efbba740c0ae74d179efb674566794b"
   semantic_anchor = "506bd2c66a6951338fb91c65a98294f5c30546bcf07994b3bdac7e749220eace"
   reviewed_by_a_person = false
 
 [[task]]
-id = "f9cc160b-7766-4f97-97e5-4f146f68bb0a"
-file = "f9cc160b-7766-4f97-97e5-4f146f68bb0a.lean"
+id = "O105210_conjecture_disjoint_starting_values"
+file = "O105210_conjecture_disjoint_starting_values.lean"
 module = "FtpEvalBench.O105210_conjecture_disjoint_starting_values"
 shape = "proof"
 track = "open"
@@ -58,7 +58,7 @@ statement_id = "ebaa07de-b59e-443a-bbbd-6bd226254e14"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "0eb1db1695d667d2"
+  target_hash = "69c1a0d5bed05303"
   conversion_hash = "00656ee4e4da0e64be53b89de7ff27f93eabaf550c5dc446ad4774f00cd72c6b"
   semantic_anchor = "8929d3b91958affdc98a0c31d68d30d2c263d2c708d56b330f15e720cf86ff2a"
   reviewed_by_a_person = false

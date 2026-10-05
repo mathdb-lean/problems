@@ -21,13 +21,13 @@ file = "FormalConjectures/Paper/CatchUpConjecture.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "paper"
-released_at = "2026-10-05T09:11:28+00:00"
+released_at = "2026-10-05T10:54:52+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "92344f6f-79d9-4091-bb60-45862ed52a78"
-file = "92344f6f-79d9-4091-bb60-45862ed52a78.lean"
+id = "RCatchUpConjecture_value_of_even_mul_succ_self_div_two"
+file = "RCatchUpConjecture_value_of_even_mul_succ_self_div_two.lean"
 module = "FtpEvalBench.RCatchUpConjecture_value_of_even_mul_succ_self_div_two"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "f2c27ef9-897c-45b1-af53-d1c9103b30b7"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "2849b2b1cf112ad1"
+  target_hash = "a833379d8d9261d8"
   conversion_hash = "42061bf420a552e1015397620269add89b8023f21d65c3bdaa4eb80ffa116a7f"
   semantic_anchor = "40c82f811bd6a149c19e02545322b77d59f33e7130d1c089788a190482af6482"
   reviewed_by_a_person = false

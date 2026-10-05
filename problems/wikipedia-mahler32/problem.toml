@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/Mahler32.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "a94b119b-93c2-457a-b389-fe08b4965581"
-file = "a94b119b-93c2-457a-b389-fe08b4965581.lean"
+id = "NMahler32_mahler_conjecture"
+file = "NMahler32_mahler_conjecture.lean"
 module = "FtpEvalBench.NMahler32_mahler_conjecture"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "4918cb1c-e6de-4876-a1f0-58b083950713"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "33832955cbb34a67"
+  target_hash = "c8c4acab54338cb9"
   conversion_hash = "1731a58df39456ee875a72ac01e0578e0e23fca61f837ae56101a7421140762f"
   semantic_anchor = "562391fd0a764b975439c58ca142b40c5bd1a088017b08afe4681f460e31d1f5"
   reviewed_by_a_person = false

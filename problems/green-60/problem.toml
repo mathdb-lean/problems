@@ -10,7 +10,7 @@ collection = "green"
 tasks = 2
 reviewed_by_a_person = false
 prose = "Is there an absolute constant $c > 0$ such that, whenever $A ⊆ \\mathbb{N}$ is a set of squares with $|A| ≥ 2$, the sumset $A + A$ satisfies $|A + A| ≥ |A|^{1 + c}$?"
-notes = "Green, open problem 60"
+notes = "Green, open problem 60 -- https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#section.8"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/GreensOpenProblems/60.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-05T08:40:38+00:00"
+released_at = "2026-10-05T10:54:26+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "8e291992-1a11-4b58-b353-2254eacb0722"
-file = "8e291992-1a11-4b58-b353-2254eacb0722.lean"
+id = "G60_prove"
+file = "G60_prove.lean"
 module = "FtpEvalBench.G60_prove"
 shape = "prove"
 track = "open"
@@ -40,14 +40,14 @@ statement_id = "9a6815cb-0070-4d0d-90b2-72545d534143"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "38dc40fef11172b1"
+  target_hash = "5109c3120eb612b8"
   conversion_hash = "3371f4443d49d6825eb4e4adedbfd3ebbd3bd6e06215b9f16cf075d0fa9271a9"
   semantic_anchor = "6a92e75f5512c26e67d42307bb540b25150dc4c18bced8c6d2505dfda4ce5b0d"
   reviewed_by_a_person = false
 
 [[task]]
-id = "9eb90020-6dd1-4c17-804a-230d27434017"
-file = "9eb90020-6dd1-4c17-804a-230d27434017.lean"
+id = "G60_refute"
+file = "G60_refute.lean"
 module = "FtpEvalBench.G60_refute"
 shape = "refute"
 track = "open"
@@ -60,7 +60,7 @@ statement_id = "9a6815cb-0070-4d0d-90b2-72545d534143"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "bad94415465389dd"
+  target_hash = "176bd4111694bfbe"
   conversion_hash = "a81733d6a66ab134a3526c0f7610f66f7df7bd509533a908d96a9185054fe8ab"
   semantic_anchor = "944651ac5b69d286aa745ca86f858ba25ce50ad41d330d9c9c591ec6313367d9"
   reviewed_by_a_person = false

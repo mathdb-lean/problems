@@ -10,7 +10,7 @@ collection = "green"
 tasks = 2
 reviewed_by_a_person = false
 prose = "Can the Cohn-Elkies scheme be used to prove the optimal bound for circle-packings in 2 dimensions?"
-notes = "Green, open problem 42"
+notes = "Green, open problem 42 -- https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.42"
 
 [source]
 name = "formal-conjectures"
@@ -21,33 +21,13 @@ file = "FormalConjectures/GreensOpenProblems/42.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-05T08:40:38+00:00"
+released_at = "2026-10-05T10:54:26+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "0cfe675c-f13c-48d5-ba1f-cb4c248bd98a"
-file = "0cfe675c-f13c-48d5-ba1f-cb4c248bd98a.lean"
-module = "FtpEvalBench.G42_refute"
-shape = "refute"
-track = "open"
-pair_id = "G42"
-declaration = "green_42"
-statement_id = "161f67c8-fba5-46bc-9cf7-f8a4214ec4f0"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "e495adb5a9f65155"
-  conversion_hash = "49ba009adae4ae1c7673ad05c5909e9c085164c280618ab4331d3f7a04c667f4"
-  semantic_anchor = "08d28a857bcc010c1ed24416fefa6b18fcf321304260a6d04f360475b5ab113f"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "4aed2fae-500f-44de-a56e-c09e205e6d0a"
-file = "4aed2fae-500f-44de-a56e-c09e205e6d0a.lean"
+id = "G42_prove"
+file = "G42_prove.lean"
 module = "FtpEvalBench.G42_prove"
 shape = "prove"
 track = "open"
@@ -60,7 +40,27 @@ statement_id = "161f67c8-fba5-46bc-9cf7-f8a4214ec4f0"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "6b1e14570649949b"
+  target_hash = "b6aafc17f2820967"
   conversion_hash = "195650d6d0eb90bdfe63e875a7af6289496af555e863f74fc74b8bef244e5b08"
   semantic_anchor = "714d1842d6f2bb882b0b3aa96629af07eee25b6611463cabdedbf37212d96abf"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "G42_refute"
+file = "G42_refute.lean"
+module = "FtpEvalBench.G42_refute"
+shape = "refute"
+track = "open"
+pair_id = "G42"
+declaration = "green_42"
+statement_id = "161f67c8-fba5-46bc-9cf7-f8a4214ec4f0"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "cf495637f6894e33"
+  conversion_hash = "49ba009adae4ae1c7673ad05c5909e9c085164c280618ab4331d3f7a04c667f4"
+  semantic_anchor = "08d28a857bcc010c1ed24416fefa6b18fcf321304260a6d04f360475b5ab113f"
   reviewed_by_a_person = false

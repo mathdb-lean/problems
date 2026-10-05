@@ -10,7 +10,7 @@ collection = "wotw"
 tasks = 1
 reviewed_by_a_person = false
 prose = "WOWII Conjecture 172 asked whether every nontrivial finite connected simple graph `G` satisfies `Ls G ≥ -1 + Δ(B(G)) + dist_min(G, M(G²))`. The answer is no, witnessed by `D₉`."
-notes = "Written on the Wall II, problem GraphConjecture172"
+notes = "Written on the Wall II, problem GraphConjecture172 -- http://cms.dt.uh.edu/faculty/delavinae/research/wowII/"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/WrittenOnTheWallII/GraphConjecture172.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wotw-reviewed"
-released_at = "2026-10-05T08:40:42+00:00"
+released_at = "2026-10-05T10:54:32+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "eb357251-1835-4912-8e38-b7066206908e"
-file = "eb357251-1835-4912-8e38-b7066206908e.lean"
+id = "WGraphConjecture172_conjecture172"
+file = "WGraphConjecture172_conjecture172.lean"
 module = "FtpEvalBench.WGraphConjecture172_conjecture172"
 shape = "decide"
 track = "solved"
@@ -40,7 +40,7 @@ gold_arguments = ["False"]
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "e747dfbecbb20822"
+  target_hash = "422d5772a9e49b52"
   conversion_hash = "a8b2ac5fcf755acc94006dbd9a3e12812640df36e2042b36a7ec0154d855b653"
   semantic_anchor = "a537bf6b77572a5441ff179fdcfac69bfe12183c513cdeaf041d91b709959e96"
   reviewed_by_a_person = false

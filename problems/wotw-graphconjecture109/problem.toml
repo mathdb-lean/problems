@@ -10,7 +10,7 @@ collection = "wotw"
 tasks = 1
 reviewed_by_a_person = false
 prose = "WOWII [Conjecture 109](http://cms.dt.uh.edu/faculty/delavinae/research/wowII/) For a simple connected graph $G$, the independence number $\\alpha(G)$ was conjectured to satisfy $\\alpha(G) \\le \\lfloor (\\mathrm{residue}(G) + 2 \\cdot b(G)) / 3 \\rfloor$, where $\\mathrm{residue}(G)$ is the Havel--Hakimi residue and $b(G)$ is the size of a largest induced bipartite subgraph. This is false. A connected graph on 21 vertices has an independent set of size 15, residue 8, and no induced bipartite subgraph with more than 18 vertices, so the conjectured right-hand side is at most 14. A smaller counterexample is the connected 13-vertex graph $\\overline K_7 \\vee (K_3 \\sqcup K_3)$. It has independence number $7$, residue $2$, and largest induced bipartite subgraph size $9$, so its conjectured right-hand side is $6$."
-notes = "Written on the Wall II, problem GraphConjecture109"
+notes = "Written on the Wall II, problem GraphConjecture109 -- http://cms.dt.uh.edu/faculty/delavinae/research/wowII/"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/WrittenOnTheWallII/GraphConjecture109.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wotw-reviewed"
-released_at = "2026-10-05T08:40:42+00:00"
+released_at = "2026-10-05T10:54:32+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "593d1f1d-7163-43b1-bb73-74ceb21465f0"
-file = "593d1f1d-7163-43b1-bb73-74ceb21465f0.lean"
+id = "WGraphConjecture109_conjecture109"
+file = "WGraphConjecture109_conjecture109.lean"
 module = "FtpEvalBench.WGraphConjecture109_conjecture109"
 shape = "decide"
 track = "solved"
@@ -40,7 +40,7 @@ gold_arguments = ["False"]
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "6cc4f403a72b7b7e"
+  target_hash = "ec271a9d3ba3ed55"
   conversion_hash = "436a0674c64d939e84245bc6b61ce27b81a3d273e54e19f8353132e744dbd8f8"
   semantic_anchor = "6e78d45977d446217306df3bb8cd48b83f8541fd958cbfeb5d84127fd43ba766"
   reviewed_by_a_person = false

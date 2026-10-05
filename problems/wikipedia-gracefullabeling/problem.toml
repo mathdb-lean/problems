@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/GracefulLabeling.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "f76c39b0-30c8-4153-9a08-3bab834e4321"
-file = "f76c39b0-30c8-4153-9a08-3bab834e4321.lean"
+id = "NGracefulLabeling_graceful_tree_conjecture"
+file = "NGracefulLabeling_graceful_tree_conjecture.lean"
 module = "FtpEvalBench.NGracefulLabeling_graceful_tree_conjecture"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "0f4ce949-7a67-4008-9bcc-66f26bad1339"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "d788de42d0f0888f"
+  target_hash = "02396ca266bddb4d"
   conversion_hash = "5f5d2ff81244ce7370278d5a71fc1595488e9e8fe6b0ef2563ae80ac3b4cca85"
   semantic_anchor = "39219f7b37bed0fdd2b7338970808ea1537a0ee5e6a89756a2178b7fa6039d17"
   reviewed_by_a_person = false

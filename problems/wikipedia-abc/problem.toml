@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/ABC.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "4461bce5-67c2-4740-b914-b08462cb2db6"
-file = "4461bce5-67c2-4740-b914-b08462cb2db6.lean"
+id = "NABC_abc"
+file = "NABC_abc.lean"
 module = "FtpEvalBench.NABC_abc"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "29c41a99-4b1b-46e2-9394-5b607da0a5be"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "5f7b7813c76ef329"
+  target_hash = "f35e9c1dc4d2d6c9"
   conversion_hash = "f53b8b853a320be173b5b1906caf37a3e2effc01e969ec567d356deebde00639"
   semantic_anchor = "0358b4d0b9df51270cff37f04c0037809688d30c6b50108b119b5d0dec7620bf"
   reviewed_by_a_person = false

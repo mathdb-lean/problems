@@ -21,13 +21,13 @@ file = "FormalConjectures/OEIS/11545.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "b1ff4863-6263-4cb5-926e-292e5da40b00"
-file = "b1ff4863-6263-4cb5-926e-292e5da40b00.lean"
+id = "O11545_conjecture1"
+file = "O11545_conjecture1.lean"
 module = "FtpEvalBench.O11545_conjecture1"
 shape = "proof"
 track = "open"
@@ -39,14 +39,14 @@ statement_id = "2756c395-1881-41b7-a3cc-21467ac3a4cc"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "0b720b65912eb0dc"
+  target_hash = "491a500935829bcd"
   conversion_hash = "38fc21355f756e52fd9429c7f89d7c477f06bb6c350ab0cad3b172cbe085da57"
   semantic_anchor = "2ab44f7bfb9336afed418f321157d794954aac9cadb95facd77aaa363933efb8"
   reviewed_by_a_person = false
 
 [[task]]
-id = "f8c2c6f4-c304-41c0-b5de-8afba6ff6cab"
-file = "f8c2c6f4-c304-41c0-b5de-8afba6ff6cab.lean"
+id = "O11545_conjecture2"
+file = "O11545_conjecture2.lean"
 module = "FtpEvalBench.O11545_conjecture2"
 shape = "proof"
 track = "open"
@@ -58,7 +58,7 @@ statement_id = "19f27181-0a14-4fb3-b916-9a4f4904bff0"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "9d31e4d6e8b08208"
+  target_hash = "e14bcbb34e695077"
   conversion_hash = "e096a870b667f79de389c9799c2e6685bb6822f0f54f45a2051789436b018c10"
   semantic_anchor = "b72e87c063a19d1b14e4e779d13deefe86ee756fd6e8c6b3a8bd43b53c36e433"
   reviewed_by_a_person = false

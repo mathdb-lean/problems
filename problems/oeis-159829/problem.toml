@@ -21,13 +21,13 @@ file = "FormalConjectures/OEIS/159829.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "331695b2-e598-44b0-969a-3ae5613adad6"
-file = "331695b2-e598-44b0-969a-3ae5613adad6.lean"
+id = "O159829_conjecture1"
+file = "O159829_conjecture1.lean"
 module = "FtpEvalBench.O159829_conjecture1"
 shape = "decide"
 track = "solved"
@@ -40,14 +40,14 @@ gold_arguments = ["False"]
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "9eb31cc3ed0a07a6"
+  target_hash = "8d949ae3545158f8"
   conversion_hash = "c74fc9a5160993d8249ce915c760b48d82bd521b1f542af129cab491f0031210"
   semantic_anchor = "fe68cc542a3e2026379bdc1267a6561343d71fd2bca747954247ca145eed8d13"
   reviewed_by_a_person = false
 
 [[task]]
-id = "fe8ce7bc-dc9e-4603-b766-ec595c73ef89"
-file = "fe8ce7bc-dc9e-4603-b766-ec595c73ef89.lean"
+id = "O159829_conjecture2"
+file = "O159829_conjecture2.lean"
 module = "FtpEvalBench.O159829_conjecture2"
 shape = "proof"
 track = "open"
@@ -59,7 +59,7 @@ statement_id = "44d381c6-7b96-4e40-83d5-133518eb5131"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "4474018a5e922169"
+  target_hash = "2e006e1230e37145"
   conversion_hash = "45fc07bc3f637971d8c093164f5dfb0c36c577ac8e9cf27e13ac12d78ac405b4"
   semantic_anchor = "e76b6a9a934f95f728be8d318ab5969827af86a42b00d0c63b1246a86f0c5b84"
   reviewed_by_a_person = false

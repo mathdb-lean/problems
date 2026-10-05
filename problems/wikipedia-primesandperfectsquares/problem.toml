@@ -21,33 +21,13 @@ file = "FormalConjectures/Wikipedia/PrimesAndPerfectSquares.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "b1422ae7-cdc8-46a1-969c-9a5f55b6e64c"
-file = "b1422ae7-cdc8-46a1-969c-9a5f55b6e64c.lean"
-module = "FtpEvalBench.NPrimesAndPerfectSquares_infinite_prime_sq_add_one_refute"
-shape = "refute"
-track = "open"
-pair_id = "NPrimesAndPerfectSquares_infinite_prime_sq_add_one"
-declaration = "infinite_prime_sq_add_one"
-statement_id = "969f1287-cf89-47fa-9582-5b00bf039101"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "cd9e0fdb9207ef47"
-  conversion_hash = "641a60b3194e6e16c0757e2c793ad399cdcf992d0cf0d5817a477b05653dbeab"
-  semantic_anchor = "81b6ebaff41093e56289986bd5016f96398cd28fa773aaa308d79cab5e0ff714"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "e687fc1a-0919-46b0-a248-d5750b3f14f8"
-file = "e687fc1a-0919-46b0-a248-d5750b3f14f8.lean"
+id = "NPrimesAndPerfectSquares_infinite_prime_sq_add_one_prove"
+file = "NPrimesAndPerfectSquares_infinite_prime_sq_add_one_prove.lean"
 module = "FtpEvalBench.NPrimesAndPerfectSquares_infinite_prime_sq_add_one_prove"
 shape = "prove"
 track = "open"
@@ -60,7 +40,27 @@ statement_id = "969f1287-cf89-47fa-9582-5b00bf039101"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "e545cfd646f24c38"
+  target_hash = "437aef73350a0ca5"
   conversion_hash = "1765924eb80ff834178d52cda24e33717143a37d2f95c20602eb6c509128ddc1"
   semantic_anchor = "e6e8be8534e11530f4cf5e3b198dcc1a6ffe6d84b141d747ca4dc6276b686539"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "NPrimesAndPerfectSquares_infinite_prime_sq_add_one_refute"
+file = "NPrimesAndPerfectSquares_infinite_prime_sq_add_one_refute.lean"
+module = "FtpEvalBench.NPrimesAndPerfectSquares_infinite_prime_sq_add_one_refute"
+shape = "refute"
+track = "open"
+pair_id = "NPrimesAndPerfectSquares_infinite_prime_sq_add_one"
+declaration = "infinite_prime_sq_add_one"
+statement_id = "969f1287-cf89-47fa-9582-5b00bf039101"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "fb2bb6e3528c2551"
+  conversion_hash = "641a60b3194e6e16c0757e2c793ad399cdcf992d0cf0d5817a477b05653dbeab"
+  semantic_anchor = "81b6ebaff41093e56289986bd5016f96398cd28fa773aaa308d79cab5e0ff714"
   reviewed_by_a_person = false

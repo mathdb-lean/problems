@@ -10,7 +10,7 @@ collection = "green"
 tasks = 1
 reviewed_by_a_person = false
 prose = "Let $A \\subset \\mathbb{Z}$ be a set of size $n$. For how many $\\theta \\in \\mathbb{R}/\\mathbb{Z}$ must we have $\\sum_{a \\in A} \\cos(2\\pi a\\theta) = 0$? The answer is the function `minZeros`."
-notes = "Green, open problem 82"
+notes = "Green, open problem 82 -- https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.82"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/GreensOpenProblems/82.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-05T08:40:38+00:00"
+released_at = "2026-10-05T10:54:26+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "bf06e1f8-4a94-4a00-a9f8-31c4f6fe0836"
-file = "bf06e1f8-4a94-4a00-a9f8-31c4f6fe0836.lean"
+id = "G82"
+file = "G82.lean"
 module = "FtpEvalBench.G82"
 shape = "value"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "adaf2abd-7ccd-4d30-91cc-c8bac2ca8e60"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "2a5764a67eb6d8b3"
+  target_hash = "bbaf3774626299fa"
   conversion_hash = "88d4e58302d798fb49c3c6cbdef9fd225f555fa33a5bcec8ca4842b91ddddbef"
   semantic_anchor = "aec98a06056862d0c8c624b5149b834b6b3f44c927017f3cd94b6612688ba544"
   reviewed_by_a_person = false

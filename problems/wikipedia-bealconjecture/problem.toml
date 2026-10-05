@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/BealConjecture.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "d3a586b6-9bd7-496c-a290-4c91643da81e"
-file = "d3a586b6-9bd7-496c-a290-4c91643da81e.lean"
+id = "NBealConjecture_beal_conjecture"
+file = "NBealConjecture_beal_conjecture.lean"
 module = "FtpEvalBench.NBealConjecture_beal_conjecture"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "7533de25-b589-44f0-9ed1-51a8b5f01ed1"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "e8df96d2286fd2fa"
+  target_hash = "df8b2de60fae7c42"
   conversion_hash = "9bf56b86f74694d0b0344ac29ef0249a327ba549898423301f1e5b2b0db07150"
   semantic_anchor = "d9dc73388453189df0098287e136f9fad1d898756ef57389cf8060ce275c02fd"
   reviewed_by_a_person = false

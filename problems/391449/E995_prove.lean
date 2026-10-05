@@ -15,7 +15,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -/
 
-import MathdbUtil
+import MathDBUtil
 
 /-!
 Converted from another corpus. `source` names it, `source_version`

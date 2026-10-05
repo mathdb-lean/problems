@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/VizingConjecture.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "aca9aa9e-e491-4491-acfe-8b25d8be0d7b"
-file = "aca9aa9e-e491-4491-acfe-8b25d8be0d7b.lean"
+id = "NVizingConjecture_vizing_conjecture_prove"
+file = "NVizingConjecture_vizing_conjecture_prove.lean"
 module = "FtpEvalBench.NVizingConjecture_vizing_conjecture_prove"
 shape = "prove"
 track = "open"
@@ -40,14 +40,14 @@ statement_id = "e850d069-1e01-4df4-b6a5-7d2d683558b6"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "4dab8328b762e61c"
+  target_hash = "ec58bb3baad23c04"
   conversion_hash = "b06b660f4dd7c2ed1d1fe1f441ec5bd6b96faa8919ca7a31faf784a37094dd95"
   semantic_anchor = "29a2df317922a1bec4efb71395193d067b66a380eb5110a80a05d2e5f93e8e64"
   reviewed_by_a_person = false
 
 [[task]]
-id = "c7c22794-4a80-4d49-9ad7-26810ba481a6"
-file = "c7c22794-4a80-4d49-9ad7-26810ba481a6.lean"
+id = "NVizingConjecture_vizing_conjecture_refute"
+file = "NVizingConjecture_vizing_conjecture_refute.lean"
 module = "FtpEvalBench.NVizingConjecture_vizing_conjecture_refute"
 shape = "refute"
 track = "open"
@@ -60,7 +60,7 @@ statement_id = "e850d069-1e01-4df4-b6a5-7d2d683558b6"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "b0f69bea65add92b"
+  target_hash = "dc097d33ff0b0d2e"
   conversion_hash = "14e202f1d1c9d55f499593d98833b2d6f14aa9824c85516b456cb4548450c8ec"
   semantic_anchor = "5c6daad9df32f8c7525eb567097fda617dfce9ef215e3abf7645765c98397c43"
   reviewed_by_a_person = false

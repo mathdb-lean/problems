@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/FactorialPrime.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "4476d2ad-2b87-403b-aaae-369519f6d03c"
-file = "4476d2ad-2b87-403b-aaae-369519f6d03c.lean"
+id = "NFactorialPrime_infinitely_many_factorial_primes"
+file = "NFactorialPrime_infinitely_many_factorial_primes.lean"
 module = "FtpEvalBench.NFactorialPrime_infinitely_many_factorial_primes"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "80a10bb9-48bd-45ca-9c1f-843cc1132f97"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "1fb07736daf1f477"
+  target_hash = "70e27b8ca27ae570"
   conversion_hash = "cf105a8e5282bd76a5cfc185ea95a92766f01793e08ddc7ab736cf23d9c8642c"
   semantic_anchor = "189cd0e692f9983a8c350a663e688aa96b62c620124dc0fedce9d1d7061826dc"
   reviewed_by_a_person = false

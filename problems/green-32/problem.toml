@@ -10,7 +10,7 @@ collection = "green"
 tasks = 2
 reviewed_by_a_person = false
 prose = "Let $p$ be a prime and let $A \\subset \\mathbb{Z}/p\\mathbb{Z}$ be a set of size $\\lfloor \\sqrt{p} \\rfloor$. Is there a dilate of $A$ containing a gap of length $100\\sqrt{p}$?"
-notes = "Green, open problem 32"
+notes = "Green, open problem 32 -- https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.32"
 
 [source]
 name = "formal-conjectures"
@@ -21,33 +21,13 @@ file = "FormalConjectures/GreensOpenProblems/32.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-05T08:40:38+00:00"
+released_at = "2026-10-05T10:54:26+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "186a3efc-0b66-4a3a-9a90-e327ecaed974"
-file = "186a3efc-0b66-4a3a-9a90-e327ecaed974.lean"
-module = "FtpEvalBench.G32_refute"
-shape = "refute"
-track = "open"
-pair_id = "G32"
-declaration = "green_32"
-statement_id = "6b053ec4-6329-4a71-a91f-70c7f92b8be6"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "8964d5ec49cc074b"
-  conversion_hash = "3db978993612aba7770663b6502c9ec771d4e863971d452bb754af8d49a96939"
-  semantic_anchor = "72b8b81448df3d4b964f90f41e9cdd1c02c78fd192ea43a8a5580e1dc1d27cca"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "341a49f7-8cc8-44c4-a370-6f5e0c6da829"
-file = "341a49f7-8cc8-44c4-a370-6f5e0c6da829.lean"
+id = "G32_prove"
+file = "G32_prove.lean"
 module = "FtpEvalBench.G32_prove"
 shape = "prove"
 track = "open"
@@ -60,7 +40,27 @@ statement_id = "6b053ec4-6329-4a71-a91f-70c7f92b8be6"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "e3843d372217f9b2"
+  target_hash = "853f60f01ee34aaa"
   conversion_hash = "2f4383600bb88b50e7ccacb3d365cae6c64a9a7d797bdbbc883d9b56f06e18bf"
   semantic_anchor = "90bcd4a95c39c1511b64264fd98fd7e6c3bbe1f78a03be0ea66dcd922b9bfa57"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "G32_refute"
+file = "G32_refute.lean"
+module = "FtpEvalBench.G32_refute"
+shape = "refute"
+track = "open"
+pair_id = "G32"
+declaration = "green_32"
+statement_id = "6b053ec4-6329-4a71-a91f-70c7f92b8be6"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "60bb20b231083eba"
+  conversion_hash = "3db978993612aba7770663b6502c9ec771d4e863971d452bb754af8d49a96939"
+  semantic_anchor = "72b8b81448df3d4b964f90f41e9cdd1c02c78fd192ea43a8a5580e1dc1d27cca"
   reviewed_by_a_person = false

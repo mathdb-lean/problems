@@ -9,7 +9,7 @@ problem_id = "oeis:71524"
 collection = "oeis"
 tasks = 2
 reviewed_by_a_person = false
-prose = "Conjecture (Generalization): For every $m \\in \\mathbb{N}$, the determinant `generalDet m n` is nonzero for all sufficiently large $n$. - _Zhi-Wei Sun_, Aug 26-27 2013"
+prose = "Conjecture: $a(n) = 0$ for no $n > 28$. - _Zhi-Wei Sun_, Aug 26 2013"
 notes = "OEIS A71524 -- https://oeis.org/A71524"
 
 [source]
@@ -21,32 +21,13 @@ file = "FormalConjectures/OEIS/71524.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "c2f277a9-10e3-4d20-a391-5af18b7248f4"
-file = "c2f277a9-10e3-4d20-a391-5af18b7248f4.lean"
-module = "FtpEvalBench.O71524_conjecture2"
-shape = "proof"
-track = "open"
-declaration = "conjecture2"
-statement_id = "1d9a4337-3e91-40b7-987a-274982039340"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "6d169fca2bad5a0c"
-  conversion_hash = "1b79a369b3bbd82edb59ef01425c80ab73dce048bd9bbae9c8021c658faf8f15"
-  semantic_anchor = "f7e6894d76383c99ccb13d733f5cbf4b924e3ea8478e69b30e99b04e8b6a074e"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "ce9871f5-43ce-4945-816a-26f7e4b82b6b"
-file = "ce9871f5-43ce-4945-816a-26f7e4b82b6b.lean"
+id = "O71524_conjecture1"
+file = "O71524_conjecture1.lean"
 module = "FtpEvalBench.O71524_conjecture1"
 shape = "proof"
 track = "open"
@@ -58,7 +39,26 @@ statement_id = "576771bf-7a64-4072-96dd-b7fad1d982e4"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "d2ddb0d164aaaff5"
+  target_hash = "ed5870bd16a5062a"
   conversion_hash = "94f7e7869188b81ffee28ac2f3178b8704fc6c53fe0e27bcdf3486a58771ebbc"
   semantic_anchor = "d5eda100c5b1711d1a51557c3caf8534a59da073510716b5a4803f31f80efc79"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O71524_conjecture2"
+file = "O71524_conjecture2.lean"
+module = "FtpEvalBench.O71524_conjecture2"
+shape = "proof"
+track = "open"
+declaration = "conjecture2"
+statement_id = "1d9a4337-3e91-40b7-987a-274982039340"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c68643d44967de91"
+  conversion_hash = "1b79a369b3bbd82edb59ef01425c80ab73dce048bd9bbae9c8021c658faf8f15"
+  semantic_anchor = "f7e6894d76383c99ccb13d733f5cbf4b924e3ea8478e69b30e99b04e8b6a074e"
   reviewed_by_a_person = false

@@ -21,33 +21,13 @@ file = "FormalConjectures/OEIS/67599.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "26731f37-7257-4105-8d02-09d7a0797373"
-file = "26731f37-7257-4105-8d02-09d7a0797373.lean"
-module = "FtpEvalBench.O67599_conjecture_refute"
-shape = "refute"
-track = "open"
-pair_id = "O67599_conjecture"
-declaration = "conjecture"
-statement_id = "b4c2f3ca-3e73-4558-be9b-2c9adec96c07"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "299f27417cc70b66"
-  conversion_hash = "ee87bf213bac87dad5e5a9091da71b875115c4998d2beb9a285855bbf4f01af9"
-  semantic_anchor = "231d86a48ed7e72a7b7911225579215196aaa4438236e200d6b4001c9103637b"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "5f37e5ce-6c77-46b8-a303-98c8c257d4e8"
-file = "5f37e5ce-6c77-46b8-a303-98c8c257d4e8.lean"
+id = "O67599_conjecture_prove"
+file = "O67599_conjecture_prove.lean"
 module = "FtpEvalBench.O67599_conjecture_prove"
 shape = "prove"
 track = "open"
@@ -60,7 +40,27 @@ statement_id = "b4c2f3ca-3e73-4558-be9b-2c9adec96c07"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "aa11b64abda4d2f4"
+  target_hash = "60b111cadb308391"
   conversion_hash = "7fa58a86cc52936dd6122ba02673bbcaa8ebcd797a002b5e460a01f8fd428a7e"
   semantic_anchor = "faca8fcd4b42715c5d6ed6eabb517dabd17e17666d80f079a9b1f7c381b43519"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O67599_conjecture_refute"
+file = "O67599_conjecture_refute.lean"
+module = "FtpEvalBench.O67599_conjecture_refute"
+shape = "refute"
+track = "open"
+pair_id = "O67599_conjecture"
+declaration = "conjecture"
+statement_id = "b4c2f3ca-3e73-4558-be9b-2c9adec96c07"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "6e1a37ae60f7c44f"
+  conversion_hash = "ee87bf213bac87dad5e5a9091da71b875115c4998d2beb9a285855bbf4f01af9"
+  semantic_anchor = "231d86a48ed7e72a7b7911225579215196aaa4438236e200d6b4001c9103637b"
   reviewed_by_a_person = false

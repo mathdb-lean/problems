@@ -10,7 +10,7 @@ collection = "green"
 tasks = 1
 reviewed_by_a_person = false
 prose = "How many rotated (about the origin) copies of the 'pyjama set' $\\\\{(x, y) \\in \\mathbb{R}^2 : \\text{dist}(x, \\mathbb{Z}) \\leq \\varepsilon\\\\}$ are needed to cover $\\mathbb{R}^2$? That is, determine the minimal number of rotations as a function of $\\varepsilon > 0$."
-notes = "Green, open problem 41"
+notes = "Green, open problem 41 -- https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.41"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/GreensOpenProblems/41.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-05T08:40:38+00:00"
+released_at = "2026-10-05T10:54:26+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "3366d91e-807b-4b66-9ddb-0a31f9866070"
-file = "3366d91e-807b-4b66-9ddb-0a31f9866070.lean"
+id = "G41"
+file = "G41.lean"
 module = "FtpEvalBench.G41"
 shape = "value"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "2b33e9da-e70e-4d16-a733-1f2c538f4771"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "aeb4fc07d8b929df"
+  target_hash = "91e49d62e56b90a3"
   conversion_hash = "89ae410bd2f60da4646b2e6a09bf082f0b30d1a5ebace724f7f63ab1e08d5238"
   semantic_anchor = "02ba293674fbeca4031c438abe56abd134eab515d0e4816f6e4173026f03fd7f"
   reviewed_by_a_person = false

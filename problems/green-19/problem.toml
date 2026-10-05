@@ -10,7 +10,7 @@ collection = "green"
 tasks = 1
 reviewed_by_a_person = false
 prose = "What is $C$, the infimum of all exponents $c$ for which the following is true, uniformly for $0 < \\alpha < 1$? Suppose that $A \\subset \\mathbb{F}_2^n \\times \\mathbb{F}_2^n$ is a set of density $\\alpha$. Write $N := 2^n$. Then there is some $d \\neq 0$ such that $A$ contains $\\gg \\alpha^c N^2$ corners $(x,y), (x,y+d), (x+d,y)$. This question has been resolved by [FSS20], showing that $C = 4$."
-notes = "Green, open problem 19"
+notes = "Green, open problem 19 -- https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.19"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/GreensOpenProblems/19.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-05T08:40:38+00:00"
+released_at = "2026-10-05T10:54:26+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "5a3b4a37-ec26-4baa-9fee-8503465864f1"
-file = "5a3b4a37-ec26-4baa-9fee-8503465864f1.lean"
+id = "G19"
+file = "G19.lean"
 module = "FtpEvalBench.G19"
 shape = "proof"
 track = "solved"
@@ -39,7 +39,7 @@ statement_id = "9d567e63-e296-48ec-9c22-9571d044a879"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "2043fdae0b79e392"
+  target_hash = "193b215df8fbcda3"
   conversion_hash = "f25ec3b1dcaa0626f2fa4ef1e54b75b4cea7ba8fd561d3d547d7fa9710179897"
   semantic_anchor = "e8c589ed3a79a6d9ddf8611c3aa1ac83c674a737fd7537dedc9b90055e23e98b"
   reviewed_by_a_person = false

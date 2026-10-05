@@ -21,13 +21,13 @@ file = "FormalConjectures/Arxiv/2605.02731/DeanCycles.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "arxiv"
-released_at = "2026-10-05T09:11:18+00:00"
+released_at = "2026-10-05T10:54:36+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "2cfba158-8dab-4022-884d-bec62a0215d3"
-file = "2cfba158-8dab-4022-884d-bec62a0215d3.lean"
+id = "X2605_02731_DeanCycles_dean_conjecture_prove"
+file = "X2605_02731_DeanCycles_dean_conjecture_prove.lean"
 module = "FtpEvalBench.X2605_02731_DeanCycles_dean_conjecture_prove"
 shape = "prove"
 track = "open"
@@ -40,14 +40,14 @@ statement_id = "d0a237e1-7d27-4a95-b4dd-c55ffcbed2dc"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "cce26eeaf42846a2"
+  target_hash = "24506d949cc5b2cb"
   conversion_hash = "3a5c6e028c95d72b2a2a7d1fe3087c92f577d48dc26e86fb2bac20573f1bf81d"
   semantic_anchor = "b3146f40e42a7054d4cefbc230f384731c930026d4bf34b8b64dd94124c96c60"
   reviewed_by_a_person = false
 
 [[task]]
-id = "ed1dc7c1-04a0-4f09-a56c-6893246d4873"
-file = "ed1dc7c1-04a0-4f09-a56c-6893246d4873.lean"
+id = "X2605_02731_DeanCycles_dean_conjecture_refute"
+file = "X2605_02731_DeanCycles_dean_conjecture_refute.lean"
 module = "FtpEvalBench.X2605_02731_DeanCycles_dean_conjecture_refute"
 shape = "refute"
 track = "open"
@@ -60,7 +60,7 @@ statement_id = "d0a237e1-7d27-4a95-b4dd-c55ffcbed2dc"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "f884096f8779629d"
+  target_hash = "be0d0f12ba16f115"
   conversion_hash = "52d2e2af21749890f7a098827484c0c04f758548096b91696b89b1366efb9b2c"
   semantic_anchor = "043e4d044780c6b3e5bf58161f61f7b7899f2354087f5acc0abfa092f79fed79"
   reviewed_by_a_person = false

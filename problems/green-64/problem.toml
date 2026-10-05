@@ -10,7 +10,7 @@ collection = "green"
 tasks = 2
 reviewed_by_a_person = false
 prose = "Do there exist infinitely many primes $p$ for which $p - 2$ has an odd number of prime factors, counted with multiplicity (i.e. $\\Omega(p - 2)$ is odd)?"
-notes = "Green, open problem 64"
+notes = "Green, open problem 64 -- https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.64"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/GreensOpenProblems/64.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-05T08:40:38+00:00"
+released_at = "2026-10-05T10:54:26+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "008136cb-d342-4fde-addd-5629c5e1c7e1"
-file = "008136cb-d342-4fde-addd-5629c5e1c7e1.lean"
+id = "G64_prove"
+file = "G64_prove.lean"
 module = "FtpEvalBench.G64_prove"
 shape = "prove"
 track = "open"
@@ -40,14 +40,14 @@ statement_id = "3294517c-cf8f-4aa6-9c07-e3f4473ca5c5"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "3ec2c071e20b9950"
+  target_hash = "1022f394ae280cfa"
   conversion_hash = "40616f114363686ecc0e2bbc7c4dac24d072a05ad4e0c715ee28d19f55773a1f"
   semantic_anchor = "aba44d5bd9d7733a069bd9ac79a9a82d9d1a024b50fe081b98302753112ff54b"
   reviewed_by_a_person = false
 
 [[task]]
-id = "88b3b7c1-3434-4da6-99f1-2ad50dfefd9b"
-file = "88b3b7c1-3434-4da6-99f1-2ad50dfefd9b.lean"
+id = "G64_refute"
+file = "G64_refute.lean"
 module = "FtpEvalBench.G64_refute"
 shape = "refute"
 track = "open"
@@ -60,7 +60,7 @@ statement_id = "3294517c-cf8f-4aa6-9c07-e3f4473ca5c5"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "bfd0eb4eccf62bea"
+  target_hash = "327d609f8854e0d4"
   conversion_hash = "cbd17401acbcc6190cded65d6229694db0ad875e70796647bf79cbe1fd06ecb3"
   semantic_anchor = "53fc8fa36ffeedf301deb915e21c6497298ef99607e8dbf6863b23d94cee1849"
   reviewed_by_a_person = false

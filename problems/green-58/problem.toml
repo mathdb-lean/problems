@@ -10,7 +10,7 @@ collection = "green"
 tasks = 2
 reviewed_by_a_person = false
 prose = "Suppose $A, B ⊆ \\{1, \\dots, N\\}$ both have size at least $N^{0.49}$. Must the sumset $A + B$ contain a composite number?"
-notes = "Green, open problem 58"
+notes = "Green, open problem 58 -- https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#section.8"
 
 [source]
 name = "formal-conjectures"
@@ -21,33 +21,13 @@ file = "FormalConjectures/GreensOpenProblems/58.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-05T08:40:38+00:00"
+released_at = "2026-10-05T10:54:26+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "ca172305-2d67-4471-9083-7271b6c183fb"
-file = "ca172305-2d67-4471-9083-7271b6c183fb.lean"
-module = "FtpEvalBench.G58_refute"
-shape = "refute"
-track = "open"
-pair_id = "G58"
-declaration = "green_58"
-statement_id = "0387907e-cff4-42c5-b63b-c530a51b1862"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "8f52cf7ef49d4372"
-  conversion_hash = "a21b74d10199ab8bf992135d83412b83931a9fc4df249f572a6486c82db1f57f"
-  semantic_anchor = "7036e42906f3adc2ea176ba0430fefa5028e0585dc649045d10f2ce63ead6fce"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "d25fe7d4-e1cd-4196-ab07-720a0186f281"
-file = "d25fe7d4-e1cd-4196-ab07-720a0186f281.lean"
+id = "G58_prove"
+file = "G58_prove.lean"
 module = "FtpEvalBench.G58_prove"
 shape = "prove"
 track = "open"
@@ -60,7 +40,27 @@ statement_id = "0387907e-cff4-42c5-b63b-c530a51b1862"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "6bb8b8f26dda6c5e"
+  target_hash = "26cc9bfb8767bed8"
   conversion_hash = "1f4606983bb4f9d70f19b78516a31ba46a5b344d6cbf4ab3d13aa6002dfdb017"
   semantic_anchor = "8cb326bbeb5e77d51944f4bcfcbd5e92b12670c06731e9989db44d660fcda2e3"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "G58_refute"
+file = "G58_refute.lean"
+module = "FtpEvalBench.G58_refute"
+shape = "refute"
+track = "open"
+pair_id = "G58"
+declaration = "green_58"
+statement_id = "0387907e-cff4-42c5-b63b-c530a51b1862"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "fd4784fb6e59614d"
+  conversion_hash = "a21b74d10199ab8bf992135d83412b83931a9fc4df249f572a6486c82db1f57f"
+  semantic_anchor = "7036e42906f3adc2ea176ba0430fefa5028e0585dc649045d10f2ce63ead6fce"
   reviewed_by_a_person = false

@@ -9,7 +9,7 @@ problem_id = "oeis:179524"
 collection = "oeis"
 tasks = 5
 reviewed_by_a_person = false
-prose = "$\\sum_{k=0}^{n-1}(20k+17)a(k) \\equiv 0 \\pmod n$ for all $n=1,2,3,\\dots$. - _Zhi-Wei Sun_, Jul 01 2010"
+prose = "If $p$ is a prime with $p \\equiv 1, 9 \\pmod{20}$ and $p = x^2 + 5y^2$ with $x, y$ integers, then $\\sum_{k=0}^{p-1} a(k) \\equiv 4x^2 - 2p \\pmod{p^2}$. - _Zhi-Wei Sun_, Jul 01 2010"
 notes = "OEIS A179524 -- https://oeis.org/A179524"
 
 [source]
@@ -21,32 +21,13 @@ file = "FormalConjectures/OEIS/179524.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "268736f0-c179-485d-ae77-9b0dccf6562b"
-file = "268736f0-c179-485d-ae77-9b0dccf6562b.lean"
-module = "FtpEvalBench.O179524_conjecture4"
-shape = "proof"
-track = "open"
-declaration = "conjecture4"
-statement_id = "1674dd44-3eba-4a5e-b5c2-3a06a20488fe"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "0fb846e665bf441c"
-  conversion_hash = "05e2c04ef32c031b527060bb7677cb5d855f8cab60cf998585180548335d2264"
-  semantic_anchor = "abde766806e03c990afa7f361705b1b18b9b46eb77c43b6e39a9d63994bd3c5e"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "705e0ce8-68c7-496e-8230-dc5797f46a85"
-file = "705e0ce8-68c7-496e-8230-dc5797f46a85.lean"
+id = "O179524_conjecture1"
+file = "O179524_conjecture1.lean"
 module = "FtpEvalBench.O179524_conjecture1"
 shape = "proof"
 track = "open"
@@ -58,14 +39,14 @@ statement_id = "376a4c4e-5f59-49b1-a64c-b6089c1b7f2f"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "f757c65fc3ec743e"
+  target_hash = "3c18198abc885bae"
   conversion_hash = "04f92d8c998a70e75738903f181c386410269b86a610c1dd0ecc30adb93bb94a"
   semantic_anchor = "1f3b0910f1c1fe4ccf9a121a81bdd5c5a8c39ca3f7445a5da48df8b68d253ad1"
   reviewed_by_a_person = false
 
 [[task]]
-id = "85e578c7-5fc8-40bc-a0c2-c5b0a62fc8a3"
-file = "85e578c7-5fc8-40bc-a0c2-c5b0a62fc8a3.lean"
+id = "O179524_conjecture2"
+file = "O179524_conjecture2.lean"
 module = "FtpEvalBench.O179524_conjecture2"
 shape = "proof"
 track = "open"
@@ -77,14 +58,14 @@ statement_id = "7934c96e-6480-4a53-93e4-7603f61191a0"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "fbcb270ef9512e48"
+  target_hash = "f987eda6920e0bb7"
   conversion_hash = "5ac8d38b2a3572ec841c3a97db69ad5075e6c4493114b6f5e29c62cfb58294e0"
   semantic_anchor = "7c1e74a85e5071f36c583922e990cae7a9c687baa3c2f36870ee2d82d9f22fe6"
   reviewed_by_a_person = false
 
 [[task]]
-id = "a8536815-7f48-4b29-822a-bfface8c459d"
-file = "a8536815-7f48-4b29-822a-bfface8c459d.lean"
+id = "O179524_conjecture3"
+file = "O179524_conjecture3.lean"
 module = "FtpEvalBench.O179524_conjecture3"
 shape = "proof"
 track = "open"
@@ -96,14 +77,33 @@ statement_id = "31c066b7-145c-4791-92c2-e856b6a2ee5b"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "12374aa7ee82c684"
+  target_hash = "6c6cad9dbc2936df"
   conversion_hash = "961886d7ef4fa03a673451729d4be9665d44d18f52912b3fad4e85d4c79defaf"
   semantic_anchor = "6d80880ae5626630692bca7298a6c5ae303ffa3b0ce58e804957e9ed11a60b9d"
   reviewed_by_a_person = false
 
 [[task]]
-id = "ffe9da10-cc46-4fa0-a585-b327e4c1cde5"
-file = "ffe9da10-cc46-4fa0-a585-b327e4c1cde5.lean"
+id = "O179524_conjecture4"
+file = "O179524_conjecture4.lean"
+module = "FtpEvalBench.O179524_conjecture4"
+shape = "proof"
+track = "open"
+declaration = "conjecture4"
+statement_id = "1674dd44-3eba-4a5e-b5c2-3a06a20488fe"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7a89f14e5876bc7f"
+  conversion_hash = "05e2c04ef32c031b527060bb7677cb5d855f8cab60cf998585180548335d2264"
+  semantic_anchor = "abde766806e03c990afa7f361705b1b18b9b46eb77c43b6e39a9d63994bd3c5e"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O179524_conjecture5"
+file = "O179524_conjecture5.lean"
 module = "FtpEvalBench.O179524_conjecture5"
 shape = "proof"
 track = "open"
@@ -115,7 +115,7 @@ statement_id = "bf76cac7-63ac-4a7e-9726-6b4f8af0b8ff"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "8e15e001db9be09a"
+  target_hash = "6c9ac4695e5f880f"
   conversion_hash = "6eb8d94ca422f79ecfc23ee4496f6df75c13838f3a6e15b09d6d4d5d039678ef"
   semantic_anchor = "1d84ce71ac3954de1325612aabb032a430843cd62ddd70c9397f414eb750e8f0"
   reviewed_by_a_person = false

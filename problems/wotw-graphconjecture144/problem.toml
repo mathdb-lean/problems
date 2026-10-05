@@ -10,7 +10,7 @@ collection = "wotw"
 tasks = 1
 reviewed_by_a_person = false
 prose = "WOWII [Conjecture 144](http://cms.dt.uh.edu/faculty/delavinae/research/wowII/) For a simple connected graph $G$, $\\mathrm{tree}(G) \\ge \\mathrm{girth}(G) - 1 + \\mathrm{ecc}(\\mathrm{Centers})$ where $\\mathrm{tree}(G)$ is the largest induced tree size, $\\mathrm{girth}(G)$ is the length of the shortest cycle ($0$ if acyclic), $\\mathrm{Centers} = G.\\mathrm{center}$ is the set of vertices with minimum eccentricity (the center of $G$), and $\\mathrm{ecc}(\\mathrm{Centers})$ is the eccentricity of the center set — the maximum distance from any non-center vertex to the nearest center vertex. **Proof sketch.** Let $g = \\mathrm{girth}(G)$ and $e = \\mathrm{ecc}(G, \\mathrm{center}(G))$. The acyclic and $e = 0$ cases are immediate. If $g \\le e + 2$, the formalized Bacsó--Tuza induced-path argument, with an elementary $e = 1$ case, produces an induced tree on at least $2e + 1$ vertices. Since $g - 1 + e \\le 2e + 1$, this proves the result. Suppose instead that $e + 3 \\le g$, and fix a shortest cycle $C$. Removing one vertex of $C$ leaves an induced tree on $g - 1$ vertices. Analyze the connected components outside $C$. If one has at least $e$ vertices, it supplies an attached rooted induced tree of order $e$. Otherwise, let $D$ be the sum of the components' attachment depths. If $D \\ge e$, select pairwise edge-separated rooted branches of total order $e$ and attach them to $C$, deleting a suitable cycle vertex. If $D < e$, shortest-cycle contact restrictions bound corresponding exclusion arcs. Their complement consists of central cycle vertices and $D$-dominates the graph, forcing $e \\le D$, a contradiction. Finite graph search was used only during discovery to test candidate structural lemmas and reject false proof templates; no finite-search result is used in the universal proof."
-notes = "Written on the Wall II, problem GraphConjecture144"
+notes = "Written on the Wall II, problem GraphConjecture144 -- http://cms.dt.uh.edu/faculty/delavinae/research/wowII/"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/WrittenOnTheWallII/GraphConjecture144.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wotw-reviewed"
-released_at = "2026-10-05T08:40:42+00:00"
+released_at = "2026-10-05T10:54:32+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "790281a8-a42a-4465-b64e-20e5c67d22f9"
-file = "790281a8-a42a-4465-b64e-20e5c67d22f9.lean"
+id = "WGraphConjecture144_conjecture144"
+file = "WGraphConjecture144_conjecture144.lean"
 module = "FtpEvalBench.WGraphConjecture144_conjecture144"
 shape = "proof"
 track = "solved"
@@ -39,7 +39,7 @@ statement_id = "3f9cb465-01f3-4f25-a5f6-5a2d943f5825"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "bfdb43f89c90bc65"
+  target_hash = "6a5cf7b146851b67"
   conversion_hash = "a4ea41518f30f1abe5050e7fed8878682a0190c6f6963461e0c1aa43bc79415a"
   semantic_anchor = "8685f93dd4e6ff3d8774ca24b5ed499e4c0ddbe76060b9cbf9313265548b8eaa"
   reviewed_by_a_person = false

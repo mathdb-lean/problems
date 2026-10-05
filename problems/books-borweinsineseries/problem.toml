@@ -21,13 +21,13 @@ file = "FormalConjectures/Books/BorweinSineSeries.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "books"
-released_at = "2026-10-05T09:11:20+00:00"
+released_at = "2026-10-05T10:54:39+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "b75aacd0-ab6f-4799-a358-dc30c0498e91"
-file = "b75aacd0-ab6f-4799-a358-dc30c0498e91.lean"
+id = "BBorweinSineSeries_borwein_sine_series"
+file = "BBorweinSineSeries_borwein_sine_series.lean"
 module = "FtpEvalBench.BBorweinSineSeries_borwein_sine_series"
 shape = "decide"
 track = "solved"
@@ -40,7 +40,7 @@ gold_arguments = ["True"]
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "4507002656f8fd4c"
+  target_hash = "e75a5ca562f65878"
   conversion_hash = "389bbe2a76c3a196d696ac932127c0076ada7351646d29b46e32eff20555b516"
   semantic_anchor = "9f8b6397fea683f924523e86c9301b844587e4750687af33d14cec6b1fd61ce8"
   reviewed_by_a_person = false

@@ -10,7 +10,7 @@ collection = "wotw"
 tasks = 1
 reviewed_by_a_person = false
 prose = "WOWII [Conjecture 4](http://cms.dt.uh.edu/faculty/delavinae/research/wowII/) If `G` is a connected graph then the maximum number of leaves over all spanning trees satisfies `Ls(G) ≥ NG(G) - 1` where `NG(G)` is the minimal neighbourhood size of a non-edge of `G`."
-notes = "Written on the Wall II, problem GraphConjecture4"
+notes = "Written on the Wall II, problem GraphConjecture4 -- http://cms.dt.uh.edu/faculty/delavinae/research/wowII/"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/WrittenOnTheWallII/GraphConjecture4.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wotw-reviewed"
-released_at = "2026-10-05T08:40:42+00:00"
+released_at = "2026-10-05T10:54:32+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "87ebab39-ded9-4b40-98a3-7fc782a0d5cc"
-file = "87ebab39-ded9-4b40-98a3-7fc782a0d5cc.lean"
+id = "WGraphConjecture4_conjecture4"
+file = "WGraphConjecture4_conjecture4.lean"
 module = "FtpEvalBench.WGraphConjecture4_conjecture4"
 shape = "proof"
 track = "solved"
@@ -39,7 +39,7 @@ statement_id = "85769e60-fb5e-4989-a6c5-53ac5bdf44c3"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "af47f38348c00e36"
+  target_hash = "614610ab232b9737"
   conversion_hash = "5873bb4a7b58c52bb20e14488ba827bbc250c861e66ce4e093a6a05acac0c23c"
   semantic_anchor = "a5d7521923e0fa6fab8324b1af0fd9d9cc4bb2f223989972e2f349c39384c52d"
   reviewed_by_a_person = false

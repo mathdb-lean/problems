@@ -9,7 +9,7 @@ problem_id = "oeis:182126"
 collection = "oeis"
 tasks = 3
 reviewed_by_a_person = false
-prose = "Let $b = \\mathrm{prime}(n+2) - \\mathrm{prime}(n)$ and $c = \\mathrm{prime}(n+2) - \\mathrm{prime}(n+1)$. Conjecture: for $n > 61$, $a(n) = b \\cdot c$. - _Charles R Greathouse IV_, May 11 2012"
+prose = "Conjecture: For $x > 10^9$, the most frequent value in $a(n)$, $n=1\\dots x$, has form $120k$."
 notes = "OEIS A182126 -- https://oeis.org/A182126"
 
 [source]
@@ -21,51 +21,13 @@ file = "FormalConjectures/OEIS/182126.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "3d00e85e-2207-4cf4-a9cb-c969f11c5c58"
-file = "3d00e85e-2207-4cf4-a9cb-c969f11c5c58.lean"
-module = "FtpEvalBench.O182126_conjecture2"
-shape = "proof"
-track = "open"
-declaration = "conjecture2"
-statement_id = "d1693e58-6b00-4f27-8a07-27709f9b8ce8"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "ee480a87af9f0411"
-  conversion_hash = "307cf05839b911d3077c1fa888f564dc0f651b27dc7bcda03ea8a4d327263434"
-  semantic_anchor = "a64f96b2381eb7de50c865fc3da91c912d254f9abb2ce15dd4ab1650b267d646"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "77672cd7-42a8-4124-9700-b4aa8d8ab3e2"
-file = "77672cd7-42a8-4124-9700-b4aa8d8ab3e2.lean"
-module = "FtpEvalBench.O182126_conjecture3"
-shape = "proof"
-track = "open"
-declaration = "conjecture3"
-statement_id = "8f24f29e-20e2-453c-a01f-b9bceefd18ec"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "484997c4cc0ba05f"
-  conversion_hash = "6483616bfc7b7697931ccdbb427aa1416d150934fd421947e9028a259e5435eb"
-  semantic_anchor = "e52c76c1043483f33f4f0a0dc959f9dbf7429b61ee1c7b045c0e82e12fcf5c80"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "e2050329-11fb-4625-9ba4-4e0633e41e2f"
-file = "e2050329-11fb-4625-9ba4-4e0633e41e2f.lean"
+id = "O182126_conjecture1"
+file = "O182126_conjecture1.lean"
 module = "FtpEvalBench.O182126_conjecture1"
 shape = "proof"
 track = "open"
@@ -77,7 +39,45 @@ statement_id = "32f8968b-b68e-4048-9f68-28161a71f47a"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "fed308fc63e80d52"
+  target_hash = "13660c5995901744"
   conversion_hash = "abf23c0acfafac1ab5537943dfabb5c5d814a03a9801b944c788fc40f4411b4c"
   semantic_anchor = "66a66d8a545eb75ab4cb19fa7902c72af15b8c27553d95db62bd0abe398956a2"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O182126_conjecture2"
+file = "O182126_conjecture2.lean"
+module = "FtpEvalBench.O182126_conjecture2"
+shape = "proof"
+track = "open"
+declaration = "conjecture2"
+statement_id = "d1693e58-6b00-4f27-8a07-27709f9b8ce8"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "1d5efcb99d7fda84"
+  conversion_hash = "307cf05839b911d3077c1fa888f564dc0f651b27dc7bcda03ea8a4d327263434"
+  semantic_anchor = "a64f96b2381eb7de50c865fc3da91c912d254f9abb2ce15dd4ab1650b267d646"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O182126_conjecture3"
+file = "O182126_conjecture3.lean"
+module = "FtpEvalBench.O182126_conjecture3"
+shape = "proof"
+track = "open"
+declaration = "conjecture3"
+statement_id = "8f24f29e-20e2-453c-a01f-b9bceefd18ec"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "879644be744bddd6"
+  conversion_hash = "6483616bfc7b7697931ccdbb427aa1416d150934fd421947e9028a259e5435eb"
+  semantic_anchor = "e52c76c1043483f33f4f0a0dc959f9dbf7429b61ee1c7b045c0e82e12fcf5c80"
   reviewed_by_a_person = false

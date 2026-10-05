@@ -10,7 +10,7 @@ collection = "green"
 tasks = 2
 reviewed_by_a_person = false
 prose = "Does there exist a Lipschitz function $f : \\mathbb{N} \\to \\mathbb{Z}$ whose graph $\\Gamma = \\{(n, f(n)) : n \\in \\mathbb{N}\\} \\subseteq \\mathbb{Z}^2$ is free of 3-term progressions?"
-notes = "Green, open problem 15"
+notes = "Green, open problem 15 -- https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.15"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/GreensOpenProblems/15.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-05T08:40:38+00:00"
+released_at = "2026-10-05T10:54:26+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "b53469bc-a0a5-4314-a7ac-6d01d9d9246c"
-file = "b53469bc-a0a5-4314-a7ac-6d01d9d9246c.lean"
+id = "G15_prove"
+file = "G15_prove.lean"
 module = "FtpEvalBench.G15_prove"
 shape = "prove"
 track = "open"
@@ -40,14 +40,14 @@ statement_id = "fc419209-cdef-4039-8127-3ebb983d15b3"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "63d57f82a111426f"
+  target_hash = "056bb57da251a9c8"
   conversion_hash = "ec2e3030fbb4ad1a0933b5363cc10cba8fd7dcf77572ed660009c3b1026d752f"
   semantic_anchor = "fcf7d796a8ef99faa44614cf96c1470c2bc4672c91bf84ad8f4f3b4b2e272859"
   reviewed_by_a_person = false
 
 [[task]]
-id = "dd70d22f-b2a0-48c4-8ed2-478aa040d070"
-file = "dd70d22f-b2a0-48c4-8ed2-478aa040d070.lean"
+id = "G15_refute"
+file = "G15_refute.lean"
 module = "FtpEvalBench.G15_refute"
 shape = "refute"
 track = "open"
@@ -60,7 +60,7 @@ statement_id = "fc419209-cdef-4039-8127-3ebb983d15b3"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "dc92650d6fdc8f00"
+  target_hash = "4c87b4c1c4941815"
   conversion_hash = "30d14c002c64dbc522d8fe13c9c9275aa526e4bb5b182435011164915fb74d6c"
   semantic_anchor = "2ae7e46d98f3a5ce291e0016f42a46b1004854c3fc89c71877592718cfefd83f"
   reviewed_by_a_person = false

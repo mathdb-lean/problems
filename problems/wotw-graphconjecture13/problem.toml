@@ -10,7 +10,7 @@ collection = "wotw"
 tasks = 1
 reviewed_by_a_person = false
 prose = "WOWII [Conjecture 13](http://cms.dt.uh.edu/faculty/delavinae/research/wowII/) For a simple connected graph `G`, the size `b(G)` of a largest induced bipartite subgraph satisfies `b(G) ≥ diam(G) + max_{v ∈ V} l(v) - 1`, where `diam(G)` is the diameter of `G` and `l(v) = indepNeighborsCard G v` is the independence number of the neighbourhood of `v`."
-notes = "Written on the Wall II, problem GraphConjecture13"
+notes = "Written on the Wall II, problem GraphConjecture13 -- http://cms.dt.uh.edu/faculty/delavinae/research/wowII/"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/WrittenOnTheWallII/GraphConjecture13.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wotw-reviewed"
-released_at = "2026-10-05T08:40:42+00:00"
+released_at = "2026-10-05T10:54:32+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "8f7261ff-4716-4427-bc26-723fe1a08ab2"
-file = "8f7261ff-4716-4427-bc26-723fe1a08ab2.lean"
+id = "WGraphConjecture13_conjecture13"
+file = "WGraphConjecture13_conjecture13.lean"
 module = "FtpEvalBench.WGraphConjecture13_conjecture13"
 shape = "proof"
 track = "solved"
@@ -39,7 +39,7 @@ statement_id = "feba90be-7c2a-4851-9dab-5e4ab21d4b3a"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "865f48a264fb94d7"
+  target_hash = "3bba071864a437b6"
   conversion_hash = "d83554aebdbe906f1326af831d29ba166c9df2a8431eb3f07a93b9a944e3e237"
   semantic_anchor = "5d5ecb6cfa5547a697e2ab7e7a7d3982c78f2a401cdd849c4e49deeb0e706b15"
   reviewed_by_a_person = false

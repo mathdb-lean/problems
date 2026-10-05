@@ -21,13 +21,13 @@ file = "FormalConjectures/Paper/SizeOrderConnectedDomination.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "paper"
-released_at = "2026-10-05T09:11:28+00:00"
+released_at = "2026-10-05T10:54:52+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "0dcb0505-11e0-4b46-9afb-e77f3f20ab1a"
-file = "0dcb0505-11e0-4b46-9afb-e77f3f20ab1a.lean"
+id = "RSizeOrderConnectedDomination_mukwembi_theorem_2_1"
+file = "RSizeOrderConnectedDomination_mukwembi_theorem_2_1.lean"
 module = "FtpEvalBench.RSizeOrderConnectedDomination_mukwembi_theorem_2_1"
 shape = "decide"
 track = "solved"
@@ -40,7 +40,7 @@ gold_arguments = ["False"]
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "13ad9e84c213aab6"
+  target_hash = "4eb7f9b0acaea38d"
   conversion_hash = "c59f17e12841a600cb812b558aa3ee14646354bf2b86d0a6ceae5da4cbe3b2fe"
   semantic_anchor = "0b85211fbd4ed59d07cd4fc0ee78f0afc9f5d8ed0dd65438e43f0276d2335482"
   reviewed_by_a_person = false

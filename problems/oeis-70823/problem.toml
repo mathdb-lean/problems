@@ -21,13 +21,13 @@ file = "FormalConjectures/OEIS/70823.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "cc2d8bd9-99cf-47b6-a0c7-6e91f0fd64ce"
-file = "cc2d8bd9-99cf-47b6-a0c7-6e91f0fd64ce.lean"
+id = "O70823_conjecture"
+file = "O70823_conjecture.lean"
 module = "FtpEvalBench.O70823_conjecture"
 shape = "decide"
 track = "solved"
@@ -40,7 +40,7 @@ gold_arguments = ["False"]
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "5f166674b516c6dc"
+  target_hash = "ff955de9a77315aa"
   conversion_hash = "9a125860e46cf189482fd174095b337b2d2af9411b1b8772fb7cc1a8ef1421b0"
   semantic_anchor = "7f3f44dbd89610b9a43cc68c9b0a801d505fce14dcf96e176062150af0d95e28"
   reviewed_by_a_person = false

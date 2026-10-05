@@ -10,7 +10,7 @@ collection = "kourovka"
 tasks = 2
 reviewed_by_a_person = false
 prose = "Let $G$ be a finite $p$-group and assume that all abelian normal subgroups of $G$ have order at most $p^k$. Is it true that every abelian subgroup of $G$ has order at most $p^{2k}$?"
-notes = "Kourovka Notebook 20_76"
+notes = "Kourovka Notebook 20_76 -- https://arxiv.org/abs/1401.0300v40"
 
 [source]
 name = "formal-conjectures"
@@ -21,33 +21,13 @@ file = "FormalConjectures/Kourovka/20_76.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "kourovka-reviewed"
-released_at = "2026-10-05T08:40:40+00:00"
+released_at = "2026-10-05T10:54:29+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "98117fb9-dfdf-489c-9aef-0308eecccbeb"
-file = "98117fb9-dfdf-489c-9aef-0308eecccbeb.lean"
-module = "FtpEvalBench.K20_76_refute"
-shape = "refute"
-track = "open"
-pair_id = "K20_76"
-declaration = "kourovka_20_76"
-statement_id = "d88f3753-1739-4fc1-89f9-d02d7fda62e8"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "be7a4f31ad9866ef"
-  conversion_hash = "336a6a38c63c2329a130f74e55e5360d65a056d07a764018e863a4547f7d2004"
-  semantic_anchor = "75113accfbed35adc705e351479c01151517a93f9d6edfde3c6a2777797cfb30"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "f67ea96b-224b-42dd-9447-3c7e137ff64f"
-file = "f67ea96b-224b-42dd-9447-3c7e137ff64f.lean"
+id = "K20_76_prove"
+file = "K20_76_prove.lean"
 module = "FtpEvalBench.K20_76_prove"
 shape = "prove"
 track = "open"
@@ -60,7 +40,27 @@ statement_id = "d88f3753-1739-4fc1-89f9-d02d7fda62e8"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "3a5780e6f81cf60c"
+  target_hash = "d6c8fb15485a3f67"
   conversion_hash = "3aa00b315b20aa8609fe253c9154444777a96936afcc5b57aed572a70f725adc"
   semantic_anchor = "e30777765350a0d052c3032d1225500f9aa309e62afb3eed2b071c2a98b6cf9f"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "K20_76_refute"
+file = "K20_76_refute.lean"
+module = "FtpEvalBench.K20_76_refute"
+shape = "refute"
+track = "open"
+pair_id = "K20_76"
+declaration = "kourovka_20_76"
+statement_id = "d88f3753-1739-4fc1-89f9-d02d7fda62e8"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "6d6e159a6dff68d2"
+  conversion_hash = "336a6a38c63c2329a130f74e55e5360d65a056d07a764018e863a4547f7d2004"
+  semantic_anchor = "75113accfbed35adc705e351479c01151517a93f9d6edfde3c6a2777797cfb30"
   reviewed_by_a_person = false

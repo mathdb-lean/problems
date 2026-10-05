@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/KomlosConjecture.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "30b710be-0697-47e2-b9c4-e3a1f94f5451"
-file = "30b710be-0697-47e2-b9c4-e3a1f94f5451.lean"
+id = "NKomlosConjecture_komlos_conjecture"
+file = "NKomlosConjecture_komlos_conjecture.lean"
 module = "FtpEvalBench.NKomlosConjecture_komlos_conjecture"
 shape = "proof"
 track = "solved"
@@ -39,7 +39,7 @@ statement_id = "66c73d94-8f2a-4036-a766-58d34fd3fd5f"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "de7db1b4889913ae"
+  target_hash = "da1852b0d4b4bf08"
   conversion_hash = "08b6b8a677273c768590aeea5e9313da3e4875eab8e5a28da18f97c3c5538437"
   semantic_anchor = "22eb5f6ae9c53dd2fcf66fcc7ce6b75f1ddde905cb795aa2e483ef404e2bf63f"
   reviewed_by_a_person = false

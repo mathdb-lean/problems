@@ -10,7 +10,7 @@ collection = "green"
 tasks = 2
 reviewed_by_a_person = false
 prose = "Suppose that $A \\subset \\mathbb{F}_2^n$ is a set with an additive complement of size $K$. Does $2A$ contain a coset of codimension $O_K(1)$?"
-notes = "Green, open problem 52"
+notes = "Green, open problem 52 -- https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.52"
 
 [source]
 name = "formal-conjectures"
@@ -21,33 +21,13 @@ file = "FormalConjectures/GreensOpenProblems/52.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-05T08:40:38+00:00"
+released_at = "2026-10-05T10:54:26+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "81193d55-2aa2-4fb4-86c4-d3052c390e6b"
-file = "81193d55-2aa2-4fb4-86c4-d3052c390e6b.lean"
-module = "FtpEvalBench.G52_refute"
-shape = "refute"
-track = "open"
-pair_id = "G52"
-declaration = "green_52"
-statement_id = "d3f3f74a-8604-471a-9d7c-d00593add107"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "bc3efb00edb2309a"
-  conversion_hash = "2686c63aec0fee930d03292ab86f1a89536ce60596af5156584b02294dacf86a"
-  semantic_anchor = "0e3575bec09ae0c20b9fa6b11ed5f7b313f9b12a472332d2386d32b4cfd306d8"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "de2adf1b-214a-4505-ae09-7b651ee34bcf"
-file = "de2adf1b-214a-4505-ae09-7b651ee34bcf.lean"
+id = "G52_prove"
+file = "G52_prove.lean"
 module = "FtpEvalBench.G52_prove"
 shape = "prove"
 track = "open"
@@ -60,7 +40,27 @@ statement_id = "d3f3f74a-8604-471a-9d7c-d00593add107"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "204c182c472e27b8"
+  target_hash = "c55684f32fb0da37"
   conversion_hash = "1bddebeaa0a518d043e10754d90529fb3627e277e8bb0ddd2dda9bda6bcbffc6"
   semantic_anchor = "33e7ddba06997a1cf98dfb0bf378f36445050d4ea277634abb091ddb1036b69b"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "G52_refute"
+file = "G52_refute.lean"
+module = "FtpEvalBench.G52_refute"
+shape = "refute"
+track = "open"
+pair_id = "G52"
+declaration = "green_52"
+statement_id = "d3f3f74a-8604-471a-9d7c-d00593add107"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "6d6b7c2d921b486e"
+  conversion_hash = "2686c63aec0fee930d03292ab86f1a89536ce60596af5156584b02294dacf86a"
+  semantic_anchor = "0e3575bec09ae0c20b9fa6b11ed5f7b313f9b12a472332d2386d32b4cfd306d8"
   reviewed_by_a_person = false

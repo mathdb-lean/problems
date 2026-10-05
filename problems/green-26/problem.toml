@@ -10,7 +10,7 @@ collection = "green"
 tasks = 1
 reviewed_by_a_person = false
 prose = "Let $A_1, \\dots, A_{100}$ be \"cubes\" in $\\mathbb{F}^n_3$. Is it true that $A_1 + \\dots + A_{100} = \\mathbb{F}^n_3$?"
-notes = "Green, open problem 26"
+notes = "Green, open problem 26 -- https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.26"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/GreensOpenProblems/26.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-05T08:40:38+00:00"
+released_at = "2026-10-05T10:54:26+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "e4c610d8-2ce3-433e-9c64-efe0465f179d"
-file = "e4c610d8-2ce3-433e-9c64-efe0465f179d.lean"
+id = "G26"
+file = "G26.lean"
 module = "FtpEvalBench.G26"
 shape = "proof"
 track = "solved"
@@ -39,7 +39,7 @@ statement_id = "c3844c0c-8ad4-44a2-8a93-053b7dafeb5d"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "1c9f4f7b96a25adf"
+  target_hash = "a032d8943e92da09"
   conversion_hash = "3644d85374aab38cd781df1dce4303aca1fa1f1bfea0b9fe678f656dab18aeab"
   semantic_anchor = "61ad34ef2ab48d687dbdc4aa08f43d35d3ef4476726e84842622d20fdcc7b7cc"
   reviewed_by_a_person = false

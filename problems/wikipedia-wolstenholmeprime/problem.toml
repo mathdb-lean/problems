@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/WolstenholmePrime.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "6b86073c-3f93-4bc4-87cb-4fbbe7643126"
-file = "6b86073c-3f93-4bc4-87cb-4fbbe7643126.lean"
+id = "NWolstenholmePrime_wolstenholme_prime_infinite"
+file = "NWolstenholmePrime_wolstenholme_prime_infinite.lean"
 module = "FtpEvalBench.NWolstenholmePrime_wolstenholme_prime_infinite"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "3aad754f-3ef7-42c9-99ab-c060710b8b98"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "468f8ec916d5b9f3"
+  target_hash = "16544a822ed30789"
   conversion_hash = "3362381c6e76c9164cb4b49f2a36e03f31dd554670d7b9d238e601b9e135b050"
   semantic_anchor = "c1c330c93a4bf21aca7d470f95c55fc43bd41c2232a2a9ac3684e8f088252bbe"
   reviewed_by_a_person = false

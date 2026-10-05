@@ -21,53 +21,13 @@ file = "FormalConjectures/OEIS/100475.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "2ac90841-5139-4ec6-91ea-a469210475c0"
-file = "2ac90841-5139-4ec6-91ea-a469210475c0.lean"
-module = "FtpEvalBench.O100475_conjecture_refute"
-shape = "refute"
-track = "open"
-pair_id = "O100475_conjecture"
-declaration = "conjecture"
-statement_id = "4ec998f1-e9f2-4ce3-af40-75db4f4de450"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "e528351467e8840b"
-  conversion_hash = "530fd804e09cfd80450f7f0a91bbed963650c93cd269024b437648e4a2684f09"
-  semantic_anchor = "180fe89071eca06cf88edf66800610f5125b5af13eeef25a79fc20698ebef911"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "b148e99b-b5c9-4ef9-bfd9-8d69f2c4f0c1"
-file = "b148e99b-b5c9-4ef9-bfd9-8d69f2c4f0c1.lean"
-module = "FtpEvalBench.O100475_conjecture_with_zero"
-shape = "decide"
-track = "solved"
-declaration = "conjecture_with_zero"
-statement_id = "c7c504b8-1cc2-410a-88dd-4296baae50bb"
-gold_arguments = ["True"]
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "cf59b28858450575"
-  conversion_hash = "760e317e53cbddf0c810c90b649510401dd3f7f0e736c64348451dfce459c79d"
-  semantic_anchor = "795425297e1c9c79ece5dd744053f5df171a0eb1fc7c0245a05e1f773f5773c5"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "b41adc99-76f2-4b17-ba7c-29108dec7682"
-file = "b41adc99-76f2-4b17-ba7c-29108dec7682.lean"
+id = "O100475_conjecture_prove"
+file = "O100475_conjecture_prove.lean"
 module = "FtpEvalBench.O100475_conjecture_prove"
 shape = "prove"
 track = "open"
@@ -80,7 +40,47 @@ statement_id = "4ec998f1-e9f2-4ce3-af40-75db4f4de450"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "794bebad36d7e2f6"
+  target_hash = "19e0245b58ffdc2d"
   conversion_hash = "6cbe082f16d9de0b9e3cdf105cc8703ac71a69876a0ea2ba0d680079ebdf5e53"
   semantic_anchor = "b463fd9d2e91abd920b5612e4d729c5cf1d41fc39a66468c135976ccb60ad580"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O100475_conjecture_refute"
+file = "O100475_conjecture_refute.lean"
+module = "FtpEvalBench.O100475_conjecture_refute"
+shape = "refute"
+track = "open"
+pair_id = "O100475_conjecture"
+declaration = "conjecture"
+statement_id = "4ec998f1-e9f2-4ce3-af40-75db4f4de450"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8adb7167ff6a430d"
+  conversion_hash = "530fd804e09cfd80450f7f0a91bbed963650c93cd269024b437648e4a2684f09"
+  semantic_anchor = "180fe89071eca06cf88edf66800610f5125b5af13eeef25a79fc20698ebef911"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O100475_conjecture_with_zero"
+file = "O100475_conjecture_with_zero.lean"
+module = "FtpEvalBench.O100475_conjecture_with_zero"
+shape = "decide"
+track = "solved"
+declaration = "conjecture_with_zero"
+statement_id = "c7c504b8-1cc2-410a-88dd-4296baae50bb"
+gold_arguments = ["True"]
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "9c8695780a8eca54"
+  conversion_hash = "760e317e53cbddf0c810c90b649510401dd3f7f0e736c64348451dfce459c79d"
+  semantic_anchor = "795425297e1c9c79ece5dd744053f5df171a0eb1fc7c0245a05e1f773f5773c5"
   reviewed_by_a_person = false

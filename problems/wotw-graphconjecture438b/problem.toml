@@ -10,7 +10,7 @@ collection = "wotw"
 tasks = 1
 reviewed_by_a_person = false
 prose = "WOWII 438b states that every connected graph of order greater than three satisfies `alpha₂(G) ≤ alpha(G) + alpha(G[V \\ H₂]) + |E(G[H₂])|`."
-notes = "Written on the Wall II, problem GraphConjecture438b"
+notes = "Written on the Wall II, problem GraphConjecture438b -- http://cms.dt.uh.edu/faculty/delavinae/research/wowII/"
 
 [source]
 name = "formal-conjectures"
@@ -21,13 +21,13 @@ file = "FormalConjectures/WrittenOnTheWallII/GraphConjecture438b.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wotw-reviewed"
-released_at = "2026-10-05T08:40:42+00:00"
+released_at = "2026-10-05T10:54:32+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "6e996066-306a-4372-88e1-99153bc0de87"
-file = "6e996066-306a-4372-88e1-99153bc0de87.lean"
+id = "WGraphConjecture438b_conjecture438b"
+file = "WGraphConjecture438b_conjecture438b.lean"
 module = "FtpEvalBench.WGraphConjecture438b_conjecture438b"
 shape = "decide"
 track = "solved"
@@ -40,7 +40,7 @@ gold_arguments = ["True"]
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "e496a32d07829be6"
+  target_hash = "b50e172119a25a54"
   conversion_hash = "f28f176c5ef953d56581d4220c492c644d58f810bcff53a5dc2cb2b8cc0a9690"
   semantic_anchor = "264de501bcc974cf881b8c01c079009ec299fb24524d9740f9efb1d5a5f6c209"
   reviewed_by_a_person = false

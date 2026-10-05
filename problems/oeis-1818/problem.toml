@@ -9,7 +9,7 @@ problem_id = "oeis:1818"
 collection = "oeis"
 tasks = 2
 reviewed_by_a_person = false
-prose = "Conjecture 2: Let $p$ be an odd prime. Then the permanent of the $(p-1) \\times (p-1)$ matrix $[f(j,k)]_{j,k=1..p-1}$ is congruent to $a((p-1)/2) = ((p-2)!!)^2 \\pmod{p^2}$, where $f(j,k)$ is $(j+k)/(j-k)$ if $j \\neq k$, and $f(j,k) = 1$ otherwise. - Zhi-Wei Sun, Dec 22 2021"
+prose = "Conjecture 1: For any primitive $2n$-th root $\\zeta$ of unity, the permanent of the $2n \\times 2n$ matrix $[m(j,k)]_{j,k=1..2n}$ coincides with $a(n) = ((2n-1)!!)^2$, where $m(j,k)$ is $(1+\\zeta^{j-k})/(1-\\zeta^{j-k})$ if $j \\neq k$, and $1$ otherwise. - Zhi-Wei Sun, Dec 21 2021"
 notes = "OEIS A1818 -- https://oeis.org/A1818"
 
 [source]
@@ -21,32 +21,13 @@ file = "FormalConjectures/OEIS/1818.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "d60dbc40-6106-430b-b4e4-c51c23599ef9"
-file = "d60dbc40-6106-430b-b4e4-c51c23599ef9.lean"
-module = "FtpEvalBench.O1818_conjecture2"
-shape = "proof"
-track = "solved"
-declaration = "conjecture2"
-statement_id = "49a39f0b-ac5d-41a3-bc89-5ed801c2fe1c"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "bb22fadcf3bc2211"
-  conversion_hash = "78f438e5e8956f3d65732f9bbb6bb6efefd04ca8f6ab33dd5563d81bf90ab4ac"
-  semantic_anchor = "a6245581b3803287fed8d84ac64acaf45df431645619cb9b2366963e5a967f19"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "ede1f51d-cb33-42be-a9c6-21db74c11b04"
-file = "ede1f51d-cb33-42be-a9c6-21db74c11b04.lean"
+id = "O1818_conjecture1"
+file = "O1818_conjecture1.lean"
 module = "FtpEvalBench.O1818_conjecture1"
 shape = "proof"
 track = "solved"
@@ -58,7 +39,26 @@ statement_id = "f855d019-e3b4-4baf-8585-22b959f47d50"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "8ae844a67e2adc0b"
+  target_hash = "eb80da22d7b9d8d5"
   conversion_hash = "cf399f1a0b92604b705fa738bfd96a62011076ca04542c48538b2a9ac511a028"
   semantic_anchor = "3a53f29d677881278cc7647aeb529b736fb629b9f4055b3ecfa2e5485496442b"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O1818_conjecture2"
+file = "O1818_conjecture2.lean"
+module = "FtpEvalBench.O1818_conjecture2"
+shape = "proof"
+track = "solved"
+declaration = "conjecture2"
+statement_id = "49a39f0b-ac5d-41a3-bc89-5ed801c2fe1c"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d11c14c72a9f1742"
+  conversion_hash = "78f438e5e8956f3d65732f9bbb6bb6efefd04ca8f6ab33dd5563d81bf90ab4ac"
+  semantic_anchor = "a6245581b3803287fed8d84ac64acaf45df431645619cb9b2366963e5a967f19"
   reviewed_by_a_person = false

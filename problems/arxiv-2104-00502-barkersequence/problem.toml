@@ -21,13 +21,13 @@ file = "FormalConjectures/Arxiv/2104.00502/BarkerSequence.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "arxiv"
-released_at = "2026-10-05T09:11:18+00:00"
+released_at = "2026-10-05T10:54:36+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "6057a87a-770f-4fc2-933c-f2de8c9bb712"
-file = "6057a87a-770f-4fc2-933c-f2de8c9bb712.lean"
+id = "X2104_00502_BarkerSequence_barker_conjecture"
+file = "X2104_00502_BarkerSequence_barker_conjecture.lean"
 module = "FtpEvalBench.X2104_00502_BarkerSequence_barker_conjecture"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "3c835f51-87cc-412a-b57a-7734d67a7566"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "a82b4f00f84aacc3"
+  target_hash = "23c303ed5e6ea7eb"
   conversion_hash = "0fd811413208cb45933627048240eaec99790c62ccdda21f84d611190a2ff93e"
   semantic_anchor = "0979f55ebdc2c5551976b8e1cf53146854479c151edfa4436b9dc7459fc19848"
   reviewed_by_a_person = false

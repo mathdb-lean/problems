@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/RationalDistanceProblem.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "a87f465c-6bd9-42f4-8545-237bbc6751ba"
-file = "a87f465c-6bd9-42f4-8545-237bbc6751ba.lean"
+id = "NRationalDistanceProblem_rational_distance_problem_prove"
+file = "NRationalDistanceProblem_rational_distance_problem_prove.lean"
 module = "FtpEvalBench.NRationalDistanceProblem_rational_distance_problem_prove"
 shape = "prove"
 track = "open"
@@ -40,14 +40,14 @@ statement_id = "ac9d9b21-b602-455b-a5d5-a404bbed37f0"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "757c22be7456bf62"
+  target_hash = "42509a517de90f12"
   conversion_hash = "2e9a347a86f5a2c4654201e9a4f76518e8fce51a386d6f3f9ec392821965fd8a"
   semantic_anchor = "2d26d743010ac4ef8418d94a535b518c04f8a847e01d6c8e8c97bfb5dbbd1d00"
   reviewed_by_a_person = false
 
 [[task]]
-id = "baa040e4-54ad-4d56-869e-46cb4c5ffa69"
-file = "baa040e4-54ad-4d56-869e-46cb4c5ffa69.lean"
+id = "NRationalDistanceProblem_rational_distance_problem_refute"
+file = "NRationalDistanceProblem_rational_distance_problem_refute.lean"
 module = "FtpEvalBench.NRationalDistanceProblem_rational_distance_problem_refute"
 shape = "refute"
 track = "open"
@@ -60,7 +60,7 @@ statement_id = "ac9d9b21-b602-455b-a5d5-a404bbed37f0"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "6dc0ff8a50b582e9"
+  target_hash = "8adfb71e64833be0"
   conversion_hash = "f081533c43659bb9e31ffaa55492673e7330fd8a28013a38d1f55e3b3d382bb5"
   semantic_anchor = "0c21f4614a85a46fd14f7eda08de74e3e73d04bbb57bbd896c701aee46340bf4"
   reviewed_by_a_person = false

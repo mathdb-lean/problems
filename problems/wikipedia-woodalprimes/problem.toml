@@ -21,13 +21,13 @@ file = "FormalConjectures/Wikipedia/WoodalPrimes.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-05T09:11:30+00:00"
+released_at = "2026-10-05T10:54:55+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "685cfcec-4e4d-45a8-8003-f6a671a4870a"
-file = "685cfcec-4e4d-45a8-8003-f6a671a4870a.lean"
+id = "NWoodalPrimes_infinitely_many_woodall_primes"
+file = "NWoodalPrimes_infinitely_many_woodall_primes.lean"
 module = "FtpEvalBench.NWoodalPrimes_infinitely_many_woodall_primes"
 shape = "proof"
 track = "open"
@@ -39,7 +39,7 @@ statement_id = "5fa25e8a-7ed8-4621-b0e4-a55c2da2d4f4"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "0d079e992eb83f42"
+  target_hash = "c327226e991653ce"
   conversion_hash = "ee70c53a8878cb88d7eeb66fb3cc72c70c3a75a89c71f5fc28e6bf01df8c2ead"
   semantic_anchor = "ce2ee96a3f87c51690475b88ca3bbc155e8b1259fc0a248094fe70880377e470"
   reviewed_by_a_person = false

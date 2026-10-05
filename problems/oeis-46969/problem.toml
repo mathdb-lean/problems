@@ -9,7 +9,7 @@ problem_id = "oeis:46969"
 collection = "oeis"
 tasks = 2
 reviewed_by_a_person = false
-prose = "Conjecture II: if $\\frac{a(n)}{12}$ is prime, then $\\frac{a(n-1)}{12} - (n-1)$, $\\frac{a(n)}{12} - n$ and $\\frac{a(n+2)}{12} - (n+2)$ are multiples of 6. - Lorenzo Sauras Altuzarra, Oct 13 2020 This is false for $n = 236791$."
+prose = "Conjecture I: if $n > 2$, then $\\frac{a(\\text{A005382}(n))}{12}$ is prime, where A005382 is the sequence of primes $p$ such that $2p-1$ is also prime. Since $\\text{A005382}(1) = 2$, $\\text{A005382}(2) = 3$ and $\\text{A005382}(3) = 7$, this says that $\\frac{a(p)}{12}$ is prime for every prime $p > 3$ such that $2p-1$ is also prime. - Lorenzo Sauras Altuzarra, Oct 13 2020"
 notes = "OEIS A46969 -- https://oeis.org/A46969"
 
 [source]
@@ -21,32 +21,13 @@ file = "FormalConjectures/OEIS/46969.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-05T08:40:36+00:00"
+released_at = "2026-10-05T10:54:22+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "0c89d0c5-0593-4729-80d0-85b408a955d8"
-file = "0c89d0c5-0593-4729-80d0-85b408a955d8.lean"
-module = "FtpEvalBench.O46969_conjecture2"
-shape = "proof"
-track = "solved"
-declaration = "conjecture2"
-statement_id = "c5b6f8eb-582f-4bc4-a4b4-c3ec5b247bee"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "fc72996d79701b60"
-  conversion_hash = "f71aabb38de854fe70a8ac61f600550930ae9757ed9b2a6746b0f2d56d7f2494"
-  semantic_anchor = "a1fae95b627695c4a6e222cde75a7f4f4d03791e1e0b47f6f60f676442dc5488"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "ba09f7a4-47ff-430d-9f22-365f4216bd19"
-file = "ba09f7a4-47ff-430d-9f22-365f4216bd19.lean"
+id = "O46969_conjecture1"
+file = "O46969_conjecture1.lean"
 module = "FtpEvalBench.O46969_conjecture1"
 shape = "proof"
 track = "open"
@@ -58,7 +39,26 @@ statement_id = "c2f139f1-0f6d-4165-960d-1367a47171ef"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "c757eeb158c39261"
+  target_hash = "4ad117111e9017db"
   conversion_hash = "3a57d90ee8168b06f4afaa2015d2c1b561988968cd79844143630b80075905b0"
   semantic_anchor = "5726a579b7f32840a58408558c16c40b94f0b4740fc14f45240754eb5c652524"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "O46969_conjecture2"
+file = "O46969_conjecture2.lean"
+module = "FtpEvalBench.O46969_conjecture2"
+shape = "proof"
+track = "solved"
+declaration = "conjecture2"
+statement_id = "c5b6f8eb-582f-4bc4-a4b4-c3ec5b247bee"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "eab66eb908847f21"
+  conversion_hash = "f71aabb38de854fe70a8ac61f600550930ae9757ed9b2a6746b0f2d56d7f2494"
+  semantic_anchor = "a1fae95b627695c4a6e222cde75a7f4f4d03791e1e0b47f6f60f676442dc5488"
   reviewed_by_a_person = false

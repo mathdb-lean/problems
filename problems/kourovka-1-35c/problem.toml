@@ -10,7 +10,7 @@ collection = "kourovka"
 tasks = 2
 reviewed_by_a_person = false
 prose = "Do there exist simple pro-orderable groups?"
-notes = "Kourovka Notebook 1_35c"
+notes = "Kourovka Notebook 1_35c -- https://arxiv.org/abs/1401.0300v46"
 
 [source]
 name = "formal-conjectures"
@@ -21,33 +21,13 @@ file = "FormalConjectures/Kourovka/1_35c.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "kourovka-reviewed"
-released_at = "2026-10-05T08:40:40+00:00"
+released_at = "2026-10-05T10:54:29+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "9f1844b3-15bf-483e-b234-76e8dc417409"
-file = "9f1844b3-15bf-483e-b234-76e8dc417409.lean"
-module = "FtpEvalBench.K1_35c_refute"
-shape = "refute"
-track = "open"
-pair_id = "K1_35c"
-declaration = "kourovka_1_35c"
-statement_id = "ad93d7b7-e999-4ad2-b3df-41f28c36efb7"
-
-  [task.environment]
-  lean = "leanprover/lean4:v4.33.1"
-  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
-
-  [task.evidence]
-  target_hash = "3c059ec8b50c1c3e"
-  conversion_hash = "d90000cf28b9e67c34b3afb16a1175c3977aa74ff7970bf36db9ce6cdb351602"
-  semantic_anchor = "b880b41b0871b137ecd2843b17e27b8febbcd209d2804eb25a11f003ae5eb993"
-  reviewed_by_a_person = false
-
-[[task]]
-id = "a5e1720f-2e33-4d34-a3a2-320ad646bc72"
-file = "a5e1720f-2e33-4d34-a3a2-320ad646bc72.lean"
+id = "K1_35c_prove"
+file = "K1_35c_prove.lean"
 module = "FtpEvalBench.K1_35c_prove"
 shape = "prove"
 track = "open"
@@ -60,7 +40,27 @@ statement_id = "ad93d7b7-e999-4ad2-b3df-41f28c36efb7"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "296c375716339945"
+  target_hash = "e5a3870b7b280ba1"
   conversion_hash = "588cf275ca1aa252924c1f9c4d00ea4456a6c8c5aac096742d81fd7505eed18f"
   semantic_anchor = "d5d58ba565ca23cd99b1d85592db31a5a9c0ea7a6d0a70202c99c06998f48970"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "K1_35c_refute"
+file = "K1_35c_refute.lean"
+module = "FtpEvalBench.K1_35c_refute"
+shape = "refute"
+track = "open"
+pair_id = "K1_35c"
+declaration = "kourovka_1_35c"
+statement_id = "ad93d7b7-e999-4ad2-b3df-41f28c36efb7"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "cd11bdd345785eb1"
+  conversion_hash = "d90000cf28b9e67c34b3afb16a1175c3977aa74ff7970bf36db9ce6cdb351602"
+  semantic_anchor = "b880b41b0871b137ecd2843b17e27b8febbcd209d2804eb25a11f003ae5eb993"
   reviewed_by_a_person = false

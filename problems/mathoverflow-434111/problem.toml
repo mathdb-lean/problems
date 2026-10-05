@@ -21,13 +21,13 @@ file = "FormalConjectures/Mathoverflow/434111.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "mathoverflow"
-released_at = "2026-10-05T09:11:22+00:00"
+released_at = "2026-10-05T10:54:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathdbMathlib", "MathdbUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
 
 [[task]]
-id = "216acc34-89ad-41b3-9d9c-46c850db636b"
-file = "216acc34-89ad-41b3-9d9c-46c850db636b.lean"
+id = "M434111_restricted_prime_number_theorem_prove"
+file = "M434111_restricted_prime_number_theorem_prove.lean"
 module = "FtpEvalBench.M434111_restricted_prime_number_theorem_prove"
 shape = "prove"
 track = "open"
@@ -40,14 +40,14 @@ statement_id = "5b1ba061-6b9b-4d21-aa68-8ebf04a77d6c"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "abd23f6e3be5d208"
+  target_hash = "4e568a196b4b601f"
   conversion_hash = "2e91cef992b9adf2d141ac13ef6df2b28009404325f082dfb7ff0e94d0e76da7"
   semantic_anchor = "f2797db6a5a0a9ffb32f56a2b4051625c185420ffc19b56d2b97b531ec23f782"
   reviewed_by_a_person = false
 
 [[task]]
-id = "56407f70-0488-4f98-a7ba-783ff7f3457f"
-file = "56407f70-0488-4f98-a7ba-783ff7f3457f.lean"
+id = "M434111_restricted_prime_number_theorem_refute"
+file = "M434111_restricted_prime_number_theorem_refute.lean"
 module = "FtpEvalBench.M434111_restricted_prime_number_theorem_refute"
 shape = "refute"
 track = "open"
@@ -60,7 +60,7 @@ statement_id = "5b1ba061-6b9b-4d21-aa68-8ebf04a77d6c"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "96d6d60a601b0f76"
+  target_hash = "ba7713af01e08a72"
   conversion_hash = "fb26a222d85d961acbce223846c173d38fb9febdea90dc4ac43a7ec4d88a3cec"
   semantic_anchor = "81214cc7c3d51d9ac47a5035cc0d2a7279fd3fdc422bd0482acedaebb6005a8d"
   reviewed_by_a_person = false
