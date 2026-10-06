@@ -36,6 +36,71 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 PROBLEMS = ROOT / "problems"
+MIRROR = ROOT / "FormalConjectures"
+
+
+def check_mirror(faults: list[str]) -> int:
+    """The mirrored upstream corpus against the manifest it ships with.
+
+    `FormalConjectures/` is upstream's whole statement corpus, carried so that
+    every published obligation's `source_locator` resolves inside this
+    repository. It is not the benchmark: nothing in it has a `problem.toml`, a
+    target hash or any recorded evidence.
+
+    What has to be checkable is that it is still *upstream's*, minus the one
+    change `MIRROR.json` declares. So the digest is recomputed over the whole
+    tree -- every relative path and the hash of its bytes -- and every file is
+    checked for the import the mirror is supposed to have rewritten. Without
+    this the directory would be 8 MB that nothing in the repository attests to,
+    and an edit to a statement in it would be invisible.
+    """
+    if not MIRROR.is_dir():
+        return 0
+    manifest = MIRROR / "MIRROR.json"
+    if not manifest.is_file():
+        faults.append("FormalConjectures/ has no MIRROR.json saying what it is")
+        return 0
+    held = json.loads(manifest.read_text(encoding="utf-8"))
+
+    digest_of = hashlib.sha256()
+    counted = 0
+    for path in sorted(MIRROR.rglob("*")):
+        if not path.is_file() or path == manifest:
+            continue
+        rel = path.relative_to(MIRROR).as_posix()
+        body = path.read_bytes()
+        digest_of.update(rel.encode("utf-8") + b"\0")
+        digest_of.update(hashlib.sha256(body).hexdigest().encode("ascii") + b"\0")
+        counted += 1
+    if counted != held.get("files"):
+        faults.append("FormalConjectures/ holds %d files, MIRROR.json says %r"
+                      % (counted, held.get("files")))
+    if digest_of.hexdigest() != held.get("tree_digest"):
+        faults.append("FormalConjectures/ hashes to %s, MIRROR.json says %s"
+                      % (digest_of.hexdigest()[:16], str(held.get("tree_digest"))[:16]))
+
+    # The declared rewrite, checked in both directions: the new name is present
+    # and the old one is gone. A mirror that still imported upstream's library
+    # name would not build here, and one that mentions it anywhere is no longer
+    # the single change MIRROR.json claims.
+    for change in held.get("changes") or []:
+        old, new = change.get("from"), change.get("to")
+        if not old or not new:
+            continue
+        stale = rewritten = 0
+        for path in sorted(MIRROR.rglob("*.lean")):
+            text = path.read_text(encoding="utf-8")
+            if old in text:
+                stale += 1
+            if new in text:
+                rewritten += 1
+        if stale:
+            faults.append("%d mirrored file(s) still name %s, which this project "
+                          "does not carry" % (stale, old))
+        if rewritten != change.get("files"):
+            faults.append("%d mirrored file(s) import %s, MIRROR.json says %r"
+                          % (rewritten, new, change.get("files")))
+    return counted
 
 
 def slug(problem_id: str) -> str:
@@ -240,6 +305,8 @@ def main(argv: list[str]) -> int:
         faults.append("manifest_hash: computed %s, %s says %r"
                       % (manifest_hash, home, expected_hash))
 
+    mirrored = check_mirror(faults)
+
     for fault in faults[:40]:
         print("  %s" % fault)
     if len(faults) > 40:
@@ -247,6 +314,9 @@ def main(argv: list[str]) -> int:
     print()
     print("%d problem(s) checked, %d module(s), %d fault(s)"
           % (len(wanted), len(seen), len(faults)))
+    if mirrored:
+        print("%d mirrored upstream file(s) checked against FormalConjectures/MIRROR.json"
+              % mirrored)
     return 1 if faults else 0
 
 

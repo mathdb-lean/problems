@@ -48,3 +48,25 @@ srcDir = "."
 name = "MathDBUtil"
 srcDir = "."
 globs = ["MathDBUtil.*"]
+
+# Upstream's complete statement corpus, mirrored under `FormalConjectures/` with
+# its imports pointed at `MathDBUtil`. It is a library so that it can be built --
+# a mirror nobody can compile is a directory of text -- and deliberately NOT in
+# `defaultTargets`, because `lake build` is what a grader runs and it has no
+# reason to elaborate 1416 upstream statements first. Build it on purpose:
+#
+#     lake build FormalConjectures
+#
+# `globs` uses `.+`, submodules only, matching upstream: there is no
+# `FormalConjectures.lean` root module and adding one would be our invention.
+# The two `weak.linter` options are upstream's own, for linters that live in the
+# support library; `weak` means they are ignored where the option is absent.
+[[lean_lib]]
+name = "FormalConjectures"
+srcDir = "."
+globs = ["FormalConjectures.+"]
+[lean_lib.leanOptions]
+# Upstream's statements carry `sorry` by design -- it is a statement repository.
+warn.sorry = false
+weak.linter.style.ams_attribute = true
+weak.linter.style.category_attribute = true

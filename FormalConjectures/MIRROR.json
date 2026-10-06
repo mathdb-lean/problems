@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "describes": "upstream's complete statement corpus, mirrored so that every published obligation's `source_locator` resolves inside this repository",
+  "upstream": "https://github.com/google-deepmind/formal-conjectures",
+  "revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+  "changes": [
+    {
+      "kind": "import rename",
+      "from": "FormalConjecturesUtil",
+      "to": "MathDBUtil",
+      "scope": "import lines only",
+      "files": 1416,
+      "import_lines": 1418
+    }
+  ],
+  "files": 1420,
+  "tree_digest": "5b8a92cd94cee6f05308b88f61ab511fd69809ebcbabc27395d729bb740f2010",
+  "not_the_benchmark": "Nothing here carries a `problem.toml`, a target hash or any recorded evidence, and no profile admits it. The benchmark is `problems/`. These files are upstream's statements as upstream wrote them, most of them `sorry`-carrying, and they are built by `lake build FormalConjectures`, which is deliberately not a default target."
+}

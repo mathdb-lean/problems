@@ -450,6 +450,7 @@ problems changes.
 
 ```
 problems/<folder>/            one folder per problem: its modules and problem.toml
+FormalConjectures/            upstream's whole statement corpus, mirrored
 lakefile.toml                 the pinned Lean project: this root IS the project
 lean-toolchain
 lake-manifest.json
@@ -459,8 +460,31 @@ benchmark.json                the release record
 verify.py                     checks this repository against that record
 ```
 
-Four things: the problems, the project to compile them against, the record of what
-was released, and the checker for it.
+Five things: the problems, the corpus they were selected from, the project to
+compile them against, the record of what was released, and the checker for it.
+
+### `FormalConjectures/` is the source, not the benchmark
+
+Every published obligation records where it came from, as
+`- source_locator: FormalConjectures/ErdosProblems/1002.lean#erdos_1002`. That
+path is a path in this repository: upstream's complete corpus is mirrored here at
+the pinned revision, 1,416 modules, so provenance can be followed without a second
+checkout.
+
+One thing is changed, on import lines only: `FormalConjecturesUtil` becomes
+`MathDBUtil`, the same library under the name this project carries it as. The
+string occurs 1,418 times upstream and all 1,418 are imports, so the edit is one
+token. Internal `FormalConjectures.*` imports are untouched, which is why the
+directory keeps upstream's name — the module paths are upstream's, so a
+`source_locator` resolves literally. `FormalConjectures/MIRROR.json` records the
+revision, the file count, that substitution and a digest over the tree, and
+`python verify.py` recomputes the digest.
+
+**Nothing in it is benchmark content.** No `problem.toml`, no target hash, no
+recorded evidence, and no profile admits any of it; most of it carries `sorry`,
+because upstream is a statement repository and says so. It is declared as a
+library so it can be built on purpose — `lake build FormalConjectures` — and is
+deliberately not a default target, so `lake build` stays what a grader runs.
 
 The modules are deliberately **not** a `lean_lib` in `lakefile.toml`. They are the
 benchmark: each is elaborated on its own, against the built project, never as part
