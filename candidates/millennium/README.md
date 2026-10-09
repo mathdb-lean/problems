@@ -39,3 +39,9 @@ for file in candidates/millennium/*.lean; do lake env lean "$file" || exit 1; do
 Compilation and dependency checks establish well-formedness, not mathematical
 equivalence to the informal Millennium problems. Human conversion-fidelity
 review is required before publication, linking, or bounty eligibility.
+
+All eight targets passed elaboration in the pinned Lean 4.33.1 project.
+Their declaration dependency closures use only `propext`, `Classical.choice`,
+and `Quot.sound`, with no `sorryAx`. The target hashes, semantic hashes, and
+environment pins are recorded in `validation.json`. This is dependency-closure
+inspection, not an independent replay of every imported library proof.
