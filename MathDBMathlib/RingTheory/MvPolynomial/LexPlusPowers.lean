@@ -17,6 +17,8 @@ module
 
 public import Mathlib.LinearAlgebra.Dimension.Finite
 public import Mathlib.RingTheory.MvPolynomial.Homogeneous
+-- Ported 2026-10-08: `Finsupp.Lex`'s order instances are no longer imported transitively.
+public import Mathlib.Data.Finsupp.Lex
 
 /-!
 # Hilbert functions, lex ideals and ideals of pure powers

@@ -220,11 +220,14 @@ noncomputable def haltingNumber : ENat :=
 theorem haltingNumber_def (n : ℕ) (hn : ∃ a, M.multiStep (init []) n = some a)
     (ha' : M.multiStep (init []) (n + 1) = none) :
     M.haltingNumber = n := by
-  refine IsGLB.sInf_eq (IsLeast.isGLB ⟨⟨n, by rwa [HaltsAfter], rfl⟩, fun m ⟨k, _, _⟩ ↦ ?_⟩)
-  cases m
-  · exact le_top
-  · by_contra! hc
-    simp_all [multiStep_eq_none_mono ‹_› (show k + 1 ≤ n by aesop)]
+  refine IsGLB.sInf_eq (IsLeast.isGLB ⟨⟨n, by rwa [HaltsAfter], rfl⟩, fun m ⟨k, hk, hkm⟩ ↦ ?_⟩)
+  -- Ported 2026-10-08: `cases m` on Mathlib d13f23b7 keeps `↑k = m` as an equation
+  -- `simp_all` no longer substitutes, so the witness is substituted by name instead.
+  subst hkm
+  by_contra! hc
+  have hkn : k + 1 ≤ n := by exact_mod_cast hc
+  obtain ⟨a, ha⟩ := hn
+  simp [multiStep_eq_none_mono hk hkn] at ha
 
 end Machine
 

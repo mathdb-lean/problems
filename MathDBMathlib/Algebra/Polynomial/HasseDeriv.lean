@@ -20,7 +20,4 @@ public import Mathlib.Algebra.Polynomial.HasseDeriv
 
 @[expose] public section
 
-open scoped Polynomial in -- probably removable in the mathlib file
-theorem Polynomial.hasseDeriv_map {R S : Type*} [Semiring R] [Semiring S]
-    {f : R →+* S} {k : ℕ} {p : R[X]} : (p.map f).hasseDeriv k = (p.hasseDeriv k).map f := by
-  ext; simp [hasseDeriv_coeff]
+-- `Polynomial.hasseDeriv_map` removed when porting to Mathlib d13f23b7 (2026-10-08): now in Mathlib under the same name.

@@ -73,7 +73,7 @@ termination_by l => l.length
 decreasing_by
   simp_wf
   rw [havelHakimiStep_length_cons]
-  omega
+  -- `rw` closes the goal on Mathlib d13f23b7; the `omega` that followed had nothing left. Ported 2026-10-08.
 
 /--
 Computes the residue of a graph `G`, i.e. the number of zeros remaining after iteratively

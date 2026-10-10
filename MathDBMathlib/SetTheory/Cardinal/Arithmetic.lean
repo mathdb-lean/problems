@@ -19,28 +19,6 @@ public import Mathlib.SetTheory.Cardinal.Arithmetic
 
 @[expose] public section
 
-namespace Cardinal
-variable {α : Type*} {s t : Set α}
-
-@[simp] lemma aleph0_le_mk_set : ℵ₀ ≤ #s ↔ s.Infinite := by
-  rw [aleph0_le_mk_iff, Set.infinite_coe_iff]
-
-@[simp]
-lemma mk_sdiff_eq_left' (hs : s.Infinite) (hst : #↑(s ∩ t) < #s) : #↑(s \ t) = #s := by
-  refine (mk_le_mk_of_subset Set.sdiff_subset).eq_of_not_lt
-    fun h ↦ (add_lt_of_lt (by simpa) hst h).not_ge ?_
-  grw [← mk_union_le .., Set.inter_union_sdiff]
-
-@[simp]
-lemma mk_sdiff_eq_left (hs : s.Infinite) (hts : #t < #s) : #↑(s \ t) = #s :=
-  mk_sdiff_eq_left' hs <| hts.trans_le' <| mk_subtype_mono Set.inter_subset_right
-
-@[simp]
-lemma mk_sdiff_eq_left_of_finite' (hs : s.Infinite) (hst : (s ∩ t).Finite) : #↑(s \ t) = #s :=
-  mk_sdiff_eq_left' hs <| (aleph0_le_mk_set.2 hs).trans_lt' <| by simpa
-
-@[simp]
-lemma mk_sdiff_eq_left_of_finite (hs : s.Infinite) (ht : t.Finite) : #↑(s \ t) = #s :=
-  mk_sdiff_eq_left hs <| (aleph0_le_mk_set.2 hs).trans_lt' <| by simpa
-
-end Cardinal
+-- Every lemma this file carried (`aleph0_le_mk_set`, `mk_sdiff_eq_left'`, `mk_sdiff_eq_left`,
+-- `mk_sdiff_eq_left_of_finite'`, `mk_sdiff_eq_left_of_finite`) is in Mathlib as of d13f23b7, so
+-- the module keeps only its import, for the files that import it. Ported 2026-10-08.

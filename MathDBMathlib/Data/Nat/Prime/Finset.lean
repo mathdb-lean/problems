@@ -15,7 +15,8 @@ limitations under the License.
 -/
 module
 
-public import Batteries.Data.Nat.Gcd
+-- `Batteries.Data.Nat.Gcd` no longer exists at the Batteries revision Mathlib d13f23b7 pins; its
+-- content is in core/Mathlib. Ported 2026-10-08.
 public import Mathlib.Algebra.GCDMonoid.Finset
 public import Mathlib.Algebra.GCDMonoid.Nat
 

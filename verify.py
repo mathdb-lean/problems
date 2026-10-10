@@ -116,6 +116,11 @@ def digest(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
 
 
+def label(folder: Path) -> str:
+    """`formal-conjectures/391455`: how a problem folder is named in a fault."""
+    return folder.relative_to(PROBLEMS).as_posix()
+
+
 def main(argv: list[str]) -> int:
     manifest = json.loads((ROOT / "benchmark.json").read_text(encoding="utf-8"))
     released = manifest["problems"]
@@ -124,7 +129,14 @@ def main(argv: list[str]) -> int:
     toolchain = manifest["toolchain"]
 
     faults: list[str] = []
-    folders = sorted(p for p in PROBLEMS.iterdir() if p.is_dir())
+    # `problems/<source>/<folder>/`: one directory per source, one folder per
+    # problem inside it. A problem folder directly under `problems/` is the layout
+    # published before 2026-10-09 and is a fault now, not a second place to look.
+    sources = sorted(p for p in PROBLEMS.iterdir() if p.is_dir())
+    for src in sources:
+        if (src / "problem.toml").is_file() or any(src.glob("*.lean")):
+            faults.append("problems/%s: a problem folder outside any source directory" % src.name)
+    folders = sorted(p for src in sources for p in src.iterdir() if p.is_dir())
     wanted = [PROBLEMS / name for name in argv] if argv else folders
 
     # Every released task must be reachable from exactly one folder, and no folder
@@ -136,7 +148,7 @@ def main(argv: list[str]) -> int:
             task_id = module.stem
             if task_id in seen:
                 faults.append("%s: also in problems/%s" % (task_id, seen[task_id]))
-            seen[task_id] = folder.name
+            seen[task_id] = label(folder)
             if task_id not in released:
                 faults.append("%s: a module the release does not list" % task_id)
     for task_id in sorted(set(released) - set(seen)):
@@ -145,12 +157,12 @@ def main(argv: list[str]) -> int:
     for folder in wanted:
         side = folder / "problem.toml"
         if not side.is_file():
-            faults.append("%s: no problem.toml" % folder.name)
+            faults.append("%s: no problem.toml" % label(folder))
             continue
         try:
             held = tomllib.loads(side.read_text(encoding="utf-8"))
         except tomllib.TOMLDecodeError as error:
-            faults.append("%s: problem.toml does not parse (%s)" % (folder.name, error))
+            faults.append("%s: problem.toml does not parse (%s)" % (label(folder), error))
             continue
 
         # A folder is addressed by MathDB's number when MathDB has one, and by the
@@ -164,19 +176,24 @@ def main(argv: list[str]) -> int:
             expected = slug(held.get("problem_id") or "")
             if folder.name != expected:
                 faults.append("%s: no mathdb_number, so the folder must be %r"
-                              % (folder.name, expected))
+                              % (label(folder), expected))
         elif type(number) is not int or number <= 0 or folder.name != str(number):
             faults.append("%s: folder must match its positive mathdb_number, got %r"
-                          % (folder.name, number))
+                          % (label(folder), number))
+        # ... and it sits under the directory of the source that posed it.
+        source_name = (held.get("source") or {}).get("name") or ""
+        if folder.parent.name != source_name:
+            faults.append("%s: its source is %r, so it belongs under problems/%s/"
+                          % (label(folder), source_name, source_name))
 
         entries = held.get("task") or []
         modules = sorted(p.stem for p in folder.glob("*.lean"))
         if sorted(e.get("id", "") for e in entries) != modules:
             faults.append("%s: toml lists %s, folder holds %s"
-                          % (folder.name, [e.get("id") for e in entries], modules))
+                          % (label(folder), [e.get("id") for e in entries], modules))
         if held.get("tasks") != len(entries):
             faults.append("%s: tasks = %r but %d task entries"
-                          % (folder.name, held.get("tasks"), len(entries)))
+                          % (label(folder), held.get("tasks"), len(entries)))
 
         for entry in entries:
             task_id = entry.get("id", "")
@@ -185,16 +202,16 @@ def main(argv: list[str]) -> int:
                 continue  # already reported above
             if task["question_id"] != held.get("problem_id"):
                 faults.append("%s: %s belongs to %s"
-                              % (folder.name, task_id, task["question_id"]))
+                              % (label(folder), task_id, task["question_id"]))
 
             module = folder / entry.get("file", "%s.lean" % task_id)
             if not module.is_file():
-                faults.append("%s: %s names a file that is not here" % (folder.name, task_id))
+                faults.append("%s: %s names a file that is not here" % (label(folder), task_id))
                 continue
             got = digest(module.read_text(encoding="utf-8"))
             if got != task["target_hash"]:
                 faults.append("%s: %s hashes to %s, release recorded %s"
-                              % (folder.name, task_id, got, task["target_hash"]))
+                              % (label(folder), task_id, got, task["target_hash"]))
 
             evidence = recorded.get(task_id, {})
             for where, key, expected in (
@@ -216,12 +233,12 @@ def main(argv: list[str]) -> int:
                     continue  # an empty value is omitted rather than written as ""
                 if value != expected:
                     faults.append("%s: %s.%s is %r, release says %r"
-                                  % (folder.name, task_id, key, value, expected))
+                                  % (label(folder), task_id, key, value, expected))
 
             read = entry.get("evidence", {}).get("reviewed_by_a_person")
             if read is not (task_id not in under_review):
                 faults.append("%s: %s reviewed_by_a_person is %r, release says %r"
-                              % (folder.name, task_id, read, task_id not in under_review))
+                              % (label(folder), task_id, read, task_id not in under_review))
 
         # A pair is whole or it is not published. Half a pair tells a solver which
         # direction is true, so a folder holding one side of a pair_id whose other
@@ -234,7 +251,7 @@ def main(argv: list[str]) -> int:
             whole = {t for t, v in released.items() if v.get("pair_id") == pair}
             if here != whole:
                 faults.append("%s: pair %s is split -- here %s, released %s"
-                              % (folder.name, pair, sorted(here), sorted(whole)))
+                              % (label(folder), pair, sorted(here), sorted(whole)))
 
     # The MathDB block, if the manifest carries one. It states the same number in
     # two places -- beside each obligation and once per problem -- so the two have

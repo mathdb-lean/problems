@@ -23,6 +23,7 @@ public import Mathlib.Analysis.InnerProductSpace.GramMatrix
 public import Mathlib.LinearAlgebra.Dimension.Free
 public import Mathlib.LinearAlgebra.FreeModule.PID
 public import Mathlib.NumberTheory.Height.Basic
+public import Mathlib.NumberTheory.Height.EllipticCurve
 public import Mathlib.Topology.Order.Basic
 
 @[expose] public noncomputable section
@@ -58,10 +59,9 @@ namespace WeierstrassCurve.Affine.Point
 variable {K : Type*} [DecidableEq K] [Field K] [Height.AdmissibleAbsValues K] {W : Affine K}
   (P Q : W.Point)
 
-/-- The logarithmic height `hₓ` of the `x`-coordinate with value zero at infinity. -/
-def naiveHeight : W.Point → ℝ
-  | .zero => 0
-  | .some x .. => Height.logHeight₁ x
+-- `naiveHeight` is Mathlib's since d13f23b7 (`Mathlib.NumberTheory.Height.EllipticCurve`, as
+-- `logHeight P.xRep`, which agrees with the `logHeight₁` of the `x`-coordinate and is `0` at
+-- infinity). The definition this file carried was removed when porting, 2026-10-08.
 
 /-- The canonical height `lim_n 4⁻ⁿhₓ(2ⁿP)` in terms of the logarithmic height `hₓ`. -/
 def canonicalHeight : ℝ := Filter.atTop.limUnder fun n : ℕ ↦ (2 ^ n • P).naiveHeight / 4 ^ n

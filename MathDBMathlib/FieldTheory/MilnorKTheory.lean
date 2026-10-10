@@ -279,7 +279,9 @@ noncomputable def toDualNumber (φ : Additive Fˣ →+ ZMod ℓ) :
         φ.toIntLinearMap)).toRingHom, by
     intro x y h
     cases h with
-    | steinberg a b _ => simp
+    | steinberg a b _ =>
+        -- Ported 2026-10-08: `simp` alone no longer rewrites `(r • ε) * (s • ε)`.
+        simp [← DualNumber.inr_eq_smul_eps, TrivSqZeroExt.inr_mul_inr]
     | natCast =>
         refine (TrivSqZeroExt.ext ?_ ?_).trans (map_zero _).symm <;>
           simp [TrivSqZeroExt.fst_natCast, TrivSqZeroExt.snd_natCast]⟩
