@@ -539,12 +539,15 @@ instead — `glob("problems/<source>/*/*.lean")` rather than `glob("*.lean")`. T
 is still the obligation's id, which is what submission filenames and result
 directories key on.
 
-To check one proof against one problem — one of these, or a statement of your
-own written in the same format — use the evaluator's check API: `ftp-eval check`
-on the command line, or `ftp-eval serve` and HTTP. Each obligation's
-`<id>/Challenge.lean` is the file to fill in. The
+The evaluator's check API asks two questions of one problem at a time — one of
+these, or a statement of your own written in the same format. Is this proof
+correct (`ftp-eval check-proof`; each obligation's `<id>/Challenge.lean` is the
+file to fill in)? And is this formalization faithful to its prose
+(`ftp-eval check-statement`: an LLM judge against the problem's `prose`, plus
+prover probes for whether the statement elaborates and is not vacuous)? Both run
+on the command line or behind `ftp-eval serve` over HTTP; the
 [check API](https://github.com/mathdb-lean/formal-theorem-proving-eval-api/blob/main/docs/api.md)
-documents both.
+documents them.
 
 ## MathDB handles
 
