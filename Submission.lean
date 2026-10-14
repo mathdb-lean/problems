@@ -4,6 +4,6 @@ namespace Submission
 
 theorem solution : Problem.Target := by
   intro n
-  exact Nat.zero_ne_one
+  exact Nat.add_zero n
 
 end Submission

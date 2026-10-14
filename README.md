@@ -2,4 +2,4 @@
 
 Dev-only demonstration of the elementary identity n + 0 = n. The displayed reward is illustrative; no payment is due. This branch is separate from the problem catalogue.
 
-Incorrect proof snapshot for a real verifier run.
+Correct proof snapshot for a real verifier run.
