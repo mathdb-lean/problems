@@ -1,0 +1,162 @@
+[
+  {
+    "mathdb_number": 406274,
+    "file": "additional-statements/406274/P001.lean",
+    "sha256": "74c05f5bb4a626beca36a2ed5e9fa3634412224eefd48552d41fe4da462a2014",
+    "original_source_url": "https://github.com/WarZ43/mathdb-lean-repository-demo/blob/e0cfbe036ed20f6d027354a5aa29d8e7869b2552/README.md",
+    "source_commit": "e0cfbe036ed20f6d027354a5aa29d8e7869b2552",
+    "external_id": "prod:demo:lean-bounty:20261005:v1"
+  },
+  {
+    "mathdb_number": 402982,
+    "file": "additional-statements/402982/Sun_Poincare_poincare_conjecture_variants_smooth_dimension_four_proof.lean",
+    "sha256": "dda5734351b5dd3cfbc1b3ba3054fda98121cd582ae0cafaf8818f88466b577d",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_Poincare_poincare_conjecture_variants_smooth_dimension_four_proof.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_Poincare_poincare_conjecture_variants_smooth_dimension_four_proof.lean:dda5734351b5dd3cfbc1b3ba3054fda98121cd582ae0cafaf8818f88466b577d"
+  },
+  {
+    "mathdb_number": 315779,
+    "file": "additional-statements/315779/Sun_Jacobian.lean",
+    "sha256": "97f1d4ffe39182db16ed33cfb6f1df24c43e2a9a25c544ed6b131ca71f9a6a7a",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_Jacobian.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_Jacobian.lean:97f1d4ffe39182db16ed33cfb6f1df24c43e2a9a25c544ed6b131ca71f9a6a7a"
+  },
+  {
+    "mathdb_number": 315983,
+    "file": "additional-statements/315983/Sun_Kakeya_kakeya_set_conjecture_proof.lean",
+    "sha256": "7ca1796d2db7f07ab85d774b03ca50f636a657cb3115929f81f500e6ce9b1acd",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_Kakeya_kakeya_set_conjecture_proof.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_Kakeya_kakeya_set_conjecture_proof.lean:7ca1796d2db7f07ab85d774b03ca50f636a657cb3115929f81f500e6ce9b1acd"
+  },
+  {
+    "mathdb_number": 316119,
+    "file": "additional-statements/316119/Sun_Dickson_dickson_conjecture_proof.lean",
+    "sha256": "e4afac0e33ea2d62b7fb881c3876521df251ca5d433c7b9825b972afc6b20dd3",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_Dickson_dickson_conjecture_proof.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_Dickson_dickson_conjecture_proof.lean:e4afac0e33ea2d62b7fb881c3876521df251ca5d433c7b9825b972afc6b20dd3"
+  },
+  {
+    "mathdb_number": 315853,
+    "file": "additional-statements/315853/Sun_PvsNP_P_ne_NP_prove.lean",
+    "sha256": "9899047e4fe0295a0826ca6135b1cdf0e908ecd1ac95bc35dc05afb3d398c1a9",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_PvsNP_P_ne_NP_prove.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_PvsNP_P_ne_NP_prove.lean:9899047e4fe0295a0826ca6135b1cdf0e908ecd1ac95bc35dc05afb3d398c1a9"
+  },
+  {
+    "mathdb_number": 315853,
+    "file": "additional-statements/315853/Sun_PvsNP_P_ne_NP_refute.lean",
+    "sha256": "cf3975ee0d205dd95562507d09b27ee2d3d768f2bc62a36613e02e604f5c083e",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_PvsNP_P_ne_NP_refute.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_PvsNP_P_ne_NP_refute.lean:cf3975ee0d205dd95562507d09b27ee2d3d768f2bc62a36613e02e604f5c083e"
+  },
+  {
+    "mathdb_number": 355259,
+    "file": "additional-statements/355259/Sun_TateShafarevich.lean",
+    "sha256": "217788e351f192fc9e72a6de83698c26b9aa00654e714f3d48aa0fc2416c3830",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_TateShafarevich.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_TateShafarevich.lean:217788e351f192fc9e72a6de83698c26b9aa00654e714f3d48aa0fc2416c3830"
+  },
+  {
+    "mathdb_number": 316061,
+    "file": "additional-statements/316061/Sun_GoldbachConjecture_goldbach_prove.lean",
+    "sha256": "a0cc2b414992bda4ec051a557d2cd08428c53497b88d295fad80d59add3f5e80",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_GoldbachConjecture_goldbach_prove.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_GoldbachConjecture_goldbach_prove.lean:a0cc2b414992bda4ec051a557d2cd08428c53497b88d295fad80d59add3f5e80"
+  },
+  {
+    "mathdb_number": 316061,
+    "file": "additional-statements/316061/Sun_GoldbachConjecture_goldbach_refute.lean",
+    "sha256": "7b679f76f6db1a5e22537d642d2b0c3c1c9717e86d1cd2a27df01de14e7d2aa2",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_GoldbachConjecture_goldbach_refute.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_GoldbachConjecture_goldbach_refute.lean:7b679f76f6db1a5e22537d642d2b0c3c1c9717e86d1cd2a27df01de14e7d2aa2"
+  },
+  {
+    "mathdb_number": 346080,
+    "file": "additional-statements/346080/Sun_MatrixExponent.lean",
+    "sha256": "32511c11ef2af18f249ee0801595bbe8ee7f932a78f5415c542a6be9570d1549",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_MatrixExponent.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_MatrixExponent.lean:32511c11ef2af18f249ee0801595bbe8ee7f932a78f5415c542a6be9570d1549"
+  },
+  {
+    "mathdb_number": 315854,
+    "file": "additional-statements/315854/Sun_RiemannHypothesis_riemannHypothesis_proof.lean",
+    "sha256": "ba4dfa85c659c8bc05616ba24d8578bac995a0f895426f6529190a0713a0f389",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_RiemannHypothesis_riemannHypothesis_proof.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_RiemannHypothesis_riemannHypothesis_proof.lean:ba4dfa85c659c8bc05616ba24d8578bac995a0f895426f6529190a0713a0f389"
+  },
+  {
+    "mathdb_number": 316127,
+    "file": "additional-statements/316127/Sun_LegendreConjecture_legendre_conjecture_prove.lean",
+    "sha256": "e0f32032cdf8afc1deb26a53be9b20a7b8222e3ba8536a466e6deb0e6b4b385d",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_LegendreConjecture_legendre_conjecture_prove.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_LegendreConjecture_legendre_conjecture_prove.lean:e0f32032cdf8afc1deb26a53be9b20a7b8222e3ba8536a466e6deb0e6b4b385d"
+  },
+  {
+    "mathdb_number": 316127,
+    "file": "additional-statements/316127/Sun_LegendreConjecture_legendre_conjecture_refute.lean",
+    "sha256": "d37f3c0746d93918c11ac1993607119ab456799dfd12d8edf37f1133df9c6b14",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_LegendreConjecture_legendre_conjecture_refute.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_LegendreConjecture_legendre_conjecture_refute.lean:d37f3c0746d93918c11ac1993607119ab456799dfd12d8edf37f1133df9c6b14"
+  },
+  {
+    "mathdb_number": 315900,
+    "file": "additional-statements/315900/Sun_InvariantSubspaceProblem_Invariant_subspace_problem_proof.lean",
+    "sha256": "c2b8d8f55b8107129dbb41006dfe2b469798754278cce9becd13ee8eb8d5439d",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_InvariantSubspaceProblem_Invariant_subspace_problem_proof.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_InvariantSubspaceProblem_Invariant_subspace_problem_proof.lean:c2b8d8f55b8107129dbb41006dfe2b469798754278cce9becd13ee8eb8d5439d"
+  },
+  {
+    "mathdb_number": 316099,
+    "file": "additional-statements/316099/Sun_LittlewoodConjecture_littlewood_conjecture_proof.lean",
+    "sha256": "7118e61ae822a4d8b27e86b8878025bf6407da81028e25a0fa243def426d6ab4",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_LittlewoodConjecture_littlewood_conjecture_proof.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_LittlewoodConjecture_littlewood_conjecture_proof.lean:7118e61ae822a4d8b27e86b8878025bf6407da81028e25a0fa243def426d6ab4"
+  },
+  {
+    "mathdb_number": 315852,
+    "file": "additional-statements/315852/Sun_NavierStokes_navier_stokes_existence_and_smoothness_R3_proof.lean",
+    "sha256": "2d693430962dc6d6c65d47d4f91fb3368faf13e105f822bb2b36b4efc18af6a5",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_NavierStokes_navier_stokes_existence_and_smoothness_R3_proof.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_NavierStokes_navier_stokes_existence_and_smoothness_R3_proof.lean:2d693430962dc6d6c65d47d4f91fb3368faf13e105f822bb2b36b4efc18af6a5"
+  },
+  {
+    "mathdb_number": 315852,
+    "file": "additional-statements/315852/Sun_NavierStokes_navier_stokes_existence_and_smoothness_periodic_proof.lean",
+    "sha256": "4725446f05537f43a6cbf66a86835179a5af27f9cc906f7ec786cc402ab791be",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_NavierStokes_navier_stokes_existence_and_smoothness_periodic_proof.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_NavierStokes_navier_stokes_existence_and_smoothness_periodic_proof.lean:4725446f05537f43a6cbf66a86835179a5af27f9cc906f7ec786cc402ab791be"
+  },
+  {
+    "mathdb_number": 315852,
+    "file": "additional-statements/315852/Sun_NavierStokes_navier_stokes_breakdown_R3_proof.lean",
+    "sha256": "9f46f3270a232d37c579f406cdd2324e9fe7b9b26e8d1786319dad5b7ccec9ef",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_NavierStokes_navier_stokes_breakdown_R3_proof.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_NavierStokes_navier_stokes_breakdown_R3_proof.lean:9f46f3270a232d37c579f406cdd2324e9fe7b9b26e8d1786319dad5b7ccec9ef"
+  },
+  {
+    "mathdb_number": 315852,
+    "file": "additional-statements/315852/Sun_NavierStokes_navier_stokes_breakdown_periodic_proof.lean",
+    "sha256": "0e6def75b848c4427a82db032db2f743b1c16c66056b8026058a3262b2f74040",
+    "original_source_url": "https://github.com/tonyyueyu/mathdb/blob/2adf2119c722b516c3cd39fda06b0be7cb940b30/backend/data/sun_prize_targets/Sun_NavierStokes_navier_stokes_breakdown_periodic_proof.lean",
+    "source_commit": "2adf2119c722b516c3cd39fda06b0be7cb940b30",
+    "external_id": "sun-prize:Sun_NavierStokes_navier_stokes_breakdown_periodic_proof.lean:0e6def75b848c4427a82db032db2f743b1c16c66056b8026058a3262b2f74040"
+  }
+]

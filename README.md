@@ -19,10 +19,10 @@ problems/
       E1209_parts_ii.lean      in four sub-parts, most as prove/refute pairs
       …
       problem.toml
-    oeis-100434/
-      O100434_conjecture1.lean a collection MathDB has no record of, addressed
-      O100434_conjecture2.lean by the id its source gives it; three obligations,
-      O100434_conjecture3.lean each named by the module it declares
+    406068/
+      O100434_conjecture1.lean OEIS A100434, linked to its production MathDB number
+      O100434_conjecture2.lean three obligations, each named by its Lean module
+      O100434_conjecture3.lean
       problem.toml
   openai-math/
     openai-math-003/
@@ -69,17 +69,17 @@ sits under the wrong source.
 
 ```
 problems/formal-conjectures/391455/        MathDB problem 391455, which is Erdős problem 1002
-problems/formal-conjectures/oeis-100434/   oeis:100434 — MathDB holds no record keyed to it
+problems/formal-conjectures/406068/        MathDB problem 406068, from OEIS A100434
 problems/openai-math/openai-math-003/      openai-math:003, result family 003 of openai/math
 ```
 
 For a MathDB problem number `n`, its folder is
-`https://github.com/mathdb-lean/problems/tree/main/problems/formal-conjectures/{n}`. All 704 Erdős
-problems use production MathDB numbers. The other 323 are not Erdős problems, and
-the lookup that pairs the two collections keys on the Erdős number, so there was
-nothing to look up — `benchmark.json`'s `mathdb` block records that as its own
-state rather than as an absence. A local number minted to fill the gap would be an
-address nobody issued.
+`https://github.com/mathdb-lean/problems/tree/main/problems/formal-conjectures/{n}`.
+All 1,026 published formal-conjectures problems use their confirmed production
+MathDB numbers: 703 Erdős problems and 323 from the other collections. Dev may
+assign a different number to the same problem; repository URLs always use the
+production number. The 230 OpenAI math result families retain their source IDs
+until a production MathDB mapping is confirmed. No local numbers are invented.
 
 Either way the source identity is unchanged: `problem_id = "erdos:1002"` and
 `problem_id = "oeis:100434"` are in each `problem.toml`, and Lean filenames and
