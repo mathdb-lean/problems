@@ -1,3 +1,5 @@
 # Lake's build output and the fetched dependency checkouts.
 .lake/
 build/
+# ftp-eval's grading workspace, inside whichever source directory it grades.
+.ftp_eval_build/

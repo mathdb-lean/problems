@@ -22,9 +22,9 @@ file = "FormalConjectures/ErdosProblems/1035.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "erdos-reviewed"
-released_at = "2026-10-10T15:07:22+00:00"
+released_at = "2026-10-29T06:33:02+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "E1035_prove"
@@ -38,13 +38,13 @@ declaration = "erdos_1035"
 statement_id = "6a39209c-8584-4da8-b5d6-4a90ce421c1f"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "993f2c21a191e077"
+  target_hash = "2b6ee31e3f37dc88"
   conversion_hash = "2633f1ca0c20c656d0aa3fab269623f0eda7eb00685b4ba955b508cfa7c07529"
-  semantic_anchor = "e91bea51606b37f64413263d8d2842e7a23539ca04af14da3036beb806336dfb"
+  semantic_anchor = "3daa3c61386aecd0ebd1d6640b1b7aeb03414df79951967289f301ebe3f85a7e"
   reviewed_by_a_person = false
 
 [[task]]
@@ -59,11 +59,11 @@ declaration = "erdos_1035"
 statement_id = "6a39209c-8584-4da8-b5d6-4a90ce421c1f"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "0a37a62887c1436e"
+  target_hash = "496759fd9a829fd1"
   conversion_hash = "f6fede47ab80befb57b0db1ccc4a1a23d906e15dc1447719fe63b10a4420b9c2"
-  semantic_anchor = "509f343bcc0dcfe9f0a7a50e7042eafc047e9ad99c21299593acf4a7dfa044cb"
+  semantic_anchor = "4f2db4f602d45ac9c9a67cf9983b96b9d70ab410d51c35c2344a9c29c71ae0bd"
   reviewed_by_a_person = false

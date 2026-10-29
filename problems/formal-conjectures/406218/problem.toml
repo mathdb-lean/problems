@@ -22,9 +22,9 @@ file = "FormalConjectures/Paper/NLSCritical.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "paper"
-released_at = "2026-10-10T15:08:07+00:00"
+released_at = "2026-10-29T06:33:48+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "RNLSCritical_NLS_apriori"
@@ -37,11 +37,11 @@ declaration = "NLS_apriori"
 statement_id = "ce17f5d7-c7fd-491e-a519-c9d676dca8e6"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "cbbcb13aa47f6081"
+  target_hash = "bd235d5447bb07d4"
   conversion_hash = "9807bc5eda487135e8ca84622385993d38cfbee3497e200f523b8d1cea49f8ce"
-  semantic_anchor = "24001b3c31d9642f5d430ebb7e2aa6629f8837deacb9bc5f876c7c288412ce6b"
+  semantic_anchor = "e41877072e8fcf5898c90dd5ee459be94c0ed6984bddd99a76e9936e26965eed"
   reviewed_by_a_person = false

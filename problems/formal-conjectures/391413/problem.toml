@@ -22,9 +22,9 @@ file = "FormalConjectures/ErdosProblems/949.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "erdos-reviewed"
-released_at = "2026-10-10T15:07:22+00:00"
+released_at = "2026-10-29T06:33:02+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "E949_prove"
@@ -38,11 +38,11 @@ declaration = "erdos_949"
 statement_id = "91855765-0c19-4152-a725-c7410e097b1e"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "9dfca821109b0245"
+  target_hash = "b9e62f12ca0fcc78"
   conversion_hash = "c6f3b5c4e5367364a6b1d56af1a9e2b631e5c0486824d9ff9c6b6cb502997921"
   semantic_anchor = "a28c885b2d0848cccb077b7e54ed1f6c20583077884a741465fee8b786384f31"
   reviewed_by_a_person = false
@@ -59,11 +59,11 @@ declaration = "erdos_949"
 statement_id = "91855765-0c19-4152-a725-c7410e097b1e"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "7c05dd6971197dfa"
+  target_hash = "5d40a35a2b2c9b9e"
   conversion_hash = "6bfc091ad1421451511103fe152f2c3f366973e93e4c21e3df77552bc468ed6b"
   semantic_anchor = "2e02be604687cdf134d03a3d98ec69e255b69a7ae495a87657515cbf5052f155"
   reviewed_by_a_person = false

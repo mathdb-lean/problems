@@ -22,9 +22,9 @@ file = "FormalConjectures/Mathoverflow/434111.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "mathoverflow"
-released_at = "2026-10-10T15:07:39+00:00"
+released_at = "2026-10-29T06:33:19+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "M434111_restricted_prime_number_theorem_prove"
@@ -38,13 +38,13 @@ declaration = "restricted_prime_number_theorem"
 statement_id = "5b1ba061-6b9b-4d21-aa68-8ebf04a77d6c"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "4e568a196b4b601f"
+  target_hash = "547ed0192de710f6"
   conversion_hash = "2e91cef992b9adf2d141ac13ef6df2b28009404325f082dfb7ff0e94d0e76da7"
-  semantic_anchor = "68eea5001f9a21facec8265e58b3dfbae736efbfc76a27d8f9846feb46303458"
+  semantic_anchor = "f2797db6a5a0a9ffb32f56a2b4051625c185420ffc19b56d2b97b531ec23f782"
   reviewed_by_a_person = false
 
 [[task]]
@@ -59,11 +59,11 @@ declaration = "restricted_prime_number_theorem"
 statement_id = "5b1ba061-6b9b-4d21-aa68-8ebf04a77d6c"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "ba7713af01e08a72"
+  target_hash = "845177625399e4a1"
   conversion_hash = "fb26a222d85d961acbce223846c173d38fb9febdea90dc4ac43a7ec4d88a3cec"
-  semantic_anchor = "2f55ea0049a145aca95cc8cd62145b52f253d2ee10d27e4de03f4f3357d530e1"
+  semantic_anchor = "81214cc7c3d51d9ac47a5035cc0d2a7279fd3fdc422bd0482acedaebb6005a8d"
   reviewed_by_a_person = false

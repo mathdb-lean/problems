@@ -22,9 +22,9 @@ file = "FormalConjectures/ErdosProblems/354.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "erdos-reviewed"
-released_at = "2026-10-10T15:07:22+00:00"
+released_at = "2026-10-29T06:33:02+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "E354_parts_i_prove"
@@ -39,13 +39,13 @@ declaration = "erdos_354.parts.i"
 statement_id = "9dc92725-93ed-4f20-ae51-95d3033019b7"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "c137722b910e7ae3"
+  target_hash = "a9a20df243d1c10b"
   conversion_hash = "1be153b233bbed48051aa10f1d83151f24f80e2aaa521899e11675500376b492"
-  semantic_anchor = "49fc7bb9343735bb48e4a5718aa59f65ee76ab8fae15029dfcc3047e7d8a6a87"
+  semantic_anchor = "8c9aa7815702c90528a328f72fc221bf6de6dc70d9b2bcdbc59457df870639f8"
   reviewed_by_a_person = false
 
 [[task]]
@@ -61,13 +61,13 @@ declaration = "erdos_354.parts.i"
 statement_id = "9dc92725-93ed-4f20-ae51-95d3033019b7"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "56434f9fb1379da4"
+  target_hash = "fb9a28b6ed772c2f"
   conversion_hash = "f7822b1ec9e37500ff67691ccbc9b976349984c36ea1dab42c1a02e757ea44d2"
-  semantic_anchor = "3f2e9d3b70390c4454daad476821205b9f37bbafaefe18cc79d2d83a8c212fc4"
+  semantic_anchor = "045bbc4dcdd10af80176b85e4fca5c8b9255ea365b00173033702eef61ee068f"
   reviewed_by_a_person = false
 
 [[task]]
@@ -83,13 +83,13 @@ declaration = "erdos_354.parts.ii"
 statement_id = "484c9f46-72c1-4326-aa3f-e0aebf9b9b0c"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "0e5107a7a214ae8e"
+  target_hash = "82e8578ce6bb92e3"
   conversion_hash = "6dc44de6209de3a42b27e293adcd302d0902d71dca308f7ed32c4ad662018ced"
-  semantic_anchor = "582cc21f3448eef2b38eb93a207ecdda5c701dbfa0e10d1f138d5f41fed336cf"
+  semantic_anchor = "eb5b0f41d84ac41eacc1a370f986e4ef6dbabb6f8ac4e71de61ece943a5676d5"
   reviewed_by_a_person = false
 
 [[task]]
@@ -105,11 +105,11 @@ declaration = "erdos_354.parts.ii"
 statement_id = "484c9f46-72c1-4326-aa3f-e0aebf9b9b0c"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "5cb809570cca2ced"
+  target_hash = "99cff00defe1712e"
   conversion_hash = "939317a97e49a479d8b739c2a079541b89807d031b008f9e70a07537ddc56f25"
-  semantic_anchor = "276c11c7f7ab70b8ad5b14a8331751e4d0be3ba5533351ad49ec9c7da6517973"
+  semantic_anchor = "7ce097789459b61e5c3db2aa2a5fde2db22c9ae3841949cd5cca1283d5f350fb"
   reviewed_by_a_person = false

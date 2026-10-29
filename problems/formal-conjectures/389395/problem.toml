@@ -22,9 +22,9 @@ file = "FormalConjectures/Wikipedia/FortuneConjecture.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-10T15:08:12+00:00"
+released_at = "2026-10-29T06:33:54+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "NFortuneConjecture_fortune_conjecture_prove"
@@ -38,11 +38,11 @@ declaration = "fortune_conjecture"
 statement_id = "611896f6-180b-4335-8307-022f492b5e5e"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "4c8e13fd59a8c89e"
+  target_hash = "13e4da019642b2ef"
   conversion_hash = "b36f10a73f759fc9e5b2e424da1283f874cd8a0fce487a1826c0a8357a3294d3"
   semantic_anchor = "544182cd41f7905bd14c1f867b7f661ce4f2c0299201959f5c8285df826f3549"
   reviewed_by_a_person = false
@@ -59,11 +59,11 @@ declaration = "fortune_conjecture"
 statement_id = "611896f6-180b-4335-8307-022f492b5e5e"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "cb1c63a16a661ab9"
+  target_hash = "14b2988df54acd43"
   conversion_hash = "b89686a698bfc8de4bd960905a16b91872a46c54e385b1e4b1d279d543fff46a"
   semantic_anchor = "02f7371a0c73a0624fc9d200ff84527b0638624f9738b0465588efd14a29456e"
   reviewed_by_a_person = false

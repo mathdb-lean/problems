@@ -22,9 +22,9 @@ file = "FormalConjectures/OEIS/81091.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-10T15:07:49+00:00"
+released_at = "2026-10-29T06:33:30+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "O81091_conjectureA81091_prove"
@@ -38,11 +38,11 @@ declaration = "conjectureA81091"
 statement_id = "f8dc8f1e-f14e-43d7-840b-4e490986549f"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "3e965660284df277"
+  target_hash = "5af926b186863171"
   conversion_hash = "decf83370b8789349bd050d093d0d5efec26d9e06976aa4461fbc3bdb9131066"
   semantic_anchor = "cb2feee5fd4ce9bca72ddd2b9d8dca6bb970991709470f6859731a21438aedf3"
   reviewed_by_a_person = false
@@ -59,11 +59,11 @@ declaration = "conjectureA81091"
 statement_id = "f8dc8f1e-f14e-43d7-840b-4e490986549f"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "942a2fd69680e709"
+  target_hash = "1b15a6007e6a647b"
   conversion_hash = "0ec5c5660a4103b1d563f24825f429b4760f167324ff211a22738d605b4f2eb8"
   semantic_anchor = "2ff0dcd32bfccf9769aceeb580306badf4179cacbb34cd70dc1e7f71d79b8df2"
   reviewed_by_a_person = false

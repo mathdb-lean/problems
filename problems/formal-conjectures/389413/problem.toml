@@ -22,9 +22,9 @@ file = "FormalConjectures/Wikipedia/PierpontPrime.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-10T15:08:12+00:00"
+released_at = "2026-10-29T06:33:54+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "NPierpontPrime_infinitely_many_pierpont_primes"
@@ -37,11 +37,11 @@ declaration = "infinitely_many_pierpont_primes"
 statement_id = "b1ab4cc7-4474-4456-be48-4889b61662f7"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "cdaa4fec64201932"
+  target_hash = "5861b95dc7c83638"
   conversion_hash = "6c25742edfd98d8199c0e86a5a6ea838a2aa56e9ebec97f3fa571b9c2d85e5e1"
   semantic_anchor = "1f98c4fe3404f47df07ad893a3e4323fd7b6c176c3c00e930cfd22b916190d2c"
   reviewed_by_a_person = false

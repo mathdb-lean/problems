@@ -22,9 +22,9 @@ file = "FormalConjectures/Wikipedia/NoetherProblem.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-10T15:08:12+00:00"
+released_at = "2026-10-29T06:33:54+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "NNoetherProblem_noether_problem"
@@ -39,11 +39,11 @@ statement_id = "f570990c-7204-4af3-88ab-fb3d1f6b6625"
 gold_arguments = ["False"]
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "a5dcacd77a884e9f"
+  target_hash = "202362bd4b58b162"
   conversion_hash = "e2beee72bc2fbb30e16d1ebd6a500a6821a275c83e9fd637e84f9040bb8822cb"
-  semantic_anchor = "f1acbe2bcedd4ed752af0fa4bab0ea93605b065c5120f501f94b2753e0a1f75e"
+  semantic_anchor = "5c9b8ae21edd8987be2a23138070aff16e9f90121967857acd67ab9d76dcc4cd"
   reviewed_by_a_person = false

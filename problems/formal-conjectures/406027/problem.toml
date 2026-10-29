@@ -22,9 +22,9 @@ file = "FormalConjectures/GreensOpenProblems/22.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-10T15:07:29+00:00"
+released_at = "2026-10-29T06:33:08+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "G22"
@@ -38,11 +38,11 @@ declaration = "green_22"
 statement_id = "c72bb0c7-7df2-4e90-8be1-80098240d76d"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "9dabeb51d67d1c51"
+  target_hash = "c231b8262ab1c720"
   conversion_hash = "4dbd1ee6058e007e3fdbb9e83fce67b2898cbfb1cceacac0cc68be71d8871189"
   semantic_anchor = "0bc5e7888d8df97fd528be93a67034b3e8eb257a35cd78fa8afaa6474ee537e2"
   reviewed_by_a_person = false

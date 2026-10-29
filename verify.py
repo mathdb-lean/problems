@@ -36,71 +36,42 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 PROBLEMS = ROOT / "problems"
-MIRROR = ROOT / "FormalConjectures"
 
 
-def check_mirror(faults: list[str]) -> int:
-    """The mirrored upstream corpus against the manifest it ships with.
+def check_projects(environments: dict, sources: list[Path], faults: list[str]) -> int:
+    """Each source directory's Lean project against the environment the manifest states.
 
-    `FormalConjectures/` is upstream's whole statement corpus, carried so that
-    every published obligation's `source_locator` resolves inside this
-    repository. It is not the benchmark: nothing in it has a `problem.toml`, a
-    target hash or any recorded evidence.
-
-    What has to be checkable is that it is still *upstream's*, minus the one
-    change `MIRROR.json` declares. So the digest is recomputed over the whole
-    tree -- every relative path and the hash of its bytes -- and every file is
-    checked for the import the mirror is supposed to have rewritten. Without
-    this the directory would be 8 MB that nothing in the repository attests to,
-    and an edit to a statement in it would be invisible.
+    A source is checked in the environment its own upstream pins, and the source
+    directory is that environment's Lean project: `lean-toolchain` and
+    `lake-manifest.json` beside the problem folders. The manifest records the
+    toolchain every task of the source was checked against; a project that pins
+    something else would compile the problems somewhere they were never checked.
     """
-    if not MIRROR.is_dir():
-        return 0
-    manifest = MIRROR / "MIRROR.json"
-    if not manifest.is_file():
-        faults.append("FormalConjectures/ has no MIRROR.json saying what it is")
-        return 0
-    held = json.loads(manifest.read_text(encoding="utf-8"))
-
-    digest_of = hashlib.sha256()
-    counted = 0
-    for path in sorted(MIRROR.rglob("*")):
-        if not path.is_file() or path == manifest:
+    held = {src.name for src in sources}
+    for name in sorted(set(environments) ^ held):
+        faults.append("environments: %s is %s" % (name, "stated but has no source directory"
+                      if name in environments else "a source directory with no environment"))
+    checked = 0
+    for src in sources:
+        environment = environments.get(src.name) or {}
+        toolchain = environment.get("toolchain") or {}
+        pinned = src / "lean-toolchain"
+        if not pinned.is_file():
+            faults.append("problems/%s: no lean-toolchain" % src.name)
+        elif pinned.read_text(encoding="utf-8").strip() != toolchain.get("lean"):
+            faults.append("problems/%s: lean-toolchain is %s, the manifest says %r"
+                          % (src.name, pinned.read_text(encoding="utf-8").strip(), toolchain.get("lean")))
+        lake = src / "lake-manifest.json"
+        if not lake.is_file() or not (src / "lakefile.toml").is_file():
+            faults.append("problems/%s: no lakefile.toml and lake-manifest.json" % src.name)
             continue
-        rel = path.relative_to(MIRROR).as_posix()
-        body = path.read_bytes()
-        digest_of.update(rel.encode("utf-8") + b"\0")
-        digest_of.update(hashlib.sha256(body).hexdigest().encode("ascii") + b"\0")
-        counted += 1
-    if counted != held.get("files"):
-        faults.append("FormalConjectures/ holds %d files, MIRROR.json says %r"
-                      % (counted, held.get("files")))
-    if digest_of.hexdigest() != held.get("tree_digest"):
-        faults.append("FormalConjectures/ hashes to %s, MIRROR.json says %s"
-                      % (digest_of.hexdigest()[:16], str(held.get("tree_digest"))[:16]))
-
-    # The declared rewrite, checked in both directions: the new name is present
-    # and the old one is gone. A mirror that still imported upstream's library
-    # name would not build here, and one that mentions it anywhere is no longer
-    # the single change MIRROR.json claims.
-    for change in held.get("changes") or []:
-        old, new = change.get("from"), change.get("to")
-        if not old or not new:
-            continue
-        stale = rewritten = 0
-        for path in sorted(MIRROR.rglob("*.lean")):
-            text = path.read_text(encoding="utf-8")
-            if old in text:
-                stale += 1
-            if new in text:
-                rewritten += 1
-        if stale:
-            faults.append("%d mirrored file(s) still name %s, which this project "
-                          "does not carry" % (stale, old))
-        if rewritten != change.get("files"):
-            faults.append("%d mirrored file(s) import %s, MIRROR.json says %r"
-                          % (rewritten, new, change.get("files")))
-    return counted
+        packages = json.loads(lake.read_text(encoding="utf-8")).get("packages") or []
+        mathlib = next((p.get("rev") for p in packages if p.get("name") == "mathlib"), None)
+        if mathlib != toolchain.get("mathlib_rev"):
+            faults.append("problems/%s: lake-manifest.json pins mathlib %r, the manifest says %r"
+                          % (src.name, mathlib, toolchain.get("mathlib_rev")))
+        checked += 1
+    return checked
 
 
 def slug(problem_id: str) -> str:
@@ -126,17 +97,20 @@ def main(argv: list[str]) -> int:
     released = manifest["problems"]
     recorded = manifest["report"]["tasks"]
     under_review = set(manifest.get("under_review") or ())
-    toolchain = manifest["toolchain"]
+    environments = manifest.get("environments") or {}
 
     faults: list[str] = []
     # `problems/<source>/<folder>/`: one directory per source, one folder per
     # problem inside it. A problem folder directly under `problems/` is the layout
     # published before 2026-10-09 and is a fault now, not a second place to look.
-    sources = sorted(p for p in PROBLEMS.iterdir() if p.is_dir())
+    sources = sorted(p for p in PROBLEMS.iterdir() if p.is_dir() and not p.name.startswith("."))
     for src in sources:
         if (src / "problem.toml").is_file() or any(src.glob("*.lean")):
             faults.append("problems/%s: a problem folder outside any source directory" % src.name)
-    folders = sorted(p for src in sources for p in src.iterdir() if p.is_dir())
+    # A source directory is also a Lean project, so `.lake/` and the like may sit
+    # beside the problem folders after a build; they are not problems.
+    folders = sorted(p for src in sources for p in src.iterdir()
+                     if p.is_dir() and not p.name.startswith("."))
     wanted = [PROBLEMS / name for name in argv] if argv else folders
 
     # Every released task must be reachable from exactly one folder, and no folder
@@ -214,6 +188,7 @@ def main(argv: list[str]) -> int:
                               % (label(folder), task_id, got, task["target_hash"]))
 
             evidence = recorded.get(task_id, {})
+            toolchain = (environments.get(task.get("source") or "") or {}).get("toolchain") or {}
             for where, key, expected in (
                 (held, "mathdb_number", task.get("mathdb_number")),
                 (entry, "module", task.get("module")),
@@ -322,18 +297,15 @@ def main(argv: list[str]) -> int:
         faults.append("manifest_hash: computed %s, %s says %r"
                       % (manifest_hash, home, expected_hash))
 
-    mirrored = check_mirror(faults)
+    projects = check_projects(environments, sources, faults)
 
     for fault in faults[:40]:
         print("  %s" % fault)
     if len(faults) > 40:
         print("  ... and %d more" % (len(faults) - 40))
     print()
-    print("%d problem(s) checked, %d module(s), %d fault(s)"
-          % (len(wanted), len(seen), len(faults)))
-    if mirrored:
-        print("%d mirrored upstream file(s) checked against FormalConjectures/MIRROR.json"
-              % mirrored)
+    print("%d problem(s) checked, %d module(s), %d Lean project(s), %d fault(s)"
+          % (len(wanted), len(seen), projects, len(faults)))
     return 1 if faults else 0
 
 

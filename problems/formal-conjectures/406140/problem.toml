@@ -22,9 +22,9 @@ file = "FormalConjectures/OEIS/179524.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "oeis-reviewed"
-released_at = "2026-10-10T15:07:49+00:00"
+released_at = "2026-10-29T06:33:30+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "O179524_conjecture1"
@@ -37,11 +37,11 @@ declaration = "conjecture1"
 statement_id = "376a4c4e-5f59-49b1-a64c-b6089c1b7f2f"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "3c18198abc885bae"
+  target_hash = "0c9ad533e7445e31"
   conversion_hash = "04f92d8c998a70e75738903f181c386410269b86a610c1dd0ecc30adb93bb94a"
   semantic_anchor = "1f3b0910f1c1fe4ccf9a121a81bdd5c5a8c39ca3f7445a5da48df8b68d253ad1"
   reviewed_by_a_person = false
@@ -57,11 +57,11 @@ declaration = "conjecture2"
 statement_id = "7934c96e-6480-4a53-93e4-7603f61191a0"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "f987eda6920e0bb7"
+  target_hash = "b59e63bc1d1bb029"
   conversion_hash = "5ac8d38b2a3572ec841c3a97db69ad5075e6c4493114b6f5e29c62cfb58294e0"
   semantic_anchor = "7c1e74a85e5071f36c583922e990cae7a9c687baa3c2f36870ee2d82d9f22fe6"
   reviewed_by_a_person = false
@@ -77,11 +77,11 @@ declaration = "conjecture3"
 statement_id = "31c066b7-145c-4791-92c2-e856b6a2ee5b"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "6c6cad9dbc2936df"
+  target_hash = "b92c2253ff78b851"
   conversion_hash = "961886d7ef4fa03a673451729d4be9665d44d18f52912b3fad4e85d4c79defaf"
   semantic_anchor = "6d80880ae5626630692bca7298a6c5ae303ffa3b0ce58e804957e9ed11a60b9d"
   reviewed_by_a_person = false
@@ -97,11 +97,11 @@ declaration = "conjecture4"
 statement_id = "1674dd44-3eba-4a5e-b5c2-3a06a20488fe"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "7a89f14e5876bc7f"
+  target_hash = "7e097627f159a700"
   conversion_hash = "05e2c04ef32c031b527060bb7677cb5d855f8cab60cf998585180548335d2264"
   semantic_anchor = "abde766806e03c990afa7f361705b1b18b9b46eb77c43b6e39a9d63994bd3c5e"
   reviewed_by_a_person = false
@@ -117,11 +117,11 @@ declaration = "conjecture5"
 statement_id = "bf76cac7-63ac-4a7e-9726-6b4f8af0b8ff"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "6c9ac4695e5f880f"
+  target_hash = "73045ca61b44d76c"
   conversion_hash = "6eb8d94ca422f79ecfc23ee4496f6df75c13838f3a6e15b09d6d4d5d039678ef"
   semantic_anchor = "1d84ce71ac3954de1325612aabb032a430843cd62ddd70c9397f414eb750e8f0"
   reviewed_by_a_person = false

@@ -22,9 +22,9 @@ file = "FormalConjectures/GreensOpenProblems/40.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-10T15:07:29+00:00"
+released_at = "2026-10-29T06:33:08+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "G40_prove"
@@ -38,13 +38,13 @@ declaration = "green_40"
 statement_id = "f2a59354-796a-4817-ba86-7d4beaedc173"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "77a72129322e1bb3"
+  target_hash = "1a35aa23e284e4f5"
   conversion_hash = "ada4d8d46eab892ebff64cd025780e8b2b07ad2474f82bb8db8356fe303691e2"
-  semantic_anchor = "e77ac217b43660b78dd1a8fed61293362f369254c415090babfb8d67388632e0"
+  semantic_anchor = "19d42e827a9caed43f910ff05bd2baf16182403cf36e2a12822e55c93ef5a911"
   reviewed_by_a_person = false
 
 [[task]]
@@ -59,11 +59,11 @@ declaration = "green_40"
 statement_id = "f2a59354-796a-4817-ba86-7d4beaedc173"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "1842bcc618b0c69c"
+  target_hash = "1f27e1b019eec30c"
   conversion_hash = "3d09df3777ede763fb96874bcb00d7986625f0c3528b7b80a477ce909233ab6f"
-  semantic_anchor = "1af66dc34f9544bcd6bf0a5784288069a8dfa385b050863839ae66f8d50d7d5d"
+  semantic_anchor = "6395d2a5cb5982db5d56123ffa7968e87a4692f1f5c1fdb0fd2f454df9048632"
   reviewed_by_a_person = false

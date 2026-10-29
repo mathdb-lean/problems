@@ -22,9 +22,9 @@ file = "FormalConjectures/WrittenOnTheWallII/GraphConjecture315.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wotw-reviewed"
-released_at = "2026-10-10T15:08:17+00:00"
+released_at = "2026-10-29T06:33:59+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "WGraphConjecture315_conjecture315"
@@ -37,11 +37,11 @@ declaration = "conjecture315"
 statement_id = "8a974db1-d2ee-4a65-8f66-ebc68088c1ac"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "44616af77735e080"
+  target_hash = "0daca6346813d017"
   conversion_hash = "b51737db42d03bcf277bd90ddc26bd351e73ceb1d501d743de92430c69236852"
   semantic_anchor = "63978aa059584534d94e0a72551b8b49e5283a2a7cc604f8a42365cf4e142bd1"
   reviewed_by_a_person = false

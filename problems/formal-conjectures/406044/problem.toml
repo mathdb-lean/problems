@@ -22,9 +22,9 @@ file = "FormalConjectures/GreensOpenProblems/52.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-10T15:07:29+00:00"
+released_at = "2026-10-29T06:33:08+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "G52_prove"
@@ -38,13 +38,13 @@ declaration = "green_52"
 statement_id = "d3f3f74a-8604-471a-9d7c-d00593add107"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "c55684f32fb0da37"
+  target_hash = "5a4a226ba7a96310"
   conversion_hash = "1bddebeaa0a518d043e10754d90529fb3627e277e8bb0ddd2dda9bda6bcbffc6"
-  semantic_anchor = "7848b84466ff61e552b0b2811fcb137864db989597cac1db6d416e58d02f1fde"
+  semantic_anchor = "33e7ddba06997a1cf98dfb0bf378f36445050d4ea277634abb091ddb1036b69b"
   reviewed_by_a_person = false
 
 [[task]]
@@ -59,11 +59,11 @@ declaration = "green_52"
 statement_id = "d3f3f74a-8604-471a-9d7c-d00593add107"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "6d6b7c2d921b486e"
+  target_hash = "7029a649205a2947"
   conversion_hash = "2686c63aec0fee930d03292ab86f1a89536ce60596af5156584b02294dacf86a"
-  semantic_anchor = "98c2f8af0daca03c7feff2fb7ac2b754a936a8b80be30fe9a056b6123bca27c3"
+  semantic_anchor = "0e3575bec09ae0c20b9fa6b11ed5f7b313f9b12a472332d2386d32b4cfd306d8"
   reviewed_by_a_person = false

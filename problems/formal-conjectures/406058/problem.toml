@@ -22,9 +22,9 @@ file = "FormalConjectures/Kourovka/1_74.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "kourovka-reviewed"
-released_at = "2026-10-10T15:07:34+00:00"
+released_at = "2026-10-29T06:33:14+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "K1_74"
@@ -38,11 +38,11 @@ declaration = "kourovka_1_74"
 statement_id = "c3df0701-0d88-42a5-a9c4-7ca86160ec2d"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "dbff3e450bc8b87e"
+  target_hash = "ad2398f4f0ab4a4c"
   conversion_hash = "a566efc7e6da86ee45c934b71678aa63fcfe53f56805582901f3a96d8cb8da43"
   semantic_anchor = "15001ea012a5117cf6133d4bc05f365b687c39e8edd337558e660eb3a4b21f3f"
   reviewed_by_a_person = false

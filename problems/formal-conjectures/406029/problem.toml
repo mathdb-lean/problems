@@ -22,9 +22,9 @@ file = "FormalConjectures/GreensOpenProblems/26.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-10T15:07:29+00:00"
+released_at = "2026-10-29T06:33:08+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "G26"
@@ -37,11 +37,11 @@ declaration = "green_26"
 statement_id = "c3844c0c-8ad4-44a2-8a93-053b7dafeb5d"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "a032d8943e92da09"
+  target_hash = "75925a825da3bdd2"
   conversion_hash = "3644d85374aab38cd781df1dce4303aca1fa1f1bfea0b9fe678f656dab18aeab"
-  semantic_anchor = "52df8927a81edeabc435d983822fd7111422a0326f7f617bb10ab3b8b03b1b9b"
+  semantic_anchor = "61ad34ef2ab48d687dbdc4aa08f43d35d3ef4476726e84842622d20fdcc7b7cc"
   reviewed_by_a_person = false

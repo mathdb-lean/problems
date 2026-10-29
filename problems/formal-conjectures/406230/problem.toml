@@ -22,9 +22,9 @@ file = "FormalConjectures/Wikipedia/PolyTimeFunctions.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-10T15:08:12+00:00"
+released_at = "2026-10-29T06:33:54+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "NPolyTimeFunctions_isPolyTime_primeFactorsList_prove"
@@ -38,11 +38,11 @@ declaration = "isPolyTime_primeFactorsList"
 statement_id = "40843812-b42f-454f-b25f-48da26745a10"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "ec0281bb4f598ef3"
+  target_hash = "224795251af34117"
   conversion_hash = "054386cc442ef34ac1dcf5b363c631c7cf12a63a778d19148b809afdf92e2421"
   semantic_anchor = "41b1d20cd83b7f23bbb8b52ea9e80671bf020ad073957ae61e905d37c0e58637"
   reviewed_by_a_person = false
@@ -59,11 +59,11 @@ declaration = "isPolyTime_primeFactorsList"
 statement_id = "40843812-b42f-454f-b25f-48da26745a10"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "cecc9a160e3a59c3"
+  target_hash = "04072568ef8d745e"
   conversion_hash = "c07e29348745bd6f5ec22c232ec73c072d78ef6800998607af82461e344658c9"
   semantic_anchor = "98372951681ccb745a301f4522d942fc7375c94bd9d0786a5c122de1b64f6869"
   reviewed_by_a_person = false

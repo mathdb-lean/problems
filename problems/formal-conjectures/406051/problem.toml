@@ -22,9 +22,9 @@ file = "FormalConjectures/GreensOpenProblems/64.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "green-reviewed"
-released_at = "2026-10-10T15:07:29+00:00"
+released_at = "2026-10-29T06:33:08+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "G64_prove"
@@ -38,11 +38,11 @@ declaration = "green_64"
 statement_id = "3294517c-cf8f-4aa6-9c07-e3f4473ca5c5"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "1022f394ae280cfa"
+  target_hash = "c0ef3923a9013ce9"
   conversion_hash = "40616f114363686ecc0e2bbc7c4dac24d072a05ad4e0c715ee28d19f55773a1f"
   semantic_anchor = "aba44d5bd9d7733a069bd9ac79a9a82d9d1a024b50fe081b98302753112ff54b"
   reviewed_by_a_person = false
@@ -59,11 +59,11 @@ declaration = "green_64"
 statement_id = "3294517c-cf8f-4aa6-9c07-e3f4473ca5c5"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "327d609f8854e0d4"
+  target_hash = "28ba920963c6e43e"
   conversion_hash = "cbd17401acbcc6190cded65d6229694db0ad875e70796647bf79cbe1fd06ecb3"
   semantic_anchor = "53fc8fa36ffeedf301deb915e21c6497298ef99607e8dbf6863b23d94cee1849"
   reviewed_by_a_person = false

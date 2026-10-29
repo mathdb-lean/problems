@@ -22,9 +22,9 @@ file = "FormalConjectures/Millennium/Poincare.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "millennium"
-released_at = "2026-10-10T15:07:43+00:00"
+released_at = "2026-10-29T06:33:24+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "YPoincare_poincare_conjecture"
@@ -37,11 +37,11 @@ declaration = "poincare_conjecture"
 statement_id = "cfc1e904-0b7f-4764-a3f6-6ddb0e3c7d61"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "9609b79bd21353e7"
+  target_hash = "ff7b64b5b76cbc5d"
   conversion_hash = "f14d2e4be7f128102c12e684c821ea74aa7691395c5899227a0e1a45e0274b3f"
   semantic_anchor = "3984d416ab100d07631b0136dc79a773b958927dc63baffb440479d23d7f67ba"
   reviewed_by_a_person = false

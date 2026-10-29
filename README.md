@@ -1,12 +1,16 @@
 # mathdb-lean problems
 
-Mathematical problems formalized in Lean 4, with the pinned project they compile
-against. **One directory per source, and inside it one folder per problem.** A
-folder holds that problem's proof obligations and a `problem.toml` describing them.
+Mathematical problems formalized in Lean 4. **One directory per source, and inside
+it one folder per problem.** A folder holds that problem's proof obligations and a
+`problem.toml` describing them. Each source directory is also the Lean project its
+problems compile against, pinned to what that source's own upstream builds with.
 
 ```
 problems/
-  formal-conjectures/          one directory per source
+  formal-conjectures/          one directory per source, and its Lean project:
+    lakefile.toml              requires formal-conjectures at the pinned commit
+    lean-toolchain             upstream's Lean
+    lake-manifest.json         upstream's Mathlib, inherited
     1/
       E1.lean                  one proof obligation
       problem.toml
@@ -25,21 +29,29 @@ problems/
       O100434_conjecture3.lean
       problem.toml
   openai-math/
+    lakefile.toml …            requires Mathlib at openai/math's revision
     openai-math-003/
       DirichletSevenEighths.lean   one openai/math result family; each of its
       HeckeSevenEighths.lean       comparator challenges is one obligation
       …
       problem.toml
+  mathdb-lean/
+    lakefile.toml …            the formal-conjectures environment again
+    authored-onewayfunctions/
+      AOneWayFunctions_prove.lean  a statement written in this library, for a
+      AOneWayFunctions_refute.lean problem no imported corpus had formalized;
+      problem.toml                 an open question ships as a prove/refute pair
 ```
 
-Currently **1256 problems / 1945 obligations** across thirteen collections from two sources.
+Currently **1275 problems / 1971 obligations** across fourteen collections from three sources.
 
 | collection | problems | obligations | what it is |
 |---|---|---|---|
-| `erdos` | 703 | 1104 | [Erdős problems](https://www.erdosproblems.com/) |
+| `erdos` | 704 | 1106 | [Erdős problems](https://www.erdosproblems.com/) |
 | `openai-math` | 230 | 397 | the Lean challenges of OpenAI's [math](https://github.com/openai/math) results: a manuscript's formalized theorems, each published upstream with a comparator-accepted proof |
+| `authored` | 9 | 12 | statements written in this library (source `mathdb-lean`) for problems no imported corpus had formalized; each file says where it departs from the textbook formulation |
 | `oeis` | 146 | 218 | conjectures stated in an [OEIS](https://oeis.org/) entry |
-| `wikipedia` | 54 | 68 | named conjectures with a Wikipedia article |
+| `wikipedia` | 60 | 76 | named conjectures with a Wikipedia article |
 | `green` | 39 | 66 | Ben Green's [open problems](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf) |
 | `wotw` | 36 | 36 | Written on the Wall II, a conjecture-generator's output |
 | `paper` | 15 | 16 | problems posed in a specific paper |
@@ -47,7 +59,7 @@ Currently **1256 problems / 1945 obligations** across thirteen collections from 
 | `mathoverflow` | 8 | 10 | questions asked on MathOverflow |
 | `books` | 6 | 7 | problems posed in a book |
 | `kourovka` | 5 | 8 | the [Kourovka Notebook](https://kourovka-notebook.org/) of group theory problems |
-| `millennium` | 1 | 1 | a Clay Millennium Prize problem |
+| `millennium` | 4 | 5 | Clay Millennium Prize problems |
 | `other` | 1 | 1 | what upstream files under no source |
 
 Every problem's `- notes:` line carries the reference its **source** declares — the
@@ -62,7 +74,7 @@ formalized or not, with a link to its PDF at the pinned revision.
 ## How a folder is named
 
 Under `problems/` there is one directory per source — `formal-conjectures/`,
-`openai-math/` — and inside it a folder is **MathDB's problem number** where MathDB
+`openai-math/`, `mathdb-lean/` — and inside it a folder is **MathDB's problem number** where MathDB
 has a record of the problem, and the **id its source gives it** where MathDB has
 none. Both are exact, and `verify.py` refuses a folder that is neither, or that
 sits under the wrong source.
@@ -71,12 +83,16 @@ sits under the wrong source.
 problems/formal-conjectures/391455/        MathDB problem 391455, which is Erdős problem 1002
 problems/formal-conjectures/406068/        MathDB problem 406068, from OEIS A100434
 problems/openai-math/openai-math-003/      openai-math:003, result family 003 of openai/math
+problems/mathdb-lean/authored-fourierrestriction/   authored:FourierRestriction, stated in this library
 ```
 
 For a MathDB problem number `n`, its folder is
 `https://github.com/mathdb-lean/problems/tree/main/problems/formal-conjectures/{n}`.
-All 1,026 published formal-conjectures problems use their confirmed production
-MathDB numbers: 703 Erdős problems and 323 from the other collections. Dev may
+1,027 of the 1,036 published formal-conjectures problems use their confirmed
+production MathDB numbers: all 704 Erdős problems and 323 from the other
+collections. The other nine — three `millennium` and six `wikipedia` problems,
+first published on 2026-10-16 and 2026-10-17 — have not been looked up in MathDB
+yet and use their source id until they are. Dev may
 assign a different number to the same problem; repository URLs always use the
 production number. The 230 OpenAI math result families retain their source IDs
 until a production MathDB mapping is confirmed. No local numbers are invented.
@@ -95,16 +111,21 @@ obligation is opaque and travels in the manifest as `task_id`: an id that encode
 a name has to change when the name does, and a published address must not.
 
 Each obligation is a frozen `Problem.Target` — a proposition stated in Lean, with
-no proof. **This repository is itself the Lean project** they compile against, so
-a grader points `project_dir` at the root. It elaborates one module at a time
-against the project and checks what it denotes.
+no proof. **Each source directory is itself the Lean project** its obligations
+compile against, so a grader points `project_dir` and its problem directory at the
+same `problems/<source>/`. It elaborates one module at a time against the project
+and checks what it denotes.
 
 ## What was established by machine
 
 Every published obligation:
 
-- **elaborates** against the pinned project (Lean `v4.34.1`, mathlib
-  `d13f23b723b8a846827a245b89c10fc7d3f11612`);
+- **elaborates** against its source's pinned project: for `formal-conjectures`
+  and `mathdb-lean`, Lean `v4.33.1` and mathlib
+  `0df444a360eaa60ab8c11dca51a86af692955474` with upstream formal-conjectures'
+  own support libraries, which is what that upstream builds with; for
+  `openai-math`, Lean `v4.34.1` and mathlib
+  `d13f23b723b8a846827a245b89c10fc7d3f11612`, which is what openai/math builds with;
 - **reaches only** `propext`, `Classical.choice`, `Quot.sound` in its axiom
   closure — no `sorryAx`, no added axiom;
 - **matches the interface** an obligation of its shape claims to have.
@@ -112,44 +133,51 @@ Every published obligation:
 Separately, a **tactic suite** is run at the goal to see whether it closes without
 anybody doing the mathematics -- `trivial`, `rfl`, `simp`, `norm_num`, `decide`,
 `omega`, `positivity`. A target that falls to one of those is worthless to score
-on, and only an attack finds that. On 2026-10-05, on the previous pin (Lean `v4.33.1`), every
-published obligation that admitted a probe was run against it — 1526 of the then 1550 — and
-**none fell**. That campaign has not yet been repeated on the `v4.34.1` pin, nor run against
-`openai-math`; until it is, those obligations carry elaboration and axiom evidence but no
-attack evidence. The 24 `value` obligations are not
+on, and only an attack finds that. On 2026-10-05, on Lean `v4.33.1` and mathlib `0df444a3` —
+the pin `formal-conjectures` obligations are checked on again — every then published
+obligation that admitted a probe was run against it — 1526 of the then 1550 — and **none
+fell**. The modules it ran on imported the support library under the name this repository
+then gave its copy, and later obligations did not exist yet, so the campaign has not been
+repeated on the modules as published now, nor run against `openai-math` or `mathdb-lean`;
+until it is, the published obligations carry elaboration and axiom evidence but no attack
+evidence of their own. The 24 `value` obligations are not
 attacked at all: their `Problem.Target` takes the answer the submitter chooses, so
 there is no fixed goal to close. The campaign is re-run rather than cited once,
 because a mathlib upgrade that made a target provable by `norm_num` is the only
 direction that matters.
 
-106 further candidates were **omitted**, each listed with its reason under its own
+105 further candidates were **omitted**, each listed with its reason under its own
 release in `benchmark.json.report.releases[].omitted` — `compile is failed or its
 evidence is stale/missing`, `dependencies is failed …`. They are named rather than
-dropped silently, so the gap between the 2051 obligations the releases considered and
-the 1945 published is accounted for. Two of them were published before: the
-obligations of Erdős problem 1057, withdrawn on 2026-10-08 when Mathlib's new
-`Nat.IsCarmichael` made upstream's `IsCarmichael` ambiguous under `open Nat`;
-`report.releases[].withdrawn` records them by identity and reason.
+dropped silently, so the gap between the 2076 obligations the releases considered and
+the 1971 published is accounted for. One of them was published before: the authored
+`ATateShafarevichFiniteness`, whose statement uses
+`Field.absoluteGaloisGroup.mapOfAlgebra`, which the Mathlib formal-conjectures pins
+does not have yet; `report.releases[].withdrawn` records it by identity and reason.
+The two obligations of Erdős problem 1057, withdrawn on 2026-10-08 when Mathlib
+`d13f23b7`'s `Nat.IsCarmichael` made upstream's `IsCarmichael` ambiguous under
+`open Nat`, are published again: the Mathlib they are now checked on has no
+`Nat.IsCarmichael`.
 
 ## What is in it
 
 | | |
 |---|---|
-| problems | 1256 |
-| obligations | 1945 |
-| obligations per problem | 786 problems have 1, 372 have 2, 98 have 3–10 |
-| track | 993 open, 952 solved |
-| shape | 791 `proof`, 384 `decide`, 373 `prove`, 373 `refute`, 24 `value` — see below |
-| sources | [formal-conjectures](https://github.com/google-deepmind/formal-conjectures) at `e04cc601840dd7a37f89b821a67f3a9e3c38d9c3`; [openai/math](https://github.com/openai/math) at `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb` |
+| problems | 1275 |
+| obligations | 1971 |
+| obligations per problem | 798 problems have 1, 379 have 2, 98 have 3–10 |
+| track | 1019 open, 952 solved |
+| shape | 805 `proof`, 384 `decide`, 379 `prove`, 379 `refute`, 24 `value` — see below |
+| sources | [formal-conjectures](https://github.com/google-deepmind/formal-conjectures) at `e04cc601840dd7a37f89b821a67f3a9e3c38d9c3`; [openai/math](https://github.com/openai/math) at `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`; mathdb-lean (statements written in this library) at `b80da422c1869ddababb2992c7dc83556e0f930c` |
 
 `track` describes the **statement that was formalized**, not necessarily the
 problem as posed — see below, where a cross-check against MathDB's own catalog
-disagrees for 63 of the problems both catalogues carry a status for. `source_has_lean_proof`, in each module's metadata, is a
+disagrees for 44 of the problems both catalogues carry a status for. `source_has_lean_proof`, in each module's metadata, is a
 different claim again: false for almost every formal-conjectures problem, because
 that corpus is a statement repository, and true for every `openai-math` obligation,
 whose upstream publishes a proof its comparator accepted against the same statement.
 
-The 374 `prove` and 374 `refute` modules are **374 complete pairs**: the two
+The 379 `prove` and 379 `refute` modules are **379 complete pairs**: the two
 directions of one open question, either of which settles it. A pair always sits in
 one folder, because half a pair tells a solver which direction is true. `verify.py`
 refuses a split pair.
@@ -161,9 +189,9 @@ An obligation's `shape` is not a difficulty label. It fixes the **arity of
 
 | shape | `Problem.Target` | submitter supplies | count | open / solved | frozen gold |
 |---|---|---|---|---|---|
-| `proof` | `Target : Prop` | a proof | 394 | 225 / 169 | — |
-| `prove` | `Target : Prop` | a proof | 374 | 373 / 1 | — |
-| `refute` | `Target : Prop` | a proof | 374 | 373 / 1 | — |
+| `proof` | `Target : Prop` | a proof | 805 | 239 / 566 | — |
+| `prove` | `Target : Prop` | a proof | 379 | 378 / 1 | — |
+| `refute` | `Target : Prop` | a proof | 379 | 378 / 1 | — |
 | `decide` | `Target (verdict : Prop) : Prop` | a verdict **and** a proof | 384 | 0 / 384 | all 384 |
 | `value` | `Target (value : τ) : Prop` | a value **and** a proof | 24 | 24 / 0 | — |
 
@@ -190,10 +218,10 @@ about the answer they chose, not about a proposition anyone handed them.
 `prove` and `refute` are all `Target : Prop` — identical in Lean. What differs is
 how a question was cut into obligations: `proof` is one obligation, while `prove`
 and `refute` are two halves of one question, the second being `¬ ( … )` around the
-same body. So 374 `prove` plus 374 `refute` is **374 questions, not 748** — and a
+same body. So 379 `prove` plus 379 `refute` is **379 questions, not 758** — and a
 solver picks whichever direction they believe. `proof` is the case where the setter
-took the direction as known, which is why 169 of its 394 are `solved` while 373 of
-the 374 pairs are open.
+took the direction as known, which is why 566 of its 805 are `solved` while 378 of
+the 379 pairs are open.
 
 For the two that take an answer, what differs is whether the answer exists to be
 checked against. `decide`'s hole is a `Prop` with two useful values and the answer
@@ -208,18 +236,18 @@ statement of the object they produced.
 abbrev Target : Prop := …
 ```
 
-The plain case: one proposition, prove it. 169 of the 394 are `solved` in the
-literature, so a proof exists somewhere; 225 are open.
+The plain case: one proposition, prove it. 566 of the 805 are `solved` in the
+literature, so a proof exists somewhere; 239 are open.
 
 ### `prove` / `refute` — the two directions of one open question
 
-Published as **374 complete pairs**, both members in the same folder. The pair
+Published as **379 complete pairs**, both members in the same folder. The pair
 shares a `pair_id`; `prove` states the conjecture and `refute` states its
 negation, built as `¬ ( … )` around the same body. Settling either settles the
 problem, so a solver may attack whichever side they believe.
 
 This is why a pair is never split: seeing only the `prove` side of a question
-tells you the setter believed it was provable. 373 of the 374 pairs are open. The
+tells you the setter believed it was provable. 378 of the 379 pairs are open. The
 one exception is Erdős problem 1119 (`problems/formal-conjectures/391543`), which the source marks `research solved` with
 `source_has_lean_proof: false` — settled in the literature, not in Lean, and
 published as a pair because nothing here knows which direction the literature
@@ -274,14 +302,14 @@ the result.
 `formal-conjectures`'s `source_category`, and the thing that category describes is
 **the statement formalized from the problem** — which is not always the problem.
 
-Cross-checked against MathDB's own catalogue on the **697 problems where both
-carry a status**: the two agree on **625** and disagree on **63**.
+Cross-checked against MathDB's own catalogue on the **497 problems whose MathDB
+status this release records**: the two agree on **445** and disagree on **44**.
 
 | MathDB says | this library says | count |
 |---|---|---|
-| `open` | `solved` | 52 |
-| `claimed_progress` | `solved` | 7 |
-| `claimed_solved` | `open` | 4 |
+| `open` | `solved` | 36 |
+| `claimed_progress` | `solved` | 5 |
+| `claimed_solved` | `open` | 3 |
 
 Sampling the first direction, the cause is the same each time. `problems/formal-conjectures/1` is
 MathDB's *Maximum size of sets with distinct subset sums*, recorded open; the
@@ -290,7 +318,7 @@ sum-distinct sets for which N / 2^n tends to zero."* Both are right about
 different things: what was formalized is the sharpened claim `N ≫ 2^n`, and that
 is false, while the Erdős problem — the asymptotics of `f(n)` — is open.
 
-A further **9** have obligations that disagree among themselves, which a single
+A further **8** have obligations that disagree among themselves, which a single
 status per problem cannot express and this one can: Erdős problem 12 has parts i
 and ii settled and part iii open.
 
@@ -301,11 +329,11 @@ entries. The comparison now lives in the library as `tools/track_review.py`,
 which states its rule — MathDB `open` and `claimed_progress` mean nobody has
 settled it; `solved`, `refuted` and `claimed_solved` mean somebody has;
 `claimed_solved` is reported apart because MathDB distinguishing it from `solved`
-is MathDB saying the claim is not accepted yet — and emits the 63 as a queue with
+is MathDB saying the claim is not accepted yet — and emits the 44 as a queue with
 each problem's folder and MathDB link.
 
 So: do not read `track` as "mathematics has settled this", and do not average a
-figure over `open` versus `solved` without saying which 63 you are standing on.
+figure over `open` versus `solved` without saying which 44 you are standing on.
 They are waiting on human review, which is the only thing that can decide which
 label belongs where. `source_has_lean_proof` is the separate, almost always false,
 claim that the upstream corpus holds a machine-checked proof.
@@ -334,12 +362,12 @@ E1022  "… This is false, and c_t < 2 for all t: a counterexample is provided b
 E1000  "… This was solved by Haight [Ha] who proved that such a sequence does exist"
 ```
 
-Across the 1104 Erdős obligations, **372 proses carry a literature citation** such
-as `[Wo13b]` (326 of them on `solved` problems) and **all 1104** carry an
+Across the 1106 Erdős obligations, **374 proses carry a literature citation** such
+as `[Wo13b]` (326 of them on `solved` problems) and **all 1106** carry an
 `erdosproblems.com` URL in `- notes:`. The other collections carry whatever
 reference their own source declares, in the same field.
 
-None of that is removable in any meaningful sense: 952 of the 1945 obligations are
+None of that is removable in any meaningful sense: 952 of the 1971 obligations are
 on problems mathematics has already settled, so their answers and often their
 proofs are in the literature whatever this repository prints. Stripping the prose
 would hide a pointer, not the fact.
@@ -352,7 +380,7 @@ success, which is the thing the kernel decides.
 
 ### Nothing here has been read by a person
 
-All 1945 are `reviewed_by_a_person = false`. The machine checks above passed; no
+All 1971 are `reviewed_by_a_person = false`. The machine checks above passed; no
 human has confirmed that the Lean states the mathematics the source poses. So a
 faithfulness error in any individual problem is possible — finding one is useful —
 and a score computed over these is a score over propositions nobody has read. Say
@@ -361,7 +389,7 @@ so when you report one.
 One name misleads and is worth knowing about: each release's `release_id` ends in
 `-reviewed` — `erdos-reviewed`, `oeis-reviewed` — which is the name of the
 *admission policy*, not a claim of review. Each release record says as much in its
-own `note` — `1104 of 1104 have not been read by a person yet` — and the names are
+own `note` — `1106 of 1106 have not been read by a person yet` — and the names are
 kept as published rather than corrected after the fact, because the record is the
 record.
 
@@ -382,7 +410,7 @@ record.
   subset that splits a pair measures something easier than the benchmark does.
   `verify.py` refuses a split pair.
 - **`open` and `solved` are not difficulty.** They say whether mathematics has
-  settled the problem. 995 obligations are open and 555 solved, and a number
+  settled the problem. 1019 obligations are open and 952 solved, and a number
   averaged over both says little: the solved ones have a proof in the literature
   that a model may have read, the open ones have none that anyone has.
 - **`track` is not `source_has_lean_proof`.** The latter is almost always false:
@@ -436,7 +464,7 @@ release_id = "erdos-reviewed"
 released_at = "…"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible",
-                   "Mathlib", "MathDBMathlib", "MathDBUtil"]
+                   "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "E1002_prove"
@@ -448,8 +476,8 @@ pair_id = "E1002"
 declaration = "erdos_1002"
 statement_id = "…"
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
   [task.evidence]
   target_hash = "…"
   conversion_hash = "…"
@@ -458,81 +486,87 @@ statement_id = "…"
 ```
 
 `mathdb_number` appears only where MathDB has a record of the problem, which is
-why 703 of the 1256 files carry it; `pair_id` only on the two halves of a pair,
+why 1027 of the 1275 files carry it; `pair_id` only on the two halves of a pair,
 `gold_arguments` only on the 384 `decide` obligations, and `part` only where the
 question was cut into parts.
 
-The environment pin sits **inside each task**, not once at the root. Today all
-1945 share one Lean and one mathlib revision; an obligation re-verified later
-against a different one records that in its own entry, and nothing about the other
-problems changes.
+The environment pin sits **inside each task**, not once at the root. Today every
+obligation of a source shares that source's Lean and mathlib revision — the 1574 of
+`formal-conjectures` and `mathdb-lean` one, the 397 of `openai-math` another; an
+obligation re-verified later against a different one records that in its own entry,
+and nothing about the other problems changes.
 
 ## Layout
 
 ```
-problems/<source>/<folder>/   one directory per source; inside, one folder per problem: its modules and problem.toml
-FormalConjectures/            upstream's whole statement corpus, mirrored
+problems/<source>/<folder>/   one folder per problem: its modules and problem.toml
+problems/<source>/lakefile.toml, lean-toolchain, lake-manifest.json
+                              the source's Lean project: the environment its upstream pins
 openai-math/                  the openai/math manuscript catalogue (MANUSCRIPTS.md, manuscripts.json)
-lakefile.toml                 the pinned Lean project: this root IS the project
-lean-toolchain
-lake-manifest.json
-MathDBUtil*                   the statement-support library every module imports
-MathDBMathlib*                vendored Mathlib additions it was written against
 benchmark.json                the release record
 verify.py                     checks this repository against that record
 ```
 
-Five things: the problems, the corpus they were selected from, the project to
-compile them against, the record of what was released, and the checker for it.
+Four things: the problems, the projects to compile them against, the record of
+what was released, and the checker for it.
 
-### `FormalConjectures/` is the source, not the benchmark
+### One Lean project per source
+
+A source is checked in the environment its own upstream pins, because two
+upstreams pin two different Mathlibs and one project cannot match both.
+`benchmark.json` states each source's toolchain and policy under
+`environments.<source>`, and the source directory carries the project.
+
+`problems/formal-conjectures/lakefile.toml` **requires
+[formal-conjectures](https://github.com/google-deepmind/formal-conjectures) at the
+commit its problems were taken from, unmodified**, and does not require Mathlib
+itself: Mathlib, and everything it pulls in, is inherited from upstream's own
+manifest, and `lean-toolchain` is upstream's. The support libraries every module
+imports — `FormalConjecturesUtil`, and `FormalConjecturesForMathlib` through it —
+are upstream's files, fetched by Lake under upstream's names. This repository
+carries no copy of them. `problems/mathdb-lean/` is the same environment, because
+statements written in the library import the same support library.
+
+`problems/openai-math/lakefile.toml` requires Mathlib alone, at the revision
+openai/math pins: a comparator judge needs a challenge and its solution in one
+environment, and openai/math wrote its challenges in that one.
 
 Every published obligation records where it came from, as
-`- source_locator: FormalConjectures/ErdosProblems/1002.lean#erdos_1002`. That
-path is a path in this repository: upstream's complete corpus is mirrored here at
-the pinned revision, 1,416 modules, so provenance can be followed without a second
-checkout. An `openai-math` locator is a path in openai/math at the recorded
-revision; that corpus is not mirrored here, and the catalogue under
+`- source_locator: FormalConjectures/ErdosProblems/1002.lean#erdos_1002`. For
+`formal-conjectures` that is a path in upstream at the recorded revision — on
+GitHub, `https://github.com/google-deepmind/formal-conjectures/blob/<revision>/<path>`,
+and, once `lake` has fetched the project, the same file under
+`problems/formal-conjectures/.lake/packages/formal_conjectures/`. An `openai-math`
+locator is a path in openai/math at the recorded revision; the catalogue under
 `openai-math/` links into it.
 
-One thing is changed, on import lines only: `FormalConjecturesUtil` becomes
-`MathDBUtil`, the same library under the name this project carries it as. The
-string occurs 1,418 times upstream and all 1,418 are imports, so the edit is one
-token. Internal `FormalConjectures.*` imports are untouched, which is why the
-directory keeps upstream's name — the module paths are upstream's, so a
-`source_locator` resolves literally. `FormalConjectures/MIRROR.json` records the
-revision, the file count, that substitution and a digest over the tree, and
-`python verify.py` recomputes the digest.
+The formal-conjectures package also holds upstream's statement corpus,
+`FormalConjectures`, which is mostly `sorry`. No policy admits it: each
+`allowed_imports` names `FormalConjecturesUtil` and `FormalConjecturesForMathlib`
+only, and the axiom audit refuses `sorryAx` regardless.
 
-**Nothing in it is benchmark content.** No `problem.toml`, no target hash, no
-recorded evidence, and no profile admits any of it; most of it carries `sorry`,
-because upstream is a statement repository and says so. It is declared as a
-library so it can be built on purpose — `lake build FormalConjectures` — and is
-deliberately not a default target, so `lake build` stays what a grader runs.
-
-The modules are deliberately **not** a `lean_lib` in `lakefile.toml`. They are the
-benchmark: each is elaborated on its own, against the built project, never as part
-of it. Neither library's glob reaches `problems/` — `MathDBUtil` and `MathDBMathlib`
-are each rooted at their own name — so `lake build` builds the project and never
-the benchmark. That is the property to preserve if you edit the lakefile.
+The problem modules are deliberately **not** a `lean_lib`. They are the benchmark:
+each is elaborated on its own, against the built project, never as part of it.
+The `lakefile.toml`s are generated and declare no library of their own; keep it
+that way if you edit one.
 
 ## Using it
 
 ```sh
-lake exe cache get      # mathlib binaries, optional but much faster
-lake build              # builds MathDBUtil and MathDBMathlib
-python verify.py        # every module still hashes to what the release recorded
+cd problems/formal-conjectures        # or problems/mathdb-lean, problems/openai-math
+lake exe cache get                    # mathlib binaries, optional but much faster
+lake build FormalConjecturesUtil      # `lake build Mathlib` for problems/openai-math
+cd ../.. && python verify.py          # every module still hashes to what the release recorded
 ```
 
-`lake` writes its output to `.lake/`, which is git-ignored — several gigabytes of
-it once mathlib is cached.
+`lake` writes its output to `.lake/` inside the source directory, which is
+git-ignored — several gigabytes of it once mathlib is cached.
 
-Then point a grader's `project_dir` at this root and its problem directory at one
-source directory, `problems/formal-conjectures/` or `problems/openai-math/`; the
-two carry different import headers and are graded as separate problem sets. A
-submission replaces the `sorry` in a copy of one module; the grader
-elaborates the result and compares what `Problem.Target` denotes against that
-task's `semantic_anchor`.
+Then point a grader's `project_dir` and its problem directory at the same source
+directory; the three carry different import headers and environments and are
+graded as separate problem sets. A submission is an obligation's
+`<id>/Challenge.lean` with its `sorry`s filled in, and the grader elaborates it
+against that project.
 
 A grader that expects all problems flat in one directory needs to walk folders
 instead — `glob("problems/<source>/*/*.lean")` rather than `glob("*.lean")`. The file stem
@@ -545,35 +579,36 @@ correct (`ftp-eval check-proof`; each obligation's `<id>/Challenge.lean` is the
 file to fill in)? And is this formalization faithful to its prose
 (`ftp-eval check-statement`: an LLM judge against the problem's `prose`, plus
 prover probes for whether the statement elaborates and is not vacuous)? Both run
-on the command line or behind `ftp-eval serve` over HTTP; the
+on the command line or behind `ftp-eval serve` over HTTP, one server per source
+directory and its project; the
 [check API](https://github.com/mathdb-lean/formal-theorem-proving-eval-api/blob/main/docs/api.md)
 documents them.
 
 ## MathDB handles
 
 `benchmark.json` carries MathDB's numeric handle and row UUID for every problem
-MathDB has a record of, matched by Erdős source identity using read-only database
-queries. Each such obligation and `problem.toml` carries the same `mathdb_number` as
-its folder. The existing
-`mathdb.by_mathdb_number` index maps that number back to the source identity.
+MathDB has a record of, matched by production problem identity — the Erdős number,
+or the problem id the source publishes for the other collections — using read-only
+production queries. Each such obligation and `problem.toml` carries the same
+`mathdb_number` as its folder. The existing `mathdb.by_mathdb_number` index maps
+that number back to the source identity.
 
 | state | count | |
 |---|---|---|
-| `resolved` | **704** | of the 704 Erdős problems |
-| `not_an_erdos_problem` | 323 | the other eleven collections |
+| `resolved` | **1027** | all 704 Erdős problems, and 323 from the other formal-conjectures collections |
+| `not_an_erdos_problem` | 248 | the 230 `openai-math` families and 9 `mathdb-lean` problems, which the lookup does not cover, and the 9 formal-conjectures problems no lookup has been run for yet |
 
 MathDB's numbers differ between production and dev. `state = "resolved"` identifies
 a production record; each entry includes its actual `mathdb_url`. **The MathDB
 number is not the Erdős number.**
 
-The 323 problems in the other collections have no entry to resolve: the lookup pairs
-the two catalogues by the Erdős problem number, and they have none. That is kept as
-its own state rather than recorded as an absence, because "MathDB does not have
-this" and "this was never a question MathDB could be asked" are different facts —
+The states are kept apart rather than recorded as an absence, because "MathDB does
+not have this" and "this was never a question MathDB was asked" are different facts —
 and so is "the lookup never got an answer", which is why recording rate-limited
 requests as absences once turned 311 problems MathDB does have into problems it does
-not. Probing MathDB directly for `oeis:100434`, `oeis:A100434`, `A100434`,
-`green:1`, `kourovka:1_40` and `wotw:1` returns 404 for every spelling.
+not. Erdős problem 1057's entry was dropped when its obligations were withdrawn on
+2026-10-08 and is restated, with `restated_from` naming the manifest it was recorded
+in, from the release published before that; no new lookup was made for it.
 
 Seven formerly provisional mappings now use their assigned production numbers:
 
@@ -594,7 +629,9 @@ fingerprint is recomputed after the metadata amendment; statement hashes are unc
 
 `python verify.py` does all of it, and exits non-zero on any mismatch:
 
-- every module hashes to the `target_hash` its own release recorded (1945 of 1945);
+- every module hashes to the `target_hash` its own release recorded (1971 of 1971);
+- every source directory's Lean project pins the toolchain and mathlib revision
+  its `environments` entry states;
 - every `problem.toml` release field agrees with `benchmark.json`, including the folder's `mathdb_number`;
 - every released obligation appears in exactly one folder, and no folder holds a
   module the release does not list;
@@ -605,21 +642,23 @@ fingerprint is recomputed after the metadata amendment; statement hashes are unc
 
 The environment is pinned by content too:
 `report.releases[].release.environment_hash` is derived from the toolchain, the
-mathlib revision, and a hash over `MathDBUtil*` and `MathDBMathlib*` — all three
-are in this repository, so the pin is reconstructible here, and it reproduces the
-value the releases recorded: `project_hash` is computed from the sources' content
-relative to the project, not from where the project sits.
+mathlib revision, the Lake version and the source's `project_hash`, a digest over
+the packages its `lake-manifest.json` pins (name, URL, commit) and its Lean
+options. All of it is in `problems/<source>/`, so the pin is reconstructible here,
+and a fork of an upstream is a different environment from the upstream even at the
+same commit. `verify.py` checks that each source directory's `lean-toolchain` and
+mathlib revision are the ones `environments.<source>` states.
 
 ## Provenance and license
 
 Apache 2.0 — see `LICENSE`. `NOTICE` states what was taken from formal-conjectures
 and from openai/math and how each was changed, as Apache 2.0 section 4(b)
-requires: `MathDBUtil*` and `MathDBMathlib*` are its `FormalConjecturesUtil/` and
-`FormalConjecturesForMathlib/`, renamed and, in twelve `MathDBMathlib` files,
-edited to build on Lean `v4.34.1` / Mathlib `d13f23b7`; the `openai-math` modules
-are OpenAI's challenge files with each sorried theorem restated as a definition
-and a `Problem.Target` added. Upstream's author list is carried over unchanged;
-the Lean pins are this project's.
+requires. formal-conjectures' support libraries are not in this repository at all:
+the projects require them from upstream, unmodified. Until 2026-10-28 this
+repository carried a renamed copy of them, twelve files of it edited to build on
+Lean `v4.34.1`, and a mirror of upstream's statement corpus; both are in its
+history. The `openai-math` modules are OpenAI's challenge files with each sorried
+theorem restated as a definition and a `Problem.Target` added.
 
 This repository holds **releases**. The library that produces them — the records,
 the conversion and review evidence, the per-problem history — is maintained

@@ -22,9 +22,9 @@ file = "FormalConjectures/Wikipedia/TwinPrimes.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-10T15:08:12+00:00"
+released_at = "2026-10-29T06:33:54+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "MathDBMathlib", "MathDBUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
 
 [[task]]
 id = "NTwinPrimes_twin_primes_prove"
@@ -38,11 +38,11 @@ declaration = "twin_primes"
 statement_id = "e369f3c1-9a4c-4fea-8e0a-99c7899307e8"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "4f63a7321bee4682"
+  target_hash = "dd678b870da3cd72"
   conversion_hash = "73c71440dc21e4fc1a758f04c26cb39cf14c1bec13b5c544609e92d7aaaf486f"
   semantic_anchor = "5119c4a24a5a0bac7c5c189bf6b0f18eb67542bd2d0cf7f51ffa3c994023f23f"
   reviewed_by_a_person = false
@@ -59,11 +59,11 @@ declaration = "twin_primes"
 statement_id = "e369f3c1-9a4c-4fea-8e0a-99c7899307e8"
 
   [task.environment]
-  lean = "leanprover/lean4:v4.34.1"
-  mathlib_rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "6caef41d7e107a16"
+  target_hash = "4fbef1bbdb8d97c7"
   conversion_hash = "8bc595b25c7b083a53c2a81dfa36e6342e6f6e9a8ab6204e9427938aa2814f9c"
   semantic_anchor = "afcede129e599143250ffdd9c9e06229911f454c7725b643ddc22542f5eeed9f"
   reviewed_by_a_person = false
