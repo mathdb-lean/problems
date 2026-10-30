@@ -21,7 +21,7 @@ module is the artifact, and an edited problem must be visible even when every
 sidecar still agrees with itself.
 
     python verify.py                 # every problem
-    python verify.py 1 391594 wikipedia-collatzconjecture
+    python verify.py 1 391594 315817
 
 Exit status is 0 only if every check passed. Needs Python 3.11+ for tomllib.
 """
@@ -29,87 +29,32 @@ from __future__ import annotations
 
 import hashlib
 import json
-import re
 import sys
 import tomllib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 PROBLEMS = ROOT / "problems"
-MIRROR = ROOT / "FormalConjectures"
 
 
-def check_mirror(faults: list[str]) -> int:
-    """The mirrored upstream corpus against the manifest it ships with.
+def check_project(environment: dict, faults: list[str]) -> int:
+    """The root Lean project against the environment the manifest states.
 
-    `FormalConjectures/` is upstream's whole statement corpus, carried so that
-    every published obligation's `source_locator` resolves inside this
-    repository. It is not the benchmark: nothing in it has a `problem.toml`, a
-    target hash or any recorded evidence.
-
-    What has to be checkable is that it is still *upstream's*, minus the one
-    change `MIRROR.json` declares. So the digest is recomputed over the whole
-    tree -- every relative path and the hash of its bytes -- and every file is
-    checked for the import the mirror is supposed to have rewritten. Without
-    this the directory would be 8 MB that nothing in the repository attests to,
-    and an edit to a statement in it would be invisible.
+    Every problem compiles against this one project: formal-conjectures required
+    unmodified, with the Lean and Mathlib it pins. The manifest records the toolchain
+    every task was checked against; a project that pins something else would compile
+    the problems somewhere they were never checked.
     """
-    if not MIRROR.is_dir():
-        return 0
-    manifest = MIRROR / "MIRROR.json"
-    if not manifest.is_file():
-        faults.append("FormalConjectures/ has no MIRROR.json saying what it is")
-        return 0
-    held = json.loads(manifest.read_text(encoding="utf-8"))
-
-    digest_of = hashlib.sha256()
-    counted = 0
-    for path in sorted(MIRROR.rglob("*")):
-        if not path.is_file() or path == manifest:
-            continue
-        rel = path.relative_to(MIRROR).as_posix()
-        body = path.read_bytes()
-        digest_of.update(rel.encode("utf-8") + b"\0")
-        digest_of.update(hashlib.sha256(body).hexdigest().encode("ascii") + b"\0")
-        counted += 1
-    if counted != held.get("files"):
-        faults.append("FormalConjectures/ holds %d files, MIRROR.json says %r"
-                      % (counted, held.get("files")))
-    if digest_of.hexdigest() != held.get("tree_digest"):
-        faults.append("FormalConjectures/ hashes to %s, MIRROR.json says %s"
-                      % (digest_of.hexdigest()[:16], str(held.get("tree_digest"))[:16]))
-
-    # The declared rewrite, checked in both directions: the new name is present
-    # and the old one is gone. A mirror that still imported upstream's library
-    # name would not build here, and one that mentions it anywhere is no longer
-    # the single change MIRROR.json claims.
-    for change in held.get("changes") or []:
-        old, new = change.get("from"), change.get("to")
-        if not old or not new:
-            continue
-        stale = rewritten = 0
-        for path in sorted(MIRROR.rglob("*.lean")):
-            text = path.read_text(encoding="utf-8")
-            if old in text:
-                stale += 1
-            if new in text:
-                rewritten += 1
-        if stale:
-            faults.append("%d mirrored file(s) still name %s, which this project "
-                          "does not carry" % (stale, old))
-        if rewritten != change.get("files"):
-            faults.append("%d mirrored file(s) import %s, MIRROR.json says %r"
-                          % (rewritten, new, change.get("files")))
-    return counted
-
-
-def slug(problem_id: str) -> str:
-    """`wikipedia:CollatzConjecture` -> `wikipedia-collatzconjecture`.
-
-    The folder name for a problem MathDB has no number for. A colon is not a
-    path character on Windows, and this repository has to clone there.
-    """
-    return re.sub(r"[^A-Za-z0-9]+", "-", problem_id).strip("-").lower()
+    toolchain = environment.get("toolchain") or {}
+    pinned = (ROOT / "lean-toolchain").read_text(encoding="utf-8").strip()
+    if pinned != toolchain.get("lean"):
+        faults.append("lean-toolchain is %s, the manifest says %r" % (pinned, toolchain.get("lean")))
+    packages = json.loads((ROOT / "lake-manifest.json").read_text(encoding="utf-8"))["packages"]
+    mathlib = next((p.get("rev") for p in packages if p.get("name") == "mathlib"), None)
+    if mathlib != toolchain.get("mathlib_rev"):
+        faults.append("lake-manifest.json pins mathlib %r, the manifest says %r"
+                      % (mathlib, toolchain.get("mathlib_rev")))
+    return 1
 
 
 def digest(text: str) -> str:
@@ -117,7 +62,7 @@ def digest(text: str) -> str:
 
 
 def label(folder: Path) -> str:
-    """`formal-conjectures/391455`: how a problem folder is named in a fault."""
+    """`391455`: how a problem folder is named in a fault."""
     return folder.relative_to(PROBLEMS).as_posix()
 
 
@@ -126,17 +71,12 @@ def main(argv: list[str]) -> int:
     released = manifest["problems"]
     recorded = manifest["report"]["tasks"]
     under_review = set(manifest.get("under_review") or ())
-    toolchain = manifest["toolchain"]
+    environment = manifest["environment"]
+    toolchain = environment.get("toolchain") or {}
 
     faults: list[str] = []
-    # `problems/<source>/<folder>/`: one directory per source, one folder per
-    # problem inside it. A problem folder directly under `problems/` is the layout
-    # published before 2026-10-09 and is a fault now, not a second place to look.
-    sources = sorted(p for p in PROBLEMS.iterdir() if p.is_dir())
-    for src in sources:
-        if (src / "problem.toml").is_file() or any(src.glob("*.lean")):
-            faults.append("problems/%s: a problem folder outside any source directory" % src.name)
-    folders = sorted(p for src in sources for p in src.iterdir() if p.is_dir())
+    # `problems/<MathDB number>/`: one folder per problem.
+    folders = sorted(p for p in PROBLEMS.iterdir() if p.is_dir() and not p.name.startswith("."))
     wanted = [PROBLEMS / name for name in argv] if argv else folders
 
     # Every released task must be reachable from exactly one folder, and no folder
@@ -165,26 +105,11 @@ def main(argv: list[str]) -> int:
             faults.append("%s: problem.toml does not parse (%s)" % (label(folder), error))
             continue
 
-        # A folder is addressed by MathDB's number when MathDB has one, and by the
-        # id its source gives the problem when it does not. Both are required to
-        # be exact; what is not required is that every collection have a MathDB
-        # number, because most of them are not Erdos problems and MathDB holds no
-        # record keyed to them. Minting a local number to fill the gap would make
-        # an address out of something nobody issued.
+        # A folder is addressed by the problem's MathDB number: https://mathdb.com/p/<number>.
         number = held.get("mathdb_number")
-        if number is None:
-            expected = slug(held.get("problem_id") or "")
-            if folder.name != expected:
-                faults.append("%s: no mathdb_number, so the folder must be %r"
-                              % (label(folder), expected))
-        elif type(number) is not int or number <= 0 or folder.name != str(number):
-            faults.append("%s: folder must match its positive mathdb_number, got %r"
+        if type(number) is not int or number <= 0 or folder.name != str(number):
+            faults.append("%s: the folder must be its positive mathdb_number, got %r"
                           % (label(folder), number))
-        # ... and it sits under the directory of the source that posed it.
-        source_name = (held.get("source") or {}).get("name") or ""
-        if folder.parent.name != source_name:
-            faults.append("%s: its source is %r, so it belongs under problems/%s/"
-                          % (label(folder), source_name, source_name))
 
         entries = held.get("task") or []
         modules = sorted(p.stem for p in folder.glob("*.lean"))
@@ -322,18 +247,15 @@ def main(argv: list[str]) -> int:
         faults.append("manifest_hash: computed %s, %s says %r"
                       % (manifest_hash, home, expected_hash))
 
-    mirrored = check_mirror(faults)
+    projects = check_project(environment, faults)
 
     for fault in faults[:40]:
         print("  %s" % fault)
     if len(faults) > 40:
         print("  ... and %d more" % (len(faults) - 40))
     print()
-    print("%d problem(s) checked, %d module(s), %d fault(s)"
-          % (len(wanted), len(seen), len(faults)))
-    if mirrored:
-        print("%d mirrored upstream file(s) checked against FormalConjectures/MIRROR.json"
-              % mirrored)
+    print("%d problem(s) checked, %d module(s), %d Lean project(s), %d fault(s)"
+          % (len(wanted), len(seen), projects, len(faults)))
     return 1 if faults else 0
 
 

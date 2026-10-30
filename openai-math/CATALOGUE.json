@@ -1,8 +1,0 @@
-{
- "source": "https://github.com/openai/math",
- "revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
- "manuscripts": 719,
- "formalized": 338,
- "manifest_sha256": "46fcba2001173b2a16a95548d7b32dab20a30c850b7bda7766daf7dd0ced5137",
- "generator": "tools/openai_catalogue.py"
-}
