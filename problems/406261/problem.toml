@@ -21,10 +21,10 @@ file = "FormalConjectures/WrittenOnTheWallII/GraphConjecture315.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "wotw-reviewed"
-released_at = "2026-10-29T06:33:59+00:00"
+release_id = "wotw"
+released_at = "2026-10-30T11:20:15+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "WGraphConjecture315_conjecture315"
@@ -35,6 +35,7 @@ shape = "proof"
 track = "solved"
 declaration = "conjecture315"
 statement_id = "8a974db1-d2ee-4a65-8f66-ebc68088c1ac"
+source_formal_proof = "https://github.com/mo271/formal-conjectures/blob/9ef80e1a3709ed3eda43d9ed6ff1087681621041/FormalConjectures/WrittenOnTheWallII/GraphConjecture315.lean#L43"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

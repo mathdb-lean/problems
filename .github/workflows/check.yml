@@ -19,8 +19,8 @@ jobs:
       - run: python verify.py
 
   compile:
-    # Every statement module elaborates against the project, split across shards so the
-    # 1574 modules finish in well under an hour.
+    # Every statement module elaborates against the project and rests on Lean's own
+    # axioms only, split across shards so the modules finish in well under an hour.
     runs-on: ubuntu-latest
     timeout-minutes: 180
     strategy:
@@ -42,16 +42,7 @@ jobs:
         run: |
           lake exe cache get
           lake build MathDBLib FormalConjecturesUtil FormalConjecturesForMathlib
-      - name: Compile this shard's statements
-        run: |
-          find problems -mindepth 2 -maxdepth 2 -name '*.lean' | sort \
-            | awk -v n=8 -v s=${{ matrix.shard }} 'NR % n == s' > shard.txt
-          echo "$(wc -l < shard.txt) modules"
-          failed=0
-          while read -r file; do
-            if ! lake env lean -DautoImplicit=false -DrelaxedAutoImplicit=false "$file" > out.txt 2>&1; then
-              echo "::error file=$file::does not compile"; cat out.txt; failed=$((failed + 1))
-            fi
-          done < shard.txt
-          echo "$failed failed"
-          test "$failed" -eq 0
+      - name: Compile this shard's statements and audit their axioms
+        # `lean` exits 0 on a `sorry`, so compiling alone would pass a statement that
+        # rests on one; check_statements.py also prints `Problem.Target`'s axioms.
+        run: python3 check_statements.py --shard ${{ matrix.shard }}/8

@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/263.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-30T11:19:18+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E263_parts_i_prove"
@@ -81,6 +81,7 @@ part = "ii"
 pair_id = "E263_parts_ii"
 declaration = "erdos_263.parts.ii"
 statement_id = "1717666c-bee0-4172-821a-c9bb908f6922"
+prose = "Must every irrationality sequence $a_n$ in the above sense satisfy $a_n^{1/n} \\to \\infty$ as $n \\to \\infty$? Note: this was answered **false** for the *pre-correction* statement, which did not require monotonicity — the counterexample sequence is not increasing. The problem was corrected on erdosproblems.com on 2026-04-02 to require increasing sequences; for the corrected statement this question is **open**. The earlier formal proof (for the pre-correction definition) is preserved at https://github.com/google-deepmind/formal-conjectures/blob/c8cf651906abe91051cf835d4232ad5648412113/FormalConjectures/ErdosProblems/263.lean#L298"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -103,6 +104,7 @@ part = "ii"
 pair_id = "E263_parts_ii"
 declaration = "erdos_263.parts.ii"
 statement_id = "1717666c-bee0-4172-821a-c9bb908f6922"
+prose = "Must every irrationality sequence $a_n$ in the above sense satisfy $a_n^{1/n} \\to \\infty$ as $n \\to \\infty$? Note: this was answered **false** for the *pre-correction* statement, which did not require monotonicity — the counterexample sequence is not increasing. The problem was corrected on erdosproblems.com on 2026-04-02 to require increasing sequences; for the corrected statement this question is **open**. The earlier formal proof (for the pre-correction definition) is preserved at https://github.com/google-deepmind/formal-conjectures/blob/c8cf651906abe91051cf835d4232ad5648412113/FormalConjectures/ErdosProblems/263.lean#L298"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

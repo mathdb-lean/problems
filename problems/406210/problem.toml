@@ -21,10 +21,10 @@ file = "FormalConjectures/OEIS/92243.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "oeis-reviewed"
-released_at = "2026-10-29T06:33:30+00:00"
+release_id = "oeis"
+released_at = "2026-10-30T11:19:51+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "O92243_conjecture1_prove"
@@ -78,6 +78,7 @@ track = "open"
 pair_id = "O92243_conjecture2"
 declaration = "conjecture2"
 statement_id = "c4b21115-adc0-47ec-9efa-31be3bfaab41"
+prose = "Is the score $a(n)$ bounded from below?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -99,6 +100,7 @@ track = "open"
 pair_id = "O92243_conjecture2"
 declaration = "conjecture2"
 statement_id = "c4b21115-adc0-47ec-9efa-31be3bfaab41"
+prose = "Is the score $a(n)$ bounded from below?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -120,6 +122,7 @@ track = "open"
 pair_id = "O92243_conjecture3"
 declaration = "conjecture3"
 statement_id = "e2c7ed63-769d-4ea9-8a9e-b472ef6f7f09"
+prose = "Is the score $a(n)$ bounded from above?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -141,6 +144,7 @@ track = "open"
 pair_id = "O92243_conjecture3"
 declaration = "conjecture3"
 statement_id = "e2c7ed63-769d-4ea9-8a9e-b472ef6f7f09"
+prose = "Is the score $a(n)$ bounded from above?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -162,6 +166,7 @@ track = "open"
 pair_id = "O92243_conjecture4"
 declaration = "conjecture4"
 statement_id = "b16c4140-706f-4658-98fa-b2d3227a84f9"
+prose = "Is the score $a(n) > 0$ for infinitely many values of $n$?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -183,6 +188,7 @@ track = "open"
 pair_id = "O92243_conjecture4"
 declaration = "conjecture4"
 statement_id = "b16c4140-706f-4658-98fa-b2d3227a84f9"
+prose = "Is the score $a(n) > 0$ for infinitely many values of $n$?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -204,6 +210,7 @@ track = "open"
 pair_id = "O92243_conjecture5"
 declaration = "conjecture5"
 statement_id = "60f94073-2aa6-4c39-8200-6e4ee3bd05cc"
+prose = "Is the score $a(n) < 0$ for infinitely many values of $n$?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -225,6 +232,7 @@ track = "open"
 pair_id = "O92243_conjecture5"
 declaration = "conjecture5"
 statement_id = "60f94073-2aa6-4c39-8200-6e4ee3bd05cc"
+prose = "Is the score $a(n) < 0$ for infinitely many values of $n$?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

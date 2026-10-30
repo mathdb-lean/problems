@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/318.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-30T11:19:18+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E318_parts_i"
@@ -58,6 +58,7 @@ track = "solved"
 part = "ii"
 declaration = "erdos_318.parts.ii"
 statement_id = "78254602-6016-40ae-9407-7e6f913e2701"
+prose = "Does the set of squares excluding 1 have property `P₁`? Larsen [La26] proved that this set does have property `P₁`."
 gold_arguments = ["True"]
 
   [task.environment]

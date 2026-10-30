@@ -21,10 +21,10 @@ file = "FormalConjectures/WrittenOnTheWallII/GraphConjecture146.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "wotw-reviewed"
-released_at = "2026-10-29T06:33:59+00:00"
+release_id = "wotw"
+released_at = "2026-10-30T11:20:15+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "WGraphConjecture146_conjecture146"
@@ -35,6 +35,7 @@ shape = "proof"
 track = "solved"
 declaration = "conjecture146"
 statement_id = "eaa52a0d-b6eb-41d1-8223-3ca8fe4b28db"
+source_formal_proof = "https://github.com/akakabrian/WOW-146/blob/f9e0ad75d829170804ce1d8f9fd4c1d4a0085203/WOW146/Conjecture146.lean"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

@@ -21,10 +21,10 @@ file = "FormalConjectures/OEIS/237271.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "oeis-reviewed"
-released_at = "2026-10-29T06:33:30+00:00"
+release_id = "oeis"
+released_at = "2026-10-30T11:19:51+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "O237271_conjecture_1"
@@ -55,6 +55,8 @@ shape = "proof"
 track = "solved"
 declaration = "conjecture_2"
 statement_id = "a99a9c0f-0142-4b6d-89e8-0f7824b30326"
+prose = "Conjecture 2: \"a(n) is the number of 2-dense sublists of divisors of n. We call '2-dense sublists of divisors of n' to the maximal sublists of divisors of n whose terms increase by a factor of at most 2.\" - _Omar E. Pol_, Jul 31 2025 A formal proof has been found with the methods described in [arxiv/2605.22763](https://arxiv.org/abs/2605.22763)."
+source_formal_proof = "https://github.com/mo271/formal-conjectures/blob/a32396489dcb8f86c3549b93aa358ac6a10a3a1f/FormalConjectures/OEIS/237271.wip.lean#L102"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -75,6 +77,7 @@ shape = "proof"
 track = "solved"
 declaration = "conjecture_3"
 statement_id = "e81dc8bc-e012-469d-8364-d10ae39e975a"
+prose = "Conjecture 3: \"a(n) is the number of divisors p of n such that p is greater than twice the adjacent previous divisor of n. The divisors p give the n-th row of A379288.\" - _Omar E. Pol_, Aug 02 2025 Note: this is equivalent to `a_eq_num2DenseSublists` (Conjecture 2), since the divisors that start a new 2-dense sublist are exactly those greater than twice their predecessor (plus the smallest divisor)."
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -95,6 +98,8 @@ shape = "proof"
 track = "solved"
 declaration = "conjecture_4"
 statement_id = "861794a2-b51e-46b6-8163-e9f26ec5dab1"
+prose = "Conjecture 4: \"a(A000290(n)) is odd.\" - _Omar E. Pol_, Oct 21 2025 That is, the number of parts in the symmetric representation of $\\sigma(n^2)$ is always odd."
+source_formal_proof = "https://github.com/KitaKen1/oeis-a237271-square-hexagonal-parity/blob/430c09114d4ad3a3a2654b9816c8bfdc3cdf38de/lean/OeisA237271ParityFC.lean#L19-L24"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -115,6 +120,8 @@ shape = "proof"
 track = "solved"
 declaration = "conjecture_5"
 statement_id = "3defbf10-3120-43e0-a8a0-445cda2ee27e"
+prose = "Conjecture 5: \"a(A000384(n)) is odd.\" - _Omar E. Pol_, Oct 21 2025 That is, the number of parts in the symmetric representation of $\\sigma(n(2n-1))$ is always odd, where $n(2n-1)$ is the $n$-th hexagonal number."
+source_formal_proof = "https://github.com/KitaKen1/oeis-a237271-square-hexagonal-parity/blob/430c09114d4ad3a3a2654b9816c8bfdc3cdf38de/lean/OeisA237271ParityFC.lean#L26-L32"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

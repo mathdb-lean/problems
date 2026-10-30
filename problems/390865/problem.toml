@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/308.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-30T11:19:18+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E308_parts_i"
@@ -36,6 +36,7 @@ track = "solved"
 part = "i"
 declaration = "erdos_308.parts.i"
 statement_id = "91579180-d5bc-4542-962c-15989dea7340"
+source_formal_proof = "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos308.lean#L458"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -58,7 +59,9 @@ track = "solved"
 part = "ii"
 declaration = "erdos_308.parts.ii"
 statement_id = "eefe3617-0139-4b1e-8460-96d63a42f953"
+prose = "Let $N\\geq 1$. Is it true that the set of integers representable as the sum of distinct unit fractions with denominators from $\\{1,\\ldots,N\\}$ has the shape $\\{1,\\ldots,m\\}$ for some $m$? It follows from Croot's bounds [Cr99] that this holds for all sufficiently large $N$."
 gold_arguments = ["True"]
+source_formal_proof = "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos308.lean#L458"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

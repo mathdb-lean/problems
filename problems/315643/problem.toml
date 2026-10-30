@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/394.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-30T11:19:18+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E394_parts_i"
@@ -38,6 +38,7 @@ part = "i"
 declaration = "erdos_394.parts.i"
 statement_id = "18549e20-5468-42d0-828e-785bfd0b485d"
 gold_arguments = ["True"]
+source_formal_proof = "https://github.com/williamjblair/lean-proofs/blob/4f915a323443bfb1709a6805a013812016dca88a/starfleet/erdos-394/Research/FirstQuestion.lean"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -60,7 +61,9 @@ track = "solved"
 part = "ii"
 declaration = "erdos_394.parts.ii"
 statement_id = "b9b8f68e-2e07-454a-b05e-74b024a985bb"
+prose = "Is it true that, for $k\\geq 2$, $\\sum_{n\\leq x}t_{k+1}(n) =o\\left(\\sum_{n\\leq x}t_k(n)\\right)?$"
 gold_arguments = ["True"]
+source_formal_proof = "https://github.com/williamjblair/lean-proofs/blob/4f915a323443bfb1709a6805a013812016dca88a/starfleet/erdos-394/Research/DenseHierarchyLittleO.lean"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

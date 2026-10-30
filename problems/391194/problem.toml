@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/700.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-30T11:19:18+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E700_parts_ii_prove"
@@ -81,6 +81,7 @@ part = "iii"
 pair_id = "E700_parts_iii"
 declaration = "erdos_700.parts.iii"
 statement_id = "e59146fc-8a2a-4e6c-baae-7ae5e0fc49e4"
+prose = "Let $f(n) = \\min_{1 < k \\le n/2} \\gcd(n, \\binom{n}{k})$. **(c)** Is it true that, for every composite $n$, $f(n) \\ll_A n/(\\log n)^A$ for every $A > 0$? Erdős–Szekeres [ErSz78] prove the weaker bound $f(n) \\le (1 + o(1)) n/\\log n$ (the case $A = 1$). Here $f(n) \\ll_A n/(\\log n)^A$ is spelled out as: for every `A > 0` there is a constant `C` (depending on `A`) with `f(n) ≤ C · n/(log n)^A` for every composite `n`."
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -103,6 +104,7 @@ part = "iii"
 pair_id = "E700_parts_iii"
 declaration = "erdos_700.parts.iii"
 statement_id = "e59146fc-8a2a-4e6c-baae-7ae5e0fc49e4"
+prose = "Let $f(n) = \\min_{1 < k \\le n/2} \\gcd(n, \\binom{n}{k})$. **(c)** Is it true that, for every composite $n$, $f(n) \\ll_A n/(\\log n)^A$ for every $A > 0$? Erdős–Szekeres [ErSz78] prove the weaker bound $f(n) \\le (1 + o(1)) n/\\log n$ (the case $A = 1$). Here $f(n) \\ll_A n/(\\log n)^A$ is spelled out as: for every `A > 0` there is a constant `C` (depending on `A`) with `f(n) ≤ C · n/(log n)^A` for every composite `n`."
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

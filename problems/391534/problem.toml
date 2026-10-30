@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/1105.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-30T11:19:18+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E1105_parts_i"
@@ -60,6 +60,7 @@ track = "solved"
 part = "ii"
 declaration = "erdos_1105.parts.ii"
 statement_id = "87b1cdac-4782-4fea-9d65-7c31e26f994a"
+prose = "Let $P_k$ be the path on $k$ vertices and $\\ell=\\lfloor\\frac{k-1}{2}\\rfloor$. If $n\\geq k\\geq 5$ then is $\\mathrm{AR}(n,P_k)$ equal to $\\max\\left(\\binom{k-2}{2}+1, \\binom{\\ell-1}{2}+(\\ell-1)(n-\\ell+1)+\\epsilon\\right)$where $\\epsilon=1$ if $k$ is odd and $\\epsilon=2$ otherwise? A proof of the formula for $\\mathrm{AR}(n,P_k)$ for all $n\\geq k\\geq 5$ has been announced by Yuan [Yu21]."
 gold_arguments = ["True"]
 
   [task.environment]

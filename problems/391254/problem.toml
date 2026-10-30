@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/770.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-30T11:19:18+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E770_parts_i_prove"
@@ -81,6 +81,7 @@ part = "ii"
 pair_id = "E770_parts_ii"
 declaration = "erdos_770.parts.ii"
 statement_id = "e8183a59-20ff-44eb-a7ce-a7bc996d07bb"
+prose = "Does `liminf h n = ∞`?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -103,6 +104,7 @@ part = "ii"
 pair_id = "E770_parts_ii"
 declaration = "erdos_770.parts.ii"
 statement_id = "e8183a59-20ff-44eb-a7ce-a7bc996d07bb"
+prose = "Does `liminf h n = ∞`?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -125,6 +127,7 @@ part = "iii"
 pair_id = "E770_parts_iii"
 declaration = "erdos_770.parts.iii"
 statement_id = "64a48cda-1296-44e9-b2a3-748843bd45f5"
+prose = "Is it true that if `p` is the greatest prime such that `p - 1 ∣ n` and `p > n ^ ε`, then `h n = p`?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -147,6 +150,7 @@ part = "iii"
 pair_id = "E770_parts_iii"
 declaration = "erdos_770.parts.iii"
 statement_id = "64a48cda-1296-44e9-b2a3-748843bd45f5"
+prose = "Is it true that if `p` is the greatest prime such that `p - 1 ∣ n` and `p > n ^ ε`, then `h n = p`?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

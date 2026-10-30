@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/897.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-30T11:19:18+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E897_parts_i"
@@ -38,6 +38,7 @@ part = "i"
 declaration = "erdos_897.parts.i"
 statement_id = "b7b53bf4-2b57-46e6-b6ea-f6ff3e1df1e3"
 gold_arguments = ["False"]
+source_formal_proof = "https://github.com/plby/lean-proofs/blob/main/src/v4.24.0/ErdosProblems/Erdos897.lean"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -60,7 +61,9 @@ track = "solved"
 part = "ii"
 declaration = "erdos_897.parts.ii"
 statement_id = "99365a75-d694-47af-b752-beee867bdd57"
+prose = "Let $f(n)$ be an additive function (so that $f(ab)=f(a)+f(b)$ if $(a,b)=1$) such that $\\limsup_{p,k} f(p^k) / \\log(p^k) = ∞$. Is it true that $\\limsup_n f(n+1)/ f(n) = ∞$? The answer is no; the same counterexample is formalised in Lean by Aristotle [ArWu25]."
 gold_arguments = ["False"]
+source_formal_proof = "https://github.com/plby/lean-proofs/blob/main/src/v4.24.0/ErdosProblems/Erdos897.lean"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

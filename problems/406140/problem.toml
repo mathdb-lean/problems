@@ -21,10 +21,10 @@ file = "FormalConjectures/OEIS/179524.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "oeis-reviewed"
-released_at = "2026-10-29T06:33:30+00:00"
+release_id = "oeis"
+released_at = "2026-10-30T11:19:51+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "O179524_conjecture1"
@@ -55,6 +55,7 @@ shape = "proof"
 track = "open"
 declaration = "conjecture2"
 statement_id = "7934c96e-6480-4a53-93e4-7603f61191a0"
+prose = "If $p$ is a prime with $p \\equiv 3, 7 \\pmod{20}$ and $2p = x^2 + 5y^2$ with $x, y$ integers, then $\\sum_{k=0}^{p-1} a(k) \\equiv 2x^2 - 2p \\pmod{p^2}$. - _Zhi-Wei Sun_, Jul 01 2010"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -75,6 +76,7 @@ shape = "proof"
 track = "open"
 declaration = "conjecture3"
 statement_id = "31c066b7-145c-4791-92c2-e856b6a2ee5b"
+prose = "If $p$ is a prime with $p \\equiv 11, 13, 17, 19 \\pmod{20}$, then $\\sum_{k=0}^{p-1} a(k) \\equiv 0 \\pmod{p^2}$. - _Zhi-Wei Sun_, Jul 01 2010"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -95,6 +97,7 @@ shape = "proof"
 track = "open"
 declaration = "conjecture4"
 statement_id = "1674dd44-3eba-4a5e-b5c2-3a06a20488fe"
+prose = "$\\sum_{k=0}^{n-1}(20k+17)a(k) \\equiv 0 \\pmod n$ for all $n=1,2,3,\\dots$. - _Zhi-Wei Sun_, Jul 01 2010"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -115,6 +118,7 @@ shape = "proof"
 track = "open"
 declaration = "conjecture5"
 statement_id = "bf76cac7-63ac-4a7e-9726-6b4f8af0b8ff"
+prose = "$\\sum_{k=0}^{p-1}(20k+17)a(k) \\equiv p(10(-1/p)+7) \\pmod{p^2}$ for any odd prime $p$. - _Zhi-Wei Sun_, Jul 01 2010"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/1187.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-30T11:19:18+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E1187_parts_i"
@@ -38,6 +38,7 @@ part = "i"
 declaration = "erdos_1187.parts.i"
 statement_id = "ceccd025-6be6-421a-b34c-8238444c3a2d"
 gold_arguments = ["True"]
+source_formal_proof = "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1187.lean#L246"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -60,7 +61,9 @@ track = "solved"
 part = "ii"
 declaration = "erdos_1187.parts.ii"
 statement_id = "60acacb9-bc4f-4dc5-8fbc-c517af655e0a"
+prose = "Let $k\\geq 3$. In any finite colouring of the integers, are there monochromatic arithmetic progressions of length $k$ whose common difference is a prime? The answer to the second question is trivially no: colouring the integers by their residue modulo $4$ creates a colouring in which there is not even any monochromatic pair of integers whose difference is a prime. Alternatively, one can just use $2$ colours and avoid any $3$-term progressions whose difference is a prime by colouring $0,1\\pmod{4}$ red and $2,3\\pmod{4}$ blue."
 gold_arguments = ["False"]
+source_formal_proof = "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1187.lean#L246"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

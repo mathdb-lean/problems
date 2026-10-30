@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/868.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-30T11:19:18+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E868_parts_i"
@@ -60,6 +60,7 @@ track = "solved"
 part = "ii"
 declaration = "erdos_868.parts.ii"
 statement_id = "ad9732ed-fa3f-4cf2-9c65-3018605cb966"
+prose = "Let $A$ be an additive basis of order $2$, let $f(n)$ denote the number of ways in which $n$ can be written as the sum of two elements from $A$. If $f(n) > \\epsilon \\log n$ for large $n$ and an arbitrary fixed $\\epsilon > 0$, then must $A$ contain a minimal additive basis of order $2$? Larsen and Larsen [LaLa26] constructed a counterexample with $f(n) > c \\log n$ for all large $n$."
 gold_arguments = ["False"]
 
   [task.environment]
