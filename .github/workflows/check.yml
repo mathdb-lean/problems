@@ -42,7 +42,8 @@ jobs:
         run: |
           lake exe cache get
           lake build MathDBLib FormalConjecturesUtil FormalConjecturesForMathlib
-      - name: Compile this shard's statements and audit their axioms
+      - name: Compile this shard's statements and audit their axioms and interface
         # `lean` exits 0 on a `sorry`, so compiling alone would pass a statement that
-        # rests on one; check_statements.py also prints `Problem.Target`'s axioms.
+        # rests on one; check_statements.py also prints `Problem.Target`'s axioms, and
+        # checks that `Problem.Target` has its shape's type.
         run: python3 check_statements.py --shard ${{ matrix.shard }}/8

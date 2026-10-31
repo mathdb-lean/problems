@@ -15,14 +15,14 @@ notes = "Generalized Poincaré conjecture, smooth case in dimension four -- http
 
 [source]
 name = "mathdb-lean"
-revision = "b80da422c1869ddababb2992c7dc83556e0f930c"
+revision = "2fe7c76111373ea1d5503c074350e836cf33de46"
 file = "authored/SmoothFourDimensionalPoincare.lean"
 
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "authored"
-released_at = "2026-10-30T11:19:00+00:00"
+released_at = "2026-10-31T07:22:23+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
@@ -41,7 +41,7 @@ statement_id = "e2c728dd-80d7-4fdd-bc9f-1b51e14f958b"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "a19359f383081870"
+  target_hash = "c1c518b1e320bf80"
   conversion_hash = "317a7997f0dc6820feb94bedd0b2a0a9593ae0058db45535e97e507b544214eb"
   semantic_anchor = "23f513d8b05bcc8021b9932adf684d81f7f983cc3a8dcbd5beb2fc01c1f44911"
   reviewed_by_a_person = false

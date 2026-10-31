@@ -15,14 +15,14 @@ notes = "One-way permutation -- https://en.wikipedia.org/wiki/One-way_function#R
 
 [source]
 name = "mathdb-lean"
-revision = "b80da422c1869ddababb2992c7dc83556e0f930c"
+revision = "2fe7c76111373ea1d5503c074350e836cf33de46"
 file = "authored/OneWayPermutations.lean"
 
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "authored"
-released_at = "2026-10-30T11:19:00+00:00"
+released_at = "2026-10-31T07:22:23+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
@@ -42,7 +42,7 @@ statement_id = "fc97f1f4-16ce-427c-8ca5-9ece3aa092f7"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "068a0d232505c1f7"
+  target_hash = "9a0fd84e3ba82203"
   conversion_hash = "8e83c65853e695f08ef333b958d6cd5b9852672f7a88c5d9584715aa3dbb746f"
   semantic_anchor = "15c2be5c25550e4a4fb0b719578d3654193c20e9a7e0429f3d8540a0b9d6bfa0"
   reviewed_by_a_person = false
@@ -63,7 +63,7 @@ statement_id = "fc97f1f4-16ce-427c-8ca5-9ece3aa092f7"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "23570ddb336ae6c6"
+  target_hash = "2cb69f6ec015981a"
   conversion_hash = "108f018a8a29617aa16302239483235e9564ac521b2577f9f7b7f583ae13ebd5"
   semantic_anchor = "b29044bb8dad43c3980c3dfbcbfac6e7e1eff3e5477be54011a93d0c3c6ec34c"
   reviewed_by_a_person = false

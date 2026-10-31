@@ -15,14 +15,14 @@ notes = "Restriction conjecture -- https://en.wikipedia.org/wiki/Restriction_pro
 
 [source]
 name = "mathdb-lean"
-revision = "b80da422c1869ddababb2992c7dc83556e0f930c"
+revision = "2fe7c76111373ea1d5503c074350e836cf33de46"
 file = "authored/FourierRestriction.lean"
 
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "authored"
-released_at = "2026-10-30T11:19:00+00:00"
+released_at = "2026-10-31T07:22:23+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
@@ -41,7 +41,7 @@ statement_id = "9fcea676-717f-49b1-b6c0-45b37cf15b2a"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "b2833d8434fa3a64"
+  target_hash = "cb39d88f0abbd466"
   conversion_hash = "4d83b26993ec5138efb2be316770ab27089094e26b15fff3cfab4c5f287d1b02"
   semantic_anchor = "eb0184c2792a1a273d47adfd1f9dce66a061f36ab593ac803930900dc143ae52"
   reviewed_by_a_person = false

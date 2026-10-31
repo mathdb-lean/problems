@@ -14,12 +14,16 @@
 
 `lake env lean` exits 0 on a `sorry` -- it is a warning -- so a compile check alone
 passes a statement whose `Problem.Target` is a `sorry` underneath, or a module that
-proves a helper by `sorry`. Each module is therefore compiled with
-`#print axioms Problem.Target` appended, and it passes only if
+proves a helper by `sorry`. Nor does compiling show what `Problem.Target` *is*: a
+`variable` the statement uses becomes a parameter of `Target` that the module's
+`abbrev Target : Prop` does not show, and `theorem solution : Problem.Target` can
+then not be stated. Each module is therefore compiled with `#print axioms
+Problem.Target` and its shape's interface appended, and it passes only if
 
 * it compiles,
-* nothing in it uses `sorry`, and
-* `Problem.Target` depends on no axiom beyond propext, Classical.choice and Quot.sound.
+* nothing in it uses `sorry`,
+* `Problem.Target` depends on no axiom beyond propext, Classical.choice and Quot.sound, and
+* `Problem.Target` has the type its shape in `benchmark.json` gives it.
 
 Run from the repository root after `lake build`:
 
@@ -31,6 +35,7 @@ Exit status is 0 only if every module passed.
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import subprocess
 import sys
@@ -42,6 +47,22 @@ ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
 DEPENDS = re.compile(r"'Problem\.Target' depends on axioms: \[([^\]]*)\]")
 NONE = "'Problem.Target' does not depend on any axioms"
 SORRY = re.compile(r"declaration uses .sorry.")
+ERROR_LINE = re.compile(r":(\d+):\d+: error")
+#: Elaborates only if `Problem.Target` is exactly its shape's interface. A parameter
+#: Lean added leaves an implicit argument or an instance it cannot fill.
+INTERFACE = {
+    "proof": "example : Prop := Problem.Target",
+    "prove": "example : Prop := Problem.Target",
+    "refute": "example : Prop := Problem.Target",
+    "decide": "example : Prop → Prop := Problem.Target",
+    "value": "example := fun value => (Problem.Target value : Prop)",
+}
+
+
+def shapes() -> dict[str, str]:
+    """Each task's shape, by module file stem."""
+    held = json.loads((ROOT / "benchmark.json").read_text(encoding="utf-8"))
+    return {task_id: entry.get("shape", "") for task_id, entry in held["problems"].items()}
 
 
 def modules(shard: str | None) -> list[Path]:
@@ -52,12 +73,15 @@ def modules(shard: str | None) -> list[Path]:
     return [path for n, path in enumerate(found, 1) if n % count == index]
 
 
-def check(module: Path, lake: str) -> list[str]:
+def check(module: Path, lake: str, shape: str) -> list[str]:
     """What is wrong with this module, or nothing."""
-    text = module.read_text(encoding="utf-8")
+    if shape not in INTERFACE:
+        return ["benchmark.json gives no known shape for %s (%r)" % (module.stem, shape)]
+    text = module.read_text(encoding="utf-8").rstrip("\n")
+    body = text.count("\n") + 1
     with tempfile.TemporaryDirectory() as temp:
         probe = Path(temp) / module.name
-        probe.write_text(text.rstrip("\n") + "\n\n#print axioms Problem.Target\n",
+        probe.write_text(text + "\n\n#print axioms Problem.Target\n\n" + INTERFACE[shape] + "\n",
                          encoding="utf-8", newline="\n")
         run = subprocess.run([lake, "env", "lean", "-DautoImplicit=false",
                               "-DrelaxedAutoImplicit=false", str(probe)],
@@ -65,6 +89,10 @@ def check(module: Path, lake: str) -> list[str]:
                              errors="replace")
     out = run.stdout + run.stderr
     if run.returncode != 0:
+        lines = [int(n) for n in ERROR_LINE.findall(out)]
+        if lines and min(lines) > body:
+            return ["Problem.Target is not the %s interface (`%s` does not elaborate):\n%s"
+                    % (shape, INTERFACE[shape], out.strip()[-1500:])]
         return ["does not compile:\n" + out.strip()[-3000:]]
     faults = []
     if SORRY.search(out):
@@ -87,9 +115,10 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--lake", default="lake")
     args = parser.parse_args(argv)
     chosen = [Path(m).resolve() for m in args.modules] or modules(args.shard)
+    shape = shapes()
     failed = 0
     for module in chosen:
-        faults = check(module, args.lake)
+        faults = check(module, args.lake, shape.get(module.stem, ""))
         if faults:
             failed += 1
             where = module.relative_to(ROOT).as_posix()

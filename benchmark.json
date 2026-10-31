@@ -28624,46 +28624,6 @@
       "mathdb_number": 406060,
       "mathdb_id": "c37853b0-6069-4b77-a7c0-80c6f8be926e"
     },
-    "W160_conjecture160": {
-      "module": "FtpEvalBench.W160_conjecture160",
-      "display_label": "W160_conjecture160",
-      "task_id": "ea23b862-3f13-47c9-ab38-835ff48f4158",
-      "question_id": "wotw:160",
-      "statement_id": "ff904ccb-e8fe-48b7-9265-0a9b2854bc83",
-      "target_hash": "d76fcfd9623a1416",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/160.lean#conjecture160",
-      "challenge": "W160_conjecture160/Challenge.lean",
-      "source_formal_proof": {
-        "url": "https://github.com/anagnorisis2peripeteia/formal-conjectures/blob/f0d70dfa13f92a4b631289e44487690833be8798/WOWII160AltProof.lean#L714",
-        "language": "formal_conjectures"
-      },
-      "mathdb_number": 406237,
-      "mathdb_id": "9eb8be99-2927-4726-9a65-5f023004d7ac"
-    },
-    "WGraphConjecture100_conjecture100": {
-      "module": "FtpEvalBench.WGraphConjecture100_conjecture100",
-      "display_label": "WGraphConjecture100_conjecture100",
-      "task_id": "3c8e8341-d482-42c0-815d-069348ffd9ec",
-      "question_id": "wotw:GraphConjecture100",
-      "statement_id": "a41c6a8b-e52c-4397-bbfd-8b381c3426fa",
-      "target_hash": "7cd6f0d14f65a7dd",
-      "shape": "proof",
-      "track": "open",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture100.lean#conjecture100",
-      "challenge": "WGraphConjecture100_conjecture100/Challenge.lean",
-      "mathdb_number": 406239,
-      "mathdb_id": "29853c3f-d449-4775-bcab-6d128a10578d"
-    },
     "WGraphConjecture109_conjecture109": {
       "module": "FtpEvalBench.WGraphConjecture109_conjecture109",
       "display_label": "WGraphConjecture109_conjecture109",
@@ -28691,184 +28651,6 @@
       },
       "mathdb_number": 315693,
       "mathdb_id": "f2957f74-8ffc-4a4c-9b3f-8110bb0f3815"
-    },
-    "WGraphConjecture133_conjecture133": {
-      "module": "FtpEvalBench.WGraphConjecture133_conjecture133",
-      "display_label": "WGraphConjecture133_conjecture133",
-      "task_id": "18f7b569-5296-4576-801e-063ecfb22671",
-      "question_id": "wotw:GraphConjecture133",
-      "statement_id": "1ebe881d-7729-4029-8ee1-e6502081d2d5",
-      "target_hash": "273a4fc7b98538b9",
-      "shape": "proof",
-      "track": "open",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture133.lean#conjecture133",
-      "challenge": "WGraphConjecture133_conjecture133/Challenge.lean",
-      "mathdb_number": 406241,
-      "mathdb_id": "d4e010d3-64c8-48cd-b21e-0e9d9bfe096d"
-    },
-    "WGraphConjecture13_conjecture13": {
-      "module": "FtpEvalBench.WGraphConjecture13_conjecture13",
-      "display_label": "WGraphConjecture13_conjecture13",
-      "task_id": "8f7261ff-4716-4427-bc26-723fe1a08ab2",
-      "question_id": "wotw:GraphConjecture13",
-      "statement_id": "feba90be-7c2a-4851-9dab-5e4ab21d4b3a",
-      "target_hash": "f29633247fb5e0e3",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture13.lean#conjecture13",
-      "challenge": "WGraphConjecture13_conjecture13/Challenge.lean",
-      "mathdb_number": 406240,
-      "mathdb_id": "693423c4-1c8d-4310-8159-eca7a2581f41"
-    },
-    "WGraphConjecture141_conjecture141": {
-      "module": "FtpEvalBench.WGraphConjecture141_conjecture141",
-      "display_label": "WGraphConjecture141_conjecture141",
-      "task_id": "91b71181-4ad4-4c5b-9279-cb41c322c49b",
-      "question_id": "wotw:GraphConjecture141",
-      "statement_id": "9fe3f797-d1e4-49dd-907c-366005fc4d4c",
-      "target_hash": "942ea11f431a7ab2",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture141.lean#conjecture141",
-      "challenge": "WGraphConjecture141_conjecture141/Challenge.lean",
-      "mathdb_number": 406242,
-      "mathdb_id": "13f3e23c-0211-4d97-b75c-16c0ffcf071b"
-    },
-    "WGraphConjecture142_conjecture142": {
-      "module": "FtpEvalBench.WGraphConjecture142_conjecture142",
-      "display_label": "WGraphConjecture142_conjecture142",
-      "task_id": "c434e0f0-ba70-4fde-9e9d-700e1932608e",
-      "question_id": "wotw:GraphConjecture142",
-      "statement_id": "ebfda25e-2a75-47e0-8987-b5463f1c8642",
-      "target_hash": "612d56bc5a761f72",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture142.lean#conjecture142",
-      "challenge": "WGraphConjecture142_conjecture142/Challenge.lean",
-      "source_formal_proof": {
-        "url": "https://github.com/AlperTheKing/formal-conjectures/blob/46bf39015f5c3c3ba3bfcf9f752b4b1e49b584ac/FormalConjecturesForMathlib/WrittenOnTheWallII/GraphConjecture142Proof.lean#L3927-L3932",
-        "language": "formal_conjectures"
-      },
-      "mathdb_number": 406243,
-      "mathdb_id": "fa39a3c8-2d1f-4dda-a8b4-0934837c7c58"
-    },
-    "WGraphConjecture143_conjecture143": {
-      "module": "FtpEvalBench.WGraphConjecture143_conjecture143",
-      "display_label": "WGraphConjecture143_conjecture143",
-      "task_id": "05f3fd92-2110-4432-9005-01603b1cbc7e",
-      "question_id": "wotw:GraphConjecture143",
-      "statement_id": "3eacfffd-6288-45f3-99a6-510522365631",
-      "target_hash": "5673dd38e38c8580",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture143.lean#conjecture143",
-      "challenge": "WGraphConjecture143_conjecture143/Challenge.lean",
-      "mathdb_number": 315694,
-      "mathdb_id": "12048c54-8858-4ddf-aeb5-3ddcd12ee116"
-    },
-    "WGraphConjecture144_conjecture144": {
-      "module": "FtpEvalBench.WGraphConjecture144_conjecture144",
-      "display_label": "WGraphConjecture144_conjecture144",
-      "task_id": "790281a8-a42a-4465-b64e-20e5c67d22f9",
-      "question_id": "wotw:GraphConjecture144",
-      "statement_id": "3f9cb465-01f3-4f25-a5f6-5a2d943f5825",
-      "target_hash": "29571bc4081d0dc4",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture144.lean#conjecture144",
-      "challenge": "WGraphConjecture144_conjecture144/Challenge.lean",
-      "source_formal_proof": {
-        "url": "https://github.com/beowulf127/wowii144-lean/blob/046429d509b28c90ee2ec38ae27c1ad377c6a5fc/WOWII144/Main.lean",
-        "language": "lean4"
-      },
-      "mathdb_number": 406244,
-      "mathdb_id": "c07d7a20-b29b-4069-bb56-3686fe188a16"
-    },
-    "WGraphConjecture145_conjecture145": {
-      "module": "FtpEvalBench.WGraphConjecture145_conjecture145",
-      "display_label": "WGraphConjecture145_conjecture145",
-      "task_id": "5b182692-bcac-4bab-910e-ee46e0690734",
-      "question_id": "wotw:GraphConjecture145",
-      "statement_id": "d76b3d7b-e852-4839-8557-6c3a070e5e2f",
-      "target_hash": "e4eb0a852c49eff7",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture145.lean#conjecture145",
-      "challenge": "WGraphConjecture145_conjecture145/Challenge.lean",
-      "source_formal_proof": {
-        "url": "https://github.com/DomTheDeveloper/crl/blob/2ee448baa80c98f0c8b9a0c1c3d9421200f99aa5/math/wowii145/WOW145/145.lean",
-        "language": "lean4"
-      },
-      "mathdb_number": 406245,
-      "mathdb_id": "c95e2084-4472-4fa3-8ba2-2ed7430e89dc"
-    },
-    "WGraphConjecture146_conjecture146": {
-      "module": "FtpEvalBench.WGraphConjecture146_conjecture146",
-      "display_label": "WGraphConjecture146_conjecture146",
-      "task_id": "1508afa9-7534-4e8b-844c-d47d74e1b509",
-      "question_id": "wotw:GraphConjecture146",
-      "statement_id": "eaa52a0d-b6eb-41d1-8223-3ca8fe4b28db",
-      "target_hash": "8ec7638cb0d0cf34",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture146.lean#conjecture146",
-      "challenge": "WGraphConjecture146_conjecture146/Challenge.lean",
-      "source_formal_proof": {
-        "url": "https://github.com/akakabrian/WOW-146/blob/f9e0ad75d829170804ce1d8f9fd4c1d4a0085203/WOW146/Conjecture146.lean",
-        "language": "lean4"
-      },
-      "mathdb_number": 406246,
-      "mathdb_id": "91dbacc9-4a37-4afd-a3d9-2b672b704305"
-    },
-    "WGraphConjecture16_conjecture16": {
-      "module": "FtpEvalBench.WGraphConjecture16_conjecture16",
-      "display_label": "WGraphConjecture16_conjecture16",
-      "task_id": "58138240-207a-4461-ac06-f77764d1737d",
-      "question_id": "wotw:GraphConjecture16",
-      "statement_id": "673337e3-7d97-4014-a245-b9f3b2f8fd9f",
-      "target_hash": "89bf7a9c115fa91b",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture16.lean#conjecture16",
-      "challenge": "WGraphConjecture16_conjecture16/Challenge.lean",
-      "mathdb_number": 406247,
-      "mathdb_id": "1ca8ff3c-005b-4557-84a1-e503df3681a8"
     },
     "WGraphConjecture172_conjecture172": {
       "module": "FtpEvalBench.WGraphConjecture172_conjecture172",
@@ -28926,24 +28708,6 @@
       "mathdb_number": 406250,
       "mathdb_id": "e69a9c97-c450-47d7-8289-4ab6173bf69c"
     },
-    "WGraphConjecture17_conjecture17": {
-      "module": "FtpEvalBench.WGraphConjecture17_conjecture17",
-      "display_label": "WGraphConjecture17_conjecture17",
-      "task_id": "9359a21a-4437-45c2-85d7-5285bd00a2fe",
-      "question_id": "wotw:GraphConjecture17",
-      "statement_id": "8b5435c3-ada3-4cec-939e-cadde100f39b",
-      "target_hash": "22a8873dd137b4f2",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture17.lean#conjecture17",
-      "challenge": "WGraphConjecture17_conjecture17/Challenge.lean",
-      "mathdb_number": 406248,
-      "mathdb_id": "5858f4a9-10f9-40b6-a0b4-73dbb768de43"
-    },
     "WGraphConjecture181_conjecture181": {
       "module": "FtpEvalBench.WGraphConjecture181_conjecture181",
       "display_label": "WGraphConjecture181_conjecture181",
@@ -28972,24 +28736,6 @@
       "mathdb_number": 406252,
       "mathdb_id": "bd4979f7-1f28-46c4-92e0-8433509a51c0"
     },
-    "WGraphConjecture18_conjecture18": {
-      "module": "FtpEvalBench.WGraphConjecture18_conjecture18",
-      "display_label": "WGraphConjecture18_conjecture18",
-      "task_id": "2e676392-2bb7-4e6c-9fb8-def4cd16c148",
-      "question_id": "wotw:GraphConjecture18",
-      "statement_id": "fc30618e-2793-4fff-a2c4-fb24a4a21776",
-      "target_hash": "20594ef04123f0b7",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture18.lean#conjecture18",
-      "challenge": "WGraphConjecture18_conjecture18/Challenge.lean",
-      "mathdb_number": 406251,
-      "mathdb_id": "950acaf6-57c2-4abb-968a-bfeec1af84ad"
-    },
     "WGraphConjecture194_conjecture194": {
       "module": "FtpEvalBench.WGraphConjecture194_conjecture194",
       "display_label": "WGraphConjecture194_conjecture194",
@@ -29017,24 +28763,6 @@
       },
       "mathdb_number": 406253,
       "mathdb_id": "57feb7d7-ad3d-4773-8fc5-7b4470c56967"
-    },
-    "WGraphConjecture198a_conjecture198a": {
-      "module": "FtpEvalBench.WGraphConjecture198a_conjecture198a",
-      "display_label": "WGraphConjecture198a_conjecture198a",
-      "task_id": "2371c6c9-b126-4b0e-b5f7-63162b398a01",
-      "question_id": "wotw:GraphConjecture198a",
-      "statement_id": "602e026f-c16c-41af-9762-eb8c3de275fe",
-      "target_hash": "1f4e2d125befe4f1",
-      "shape": "proof",
-      "track": "open",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture198a.lean#conjecture198a",
-      "challenge": "WGraphConjecture198a_conjecture198a/Challenge.lean",
-      "mathdb_number": 406254,
-      "mathdb_id": "2275ce2f-21d6-4610-bb48-76025e9da69b"
     },
     "WGraphConjecture1_conjecture1": {
       "module": "FtpEvalBench.WGraphConjecture1_conjecture1",
@@ -29086,50 +28814,6 @@
       "mathdb_number": 406255,
       "mathdb_id": "3b921db2-30fa-4508-b00a-6cd08a1c767e"
     },
-    "WGraphConjecture217_conjecture217": {
-      "module": "FtpEvalBench.WGraphConjecture217_conjecture217",
-      "display_label": "WGraphConjecture217_conjecture217",
-      "task_id": "28b50a6d-00ce-49f6-aa8c-7dbaca17060b",
-      "question_id": "wotw:GraphConjecture217",
-      "statement_id": "a89e441e-cd9c-4ad1-bfe6-b41b9fb1d85e",
-      "target_hash": "4e29fef6814470cb",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture217.lean#conjecture217",
-      "challenge": "WGraphConjecture217_conjecture217/Challenge.lean",
-      "source_formal_proof": {
-        "url": "https://github.com/KitaKen1/wowii-graph-conjecture-217-lean/blob/6a2fb82fcd17aa15ec734736740794bb8bd194c0/lean/GraphConjecture217Audit.lean",
-        "language": "lean4"
-      },
-      "mathdb_number": 406256,
-      "mathdb_id": "6a39a65e-e5ac-4178-83fd-9c40f64ef22c"
-    },
-    "WGraphConjecture2_conjecture2": {
-      "module": "FtpEvalBench.WGraphConjecture2_conjecture2",
-      "display_label": "WGraphConjecture2_conjecture2",
-      "task_id": "4b42cd1e-bc89-4214-9f25-4ba1af5b993d",
-      "question_id": "wotw:GraphConjecture2",
-      "statement_id": "dcce7cda-02b1-4fa9-869e-9a7604fb52e8",
-      "target_hash": "8c82c6bd712dcac5",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture2.lean#conjecture2",
-      "challenge": "WGraphConjecture2_conjecture2/Challenge.lean",
-      "source_formal_proof": {
-        "url": "https://github.com/google-deepmind/alphaproof-nexus-results/blob/0647711a71183c1ea492ad60860776617ce1ea88/APNOutputs/AICollaborator/Graphs/GraphConjecture2.lean#L704",
-        "language": "lean4"
-      },
-      "mathdb_number": 315526,
-      "mathdb_id": "ffd461b5-1793-47ba-8785-d156b6dd8cfb"
-    },
     "WGraphConjecture309_conjecture309": {
       "module": "FtpEvalBench.WGraphConjecture309_conjecture309",
       "display_label": "WGraphConjecture309_conjecture309",
@@ -29157,112 +28841,6 @@
       },
       "mathdb_number": 406258,
       "mathdb_id": "86caca6e-c76d-4a8e-94d8-93e286485b9d"
-    },
-    "WGraphConjecture314_conjecture314": {
-      "module": "FtpEvalBench.WGraphConjecture314_conjecture314",
-      "display_label": "WGraphConjecture314_conjecture314",
-      "task_id": "4ae09994-6d9e-4781-a3c2-f8f7f69a818e",
-      "question_id": "wotw:GraphConjecture314",
-      "statement_id": "b2bce8b4-1b69-4329-bcad-6175bd64c2b3",
-      "target_hash": "8ec1434d29649e15",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture314.lean#conjecture314",
-      "challenge": "WGraphConjecture314_conjecture314/Challenge.lean",
-      "source_formal_proof": {
-        "url": "https://github.com/glyaea/wow-ii-314/blob/7b35f1252e4aaae3c787faf8091f9c7cd4edc41f/solution.lean",
-        "language": "lean4"
-      },
-      "mathdb_number": 406260,
-      "mathdb_id": "b77638d7-8f18-452d-b0c6-5131e08a4c90"
-    },
-    "WGraphConjecture315_conjecture315": {
-      "module": "FtpEvalBench.WGraphConjecture315_conjecture315",
-      "display_label": "WGraphConjecture315_conjecture315",
-      "task_id": "1b300d78-d626-40bd-89ab-6fd8305663fd",
-      "question_id": "wotw:GraphConjecture315",
-      "statement_id": "8a974db1-d2ee-4a65-8f66-ebc68088c1ac",
-      "target_hash": "0daca6346813d017",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture315.lean#conjecture315",
-      "challenge": "WGraphConjecture315_conjecture315/Challenge.lean",
-      "source_formal_proof": {
-        "url": "https://github.com/mo271/formal-conjectures/blob/9ef80e1a3709ed3eda43d9ed6ff1087681621041/FormalConjectures/WrittenOnTheWallII/GraphConjecture315.lean#L43",
-        "language": "formal_conjectures"
-      },
-      "mathdb_number": 406261,
-      "mathdb_id": "c4d1aef3-66d8-4c49-82fb-dba84d9d27e0"
-    },
-    "WGraphConjecture316_conjecture316": {
-      "module": "FtpEvalBench.WGraphConjecture316_conjecture316",
-      "display_label": "WGraphConjecture316_conjecture316",
-      "task_id": "ac076d1e-96bf-4be7-8ff0-8cc6f8cb5870",
-      "question_id": "wotw:GraphConjecture316",
-      "statement_id": "2d716aee-95e1-4ab4-8482-9e5253bbe2e7",
-      "target_hash": "43a2d2f1eda2260d",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture316.lean#conjecture316",
-      "challenge": "WGraphConjecture316_conjecture316/Challenge.lean",
-      "source_formal_proof": {
-        "url": "https://github.com/KitaKen1/wowii-graph-conjecture-316-lean/blob/3335e07151bc43e86d5c104dd30fee3596f06410/GraphConjecture316.lean",
-        "language": "lean4"
-      },
-      "mathdb_number": 406262,
-      "mathdb_id": "cbf20751-09bc-4761-b235-4353f9c9c90a"
-    },
-    "WGraphConjecture31_conjecture31": {
-      "module": "FtpEvalBench.WGraphConjecture31_conjecture31",
-      "display_label": "WGraphConjecture31_conjecture31",
-      "task_id": "d0bdd432-18ef-4cae-8ea2-5f0090cb62a6",
-      "question_id": "wotw:GraphConjecture31",
-      "statement_id": "880b5717-773e-4b7a-9767-51dd3d549802",
-      "target_hash": "58e6931ede547a93",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture31.lean#conjecture31",
-      "challenge": "WGraphConjecture31_conjecture31/Challenge.lean",
-      "source_formal_proof": {
-        "url": "https://github.com/KitaKen1/wowii-graph-conjecture-31-lean/blob/a948e9fc07e11b786aee8dadb1376b4d938454d6/lean/GraphConjecture31.lean",
-        "language": "lean4"
-      },
-      "mathdb_number": 406259,
-      "mathdb_id": "0150ba2f-afde-4c52-b86d-4f8cd8620fe1"
-    },
-    "WGraphConjecture3_conjecture3": {
-      "module": "FtpEvalBench.WGraphConjecture3_conjecture3",
-      "display_label": "WGraphConjecture3_conjecture3",
-      "task_id": "24d177c3-e516-4ce5-b42d-b477dab431e1",
-      "question_id": "wotw:GraphConjecture3",
-      "statement_id": "00d18616-7143-437b-a7d3-756c9c2ea9d8",
-      "target_hash": "9f98f547bdef47bf",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture3.lean#conjecture3",
-      "challenge": "WGraphConjecture3_conjecture3/Challenge.lean",
-      "mathdb_number": 406257,
-      "mathdb_id": "f9c7e34a-c7dd-4f5a-b00c-279d601e672c"
     },
     "WGraphConjecture430a_conjecture430a": {
       "module": "FtpEvalBench.WGraphConjecture430a_conjecture430a",
@@ -29320,24 +28898,6 @@
       "mathdb_number": 406265,
       "mathdb_id": "3d7043bc-ab4f-453f-be09-547f8dedc17d"
     },
-    "WGraphConjecture4_conjecture4": {
-      "module": "FtpEvalBench.WGraphConjecture4_conjecture4",
-      "display_label": "WGraphConjecture4_conjecture4",
-      "task_id": "87ebab39-ded9-4b40-98a3-7fc782a0d5cc",
-      "question_id": "wotw:GraphConjecture4",
-      "statement_id": "85769e60-fb5e-4989-a6c5-53ac5bdf44c3",
-      "target_hash": "a5e0dfee85f0f375",
-      "shape": "proof",
-      "track": "solved",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture4.lean#conjecture4",
-      "challenge": "WGraphConjecture4_conjecture4/Challenge.lean",
-      "mathdb_number": 406263,
-      "mathdb_id": "a6c1afcd-8134-49a8-9713-8c54f7e75bce"
-    },
     "WGraphConjecture58_conjecture58": {
       "module": "FtpEvalBench.WGraphConjecture58_conjecture58",
       "display_label": "WGraphConjecture58_conjecture58",
@@ -29365,24 +28925,6 @@
       },
       "mathdb_number": 406266,
       "mathdb_id": "1b4e5e53-8811-4455-80b6-34ecc3d0183b"
-    },
-    "WGraphConjecture61_conjecture61": {
-      "module": "FtpEvalBench.WGraphConjecture61_conjecture61",
-      "display_label": "WGraphConjecture61_conjecture61",
-      "task_id": "79da7872-18dd-4431-a27b-51fd951f2106",
-      "question_id": "wotw:GraphConjecture61",
-      "statement_id": "d6d12da4-5c92-42ba-be3b-96746bd16c0f",
-      "target_hash": "6e6b4663c8a5588b",
-      "shape": "proof",
-      "track": "open",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/WrittenOnTheWallII/GraphConjecture61.lean#conjecture61",
-      "challenge": "WGraphConjecture61_conjecture61/Challenge.lean",
-      "mathdb_number": 406267,
-      "mathdb_id": "77d54bb0-1a57-4483-aac5-d9f7a4cf73da"
     },
     "WGraphConjecture63_conjecture63": {
       "module": "FtpEvalBench.WGraphConjecture63_conjecture63",
@@ -30129,24 +29671,6 @@
       "challenge": "RCatchUpConjecture_value_of_even_mul_succ_self_div_two/Challenge.lean",
       "mathdb_number": 406215,
       "mathdb_id": "eba7fb45-fc15-45ce-aba2-4b10ab532c6e"
-    },
-    "RChvatal_exists_maximal_star": {
-      "module": "FtpEvalBench.RChvatal_exists_maximal_star",
-      "display_label": "RChvatal_exists_maximal_star",
-      "task_id": "c7f30349-4fe5-44f0-ab4c-3c6867574491",
-      "question_id": "paper:Chvatal",
-      "statement_id": "9567f44c-e8da-422f-80e6-e2645ed0eacc",
-      "target_hash": "1f49ed01b0422598",
-      "shape": "proof",
-      "track": "open",
-      "part": null,
-      "pair_id": null,
-      "source": "formal-conjectures",
-      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
-      "source_locator": "FormalConjectures/Paper/Chvatal.lean#exists_maximal_star",
-      "challenge": "RChvatal_exists_maximal_star/Challenge.lean",
-      "mathdb_number": 406216,
-      "mathdb_id": "9cfbcfb3-c8f8-4fcf-8e6d-f1f050a9c614"
     },
     "RDubner_dubner_conjecture": {
       "module": "FtpEvalBench.RDubner_dubner_conjecture",
@@ -31864,13 +31388,13 @@
       "task_id": "3db2089e-70cf-478a-8300-0686915e6606",
       "question_id": "authored:BirchSwinnertonDyer",
       "statement_id": "798c6e8b-4493-4861-9f97-f3a55d00c097",
-      "target_hash": "2192dd78cbab14b0",
+      "target_hash": "d5f9556d47589414",
       "shape": "proof",
       "track": "open",
       "part": null,
       "pair_id": null,
       "source": "mathdb-lean",
-      "source_revision": "b80da422c1869ddababb2992c7dc83556e0f930c",
+      "source_revision": "2fe7c76111373ea1d5503c074350e836cf33de46",
       "source_locator": "authored/BirchSwinnertonDyer.lean#Target",
       "challenge": "ABirchSwinnertonDyer/Challenge.lean",
       "mathdb_number": 315850,
@@ -31882,13 +31406,13 @@
       "task_id": "e741891d-6a7b-4df8-9c02-97023f64ac05",
       "question_id": "authored:FourierRestriction",
       "statement_id": "9fcea676-717f-49b1-b6c0-45b37cf15b2a",
-      "target_hash": "b2833d8434fa3a64",
+      "target_hash": "cb39d88f0abbd466",
       "shape": "proof",
       "track": "open",
       "part": null,
       "pair_id": null,
       "source": "mathdb-lean",
-      "source_revision": "b80da422c1869ddababb2992c7dc83556e0f930c",
+      "source_revision": "2fe7c76111373ea1d5503c074350e836cf33de46",
       "source_locator": "authored/FourierRestriction.lean#Target",
       "challenge": "AFourierRestriction/Challenge.lean",
       "mathdb_number": 403784,
@@ -31900,13 +31424,13 @@
       "task_id": "77dbf2c0-7c27-41af-bff4-8ce727f6c9ee",
       "question_id": "authored:InvariantSubspaceProblem",
       "statement_id": "83c7ab87-1577-4054-9608-4cbb6ab72837",
-      "target_hash": "283c4b2e99ed5b06",
+      "target_hash": "8ad5cdaaa1d798ac",
       "shape": "proof",
       "track": "open",
       "part": null,
       "pair_id": null,
       "source": "mathdb-lean",
-      "source_revision": "b80da422c1869ddababb2992c7dc83556e0f930c",
+      "source_revision": "2fe7c76111373ea1d5503c074350e836cf33de46",
       "source_locator": "authored/InvariantSubspaceProblem.lean#Target",
       "challenge": "AInvariantSubspaceProblem/Challenge.lean",
       "mathdb_number": 315900,
@@ -31918,13 +31442,13 @@
       "task_id": "9c31518d-98b3-4856-b0a7-a0318ce1861d",
       "question_id": "authored:MatrixMultiplicationExponent",
       "statement_id": "0ee6e248-42a1-4a83-8509-964a6cbc282c",
-      "target_hash": "b7384f9efadd6b51",
+      "target_hash": "0499b958b54a0f3d",
       "shape": "proof",
       "track": "open",
       "part": null,
       "pair_id": null,
       "source": "mathdb-lean",
-      "source_revision": "b80da422c1869ddababb2992c7dc83556e0f930c",
+      "source_revision": "2fe7c76111373ea1d5503c074350e836cf33de46",
       "source_locator": "authored/MatrixMultiplicationExponent.lean#Target",
       "challenge": "AMatrixMultiplicationExponent/Challenge.lean",
       "mathdb_number": 346080,
@@ -31936,13 +31460,13 @@
       "task_id": "ceea87d9-57fe-4219-a193-ed610674b2cb",
       "question_id": "authored:OneWayFunctions",
       "statement_id": "d5f18f7a-885b-4a7c-b487-5ea17b1a4c3a",
-      "target_hash": "cbdb6b842ec3a552",
+      "target_hash": "af101d867f0a859c",
       "shape": "prove",
       "track": "open",
       "part": null,
       "pair_id": "AOneWayFunctions",
       "source": "mathdb-lean",
-      "source_revision": "b80da422c1869ddababb2992c7dc83556e0f930c",
+      "source_revision": "2fe7c76111373ea1d5503c074350e836cf33de46",
       "source_locator": "authored/OneWayFunctions.lean#Target",
       "challenge": "AOneWayFunctions_prove/Challenge.lean",
       "mathdb_number": 405776,
@@ -31954,13 +31478,13 @@
       "task_id": "77d89b9b-3f59-4058-a25e-971ab9860ead",
       "question_id": "authored:OneWayFunctions",
       "statement_id": "d5f18f7a-885b-4a7c-b487-5ea17b1a4c3a",
-      "target_hash": "958d0d08b94bb8f8",
+      "target_hash": "0ea9708369ff853c",
       "shape": "refute",
       "track": "open",
       "part": null,
       "pair_id": "AOneWayFunctions",
       "source": "mathdb-lean",
-      "source_revision": "b80da422c1869ddababb2992c7dc83556e0f930c",
+      "source_revision": "2fe7c76111373ea1d5503c074350e836cf33de46",
       "source_locator": "authored/OneWayFunctions.lean#Target",
       "challenge": "AOneWayFunctions_refute/Challenge.lean",
       "mathdb_number": 405776,
@@ -31972,13 +31496,13 @@
       "task_id": "d3f8d465-e035-4dd0-8e45-5dd163183262",
       "question_id": "authored:OneWayPermutations",
       "statement_id": "fc97f1f4-16ce-427c-8ca5-9ece3aa092f7",
-      "target_hash": "068a0d232505c1f7",
+      "target_hash": "9a0fd84e3ba82203",
       "shape": "prove",
       "track": "open",
       "part": null,
       "pair_id": "AOneWayPermutations",
       "source": "mathdb-lean",
-      "source_revision": "b80da422c1869ddababb2992c7dc83556e0f930c",
+      "source_revision": "2fe7c76111373ea1d5503c074350e836cf33de46",
       "source_locator": "authored/OneWayPermutations.lean#Target",
       "challenge": "AOneWayPermutations_prove/Challenge.lean",
       "mathdb_number": 405793,
@@ -31990,13 +31514,13 @@
       "task_id": "ae9c04d8-28b2-49eb-9d77-4815ba6fca3d",
       "question_id": "authored:OneWayPermutations",
       "statement_id": "fc97f1f4-16ce-427c-8ca5-9ece3aa092f7",
-      "target_hash": "23570ddb336ae6c6",
+      "target_hash": "2cb69f6ec015981a",
       "shape": "refute",
       "track": "open",
       "part": null,
       "pair_id": "AOneWayPermutations",
       "source": "mathdb-lean",
-      "source_revision": "b80da422c1869ddababb2992c7dc83556e0f930c",
+      "source_revision": "2fe7c76111373ea1d5503c074350e836cf33de46",
       "source_locator": "authored/OneWayPermutations.lean#Target",
       "challenge": "AOneWayPermutations_refute/Challenge.lean",
       "mathdb_number": 405793,
@@ -32008,13 +31532,13 @@
       "task_id": "a726b855-b1ef-4a03-b7c7-880b2943244e",
       "question_id": "authored:SmoothFourDimensionalPoincare",
       "statement_id": "e2c728dd-80d7-4fdd-bc9f-1b51e14f958b",
-      "target_hash": "a19359f383081870",
+      "target_hash": "c1c518b1e320bf80",
       "shape": "proof",
       "track": "open",
       "part": null,
       "pair_id": null,
       "source": "mathdb-lean",
-      "source_revision": "b80da422c1869ddababb2992c7dc83556e0f930c",
+      "source_revision": "2fe7c76111373ea1d5503c074350e836cf33de46",
       "source_locator": "authored/SmoothFourDimensionalPoincare.lean#Target",
       "challenge": "ASmoothFourDimensionalPoincare/Challenge.lean",
       "mathdb_number": 402982,
@@ -32026,53 +31550,17 @@
       "task_id": "85bf223b-c14b-40cb-a38c-24e9f08dbce3",
       "question_id": "authored:AndersonExtendedStates",
       "statement_id": "b6d27627-9ca0-4d5b-9214-ad74bc24e67f",
-      "target_hash": "2bcc7ae073ecc3b4",
+      "target_hash": "2d39fd39aff7d7dc",
       "shape": "proof",
       "track": "open",
       "part": null,
       "pair_id": null,
       "source": "mathdb-lean",
-      "source_revision": "b80da422c1869ddababb2992c7dc83556e0f930c",
+      "source_revision": "2fe7c76111373ea1d5503c074350e836cf33de46",
       "source_locator": "authored/AndersonExtendedStates.lean#Target",
       "challenge": "AAndersonExtendedStates/Challenge.lean",
       "mathdb_number": 389103,
       "mathdb_id": "4966065d-c035-4b72-ab47-f32ecde53cdf"
-    },
-    "AJacobianConjectureTwoVariables_prove": {
-      "module": "FtpEvalBench.AJacobianConjectureTwoVariables_prove",
-      "display_label": "AJacobianConjectureTwoVariables_prove",
-      "task_id": "f1706659-efcf-410c-8806-be70f1cee030",
-      "question_id": "authored:JacobianConjectureTwoVariables",
-      "statement_id": "eeb13445-9fd8-46bb-bd0b-133d28550401",
-      "target_hash": "1cd448f9f8828c78",
-      "shape": "prove",
-      "track": "open",
-      "part": null,
-      "pair_id": "AJacobianConjectureTwoVariables",
-      "source": "mathdb-lean",
-      "source_revision": "b80da422c1869ddababb2992c7dc83556e0f930c",
-      "source_locator": "authored/JacobianConjectureTwoVariables.lean#Target",
-      "challenge": "AJacobianConjectureTwoVariables_prove/Challenge.lean",
-      "mathdb_number": 315779,
-      "mathdb_id": "30a31fb0-0e1b-412a-9744-e5ace7f90592"
-    },
-    "AJacobianConjectureTwoVariables_refute": {
-      "module": "FtpEvalBench.AJacobianConjectureTwoVariables_refute",
-      "display_label": "AJacobianConjectureTwoVariables_refute",
-      "task_id": "69b3ea79-af18-4e01-a7ec-47944c2abfd7",
-      "question_id": "authored:JacobianConjectureTwoVariables",
-      "statement_id": "eeb13445-9fd8-46bb-bd0b-133d28550401",
-      "target_hash": "969ffa15b9736148",
-      "shape": "refute",
-      "track": "open",
-      "part": null,
-      "pair_id": "AJacobianConjectureTwoVariables",
-      "source": "mathdb-lean",
-      "source_revision": "b80da422c1869ddababb2992c7dc83556e0f930c",
-      "source_locator": "authored/JacobianConjectureTwoVariables.lean#Target",
-      "challenge": "AJacobianConjectureTwoVariables_refute/Challenge.lean",
-      "mathdb_number": 315779,
-      "mathdb_id": "30a31fb0-0e1b-412a-9744-e5ace7f90592"
     },
     "E1057_prove": {
       "module": "FtpEvalBench.E1057_prove",
@@ -32109,6 +31597,42 @@
       "challenge": "E1057_refute/Challenge.lean",
       "mathdb_number": 391493,
       "mathdb_id": "e0025c90-5bf8-4d38-ac8f-45cbb88d0ca8"
+    },
+    "NJacobianConjecture_jacobian_conjecture_two_variables_prove": {
+      "module": "FtpEvalBench.NJacobianConjecture_jacobian_conjecture_two_variables_prove",
+      "display_label": "NJacobianConjecture_jacobian_conjecture_two_variables_prove",
+      "task_id": "703c346e-7b3b-4429-9fa4-e3f5113e57eb",
+      "question_id": "wikipedia:JacobianConjecture",
+      "statement_id": "0050422a-39c6-4101-aa70-90540746efa4",
+      "target_hash": "c370ad80b1308ea6",
+      "shape": "prove",
+      "track": "open",
+      "part": null,
+      "pair_id": "NJacobianConjecture_jacobian_conjecture_two_variables",
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Wikipedia/JacobianConjecture.lean#jacobian_conjecture_two_variables",
+      "challenge": "NJacobianConjecture_jacobian_conjecture_two_variables_prove/Challenge.lean",
+      "mathdb_number": 315779,
+      "mathdb_id": "30a31fb0-0e1b-412a-9744-e5ace7f90592"
+    },
+    "NJacobianConjecture_jacobian_conjecture_two_variables_refute": {
+      "module": "FtpEvalBench.NJacobianConjecture_jacobian_conjecture_two_variables_refute",
+      "display_label": "NJacobianConjecture_jacobian_conjecture_two_variables_refute",
+      "task_id": "af1b2792-7427-4062-992a-3c01acb4e409",
+      "question_id": "wikipedia:JacobianConjecture",
+      "statement_id": "0050422a-39c6-4101-aa70-90540746efa4",
+      "target_hash": "80eedb4b7b54e0c0",
+      "shape": "refute",
+      "track": "open",
+      "part": null,
+      "pair_id": "NJacobianConjecture_jacobian_conjecture_two_variables",
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Wikipedia/JacobianConjecture.lean#jacobian_conjecture_two_variables",
+      "challenge": "NJacobianConjecture_jacobian_conjecture_two_variables_refute/Challenge.lean",
+      "mathdb_number": 315779,
+      "mathdb_id": "30a31fb0-0e1b-412a-9744-e5ace7f90592"
     }
   },
   "under_review": [
@@ -32116,8 +31640,6 @@
     "ABirchSwinnertonDyer",
     "AFourierRestriction",
     "AInvariantSubspaceProblem",
-    "AJacobianConjectureTwoVariables_prove",
-    "AJacobianConjectureTwoVariables_refute",
     "AMatrixMultiplicationExponent",
     "AOneWayFunctions_prove",
     "AOneWayFunctions_refute",
@@ -33336,6 +32858,8 @@
     "NIdonealCompleteness_idoneal_numbers_completeness_prove",
     "NIdonealCompleteness_idoneal_numbers_completeness_refute",
     "NInverseGalois_inverse_galois_problem",
+    "NJacobianConjecture_jacobian_conjecture_two_variables_prove",
+    "NJacobianConjecture_jacobian_conjecture_two_variables_refute",
     "NJugglerConjecture_juggler_conjecture",
     "NKakeya_kakeya_set_conjecture",
     "NKomlosConjecture_komlos_conjecture",
@@ -33599,7 +33123,6 @@
     "O96535_conjecture",
     "RCardinalityLindelof_HasG_Singletons_lindelof_card",
     "RCatchUpConjecture_value_of_even_mul_succ_self_div_two",
-    "RChvatal_exists_maximal_star",
     "RDubner_dubner_conjecture",
     "RFusibleNumber_conj_7_1",
     "RGourevitch_gourevitch_series_identity",
@@ -33613,40 +33136,17 @@
     "RSerreUniformity_serre_uniformity_refute",
     "RSizeOrderConnectedDomination_mukwembi_theorem_2_1",
     "RTuDengConjecture_tu_deng_conjecture",
-    "W160_conjecture160",
-    "WGraphConjecture100_conjecture100",
     "WGraphConjecture109_conjecture109",
-    "WGraphConjecture133_conjecture133",
-    "WGraphConjecture13_conjecture13",
-    "WGraphConjecture141_conjecture141",
-    "WGraphConjecture142_conjecture142",
-    "WGraphConjecture143_conjecture143",
-    "WGraphConjecture144_conjecture144",
-    "WGraphConjecture145_conjecture145",
-    "WGraphConjecture146_conjecture146",
-    "WGraphConjecture16_conjecture16",
     "WGraphConjecture172_conjecture172",
     "WGraphConjecture176_conjecture176",
-    "WGraphConjecture17_conjecture17",
     "WGraphConjecture181_conjecture181",
-    "WGraphConjecture18_conjecture18",
     "WGraphConjecture194_conjecture194",
-    "WGraphConjecture198a_conjecture198a",
     "WGraphConjecture1_conjecture1",
     "WGraphConjecture200_conjecture200",
-    "WGraphConjecture217_conjecture217",
-    "WGraphConjecture2_conjecture2",
     "WGraphConjecture309_conjecture309",
-    "WGraphConjecture314_conjecture314",
-    "WGraphConjecture315_conjecture315",
-    "WGraphConjecture316_conjecture316",
-    "WGraphConjecture31_conjecture31",
-    "WGraphConjecture3_conjecture3",
     "WGraphConjecture430a_conjecture430a",
     "WGraphConjecture438b_conjecture438b",
-    "WGraphConjecture4_conjecture4",
     "WGraphConjecture58_conjecture58",
-    "WGraphConjecture61_conjecture61",
     "WGraphConjecture63_conjecture63",
     "WGraphConjecture85_conjecture85",
     "X0911_2077_Conjecture6_3_arxiv_id0911_2077_conjecture6_3",
@@ -41939,77 +41439,11 @@
         "conversion_run_id": "import-20261029T051852.274102Z-eeec5c",
         "semantic_anchor": "678c6731951b36cb96d72e90e008f065cc0af2ef2139e190513d18d721ea2b1a"
       },
-      "W160_conjecture160": {
-        "target_hash": "d76fcfd9623a1416",
-        "conversion_hash": "0d0219cd55bc18eefaca6125e486b17a47b02693eeeab0f9fa1421dee6d30246",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "c49ac2e97067734c187b4b256b44ac93d5e18f69b9b09adb5467202e58e745ee"
-      },
-      "WGraphConjecture100_conjecture100": {
-        "target_hash": "7cd6f0d14f65a7dd",
-        "conversion_hash": "2b362b405a13d36269c4245c8cb60bbd4ee86aa4b0a0988e58487c8f7a08624a",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "2b97d32b8822fc8d656c01288b37f39f3c87400e110cee67eeea2786e2e38cd6"
-      },
       "WGraphConjecture109_conjecture109": {
         "target_hash": "3b017771fb70be5b",
         "conversion_hash": "436a0674c64d939e84245bc6b61ce27b81a3d273e54e19f8353132e744dbd8f8",
         "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
         "semantic_anchor": "6e78d45977d446217306df3bb8cd48b83f8541fd958cbfeb5d84127fd43ba766"
-      },
-      "WGraphConjecture133_conjecture133": {
-        "target_hash": "273a4fc7b98538b9",
-        "conversion_hash": "c3dc5515a49f38c643abdf38b7420f056fdb9cb6ba341a9cbdbfbf5a9a9d9023",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "06ddcf31f2df5f5bbde74c9b9243a0edba1836bac79ecfe86670720f59737133"
-      },
-      "WGraphConjecture13_conjecture13": {
-        "target_hash": "f29633247fb5e0e3",
-        "conversion_hash": "d83554aebdbe906f1326af831d29ba166c9df2a8431eb3f07a93b9a944e3e237",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "5d5ecb6cfa5547a697e2ab7e7a7d3982c78f2a401cdd849c4e49deeb0e706b15"
-      },
-      "WGraphConjecture141_conjecture141": {
-        "target_hash": "942ea11f431a7ab2",
-        "conversion_hash": "60021ca7d03b35a8065db6dab117506bf382fa2a6f4f16c18032109c0dc55e10",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "973c0b784c49cb8ea25563a5771f8faf3dd76d14bc6e1503c9587a7a86304aac"
-      },
-      "WGraphConjecture142_conjecture142": {
-        "target_hash": "612d56bc5a761f72",
-        "conversion_hash": "10b319bb1835b3bbe5ede3e5762f69551326a7241bcd8086980f77a3985842fc",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "87a2eb52b7efc8d1b5c812ffde13eb42b904b2eac1f365b26da1ce881bb598a2"
-      },
-      "WGraphConjecture143_conjecture143": {
-        "target_hash": "5673dd38e38c8580",
-        "conversion_hash": "a6a974ed2272bacc244e8be21dab2c825d0c75e08e232e2b2229ce8bf4e8dc15",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "3445b1d6b8ff477883bcf36d0312bd90b95de405dc07f52e841c358c927ff15d"
-      },
-      "WGraphConjecture144_conjecture144": {
-        "target_hash": "29571bc4081d0dc4",
-        "conversion_hash": "a4ea41518f30f1abe5050e7fed8878682a0190c6f6963461e0c1aa43bc79415a",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "8685f93dd4e6ff3d8774ca24b5ed499e4c0ddbe76060b9cbf9313265548b8eaa"
-      },
-      "WGraphConjecture145_conjecture145": {
-        "target_hash": "e4eb0a852c49eff7",
-        "conversion_hash": "88185cdd02637c2dba86c9fc86e3d1dda57d153ce4c001450a0436ccd816f11d",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "b54dadb88c3440af3f760ce677312347279e8b6629481c34816e0745d5fb9e10"
-      },
-      "WGraphConjecture146_conjecture146": {
-        "target_hash": "8ec7638cb0d0cf34",
-        "conversion_hash": "8ba9c9fa3190c2704ce0dd2a242d85af71285e8d4d7da86f9b8af6ffb37432c5",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "2d2d586a7a49b25c19379d58c38a5e365914a70ffc1fbe34628516d9e2150345"
-      },
-      "WGraphConjecture16_conjecture16": {
-        "target_hash": "89bf7a9c115fa91b",
-        "conversion_hash": "2d75fabb771716d986ebe6e1b1da6f493255913cb47c66b6ca623ec964a363d2",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "fdcd5149f68770a675f74904d0837fedda0c5d5b96bdce203a7fa7aa4471df84"
       },
       "WGraphConjecture172_conjecture172": {
         "target_hash": "0fe4d8a6a6001cba",
@@ -42023,35 +41457,17 @@
         "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
         "semantic_anchor": "1c452c67174bde32153dd4b7d686602147383c020749e0ec47b23ae4fed3808d"
       },
-      "WGraphConjecture17_conjecture17": {
-        "target_hash": "22a8873dd137b4f2",
-        "conversion_hash": "85351403b033222976a9129d84e151a61e098c2c95dc221dac6c664ad60fd07b",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "d6a38460b7f48754f17c284274188e746213224d7c8a5ac457135b6ba981324e"
-      },
       "WGraphConjecture181_conjecture181": {
         "target_hash": "cca880e5e43b855c",
         "conversion_hash": "e8a4cd8d39e6ea25b01b65ae3ded19849c55553a7a8aa9baba5018b539e140d1",
         "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
         "semantic_anchor": "4bad43c738215f4f1cbfd531dcda76447eb1840b69ba4e5c2eef63ab17c374ee"
       },
-      "WGraphConjecture18_conjecture18": {
-        "target_hash": "20594ef04123f0b7",
-        "conversion_hash": "20d8261e2c2087b804c42ad1df80703288d5d85fa0b4a944e5e61cdc0bd96d5a",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "448f45a5bb6e5e09337166e0642342ca862be5aaa6db9237b978aaf84be7054e"
-      },
       "WGraphConjecture194_conjecture194": {
         "target_hash": "358ecf87e4531d81",
         "conversion_hash": "0780ea9f0796380f01eada23f009b67d45457cd9bd58e01607903afc26beb933",
         "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
         "semantic_anchor": "4c8aa84e1136deb5523e35065c89b46b135fa65b9c20d2ada10b69e3c3d0bdff"
-      },
-      "WGraphConjecture198a_conjecture198a": {
-        "target_hash": "1f4e2d125befe4f1",
-        "conversion_hash": "b5c082819b0ac0b90ddae15164a377c97528ee9b05741256c31892e69c1a5bc1",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "e385a0264b6cfba4a62dfcb17008d43596e97d69a253c8004ecc54b2758857a3"
       },
       "WGraphConjecture1_conjecture1": {
         "target_hash": "27e6b82233fbc1dc",
@@ -42065,53 +41481,11 @@
         "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
         "semantic_anchor": "ec121702b2dfbe49c802cc60745e71949e433e0383af8c890dc2afd115b2b380"
       },
-      "WGraphConjecture217_conjecture217": {
-        "target_hash": "4e29fef6814470cb",
-        "conversion_hash": "48c43e4444c21e10838bacf84bd5c77b9d16ddcaadece393bac769c411e0febc",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "ef639d289f5b076b4f154ba2a0999fe92e0b9fed2bb302f5d5ce64ba9c696b57"
-      },
-      "WGraphConjecture2_conjecture2": {
-        "target_hash": "8c82c6bd712dcac5",
-        "conversion_hash": "9a5fcea48393903d91cf62eeac236c78d53d91d3850f15180d09f3d3fc8bf22e",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "d366945f6b2a2dd703a94a5b21dbc81367ef3df89fe3a7efcff092bd8d7adb24"
-      },
       "WGraphConjecture309_conjecture309": {
         "target_hash": "af10bd554543c291",
         "conversion_hash": "13e80474218e2875264db983f2cb6620ec8d1db8191df18ed635fa20d875dd4d",
         "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
         "semantic_anchor": "070871be8dddc7d8a9576735bef608468f8b0ec451d82175c69c297b7d171dae"
-      },
-      "WGraphConjecture314_conjecture314": {
-        "target_hash": "8ec1434d29649e15",
-        "conversion_hash": "3e7a54edeb3faf128dc3d77339ee05a1a8e91d5f021792cd16650f539b7cdc1f",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "b49717ae1991381d7da303ab56d9d50c0b9f7dff361c9acf877e6f038f320c4b"
-      },
-      "WGraphConjecture315_conjecture315": {
-        "target_hash": "0daca6346813d017",
-        "conversion_hash": "b51737db42d03bcf277bd90ddc26bd351e73ceb1d501d743de92430c69236852",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "63978aa059584534d94e0a72551b8b49e5283a2a7cc604f8a42365cf4e142bd1"
-      },
-      "WGraphConjecture316_conjecture316": {
-        "target_hash": "43a2d2f1eda2260d",
-        "conversion_hash": "cbfe4feb64e9e3254557714c4f21f95cd1a817eaafe5fb9f40197cb0e05ba124",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "b54a65398620d9deb75d07db95aa2d91e5868d2e60e7d41674d13d947ec8d112"
-      },
-      "WGraphConjecture31_conjecture31": {
-        "target_hash": "58e6931ede547a93",
-        "conversion_hash": "25b0dc6a683570399332ca146175b6d620aa3abdf8a860165cf3686d9fe385a2",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "fac62d77df82a854ba56d04623dcaa65b15c9976b26d7ad662d5867fc355482f"
-      },
-      "WGraphConjecture3_conjecture3": {
-        "target_hash": "9f98f547bdef47bf",
-        "conversion_hash": "bff2e76079385780cd825fd844ee8e50f6ed9435459f5eafbc0f06c00cb08dba",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "7b02a63363a48e2951ce97cda9d3a18bc8bcb78a4364054d3c641c1eb5a7c34d"
       },
       "WGraphConjecture430a_conjecture430a": {
         "target_hash": "fd773e18d2acacda",
@@ -42125,23 +41499,11 @@
         "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
         "semantic_anchor": "264de501bcc974cf881b8c01c079009ec299fb24524d9740f9efb1d5a5f6c209"
       },
-      "WGraphConjecture4_conjecture4": {
-        "target_hash": "a5e0dfee85f0f375",
-        "conversion_hash": "5873bb4a7b58c52bb20e14488ba827bbc250c861e66ce4e093a6a05acac0c23c",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "a5d7521923e0fa6fab8324b1af0fd9d9cc4bb2f223989972e2f349c39384c52d"
-      },
       "WGraphConjecture58_conjecture58": {
         "target_hash": "88e2b330752f06ec",
         "conversion_hash": "590493beab11fada24b3f0133a775a0d7c4a02cb5224e69d24524bf661f8bcc9",
         "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
         "semantic_anchor": "59c1b521904baa3b42e6600d80cd5a8f27b6ac50c7b6c8d6cf99ab0c5f1ce22b"
-      },
-      "WGraphConjecture61_conjecture61": {
-        "target_hash": "6e6b4663c8a5588b",
-        "conversion_hash": "9bf4161359ba02b313df33b3c003253167dea0591625de2b269f58fdc02ac602",
-        "conversion_run_id": "import-20261029T051711.341544Z-981a8f",
-        "semantic_anchor": "b8cb58e81ae2a5063005218cc62381c31458b0f1694eb3b9447bbb497154c339"
       },
       "WGraphConjecture63_conjecture63": {
         "target_hash": "e208292fcc46df10",
@@ -42359,12 +41721,6 @@
         "conversion_run_id": "import-20261029T053212.727455Z-647abf",
         "semantic_anchor": "40c82f811bd6a149c19e02545322b77d59f33e7130d1c089788a190482af6482"
       },
-      "RChvatal_exists_maximal_star": {
-        "target_hash": "1f49ed01b0422598",
-        "conversion_hash": "74e335224d1af6957087a7270f22b3064f68ade191b40d61ee379341a0b016cd",
-        "conversion_run_id": "import-20261029T053212.727455Z-647abf",
-        "semantic_anchor": "71897a09660ee97042b9ad827b8765ddd2bf8e4183ab59d80a07f14dc5bcf55c"
-      },
       "RDubner_dubner_conjecture": {
         "target_hash": "17d71bef29208119",
         "conversion_hash": "3b72446d8339aecd0263a36ae9ed842914d9429cde074696121da3a24e67be7d",
@@ -42446,409 +41802,409 @@
       "NABC_abc": {
         "target_hash": "573e44a5ac590c34",
         "conversion_hash": "f53b8b853a320be173b5b1906caf37a3e2effc01e969ec567d356deebde00639",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "0358b4d0b9df51270cff37f04c0037809688d30c6b50108b119b5d0dec7620bf"
       },
       "NAgrawal_agrawal_conjecture_prove": {
         "target_hash": "bffe50699e5c387b",
         "conversion_hash": "521a64f68bf582363e40f804a1a242440e28faba251652b81f0e871c045402fa",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "b0030fd765168d6818484a5ddbdb1aa0ad430b8e59eddfa2eca3ce24ebe9ff50"
       },
       "NAgrawal_agrawal_conjecture_refute": {
         "target_hash": "bf486b3057fb87ed",
         "conversion_hash": "9cb19026e5437b3bbe66c87217f5e1eb2350b6dba172d92b5b0ac847ff5fbff3",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "b0e3a6aebbfd9f261dfb22ce0210398956f5af81462f649207364c1efc72c960"
       },
       "NAlmostPerfectNumbers_exists_almost_perfect_not_power_of_two_prove": {
         "target_hash": "1338637179482b4b",
         "conversion_hash": "e893897dd1c63e48753f638c1be8e4d713bf858f7ac1b54d8388684e34fc1141",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "1b9422438cfa116141f0f403d0e02294048a63f70ce7f9a3cf3469034a03f5e1"
       },
       "NAlmostPerfectNumbers_exists_almost_perfect_not_power_of_two_refute": {
         "target_hash": "8162678880e291d4",
         "conversion_hash": "8df08cb331d7481d21598070fadbff07e27ecf04c5d2bbadeb907c0c85dd9239",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "7db685a232d97dcbf055403a2ca12f1b8fbd5f64390591b7968c6de00063c96d"
       },
       "NAndrewsCurtis_andrews_curtis_conjecture": {
         "target_hash": "495a8a8c510723aa",
         "conversion_hash": "71804abebb8dfab33acfb8589a9f8b1d4361c29b633f8f62b7a7cd125cd26268",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "0cb37cb8c2f4583e4fc8ab38730d6a704b42a7f6bad5bad45d883e0192b78365"
       },
       "NBatemanHornConjecture_bateman_horn_conjecture": {
         "target_hash": "4501cf5c1a887b23",
         "conversion_hash": "05ae9eccb6508abf5ef8a075c2a4a6faefc2af71a54c9993b03c50ceb734ca21",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "683650a179bfbec6ee67ce169ee51f085bbe62f6b20bf4b087548840e4ff816f"
       },
       "NBealConjecture_beal_conjecture": {
         "target_hash": "f90ff4912fda7bc0",
         "conversion_hash": "9bf56b86f74694d0b0344ac29ef0249a327ba549898423301f1e5b2b0db07150",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "d9dc73388453189df0098287e136f9fad1d898756ef57389cf8060ce275c02fd"
       },
       "NBingBorsuk_bing_borsuk_conjecture": {
         "target_hash": "a6ddc70ed42fbc75",
         "conversion_hash": "ee78e8d4581a6c5dece2426ab8f32496b716e5132264d8c4bd1c65a22e704ba5",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "5c866c7fc10260e016a7685d8b3085b96236ac99ceaab52c744971df8b814cc3"
       },
       "NBoundedBurnsideProblem_bounded_burnside_problem": {
         "target_hash": "d86a55a712c59be5",
         "conversion_hash": "404c4f07ac695405dda06e618c06abfa38acf7e10aee173256a8e745c474e964",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "f6a300099ed6e5702b34c1bed8ddf605e16c3bd8baf69c4ea953d84f9dee4b3f"
       },
       "NBunyakovsky_bunyakovsky_conjecture": {
         "target_hash": "1a017f511dffa513",
         "conversion_hash": "92c6c9190baa3a013e9fa5e44ab82557d52e1ed94e6699d964cbd321963ef44a",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "9280aff6a8cdce4e39cc9fed7fbc361b583b6d7b43d009ed7594de6acaeda907"
       },
       "NClassNumberProblem_class_number_problem": {
         "target_hash": "e44675cf88ef0b95",
         "conversion_hash": "079ee7f5c4c8dcb4c8556e673dbb582e75cbac2a328763c0978bf7c59c111870",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "678d9e03d59d83cdf1d0e13cba89ee3b152422403f351adbb82978be960cad89"
       },
       "NCollatzConjecture_collatz_conjecture": {
         "target_hash": "35387d46c394f22d",
         "conversion_hash": "490851881478e366b9b1d566a9490d04cb67b553de8509bfbdf7c75ef7128bb7",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "0ff812eea36c9aac8c75a24692ce4a4682bed24d0f15f5d866641f2675d73196"
       },
       "NDeterminantalConjecture_determinantal_conjecture": {
         "target_hash": "6b38f4ea9ca5c0ed",
         "conversion_hash": "8c4579336abdfa013fe9e19797211a03a2597d76554ef20af08d1375aebf88b2",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "40184d848eaaff8b8c075223016a81987cffb24b7be3f02d4caea27a47938ef8"
       },
       "NElliottHalberstamConjecture_elliott_halberstam": {
         "target_hash": "da9163ae169c1f71",
         "conversion_hash": "c7f21d047f72b8b54e9ceed6b2492ceeee71b11a778e9bc125d5fa4a7a9bc794",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "4239aaf8d7a7127c2c5b77422ba06b8c4a4ff6a178e20ad13551e3cbd14cae27"
       },
       "NErdosMoser_erdos_moser_conjecture": {
         "target_hash": "0b15ffef026dcae4",
         "conversion_hash": "26c882fa82a87468b66690535b0b54f474b1ea43d535aae1831d078d870a915d",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "4db8d0f111ca517f215593d06f4ce6c40d17b4df8f05e94eec59d55d2d3f902d"
       },
       "NFactorialPrime_infinitely_many_factorial_primes": {
         "target_hash": "2c4c808197b18abb",
         "conversion_hash": "cf105a8e5282bd76a5cfc185ea95a92766f01793e08ddc7ab736cf23d9c8642c",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "189cd0e692f9983a8c350a663e688aa96b62c620124dc0fedce9d1d7061826dc"
       },
       "NFeitThompsonPrimeConjecture_feit_thompson_primes": {
         "target_hash": "3b7bc058eba4942c",
         "conversion_hash": "ed0302a1363f8cb5896ea8a416fa9009a9a483eedd9fb3b94f5e52a183195323",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "ca5817f3d26452f5c1fad1dd1caecd6ef620278b906bac8dd842c94f92860cdc"
       },
       "NFermatCatalanConjecture_fermat_catalan": {
         "target_hash": "3df247740751cda3",
         "conversion_hash": "af7d3692be0f80c74b4c2d4941f804f2dc45afac0559a30da570d3dc35b172e2",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "9fd80aa45c7d04b67b90de495c147bd06657bbde5df60792e56417587b5ab5fb"
       },
       "NFortuneConjecture_fortune_conjecture_prove": {
         "target_hash": "13e4da019642b2ef",
         "conversion_hash": "b36f10a73f759fc9e5b2e424da1283f874cd8a0fce487a1826c0a8357a3294d3",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "544182cd41f7905bd14c1f867b7f661ce4f2c0299201959f5c8285df826f3549"
       },
       "NFortuneConjecture_fortune_conjecture_refute": {
         "target_hash": "14b2988df54acd43",
         "conversion_hash": "b89686a698bfc8de4bd960905a16b91872a46c54e385b1e4b1d279d543fff46a",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "02f7371a0c73a0624fc9d200ff84527b0638624f9738b0465588efd14a29456e"
       },
       "NGapConjecture_gap_conjecture": {
         "target_hash": "4075ac50bd38dc4e",
         "conversion_hash": "57f503481616009239de16fad74d7211269ba941b2717c64ed4158a0d918df25",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "b614e26d9255cbd7e09b53c5e16492af8e8c0c53f4ed59595bf28590cc22d02e"
       },
       "NGilbreath_gilbreath_conjecture": {
         "target_hash": "ab211fe028dd21a5",
         "conversion_hash": "92bca5f1f2f376f90aed04b672164ed1b0259e1311d9bc1b83c59c171ffc4d37",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "dd069910fd6ffb039fad4326c8d791d8d0a267d1c4be35de845383456539c983"
       },
       "NGoodmanConjecture_goodman_conjecture": {
         "target_hash": "9ec816dca7702a0a",
         "conversion_hash": "2c00ed58c44e08213034778f94fce575d21000590b7f5018748dba0d5826d884",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "13248642be87e2c774c11e8f29c3ea642f3ed63d66cb28159d8f00a7b915f60f"
       },
       "NGoormaghtigh_goormaghtigh_conjecture": {
         "target_hash": "167df8ff3a4c8aa8",
         "conversion_hash": "5a9fea2208c8d4e56b38fd55c9914d9e71dd129708fc14db8906e852f3e5bd05",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "ca4a4726ab55028a53ea3d428a032d8a243a5a12e7017c29a95725bd57afea6e"
       },
       "NGracefulLabeling_graceful_tree_conjecture": {
         "target_hash": "5649b94d89c79ec5",
         "conversion_hash": "5f5d2ff81244ce7370278d5a71fc1595488e9e8fe6b0ef2563ae80ac3b4cca85",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "39219f7b37bed0fdd2b7338970808ea1537a0ee5e6a89756a2178b7fa6039d17"
       },
       "NHadamard_HadamardConjecture": {
         "target_hash": "6c38f7ebfadef204",
         "conversion_hash": "37d800b17afb5df4bb086d381172356271dcb94496a053f1cb912297ffb30fdc",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "54ba52d8db11fa7686e7c8be0604395eafd7522db5f4530243ee80e80b040a47"
       },
       "NIdonealCompleteness_idoneal_numbers_completeness_prove": {
         "target_hash": "61b8696eec5a9870",
         "conversion_hash": "742398d791302e6ea54d07be83aa91dd517c66a2eba714e39ffdf65c5a74035b",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "74c8ca4e5ad9ee1cbe20746ff02aa527a5ca0aa9ac79098b6cb9717164515d7a"
       },
       "NIdonealCompleteness_idoneal_numbers_completeness_refute": {
         "target_hash": "3741a7a8955d8d42",
         "conversion_hash": "8bcdb972c4081b4e8d92a5cd56f27f95ea888cc0730a99ee0e083a961f164194",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "63dcebc1e94f6630e3318d6db02522bf2e5df0d497a3af2fc36a566547ce44da"
       },
       "NInverseGalois_inverse_galois_problem": {
         "target_hash": "76b1ae354e18a7cc",
         "conversion_hash": "8c66bf983f2b0e60945804d71f9ee6c1475a890de9af48056cfd00248b4522f1",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "76f28d0f0d470ea849a3ce56434d3d17e07cf929ec32e4b3147dd28bacb2e703"
       },
       "NJugglerConjecture_juggler_conjecture": {
         "target_hash": "004014ef42166227",
         "conversion_hash": "983f02097a4c5539acbcbd646a2da0eabe59c63f5e6a8d525b7e684591477940",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "9de348f37618b191e0c7fdd867e8b1b61d7d8a817363ac35c8e39f8d16e260c9"
       },
       "NKomlosConjecture_komlos_conjecture": {
         "target_hash": "8102319002daf32c",
         "conversion_hash": "08b6b8a677273c768590aeea5e9313da3e4875eab8e5a28da18f97c3c5538437",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "22eb5f6ae9c53dd2fcf66fcc7ce6b75f1ddde905cb795aa2e483ef404e2bf63f"
       },
       "NKummerVandiver_kummer_vandiver": {
         "target_hash": "2995f80e80ba9555",
         "conversion_hash": "a5effb3059f53456e37399359d15e80525d792536863cf82b1afc32aa2708634",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "a37a25b746801ff498015c9b443931882898ea6f9c7962f874a997ab43b39698"
       },
       "NLanderParkinAndSelfridgeConjecture_lander_parkin_selfridge": {
         "target_hash": "471e49cde25d88fc",
         "conversion_hash": "5c4277aaad9f434bfb938c03a6fbfbbe641959d17394e4705847733e1a75390e",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "c7e30ddb05a63931c6d35c39500f8eff697d12dd96a1058a550dfdf720f847b8"
       },
       "NLehmerMahlerMeasureProblem_lehmer_mahler_measure_problem": {
         "target_hash": "e8814460287d69de",
         "conversion_hash": "4a4e13f3b6ef177c81d9bcb2d7452066a62fe02a58e20024b81ca5e6bc5bdeed",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "265ac2d2a9d88e0891eed85b410f21678d04d639b57ffc7adca235cca9bfcec0"
       },
       "NLehmerTotient_lehmer_totient_prove": {
         "target_hash": "a7da517760edb484",
         "conversion_hash": "3508e482097b58701510c57b9e93123216585e7dff943051935b9bc53a9d8f4b",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "8d2b442b5a51ed0c7c7b57fdb6ad510cdd09e417214357a1eb3f216cb937ab93"
       },
       "NLehmerTotient_lehmer_totient_refute": {
         "target_hash": "16d860be40b80861",
         "conversion_hash": "c560c16e8b81a3df0f7e8b44366df9755f0881a9e99e5b8cd65a44f4dbee55cc",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "c07e4c5b3a2b1317eb628e025baa1ae76dbb8c0f99b1529d65d1c54020fe0930"
       },
       "NLonelyRunnerConjecture_lonely_runner_conjecture": {
         "target_hash": "a8a6c38aaccd5a84",
         "conversion_hash": "964b983be16515dbcad6035081b27c8c1ee35119e7901d81173ab311836b681e",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "26f1f1ad9d684becac60261640cecb9ae1ee6c05a7c029ff8a9505da6a631cf8"
       },
       "NMahler32_mahler_conjecture": {
         "target_hash": "92542c4cb05876e3",
         "conversion_hash": "1731a58df39456ee875a72ac01e0578e0e23fca61f837ae56101a7421140762f",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "562391fd0a764b975439c58ca142b40c5bd1a088017b08afe4681f460e31d1f5"
       },
       "NNoetherProblem_noether_problem": {
         "target_hash": "202362bd4b58b162",
         "conversion_hash": "e2beee72bc2fbb30e16d1ebd6a500a6821a275c83e9fd637e84f9040bb8822cb",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "5c9b8ae21edd8987be2a23138070aff16e9f90121967857acd67ab9d76dcc4cd"
       },
       "NPell_infinite_pellNumber_primes": {
         "target_hash": "a9809730aafe5724",
         "conversion_hash": "0fc8f236ca8513a2a25aecdea181c112553f0a9db984e113ff65717ff7654a38",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "e2703371cd08affb0c9cfcbd1fa0e281d8998ef1e7960210f1941e63b1d0ea49"
       },
       "NPierpontPrime_infinitely_many_pierpont_primes": {
         "target_hash": "5861b95dc7c83638",
         "conversion_hash": "6c25742edfd98d8199c0e86a5a6ea838a2aa56e9ebec97f3fa571b9c2d85e5e1",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "1f98c4fe3404f47df07ad893a3e4323fd7b6c176c3c00e930cfd22b916190d2c"
       },
       "NPolyTimeFunctions_isPolyTime_primeFactorsList_prove": {
         "target_hash": "224795251af34117",
         "conversion_hash": "054386cc442ef34ac1dcf5b363c631c7cf12a63a778d19148b809afdf92e2421",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "41b1d20cd83b7f23bbb8b52ea9e80671bf020ad073957ae61e905d37c0e58637"
       },
       "NPolyTimeFunctions_isPolyTime_primeFactorsList_refute": {
         "target_hash": "04072568ef8d745e",
         "conversion_hash": "c07e29348745bd6f5ec22c232ec73c072d78ef6800998607af82461e344658c9",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "98372951681ccb745a301f4522d942fc7375c94bd9d0786a5c122de1b64f6869"
       },
       "NPrimeTriplets_prime_triplets_prove": {
         "target_hash": "4afc313583f6ca30",
         "conversion_hash": "d7bd15041072474f79e5b78f019a835d0d468c62357341112fb6434f61459d0d",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "2c71eb394f8f8ef2e0394bf8d92af51ed3ef08e505ee0e4c80adfd0104231402"
       },
       "NPrimeTriplets_prime_triplets_refute": {
         "target_hash": "9d14887227d6c46b",
         "conversion_hash": "8737ba6ee5d707e3d9028623db1bff1834e888420526827ebbb25cb6a1596957",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "5b234908c1e88b004c3ca552b0e365ad34bccfe01d8ba80e1debfce43b0d5792"
       },
       "NPrimesAndPerfectSquares_infinite_prime_sq_add_one_prove": {
         "target_hash": "c975f3a45bd8a2ba",
         "conversion_hash": "1765924eb80ff834178d52cda24e33717143a37d2f95c20602eb6c509128ddc1",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "e6e8be8534e11530f4cf5e3b198dcc1a6ffe6d84b141d747ca4dc6276b686539"
       },
       "NPrimesAndPerfectSquares_infinite_prime_sq_add_one_refute": {
         "target_hash": "4ad7c4500aa435e2",
         "conversion_hash": "641a60b3194e6e16c0757e2c793ad399cdcf992d0cf0d5817a477b05653dbeab",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "81b6ebaff41093e56289986bd5016f96398cd28fa773aaa308d79cab5e0ff714"
       },
       "NQuasiperfectNumbers_exists_quasiperfect_prove": {
         "target_hash": "72d84ef15f4f65ba",
         "conversion_hash": "f06ba745e9ee969be1068ed81bb1b0aca7e1d6a6f49acf6c3a3c916d3f881262",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "b1335d814ba2f1cafc79e89f81e20ffce2ce6f2e481ec7de548ee940e97e60a8"
       },
       "NQuasiperfectNumbers_exists_quasiperfect_refute": {
         "target_hash": "5ed46d02e9482aa5",
         "conversion_hash": "35d1dcdf3033721f94d69e9792362913db96f90c8d4c2101eedfd726a0b32742",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "e974066f2b1b48bb014f527c66d5339a5fda39694ee4be76e8199a4df0240897"
       },
       "NRationalDistanceProblem_rational_distance_problem_prove": {
         "target_hash": "7ad2e54c77663b6b",
         "conversion_hash": "2e9a347a86f5a2c4654201e9a4f76518e8fce51a386d6f3f9ec392821965fd8a",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "2d26d743010ac4ef8418d94a535b518c04f8a847e01d6c8e8c97bfb5dbbd1d00"
       },
       "NRationalDistanceProblem_rational_distance_problem_refute": {
         "target_hash": "85e6b0c98ae8be00",
         "conversion_hash": "f081533c43659bb9e31ffaa55492673e7330fd8a28013a38d1f55e3b3d382bb5",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "0c21f4614a85a46fd14f7eda08de74e3e73d04bbb57bbd896c701aee46340bf4"
       },
       "NSchanuel_schanuel_conjecture": {
         "target_hash": "31670f2e37837748",
         "conversion_hash": "0bfcc727ac789120d4fdfafd2679701af896dde7f747237092b808f180c2ea6d",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "16bf6968ac9a38e4b364741cd0e9b834a94a365993011b05df18078404ee70b8"
       },
       "NSchinzel_schinzel_conjecture": {
         "target_hash": "b7c9e8bff171a3ec",
         "conversion_hash": "817e131147499012d3b53d0f7144fedeff86e29a9c95ea7e6113efdc13cc6eb0",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "43f5e5c7bceef7956bf545191699a2ae5777d04dba957d878538ed1029fe1a90"
       },
       "NScholzConjecture_scholz_conjecture_prove": {
         "target_hash": "86336b6dfad7b824",
         "conversion_hash": "10c5bee35f123680088bb7fc9b66f99e2232566cb1862157e236bcc5f8af65bb",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "60b9ec2993f7eb03053e18e02b8c75f3e4f42934c753e1a0956f2a2f41d8fe99"
       },
       "NScholzConjecture_scholz_conjecture_refute": {
         "target_hash": "78c080e5fd62e716",
         "conversion_hash": "12f2e12604a4f12d6ad73071d295652157e32b1a7bdf9473b476333c112ba50d",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "501b9af8d58f1d540950f198c78590fc69975417d78aecf537a6446820b3bd61"
       },
       "NSixStandardDeviations_six_standard_deviations": {
         "target_hash": "ce7574cd81f5cd29",
         "conversion_hash": "a0fc9c1c8f177113c45b94301aed3810257a011636db036e9deff49214f9a2f2",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "4fa2231ef28998b4e371fb3fd1df18b2b1e6f1e4599ed4d35c179fa537a087d7"
       },
       "NSparseRuler_wichmann_conjecture": {
         "target_hash": "3f4e3b3acc978a73",
         "conversion_hash": "185491d7e501349cb6b73d211fa1a95533e6303f778eeb55640ceaa710e72801",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "cfa890ababb4181d4eb8bba3dc85a042d1300fba6dc7ad6ef95c80209d2c613f"
       },
       "NSuperperfectnumbers_twoFivePerfect": {
         "target_hash": "588bd42408dcf74b",
         "conversion_hash": "1eafd08e2494dcdc650bd84ce1cb49e4364e27d76da8921965b4aedeafea1ad7",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "fd2fc3eaca88bfaf7ce193cc47e875c4107d64a95a55d1003fdbf8863267d4b4"
       },
       "NTwinPrimes_twin_primes_prove": {
         "target_hash": "dd678b870da3cd72",
         "conversion_hash": "73c71440dc21e4fc1a758f04c26cb39cf14c1bec13b5c544609e92d7aaaf486f",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "5119c4a24a5a0bac7c5c189bf6b0f18eb67542bd2d0cf7f51ffa3c994023f23f"
       },
       "NTwinPrimes_twin_primes_refute": {
         "target_hash": "4fbef1bbdb8d97c7",
         "conversion_hash": "8bc595b25c7b083a53c2a81dfa36e6342e6f6e9a8ab6204e9427938aa2814f9c",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "afcede129e599143250ffdd9c9e06229911f454c7725b643ddc22542f5eeed9f"
       },
       "NVizingConjecture_vizing_conjecture_prove": {
         "target_hash": "d9e9476411fcedfd",
         "conversion_hash": "b06b660f4dd7c2ed1d1fe1f441ec5bd6b96faa8919ca7a31faf784a37094dd95",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "29a2df317922a1bec4efb71395193d067b66a380eb5110a80a05d2e5f93e8e64"
       },
       "NVizingConjecture_vizing_conjecture_refute": {
         "target_hash": "3655190383a3eeb2",
         "conversion_hash": "14e202f1d1c9d55f499593d98833b2d6f14aa9824c85516b456cb4548450c8ec",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "5c6daad9df32f8c7525eb567097fda617dfce9ef215e3abf7645765c98397c43"
       },
       "NWilsonPrime_infinitely_many_wilson_primes": {
         "target_hash": "8205988c243d86e4",
         "conversion_hash": "f7ad936b2ccba452779cc1342e426e24fc91abc651d6569fbde0914be329f9d2",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "b948f5efbd63971e145ea509a295d6b1244f7d53b2225130a390fd76ab4ead05"
       },
       "NWolstenholmePrime_wolstenholme_prime_infinite": {
         "target_hash": "ef1881201604d074",
         "conversion_hash": "3362381c6e76c9164cb4b49f2a36e03f31dd554670d7b9d238e601b9e135b050",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "c1c330c93a4bf21aca7d470f95c55fc43bd41c2232a2a9ac3684e8f088252bbe"
       },
       "NWoodalPrimes_infinitely_many_woodall_primes": {
         "target_hash": "1f697496f48a48ef",
         "conversion_hash": "ee70c53a8878cb88d7eeb66fb3cc72c70c3a75a89c71f5fc28e6bf01df8c2ead",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "ce2ee96a3f87c51690475b88ca3bbc155e8b1259fc0a248094fe70880377e470"
       },
       "Nconjecture_1_3_to_2_3_conjecture_1_3_to_2_3_prove": {
         "target_hash": "074314c3441dec30",
         "conversion_hash": "1c7d090d6e9c2b63193b178406781a2d80f0c8f533c51182d57bb5dd35c0a09b",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "ee99d652d91db1245da2e70ab3f61534c79481abf2812d5c0bd24ff83fd39c3b"
       },
       "Nconjecture_1_3_to_2_3_conjecture_1_3_to_2_3_refute": {
         "target_hash": "96a4fd8029c5c19a",
         "conversion_hash": "d4c6c6f436fbff295c526b28a95a11b7925524022637fd3bdf6188ff09ad2941",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "fabd9f359ace99a8522c12974e4f809f05816325fea862c9692eff4cccc06f63"
       },
       "YNavierStokes_navier_stokes_existence_and_smoothness_R3": {
@@ -42878,122 +42234,110 @@
       "NDickson_dickson_conjecture": {
         "target_hash": "fd99942381e62b6d",
         "conversion_hash": "0a7193bcb71aef479464f969cd594bd0dc7745b16b032f8cf8cbda07e16872de",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "f2aed19a253ee05ad5e44b223bfa6a8faa93b158de32a50fb3615703da391f34"
       },
       "NGoldbachConjecture_goldbach_prove": {
         "target_hash": "7da63e1c4556c1a9",
         "conversion_hash": "9251027709b2888ccd792b9753d34bef08ff9d2c40458212f2c70fa5ee7b38a0",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "b8aa348cbb838d08af2230a50d7d31d5495f5ffe0ba5e7a7b919660a1bf9b3dd"
       },
       "NGoldbachConjecture_goldbach_refute": {
         "target_hash": "76aaa5be3ee3748d",
         "conversion_hash": "5cb838807f45c14b4b91c9b45df0628cc6d567c8ebb2b4a84333058039395595",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "f43823f46938f0fe2405d068679cd0d21c1461008026de77b7fa46a0e90ef859"
       },
       "NKakeya_kakeya_set_conjecture": {
         "target_hash": "88cf483a2fb6e410",
         "conversion_hash": "8619399fa43b94f6b2b189dcd8368daa169034e5ffc6252b299dd176b868d1cc",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "c6afd901884151224d9cc03e92aeada086b141d836511a3003733acdf0b6c190"
       },
       "NLegendreConjecture_legendre_conjecture_prove": {
         "target_hash": "874f5931657b2294",
         "conversion_hash": "d32f7da1b3c32855fa37a3cd836b0bc4cf9c45fb094ba570a2da0ddc68bff88c",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "88688ae3b834a2e088d4861795b76ce4c3e9482b86bf33ce27e4e9d299fb631a"
       },
       "NLegendreConjecture_legendre_conjecture_refute": {
         "target_hash": "fdb25cc12a3e00b7",
         "conversion_hash": "144667e2adb6c7ae484fd63dd0034f004c017b989afeb150edf71d547ad5ddb2",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "0b8712608a8f8ebb5ffd6f338685a91a2c592356741b236dd9ce342d19201a20"
       },
       "NLittlewoodConjecture_littlewood_conjecture": {
         "target_hash": "0d83d0228b7a0d1b",
         "conversion_hash": "8ab34cf3722c01bd214d8bc124df142841e91fbfa35d7529d0cb978c7e535a9c",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "a5f23851f2b2e86cdac094fcf9711d0cf95f1e03539fd30066f306324b15def3"
       },
       "NNormalityOfPi_pi_normal_base_ten": {
         "target_hash": "d945b8073194a160",
         "conversion_hash": "fc62e4543b161f2c23669dc53c9e0488c1524dab1457954da0e0f0ae3781a499",
-        "conversion_run_id": "import-20261029T053349.595326Z-3b4f15",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
         "semantic_anchor": "8f088eabf62754eccbe9ad6c12677384b34a9c8cbb0f53b9fb6d803af2a25713"
       },
       "ABirchSwinnertonDyer": {
-        "target_hash": "2192dd78cbab14b0",
+        "target_hash": "d5f9556d47589414",
         "conversion_hash": "d018d283d96b63bd39add429d116a66b7af9c75b994afff506dba2c28f6750fd",
-        "conversion_run_id": "import-20261029T053609.834703Z-aa7986",
+        "conversion_run_id": "import-20261031T062526.788596Z-86656d",
         "semantic_anchor": "99a3422412eb3d3298e10798ba408443b759213de44b03d199861b1d9eb984a6"
       },
       "AFourierRestriction": {
-        "target_hash": "b2833d8434fa3a64",
+        "target_hash": "cb39d88f0abbd466",
         "conversion_hash": "4d83b26993ec5138efb2be316770ab27089094e26b15fff3cfab4c5f287d1b02",
-        "conversion_run_id": "import-20261029T053609.834703Z-aa7986",
+        "conversion_run_id": "import-20261031T062526.788596Z-86656d",
         "semantic_anchor": "eb0184c2792a1a273d47adfd1f9dce66a061f36ab593ac803930900dc143ae52"
       },
       "AInvariantSubspaceProblem": {
-        "target_hash": "283c4b2e99ed5b06",
+        "target_hash": "8ad5cdaaa1d798ac",
         "conversion_hash": "ec5da8011c6e05ae1d144a78f519fb152ac783cf2f4bd713ae2dfac3c266b1c5",
-        "conversion_run_id": "import-20261029T053609.834703Z-aa7986",
+        "conversion_run_id": "import-20261031T062526.788596Z-86656d",
         "semantic_anchor": "9a0fda9cab7811332ee971f66abc88a62363a94d88e9fb0baa91a10ed84bbb61"
       },
       "AMatrixMultiplicationExponent": {
-        "target_hash": "b7384f9efadd6b51",
+        "target_hash": "0499b958b54a0f3d",
         "conversion_hash": "942cc81df8ae5c63b772670b1353ff4383c00e60ed0e87b06bfc32c2c806194c",
-        "conversion_run_id": "import-20261029T053609.834703Z-aa7986",
+        "conversion_run_id": "import-20261031T062526.788596Z-86656d",
         "semantic_anchor": "a30a1f893f6ba3e811b7f1a3e0d13199505881beb22898fb743de0067827611e"
       },
       "AOneWayFunctions_prove": {
-        "target_hash": "cbdb6b842ec3a552",
+        "target_hash": "af101d867f0a859c",
         "conversion_hash": "2d620f654e806c25eb836e05e3202c43a06ee02dd9927ce92b217d93cb1d0c90",
-        "conversion_run_id": "import-20261029T053609.834703Z-aa7986",
+        "conversion_run_id": "import-20261031T062526.788596Z-86656d",
         "semantic_anchor": "f0b1ae83f07901d004cdd55fc3acff85d04b108ae950f8681ea8bbcd187d686c"
       },
       "AOneWayFunctions_refute": {
-        "target_hash": "958d0d08b94bb8f8",
+        "target_hash": "0ea9708369ff853c",
         "conversion_hash": "cc67e7b7898441174c3a7bd51a3948bef40b303f10dddda112f21f7a9b321c19",
-        "conversion_run_id": "import-20261029T053609.834703Z-aa7986",
+        "conversion_run_id": "import-20261031T062526.788596Z-86656d",
         "semantic_anchor": "e03f126f4e1242fd7791fafc46d6fdc6bd3c9d93f61fd17e797bd7460f8681a4"
       },
       "AOneWayPermutations_prove": {
-        "target_hash": "068a0d232505c1f7",
+        "target_hash": "9a0fd84e3ba82203",
         "conversion_hash": "8e83c65853e695f08ef333b958d6cd5b9852672f7a88c5d9584715aa3dbb746f",
-        "conversion_run_id": "import-20261029T053609.834703Z-aa7986",
+        "conversion_run_id": "import-20261031T062526.788596Z-86656d",
         "semantic_anchor": "15c2be5c25550e4a4fb0b719578d3654193c20e9a7e0429f3d8540a0b9d6bfa0"
       },
       "AOneWayPermutations_refute": {
-        "target_hash": "23570ddb336ae6c6",
+        "target_hash": "2cb69f6ec015981a",
         "conversion_hash": "108f018a8a29617aa16302239483235e9564ac521b2577f9f7b7f583ae13ebd5",
-        "conversion_run_id": "import-20261029T053609.834703Z-aa7986",
+        "conversion_run_id": "import-20261031T062526.788596Z-86656d",
         "semantic_anchor": "b29044bb8dad43c3980c3dfbcbfac6e7e1eff3e5477be54011a93d0c3c6ec34c"
       },
       "ASmoothFourDimensionalPoincare": {
-        "target_hash": "a19359f383081870",
+        "target_hash": "c1c518b1e320bf80",
         "conversion_hash": "317a7997f0dc6820feb94bedd0b2a0a9593ae0058db45535e97e507b544214eb",
-        "conversion_run_id": "import-20261029T053609.834703Z-aa7986",
+        "conversion_run_id": "import-20261031T062526.788596Z-86656d",
         "semantic_anchor": "23f513d8b05bcc8021b9932adf684d81f7f983cc3a8dcbd5beb2fc01c1f44911"
       },
       "AAndersonExtendedStates": {
-        "target_hash": "2bcc7ae073ecc3b4",
+        "target_hash": "2d39fd39aff7d7dc",
         "conversion_hash": "6a06b9e6a5a0c1cb7862892b4d6429960b9a014ff12dee45d563f25cc3511d8a",
-        "conversion_run_id": "import-20261029T053609.834703Z-aa7986",
+        "conversion_run_id": "import-20261031T062526.788596Z-86656d",
         "semantic_anchor": "f959e53c362a24e8b997acfa496b9d41291a5979f6b7df534b049dc7a129357c"
-      },
-      "AJacobianConjectureTwoVariables_prove": {
-        "target_hash": "1cd448f9f8828c78",
-        "conversion_hash": "4033d63d172b0eacc83e9e12b6018e70293de390f088f0f5edf885bfe1529959",
-        "conversion_run_id": "import-20261029T053609.834703Z-aa7986",
-        "semantic_anchor": "b68bfba0cf130542f2070617ca2a48c686cc1892b6276e6f6ed60465fbbb23bb"
-      },
-      "AJacobianConjectureTwoVariables_refute": {
-        "target_hash": "969ffa15b9736148",
-        "conversion_hash": "a2e4f95b0993a8c08258c2ab63b0340998093ecdf4c076dc28b9312ebcc1b55e",
-        "conversion_run_id": "import-20261029T053609.834703Z-aa7986",
-        "semantic_anchor": "24208f4f39b22a0e1eefea5390fd912c6781fec42fe8d2c0130a9af947bcd6cb"
       },
       "E1057_prove": {
         "target_hash": "7068b02c1825bd75",
@@ -43006,6 +42350,18 @@
         "conversion_hash": "fe2335c0cec1499acf221b382c14c05e2b3ea9dbd65a890d08d5df6bea8591f5",
         "conversion_run_id": "import-20261029T051128.757135Z-47c546",
         "semantic_anchor": "f2ccbcd1a03eb98f86c467e0abaeb20dd55c34e7f7061b90b4c01d25a8897dd6"
+      },
+      "NJacobianConjecture_jacobian_conjecture_two_variables_prove": {
+        "target_hash": "c370ad80b1308ea6",
+        "conversion_hash": "718beeae5e8a1c0b7b68c12692b3fbca594bf705d9b5401181cd17b494c8a876",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
+        "semantic_anchor": "b43693884534ed9ff4e9ec8246ae21f2b0b802a7c1d406e8e7e077742dc54b26"
+      },
+      "NJacobianConjecture_jacobian_conjecture_two_variables_refute": {
+        "target_hash": "80eedb4b7b54e0c0",
+        "conversion_hash": "b55a0f0508bd2adf567cc83190a54221034c74a96188963830bb337c6c5fb206",
+        "conversion_run_id": "import-20261031T065059.075653Z-6275b1",
+        "semantic_anchor": "edff986b0d36360b39e8dc39dbb4b8be1aedf56d8ea755b3ab8d470086db8c50"
       }
     },
     "releases": [
@@ -43109,11 +42465,11 @@
           },
           "spec_hash": "f2c5743450182a324f330d8473fea445a0bb888658c420dd41adf1072ca25f86",
           "counts": {
-            "tasks_in_library": 2076,
+            "tasks_in_library": 2078,
             "admissible": 13,
             "chosen": 13,
             "chosen_under_review": 13,
-            "rejected": 2063,
+            "rejected": 2065,
             "questions": 12,
             "requested_but_inadmissible": 0,
             "dropped_with_pair": 0
@@ -43122,14 +42478,14 @@
         },
         "release": {
           "release_id": "arxiv",
-          "run_id": "export-20261030T111854.115336Z-f2ebd8",
+          "run_id": "export-20261031T072217.059962Z-763e7e",
           "spec_id": "",
           "spec_version": "",
           "spec_hash": "",
           "profile_hash": "8345d0d9da0365bab69cb522f21eda268f22340ca221ebbcfababa8171c2bcc8",
           "environment_hash": "f3f76c9de0fbe432b1e46a5b3bfa45a78ef950742ce2ca3a5af77f3f044d5c40",
-          "at": "2026-10-30T11:18:54+00:00",
-          "destination": "E:\\mathdb-fc-build\\releases-20261030\\arxiv",
+          "at": "2026-10-31T07:22:17+00:00",
+          "destination": "E:\\mathdb-fc-build\\releases-20261031\\arxiv",
           "tasks": {
             "X0911_2077_Conjecture6_3_arxiv_id0911_2077_conjecture6_3": "9ff4e3997bf80dcc",
             "X0912_2382_CurlingNumberConjecture_curling_number_conjecture": "210118b27269dabc",
@@ -43160,7 +42516,7 @@
             "X2605_02731_DeanCycles_dean_conjecture_refute": "043e4d044780c6b3e5bf58161f61f7b7899f2354087f5acc0abfa092f79fed79",
             "X2605_12342_Conjecture1_conjecture_1": "8096932284928257a34ed7a8e38a690724154053f3d7d22e0e50d7e954d3737e"
           },
-          "manifest_hash": "24ee4f8c5ecccb0e",
+          "manifest_hash": "cc8c75edb73d0dd7",
           "counts": {
             "exported": 13,
             "omitted": 4,
@@ -43217,8 +42573,6 @@
           "ABirchSwinnertonDyer",
           "AFourierRestriction",
           "AInvariantSubspaceProblem",
-          "AJacobianConjectureTwoVariables_prove",
-          "AJacobianConjectureTwoVariables_refute",
           "AMatrixMultiplicationExponent",
           "AOneWayFunctions_prove",
           "AOneWayFunctions_refute",
@@ -43227,6 +42581,14 @@
           "ASmoothFourDimensionalPoincare"
         ],
         "omitted": {
+          "f1706659-efcf-410c-8806-be70f1cee030": {
+            "inclusion": "quarantine",
+            "reason": "identity/source is withdrawn / withdrawn"
+          },
+          "69b3ea79-af18-4e01-a7ec-47944c2abfd7": {
+            "inclusion": "quarantine",
+            "reason": "identity/source is withdrawn / withdrawn"
+          },
           "08662331-9180-4515-87ed-37f4eb8f008d": {
             "inclusion": "quarantine",
             "reason": "compile is failed or its evidence is stale/missing"
@@ -43257,12 +42619,12 @@
           },
           "spec_hash": "f78dc071e257a8ae1ff3ddd8dacac8ff6d353a06c3aff1dde0fb4b9f73df9821",
           "counts": {
-            "tasks_in_library": 2076,
-            "admissible": 12,
-            "chosen": 12,
-            "chosen_under_review": 12,
-            "rejected": 2064,
-            "questions": 9,
+            "tasks_in_library": 2078,
+            "admissible": 10,
+            "chosen": 10,
+            "chosen_under_review": 10,
+            "rejected": 2068,
+            "questions": 8,
             "requested_but_inadmissible": 0,
             "dropped_with_pair": 0
           },
@@ -43270,35 +42632,31 @@
         },
         "release": {
           "release_id": "authored",
-          "run_id": "export-20261030T111900.326818Z-4413e3",
+          "run_id": "export-20261031T072223.147866Z-f9aa3e",
           "spec_id": "",
           "spec_version": "",
           "spec_hash": "",
           "profile_hash": "9c42d59fea30bdee2b17f28d3ab6fc38b516bb3b9ac916e175b172e3a56ce706",
           "environment_hash": "f3f76c9de0fbe432b1e46a5b3bfa45a78ef950742ce2ca3a5af77f3f044d5c40",
-          "at": "2026-10-30T11:19:00+00:00",
-          "destination": "E:\\mathdb-fc-build\\releases-20261030\\authored",
+          "at": "2026-10-31T07:22:23+00:00",
+          "destination": "E:\\mathdb-fc-build\\releases-20261031\\authored",
           "tasks": {
-            "AAndersonExtendedStates": "2bcc7ae073ecc3b4",
-            "ABirchSwinnertonDyer": "2192dd78cbab14b0",
-            "AFourierRestriction": "b2833d8434fa3a64",
-            "AInvariantSubspaceProblem": "283c4b2e99ed5b06",
-            "AJacobianConjectureTwoVariables_prove": "1cd448f9f8828c78",
-            "AJacobianConjectureTwoVariables_refute": "969ffa15b9736148",
-            "AMatrixMultiplicationExponent": "b7384f9efadd6b51",
-            "AOneWayFunctions_prove": "cbdb6b842ec3a552",
-            "AOneWayFunctions_refute": "958d0d08b94bb8f8",
-            "AOneWayPermutations_prove": "068a0d232505c1f7",
-            "AOneWayPermutations_refute": "23570ddb336ae6c6",
-            "ASmoothFourDimensionalPoincare": "a19359f383081870"
+            "AAndersonExtendedStates": "2d39fd39aff7d7dc",
+            "ABirchSwinnertonDyer": "d5f9556d47589414",
+            "AFourierRestriction": "cb39d88f0abbd466",
+            "AInvariantSubspaceProblem": "8ad5cdaaa1d798ac",
+            "AMatrixMultiplicationExponent": "0499b958b54a0f3d",
+            "AOneWayFunctions_prove": "af101d867f0a859c",
+            "AOneWayFunctions_refute": "0ea9708369ff853c",
+            "AOneWayPermutations_prove": "9a0fd84e3ba82203",
+            "AOneWayPermutations_refute": "2cb69f6ec015981a",
+            "ASmoothFourDimensionalPoincare": "c1c518b1e320bf80"
           },
           "anchors": {
             "AAndersonExtendedStates": "f959e53c362a24e8b997acfa496b9d41291a5979f6b7df534b049dc7a129357c",
             "ABirchSwinnertonDyer": "99a3422412eb3d3298e10798ba408443b759213de44b03d199861b1d9eb984a6",
             "AFourierRestriction": "eb0184c2792a1a273d47adfd1f9dce66a061f36ab593ac803930900dc143ae52",
             "AInvariantSubspaceProblem": "9a0fda9cab7811332ee971f66abc88a62363a94d88e9fb0baa91a10ed84bbb61",
-            "AJacobianConjectureTwoVariables_prove": "b68bfba0cf130542f2070617ca2a48c686cc1892b6276e6f6ed60465fbbb23bb",
-            "AJacobianConjectureTwoVariables_refute": "24208f4f39b22a0e1eefea5390fd912c6781fec42fe8d2c0130a9af947bcd6cb",
             "AMatrixMultiplicationExponent": "a30a1f893f6ba3e811b7f1a3e0d13199505881beb22898fb743de0067827611e",
             "AOneWayFunctions_prove": "f0b1ae83f07901d004cdd55fc3acff85d04b108ae950f8681ea8bbcd187d686c",
             "AOneWayFunctions_refute": "e03f126f4e1242fd7791fafc46d6fdc6bd3c9d93f61fd17e797bd7460f8681a4",
@@ -43306,15 +42664,27 @@
             "AOneWayPermutations_refute": "b29044bb8dad43c3980c3dfbcbfac6e7e1eff3e5477be54011a93d0c3c6ec34c",
             "ASmoothFourDimensionalPoincare": "23f513d8b05bcc8021b9932adf684d81f7f983cc3a8dcbd5beb2fc01c1f44911"
           },
-          "manifest_hash": "f35059459c442c39",
+          "manifest_hash": "1179b1f225108af4",
           "counts": {
-            "exported": 12,
-            "omitted": 1,
-            "under_review": 12
+            "exported": 10,
+            "omitted": 3,
+            "under_review": 10
           },
-          "note": "12 of 12 have not been read by a person yet"
+          "note": "10 of 10 have not been read by a person yet"
         },
-        "collection": "authored"
+        "collection": "authored",
+        "withdrawn": {
+          "AJacobianConjectureTwoVariables_prove": {
+            "task_id": "f1706659-efcf-410c-8806-be70f1cee030",
+            "inclusion": "quarantine",
+            "reason": "identity/source is withdrawn / withdrawn"
+          },
+          "AJacobianConjectureTwoVariables_refute": {
+            "task_id": "69b3ea79-af18-4e01-a7ec-47944c2abfd7",
+            "inclusion": "quarantine",
+            "reason": "identity/source is withdrawn / withdrawn"
+          }
+        }
       },
       {
         "profile": {
@@ -43398,11 +42768,11 @@
           },
           "spec_hash": "3fe9a1094cc14d0436ea1d45612ceef5588c6f9dabdcaa1d2aa118cdcb85ebb2",
           "counts": {
-            "tasks_in_library": 2076,
+            "tasks_in_library": 2078,
             "admissible": 7,
             "chosen": 7,
             "chosen_under_review": 7,
-            "rejected": 2069,
+            "rejected": 2071,
             "questions": 6,
             "requested_but_inadmissible": 0,
             "dropped_with_pair": 0
@@ -43411,14 +42781,14 @@
         },
         "release": {
           "release_id": "books",
-          "run_id": "export-20261030T111906.235948Z-132588",
+          "run_id": "export-20261031T072229.484308Z-731a7f",
           "spec_id": "",
           "spec_version": "",
           "spec_hash": "",
           "profile_hash": "d1065bee386eb8f5d42317e364c3f04b02adba48ef89bff03e86b7b8f88f5928",
           "environment_hash": "f3f76c9de0fbe432b1e46a5b3bfa45a78ef950742ce2ca3a5af77f3f044d5c40",
-          "at": "2026-10-30T11:19:06+00:00",
-          "destination": "E:\\mathdb-fc-build\\releases-20261030\\books",
+          "at": "2026-10-31T07:22:29+00:00",
+          "destination": "E:\\mathdb-fc-build\\releases-20261031\\books",
           "tasks": {
             "BBorweinSineSeries_borwein_sine_series": "96b6875dd83238e7",
             "BBugeaudDistributionModuloOne_Problem10_4_spectrum_xi_alpha_pow_countable": "507e0f3ce6c01186",
@@ -43437,7 +42807,7 @@
             "BBugeaudDistributionModuloOne_Problem10_7_problem_10_7_refute": "7a6653628f53dbffa6b0a220af131ee15e9b63c037be7a26668d235c2543bd8b",
             "BBugeaudDistributionModuloOne_Problem10_8_problem_10_8": "7de0d516a2fceaf8c0803d2aae87a31e75ae0bacbdd54f8dc4e9287c71296767"
           },
-          "manifest_hash": "36777fd57aec8ee1",
+          "manifest_hash": "a70209626896b362",
           "counts": {
             "exported": 7,
             "omitted": 1,
@@ -44823,11 +44193,11 @@
           },
           "spec_hash": "f75b3b7dec292ef506ab5d827c1e1f23ff36b5919fccd324aef728bb4b0c05c0",
           "counts": {
-            "tasks_in_library": 2076,
+            "tasks_in_library": 2078,
             "admissible": 1093,
             "chosen": 1093,
             "chosen_under_review": 1093,
-            "rejected": 983,
+            "rejected": 985,
             "questions": 697,
             "requested_but_inadmissible": 0,
             "dropped_with_pair": 0
@@ -44836,14 +44206,14 @@
         },
         "release": {
           "release_id": "erdos",
-          "run_id": "export-20261030T111918.132419Z-abb318",
+          "run_id": "export-20261031T072242.617089Z-939b61",
           "spec_id": "",
           "spec_version": "",
           "spec_hash": "",
           "profile_hash": "f75f272a5a5bf192967b8da0a856c501f0a2e5771536cc086a5414cd3076d9da",
           "environment_hash": "f3f76c9de0fbe432b1e46a5b3bfa45a78ef950742ce2ca3a5af77f3f044d5c40",
-          "at": "2026-10-30T11:19:18+00:00",
-          "destination": "E:\\mathdb-fc-build\\releases-20261030\\erdos",
+          "at": "2026-10-31T07:22:42+00:00",
+          "destination": "E:\\mathdb-fc-build\\releases-20261031\\erdos",
           "tasks": {
             "E1": "b2d12562ddc90124",
             "E1000": "b551ddd528125dca",
@@ -47034,7 +46404,7 @@
             "E9_prove": "c334af21bbc67127886198dcb2e5bf498f49573ea666b325d4035d8c2b9fca57",
             "E9_refute": "d3edbb7596668e8b9bcbbc06934f4840d3fc7d16bbd5d66d1eb59945da70f51a"
           },
-          "manifest_hash": "5d8ebaa4be4a06ec",
+          "manifest_hash": "35882fc62906225d",
           "counts": {
             "exported": 1093,
             "omitted": 53,
@@ -47042,74 +46412,7 @@
           },
           "note": "1093 of 1093 have not been read by a person yet"
         },
-        "collection": "erdos",
-        "withdrawn": {
-          "E148": {
-            "task_id": "aa791c97-5b65-4889-9bde-a169f27c9cfb",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (relation_is_reflexive): a witness the target admits for free closes it without settling the problem"
-          },
-          "E272": {
-            "task_id": "3db03a2f-98d4-424c-9959-fc65c345b3d4",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (closable_by_rfl): a witness the target admits for free closes it without settling the problem"
-          },
-          "E357_parts_ii_bigO_version": {
-            "task_id": "18600091-81c4-473c-b49a-97048fd99af7",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (relation_is_reflexive): a witness the target admits for free closes it without settling the problem"
-          },
-          "E357_parts_ii_bigO_version_symm": {
-            "task_id": "5c9660d8-611b-49e8-a4b1-88d78dfee091",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (relation_is_reflexive): a witness the target admits for free closes it without settling the problem"
-          },
-          "E357_parts_ii_bigTheta_version": {
-            "task_id": "71c5d6ac-443d-4a78-a0ed-ed63e27306ce",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (relation_is_reflexive): a witness the target admits for free closes it without settling the problem"
-          },
-          "E357_parts_ii_littleO_version": {
-            "task_id": "7ebce30a-1873-4d09-a0f9-25aa3c971baa",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (infinitely_many_trivial_witnesses): a witness the target admits for free closes it without settling the problem"
-          },
-          "E357_parts_ii_littleO_version_symm": {
-            "task_id": "917fe1ca-636c-4e20-a604-1fb4640a0ad7",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (infinitely_many_trivial_witnesses): a witness the target admits for free closes it without settling the problem"
-          },
-          "E539": {
-            "task_id": "fe11d795-146d-44dc-b2fa-01319e8197aa",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (relation_is_reflexive): a witness the target admits for free closes it without settling the problem"
-          },
-          "E596": {
-            "task_id": "b809467c-2627-449b-bb1e-f47eb1d2c3e6",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (trivial_predicate_works): a witness the target admits for free closes it without settling the problem"
-          },
-          "E609": {
-            "task_id": "ca49bb08-45c7-4aab-8a51-6724c27d3bd9",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (relation_is_reflexive): a witness the target admits for free closes it without settling the problem"
-          },
-          "E688_parts_i": {
-            "task_id": "29fa9053-2cf5-4a23-a529-b1b2142a5134",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (relation_is_reflexive): a witness the target admits for free closes it without settling the problem"
-          },
-          "E789": {
-            "task_id": "f6d41f3a-9808-4c60-814c-9cf5139b0b77",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (relation_is_reflexive): a witness the target admits for free closes it without settling the problem"
-          },
-          "E959": {
-            "task_id": "70f95453-0997-418c-b596-b00180529af6",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (relation_is_reflexive): a witness the target admits for free closes it without settling the problem"
-          }
-        }
+        "collection": "erdos"
       },
       {
         "profile": {
@@ -47268,11 +46571,11 @@
           },
           "spec_hash": "be04d8e4ca129cc77a3add9a00b64f2e616619cebc9ee86f26b020f7acc7e92c",
           "counts": {
-            "tasks_in_library": 2076,
+            "tasks_in_library": 2078,
             "admissible": 62,
             "chosen": 62,
             "chosen_under_review": 62,
-            "rejected": 2014,
+            "rejected": 2016,
             "questions": 35,
             "requested_but_inadmissible": 0,
             "dropped_with_pair": 0
@@ -47281,14 +46584,14 @@
         },
         "release": {
           "release_id": "green",
-          "run_id": "export-20261030T111925.525695Z-79fcb4",
+          "run_id": "export-20261031T072250.875472Z-10aba2",
           "spec_id": "",
           "spec_version": "",
           "spec_hash": "",
           "profile_hash": "2ab6bcc6a7eb5b9d978eb169a53774afa4c7cadecc396ac781b55efa8c126f57",
           "environment_hash": "f3f76c9de0fbe432b1e46a5b3bfa45a78ef950742ce2ca3a5af77f3f044d5c40",
-          "at": "2026-10-30T11:19:25+00:00",
-          "destination": "E:\\mathdb-fc-build\\releases-20261030\\green",
+          "at": "2026-10-31T07:22:50+00:00",
+          "destination": "E:\\mathdb-fc-build\\releases-20261031\\green",
           "tasks": {
             "G12_prove": "91983ebd6039d9d9",
             "G12_refute": "cd6f72d89ce8bea3",
@@ -47417,7 +46720,7 @@
             "G94_prove": "c3b2046a87542853dba9edf7e0bc21ba82c5944dc3b0f528a9bd9ec978ee0c31",
             "G94_refute": "fe45932d5f198afa991be3255ec2b29fbd8611211aeeca8b04e221c8827f5c97"
           },
-          "manifest_hash": "d67f9127b23ade03",
+          "manifest_hash": "78d2ef0280286f2c",
           "counts": {
             "exported": 62,
             "omitted": 6,
@@ -47425,29 +46728,7 @@
           },
           "note": "62 of 62 have not been read by a person yet"
         },
-        "collection": "green",
-        "withdrawn": {
-          "G22": {
-            "task_id": "54c7ebfd-2ade-4434-b7a6-503b0d72f9cc",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (infinitely_many_trivial_witnesses): a witness the target admits for free closes it without settling the problem"
-          },
-          "G24": {
-            "task_id": "74306b59-bd81-4fe9-8e8c-99ea857e6de5",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (closable_by_rfl): a witness the target admits for free closes it without settling the problem"
-          },
-          "G41": {
-            "task_id": "3366d91e-807b-4b66-9ddb-0a31f9866070",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (closable_by_rfl): a witness the target admits for free closes it without settling the problem"
-          },
-          "G82": {
-            "task_id": "bf06e1f8-4a94-4a00-a9f8-31c4f6fe0836",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (unclassified): a witness the target admits for free closes it without settling the problem"
-          }
-        }
+        "collection": "green"
       },
       {
         "profile": {
@@ -47531,11 +46812,11 @@
           },
           "spec_hash": "a77ac9faaabfe4dd3fb2af2f32ae067fa7a4e70fcf0dbc720a82f248e6478afc",
           "counts": {
-            "tasks_in_library": 2076,
+            "tasks_in_library": 2078,
             "admissible": 7,
             "chosen": 7,
             "chosen_under_review": 7,
-            "rejected": 2069,
+            "rejected": 2071,
             "questions": 4,
             "requested_but_inadmissible": 0,
             "dropped_with_pair": 0
@@ -47544,14 +46825,14 @@
         },
         "release": {
           "release_id": "kourovka",
-          "run_id": "export-20261030T111931.572317Z-57147a",
+          "run_id": "export-20261031T072257.257873Z-6b58cb",
           "spec_id": "",
           "spec_version": "",
           "spec_hash": "",
           "profile_hash": "7b573170d8f17bd2836aefb5a1657f6237c3de0d0e634b5dab507319d20fd5ce",
           "environment_hash": "f3f76c9de0fbe432b1e46a5b3bfa45a78ef950742ce2ca3a5af77f3f044d5c40",
-          "at": "2026-10-30T11:19:31+00:00",
-          "destination": "E:\\mathdb-fc-build\\releases-20261030\\kourovka",
+          "at": "2026-10-31T07:22:57+00:00",
+          "destination": "E:\\mathdb-fc-build\\releases-20261031\\kourovka",
           "tasks": {
             "K19_25_prove": "662696612d867bbb",
             "K19_25_refute": "7573b5de9370d5ee",
@@ -47570,7 +46851,7 @@
             "K20_76_refute": "75113accfbed35adc705e351479c01151517a93f9d6edfde3c6a2777797cfb30",
             "K21_149": "678c6731951b36cb96d72e90e008f065cc0af2ef2139e190513d18d721ea2b1a"
           },
-          "manifest_hash": "80d2724398aff457",
+          "manifest_hash": "a36cd8984650a90d",
           "counts": {
             "exported": 7,
             "omitted": 1,
@@ -47578,14 +46859,7 @@
           },
           "note": "7 of 7 have not been read by a person yet"
         },
-        "collection": "kourovka",
-        "withdrawn": {
-          "K1_74": {
-            "task_id": "a529a645-cce9-4295-bc53-e81e335d3485",
-            "inclusion": "quarantine",
-            "reason": "value answer is not pinned (unclassified): a witness the target admits for free closes it without settling the problem"
-          }
-        }
+        "collection": "kourovka"
       },
       {
         "profile": {
@@ -47672,11 +46946,11 @@
           },
           "spec_hash": "04a03e5a30326d1e31539899c069b7b8020fc6e0341f09e389c5ebb1348b7c20",
           "counts": {
-            "tasks_in_library": 2076,
+            "tasks_in_library": 2078,
             "admissible": 10,
             "chosen": 10,
             "chosen_under_review": 10,
-            "rejected": 2066,
+            "rejected": 2068,
             "questions": 8,
             "requested_but_inadmissible": 0,
             "dropped_with_pair": 0
@@ -47685,14 +46959,14 @@
         },
         "release": {
           "release_id": "mathoverflow",
-          "run_id": "export-20261030T111937.634881Z-6f2951",
+          "run_id": "export-20261031T072303.725022Z-d148de",
           "spec_id": "",
           "spec_version": "",
           "spec_hash": "",
           "profile_hash": "2d54f2d5506576555e0731a2129b5c2e49dce474397b0fb40c7982086cdc7960",
           "environment_hash": "f3f76c9de0fbe432b1e46a5b3bfa45a78ef950742ce2ca3a5af77f3f044d5c40",
-          "at": "2026-10-30T11:19:37+00:00",
-          "destination": "E:\\mathdb-fc-build\\releases-20261030\\mathoverflow",
+          "at": "2026-10-31T07:23:03+00:00",
+          "destination": "E:\\mathdb-fc-build\\releases-20261031\\mathoverflow",
           "tasks": {
             "M10799": "8c4564ccc06f636d",
             "M17560": "6617b580d4373054",
@@ -47717,7 +46991,7 @@
             "M434111_restricted_prime_number_theorem_refute": "81214cc7c3d51d9ac47a5035cc0d2a7279fd3fdc422bd0482acedaebb6005a8d",
             "M507128_exists_isFractionRing_self_ideal_ne_top_invertible": "88e8b32801312ac3a4cbd8e5b3b9f2822b681a072359465415ff4fcd5b9aa362"
           },
-          "manifest_hash": "82b0fb8d1413715c",
+          "manifest_hash": "d69cd23707361441",
           "counts": {
             "exported": 10,
             "omitted": 1,
@@ -47807,11 +47081,11 @@
           },
           "spec_hash": "6411aed6c36c2b5144e0988e5af0cc526ff5e745528c9c3f0be5fc0beeac1505",
           "counts": {
-            "tasks_in_library": 2076,
+            "tasks_in_library": 2078,
             "admissible": 5,
             "chosen": 5,
             "chosen_under_review": 5,
-            "rejected": 2071,
+            "rejected": 2073,
             "questions": 4,
             "requested_but_inadmissible": 0,
             "dropped_with_pair": 0
@@ -47820,14 +47094,14 @@
         },
         "release": {
           "release_id": "millennium",
-          "run_id": "export-20261030T111943.949796Z-a9835a",
+          "run_id": "export-20261031T072310.313915Z-0a2ed5",
           "spec_id": "",
           "spec_version": "",
           "spec_hash": "",
           "profile_hash": "ec8935f7b1ce1d422c610181c9378a807484d45d7ac1fce1ff7b00e7ce7347e5",
           "environment_hash": "f3f76c9de0fbe432b1e46a5b3bfa45a78ef950742ce2ca3a5af77f3f044d5c40",
-          "at": "2026-10-30T11:19:43+00:00",
-          "destination": "E:\\mathdb-fc-build\\releases-20261030\\millennium",
+          "at": "2026-10-31T07:23:10+00:00",
+          "destination": "E:\\mathdb-fc-build\\releases-20261031\\millennium",
           "tasks": {
             "YNavierStokes_navier_stokes_existence_and_smoothness_R3": "74b642f53939d20c",
             "YNavierStokes_navier_stokes_existence_and_smoothness_periodic": "aeadabfaa4ef59a8",
@@ -47842,7 +47116,7 @@
             "YPvsNP_P_ne_NP": "6bf9c29faef9ed7fcf856df9a98b4917757963f3582002e2fd9860b0c3477383",
             "YRiemannHypothesis_riemannHypothesis": "f800c70585a4baa1b60af3c5a35ec417dc7b19558857179dc756665d2cf3959e"
           },
-          "manifest_hash": "f52591bcd853ff91",
+          "manifest_hash": "4e8456b0fcb35806",
           "counts": {
             "exported": 5,
             "omitted": 1,
@@ -48297,11 +47571,11 @@
           },
           "spec_hash": "b6d5f92ef4712789765c51c2c6aa25707589a18551456c4cd511d90bce344a1c",
           "counts": {
-            "tasks_in_library": 2076,
+            "tasks_in_library": 2078,
             "admissible": 218,
             "chosen": 218,
             "chosen_under_review": 218,
-            "rejected": 1858,
+            "rejected": 1860,
             "questions": 146,
             "requested_but_inadmissible": 0,
             "dropped_with_pair": 0
@@ -48310,14 +47584,14 @@
         },
         "release": {
           "release_id": "oeis",
-          "run_id": "export-20261030T111951.179953Z-0daf91",
+          "run_id": "export-20261031T072317.989090Z-8d698c",
           "spec_id": "",
           "spec_version": "",
           "spec_hash": "",
           "profile_hash": "5b5f93624a5eac85e5a7b4697245be1d4b286d2b716f573ad892e40f07cfb814",
           "environment_hash": "f3f76c9de0fbe432b1e46a5b3bfa45a78ef950742ce2ca3a5af77f3f044d5c40",
-          "at": "2026-10-30T11:19:51+00:00",
-          "destination": "E:\\mathdb-fc-build\\releases-20261030\\oeis",
+          "at": "2026-10-31T07:23:17+00:00",
+          "destination": "E:\\mathdb-fc-build\\releases-20261031\\oeis",
           "tasks": {
             "O100434_conjecture1": "bdbe634d42c6126d",
             "O100434_conjecture2": "a4754b20874b054a",
@@ -48758,7 +48032,7 @@
             "O93818_conjecture": "a64390258beb2338431b9cbb6377e3fcf86e34b33d4cc12b5f3ba884410015c3",
             "O96535_conjecture": "0d36f3e9a3fc8f64a05079173d2cf23cdde4f0a1a6621536f558e75553c34663"
           },
-          "manifest_hash": "03b8bc12e9eae247",
+          "manifest_hash": "6f6266cc34563fe0",
           "counts": {
             "exported": 218,
             "omitted": 39,
@@ -48839,11 +48113,11 @@
           },
           "spec_hash": "12e90f2196eb2d745b45be327ee7679bc3dcad3a7e21d734a3f0c842a220a7aa",
           "counts": {
-            "tasks_in_library": 2076,
+            "tasks_in_library": 2078,
             "admissible": 1,
             "chosen": 1,
             "chosen_under_review": 1,
-            "rejected": 2075,
+            "rejected": 2077,
             "questions": 1,
             "requested_but_inadmissible": 0,
             "dropped_with_pair": 0
@@ -48852,21 +48126,21 @@
         },
         "release": {
           "release_id": "other",
-          "run_id": "export-20261030T111957.264580Z-1e4ac2",
+          "run_id": "export-20261031T072324.630506Z-ac4b54",
           "spec_id": "",
           "spec_version": "",
           "spec_hash": "",
           "profile_hash": "2689f2b94c587186abf7fbab263ea4c0bd837862d153e87398658c45ccf13174",
           "environment_hash": "f3f76c9de0fbe432b1e46a5b3bfa45a78ef950742ce2ca3a5af77f3f044d5c40",
-          "at": "2026-10-30T11:19:57+00:00",
-          "destination": "E:\\mathdb-fc-build\\releases-20261030\\other",
+          "at": "2026-10-31T07:23:24+00:00",
+          "destination": "E:\\mathdb-fc-build\\releases-20261031\\other",
           "tasks": {
             "ZSchurTruncatedExponential_schur_truncatedExp_galoisGroup_equiv": "a1a5022906ca3aa7"
           },
           "anchors": {
             "ZSchurTruncatedExponential_schur_truncatedExp_galoisGroup_equiv": "c178f497e6d74dd305632f0df78d8669e7271dc93b2d613484a174a45b917e47"
           },
-          "manifest_hash": "ea288969d80c3f97",
+          "manifest_hash": "e734476e3a7ca1dc",
           "counts": {
             "exported": 1,
             "omitted": 0,
@@ -48921,7 +48195,6 @@
         "exported": [
           "RCardinalityLindelof_HasG_Singletons_lindelof_card",
           "RCatchUpConjecture_value_of_even_mul_succ_self_div_two",
-          "RChvatal_exists_maximal_star",
           "RDubner_dubner_conjecture",
           "RFusibleNumber_conj_7_1",
           "RGourevitch_gourevitch_series_identity",
@@ -48940,6 +48213,10 @@
           "a092b508-6332-4b34-bdd9-0817c34b3c8c": {
             "inclusion": "quarantine",
             "reason": "compile is failed or its evidence is stale/missing"
+          },
+          "c7f30349-4fe5-44f0-ab4c-3c6867574491": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type} → [DecidableEq.{1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
           },
           "8d555e54-66c2-41ca-8349-5b2f73f8e6ea": {
             "inclusion": "quarantine",
@@ -48971,12 +48248,12 @@
           },
           "spec_hash": "2dd0bef057570fdacafa6c92b4b61f5494ff98c43774ace2c0596bd06a97fc5a",
           "counts": {
-            "tasks_in_library": 2076,
-            "admissible": 16,
-            "chosen": 16,
-            "chosen_under_review": 16,
-            "rejected": 2060,
-            "questions": 15,
+            "tasks_in_library": 2078,
+            "admissible": 15,
+            "chosen": 15,
+            "chosen_under_review": 15,
+            "rejected": 2063,
+            "questions": 14,
             "requested_but_inadmissible": 0,
             "dropped_with_pair": 0
           },
@@ -48984,18 +48261,17 @@
         },
         "release": {
           "release_id": "paper",
-          "run_id": "export-20261030T112003.301411Z-d6b418",
+          "run_id": "export-20261031T072331.016912Z-5e3b44",
           "spec_id": "",
           "spec_version": "",
           "spec_hash": "",
           "profile_hash": "8825f029d546bc57e79fb4e9d5da7e1baa2e4850acaa834da61aff8e38f0b06b",
           "environment_hash": "f3f76c9de0fbe432b1e46a5b3bfa45a78ef950742ce2ca3a5af77f3f044d5c40",
-          "at": "2026-10-30T11:20:03+00:00",
-          "destination": "E:\\mathdb-fc-build\\releases-20261030\\paper",
+          "at": "2026-10-31T07:23:31+00:00",
+          "destination": "E:\\mathdb-fc-build\\releases-20261031\\paper",
           "tasks": {
             "RCardinalityLindelof_HasG_Singletons_lindelof_card": "495c977e92f0f6c1",
             "RCatchUpConjecture_value_of_even_mul_succ_self_div_two": "2adfa24e77d8a4e8",
-            "RChvatal_exists_maximal_star": "1f49ed01b0422598",
             "RDubner_dubner_conjecture": "17d71bef29208119",
             "RFusibleNumber_conj_7_1": "acc90e02dcbe351a",
             "RGourevitch_gourevitch_series_identity": "cf893de7e18a866b",
@@ -49013,7 +48289,6 @@
           "anchors": {
             "RCardinalityLindelof_HasG_Singletons_lindelof_card": "5fb0c7daa3399a4ca26e73e6394e0c49c5975f7539ce8bb61889d5b45db05c5f",
             "RCatchUpConjecture_value_of_even_mul_succ_self_div_two": "40c82f811bd6a149c19e02545322b77d59f33e7130d1c089788a190482af6482",
-            "RChvatal_exists_maximal_star": "71897a09660ee97042b9ad827b8765ddd2bf8e4183ab59d80a07f14dc5bcf55c",
             "RDubner_dubner_conjecture": "d8b1f72fb1cb1f0fc506f9cdfcc69f912ab277fe48a8e23c1f9e1461e9518a2c",
             "RFusibleNumber_conj_7_1": "183bf6dae210844349e27cddb187940215b26af02fb7a9035f134acf05f0f1c3",
             "RGourevitch_gourevitch_series_identity": "133e7ca03da623ed3c9480fd1702199e8b3ffc876d6ef7b9ef11f0e4f2237c38",
@@ -49028,15 +48303,22 @@
             "RSizeOrderConnectedDomination_mukwembi_theorem_2_1": "0b85211fbd4ed59d07cd4fc0ee78f0afc9f5d8ed0dd65438e43f0276d2335482",
             "RTuDengConjecture_tu_deng_conjecture": "aef69793572c68a8fc1f0acf16ba3f0165b8d603ab23e703fa293e1fad89809b"
           },
-          "manifest_hash": "2af0383f0a3f5dc2",
+          "manifest_hash": "1767003aa7ad8aff",
           "counts": {
-            "exported": 16,
-            "omitted": 2,
-            "under_review": 16
+            "exported": 15,
+            "omitted": 3,
+            "under_review": 15
           },
-          "note": "16 of 16 have not been read by a person yet"
+          "note": "15 of 15 have not been read by a person yet"
         },
-        "collection": "paper"
+        "collection": "paper",
+        "withdrawn": {
+          "RChvatal_exists_maximal_star": {
+            "task_id": "c7f30349-4fe5-44f0-ab4c-3c6867574491",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type} → [DecidableEq.{1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          }
+        }
       },
       {
         "profile": {
@@ -49114,6 +48396,8 @@
           "NIdonealCompleteness_idoneal_numbers_completeness_prove",
           "NIdonealCompleteness_idoneal_numbers_completeness_refute",
           "NInverseGalois_inverse_galois_problem",
+          "NJacobianConjecture_jacobian_conjecture_two_variables_prove",
+          "NJacobianConjecture_jacobian_conjecture_two_variables_refute",
           "NJugglerConjecture_juggler_conjecture",
           "NKakeya_kakeya_set_conjecture",
           "NKomlosConjecture_komlos_conjecture",
@@ -49205,12 +48489,12 @@
           },
           "spec_hash": "e8bd88c45a4e9ec18d4bfe93b31e3188ec5983bdecd8bb2fdf5c56681ff3b8ee",
           "counts": {
-            "tasks_in_library": 2076,
-            "admissible": 76,
-            "chosen": 76,
-            "chosen_under_review": 76,
+            "tasks_in_library": 2078,
+            "admissible": 78,
+            "chosen": 78,
+            "chosen_under_review": 78,
             "rejected": 2000,
-            "questions": 60,
+            "questions": 61,
             "requested_but_inadmissible": 0,
             "dropped_with_pair": 0
           },
@@ -49218,14 +48502,14 @@
         },
         "release": {
           "release_id": "wikipedia",
-          "run_id": "export-20261030T112009.594192Z-92b67b",
+          "run_id": "export-20261031T072337.831090Z-7f8354",
           "spec_id": "",
           "spec_version": "",
           "spec_hash": "",
           "profile_hash": "5738a8a4d43c4e0cb95b43779ba5429e9f3dc0c293e7fd75db835627dd43ede9",
           "environment_hash": "f3f76c9de0fbe432b1e46a5b3bfa45a78ef950742ce2ca3a5af77f3f044d5c40",
-          "at": "2026-10-30T11:20:09+00:00",
-          "destination": "E:\\mathdb-fc-build\\releases-20261030\\wikipedia",
+          "at": "2026-10-31T07:23:37+00:00",
+          "destination": "E:\\mathdb-fc-build\\releases-20261031\\wikipedia",
           "tasks": {
             "NABC_abc": "573e44a5ac590c34",
             "NAgrawal_agrawal_conjecture_prove": "bffe50699e5c387b",
@@ -49260,6 +48544,8 @@
             "NIdonealCompleteness_idoneal_numbers_completeness_prove": "61b8696eec5a9870",
             "NIdonealCompleteness_idoneal_numbers_completeness_refute": "3741a7a8955d8d42",
             "NInverseGalois_inverse_galois_problem": "76b1ae354e18a7cc",
+            "NJacobianConjecture_jacobian_conjecture_two_variables_prove": "c370ad80b1308ea6",
+            "NJacobianConjecture_jacobian_conjecture_two_variables_refute": "80eedb4b7b54e0c0",
             "NJugglerConjecture_juggler_conjecture": "004014ef42166227",
             "NKakeya_kakeya_set_conjecture": "88cf483a2fb6e410",
             "NKomlosConjecture_komlos_conjecture": "8102319002daf32c",
@@ -49338,6 +48624,8 @@
             "NIdonealCompleteness_idoneal_numbers_completeness_prove": "74c8ca4e5ad9ee1cbe20746ff02aa527a5ca0aa9ac79098b6cb9717164515d7a",
             "NIdonealCompleteness_idoneal_numbers_completeness_refute": "63dcebc1e94f6630e3318d6db02522bf2e5df0d497a3af2fc36a566547ce44da",
             "NInverseGalois_inverse_galois_problem": "76f28d0f0d470ea849a3ce56434d3d17e07cf929ec32e4b3147dd28bacb2e703",
+            "NJacobianConjecture_jacobian_conjecture_two_variables_prove": "b43693884534ed9ff4e9ec8246ae21f2b0b802a7c1d406e8e7e077742dc54b26",
+            "NJacobianConjecture_jacobian_conjecture_two_variables_refute": "edff986b0d36360b39e8dc39dbb4b8be1aedf56d8ea755b3ab8d470086db8c50",
             "NJugglerConjecture_juggler_conjecture": "9de348f37618b191e0c7fdd867e8b1b61d7d8a817363ac35c8e39f8d16e260c9",
             "NKakeya_kakeya_set_conjecture": "c6afd901884151224d9cc03e92aeada086b141d836511a3003733acdf0b6c190",
             "NKomlosConjecture_komlos_conjecture": "22eb5f6ae9c53dd2fcf66fcc7ce6b75f1ddde905cb795aa2e483ef404e2bf63f",
@@ -49382,13 +48670,13 @@
             "Nconjecture_1_3_to_2_3_conjecture_1_3_to_2_3_prove": "ee99d652d91db1245da2e70ab3f61534c79481abf2812d5c0bd24ff83fd39c3b",
             "Nconjecture_1_3_to_2_3_conjecture_1_3_to_2_3_refute": "fabd9f359ace99a8522c12974e4f809f05816325fea862c9692eff4cccc06f63"
           },
-          "manifest_hash": "cd3ade495c3e6b0d",
+          "manifest_hash": "f0affa51869558fc",
           "counts": {
-            "exported": 76,
+            "exported": 78,
             "omitted": 5,
-            "under_review": 76
+            "under_review": 78
           },
-          "note": "76 of 76 have not been read by a person yet"
+          "note": "78 of 78 have not been read by a person yet"
         },
         "collection": "wikipedia"
       },
@@ -49435,51 +48723,120 @@
         },
         "profile_hash": "206331a7c86a8fcba33bb32c835722111c74181ad15d687c0aafe560969c8b51",
         "exported": [
-          "W160_conjecture160",
-          "WGraphConjecture100_conjecture100",
           "WGraphConjecture109_conjecture109",
-          "WGraphConjecture133_conjecture133",
-          "WGraphConjecture13_conjecture13",
-          "WGraphConjecture141_conjecture141",
-          "WGraphConjecture142_conjecture142",
-          "WGraphConjecture143_conjecture143",
-          "WGraphConjecture144_conjecture144",
-          "WGraphConjecture145_conjecture145",
-          "WGraphConjecture146_conjecture146",
-          "WGraphConjecture16_conjecture16",
           "WGraphConjecture172_conjecture172",
           "WGraphConjecture176_conjecture176",
-          "WGraphConjecture17_conjecture17",
           "WGraphConjecture181_conjecture181",
-          "WGraphConjecture18_conjecture18",
           "WGraphConjecture194_conjecture194",
-          "WGraphConjecture198a_conjecture198a",
           "WGraphConjecture1_conjecture1",
           "WGraphConjecture200_conjecture200",
-          "WGraphConjecture217_conjecture217",
-          "WGraphConjecture2_conjecture2",
           "WGraphConjecture309_conjecture309",
-          "WGraphConjecture314_conjecture314",
-          "WGraphConjecture315_conjecture315",
-          "WGraphConjecture316_conjecture316",
-          "WGraphConjecture31_conjecture31",
-          "WGraphConjecture3_conjecture3",
           "WGraphConjecture430a_conjecture430a",
           "WGraphConjecture438b_conjecture438b",
-          "WGraphConjecture4_conjecture4",
           "WGraphConjecture58_conjecture58",
-          "WGraphConjecture61_conjecture61",
           "WGraphConjecture63_conjecture63",
           "WGraphConjecture85_conjecture85"
         ],
         "omitted": {
+          "ea23b862-3f13-47c9-ab38-835ff48f4158": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → [Nontrivial.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "3c8e8341-d482-42c0-815d-069348ffd9ec": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → [Nontrivial.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
           "7324cfc4-5345-4ba7-ac76-6278e3a30915": {
             "inclusion": "quarantine",
             "reason": "dependencies is failed or its evidence is stale/missing"
           },
+          "18f7b569-5296-4576-801e-063ecfb22671": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "8f7261ff-4716-4427-bc26-723fe1a08ab2": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [Nontrivial.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "91b71181-4ad4-4c5b-9279-cb41c322c49b": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "c434e0f0-ba70-4fde-9e9d-700e1932608e": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "05f3fd92-2110-4432-9005-01603b1cbc7e": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "790281a8-a42a-4465-b64e-20e5c67d22f9": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "5b182692-bcac-4bab-910e-ee46e0690734": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [Nontrivial.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "1508afa9-7534-4e8b-844c-d47d74e1b509": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "58138240-207a-4461-ac06-f77764d1737d": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [Nontrivial.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "9359a21a-4437-45c2-85d7-5285bd00a2fe": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "2e676392-2bb7-4e6c-9fb8-def4cd16c148": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "2371c6c9-b126-4b0e-b5f7-63162b398a01": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "28b50a6d-00ce-49f6-aa8c-7dbaca17060b": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "4b42cd1e-bc89-4214-9f25-4ba1af5b993d": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "4ae09994-6d9e-4781-a3c2-f8f7f69a818e": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "1b300d78-d626-40bd-89ab-6fd8305663fd": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "ac076d1e-96bf-4be7-8ff0-8cc6f8cb5870": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "d0bdd432-18ef-4cae-8ea2-5f0090cb62a6": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
           "7c0b63b1-0c4f-4c4a-8a5d-877b3ceed92d": {
             "inclusion": "quarantine",
             "reason": "dependencies is failed or its evidence is stale/missing"
+          },
+          "24d177c3-e516-4ce5-b42d-b477dab431e1": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u} → [Fintype.{u} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "87ebab39-ded9-4b40-98a3-7fc782a0d5cc": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "79da7872-18dd-4431-a27b-51fd951f2106": {
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
           },
           "64cda5c6-c1ec-41de-a58c-3214231eb3af": {
             "inclusion": "quarantine",
@@ -49511,12 +48868,12 @@
           },
           "spec_hash": "12b9534b9072de0a68a14cb181fa262eaf665bf551108d2f7d9afaa677b137c4",
           "counts": {
-            "tasks_in_library": 2076,
-            "admissible": 36,
-            "chosen": 36,
-            "chosen_under_review": 36,
-            "rejected": 2040,
-            "questions": 36,
+            "tasks_in_library": 2078,
+            "admissible": 13,
+            "chosen": 13,
+            "chosen_under_review": 13,
+            "rejected": 2065,
+            "questions": 13,
             "requested_but_inadmissible": 0,
             "dropped_with_pair": 0
           },
@@ -49524,104 +48881,175 @@
         },
         "release": {
           "release_id": "wotw",
-          "run_id": "export-20261030T112015.586290Z-6fb67f",
+          "run_id": "export-20261031T072344.298236Z-2cfd40",
           "spec_id": "",
           "spec_version": "",
           "spec_hash": "",
           "profile_hash": "206331a7c86a8fcba33bb32c835722111c74181ad15d687c0aafe560969c8b51",
           "environment_hash": "f3f76c9de0fbe432b1e46a5b3bfa45a78ef950742ce2ca3a5af77f3f044d5c40",
-          "at": "2026-10-30T11:20:15+00:00",
-          "destination": "E:\\mathdb-fc-build\\releases-20261030\\wotw",
+          "at": "2026-10-31T07:23:44+00:00",
+          "destination": "E:\\mathdb-fc-build\\releases-20261031\\wotw",
           "tasks": {
-            "W160_conjecture160": "d76fcfd9623a1416",
-            "WGraphConjecture100_conjecture100": "7cd6f0d14f65a7dd",
             "WGraphConjecture109_conjecture109": "3b017771fb70be5b",
-            "WGraphConjecture133_conjecture133": "273a4fc7b98538b9",
-            "WGraphConjecture13_conjecture13": "f29633247fb5e0e3",
-            "WGraphConjecture141_conjecture141": "942ea11f431a7ab2",
-            "WGraphConjecture142_conjecture142": "612d56bc5a761f72",
-            "WGraphConjecture143_conjecture143": "5673dd38e38c8580",
-            "WGraphConjecture144_conjecture144": "29571bc4081d0dc4",
-            "WGraphConjecture145_conjecture145": "e4eb0a852c49eff7",
-            "WGraphConjecture146_conjecture146": "8ec7638cb0d0cf34",
-            "WGraphConjecture16_conjecture16": "89bf7a9c115fa91b",
             "WGraphConjecture172_conjecture172": "0fe4d8a6a6001cba",
             "WGraphConjecture176_conjecture176": "e037bafca9d2a26b",
-            "WGraphConjecture17_conjecture17": "22a8873dd137b4f2",
             "WGraphConjecture181_conjecture181": "cca880e5e43b855c",
-            "WGraphConjecture18_conjecture18": "20594ef04123f0b7",
             "WGraphConjecture194_conjecture194": "358ecf87e4531d81",
-            "WGraphConjecture198a_conjecture198a": "1f4e2d125befe4f1",
             "WGraphConjecture1_conjecture1": "27e6b82233fbc1dc",
             "WGraphConjecture200_conjecture200": "2f82395f59daf4c5",
-            "WGraphConjecture217_conjecture217": "4e29fef6814470cb",
-            "WGraphConjecture2_conjecture2": "8c82c6bd712dcac5",
             "WGraphConjecture309_conjecture309": "af10bd554543c291",
-            "WGraphConjecture314_conjecture314": "8ec1434d29649e15",
-            "WGraphConjecture315_conjecture315": "0daca6346813d017",
-            "WGraphConjecture316_conjecture316": "43a2d2f1eda2260d",
-            "WGraphConjecture31_conjecture31": "58e6931ede547a93",
-            "WGraphConjecture3_conjecture3": "9f98f547bdef47bf",
             "WGraphConjecture430a_conjecture430a": "fd773e18d2acacda",
             "WGraphConjecture438b_conjecture438b": "5e5e47c522c2ff0d",
-            "WGraphConjecture4_conjecture4": "a5e0dfee85f0f375",
             "WGraphConjecture58_conjecture58": "88e2b330752f06ec",
-            "WGraphConjecture61_conjecture61": "6e6b4663c8a5588b",
             "WGraphConjecture63_conjecture63": "e208292fcc46df10",
             "WGraphConjecture85_conjecture85": "827be910dcef1ff7"
           },
           "anchors": {
-            "W160_conjecture160": "c49ac2e97067734c187b4b256b44ac93d5e18f69b9b09adb5467202e58e745ee",
-            "WGraphConjecture100_conjecture100": "2b97d32b8822fc8d656c01288b37f39f3c87400e110cee67eeea2786e2e38cd6",
             "WGraphConjecture109_conjecture109": "6e78d45977d446217306df3bb8cd48b83f8541fd958cbfeb5d84127fd43ba766",
-            "WGraphConjecture133_conjecture133": "06ddcf31f2df5f5bbde74c9b9243a0edba1836bac79ecfe86670720f59737133",
-            "WGraphConjecture13_conjecture13": "5d5ecb6cfa5547a697e2ab7e7a7d3982c78f2a401cdd849c4e49deeb0e706b15",
-            "WGraphConjecture141_conjecture141": "973c0b784c49cb8ea25563a5771f8faf3dd76d14bc6e1503c9587a7a86304aac",
-            "WGraphConjecture142_conjecture142": "87a2eb52b7efc8d1b5c812ffde13eb42b904b2eac1f365b26da1ce881bb598a2",
-            "WGraphConjecture143_conjecture143": "3445b1d6b8ff477883bcf36d0312bd90b95de405dc07f52e841c358c927ff15d",
-            "WGraphConjecture144_conjecture144": "8685f93dd4e6ff3d8774ca24b5ed499e4c0ddbe76060b9cbf9313265548b8eaa",
-            "WGraphConjecture145_conjecture145": "b54dadb88c3440af3f760ce677312347279e8b6629481c34816e0745d5fb9e10",
-            "WGraphConjecture146_conjecture146": "2d2d586a7a49b25c19379d58c38a5e365914a70ffc1fbe34628516d9e2150345",
-            "WGraphConjecture16_conjecture16": "fdcd5149f68770a675f74904d0837fedda0c5d5b96bdce203a7fa7aa4471df84",
             "WGraphConjecture172_conjecture172": "a537bf6b77572a5441ff179fdcfac69bfe12183c513cdeaf041d91b709959e96",
             "WGraphConjecture176_conjecture176": "1c452c67174bde32153dd4b7d686602147383c020749e0ec47b23ae4fed3808d",
-            "WGraphConjecture17_conjecture17": "d6a38460b7f48754f17c284274188e746213224d7c8a5ac457135b6ba981324e",
             "WGraphConjecture181_conjecture181": "4bad43c738215f4f1cbfd531dcda76447eb1840b69ba4e5c2eef63ab17c374ee",
-            "WGraphConjecture18_conjecture18": "448f45a5bb6e5e09337166e0642342ca862be5aaa6db9237b978aaf84be7054e",
             "WGraphConjecture194_conjecture194": "4c8aa84e1136deb5523e35065c89b46b135fa65b9c20d2ada10b69e3c3d0bdff",
-            "WGraphConjecture198a_conjecture198a": "e385a0264b6cfba4a62dfcb17008d43596e97d69a253c8004ecc54b2758857a3",
             "WGraphConjecture1_conjecture1": "02bfdb35975884e2294707cdec4b4206b71a02129aad7228bcd530a686b8d8ba",
             "WGraphConjecture200_conjecture200": "ec121702b2dfbe49c802cc60745e71949e433e0383af8c890dc2afd115b2b380",
-            "WGraphConjecture217_conjecture217": "ef639d289f5b076b4f154ba2a0999fe92e0b9fed2bb302f5d5ce64ba9c696b57",
-            "WGraphConjecture2_conjecture2": "d366945f6b2a2dd703a94a5b21dbc81367ef3df89fe3a7efcff092bd8d7adb24",
             "WGraphConjecture309_conjecture309": "070871be8dddc7d8a9576735bef608468f8b0ec451d82175c69c297b7d171dae",
-            "WGraphConjecture314_conjecture314": "b49717ae1991381d7da303ab56d9d50c0b9f7dff361c9acf877e6f038f320c4b",
-            "WGraphConjecture315_conjecture315": "63978aa059584534d94e0a72551b8b49e5283a2a7cc604f8a42365cf4e142bd1",
-            "WGraphConjecture316_conjecture316": "b54a65398620d9deb75d07db95aa2d91e5868d2e60e7d41674d13d947ec8d112",
-            "WGraphConjecture31_conjecture31": "fac62d77df82a854ba56d04623dcaa65b15c9976b26d7ad662d5867fc355482f",
-            "WGraphConjecture3_conjecture3": "7b02a63363a48e2951ce97cda9d3a18bc8bcb78a4364054d3c641c1eb5a7c34d",
             "WGraphConjecture430a_conjecture430a": "5e8aec898dda4ca2168e82b05606b3f7635b57fa6ed13c1c565e7b2a6b76824a",
             "WGraphConjecture438b_conjecture438b": "264de501bcc974cf881b8c01c079009ec299fb24524d9740f9efb1d5a5f6c209",
-            "WGraphConjecture4_conjecture4": "a5d7521923e0fa6fab8324b1af0fd9d9cc4bb2f223989972e2f349c39384c52d",
             "WGraphConjecture58_conjecture58": "59c1b521904baa3b42e6600d80cd5a8f27b6ac50c7b6c8d6cf99ab0c5f1ce22b",
-            "WGraphConjecture61_conjecture61": "b8cb58e81ae2a5063005218cc62381c31458b0f1694eb3b9447bbb497154c339",
             "WGraphConjecture63_conjecture63": "ea5c34e37bfceeea789d453c5b3b7dbb2245c864faec6336a5773701640e4a59",
             "WGraphConjecture85_conjecture85": "6eb048069ff607f7a3423329e945f22696a6d51f07f2a972d30b9e80eead9bb8"
           },
-          "manifest_hash": "932300e4412ecdd8",
+          "manifest_hash": "713054fe18cef0fc",
           "counts": {
-            "exported": 36,
-            "omitted": 3,
-            "under_review": 36
+            "exported": 13,
+            "omitted": 26,
+            "under_review": 13
           },
-          "note": "36 of 36 have not been read by a person yet"
+          "note": "13 of 13 have not been read by a person yet"
         },
-        "collection": "wotw"
+        "collection": "wotw",
+        "withdrawn": {
+          "W160_conjecture160": {
+            "task_id": "ea23b862-3f13-47c9-ab38-835ff48f4158",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → [Nontrivial.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture100_conjecture100": {
+            "task_id": "3c8e8341-d482-42c0-815d-069348ffd9ec",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → [Nontrivial.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture133_conjecture133": {
+            "task_id": "18f7b569-5296-4576-801e-063ecfb22671",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture13_conjecture13": {
+            "task_id": "8f7261ff-4716-4427-bc26-723fe1a08ab2",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [Nontrivial.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture141_conjecture141": {
+            "task_id": "91b71181-4ad4-4c5b-9279-cb41c322c49b",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture142_conjecture142": {
+            "task_id": "c434e0f0-ba70-4fde-9e9d-700e1932608e",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture143_conjecture143": {
+            "task_id": "05f3fd92-2110-4432-9005-01603b1cbc7e",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture144_conjecture144": {
+            "task_id": "790281a8-a42a-4465-b64e-20e5c67d22f9",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture145_conjecture145": {
+            "task_id": "5b182692-bcac-4bab-910e-ee46e0690734",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [Nontrivial.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture146_conjecture146": {
+            "task_id": "1508afa9-7534-4e8b-844c-d47d74e1b509",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture16_conjecture16": {
+            "task_id": "58138240-207a-4461-ac06-f77764d1737d",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [Nontrivial.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture17_conjecture17": {
+            "task_id": "9359a21a-4437-45c2-85d7-5285bd00a2fe",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture18_conjecture18": {
+            "task_id": "2e676392-2bb7-4e6c-9fb8-def4cd16c148",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture198a_conjecture198a": {
+            "task_id": "2371c6c9-b126-4b0e-b5f7-63162b398a01",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture217_conjecture217": {
+            "task_id": "28b50a6d-00ce-49f6-aa8c-7dbaca17060b",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture2_conjecture2": {
+            "task_id": "4b42cd1e-bc89-4214-9f25-4ba1af5b993d",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture314_conjecture314": {
+            "task_id": "4ae09994-6d9e-4781-a3c2-f8f7f69a818e",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture315_conjecture315": {
+            "task_id": "1b300d78-d626-40bd-89ab-6fd8305663fd",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture316_conjecture316": {
+            "task_id": "ac076d1e-96bf-4be7-8ff0-8cc6f8cb5870",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture31_conjecture31": {
+            "task_id": "d0bdd432-18ef-4cae-8ea2-5f0090cb62a6",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture3_conjecture3": {
+            "task_id": "24d177c3-e516-4ce5-b42d-b477dab431e1",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u} → [Fintype.{u} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture4_conjecture4": {
+            "task_id": "87ebab39-ded9-4b40-98a3-7fc782a0d5cc",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → [DecidableEq.{u_1 + 1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          },
+          "WGraphConjecture61_conjecture61": {
+            "task_id": "79da7872-18dd-4431-a27b-51fd951f2106",
+            "inclusion": "quarantine",
+            "reason": "Target elaborates to `{α : Type u_1} → [Fintype.{u_1} α] → Prop`, which is not the proof interface: Lean added parameters the module's signature does not show"
+          }
+        }
       }
     ],
     "distribution": {
       "schema_version": 1,
-      "assembled_at": "2026-10-30T11:21:08+00:00",
+      "assembled_at": "2026-10-31T07:24:58+00:00",
       "amends": [
         {
           "manifest_hash": "5869829724d3c957",
@@ -49702,15 +49130,20 @@
           "manifest_hash": "f027d8c5f48ef78a",
           "amended_at": "2026-10-30T11:21:08+00:00",
           "change": "republished arxiv (13 tasks), authored (12 tasks), books (7 tasks), erdos (1093 tasks), green (62 tasks), kourovka (7 tasks), mathoverflow (10 tasks), millennium (5 tasks), oeis (218 tasks), other (1 tasks), paper (16 tasks), wikipedia (76 tasks), wotw (36 tasks); MathDB relations: identity 1015, stronger 2, unreviewed 15, weaker 1"
+        },
+        {
+          "manifest_hash": "1f14181249d38803",
+          "amended_at": "2026-10-31T07:24:58+00:00",
+          "change": "republished arxiv (13 tasks), authored (10 tasks), books (7 tasks), erdos (1093 tasks), green (62 tasks), kourovka (7 tasks), mathoverflow (10 tasks), millennium (5 tasks), oeis (218 tasks), other (1 tasks), paper (15 tasks), wikipedia (78 tasks), wotw (13 tasks); matched by hand (mathdb/matches.json): wikipedia:JacobianConjecture; MathDB relations: unreviewed 1"
         }
       ],
       "counts": {
         "collections": 13,
-        "tasks": 1556,
-        "questions": 1033,
-        "under_review": 1556
+        "tasks": 1532,
+        "questions": 1009,
+        "under_review": 1532
       },
-      "manifest_hash": "1f14181249d38803"
+      "manifest_hash": "aeac887fbaa44fad"
     }
   },
   "mathdb": {
@@ -49722,11 +49155,11 @@
     ],
     "resolved_at": "2026-10-15",
     "counts": {
-      "resolved": 1033,
+      "resolved": 1009,
       "absent_from_mathdb": 0,
       "unresolved": 0,
       "not_an_erdos_problem": 0,
-      "problems": 1033
+      "problems": 1009
     },
     "note": "MathDB's own post number and row id for each problem it has a record of. `mathdb_number` is MathDB's handle behind /p/<n>: permanent within one MathDB database and never reused, but issued per row at creation, so it is not derivable: it is recorded, and each problem folder is named by it. It is NOT the Erdos number. `relation` says how the Lean statements relate to the MathDB problem (see `relations`). `state` keeps four things apart: MathDB has a record; MathDB answered that it has none; the lookup never got an answer, which is not evidence of absence; and the problem is not an Erdos problem, so there was nothing to look up.",
     "problems": {
@@ -49855,14 +49288,6 @@
         "mathdb_number": 315900,
         "mathdb_id": "e874fa5c-5f1e-4b32-9daf-bbb9ae3e756f",
         "mathdb_url": "https://mathdb.com/p/315900",
-        "resolved_via": "matched by hand on 2026-10-29 to the MathDB problem of the same statement",
-        "relation": "unreviewed"
-      },
-      "authored:JacobianConjectureTwoVariables": {
-        "state": "resolved",
-        "mathdb_number": 315779,
-        "mathdb_id": "30a31fb0-0e1b-412a-9744-e5ace7f90592",
-        "mathdb_url": "https://mathdb.com/p/315779",
         "resolved_via": "matched by hand on 2026-10-29 to the MathDB problem of the same statement",
         "relation": "unreviewed"
       },
@@ -61569,14 +60994,6 @@
         "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
         "relation": "identity"
       },
-      "paper:Chvatal": {
-        "state": "resolved",
-        "mathdb_number": 406216,
-        "mathdb_id": "9cfbcfb3-c8f8-4fcf-8e6d-f1f050a9c614",
-        "mathdb_url": "https://mathdb.com/p/406216",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
       "paper:Dubner": {
         "state": "resolved",
         "mathdb_number": 389394,
@@ -61897,6 +61314,14 @@
         "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
         "relation": "identity"
       },
+      "wikipedia:JacobianConjecture": {
+        "state": "resolved",
+        "mathdb_number": 315779,
+        "mathdb_id": "30a31fb0-0e1b-412a-9744-e5ace7f90592",
+        "mathdb_url": "https://mathdb.com/p/315779",
+        "resolved_via": "matched by hand on 2026-10-29 to the MathDB problem of the same statement, as authored:JacobianConjectureTwoVariables; the same two-variable statement is imported from formal-conjectures since 2026-10-30",
+        "relation": "unreviewed"
+      },
       "wikipedia:JugglerConjecture": {
         "state": "resolved",
         "mathdb_number": 388466,
@@ -62155,14 +61580,6 @@
         "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
         "relation": "identity"
       },
-      "wotw:160": {
-        "state": "resolved",
-        "mathdb_number": 406237,
-        "mathdb_id": "9eb8be99-2927-4726-9a65-5f023004d7ac",
-        "mathdb_url": "https://mathdb.com/p/406237",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
       "wotw:GraphConjecture1": {
         "state": "resolved",
         "mathdb_number": 406238,
@@ -62171,99 +61588,11 @@
         "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
         "relation": "identity"
       },
-      "wotw:GraphConjecture100": {
-        "state": "resolved",
-        "mathdb_number": 406239,
-        "mathdb_id": "29853c3f-d449-4775-bcab-6d128a10578d",
-        "mathdb_url": "https://mathdb.com/p/406239",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
       "wotw:GraphConjecture109": {
         "state": "resolved",
         "mathdb_number": 315693,
         "mathdb_id": "f2957f74-8ffc-4a4c-9b3f-8110bb0f3815",
         "mathdb_url": "https://mathdb.com/p/315693",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture13": {
-        "state": "resolved",
-        "mathdb_number": 406240,
-        "mathdb_id": "693423c4-1c8d-4310-8159-eca7a2581f41",
-        "mathdb_url": "https://mathdb.com/p/406240",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture133": {
-        "state": "resolved",
-        "mathdb_number": 406241,
-        "mathdb_id": "d4e010d3-64c8-48cd-b21e-0e9d9bfe096d",
-        "mathdb_url": "https://mathdb.com/p/406241",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture141": {
-        "state": "resolved",
-        "mathdb_number": 406242,
-        "mathdb_id": "13f3e23c-0211-4d97-b75c-16c0ffcf071b",
-        "mathdb_url": "https://mathdb.com/p/406242",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture142": {
-        "state": "resolved",
-        "mathdb_number": 406243,
-        "mathdb_id": "fa39a3c8-2d1f-4dda-a8b4-0934837c7c58",
-        "mathdb_url": "https://mathdb.com/p/406243",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture143": {
-        "state": "resolved",
-        "mathdb_number": 315694,
-        "mathdb_id": "12048c54-8858-4ddf-aeb5-3ddcd12ee116",
-        "mathdb_url": "https://mathdb.com/p/315694",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture144": {
-        "state": "resolved",
-        "mathdb_number": 406244,
-        "mathdb_id": "c07d7a20-b29b-4069-bb56-3686fe188a16",
-        "mathdb_url": "https://mathdb.com/p/406244",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture145": {
-        "state": "resolved",
-        "mathdb_number": 406245,
-        "mathdb_id": "c95e2084-4472-4fa3-8ba2-2ed7430e89dc",
-        "mathdb_url": "https://mathdb.com/p/406245",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture146": {
-        "state": "resolved",
-        "mathdb_number": 406246,
-        "mathdb_id": "91dbacc9-4a37-4afd-a3d9-2b672b704305",
-        "mathdb_url": "https://mathdb.com/p/406246",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture16": {
-        "state": "resolved",
-        "mathdb_number": 406247,
-        "mathdb_id": "1ca8ff3c-005b-4557-84a1-e503df3681a8",
-        "mathdb_url": "https://mathdb.com/p/406247",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture17": {
-        "state": "resolved",
-        "mathdb_number": 406248,
-        "mathdb_id": "5858f4a9-10f9-40b6-a0b4-73dbb768de43",
-        "mathdb_url": "https://mathdb.com/p/406248",
         "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
         "relation": "identity"
       },
@@ -62283,14 +61612,6 @@
         "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
         "relation": "identity"
       },
-      "wotw:GraphConjecture18": {
-        "state": "resolved",
-        "mathdb_number": 406251,
-        "mathdb_id": "950acaf6-57c2-4abb-968a-bfeec1af84ad",
-        "mathdb_url": "https://mathdb.com/p/406251",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
       "wotw:GraphConjecture181": {
         "state": "resolved",
         "mathdb_number": 406252,
@@ -62307,22 +61628,6 @@
         "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
         "relation": "identity"
       },
-      "wotw:GraphConjecture198a": {
-        "state": "resolved",
-        "mathdb_number": 406254,
-        "mathdb_id": "2275ce2f-21d6-4610-bb48-76025e9da69b",
-        "mathdb_url": "https://mathdb.com/p/406254",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture2": {
-        "state": "resolved",
-        "mathdb_number": 315526,
-        "mathdb_id": "ffd461b5-1793-47ba-8785-d156b6dd8cfb",
-        "mathdb_url": "https://mathdb.com/p/315526",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
       "wotw:GraphConjecture200": {
         "state": "resolved",
         "mathdb_number": 406255,
@@ -62331,67 +61636,11 @@
         "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
         "relation": "identity"
       },
-      "wotw:GraphConjecture217": {
-        "state": "resolved",
-        "mathdb_number": 406256,
-        "mathdb_id": "6a39a65e-e5ac-4178-83fd-9c40f64ef22c",
-        "mathdb_url": "https://mathdb.com/p/406256",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture3": {
-        "state": "resolved",
-        "mathdb_number": 406257,
-        "mathdb_id": "f9c7e34a-c7dd-4f5a-b00c-279d601e672c",
-        "mathdb_url": "https://mathdb.com/p/406257",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
       "wotw:GraphConjecture309": {
         "state": "resolved",
         "mathdb_number": 406258,
         "mathdb_id": "86caca6e-c76d-4a8e-94d8-93e286485b9d",
         "mathdb_url": "https://mathdb.com/p/406258",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture31": {
-        "state": "resolved",
-        "mathdb_number": 406259,
-        "mathdb_id": "0150ba2f-afde-4c52-b86d-4f8cd8620fe1",
-        "mathdb_url": "https://mathdb.com/p/406259",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture314": {
-        "state": "resolved",
-        "mathdb_number": 406260,
-        "mathdb_id": "b77638d7-8f18-452d-b0c6-5131e08a4c90",
-        "mathdb_url": "https://mathdb.com/p/406260",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture315": {
-        "state": "resolved",
-        "mathdb_number": 406261,
-        "mathdb_id": "c4d1aef3-66d8-4c49-82fb-dba84d9d27e0",
-        "mathdb_url": "https://mathdb.com/p/406261",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture316": {
-        "state": "resolved",
-        "mathdb_number": 406262,
-        "mathdb_id": "cbf20751-09bc-4761-b235-4353f9c9c90a",
-        "mathdb_url": "https://mathdb.com/p/406262",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture4": {
-        "state": "resolved",
-        "mathdb_number": 406263,
-        "mathdb_id": "a6c1afcd-8134-49a8-9713-8c54f7e75bce",
-        "mathdb_url": "https://mathdb.com/p/406263",
         "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
         "relation": "identity"
       },
@@ -62416,14 +61665,6 @@
         "mathdb_number": 406266,
         "mathdb_id": "1b4e5e53-8811-4455-80b6-34ecc3d0183b",
         "mathdb_url": "https://mathdb.com/p/406266",
-        "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
-        "relation": "identity"
-      },
-      "wotw:GraphConjecture61": {
-        "state": "resolved",
-        "mathdb_number": 406267,
-        "mathdb_id": "77d54bb0-1a57-4483-aac5-d9f7a4cf73da",
-        "mathdb_url": "https://mathdb.com/p/406267",
         "resolved_via": "production catalog identity and applied import record; read-only production URL audit",
         "relation": "identity"
       },
@@ -62491,7 +61732,6 @@
       "315474": "erdos:180",
       "315475": "erdos:146",
       "315523": "erdos:138",
-      "315526": "wotw:GraphConjecture2",
       "315538": "erdos:306",
       "315539": "erdos:942",
       "315543": "erdos:56",
@@ -62556,14 +61796,13 @@
       "315655": "erdos:387",
       "315660": "erdos:884",
       "315693": "wotw:GraphConjecture109",
-      "315694": "wotw:GraphConjecture143",
       "315695": "erdos:130",
       "315699": "erdos:521",
       "315757": "erdos:522",
       "315761": "erdos:1133",
       "315767": "erdos:1038",
       "315768": "erdos:477",
-      "315779": "authored:JacobianConjectureTwoVariables",
+      "315779": "wikipedia:JacobianConjecture",
       "315786": "erdos:1196",
       "315787": "erdos:728",
       "315789": "erdos:480",
@@ -63424,7 +62663,6 @@
       "406213": "other:SchurTruncatedExponential",
       "406214": "paper:CardinalityLindelof",
       "406215": "paper:CatchUpConjecture",
-      "406216": "paper:Chvatal",
       "406217": "paper:Gourevitch",
       "406218": "paper:NLSCritical",
       "406219": "paper:PrimeTuples",
@@ -63445,37 +62683,16 @@
       "406234": "wikipedia:SixStandardDeviations",
       "406235": "wikipedia:SparseRuler",
       "406236": "wikipedia:WoodalPrimes",
-      "406237": "wotw:160",
       "406238": "wotw:GraphConjecture1",
-      "406239": "wotw:GraphConjecture100",
-      "406240": "wotw:GraphConjecture13",
-      "406241": "wotw:GraphConjecture133",
-      "406242": "wotw:GraphConjecture141",
-      "406243": "wotw:GraphConjecture142",
-      "406244": "wotw:GraphConjecture144",
-      "406245": "wotw:GraphConjecture145",
-      "406246": "wotw:GraphConjecture146",
-      "406247": "wotw:GraphConjecture16",
-      "406248": "wotw:GraphConjecture17",
       "406249": "wotw:GraphConjecture172",
       "406250": "wotw:GraphConjecture176",
-      "406251": "wotw:GraphConjecture18",
       "406252": "wotw:GraphConjecture181",
       "406253": "wotw:GraphConjecture194",
-      "406254": "wotw:GraphConjecture198a",
       "406255": "wotw:GraphConjecture200",
-      "406256": "wotw:GraphConjecture217",
-      "406257": "wotw:GraphConjecture3",
       "406258": "wotw:GraphConjecture309",
-      "406259": "wotw:GraphConjecture31",
-      "406260": "wotw:GraphConjecture314",
-      "406261": "wotw:GraphConjecture315",
-      "406262": "wotw:GraphConjecture316",
-      "406263": "wotw:GraphConjecture4",
       "406264": "wotw:GraphConjecture430a",
       "406265": "wotw:GraphConjecture438b",
       "406266": "wotw:GraphConjecture58",
-      "406267": "wotw:GraphConjecture61",
       "406268": "wotw:GraphConjecture63",
       "406269": "wotw:GraphConjecture85"
     },
