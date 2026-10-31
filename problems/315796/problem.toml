@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/650.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E650_parts_i"
@@ -36,6 +36,7 @@ track = "solved"
 part = "i"
 declaration = "erdos_650.parts.i"
 statement_id = "3804db8f-efcd-4593-a88f-9b4a36790993"
+source_formal_proof = "https://github.com/Woett/Lean-files/blob/main/ErdosProblem650.lean"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -58,7 +59,9 @@ track = "solved"
 part = "ii"
 declaration = "erdos_650.parts.ii"
 statement_id = "42b528a6-171c-4f7a-adb5-4dc64d195c8c"
+prose = "Let $f(m)$ be such that if $A\\subseteq \\{1,\\ldots,N\\}$ has $\\lvert A\\rvert=m$ then every interval in $[1,\\infty)$ of length $2N$ contains $\\geq f(m)$ many distinct integers $b_1,\\ldots,b_r$ where each $b_i$ is divisible by some $a_i\\in A$, where $a_1,\\ldots,a_r$ are distinct. In particular is it true that $f(m)\\leq \\sqrt{m}$? GPT 5.4 Pro (prompted by He, Li, and Tang) proved $f(m)\\leq \\lceil 2\\sqrt{m}\\rceil$. A corresponding lower bound was given by GPT 5.4 Pro and Aristotle; it is now known (see the paper of van Doorn, Li, and Tang [VLT26]) that $$f(m) = \\min(m, \\lceil 2\\sqrt{m}\\rceil)$$ for all $m$. This was formalized in Lean by van Doorn using Aristotle."
 gold_arguments = ["False"]
+source_formal_proof = "https://github.com/Woett/Lean-files/blob/main/ErdosProblem650.lean"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

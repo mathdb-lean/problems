@@ -21,10 +21,10 @@ file = "FormalConjectures/OEIS/103425.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "oeis-reviewed"
-released_at = "2026-10-29T06:33:30+00:00"
+release_id = "oeis"
+released_at = "2026-10-31T07:23:17+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "O103425_conjecture"
@@ -37,6 +37,7 @@ track = "solved"
 declaration = "conjecture"
 statement_id = "ad586656-7f2f-4494-870f-1236e7c9dc43"
 gold_arguments = ["True"]
+source_formal_proof = "https://github.com/KitaKen1/oeis-a103425-prime-free/blob/b04b155/lean/OeisA103425FC.lean#L13-L35"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

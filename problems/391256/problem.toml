@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/772.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E772_parts_i"
@@ -38,6 +38,7 @@ part = "i"
 declaration = "erdos_772.parts.i"
 statement_id = "2b003770-d815-4785-8247-dbccb7af25a2"
 gold_arguments = ["True"]
+source_formal_proof = "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos772.lean#L1040"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -60,7 +61,9 @@ track = "solved"
 part = "ii"
 declaration = "erdos_772.parts.ii"
 statement_id = "68274fbe-8318-4dc6-afdc-eb1b20e7ebe1"
+prose = "Is it true that $H_k(n) > n^{1/2+c}$ for some constant $c>0$? The answer is yes, and in fact $H_k(n) \\gg_k n^{2/3}$, proved by Alon and Erdős [AlEr85]."
 gold_arguments = ["True"]
+source_formal_proof = "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos772.lean#L1040"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

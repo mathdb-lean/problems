@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/208.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E208_parts_i_prove"
@@ -81,6 +81,7 @@ part = "ii"
 pair_id = "E208_parts_ii"
 declaration = "erdos_208.parts.ii"
 statement_id = "594ce102-6c8c-43fd-b529-ba5ed82590a0"
+prose = "Let $s_1 < s_2 < \\dots$ be the sequence of squarefree numbers. Is it true that $s_{n + 1} - s_n \\le (1 + o(1)) \\cdot (\\pi^2 / 6) \\cdot \\log (s_n) / \\log (\\log (s_n))$?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -103,6 +104,7 @@ part = "ii"
 pair_id = "E208_parts_ii"
 declaration = "erdos_208.parts.ii"
 statement_id = "594ce102-6c8c-43fd-b529-ba5ed82590a0"
+prose = "Let $s_1 < s_2 < \\dots$ be the sequence of squarefree numbers. Is it true that $s_{n + 1} - s_n \\le (1 + o(1)) \\cdot (\\pi^2 / 6) \\cdot \\log (s_n) / \\log (\\log (s_n))$?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

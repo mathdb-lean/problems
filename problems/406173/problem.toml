@@ -21,10 +21,10 @@ file = "FormalConjectures/OEIS/38771.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "oeis-reviewed"
-released_at = "2026-10-29T06:33:30+00:00"
+release_id = "oeis"
+released_at = "2026-10-31T07:23:17+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "O38771_conjecture1"
@@ -55,6 +55,7 @@ shape = "proof"
 track = "open"
 declaration = "conjecture2"
 statement_id = "490ef65a-506c-4d56-bbe8-ebf9a752dae6"
+prose = "All the terms in this sequence have exactly two prime factors. This conjecture is true for the first 133 terms. - [Dmitry Kamenetsky](https://oeis.org/wiki/User:Dmitry_Kamenetsky), Jan 06 2019"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

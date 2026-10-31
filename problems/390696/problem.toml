@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/87.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E87_parts_i_prove"
@@ -81,6 +81,7 @@ part = "ii"
 pair_id = "E87_parts_ii"
 declaration = "erdos_87.parts.ii"
 statement_id = "e927afd9-6cac-4681-a6b7-1e2eb5f14fb6"
+prose = "Even stronger, is there some $c > 0$ such that, for all large $k$, $$R(G) > c R(k)$$ for every graph $G$ with chromatic number $\\chi(G)=k$? This problem is #13 in Ramsey Theory in the graphs problem collection."
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -103,6 +104,7 @@ part = "ii"
 pair_id = "E87_parts_ii"
 declaration = "erdos_87.parts.ii"
 statement_id = "e927afd9-6cac-4681-a6b7-1e2eb5f14fb6"
+prose = "Even stronger, is there some $c > 0$ such that, for all large $k$, $$R(G) > c R(k)$$ for every graph $G$ with chromatic number $\\chi(G)=k$? This problem is #13 in Ramsey Theory in the graphs problem collection."
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

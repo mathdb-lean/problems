@@ -21,10 +21,10 @@ file = "FormalConjectures/OEIS/153330.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "oeis-reviewed"
-released_at = "2026-10-29T06:33:30+00:00"
+release_id = "oeis"
+released_at = "2026-10-31T07:23:17+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "O153330_conjecture1"
@@ -55,6 +55,7 @@ shape = "proof"
 track = "open"
 declaration = "conjecture2"
 statement_id = "9429858a-8a25-4a05-8bae-bd21107e92a9"
+prose = "Conjecture 2: 1, 6 and 16 appear only once and 3 appears twice in the sequence, i.e., $a(1) = 1$, $a(2) = 6$, $a(4) = a(5) = 3$, and $a(8) = 16$. - _Ya-Ping Lu_, May 04 2024"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -75,6 +76,7 @@ shape = "proof"
 track = "open"
 declaration = "conjecture3"
 statement_id = "77cb4b30-9f54-4462-b94c-283448a25d2f"
+prose = "Conjecture 3 (Ya-Ping Lu, 2024): Except 1, 3 and 6, the absolute value of all terms can be written as $5x + 8y$ for $x, y \\in \\mathbb{N}$. (Note: in the OEIS comment, \"x and y are integers\" means $x$ and $y$ have the same sign, i.e., $|v| = 5x + 8y$ with $x, y \\ge 0$, since every integer is a $\\mathbb{Z}$-linear combination of 5 and 8)."
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -95,6 +97,7 @@ shape = "proof"
 track = "open"
 declaration = "conjecture4"
 statement_id = "24d70e86-02a7-4ea7-bdf6-349755c7dccb"
+prose = "Conjecture 4 (Ya-Ping Lu, 2024): For an $m$ that appears in the sequence, the ratio of the number of terms with value $m$ to that of $-m$ approaches 1 as $n \\to \\infty$, for any $|m| \\notin \\{1, 3, 6, 16\\}$."
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

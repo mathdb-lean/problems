@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/385.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E385_parts_i_prove"
@@ -81,6 +81,7 @@ part = "ii"
 pair_id = "E385_parts_ii"
 declaration = "erdos_385.parts.ii"
 statement_id = "42f2bdae-fbdc-4341-a763-8c65b5c92e2b"
+prose = "Let $F(n) := \\max\\{m + p(m) \\mid \\textrm{$m < n$ composite}\\}\\}$ where $p(m)$ is the least prime divisor of $m$. Does $F(n) - n \\to \\infty$ as $n\\to\\infty$?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -103,6 +104,7 @@ part = "ii"
 pair_id = "E385_parts_ii"
 declaration = "erdos_385.parts.ii"
 statement_id = "42f2bdae-fbdc-4341-a763-8c65b5c92e2b"
+prose = "Let $F(n) := \\max\\{m + p(m) \\mid \\textrm{$m < n$ composite}\\}\\}$ where $p(m)$ is the least prime divisor of $m$. Does $F(n) - n \\to \\infty$ as $n\\to\\infty$?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

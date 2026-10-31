@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/950.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E950_parts_i_prove"
@@ -81,6 +81,7 @@ part = "ii"
 pair_id = "E950_parts_ii"
 declaration = "erdos_950.parts.ii"
 statement_id = "8240a3e3-7059-4c74-9cce-d772d0563fd1"
+prose = "Is it true that $\\limsup f(n)=\\infty$?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -103,6 +104,7 @@ part = "ii"
 pair_id = "E950_parts_ii"
 declaration = "erdos_950.parts.ii"
 statement_id = "8240a3e3-7059-4c74-9cce-d772d0563fd1"
+prose = "Is it true that $\\limsup f(n)=\\infty$?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -125,6 +127,7 @@ part = "iii"
 pair_id = "E950_parts_iii"
 declaration = "erdos_950.parts.iii"
 statement_id = "9b315c32-219b-42c2-a5aa-c1513df39796"
+prose = "Is it true that $f(n)=o(\\log\\log n)$ for all $n$?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -147,6 +150,7 @@ part = "iii"
 pair_id = "E950_parts_iii"
 declaration = "erdos_950.parts.iii"
 statement_id = "9b315c32-219b-42c2-a5aa-c1513df39796"
+prose = "Is it true that $f(n)=o(\\log\\log n)$ for all $n$?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

@@ -22,9 +22,9 @@ file = "FormalConjectures/Wikipedia/KomlosConjecture.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "wikipedia"
-released_at = "2026-10-29T06:33:54+00:00"
+released_at = "2026-10-31T07:23:37+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "NKomlosConjecture_komlos_conjecture"
@@ -35,6 +35,7 @@ shape = "proof"
 track = "solved"
 declaration = "komlos_conjecture"
 statement_id = "66c73d94-8f2a-4036-a766-58d34fd3fd5f"
+source_formal_proof = "https://github.com/mo271/formal-conjectures/blob/416b6597cb193b6745748fdfef0d64342c71dae9/FormalConjectures/Wikipedia/KomlosConjecture.lean#L64"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

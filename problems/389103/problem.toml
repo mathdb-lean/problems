@@ -15,16 +15,16 @@ notes = "Anderson localization, the extended-states conjecture -- https://en.wik
 
 [source]
 name = "mathdb-lean"
-revision = "b80da422c1869ddababb2992c7dc83556e0f930c"
+revision = "2fe7c76111373ea1d5503c074350e836cf33de46"
 file = "authored/AndersonExtendedStates.lean"
 
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "authored"
-released_at = "2026-10-29T06:32:46+00:00"
+released_at = "2026-10-31T07:22:23+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "AAndersonExtendedStates"
@@ -41,7 +41,7 @@ statement_id = "b6d27627-9ca0-4d5b-9214-ad74bc24e67f"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "2bcc7ae073ecc3b4"
+  target_hash = "2d39fd39aff7d7dc"
   conversion_hash = "6a06b9e6a5a0c1cb7862892b4d6429960b9a014ff12dee45d563f25cc3511d8a"
   semantic_anchor = "f959e53c362a24e8b997acfa496b9d41291a5979f6b7df534b049dc7a129357c"
   reviewed_by_a_person = false

@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/447.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E447_parts_i"
@@ -60,7 +60,9 @@ track = "solved"
 part = "ii"
 declaration = "erdos_447.parts.ii"
 statement_id = "a2e652b1-4496-4140-b842-951b9be30de3"
+prose = "How large can a union-free collection $\\mathcal{F}$ of subsets of $[n]$ be? By union-free we mean there are no solutions to $A\\cup B=C$ with distinct $A,B,C\\in \\mathcal{F}$. Perhaps even $$\\lvert \\mathcal{F}\\rvert <(1+o(1))\\binom{n}{\\lfloor n/2\\rfloor}?$$ Solved by Kleitman [Kl71], who proved $$\\lvert \\mathcal{F}\\rvert <(1+o(1))\\binom{n}{\\lfloor n/2\\rfloor}.$$"
 gold_arguments = ["True"]
+source_formal_proof = "https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos447.lean"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

@@ -22,9 +22,9 @@ file = "FormalConjectures/Millennium/NavierStokes.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "millennium"
-released_at = "2026-10-29T06:33:24+00:00"
+released_at = "2026-10-31T07:23:10+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "YNavierStokes_navier_stokes_existence_and_smoothness_R3"
@@ -55,6 +55,7 @@ shape = "proof"
 track = "open"
 declaration = "navier_stokes_existence_and_smoothness_periodic"
 statement_id = "853a1b0e-8bf8-4094-9db1-941d566c89c5"
+prose = "(B) Existence and smoothness of (unforced) Navier–Stokes solutions in ℝ³/ℤ³."
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

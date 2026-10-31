@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/781.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E781_parts_i"
@@ -36,6 +36,7 @@ track = "solved"
 part = "i"
 declaration = "erdos_781.parts.i"
 statement_id = "1a2db4ad-91ef-4351-958b-5d3a5d6d166a"
+source_formal_proof = "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos781.lean#L3202"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -58,7 +59,9 @@ track = "solved"
 part = "ii"
 declaration = "erdos_781.parts.ii"
 statement_id = "e0bc43e4-170f-42e4-8a69-1694d16ca40e"
+prose = "Is it true that $f(k)=k^2-k+1$ for all $k$? The answer is no, since $f(k)\\gg k^3$ by Alon and Spencer [AlSp89]."
 gold_arguments = ["False"]
+source_formal_proof = "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos781.lean#L3202"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

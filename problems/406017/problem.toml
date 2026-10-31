@@ -22,9 +22,9 @@ file = "FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_4.lean"
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "books"
-released_at = "2026-10-29T06:32:51+00:00"
+released_at = "2026-10-31T07:22:29+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "BBugeaudDistributionModuloOne_Problem10_4_spectrum_xi_alpha_pow_countable"
@@ -37,6 +37,7 @@ track = "solved"
 declaration = "spectrum_xi_alpha_pow_countable"
 statement_id = "f02de652-1c7d-4659-93d9-f0b31252ba06"
 gold_arguments = ["False"]
+source_formal_proof = "https://github.com/mo271/formal-conjectures/blob/8e2413a849b19822431772684d41cdc31637a409/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_4.lean#L682"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

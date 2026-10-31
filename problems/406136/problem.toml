@@ -21,10 +21,10 @@ file = "FormalConjectures/OEIS/159829.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "oeis-reviewed"
-released_at = "2026-10-29T06:33:30+00:00"
+release_id = "oeis"
+released_at = "2026-10-31T07:23:17+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "O159829_conjecture1"
@@ -37,6 +37,7 @@ track = "solved"
 declaration = "conjecture1"
 statement_id = "5edcf4ca-e879-48a7-b8ea-53a58e073eee"
 gold_arguments = ["False"]
+source_formal_proof = "https://github.com/KitaKen1/oeis-a159829-conjecture1-counterexample/blob/6632e626baa7f28ad14045aa7408a84178ec128d/lean/A159829Conjecture1FC.lean#L52-L61"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -57,6 +58,7 @@ shape = "proof"
 track = "open"
 declaration = "conjecture2"
 statement_id = "44d381c6-7b96-4e40-83d5-133518eb5131"
+prose = "Conjecture 2: For any $k \\ge 3$, there are infinitely many primes of the form $n^k + m^k + 1$ for $n, m \\ge 1$. - _Ulrich Krug_, 2009"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

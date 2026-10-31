@@ -15,16 +15,16 @@ notes = "Exponent of matrix multiplication -- https://en.wikipedia.org/wiki/Comp
 
 [source]
 name = "mathdb-lean"
-revision = "b80da422c1869ddababb2992c7dc83556e0f930c"
+revision = "2fe7c76111373ea1d5503c074350e836cf33de46"
 file = "authored/MatrixMultiplicationExponent.lean"
 
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
 release_id = "authored"
-released_at = "2026-10-29T06:32:46+00:00"
+released_at = "2026-10-31T07:22:23+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "AMatrixMultiplicationExponent"
@@ -41,7 +41,7 @@ statement_id = "0ee6e248-42a1-4a83-8509-964a6cbc282c"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "b7384f9efadd6b51"
+  target_hash = "0499b958b54a0f3d"
   conversion_hash = "942cc81df8ae5c63b772670b1353ff4383c00e60ed0e87b06bfc32c2c806194c"
   semantic_anchor = "a30a1f893f6ba3e811b7f1a3e0d13199505881beb22898fb743de0067827611e"
   reviewed_by_a_person = false

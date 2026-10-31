@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/482.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E482"
@@ -35,6 +35,7 @@ shape = "proof"
 track = "solved"
 declaration = "erdos_482"
 statement_id = "924df748-6aa1-43db-a559-158f2b289fc1"
+source_formal_proof = "https://github.com/gotrevor/lean-gallery/blob/a28a487968d989b24c9dde9b1958aa5b92c6fccb/LeanGallery/NumberTheory/Erdos482/Statement.lean#L46-L49"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

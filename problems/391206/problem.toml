@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/713.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E713_parts_i_prove"
@@ -81,6 +81,7 @@ part = "ii"
 pair_id = "E713_parts_ii"
 declaration = "erdos_713.parts.ii"
 statement_id = "0b5aad2d-9297-420e-88a4-7470e5d87a6d"
+prose = "Must $\\alpha$ be rational? The same nondegeneracy condition on $G$ is used as in part (i). Rationality means that the real number $\\alpha$ lies in the image of the canonical embedding $\\mathbb{Q}\\to\\mathbb{R}$."
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -103,6 +104,7 @@ part = "ii"
 pair_id = "E713_parts_ii"
 declaration = "erdos_713.parts.ii"
 statement_id = "0b5aad2d-9297-420e-88a4-7470e5d87a6d"
+prose = "Must $\\alpha$ be rational? The same nondegeneracy condition on $G$ is used as in part (i). Rationality means that the real number $\\alpha$ lies in the image of the canonical embedding $\\mathbb{Q}\\to\\mathbb{R}$."
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

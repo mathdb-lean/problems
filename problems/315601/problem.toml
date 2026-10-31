@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/1101.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E1101_parts_i"
@@ -57,6 +57,7 @@ track = "open"
 part = "ii"
 declaration = "erdos_1101.parts.ii"
 statement_id = "0f6bb696-e855-4392-b2e9-3c8d8395e5a1"
+prose = "2. There is a good sequence with sub-exponential growth."
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

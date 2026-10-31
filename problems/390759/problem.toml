@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/168.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E168_parts_i"
@@ -37,6 +37,7 @@ track = "open"
 part = "i"
 declaration = "erdos_168.parts.i"
 statement_id = "867dfe5a-90c1-4598-8583-9dbca31c830f"
+answer_pinned = true
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -59,6 +60,7 @@ part = "ii"
 pair_id = "E168_parts_ii"
 declaration = "erdos_168.parts.ii"
 statement_id = "72195623-5ab2-4a44-bb48-ad609820c211"
+prose = "Is the limit $F(N)/N$ as $N \\to \\infty$ irrational?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -81,6 +83,7 @@ part = "ii"
 pair_id = "E168_parts_ii"
 declaration = "erdos_168.parts.ii"
 statement_id = "72195623-5ab2-4a44-bb48-ad609820c211"
+prose = "Is the limit $F(N)/N$ as $N \\to \\infty$ irrational?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

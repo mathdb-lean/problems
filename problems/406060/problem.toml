@@ -21,10 +21,10 @@ file = "FormalConjectures/Kourovka/21_149.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "kourovka-reviewed"
-released_at = "2026-10-29T06:33:14+00:00"
+release_id = "kourovka"
+released_at = "2026-10-31T07:22:57+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "K21_149"
@@ -37,6 +37,7 @@ track = "solved"
 declaration = "kourovka_21_149"
 statement_id = "116dc981-9857-414d-81a6-a8621d01f681"
 gold_arguments = ["True"]
+source_formal_proof = "https://github.com/KitaKen1/kourovka-21-149-lean/blob/5c34c22661071d412f66a42009a1fe68db473b31/lean/Kourovka21149FC.lean#L5740-L5775"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

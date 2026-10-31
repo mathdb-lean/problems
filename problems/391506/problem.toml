@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/1071.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E1071_parts_i"
@@ -38,6 +38,7 @@ part = "i"
 declaration = "erdos_1071.parts.i"
 statement_id = "f3afe0bc-ee51-4cd0-ba71-6541048c6915"
 gold_arguments = ["True"]
+source_formal_proof = "https://github.com/plby/lean-proofs/blob/main/src/v4.24.0/ErdosProblems/Erdos1071.lean"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -60,7 +61,9 @@ track = "solved"
 part = "ii"
 declaration = "erdos_1071.parts.ii"
 statement_id = "43867f08-0d6c-4a0a-9675-3ff562556115"
+prose = "Is there a region $R$ with a maximal set of disjoint unit line segments that is countably infinite? Here a unit line segment is a rotated and translated copy of the open interval $(0,1)$, and it is required to be contained in $R$. Solved affirmatively by [Fo99], who gave an explicit construction. This was formalized in Lean by Alexeev using Aristotle and ChatGPT."
 gold_arguments = ["True"]
+source_formal_proof = "https://github.com/plby/lean-proofs/blob/main/src/v4.24.0/ErdosProblems/Erdos1071b.lean"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

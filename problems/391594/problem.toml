@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/1209.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E1209_parts_i"
@@ -60,6 +60,7 @@ track = "solved"
 part = "ii"
 declaration = "erdos_1209.parts.ii"
 statement_id = "0734dfeb-5ae9-45b6-a040-d39a7abce51a"
+prose = "What if we ask for $n+a_k$ to be squarefree instead of prime? A similar construction provides a counterexample to the squarefree question."
 gold_arguments = ["False"]
 
   [task.environment]
@@ -83,7 +84,9 @@ track = "solved"
 part = "iii.a"
 declaration = "erdos_1209.parts.iii.a"
 statement_id = "8272a037-2caf-4c1b-a8dc-f8fa1f1f909d"
+prose = "Are there $n$ such that $n+2^{2^k}$ is always a prime? ebarschkis and GPT have proved that there are no $n$ such that $n+2^{2^k}$ is always prime: let $n\\geq 3$ be any odd integer. If $k$ is chosen sufficiently large, and $p=n+2^{2^{k}}$ is prime, then the multiplicative order of $2^{2^k}\\pmod{p}$, say $m$ is odd, and hence if $l$ is chosen such that $2^l\\equiv 1\\pmod{m}$ then $p\\mid n+2^{2^{k+rl}}$ for all $r\\geq 1$. This was formalized in Lean by Barschkis using ChatGPT."
 gold_arguments = ["False"]
+source_formal_proof = "https://github.com/ebarschkis/ErdosProblem/blob/main/Problem1209/Formalization.lean"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -106,6 +109,7 @@ part = "iii.b"
 pair_id = "E1209_parts_iii_b"
 declaration = "erdos_1209.parts.iii.b"
 statement_id = "064ce425-3c15-4a17-a716-8de9928fb230"
+prose = "Are there $n$ such that $n+2^{2^k}$ is always squarefree?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -128,6 +132,7 @@ part = "iii.b"
 pair_id = "E1209_parts_iii_b"
 declaration = "erdos_1209.parts.iii.b"
 statement_id = "064ce425-3c15-4a17-a716-8de9928fb230"
+prose = "Are there $n$ such that $n+2^{2^k}$ is always squarefree?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -150,6 +155,7 @@ part = "iii.c"
 pair_id = "E1209_parts_iii_c"
 declaration = "erdos_1209.parts.iii.c"
 statement_id = "8c392555-47e2-4b52-bcb4-5784ff77b630"
+prose = "Are there $n$ such that $n+2^{2^k}$ is infinitely often a prime?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -172,6 +178,7 @@ part = "iii.c"
 pair_id = "E1209_parts_iii_c"
 declaration = "erdos_1209.parts.iii.c"
 statement_id = "8c392555-47e2-4b52-bcb4-5784ff77b630"
+prose = "Are there $n$ such that $n+2^{2^k}$ is infinitely often a prime?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -194,6 +201,7 @@ part = "iii.d"
 pair_id = "E1209_parts_iii_d"
 declaration = "erdos_1209.parts.iii.d"
 statement_id = "1b71e033-e343-42dc-ad9b-53e4fe26c908"
+prose = "Are there $n$ such that $n+2^{2^k}$ is infinitely often squarefree?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -216,6 +224,7 @@ part = "iii.d"
 pair_id = "E1209_parts_iii_d"
 declaration = "erdos_1209.parts.iii.d"
 statement_id = "1b71e033-e343-42dc-ad9b-53e4fe26c908"
+prose = "Are there $n$ such that $n+2^{2^k}$ is infinitely often squarefree?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"

@@ -111,6 +111,12 @@ def main(argv: list[str]) -> int:
             faults.append("%s: the folder must be its positive mathdb_number, got %r"
                           % (label(folder), number))
 
+        # The policy every task here is checked under is the one `environment` states;
+        # a folder that states another would be graded by a reader under the wrong one.
+        imports = (held.get("policy") or {}).get("allowed_imports")
+        if imports != (environment.get("policy") or {}).get("allowed_imports"):
+            faults.append("%s: [policy].allowed_imports is not environment.policy's" % label(folder))
+
         entries = held.get("task") or []
         modules = sorted(p.stem for p in folder.glob("*.lean"))
         if sorted(e.get("id", "") for e in entries) != modules:
@@ -152,6 +158,8 @@ def main(argv: list[str]) -> int:
                 (entry.get("evidence", {}), "target_hash", task.get("target_hash")),
                 (entry.get("evidence", {}), "conversion_hash", evidence.get("conversion_hash")),
                 (entry.get("evidence", {}), "semantic_anchor", evidence.get("semantic_anchor")),
+                (entry, "source_formal_proof", (task.get("source_formal_proof") or {}).get("url")),
+                (entry, "answer_pinned", task.get("answer_pinned")),
             ):
                 value = where.get(key)
                 if not expected and value is None:
@@ -159,6 +167,13 @@ def main(argv: list[str]) -> int:
                 if value != expected:
                     faults.append("%s: %s.%s is %r, release says %r"
                                   % (label(folder), task_id, key, value, expected))
+
+            # A value obligation whose predicate admits a free witness (`f =Θ value`
+            # holds at `value := f`) is closed without settling anything; only
+            # pinned ones are published.
+            if task.get("shape") == "value" and task.get("answer_pinned") is not True:
+                faults.append("%s: %s is a value obligation whose answer is not pinned"
+                              % (label(folder), task_id))
 
             read = entry.get("evidence", {}).get("reviewed_by_a_person")
             if read is not (task_id not in under_review):
@@ -228,6 +243,25 @@ def main(argv: list[str]) -> int:
             if stated != n:
                 faults.append("mathdb: counts say %s=%r, the entries hold %d"
                               % (state, stated, n))
+
+        # A folder named after a MathDB problem says "this is that problem". Each
+        # entry says how far that holds -- the Lean statement may be a special case
+        # of it -- in the vocabulary the block itself defines.
+        vocabulary = held_mathdb.get("relations") or {}
+        for ref, entry in entries.items():
+            if entry.get("state") == "resolved" and entry.get("relation") not in vocabulary:
+                faults.append("mathdb: %s states relation %r, not one of %s"
+                              % (ref, entry.get("relation"), sorted(vocabulary)))
+
+    # The release record's own account of what it holds.
+    counts = (manifest["report"].get("distribution") or {}).get("counts")
+    if counts is not None:
+        actual = {"collections": len(manifest.get("collections") or ()),
+                  "tasks": len(released),
+                  "questions": len({t["question_id"] for t in released.values()}),
+                  "under_review": len(under_review)}
+        if counts != actual:
+            faults.append("report.distribution.counts says %s, the file holds %s" % (counts, actual))
 
     # The manifest's own fingerprint. A single release writes it under
     # `report.release`; a distribution assembled from several releases writes it

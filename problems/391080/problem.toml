@@ -21,10 +21,10 @@ file = "FormalConjectures/ErdosProblems/567.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos-reviewed"
-released_at = "2026-10-29T06:33:02+00:00"
+release_id = "erdos"
+released_at = "2026-10-31T07:22:42+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "E567_parts_i_prove"
@@ -81,6 +81,7 @@ part = "ii"
 pair_id = "E567_parts_ii"
 declaration = "erdos_567.parts.ii"
 statement_id = "72b76bd6-69b6-46ec-ad7f-6e680a8f9130"
+prose = "**Erdős Problem 567 (K33)** Is $K_{3,3}$ Ramsey size linear?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -103,6 +104,7 @@ part = "ii"
 pair_id = "E567_parts_ii"
 declaration = "erdos_567.parts.ii"
 statement_id = "72b76bd6-69b6-46ec-ad7f-6e680a8f9130"
+prose = "**Erdős Problem 567 (K33)** Is $K_{3,3}$ Ramsey size linear?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -125,6 +127,7 @@ part = "iii"
 pair_id = "E567_parts_iii"
 declaration = "erdos_567.parts.iii"
 statement_id = "bee13be5-2451-46b8-8071-e4af9717a869"
+prose = "**Erdős Problem 567 (H5)** Is $H_5$ ($C_5$ with two vertex-disjoint chords) Ramsey size linear?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
@@ -147,6 +150,7 @@ part = "iii"
 pair_id = "E567_parts_iii"
 declaration = "erdos_567.parts.iii"
 statement_id = "bee13be5-2451-46b8-8071-e4af9717a869"
+prose = "**Erdős Problem 567 (H5)** Is $H_5$ ($C_5$ with two vertex-disjoint chords) Ramsey size linear?"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
