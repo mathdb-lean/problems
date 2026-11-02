@@ -74,7 +74,7 @@ noncomputable def largestInducedPathSize (G : SimpleGraph α) [DecidableRel G.Ad
               ∀ v : (s : Set α), (G.induce (s : Set α)).degree v ≤ 2 }
 
 abbrev Target : Prop :=
-    ∀ [Nontrivial α] (G : SimpleGraph α) [DecidableRel G.Adj]
+    ∀ {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α] (G : SimpleGraph α) [DecidableRel G.Adj]
         (hG : G.Connected)
         (hTriFree : ∀ a b c : α, G.Adj a b → G.Adj b c → G.Adj c a → False)
         (hPath : largestInducedPathSize G ≤ 4),

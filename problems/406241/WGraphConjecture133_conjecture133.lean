@@ -55,7 +55,7 @@ open SimpleGraph
 variable {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α]
 
 abbrev Target : Prop :=
-    ∀ (G : SimpleGraph α) [DecidableRel G.Adj] (h : G.Connected),
+    ∀ {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α] (G : SimpleGraph α) [DecidableRel G.Adj] (h : G.Connected),
       let rad := G.radius.toNat
       let hasC4 := ∃ a b c d : α, a ≠ b ∧ a ≠ c ∧ a ≠ d ∧ b ≠ c ∧ b ≠ d ∧ c ≠ d ∧
         G.Adj a b ∧ G.Adj b c ∧ G.Adj c d ∧ G.Adj d a

@@ -61,7 +61,8 @@ def Intersecting (F : Finset (Finset α)) : Prop :=
     ∀ A ∈ F, ∀ B ∈ F, A ∩ B ≠ ∅
 
 abbrev Target : Prop :=
-    ∀ F : Finset (Finset α), Decreasing F →
-        ∃ x : α, ∀ G, G ⊆ F → Intersecting G → G.card ≤ { A ∈ F | x ∈ A }.card
+    ∀ {α : Type} [Fintype α] [DecidableEq α] [Nonempty α],
+      ∀ F : Finset (Finset α), Decreasing F →
+          ∃ x : α, ∀ G, G ⊆ F → Intersecting G → G.card ≤ { A ∈ F | x ∈ A }.card
 
 end Problem

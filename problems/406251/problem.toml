@@ -21,10 +21,10 @@ file = "FormalConjectures/WrittenOnTheWallII/GraphConjecture18.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "wotw-reviewed"
-released_at = "2026-10-29T06:33:59+00:00"
+release_id = "wotw-on-mathdb@1.0.0"
+released_at = "2026-11-02T01:29:17+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "WGraphConjecture18_conjecture18"
@@ -41,7 +41,7 @@ statement_id = "fc30618e-2793-4fff-a2c4-fb24a4a21776"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "20594ef04123f0b7"
-  conversion_hash = "20d8261e2c2087b804c42ad1df80703288d5d85fa0b4a944e5e61cdc0bd96d5a"
-  semantic_anchor = "448f45a5bb6e5e09337166e0642342ca862be5aaa6db9237b978aaf84be7054e"
+  target_hash = "7d571872d5b22378"
+  conversion_hash = "83cfc0782ba94f97692054b1d7a3e9f4d940540ac5f2c3eeae82202a17fdac89"
+  semantic_anchor = "4e9a0bc2bc487382978997bdc3d4e8e690e14adbdb0cab2df9895fb714aaed21"
   reviewed_by_a_person = false

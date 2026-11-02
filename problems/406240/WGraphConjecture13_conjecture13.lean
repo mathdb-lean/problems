@@ -55,7 +55,7 @@ open SimpleGraph
 variable {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α]
 
 abbrev Target : Prop :=
-    ∀ (G : SimpleGraph α) (h : G.Connected),
+    ∀ {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α] (G : SimpleGraph α) (h : G.Connected),
       letI maxL := (Finset.univ.image (fun v => indepNeighborsCard G v)).max' (by simp)
       (G.diam : ℝ) + (maxL : ℝ) - 1 ≤ b G
 

@@ -60,7 +60,7 @@ noncomputable def graphSquareRadius (G : SimpleGraph α) : ℕ :=
   (graphSquare G).radius.toNat
 
 abbrev Target : Prop :=
-    ∀ (G : SimpleGraph α) [DecidableRel G.Adj] (h : G.Connected)
+    ∀ {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α] (G : SimpleGraph α) [DecidableRel G.Adj] (h : G.Connected)
         (hrad : 0 < graphSquareRadius G),
       2 * eccSet G (maxEccentricityVertices G : Set α) ≤
       largestInducedTreeSize G * graphSquareRadius G

@@ -55,7 +55,7 @@ open SimpleGraph
 variable {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α]
 
 abbrev Target : Prop :=
-    ∀ (G : SimpleGraph α) [DecidableRel G.Adj] (h : G.Connected),
+    ∀ {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α] (G : SimpleGraph α) [DecidableRel G.Adj] (h : G.Connected),
       (G.girth : ℝ) / 2 - 1 + ((Finset.univ.sup (indepNeighborsCard G) : ℕ) : ℝ) ≤
       (largestInducedTreeSize G : ℝ)
 

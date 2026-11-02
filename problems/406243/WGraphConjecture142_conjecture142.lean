@@ -55,7 +55,7 @@ open SimpleGraph
 variable {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α]
 
 abbrev Target : Prop :=
-    ∀ (G : SimpleGraph α) [DecidableRel G.Adj] (h : G.Connected),
+    ∀ {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α] (G : SimpleGraph α) [DecidableRel G.Adj] (h : G.Connected),
       let B : Set α := (maxEccentricityVertices G : Set α)
       (2 : ℝ) / 3 * (G.girth : ℝ) + (eccSet G B : ℝ) ≤ (largestInducedTreeSize G : ℝ)
 

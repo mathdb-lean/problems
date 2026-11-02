@@ -60,7 +60,7 @@ noncomputable def localIndependenceMin (G : SimpleGraph α) : ℕ :=
   Finset.univ.inf' Finset.univ_nonempty (indepNeighborsCard G)
 
 abbrev Target : Prop :=
-    ∀ (G : SimpleGraph α) [DecidableRel G.Adj] (h : G.Connected)
+    ∀ {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α] (G : SimpleGraph α) [DecidableRel G.Adj] (h : G.Connected)
         (hlMin : 0 < localIndependenceMin Gᶜ),
       2 * eccSet G (maxEccentricityVertices G : Set α) ≤
       largestInducedTreeSize G * localIndependenceMin Gᶜ

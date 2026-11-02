@@ -55,7 +55,7 @@ open SimpleGraph
 variable {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α]
 
 abbrev Target : Prop :=
-    ∀ (G : SimpleGraph α) (h : G.Connected),
+    ∀ {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α] (G : SimpleGraph α) (h : G.Connected),
       (G.indepNum : ℝ) + ⌈(G.diam : ℝ) / 3⌉ ≤ b G
 
 end Problem

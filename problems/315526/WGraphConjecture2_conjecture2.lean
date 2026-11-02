@@ -56,7 +56,7 @@ variable {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α]
 
 open scoped Classical in
 abbrev Target : Prop :=
-    ∀ (G : SimpleGraph α) (h : G.Connected),
+    ∀ {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α] (G : SimpleGraph α) (h : G.Connected),
       2 * (averageIndepNeighbors G - 1) ≤ Ls G
 
 end Problem

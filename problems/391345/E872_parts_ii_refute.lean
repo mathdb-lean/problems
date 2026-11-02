@@ -84,6 +84,14 @@ def legalMoves {n : ℕ} (p : GamePos n) : Finset ℕ :=
   open scoped Classical in
   p.pool.filter fun x => IsPrimitive n (insert x p.claimed)
 
+/-- Membership in `legalMoves`: a legal move is a pool element whose insertion preserves
+primitiveness. -/
+@[category API, AMS 5]
+lemma mem_legalMoves {n : ℕ} {p : GamePos n} {x : ℕ} :
+    x ∈ legalMoves p ↔ x ∈ p.pool ∧ IsPrimitive n (insert x p.claimed) := by
+  classical
+  simp [legalMoves]
+
 /-- Apply a move by claiming `x` and removing it from the unclaimed pool.
 
 This function is intentionally total: if `x` is not legal, it still returns the formal position
@@ -116,32 +124,6 @@ def gameValueAux {n : ℕ} : ℕ → Bool → GamePos n → ℕ
       else
         p.claimed.card
 
-/-- The minimax value of the primitive-set saturation game from `p`, with Prolonger to move.
-
-This is a genuine game-value definition rather than an uninterpreted placeholder. It unfolds the
-finite game tree up to `p.pool.card` moves; at each node Prolonger maximizes and Shortener
-minimizes the eventual terminal cardinality. -/
-def gameLength {n : ℕ} : GamePos n → ℕ := fun p =>
-  gameValueAux p.pool.card true p
-
-/-- The Erdős primitive-set game length on $\{2, \dots, n\}$. -/
-def L (n : ℕ) : ℕ := gameLength (startPos n)
-
-end
-
-/-! Auxiliary lemmas upstream proves in the same file, frozen in with
-the definitions: an answer may cite them or prove its own. Each is
-tagged `API` or `test` upstream and is listed in `context_lemmas`
-above. See docs/CONVERSION.md for what is deliberately not here. -/
-
-/-- Membership in `legalMoves`: a legal move is a pool element whose insertion preserves
-primitiveness. -/
-@[category API, AMS 5]
-lemma mem_legalMoves {n : ℕ} {p : GamePos n} {x : ℕ} :
-    x ∈ legalMoves p ↔ x ∈ p.pool ∧ IsPrimitive n (insert x p.claimed) := by
-  classical
-  simp [legalMoves]
-
 /-- Each move claims exactly one pool element, so the minimax value never exceeds the number of
 already claimed elements plus the number of still unclaimed elements. -/
 @[category API, AMS 5]
@@ -173,6 +155,19 @@ lemma gameValueAux_le {n : ℕ} (fuel : ℕ) (turn : Bool) (p : GamePos n) :
     · exact Finset.max'_le _ _ _ key'
     · exact key' _ (Finset.min'_mem _ _)
     · exact Nat.le_add_right _ _
+
+/-- The minimax value of the primitive-set saturation game from `p`, with Prolonger to move.
+
+This is a genuine game-value definition rather than an uninterpreted placeholder. It unfolds the
+finite game tree up to `p.pool.card` moves; at each node Prolonger maximizes and Shortener
+minimizes the eventual terminal cardinality. -/
+def gameLength {n : ℕ} : GamePos n → ℕ := fun p =>
+  gameValueAux p.pool.card true p
+
+/-- The Erdős primitive-set game length on $\{2, \dots, n\}$. -/
+def L (n : ℕ) : ℕ := gameLength (startPos n)
+
+end
 
 abbrev Target : Prop :=
     ¬ (

@@ -55,7 +55,7 @@ open SimpleGraph
 variable {α : Type*} [Fintype α] [DecidableEq α]
 
 abbrev Target : Prop :=
-    ∀ (G : SimpleGraph α) [DecidableRel G.Adj] [Nontrivial α] (h_conn : G.Connected),
+    ∀ {α : Type*} [Fintype α] [DecidableEq α] (G : SimpleGraph α) [DecidableRel G.Adj] [Nontrivial α] (h_conn : G.Connected),
       NG G - 1 ≤ Ls G
 
 end Problem

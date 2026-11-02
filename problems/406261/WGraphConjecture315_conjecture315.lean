@@ -55,7 +55,7 @@ open SimpleGraph
 variable {α : Type*} [Fintype α] [DecidableEq α]
 
 abbrev Target : Prop :=
-    ∀ (G : SimpleGraph α) [DecidableRel G.Adj] (hG : G.Connected)
+    ∀ {α : Type*} [Fintype α] [DecidableEq α] (G : SimpleGraph α) [DecidableRel G.Adj] (hG : G.Connected)
         (h : G.indepNum = (pendantVertices G).card),
       IsWellTotallyDominated G
 

@@ -21,10 +21,10 @@ file = "FormalConjectures/WrittenOnTheWallII/GraphConjecture146.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "wotw-reviewed"
-released_at = "2026-10-29T06:33:59+00:00"
+release_id = "wotw-on-mathdb@1.0.0"
+released_at = "2026-11-02T01:29:17+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
-allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
 [[task]]
 id = "WGraphConjecture146_conjecture146"
@@ -35,13 +35,14 @@ shape = "proof"
 track = "solved"
 declaration = "conjecture146"
 statement_id = "eaa52a0d-b6eb-41d1-8223-3ca8fe4b28db"
+source_formal_proof = "https://github.com/akakabrian/WOW-146/blob/f9e0ad75d829170804ce1d8f9fd4c1d4a0085203/WOW146/Conjecture146.lean"
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "8ec7638cb0d0cf34"
-  conversion_hash = "8ba9c9fa3190c2704ce0dd2a242d85af71285e8d4d7da86f9b8af6ffb37432c5"
-  semantic_anchor = "2d2d586a7a49b25c19379d58c38a5e365914a70ffc1fbe34628516d9e2150345"
+  target_hash = "092fc3e79113657b"
+  conversion_hash = "37f4ff401addc755b482a6e38269774a33ac5752cc5735b1838d48e9d220b1c6"
+  semantic_anchor = "b1f0329873304276c422a7a9f4faa5e9ab99e4a619c0a619144687d1c9cac016"
   reviewed_by_a_person = false

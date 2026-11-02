@@ -55,7 +55,7 @@ open SimpleGraph
 variable {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α]
 
 abbrev Target : Prop :=
-    ∀ (G : SimpleGraph α) (h : G.Connected)
+    ∀ {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α] (G : SimpleGraph α) (h : G.Connected)
         (hb : b G ≤ 2 + averageEccentricity G),
       ∃ a b : α, ∃ p : G.Walk a b, p.IsHamiltonian
 

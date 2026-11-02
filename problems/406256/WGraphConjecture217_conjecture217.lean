@@ -61,7 +61,7 @@ noncomputable def residueEqTwoIndicator (G : SimpleGraph α) [DecidableRel G.Adj
   if residue G = 2 then 1 else 0
 
 abbrev Target : Prop :=
-    ∀ (G : SimpleGraph α) [DecidableRel G.Adj] (h : G.Connected)
+    ∀ {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α] (G : SimpleGraph α) [DecidableRel G.Adj] (h : G.Connected)
         (hL : Ls G ≤ 4 * (residueEqTwoIndicator G : ℝ) + 2),
       ∃ a b : α, ∃ p : G.Walk a b, p.IsHamiltonian
 

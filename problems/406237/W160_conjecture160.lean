@@ -60,7 +60,7 @@ noncomputable def maxTrianglesAtVertex (G : SimpleGraph α) [DecidableRel G.Adj]
 
 open scoped Classical in
 abbrev Target : Prop :=
-    ∀ (G : SimpleGraph α) [DecidableRel G.Adj] (h : G.Connected),
+    ∀ {α : Type*} [Fintype α] [DecidableEq α] [Nontrivial α] (G : SimpleGraph α) [DecidableRel G.Adj] (h : G.Connected),
       let maxL := (Finset.univ.image (indepNeighborsCard G)).max' (by simp)
       let maxT := maxTrianglesAtVertex G
       let cC4 : ℕ := if ∃ v : α, ∃ c : G.Walk v v, c.IsCycle ∧ c.length = 4 then 0 else 1
