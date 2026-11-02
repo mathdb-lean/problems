@@ -49,13 +49,17 @@ NONE = "'Problem.Target' does not depend on any axioms"
 SORRY = re.compile(r"declaration uses .sorry.")
 ERROR_LINE = re.compile(r":(\d+):\d+: error")
 #: Elaborates only if `Problem.Target` is exactly its shape's interface. A parameter
-#: Lean added leaves an implicit argument or an instance it cannot fill.
+#: Lean added leaves an implicit argument or an instance it cannot fill. It is a
+#: theorem header, as `solution`'s is, because only a header turns a universe left
+#: open into a parameter: `Target` over `Type*` is `Target.{u_1}`, and `example :
+#: Prop := Problem.Target` refuses it. `Target` is named once, since two mentions
+#: get two universes.
 INTERFACE = {
-    "proof": "example : Prop := Problem.Target",
-    "prove": "example : Prop := Problem.Target",
-    "refute": "example : Prop := Problem.Target",
-    "decide": "example : Prop → Prop := Problem.Target",
-    "value": "example := fun value => (Problem.Target value : Prop)",
+    "proof": "theorem _interface : Problem.Target ∨ True := Or.inr trivial",
+    "prove": "theorem _interface : Problem.Target ∨ True := Or.inr trivial",
+    "refute": "theorem _interface : Problem.Target ∨ True := Or.inr trivial",
+    "decide": "theorem _interface (verdict : Prop) : Problem.Target verdict ∨ True := Or.inr trivial",
+    "value": "theorem _interface value : Problem.Target value ∨ True := Or.inr trivial",
 }
 
 
@@ -114,6 +118,7 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--shard", help="i/n: the modules whose 1-based position is i mod n")
     parser.add_argument("--lake", default="lake")
     args = parser.parse_args(argv)
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # Lean prints `α`, `σ`, ...
     chosen = [Path(m).resolve() for m in args.modules] or modules(args.shard)
     shape = shapes()
     failed = 0

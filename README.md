@@ -19,7 +19,7 @@ check_statements.py      compiles every statement and audits the axioms it rests
 TRACK-REVIEW.md          where `track` and erdosproblems.com disagree, for review
 ```
 
-1532 obligations in 1009 problems. All of them are on MathDB; how far each statement *is* its
+1556 obligations in 1033 problems. All of them are on MathDB; how far each statement *is* its
 MathDB problem is stated per problem (see [MathDB](#mathdb)).
 
 ## The Lean project
@@ -63,7 +63,7 @@ is not copied here: it pins a different Lean and Mathlib, and none of its proble
 
 | shape | `Problem.Target` | the solver supplies | count |
 |---|---|---|---|
-| `proof` | `Target : Prop` | a proof | 384 |
+| `proof` | `Target : Prop` | a proof | 408 |
 | `prove` / `refute` | `Target : Prop` | a proof of either direction of one open question | 379 pairs |
 | `decide` | `Target (verdict : Prop) : Prop` | a verdict and a proof, graded against a frozen answer | 384 |
 | `value` | `Target (value : τ) : Prop` | an object and a proof about it; no answer is known | 6 |
@@ -75,11 +75,12 @@ A `value` obligation is published only when its predicate pins the answer (`answ
 with the reason, in `benchmark.json`). Eighteen were withdrawn on 2026-10-30 because a free
 witness closed them: `f =Θ[atTop] value` holds at `value := f`, so "solving" one settled nothing.
 
-`Problem.Target` has exactly the type its shape gives in the table above. Twenty-four `proof`
-obligations (23 from Written on the Wall, one Chvátal) were withdrawn on 2026-10-31 because it did
-not: the statement used a `variable` from its file, Lean made it a parameter, and `Target` was
-`{α : Type u_1} → [Fintype α] → … → Prop`, so `theorem solution : Problem.Target` could not even
-be stated.
+`Problem.Target` has exactly the type its shape gives in the table above. Where an upstream
+statement uses a `variable` of its file — `variable {α : Type*} [Fintype α]` above
+`theorem conjecture100 (G : SimpleGraph α) …` — Lean makes it a parameter of the theorem, and
+`Target` closes it with `∀` in front of the statement's own binders,
+`∀ {α : Type*} [Fintype α] … (G : SimpleGraph α) …`: the upstream theorem's own type. Twenty-four
+obligations (23 from Written on the Wall, one Chvátal) are stated this way.
 
 Every statement compiles against the project, uses no `sorry`, and its `Problem.Target` depends
 on no axiom beyond `propext`, `Classical.choice` and `Quot.sound`, and `Target` has its shape's
@@ -98,7 +99,7 @@ problem solved on the strength of a proof elsewhere. Against erdosproblems.com's
 listed in [TRACK-REVIEW.md](TRACK-REVIEW.md), waiting on a person to say which label is right.
 
 Where formal-conjectures links a machine-checked proof kept outside its own corpus, the task
-carries it as `source_formal_proof` — 430 obligations, all `solved`. `source_has_lean_proof` in a
+carries it as `source_formal_proof` — 441 obligations, all `solved`. `source_has_lean_proof` in a
 module's header speaks only for the formal-conjectures corpus itself, so it is `false` for
 these.
 
@@ -109,7 +110,7 @@ these.
 
 | relation | meaning | problems |
 |---|---|---|
-| `identity` | matched on the problem's own number or id | 991 |
+| `identity` | matched on the problem's own number or id | 1015 |
 | `stronger` | a proof of the Lean statement settles the MathDB problem, not conversely | 2 |
 | `weaker` | the Lean statement is a special case; proving it does not settle the MathDB problem | 1 |
 | `unreviewed` | matched by hand; how the two relate has not been checked | 15 |

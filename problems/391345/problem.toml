@@ -21,8 +21,8 @@ file = "FormalConjectures/ErdosProblems/872.lean"
 [policy]
 # The admission policy this release was exported under; the full record,
 # including what was omitted and why, is in benchmark.json.
-release_id = "erdos"
-released_at = "2026-10-31T07:22:42+00:00"
+release_id = "erdos-on-mathdb@1.0.0"
+released_at = "2026-11-02T01:28:14+00:00"
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
 allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
 
@@ -43,7 +43,7 @@ statement_id = "e9eec1e3-94b4-4e7a-bdbb-39833fd92f1f"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "b2a4f2298d42e58c"
+  target_hash = "20fad8838d7b5680"
   conversion_hash = "8e04f4233d9e4a39870b272e0c7a2835163b0f0e184e0ef774246b4c766b702e"
   semantic_anchor = "e9e3bb8fb323358ddba6f9622aa81da0476178d9a4be001a16e4e446704d9b79"
   reviewed_by_a_person = false
@@ -65,7 +65,7 @@ statement_id = "e9eec1e3-94b4-4e7a-bdbb-39833fd92f1f"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "f845c16b7c5bfbfb"
+  target_hash = "c909164296246b17"
   conversion_hash = "bcd567561b53c465fdb723b2371ba8afb9544de69e0b9e210a0375ff8755767f"
   semantic_anchor = "51aa580076af4f6f6172219d5524085ac362ef5bc4edd4c930330a99b87e7a89"
   reviewed_by_a_person = false
@@ -88,7 +88,7 @@ prose = "Erdős Problem 872, part (ii) (strong form): for every $\\epsilon > 0$,
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "8dd1b1c12b7fd0de"
+  target_hash = "dc401e1aba39082e"
   conversion_hash = "6c64030b34f8ca0bd25adfdcbbaa2b9ec78b283d57bd26c86308b535be1e0395"
   semantic_anchor = "3f8f065702dfbdf45f6509fc859029735b322ac4ba5362cbf6287391465973de"
   reviewed_by_a_person = false
@@ -111,7 +111,7 @@ prose = "Erdős Problem 872, part (ii) (strong form): for every $\\epsilon > 0$,
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "2c657d5f2f0f4b75"
+  target_hash = "71d1a300b20ee6a1"
   conversion_hash = "47334528566bae59034833b4ba6f7d7334c8e78233dd474502fc49a21ab035eb"
   semantic_anchor = "a7702b4c16dd797cbe056bbf465ca637d84b3493f4c0a6057ea4797949e88a40"
   reviewed_by_a_person = false
