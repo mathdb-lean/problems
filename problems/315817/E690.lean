@@ -34,10 +34,10 @@ for almost every problem, because it is a statement repository.
 - source: formal-conjectures
 - source_locator: FormalConjectures/ErdosProblems/690.lean#erdos_690
 - source_version: e04cc601840dd7a37f89b821a67f3a9e3c38d9c3
-- prose: Let d_k(p) be the natural density of the positive integers whose kth smallest distinct prime factor is p. Determine the complete classification for every k >= 1: d_k is unimodal on the primes if and only if k <= 3. The target quantifies over any function d recording these natural densities, as in the original question. The original universal-unimodality question is retained as Problem.CounterexampleTarget.
+- prose: Let $d_k(p)$ be the density of those integers whose $k$th smallest prime factor is $p$ (i.e. if $p_1<p_2<\cdots$ are the primes dividing $n$ then $p_k=p$). For every $k\geq 1$, determine whether $d_k(p)$ is unimodal in $p$: it first increases until its maximum and then decreases. A submission supplies a Boolean-valued function of $k$ and proves that its verdict is correct for every positive $k$. The densities $d_k(p)$ exist (see `erdos_690.variants.hasDensity`), so the statement quantifies over any function `d` recording them. The original universal-unimodality question is retained as `Problem.CounterexampleTarget`.
 - notes: Erdos Problem 690 -- https://www.erdosproblems.com/690
 - track: solved
-- answer_shape: decide
+- answer_shape: value
 - source_stem: 690
 - mathdb_ref: erdos:690
 - source_namespace: Erdos690
@@ -47,7 +47,6 @@ for almost every problem, because it is a statement repository.
 - source_has_lean_proof: false
 - source_lean_proof_kernel_clean: n/a
 - generator: adapters/formal_conjectures/adapter.py
-- gold_answer: True
 -/
 
 open Filter
@@ -71,16 +70,12 @@ abbrev CounterexampleTarget (verdict : Prop) : Prop :=
         ∀ k ≥ 1, ∀ d : ℕ → ℝ,
           (∀ p, p.Prime → (kthPrimeFactorSet k p).HasDensity (d p)) → IsUnimodalOnPrimes d
 
-/-- The complete classification, including every positive index. The natural
-density hypothesis uses the same prime-factor sets as the original question. -/
-def CompleteClassification : Prop :=
+/-- Determine a Boolean verdict for every positive index, and prove that each
+verdict agrees with unimodality of every function recording the densities.
+The answer function is supplied by the solver; no classification is fixed here. -/
+abbrev Target (verdict : Nat -> Bool) : Prop :=
   forall k : Nat, 1 <= k -> forall d : Nat -> Real,
     (forall p : Nat, p.Prime -> (kthPrimeFactorSet k p).HasDensity (d p)) ->
-      Iff (IsUnimodalOnPrimes d) (k <= 3)
-
-/-- A true verdict requires the classification for all positive k, including
-unimodality for k = 1, 2, 3 and failure for every k >= 4. -/
-abbrev Target (verdict : Prop) : Prop :=
-  Iff verdict CompleteClassification
+      Iff (verdict k = true) (IsUnimodalOnPrimes d)
 
 end Problem

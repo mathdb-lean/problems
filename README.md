@@ -60,8 +60,8 @@ Lean and Mathlib, and none of its problems is on MathDB.
 |---|---|---|---|
 | `proof` | `Target : Prop` | a proof | 408 |
 | `prove` / `refute` | `Target : Prop` | a proof of either direction of one open question | 379 pairs |
-| `decide` | `Target (verdict : Prop) : Prop` | a verdict and a proof, graded against a frozen answer | 384 |
-| `value` | `Target (value : τ) : Prop` | an object and a proof about it; no answer is known | 24 |
+| `decide` | `Target (verdict : Prop) : Prop` | a verdict and a proof, graded against a frozen answer | 383 |
+| `value` | `Target (value : τ) : Prop` | an object and a proof about it; no frozen answer | 25 |
 
 The two halves of a `prove` / `refute` pair always sit in the same folder: seeing only one side
 would tell a solver which way the setter believed it goes.

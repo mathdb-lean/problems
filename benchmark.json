@@ -15880,8 +15880,8 @@
       "task_id": "74bebe76-c1c8-47ed-9cce-15d0a8a2214a",
       "question_id": "erdos:690",
       "statement_id": "423b6ad3-596d-4a28-a3d3-e35249136450",
-      "target_hash": "fe09b5849cd4697f",
-      "shape": "decide",
+      "target_hash": "74960b381eed259e",
+      "shape": "value",
       "track": "solved",
       "part": null,
       "pair_id": null,
@@ -15891,9 +15891,6 @@
       "challenge": "E690/Challenge.lean",
       "holes": [
         "Submission.answer"
-      ],
-      "gold_arguments": [
-        "True"
       ],
       "mathdb_number": 315817,
       "mathdb_id": "3749c13a-0998-4ae5-9192-24eebcfe4c77"
@@ -37068,7 +37065,7 @@
         "semantic_anchor": "6b10a4af527c2747e7454d31aedd15eeb760db5d0626f2cbc5387f17f5f98736"
       },
       "E690": {
-        "target_hash": "fe09b5849cd4697f",
+        "target_hash": "74960b381eed259e",
         "conversion_hash": "f3eb1b57f99a6080082c69a43d15fac6a17bbac1144108e63499b0015c10aa42",
         "conversion_run_id": "import-20261029T051128.757135Z-47c546",
         "semantic_anchor": "dcea143170fee3bccfd60255925e964f2fedcbd1170a3833adbf3a56fe9c67aa"
@@ -48318,7 +48315,7 @@
         "questions": 1275,
         "under_review": 1971
       },
-      "manifest_hash": "789bcb1def4861c8"
+      "manifest_hash": "fe01a0b443205e6a"
     }
   },
   "mathdb": {
