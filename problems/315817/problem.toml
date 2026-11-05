@@ -10,7 +10,7 @@ mathdb_number = 315817
 collection = "erdos"
 tasks = 1
 reviewed_by_a_person = false
-prose = "Let $d_k(p)$ be the density of those integers whose $k$th smallest prime factor is $p$ (i.e. if $p_1<p_2<\\cdots$ are the primes dividing $n$ then $p_k=p$). For fixed $k\\geq 1$ is $d_k(p)$ unimodular in $p$? That is, it first increases in $p$ until its maximum then decreases. The answer is no in general: Cambie [Ca25] has shown that $d_k(p)$ is unimodular for $1\\leq k\\leq 3$ and is not unimodular for $4\\leq k\\leq 20$. The densities $d_k(p)$ exist (see `erdos_690.variants.hasDensity`), so the statement quantifies over any function `d` recording them."
+prose = "Let d_k(p) be the natural density of the positive integers whose kth smallest distinct prime factor is p. Determine the complete classification for every k >= 1: d_k is unimodal on the primes if and only if k <= 3. The target quantifies over any function d recording these natural densities, as in the original question. The original universal-unimodality question is retained as Problem.CounterexampleTarget."
 notes = "Erdos Problem 690 -- https://www.erdosproblems.com/690"
 
 [source]
@@ -36,14 +36,14 @@ shape = "decide"
 track = "solved"
 declaration = "erdos_690"
 statement_id = "423b6ad3-596d-4a28-a3d3-e35249136450"
-gold_arguments = ["False"]
+gold_arguments = ["True"]
 
   [task.environment]
   lean = "leanprover/lean4:v4.33.1"
   mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
 
   [task.evidence]
-  target_hash = "4b50a029e3e9001a"
+  target_hash = "fe09b5849cd4697f"
   conversion_hash = "f3eb1b57f99a6080082c69a43d15fac6a17bbac1144108e63499b0015c10aa42"
   semantic_anchor = "dcea143170fee3bccfd60255925e964f2fedcbd1170a3833adbf3a56fe9c67aa"
   reviewed_by_a_person = false
