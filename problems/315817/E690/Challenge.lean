@@ -13,7 +13,7 @@ import FtpEvalBench.E690
 
 namespace Submission
 
-def answer : Nat -> Bool := sorry
+def answer : Prop := sorry
 
 theorem solution : Problem.Target answer := sorry
 
