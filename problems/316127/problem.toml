@@ -8,7 +8,7 @@
 problem_id = "wikipedia:LegendreConjecture"
 mathdb_number = 316127
 collection = "wikipedia"
-tasks = 2
+tasks = 4
 reviewed_by_a_person = false
 prose = "Does there always exist at least one prime between consecutive perfect squares?"
 notes = "Wikipedia: LegendreConjecture -- https://en.wikipedia.org/wiki/Landau%27s_problems#Twin_prime_conjecture"
@@ -66,4 +66,42 @@ statement_id = "41ea3878-75c3-4470-8d19-4051164f26a6"
   target_hash = "fdb25cc12a3e00b7"
   conversion_hash = "144667e2adb6c7ae484fd63dd0034f004c017b989afeb150edf71d547ad5ddb2"
   semantic_anchor = "0b8712608a8f8ebb5ffd6f338685a91a2c592356741b236dd9ce342d19201a20"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_LegendreConjecture_legendre_conjecture_prove"
+file = "Sun_LegendreConjecture_legendre_conjecture_prove.lean"
+module = "FtpEvalBench.Sun_LegendreConjecture_legendre_conjecture_prove"
+challenge = "Sun_LegendreConjecture_legendre_conjecture_prove/Challenge.lean"
+shape = "prove"
+track = "open"
+pair_id = "sun:LegendreConjecture:legendre_conjecture"
+declaration = "Target"
+statement_id = "b452131e-f2ae-41e7-bb32-6f5197bf85d0"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "076442ad40091dca"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_LegendreConjecture_legendre_conjecture_refute"
+file = "Sun_LegendreConjecture_legendre_conjecture_refute.lean"
+module = "FtpEvalBench.Sun_LegendreConjecture_legendre_conjecture_refute"
+challenge = "Sun_LegendreConjecture_legendre_conjecture_refute/Challenge.lean"
+shape = "refute"
+track = "open"
+pair_id = "sun:LegendreConjecture:legendre_conjecture"
+declaration = "Target"
+statement_id = "88d5385b-81a9-430e-8d11-8fd9ca9a34d8"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "1961c42a8f84bd98"
   reviewed_by_a_person = false

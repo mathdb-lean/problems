@@ -8,7 +8,7 @@
 problem_id = "millennium:RiemannHypothesis"
 mathdb_number = 315854
 collection = "millennium"
-tasks = 1
+tasks = 2
 reviewed_by_a_person = false
 prose = "The **Riemann Hypothesis**: all non-trivial zeros of the Riemann zeta function have real part $\\frac{1}{2}$. That is, if $\\zeta(s) = 0$, $s \\neq 1$, and $s$ is not a trivial zero $-2(n+1)$ for some $n \\in \\mathbb{N}$, then $\\operatorname{Re}(s) = \\frac{1}{2}$. This is the official Millennium Prize Problem as posed by the [Clay Mathematics Institute](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf). This uses the `RiemannHypothesis` type from Mathlib, which is defined as `∀ (s : ℂ), riemannZeta s = 0 → (¬∃ n : ℕ, s = -2 * (n + 1)) → s ≠ 1 → s.re = 1 / 2`."
 notes = "Millennium Prize problem RiemannHypothesis -- https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf"
@@ -44,4 +44,22 @@ statement_id = "464cbc5e-a402-4d4c-918c-3eee2cc5ceae"
   target_hash = "9c31096748d911ec"
   conversion_hash = "fa3cb94eb29fcdedc6dbec9485af4adf0c742e20f4881288dda83fe394225a4c"
   semantic_anchor = "f800c70585a4baa1b60af3c5a35ec417dc7b19558857179dc756665d2cf3959e"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_RiemannHypothesis_riemannHypothesis_proof"
+file = "Sun_RiemannHypothesis_riemannHypothesis_proof.lean"
+module = "FtpEvalBench.Sun_RiemannHypothesis_riemannHypothesis_proof"
+challenge = "Sun_RiemannHypothesis_riemannHypothesis_proof/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+statement_id = "b0dc0a24-4c92-4229-ac90-7cc58ce2c98e"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "5a7ed8938d64b131"
   reviewed_by_a_person = false

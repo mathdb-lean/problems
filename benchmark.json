@@ -30711,6 +30711,348 @@
       "challenge": "E1057_refute/Challenge.lean",
       "mathdb_number": 391493,
       "mathdb_id": "e0025c90-5bf8-4d38-ac8f-45cbb88d0ca8"
+    },
+    "Sun_Jacobian_plane_prove": {
+      "module": "FtpEvalBench.Sun_Jacobian_plane_prove",
+      "display_label": "Sun_Jacobian_plane_prove",
+      "task_id": "c9ac90a7-c746-5dfc-b0f7-e5ed1548c242",
+      "question_id": "authored:JacobianConjectureTwoVariables",
+      "statement_id": "0e78c334-6aab-47a8-9051-d04ababeaeef",
+      "target_hash": "dd565078ae770eb1",
+      "shape": "prove",
+      "track": "open",
+      "part": null,
+      "pair_id": "sun:Jacobian:plane",
+      "source": "mathdb",
+      "source_revision": "",
+      "source_locator": "",
+      "challenge": "Sun_Jacobian_plane_prove/Challenge.lean",
+      "mathdb_number": 315779,
+      "mathdb_id": "30a31fb0-0e1b-412a-9744-e5ace7f90592"
+    },
+    "Sun_Jacobian_plane_refute": {
+      "module": "FtpEvalBench.Sun_Jacobian_plane_refute",
+      "display_label": "Sun_Jacobian_plane_refute",
+      "task_id": "1edddf30-08f5-529d-b67d-fe575916f2f1",
+      "question_id": "authored:JacobianConjectureTwoVariables",
+      "statement_id": "4dbafb93-30e6-4aa6-bcd8-37b5b32f74cf",
+      "target_hash": "deff3079681b3bc2",
+      "shape": "refute",
+      "track": "open",
+      "part": null,
+      "pair_id": "sun:Jacobian:plane",
+      "source": "mathdb",
+      "source_revision": "",
+      "source_locator": "",
+      "challenge": "Sun_Jacobian_plane_refute/Challenge.lean",
+      "mathdb_number": 315779,
+      "mathdb_id": "30a31fb0-0e1b-412a-9744-e5ace7f90592"
+    },
+    "Sun_NavierStokes_navier_stokes_breakdown_R3_proof": {
+      "module": "FtpEvalBench.Sun_NavierStokes_navier_stokes_breakdown_R3_proof",
+      "display_label": "Sun_NavierStokes_navier_stokes_breakdown_R3_proof",
+      "task_id": "0d4ff1d5-16c2-5cd6-9dcc-45eb487030da",
+      "question_id": "millennium:NavierStokes",
+      "statement_id": "0bc5fe86-65d4-40ca-9457-ef76ceddba4e",
+      "target_hash": "98653b0c7ef5ef47",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Millennium/NavierStokes.lean#navier_stokes_breakdown_R3",
+      "challenge": "Sun_NavierStokes_navier_stokes_breakdown_R3_proof/Challenge.lean",
+      "mathdb_number": 315852,
+      "mathdb_id": "4da10455-6917-4dc3-9ba0-a560cc339325"
+    },
+    "Sun_NavierStokes_navier_stokes_breakdown_periodic_proof": {
+      "module": "FtpEvalBench.Sun_NavierStokes_navier_stokes_breakdown_periodic_proof",
+      "display_label": "Sun_NavierStokes_navier_stokes_breakdown_periodic_proof",
+      "task_id": "f387f0b3-7fbe-5565-8358-7f2e530224e3",
+      "question_id": "millennium:NavierStokes",
+      "statement_id": "08cec2e7-3693-4edd-a98c-f416c2c7abaf",
+      "target_hash": "539ada7d7b4cb22d",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Millennium/NavierStokes.lean#navier_stokes_breakdown_periodic",
+      "challenge": "Sun_NavierStokes_navier_stokes_breakdown_periodic_proof/Challenge.lean",
+      "mathdb_number": 315852,
+      "mathdb_id": "4da10455-6917-4dc3-9ba0-a560cc339325"
+    },
+    "Sun_NavierStokes_navier_stokes_existence_and_smoothness_R3_proof": {
+      "module": "FtpEvalBench.Sun_NavierStokes_navier_stokes_existence_and_smoothness_R3_proof",
+      "display_label": "Sun_NavierStokes_navier_stokes_existence_and_smoothness_R3_proof",
+      "task_id": "858967e8-052f-5d9c-829d-c0dc773f2490",
+      "question_id": "millennium:NavierStokes",
+      "statement_id": "122a7397-478c-4b6c-8f14-5b4c876edaf1",
+      "target_hash": "2a465f99a22dd83f",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Millennium/NavierStokes.lean#navier_stokes_existence_and_smoothness_R3",
+      "challenge": "Sun_NavierStokes_navier_stokes_existence_and_smoothness_R3_proof/Challenge.lean",
+      "mathdb_number": 315852,
+      "mathdb_id": "4da10455-6917-4dc3-9ba0-a560cc339325"
+    },
+    "Sun_NavierStokes_navier_stokes_existence_and_smoothness_periodic_proof": {
+      "module": "FtpEvalBench.Sun_NavierStokes_navier_stokes_existence_and_smoothness_periodic_proof",
+      "display_label": "Sun_NavierStokes_navier_stokes_existence_and_smoothness_periodic_proof",
+      "task_id": "6a7e8973-b968-5b0a-94b6-f278edc514e8",
+      "question_id": "millennium:NavierStokes",
+      "statement_id": "10f93b4b-9f06-4c9b-91b4-a66fce3fcf25",
+      "target_hash": "1b2451c7cad5adba",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Millennium/NavierStokes.lean#navier_stokes_existence_and_smoothness_periodic",
+      "challenge": "Sun_NavierStokes_navier_stokes_existence_and_smoothness_periodic_proof/Challenge.lean",
+      "mathdb_number": 315852,
+      "mathdb_id": "4da10455-6917-4dc3-9ba0-a560cc339325"
+    },
+    "Sun_PvsNP_P_ne_NP_prove": {
+      "module": "FtpEvalBench.Sun_PvsNP_P_ne_NP_prove",
+      "display_label": "Sun_PvsNP_P_ne_NP_prove",
+      "task_id": "345dd5bb-5905-52c9-a993-d7554f0a38fe",
+      "question_id": "millennium:PvsNP",
+      "statement_id": "81f5fb98-c567-4665-864f-6b2165368647",
+      "target_hash": "d097bf09d6b14d98",
+      "shape": "prove",
+      "track": "open",
+      "part": null,
+      "pair_id": "sun:PvsNP:P_ne_NP",
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Millennium/PvsNP.lean#P_ne_NP",
+      "challenge": "Sun_PvsNP_P_ne_NP_prove/Challenge.lean",
+      "mathdb_number": 315853,
+      "mathdb_id": "1ef99309-5e3f-4068-9c6b-2187ec10f71a"
+    },
+    "Sun_PvsNP_P_ne_NP_refute": {
+      "module": "FtpEvalBench.Sun_PvsNP_P_ne_NP_refute",
+      "display_label": "Sun_PvsNP_P_ne_NP_refute",
+      "task_id": "88d06c8d-142e-5e63-b72f-f346f16d35df",
+      "question_id": "millennium:PvsNP",
+      "statement_id": "2221aedf-5325-4a2e-aaf9-d7644a9047a1",
+      "target_hash": "92a54a3762d0c927",
+      "shape": "refute",
+      "track": "open",
+      "part": null,
+      "pair_id": "sun:PvsNP:P_ne_NP",
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Millennium/PvsNP.lean#P_ne_NP",
+      "challenge": "Sun_PvsNP_P_ne_NP_refute/Challenge.lean",
+      "mathdb_number": 315853,
+      "mathdb_id": "1ef99309-5e3f-4068-9c6b-2187ec10f71a"
+    },
+    "Sun_RiemannHypothesis_riemannHypothesis_proof": {
+      "module": "FtpEvalBench.Sun_RiemannHypothesis_riemannHypothesis_proof",
+      "display_label": "Sun_RiemannHypothesis_riemannHypothesis_proof",
+      "task_id": "51e3d1f3-b8fb-5c7a-97f5-1245d8f38466",
+      "question_id": "millennium:RiemannHypothesis",
+      "statement_id": "b0dc0a24-4c92-4229-ac90-7cc58ce2c98e",
+      "target_hash": "5a7ed8938d64b131",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Millennium/RiemannHypothesis.lean#riemannHypothesis",
+      "challenge": "Sun_RiemannHypothesis_riemannHypothesis_proof/Challenge.lean",
+      "mathdb_number": 315854,
+      "mathdb_id": "df08354d-30c5-4f74-84e9-8552d277c135"
+    },
+    "Sun_InvariantSubspaceProblem_Invariant_subspace_problem_proof": {
+      "module": "FtpEvalBench.Sun_InvariantSubspaceProblem_Invariant_subspace_problem_proof",
+      "display_label": "Sun_InvariantSubspaceProblem_Invariant_subspace_problem_proof",
+      "task_id": "a4978eba-3484-5256-9472-513de25f542d",
+      "question_id": "authored:InvariantSubspaceProblem",
+      "statement_id": "458538ed-57c4-4c9e-bb3f-013139d50a5b",
+      "target_hash": "bee29706524bd71c",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Wikipedia/InvariantSubspaceProblem.lean#Invariant_subspace_problem",
+      "challenge": "Sun_InvariantSubspaceProblem_Invariant_subspace_problem_proof/Challenge.lean",
+      "mathdb_number": 315900,
+      "mathdb_id": "e874fa5c-5f1e-4b32-9daf-bbb9ae3e756f"
+    },
+    "Sun_Kakeya_kakeya_set_conjecture_proof": {
+      "module": "FtpEvalBench.Sun_Kakeya_kakeya_set_conjecture_proof",
+      "display_label": "Sun_Kakeya_kakeya_set_conjecture_proof",
+      "task_id": "9dd87dbe-1cad-5235-96c0-dd2fce28e225",
+      "question_id": "wikipedia:Kakeya",
+      "statement_id": "21a774e4-e6c0-416b-9794-db5deb62f5c0",
+      "target_hash": "5126807354f930e2",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Wikipedia/Kakeya.lean#kakeya_set_conjecture",
+      "challenge": "Sun_Kakeya_kakeya_set_conjecture_proof/Challenge.lean",
+      "mathdb_number": 315983,
+      "mathdb_id": "d7cba7b6-cd2d-4d4c-b848-614cf5a825b4"
+    },
+    "Sun_GoldbachConjecture_goldbach_prove": {
+      "module": "FtpEvalBench.Sun_GoldbachConjecture_goldbach_prove",
+      "display_label": "Sun_GoldbachConjecture_goldbach_prove",
+      "task_id": "e236e4f1-1ee1-5bec-9043-2c768d2c6f74",
+      "question_id": "wikipedia:GoldbachConjecture",
+      "statement_id": "d6a41cdb-2c5a-4a6e-84e1-226157f0fc02",
+      "target_hash": "028f73dbc50b4d0b",
+      "shape": "prove",
+      "track": "open",
+      "part": null,
+      "pair_id": "sun:GoldbachConjecture:goldbach",
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Wikipedia/GoldbachConjecture.lean#goldbach",
+      "challenge": "Sun_GoldbachConjecture_goldbach_prove/Challenge.lean",
+      "mathdb_number": 316061,
+      "mathdb_id": "071cb617-0d1d-429f-968f-576f2c472a76"
+    },
+    "Sun_GoldbachConjecture_goldbach_refute": {
+      "module": "FtpEvalBench.Sun_GoldbachConjecture_goldbach_refute",
+      "display_label": "Sun_GoldbachConjecture_goldbach_refute",
+      "task_id": "7cff182a-4ebf-5b40-96fb-fa8d966ebe4e",
+      "question_id": "wikipedia:GoldbachConjecture",
+      "statement_id": "200f87e0-b7f1-43b0-973e-f3a698a4f4be",
+      "target_hash": "00dd0f57af578c2d",
+      "shape": "refute",
+      "track": "open",
+      "part": null,
+      "pair_id": "sun:GoldbachConjecture:goldbach",
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Wikipedia/GoldbachConjecture.lean#goldbach",
+      "challenge": "Sun_GoldbachConjecture_goldbach_refute/Challenge.lean",
+      "mathdb_number": 316061,
+      "mathdb_id": "071cb617-0d1d-429f-968f-576f2c472a76"
+    },
+    "Sun_LittlewoodConjecture_littlewood_conjecture_proof": {
+      "module": "FtpEvalBench.Sun_LittlewoodConjecture_littlewood_conjecture_proof",
+      "display_label": "Sun_LittlewoodConjecture_littlewood_conjecture_proof",
+      "task_id": "4e85ac88-dfdb-5b51-b81c-479d687e6a3d",
+      "question_id": "wikipedia:LittlewoodConjecture",
+      "statement_id": "26c2c7eb-5a47-4976-bcf6-a64870fb1f1f",
+      "target_hash": "8ad8d36f66b85f78",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Wikipedia/LittlewoodConjecture.lean#littlewood_conjecture",
+      "challenge": "Sun_LittlewoodConjecture_littlewood_conjecture_proof/Challenge.lean",
+      "mathdb_number": 316099,
+      "mathdb_id": "21eaf84f-e8ee-4d0a-a69c-f41b4b7e8a59"
+    },
+    "Sun_Dickson_dickson_conjecture_proof": {
+      "module": "FtpEvalBench.Sun_Dickson_dickson_conjecture_proof",
+      "display_label": "Sun_Dickson_dickson_conjecture_proof",
+      "task_id": "77d631b8-b7de-5daf-9ed6-7a12753e3368",
+      "question_id": "wikipedia:Dickson",
+      "statement_id": "d9612fa6-8b55-4b58-b54d-8b82a5b158ff",
+      "target_hash": "4995ce267f0b0ede",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Wikipedia/Dickson.lean#dickson_conjecture",
+      "challenge": "Sun_Dickson_dickson_conjecture_proof/Challenge.lean",
+      "mathdb_number": 316119,
+      "mathdb_id": "6026e59e-f0e4-4087-9e01-fa83ad5b0b12"
+    },
+    "Sun_LegendreConjecture_legendre_conjecture_prove": {
+      "module": "FtpEvalBench.Sun_LegendreConjecture_legendre_conjecture_prove",
+      "display_label": "Sun_LegendreConjecture_legendre_conjecture_prove",
+      "task_id": "7599a3e0-c2b8-5a5c-8d91-6ecbf7abfe6f",
+      "question_id": "wikipedia:LegendreConjecture",
+      "statement_id": "b452131e-f2ae-41e7-bb32-6f5197bf85d0",
+      "target_hash": "076442ad40091dca",
+      "shape": "prove",
+      "track": "open",
+      "part": null,
+      "pair_id": "sun:LegendreConjecture:legendre_conjecture",
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Wikipedia/LegendreConjecture.lean#legendre_conjecture",
+      "challenge": "Sun_LegendreConjecture_legendre_conjecture_prove/Challenge.lean",
+      "mathdb_number": 316127,
+      "mathdb_id": "139d63bc-cdc8-44c3-9be9-45d5c7bd7375"
+    },
+    "Sun_LegendreConjecture_legendre_conjecture_refute": {
+      "module": "FtpEvalBench.Sun_LegendreConjecture_legendre_conjecture_refute",
+      "display_label": "Sun_LegendreConjecture_legendre_conjecture_refute",
+      "task_id": "8d5e3578-2974-5213-936d-d23e56c59a90",
+      "question_id": "wikipedia:LegendreConjecture",
+      "statement_id": "88d5385b-81a9-430e-8d11-8fd9ca9a34d8",
+      "target_hash": "1961c42a8f84bd98",
+      "shape": "refute",
+      "track": "open",
+      "part": null,
+      "pair_id": "sun:LegendreConjecture:legendre_conjecture",
+      "source": "formal-conjectures",
+      "source_revision": "e04cc601840dd7a37f89b821a67f3a9e3c38d9c3",
+      "source_locator": "FormalConjectures/Wikipedia/LegendreConjecture.lean#legendre_conjecture",
+      "challenge": "Sun_LegendreConjecture_legendre_conjecture_refute/Challenge.lean",
+      "mathdb_number": 316127,
+      "mathdb_id": "139d63bc-cdc8-44c3-9be9-45d5c7bd7375"
+    },
+    "Sun_MatrixExponent": {
+      "module": "FtpEvalBench.Sun_MatrixExponent",
+      "display_label": "Sun_MatrixExponent",
+      "task_id": "c2ce6a39-f002-50d9-97f6-a2ecfb0ae54b",
+      "question_id": "authored:MatrixMultiplicationExponent",
+      "statement_id": "9f830a34-b0dc-4054-b0ef-a4c2afe2581d",
+      "target_hash": "30740d9ff948ebab",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb",
+      "source_revision": "",
+      "source_locator": "",
+      "challenge": "Sun_MatrixExponent/Challenge.lean",
+      "mathdb_number": 346080,
+      "mathdb_id": "a9320575-7421-4c81-9b03-b5ca8e8cb32d"
+    },
+    "Sun_TateShafarevich": {
+      "module": "FtpEvalBench.Sun_TateShafarevich",
+      "display_label": "Sun_TateShafarevich",
+      "task_id": "8545ff98-2a13-52fc-9e0c-02761fbcb4ac",
+      "question_id": "sun-prize:TateShafarevich",
+      "statement_id": "36f39bd1-3112-47b3-95d2-56aa3e1532c7",
+      "target_hash": "d67c2a656e529dfa",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb",
+      "source_revision": "",
+      "source_locator": "",
+      "challenge": "Sun_TateShafarevich/Challenge.lean",
+      "mathdb_number": 355259,
+      "mathdb_id": "c577366a-ad98-435b-97bb-4a38680eabf2"
     }
   },
   "under_review": [
@@ -32233,6 +32575,25 @@
     "RSerreUniformity_serre_uniformity_refute",
     "RSizeOrderConnectedDomination_mukwembi_theorem_2_1",
     "RTuDengConjecture_tu_deng_conjecture",
+    "Sun_Dickson_dickson_conjecture_proof",
+    "Sun_GoldbachConjecture_goldbach_prove",
+    "Sun_GoldbachConjecture_goldbach_refute",
+    "Sun_InvariantSubspaceProblem_Invariant_subspace_problem_proof",
+    "Sun_Jacobian_plane_prove",
+    "Sun_Jacobian_plane_refute",
+    "Sun_Kakeya_kakeya_set_conjecture_proof",
+    "Sun_LegendreConjecture_legendre_conjecture_prove",
+    "Sun_LegendreConjecture_legendre_conjecture_refute",
+    "Sun_LittlewoodConjecture_littlewood_conjecture_proof",
+    "Sun_MatrixExponent",
+    "Sun_NavierStokes_navier_stokes_breakdown_R3_proof",
+    "Sun_NavierStokes_navier_stokes_breakdown_periodic_proof",
+    "Sun_NavierStokes_navier_stokes_existence_and_smoothness_R3_proof",
+    "Sun_NavierStokes_navier_stokes_existence_and_smoothness_periodic_proof",
+    "Sun_PvsNP_P_ne_NP_prove",
+    "Sun_PvsNP_P_ne_NP_refute",
+    "Sun_RiemannHypothesis_riemannHypothesis_proof",
+    "Sun_TateShafarevich",
     "W160_conjecture160",
     "WGraphConjecture100_conjecture100",
     "WGraphConjecture109_conjecture109",
@@ -41734,6 +42095,63 @@
         "conversion_hash": "fe2335c0cec1499acf221b382c14c05e2b3ea9dbd65a890d08d5df6bea8591f5",
         "conversion_run_id": "import-20261029T051128.757135Z-47c546",
         "semantic_anchor": "f2ccbcd1a03eb98f86c467e0abaeb20dd55c34e7f7061b90b4c01d25a8897dd6"
+      },
+      "Sun_Jacobian_plane_prove": {
+        "target_hash": "dd565078ae770eb1"
+      },
+      "Sun_Jacobian_plane_refute": {
+        "target_hash": "deff3079681b3bc2"
+      },
+      "Sun_NavierStokes_navier_stokes_breakdown_R3_proof": {
+        "target_hash": "98653b0c7ef5ef47"
+      },
+      "Sun_NavierStokes_navier_stokes_breakdown_periodic_proof": {
+        "target_hash": "539ada7d7b4cb22d"
+      },
+      "Sun_NavierStokes_navier_stokes_existence_and_smoothness_R3_proof": {
+        "target_hash": "2a465f99a22dd83f"
+      },
+      "Sun_NavierStokes_navier_stokes_existence_and_smoothness_periodic_proof": {
+        "target_hash": "1b2451c7cad5adba"
+      },
+      "Sun_PvsNP_P_ne_NP_prove": {
+        "target_hash": "d097bf09d6b14d98"
+      },
+      "Sun_PvsNP_P_ne_NP_refute": {
+        "target_hash": "92a54a3762d0c927"
+      },
+      "Sun_RiemannHypothesis_riemannHypothesis_proof": {
+        "target_hash": "5a7ed8938d64b131"
+      },
+      "Sun_InvariantSubspaceProblem_Invariant_subspace_problem_proof": {
+        "target_hash": "bee29706524bd71c"
+      },
+      "Sun_Kakeya_kakeya_set_conjecture_proof": {
+        "target_hash": "5126807354f930e2"
+      },
+      "Sun_GoldbachConjecture_goldbach_prove": {
+        "target_hash": "028f73dbc50b4d0b"
+      },
+      "Sun_GoldbachConjecture_goldbach_refute": {
+        "target_hash": "00dd0f57af578c2d"
+      },
+      "Sun_LittlewoodConjecture_littlewood_conjecture_proof": {
+        "target_hash": "8ad8d36f66b85f78"
+      },
+      "Sun_Dickson_dickson_conjecture_proof": {
+        "target_hash": "4995ce267f0b0ede"
+      },
+      "Sun_LegendreConjecture_legendre_conjecture_prove": {
+        "target_hash": "076442ad40091dca"
+      },
+      "Sun_LegendreConjecture_legendre_conjecture_refute": {
+        "target_hash": "1961c42a8f84bd98"
+      },
+      "Sun_MatrixExponent": {
+        "target_hash": "30740d9ff948ebab"
+      },
+      "Sun_TateShafarevich": {
+        "target_hash": "d67c2a656e529dfa"
       }
     },
     "releases": [
@@ -48310,6 +48728,10 @@
         {
           "amended_at": "2026-10-30T01:51:49+00:00",
           "change": "one Lean project on formal-conjectures' own libraries; every folder is a MathDB number; openai-math is linked rather than copied"
+        },
+        {
+          "amended_at": "2026-11-11T10:36:00+00:00",
+          "change": "added sun-prize (19 tasks): MathDB's live Justin Sun Prize statements, copied from MathDB's stored statements with `import MathDBUtil` written as `import FormalConjecturesUtil`; not produced by a release run"
         }
       ],
       "counts": {
@@ -48318,7 +48740,7 @@
         "questions": 1275,
         "under_review": 1971
       },
-      "manifest_hash": "789bcb1def4861c8"
+      "manifest_hash": "743b74519421af42"
     }
   },
   "mathdb": {
@@ -48330,11 +48752,11 @@
     ],
     "resolved_at": "2026-10-15",
     "counts": {
-      "resolved": 1045,
+      "resolved": 1046,
       "absent_from_mathdb": 0,
       "unresolved": 0,
       "not_an_erdos_problem": 0,
-      "problems": 1045
+      "problems": 1046
     },
     "note": "MathDB's own post number and row id for each problem it has a record of. `mathdb_number` is MathDB's handle behind /p/<n>: permanent within one MathDB database and never reused, but issued per row at creation, so it is not derivable and is recorded rather than used as a folder name. It is NOT the Erdos number. `state` keeps four things apart: MathDB has a record; MathDB answered that it has none; the lookup never got an answer, which is not evidence of absence; and the problem is not an Erdos problem, so there was nothing to look up.",
     "problems": {
@@ -60133,6 +60555,13 @@
         "mathdb_id": "6ac67763-053d-4be9-a5d6-9a771cc6a9ea",
         "mathdb_url": "https://mathdb.com/p/406269",
         "resolved_via": "production catalog identity and applied import record; read-only production URL audit"
+      },
+      "sun-prize:TateShafarevich": {
+        "state": "resolved",
+        "mathdb_number": 355259,
+        "mathdb_id": "c577366a-ad98-435b-97bb-4a38680eabf2",
+        "mathdb_url": "https://mathdb.com/p/355259",
+        "resolved_via": "added on 2026-11-11 with MathDB's Justin Sun Prize statement for this problem"
       }
     },
     "by_mathdb_number": {
@@ -61180,7 +61609,8 @@
       "406266": "wotw:GraphConjecture58",
       "406267": "wotw:GraphConjecture61",
       "406268": "wotw:GraphConjecture63",
-      "406269": "wotw:GraphConjecture85"
+      "406269": "wotw:GraphConjecture85",
+      "355259": "sun-prize:TateShafarevich"
     }
   },
   "collections": [
@@ -61195,6 +61625,7 @@
     "oeis",
     "other",
     "paper",
+    "sun-prize",
     "wikipedia",
     "wotw"
   ],

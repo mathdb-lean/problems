@@ -8,7 +8,7 @@
 problem_id = "wikipedia:Dickson"
 mathdb_number = 316119
 collection = "wikipedia"
-tasks = 1
+tasks = 2
 reviewed_by_a_person = false
 prose = "**Dickson's conjecture** If a finite set of linear integer forms $f_i(n) = a_i n+b_i$ satisfies Schinzel condition, there exist infinitely many natural numbers $m$ such that $f_i(m)$ are primes for all $i$."
 notes = "Wikipedia: Dickson -- https://en.wikipedia.org/wiki/Dickson%27s_conjecture"
@@ -44,4 +44,22 @@ statement_id = "bc6b2133-fed2-4a43-90f2-8537c3115888"
   target_hash = "fd99942381e62b6d"
   conversion_hash = "0a7193bcb71aef479464f969cd594bd0dc7745b16b032f8cf8cbda07e16872de"
   semantic_anchor = "f2aed19a253ee05ad5e44b223bfa6a8faa93b158de32a50fb3615703da391f34"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_Dickson_dickson_conjecture_proof"
+file = "Sun_Dickson_dickson_conjecture_proof.lean"
+module = "FtpEvalBench.Sun_Dickson_dickson_conjecture_proof"
+challenge = "Sun_Dickson_dickson_conjecture_proof/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+statement_id = "d9612fa6-8b55-4b58-b54d-8b82a5b158ff"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "4995ce267f0b0ede"
   reviewed_by_a_person = false

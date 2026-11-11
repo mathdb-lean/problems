@@ -1,0 +1,40 @@
+# sun-prize:TateShafarevich -- one of MathDB's Justin Sun Prize statements, added to this release
+# from MathDB's stored copy. Do not edit by hand.
+#
+# One folder is one mathematical problem. The modules beside this file are
+# its proof obligations.
+
+problem_id = "sun-prize:TateShafarevich"
+mathdb_number = 355259
+collection = "sun-prize"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Let $K$ be a number field with algebraic closure $\\bar K$ and absolute Galois group $G_K=\\operatorname{Gal}(\\bar K/K)$. Let $E$ be an elliptic curve over $K$. For each place $v$ of $K$, finite or infinite, let $K_v$ be the completion, fix an embedding $\\bar K\\hookrightarrow\\bar K_v$, and let $G_{K_v}\\subseteq G_K$ be the corresponding decomposition group. Write\n$$\nH^1(K,E)=H^1\\bigl(G_K,E(\\bar K)\\bigr),\\qquad H^1(K_v,E)=H^1\\bigl(G_{K_v},E(\\bar K_v)\\bigr)\n$$\nfor Galois cohomology with the discrete topology on the coefficients. The **Tate–Shafarevich group** of $E/K$ is\n$$\n\\text{Ш}(E/K)=\\ker\\Bigl(H^1(K,E)\\longrightarrow\\prod_{v}H^1(K_v,E)\\Bigr),\n$$\nthe kernel of restriction to all places. Its elements correspond to isomorphism classes of torsors (principal homogeneous spaces) for $E$ over $K$ that have a $K_v$-point for every place $v$.\n\n**Conjecture (Shafarevich–Tate).** For every number field $K$ and every elliptic curve $E/K$, the group $\\text{Ш}(E/K)$ is finite.\n\nA solution must prove finiteness for all number fields and all elliptic curves. $\\text{Ш}(E/K)$ is a torsion abelian group, and each $\\text{Ш}(E/K)[m]$ is finite. So the conjecture is equivalent to the statement that the $p$-primary part $\\text{Ш}(E/K)[p^\\infty]$ is finite for every prime $p$ and is zero for all but finitely many $p$.\n\n## Background\n\nFor each $m\\ge1$ there is an exact sequence\n$$\n0\\longrightarrow E(K)/mE(K)\\longrightarrow \\operatorname{Sel}^{(m)}(E/K)\\longrightarrow \\text{Ш}(E/K)[m]\\longrightarrow0,\n$$\nwhere the Selmer group $\\operatorname{Sel}^{(m)}(E/K)$ is finite and computable. Descent bounds the rank of $E(K)$ by Selmer ranks, and $\\text{Ш}$ measures the failure of this bound to be sharp. If $\\text{Ш}(E/K)[p^\\infty]$ is finite for one prime $p$, then the rank of $E(K)$ can be computed by $p^k$-descent for growing $k$ [2]. Torsors in $\\text{Ш}$ are curves of genus $1$ that violate the Hasse principle, such as Selmer's cubic $3x^3+4y^3+5z^3=0$ over $\\mathbb Q$.\n\nCassels constructed an alternating pairing on $\\text{Ш}(E/K)$ whose kernel is the maximal divisible subgroup [4]. If $\\text{Ш}(E/K)$ is finite, its order is therefore a perfect square. Finiteness is also part of the Birch–Swinnerton-Dyer conjecture, whose leading-term formula contains $\\#\\text{Ш}(E/K)$ [1].\n\n## Known results\n\n- **Analytic rank at most 1 over $\\mathbb Q$.** Gross and Zagier constructed Heegner points of infinite order when $L'(E,1)\\ne0$ [5]. Kolyvagin used Euler systems of Heegner points to prove that $\\text{Ш}(E/\\mathbb Q)$ is finite when $E$ is modular and the analytic rank of $E$ is $0$ or $1$ [6]. The argument also uses nonvanishing results for $L$-functions of quadratic twists. By the modularity theorem of Breuil, Conrad, Diamond and Taylor, every elliptic curve over $\\mathbb Q$ is modular [7]. So $\\text{Ш}(E/\\mathbb Q)$ is finite whenever $\\operatorname{ord}_{s=1}L(E,s)\\le1$.\n- **CM curves.** Rubin proved finiteness for elliptic curves over $\\mathbb Q$ with complex multiplication and $L(E,1)\\ne0$, using elliptic units. These were the first curves for which $\\text{Ш}$ was known to be finite [3].\n- **Totally real fields.** Zhang extended the Gross–Zagier and Kolyvagin method to modular elliptic curves over totally real fields with analytic rank at most $1$, under a mild local condition [8].\n- **Higher rank.** There is no elliptic curve of analytic rank at least $2$ over any number field for which $\\text{Ш}$ is known to be finite."
+notes = "Finiteness of the Tate–Shafarevich group of an elliptic curve -- https://mathdb.com/p/355259"
+
+[source]
+name = "mathdb"
+
+[policy]
+release_id = "sun-prize"
+released_at = "2026-11-11T10:36:00+00:00"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil"]
+
+[[task]]
+id = "Sun_TateShafarevich"
+file = "Sun_TateShafarevich.lean"
+module = "FtpEvalBench.Sun_TateShafarevich"
+challenge = "Sun_TateShafarevich/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+statement_id = "36f39bd1-3112-47b3-95d2-56aa3e1532c7"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d67c2a656e529dfa"
+  reviewed_by_a_person = false

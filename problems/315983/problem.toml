@@ -8,7 +8,7 @@
 problem_id = "wikipedia:Kakeya"
 mathdb_number = 315983
 collection = "wikipedia"
-tasks = 1
+tasks = 2
 reviewed_by_a_person = false
 prose = "The Kakeya set conjecture: Kakeya sets in $\\mathbb{R}^n$ have Hausdorff dimension $n$."
 notes = "Wikipedia: Kakeya -- https://en.wikipedia.org/wiki/Kakeya_set"
@@ -44,4 +44,22 @@ statement_id = "24ea90dd-6245-4033-a5b5-1de819bb6bca"
   target_hash = "88cf483a2fb6e410"
   conversion_hash = "8619399fa43b94f6b2b189dcd8368daa169034e5ffc6252b299dd176b868d1cc"
   semantic_anchor = "c6afd901884151224d9cc03e92aeada086b141d836511a3003733acdf0b6c190"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_Kakeya_kakeya_set_conjecture_proof"
+file = "Sun_Kakeya_kakeya_set_conjecture_proof.lean"
+module = "FtpEvalBench.Sun_Kakeya_kakeya_set_conjecture_proof"
+challenge = "Sun_Kakeya_kakeya_set_conjecture_proof/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+statement_id = "21a774e4-e6c0-416b-9794-db5deb62f5c0"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "5126807354f930e2"
   reviewed_by_a_person = false

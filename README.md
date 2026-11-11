@@ -17,7 +17,7 @@ benchmark.json           the release record: every obligation, its hash and its 
 verify.py                checks the folders against benchmark.json
 ```
 
-1574 obligations in 1045 problems. All of them are on MathDB.
+1593 obligations in 1046 problems. All of them are on MathDB.
 
 ## The Lean project
 
@@ -52,14 +52,19 @@ of each. The `authored` collection and a few Millennium and Wikipedia problems w
 MathDB. [openai/math](https://github.com/openai/math) is not copied here: it pins a different
 Lean and Mathlib, and none of its problems is on MathDB.
 
+The `Sun_*` modules are the statements MathDB checks Justin Sun Prize submissions against
+(collection `sun-prize`). They are copied from MathDB's stored statements rather than exported
+by a release run; MathDB's copies import `MathDBUtil`, a one-line alias for
+`FormalConjecturesUtil`, and these import `FormalConjecturesUtil` directly.
+
 ## Obligations
 
 `shape` fixes what a solver hands over, as the arity of `Problem.Target`:
 
 | shape | `Problem.Target` | the solver supplies | count |
 |---|---|---|---|
-| `proof` | `Target : Prop` | a proof | 408 |
-| `prove` / `refute` | `Target : Prop` | a proof of either direction of one open question | 379 pairs |
+| `proof` | `Target : Prop` | a proof | 419 |
+| `prove` / `refute` | `Target : Prop` | a proof of either direction of one open question | 383 pairs |
 | `decide` | `Target (verdict : Prop) : Prop` | a verdict and a proof, graded against a frozen answer | 384 |
 | `value` | `Target (value : τ) : Prop` | an object and a proof about it; no answer is known | 24 |
 
