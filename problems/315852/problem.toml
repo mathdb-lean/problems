@@ -8,7 +8,7 @@
 problem_id = "millennium:NavierStokes"
 mathdb_number = 315852
 collection = "millennium"
-tasks = 2
+tasks = 6
 reviewed_by_a_person = false
 prose = "(A) Existence and smoothness of (unforced) Navier–Stokes solutions on ℝ³."
 notes = "Millennium Prize problem NavierStokes -- https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_existence_and_smoothness"
@@ -64,4 +64,76 @@ statement_id = "853a1b0e-8bf8-4094-9db1-941d566c89c5"
   target_hash = "aeadabfaa4ef59a8"
   conversion_hash = "4c99262dbd81c00df9023d12c6f39609a9ef20364da68b2ee531026203523920"
   semantic_anchor = "28cb4f4a2cc85bebe12ed2a3fc3fc3084e34e48c64ca82fc868a4596ac76572c"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_NavierStokes_navier_stokes_breakdown_R3_proof"
+file = "Sun_NavierStokes_navier_stokes_breakdown_R3_proof.lean"
+module = "FtpEvalBench.Sun_NavierStokes_navier_stokes_breakdown_R3_proof"
+challenge = "Sun_NavierStokes_navier_stokes_breakdown_R3_proof/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+statement_id = "0bc5fe86-65d4-40ca-9457-ef76ceddba4e"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "98653b0c7ef5ef47"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_NavierStokes_navier_stokes_breakdown_periodic_proof"
+file = "Sun_NavierStokes_navier_stokes_breakdown_periodic_proof.lean"
+module = "FtpEvalBench.Sun_NavierStokes_navier_stokes_breakdown_periodic_proof"
+challenge = "Sun_NavierStokes_navier_stokes_breakdown_periodic_proof/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+statement_id = "08cec2e7-3693-4edd-a98c-f416c2c7abaf"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "539ada7d7b4cb22d"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_NavierStokes_navier_stokes_existence_and_smoothness_R3_proof"
+file = "Sun_NavierStokes_navier_stokes_existence_and_smoothness_R3_proof.lean"
+module = "FtpEvalBench.Sun_NavierStokes_navier_stokes_existence_and_smoothness_R3_proof"
+challenge = "Sun_NavierStokes_navier_stokes_existence_and_smoothness_R3_proof/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+statement_id = "122a7397-478c-4b6c-8f14-5b4c876edaf1"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "2a465f99a22dd83f"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_NavierStokes_navier_stokes_existence_and_smoothness_periodic_proof"
+file = "Sun_NavierStokes_navier_stokes_existence_and_smoothness_periodic_proof.lean"
+module = "FtpEvalBench.Sun_NavierStokes_navier_stokes_existence_and_smoothness_periodic_proof"
+challenge = "Sun_NavierStokes_navier_stokes_existence_and_smoothness_periodic_proof/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+statement_id = "10f93b4b-9f06-4c9b-91b4-a66fce3fcf25"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "1b2451c7cad5adba"
   reviewed_by_a_person = false

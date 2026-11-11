@@ -8,7 +8,7 @@
 problem_id = "authored:JacobianConjectureTwoVariables"
 mathdb_number = 315779
 collection = "authored"
-tasks = 2
+tasks = 4
 reviewed_by_a_person = false
 prose = "Does the Jacobian conjecture hold in two variables? Over every field of characteristic zero, is every polynomial map from the plane to itself whose Jacobian determinant is a nonzero constant a polynomial automorphism, with a polynomial inverse?"
 notes = "Jacobian conjecture -- https://en.wikipedia.org/wiki/Jacobian_conjecture"
@@ -66,4 +66,42 @@ statement_id = "eeb13445-9fd8-46bb-bd0b-133d28550401"
   target_hash = "969ffa15b9736148"
   conversion_hash = "a2e4f95b0993a8c08258c2ab63b0340998093ecdf4c076dc28b9312ebcc1b55e"
   semantic_anchor = "24208f4f39b22a0e1eefea5390fd912c6781fec42fe8d2c0130a9af947bcd6cb"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_Jacobian_plane_prove"
+file = "Sun_Jacobian_plane_prove.lean"
+module = "FtpEvalBench.Sun_Jacobian_plane_prove"
+challenge = "Sun_Jacobian_plane_prove/Challenge.lean"
+shape = "prove"
+track = "open"
+pair_id = "sun:Jacobian:plane"
+declaration = "Target"
+statement_id = "0e78c334-6aab-47a8-9051-d04ababeaeef"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "dd565078ae770eb1"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_Jacobian_plane_refute"
+file = "Sun_Jacobian_plane_refute.lean"
+module = "FtpEvalBench.Sun_Jacobian_plane_refute"
+challenge = "Sun_Jacobian_plane_refute/Challenge.lean"
+shape = "refute"
+track = "open"
+pair_id = "sun:Jacobian:plane"
+declaration = "Target"
+statement_id = "4dbafb93-30e6-4aa6-bcd8-37b5b32f74cf"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "deff3079681b3bc2"
   reviewed_by_a_person = false

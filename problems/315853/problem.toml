@@ -8,7 +8,7 @@
 problem_id = "millennium:PvsNP"
 mathdb_number = 315853
 collection = "millennium"
-tasks = 1
+tasks = 3
 reviewed_by_a_person = false
 prose = "**P ≠ NP**: The conjecture that the complexity classes P and NP are not equal."
 notes = "Millennium Prize problem PvsNP -- https://en.wikipedia.org/wiki/P_versus_NP_problem"
@@ -44,4 +44,42 @@ statement_id = "6332ad19-ddcb-4304-9673-a733dd57eec5"
   target_hash = "cf6dac7e2f3f7049"
   conversion_hash = "d7b1f12d15b93ffc8abc8dda6b10a1c28eb64ce43cdc331d70417d70e4aa966b"
   semantic_anchor = "6bf9c29faef9ed7fcf856df9a98b4917757963f3582002e2fd9860b0c3477383"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_PvsNP_P_ne_NP_prove"
+file = "Sun_PvsNP_P_ne_NP_prove.lean"
+module = "FtpEvalBench.Sun_PvsNP_P_ne_NP_prove"
+challenge = "Sun_PvsNP_P_ne_NP_prove/Challenge.lean"
+shape = "prove"
+track = "open"
+pair_id = "sun:PvsNP:P_ne_NP"
+declaration = "Target"
+statement_id = "81f5fb98-c567-4665-864f-6b2165368647"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "d097bf09d6b14d98"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_PvsNP_P_ne_NP_refute"
+file = "Sun_PvsNP_P_ne_NP_refute.lean"
+module = "FtpEvalBench.Sun_PvsNP_P_ne_NP_refute"
+challenge = "Sun_PvsNP_P_ne_NP_refute/Challenge.lean"
+shape = "refute"
+track = "open"
+pair_id = "sun:PvsNP:P_ne_NP"
+declaration = "Target"
+statement_id = "2221aedf-5325-4a2e-aaf9-d7644a9047a1"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "92a54a3762d0c927"
   reviewed_by_a_person = false

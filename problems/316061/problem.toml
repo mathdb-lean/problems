@@ -8,7 +8,7 @@
 problem_id = "wikipedia:GoldbachConjecture"
 mathdb_number = 316061
 collection = "wikipedia"
-tasks = 2
+tasks = 4
 reviewed_by_a_person = false
 prose = "Can every even integer greater than 2 be written as the sum of two primes?"
 notes = "Wikipedia: GoldbachConjecture -- https://en.wikipedia.org/wiki/Landau%27s_problems#Twin_prime_conjecture"
@@ -66,4 +66,42 @@ statement_id = "eec2f70a-870b-4b45-aff3-3fdae3217008"
   target_hash = "76aaa5be3ee3748d"
   conversion_hash = "5cb838807f45c14b4b91c9b45df0628cc6d567c8ebb2b4a84333058039395595"
   semantic_anchor = "f43823f46938f0fe2405d068679cd0d21c1461008026de77b7fa46a0e90ef859"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_GoldbachConjecture_goldbach_prove"
+file = "Sun_GoldbachConjecture_goldbach_prove.lean"
+module = "FtpEvalBench.Sun_GoldbachConjecture_goldbach_prove"
+challenge = "Sun_GoldbachConjecture_goldbach_prove/Challenge.lean"
+shape = "prove"
+track = "open"
+pair_id = "sun:GoldbachConjecture:goldbach"
+declaration = "Target"
+statement_id = "d6a41cdb-2c5a-4a6e-84e1-226157f0fc02"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "028f73dbc50b4d0b"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_GoldbachConjecture_goldbach_refute"
+file = "Sun_GoldbachConjecture_goldbach_refute.lean"
+module = "FtpEvalBench.Sun_GoldbachConjecture_goldbach_refute"
+challenge = "Sun_GoldbachConjecture_goldbach_refute/Challenge.lean"
+shape = "refute"
+track = "open"
+pair_id = "sun:GoldbachConjecture:goldbach"
+declaration = "Target"
+statement_id = "200f87e0-b7f1-43b0-973e-f3a698a4f4be"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "00dd0f57af578c2d"
   reviewed_by_a_person = false

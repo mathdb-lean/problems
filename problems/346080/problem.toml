@@ -8,7 +8,7 @@
 problem_id = "authored:MatrixMultiplicationExponent"
 mathdb_number = 346080
 collection = "authored"
-tasks = 1
+tasks = 2
 reviewed_by_a_person = false
 prose = "The exponent of matrix multiplication is two: for every ε > 0, the tensor rank of the n × n matrix multiplication tensor over ℂ is O(n ^ (2 + ε))."
 notes = "Exponent of matrix multiplication -- https://en.wikipedia.org/wiki/Computational_complexity_of_matrix_multiplication#Matrix_multiplication_exponent"
@@ -44,4 +44,22 @@ statement_id = "0ee6e248-42a1-4a83-8509-964a6cbc282c"
   target_hash = "b7384f9efadd6b51"
   conversion_hash = "942cc81df8ae5c63b772670b1353ff4383c00e60ed0e87b06bfc32c2c806194c"
   semantic_anchor = "a30a1f893f6ba3e811b7f1a3e0d13199505881beb22898fb743de0067827611e"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_MatrixExponent"
+file = "Sun_MatrixExponent.lean"
+module = "FtpEvalBench.Sun_MatrixExponent"
+challenge = "Sun_MatrixExponent/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+statement_id = "9f830a34-b0dc-4054-b0ef-a4c2afe2581d"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "30740d9ff948ebab"
   reviewed_by_a_person = false

@@ -8,7 +8,7 @@
 problem_id = "authored:InvariantSubspaceProblem"
 mathdb_number = 315900
 collection = "authored"
-tasks = 1
+tasks = 2
 reviewed_by_a_person = false
 prose = "Every bounded linear operator on a complex separable Hilbert space of dimension at least 2 has a non-trivial closed invariant subspace: a closed linear subspace different from the whole space and from zero that the operator maps into itself."
 notes = "Invariant subspace problem -- https://en.wikipedia.org/wiki/Invariant_subspace_problem"
@@ -44,4 +44,22 @@ statement_id = "83c7ab87-1577-4054-9608-4cbb6ab72837"
   target_hash = "283c4b2e99ed5b06"
   conversion_hash = "ec5da8011c6e05ae1d144a78f519fb152ac783cf2f4bd713ae2dfac3c266b1c5"
   semantic_anchor = "9a0fda9cab7811332ee971f66abc88a62363a94d88e9fb0baa91a10ed84bbb61"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_InvariantSubspaceProblem_Invariant_subspace_problem_proof"
+file = "Sun_InvariantSubspaceProblem_Invariant_subspace_problem_proof.lean"
+module = "FtpEvalBench.Sun_InvariantSubspaceProblem_Invariant_subspace_problem_proof"
+challenge = "Sun_InvariantSubspaceProblem_Invariant_subspace_problem_proof/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+statement_id = "458538ed-57c4-4c9e-bb3f-013139d50a5b"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "bee29706524bd71c"
   reviewed_by_a_person = false

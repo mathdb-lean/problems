@@ -8,7 +8,7 @@
 problem_id = "wikipedia:LittlewoodConjecture"
 mathdb_number = 316099
 collection = "wikipedia"
-tasks = 1
+tasks = 2
 reviewed_by_a_person = false
 prose = "For any two real numbers $\\alpha$ and $\\beta$, $$ \\liminf_{n\\to\\infty} n\\||n\\alpha\\||\\||n\\beta\\|| = 0 $$ where $\\||x\\|| := \\min(|x - \\lfloor x \\rfloor|, |x - \\lceil x \\rceil|)$ is the distance to the nearest integer."
 notes = "Wikipedia: LittlewoodConjecture -- https://en.wikipedia.org/wiki/Littlewood_conjecture"
@@ -44,4 +44,22 @@ statement_id = "f86f6c3a-a33f-419f-b1d9-b53405161077"
   target_hash = "0d83d0228b7a0d1b"
   conversion_hash = "8ab34cf3722c01bd214d8bc124df142841e91fbfa35d7529d0cb978c7e535a9c"
   semantic_anchor = "a5f23851f2b2e86cdac094fcf9711d0cf95f1e03539fd30066f306324b15def3"
+  reviewed_by_a_person = false
+
+[[task]]
+id = "Sun_LittlewoodConjecture_littlewood_conjecture_proof"
+file = "Sun_LittlewoodConjecture_littlewood_conjecture_proof.lean"
+module = "FtpEvalBench.Sun_LittlewoodConjecture_littlewood_conjecture_proof"
+challenge = "Sun_LittlewoodConjecture_littlewood_conjecture_proof/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+statement_id = "26c2c7eb-5a47-4976-bcf6-a64870fb1f1f"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8ad8d36f66b85f78"
   reviewed_by_a_person = false
