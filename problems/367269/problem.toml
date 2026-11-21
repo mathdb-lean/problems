@@ -1,0 +1,40 @@
+# authored:KeletiLineSegmentExtension -- contribution metadata prepared for review.
+# Prepared alongside benchmark.json; keep the task records and hashes synchronized.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+#
+# One folder is one mathematical problem. The module beside this file is
+# its proof obligation; the challenge is a separate solver template.
+
+problem_id = "authored:KeletiLineSegmentExtension"
+mathdb_number = 367269
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "For every positive integer n and every family L of positive-length line segments in Euclidean n-space, the Hausdorff dimension of the union of the full lines containing the segments equals the Hausdorff dimension of the union of the segments."
+notes = "Keleti, Are lines much bigger than line segments?, Conjecture 1.1: https://arxiv.org/abs/1409.5992. Wang and Zahl, Section 1.6, Conjecture 1.13: https://arxiv.org/html/2502.17655v1#S1.SS6. Theorem 1.14 establishes dimension 3; this target includes all positive dimensions. Closed nondegenerate segments are encoded by arbitrary sets of distinct endpoint pairs; no countability or measurability assumption is imposed. MathDB: https://mathdb.com/p/367269/keleti-s-line-segment-extension-conjecture. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/367269/AKeletiLineSegmentExtension.lean"
+
+[policy]
+# Matches the repository environment; release admission remains for maintainers.
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AKeletiLineSegmentExtension"
+file = "AKeletiLineSegmentExtension.lean"
+module = "FtpEvalBench.AKeletiLineSegmentExtension"
+challenge = "AKeletiLineSegmentExtension/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "6dc530e9223a52eb"
+  reviewed_by_a_person = false

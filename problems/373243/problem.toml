@@ -1,0 +1,35 @@
+# authored:LogarithmicBrunnMinkowski -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:LogarithmicBrunnMinkowski"
+mathdb_number = 373243
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "For origin-symmetric compact convex bodies K and L in positive-dimensional Euclidean space with the origin in their interiors, the Wulff body of the geometric interpolation of their support functions has volume at least vol(K)^t vol(L)^(1-t), for every t in [0,1]."
+notes = "Iffland, The local logarithmic Brunn-Minkowski inequality for bodies of revolution, arXiv:2602.17912v1, Conjecture 1.1 and the preceding Wulff-shape definition. https://arxiv.org/html/2602.17912v1 The logarithmic combination is an intersection of supporting halfspaces, not the pointwise product or Minkowski sum of bodies. Unit normals use the Euclidean norm. Support values are finite and positive under the compactness and interior hypotheses. Volume is Mathlib Lebesgue measure in Euclidean space, with real powers in ENNReal; all relevant body volumes are finite. Origin symmetry is expressed pointwise by x in K iff -x in K. MathDB records an unverified 2026 solution claim; this contribution states the conjecture and does not endorse a proof. MathDB: https://mathdb.com/p/373243/the-logarithmic-brunn-minkowski-conjecture-for-origin-symmet. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/373243/ALogarithmicBrunnMinkowski.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "ALogarithmicBrunnMinkowski"
+file = "ALogarithmicBrunnMinkowski.lean"
+module = "FtpEvalBench.ALogarithmicBrunnMinkowski"
+challenge = "ALogarithmicBrunnMinkowski/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "01b6fd876d4cfe30"
+  reviewed_by_a_person = false

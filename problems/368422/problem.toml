@@ -1,0 +1,35 @@
+# authored:EuclideanSteinitz -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:EuclideanSteinitz"
+mathdb_number = 368422
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "There is an absolute positive constant C such that in every dimension d >= 1 every finite zero-sum family of vectors in the Euclidean unit ball can be reordered so that all partial sums have norm at most C times sqrt(d)."
+notes = "Ambrus and Heck, A note on the Steinitz Lemma, arXiv:2505.09465v3, Conjecture 5 and the definitions preceding it. https://arxiv.org/html/2505.09465v3 The absolute constant is chosen before the dimension and the vector family. Finite indexed families permit repeated vectors, as in the primary source. A permutation reorders the entire family, and every partial sum is checked. MathDB says this was refuted, but the cited source says it has refuted all attempts, meaning attempts to solve it. The source still presents Conjecture 5 as open; this contribution follows that source rather than the erroneous status sentence. MathDB: https://mathdb.com/p/368422/bergstrom-s-conjecture-on-the-euclidean-steinitz-constant. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/368422/AEuclideanSteinitz.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AEuclideanSteinitz"
+file = "AEuclideanSteinitz.lean"
+module = "FtpEvalBench.AEuclideanSteinitz"
+challenge = "AEuclideanSteinitz/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "c6b82bee20a3c9e3"
+  reviewed_by_a_person = false

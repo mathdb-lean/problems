@@ -1,0 +1,35 @@
+# authored:ThreeSpaceGromovHausdorff -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:ThreeSpaceGromovHausdorff"
+mathdb_number = 350674
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Any three nonempty compact metric spaces have isometric embeddings into one compact metric space such that all pairwise Hausdorff distances of the images equal the corresponding Gromov-Hausdorff distances."
+notes = "Memoli and Wan, Characterization of Gromov-type geodesics, arXiv:2105.05369v2, Section 6, Conjecture 2. https://arxiv.org/html/2105.05369v2 The same ambient space and the same three embeddings must realize all pairs simultaneously. Nonempty is explicit, as in the Hausdorff-distance convention of Definition 2.7 and in Mathlib ghDist. Isometry implies injectivity for metric spaces. The target is a closed proposition: all spaces and instances are quantified inside it. Using Type introduces no restriction on compact metric spaces up to isometry, since such spaces admit small representatives. MathDB: https://mathdb.com/p/350674/three-space-common-ambient-realization-conjecture-for-gromov. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/350674/AThreeSpaceGromovHausdorff.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AThreeSpaceGromovHausdorff"
+file = "AThreeSpaceGromovHausdorff.lean"
+module = "FtpEvalBench.AThreeSpaceGromovHausdorff"
+challenge = "AThreeSpaceGromovHausdorff/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "0e4642680ec8f4a3"
+  reviewed_by_a_person = false

@@ -1,0 +1,35 @@
+# authored:FurstenbergOrbitDimensions -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:FurstenbergOrbitDimensions"
+mathdb_number = 349088
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "For multiplicatively independent integer bases p and q at least two, the Hausdorff dimensions of the closures of the two forward multiplication orbits of an irrational point of the circle sum to at least one."
+notes = "Adamczewski and Faverjon, Mahler's method in several variables and finite automata, arXiv:2012.08283v1, Appendix A, Conjecture A.1. https://arxiv.org/pdf/2012.08283 UnitAddCircle is R/Z with its quotient metric. The orbit includes the initial point (iterate zero). Taking closure is essential: the orbit itself is countable. Irrationality is imposed on the representative x in [0,1). The pinned dependency defines multiplicative independence by irrationality of log(p)/log(q). Hausdorff dimension on the circle agrees with the interval-representative convention via finitely many local isometries; the possible endpoint difference has dimension zero. MathDB: https://mathdb.com/p/349088/furstenberg-s-dimension-conjecture-for-multiplicatively-inde. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/349088/AFurstenbergOrbitDimensions.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AFurstenbergOrbitDimensions"
+file = "AFurstenbergOrbitDimensions.lean"
+module = "FtpEvalBench.AFurstenbergOrbitDimensions"
+challenge = "AFurstenbergOrbitDimensions/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "63275f10bfb561be"
+  reviewed_by_a_person = false

@@ -1,0 +1,35 @@
+# authored:AshCatoiuDirectionalLipschitz -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:AshCatoiuDirectionalLipschitz"
+mathdb_number = 348867
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "For any real-valued function on the Euclidean plane, let E be the points where the function is Lipschitz in every direction. The points of E where the function fails to be pointwise Lipschitz relative to E form a Lebesgue null set."
+notes = "Hruska, A note on directional Lipschitz continuity in the Euclidean plane, arXiv:2012.00162v2, Conjecture 1, Definition 2, and Theorem 1. https://arxiv.org/html/2012.00162v2 The function is arbitrary: no continuity or measurability is assumed. The directional bound is one-sided in the positive step h and is tested for every unit vector, including its negative. Its constants may depend on both the point and the direction. Relative Lipschitz continuity here is the pointwise bound against the fixed base point, not a two-point Lipschitz bound on a whole neighborhood. At isolated points of E the bound holds automatically. These finite local bounds are equivalent to the finite limsup definitions in the source. Nullity uses Lebesgue outer measure through Mathlib volume, so it does not require assuming E or the exceptional set Borel. The source establishes the conjecture; solved refers to the literature, not a supplied Lean proof. MathDB: https://mathdb.com/p/348867/ash-catoiu-conjecture-on-directional-and-relative-lipschitz. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/348867/AAshCatoiuDirectionalLipschitz.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AAshCatoiuDirectionalLipschitz"
+file = "AAshCatoiuDirectionalLipschitz.lean"
+module = "FtpEvalBench.AAshCatoiuDirectionalLipschitz"
+challenge = "AAshCatoiuDirectionalLipschitz/Challenge.lean"
+shape = "proof"
+track = "solved"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "1c1fb66bd73d8e75"
+  reviewed_by_a_person = false

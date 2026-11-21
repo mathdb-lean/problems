@@ -1,0 +1,35 @@
+# authored:SquareAnnulusPlanks -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:SquareAnnulusPlanks"
+mathdb_number = 414286
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Every finite covering of the unit square minus its concentric closed square of side one half by Euclidean planks has total width at least one."
+notes = "Bakaev and Polyanskii, A sharp plank theorem for cube annuli, arXiv:2611.00379v1, introduction and Theorem 1. https://arxiv.org/html/2611.00379v1 This states the concentric square formulation on MathDB; the cited paper treats more general hole locations. A plank is a closed strip with a unit normal and distinct boundary levels, so its width is exactly b-a. The hole is closed as written on MathDB. For finite unions of closed planks, including or excluding the inner boundary gives equivalent covering assertions by taking closure. A recent preprint claims a proof; no Lean proof or independent verification is claimed here. MathDB: https://mathdb.com/p/414286/bezdek-s-plank-covering-conjecture-for-square-annuli. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/414286/ASquareAnnulusPlanks.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "ASquareAnnulusPlanks"
+file = "ASquareAnnulusPlanks.lean"
+module = "FtpEvalBench.ASquareAnnulusPlanks"
+challenge = "ASquareAnnulusPlanks/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "b491e4cb49b962d1"
+  reviewed_by_a_person = false

@@ -1,0 +1,35 @@
+# authored:GrunbaumOrthogonalPartitions -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:GrunbaumOrthogonalPartitions"
+mathdb_number = 364279
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Every planar convex body of area one can be partitioned by two perpendicular lines into four cyclically ordered pieces of areas t, t, 1/2-t and 1/2-t, for any t in [0,1/4]."
+notes = "McGinnis and Zerbib, Using the KKM theorem, arXiv:2408.03921v1, Conjecture 4.2. https://arxiv.org/html/2408.03921v1 A convex body is represented by a compact convex set with nonempty interior. The lines pass through a common point and have unit orthogonal normals. The sign pairs (+,+),(-,+),(-,-),(+,-) give a cyclic order. Reversing its orientation does not change the existence statement for the pattern (t,t,s,s), since the reverse pattern is a cyclic rotation. Open quadrants omit only boundary lines of area zero. Both t=0 and t=1/4 are included. This is a positive assertion for uniform area on convex bodies, distinct from the counterexample question for arbitrary absolutely continuous measures. MathDB: https://mathdb.com/p/364279/grunbaum-s-orthogonal-line-equipartition-conjecture. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/364279/AGrunbaumOrthogonalPartitions.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AGrunbaumOrthogonalPartitions"
+file = "AGrunbaumOrthogonalPartitions.lean"
+module = "FtpEvalBench.AGrunbaumOrthogonalPartitions"
+challenge = "AGrunbaumOrthogonalPartitions/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ab9bec09cb31c421"
+  reviewed_by_a_person = false

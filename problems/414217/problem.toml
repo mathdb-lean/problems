@@ -1,0 +1,35 @@
+# authored:LineAllEvenThreeSpace -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:LineAllEvenThreeSpace"
+mathdb_number = 414217
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If a finite nonempty set in Euclidean three-space meets an even number of parallel lines in every direction, its affine span is not the whole space."
+notes = "Kalmanovich and Nivasch, All-even sets in R2 and R3, arXiv:2610.38864v1, Section 2, Conjecture 2.1. https://arxiv.org/html/2610.38864v1 The MathDB title says all-even, but its statement is the stronger line-all-even conjecture, as distinguished in the source. Every nonzero vector represents a direction; the affine line through p and p+v is the unique line in that direction through p. Finset.image removes repetitions, so a line meeting several points is counted once. The conclusion uses Mathlib affineSpan. This is the contrapositive of the primary source formulation with an odd line direction. MathDB: https://mathdb.com/p/414217/all-even-sets-in-r3-conjecture. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/414217/ALineAllEvenThreeSpace.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "ALineAllEvenThreeSpace"
+file = "ALineAllEvenThreeSpace.lean"
+module = "FtpEvalBench.ALineAllEvenThreeSpace"
+challenge = "ALineAllEvenThreeSpace/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "4b8347f1c6c6ad85"
+  reviewed_by_a_person = false

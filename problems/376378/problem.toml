@@ -1,0 +1,35 @@
+# authored:OptimalPartialPlankCovering -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:OptimalPartialPlankCovering"
+mathdb_number = 376378
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "For every positive-dimensional convex body K and total width W > 0, a single plank of width W covers at least as much of K as any finite family of planks whose widths sum to W."
+notes = "Bakaev and Polyanskii, Optimal partial plank coverings, arXiv:2607.27483v1, Conjecture 1. https://arxiv.org/html/2607.27483v1 The optimal single plank is chosen before the competing finite family and depends only on K and W. The source defines a convex body as compact and convex with nonempty interior. Unit normals make b-a the Euclidean width. Competing widths are strictly positive and sum exactly to W. Closed planks cause no boundary ambiguity for Lebesgue volume. The paper proves the ball and planar cases; this target includes all positive dimensions. MathDB: https://mathdb.com/p/376378/the-optimal-partial-plank-covering-conjecture-for-convex-bod. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/376378/AOptimalPartialPlankCovering.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AOptimalPartialPlankCovering"
+file = "AOptimalPartialPlankCovering.lean"
+module = "FtpEvalBench.AOptimalPartialPlankCovering"
+challenge = "AOptimalPartialPlankCovering/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "7db88ec987ba8001"
+  reviewed_by_a_person = false

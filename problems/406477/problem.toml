@@ -1,0 +1,35 @@
+# authored:CubeAnnulusPlanks -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:CubeAnnulusPlanks"
+mathdb_number = 406477
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "In dimension d >= 2, if 0 < delta < 1 and delta <= 1 - 1/d, every finite plank cover of the centered unit cube minus the concentric closed cube of side delta has total width at least one."
+notes = "Ambrus, Corbo, Goto, Leitz and Mawhinney, On plank coverings of cube annuli, arXiv:2610.18770v1, Conjecture 1.2. https://arxiv.org/html/2610.18770v1 The centered annulus matches the MathDB formulation. The primary source conjectures a stronger assertion allowing off-center holes as well. The unit normal and ordered boundary levels make b-a the Euclidean width. Removing a closed hole or its interior is equivalent for finite closed plank coverings by taking closure. The dimension-dependent threshold uses real division, not natural-number subtraction or division. A later preprint arXiv:2611.00379 claims a stronger covering theorem; the public MathDB record remains open. MathDB: https://mathdb.com/p/406477/cube-annulus-plank-covering-conjecture. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/406477/ACubeAnnulusPlanks.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "ACubeAnnulusPlanks"
+file = "ACubeAnnulusPlanks.lean"
+module = "FtpEvalBench.ACubeAnnulusPlanks"
+challenge = "ACubeAnnulusPlanks/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "a1530ab5ef3a89e7"
+  reviewed_by_a_person = false

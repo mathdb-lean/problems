@@ -1,0 +1,35 @@
+# authored:TverbergVrecica -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:TverbergVrecica"
+mathdb_number = 364497
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "For k<d and k+1 finite point sets P_i in R^d of cardinality (r_i-1)(d-k+1)+1 with r_i positive, there is a common affine k-flat meeting the convex hull of every part of a partition of each P_i into r_i parts."
+notes = "Sadovek and Soberon, Complex analogues of the Tverberg-Vrecica conjecture and central transversal theorems, arXiv:2408.14337v2, Conjecture 1.7 (the real conjecture). https://arxiv.org/html/2408.14337v2 A label function on each finite point set specifies its partition. The fibers are disjoint and cover the point set; the required convex-hull intersections force every part to be nonempty. Labels outside P_i have no effect and can be extended arbitrarily because r_i is positive. One shared affine subspace is chosen for all partitions. Its dimension is the dimension of its direction subspace. The parameters range over all positive r_i, without prime-power restrictions. MathDB: https://mathdb.com/p/364497/tverberg-vrecica-conjecture. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/364497/ATverbergVrecica.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "ATverbergVrecica"
+file = "ATverbergVrecica.lean"
+module = "FtpEvalBench.ATverbergVrecica"
+challenge = "ATverbergVrecica/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "8e33bde7340842de"
+  reviewed_by_a_person = false

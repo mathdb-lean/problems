@@ -1,0 +1,35 @@
+# authored:FiniteFieldRadialExceptions -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:FiniteFieldRadialExceptions"
+mathdb_number = 354639
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "For E in a d-dimensional vector space over a finite field of order q, if q^(k-1) < |E| <= q^k with 1 <= k < d, at most 10q^k centers see fewer than |E|/10 distinct lines through E."
+notes = "Lund, Pham and Thu, Radial projection theorems in finite spaces, arXiv:2205.07431v2, Conjecture 1.6 and the definition of radial projection in the introduction. https://arxiv.org/html/2205.07431v2. Compare Bright, Lund and Pham, arXiv:2311.05127v2, Theorem 1.1: https://arxiv.org/html/2311.05127v2 Radial projection here counts full affine lines through the center, not normalized Euclidean vectors. The center itself is removed before taking the image. Finset.image removes repeated lines. The exceptional condition 10 times the projection cardinality less than |E| is exactly the strict rational threshold |projection| < |E|/10; no truncated natural division is used. Every finite field is allowed, including characteristic two. The later paper arXiv:2311.05127v2 describes the conjecture as established, but its Theorem 1.1 uses constants 1/50 and 40 and assumes |E| <= q^k/100. This file retains the exact constants and size range of the MathDB question and does not claim that the later displayed theorem proves this exact target. MathDB: https://mathdb.com/p/354639/finite-field-radial-projection-exceptional-set-conjecture. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/354639/AFiniteFieldRadialExceptions.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AFiniteFieldRadialExceptions"
+file = "AFiniteFieldRadialExceptions.lean"
+module = "FtpEvalBench.AFiniteFieldRadialExceptions"
+challenge = "AFiniteFieldRadialExceptions/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "2dd92d7d880a7c16"
+  reviewed_by_a_person = false

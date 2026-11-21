@@ -1,0 +1,35 @@
+# authored:FullMeasureUniversality -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:FullMeasureUniversality"
+mathdb_number = 365068
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Every subset of the real line that has an affine copy with nonzero scale in every set with null complement is countable."
+notes = "Jung and Lai, arXiv:2410.01275v2, Definition 4.1 and Conjecture 4.2. https://arxiv.org/html/2410.01275v2 Full measure means a null complement, not infinite measure. A set with null complement is Lebesgue measurable in the completion, so no Borel restriction is imposed. The scale may be negative but may not be zero. X has no measurability assumption. The source discusses set-theoretic independence; this is a statement, not a claimed theorem of Lean. MathDB: https://mathdb.com/p/365068/full-measure-universality-conjecture. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/365068/AFullMeasureUniversality.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AFullMeasureUniversality"
+file = "AFullMeasureUniversality.lean"
+module = "FtpEvalBench.AFullMeasureUniversality"
+challenge = "AFullMeasureUniversality/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "07950d714c4c05eb"
+  reviewed_by_a_person = false
