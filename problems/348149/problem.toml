@@ -1,0 +1,35 @@
+# authored:RamosMassPartitions -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:RamosMassPartitions"
+mathdb_number = 348149
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "For positive d, k and m, every family of m finite measures on R^d absolutely continuous with respect to Lebesgue measure admits an equipartition by k affine hyperplanes if and only if m(2^k-1) <= dk."
+notes = "Roldan-Pensado and Soberon, A survey of mass partitions, arXiv:2010.00478v3, Problem 2.1.1 and Conjecture 2.1.2. https://arxiv.org/html/2010.00478v3 Each hyperplane has a unit normal and real offset. Boolean sign choices enumerate all 2^k open cells; their boundaries are null for the absolutely continuous measures. Every cell is required to be nonempty, including when all the measures are zero. Each cell must have exactly 1/2^k of each total mass. The measures need not have probability normalization. For positive k, the integer inequality is equivalent to the ceiling bound in the source, with no rounding ambiguity. Hyperplanes are not required to be orthogonal. MathDB: https://mathdb.com/p/348149/ramos-s-grunbaum-hadwiger-ramos-mass-partition-conjecture. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/348149/ARamosMassPartitions.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "ARamosMassPartitions"
+file = "ARamosMassPartitions.lean"
+module = "FtpEvalBench.ARamosMassPartitions"
+challenge = "ARamosMassPartitions/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "1ebd25302908a3f5"
+  reviewed_by_a_person = false

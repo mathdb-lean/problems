@@ -1,0 +1,40 @@
+# authored:DistanceSetDimensionImprovement -- contribution metadata prepared for review.
+# Prepared alongside benchmark.json; keep the task records and hashes synchronized.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+#
+# One folder is one mathematical problem. The module beside this file is
+# its proof obligation; the challenge is a separate solver template.
+
+problem_id = "authored:DistanceSetDimensionImprovement"
+mathdb_number = 377119
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "There exists an absolute real constant c > 0 such that, for every compact set K in the Euclidean plane with Hausdorff dimension at least 1, the distance set {dist(x,y) : x,y in K} has Hausdorff dimension at least 1/2 + c."
+notes = "Katz and Tao (2001), Distance Conjecture 1.4, p. 3: https://arxiv.org/abs/math/0101195. Solved in the literature by Bourgain using Katz and Tao; see Keleti and Shmerkin (2019), Section 1.1, equation (1.2): https://doi.org/10.1007/s00039-019-00500-9. MathDB: https://mathdb.com/p/377119/the-distance-set-dimension-improvement-conjecture. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/377119/ADistanceSetDimensionImprovement.lean"
+
+[policy]
+# Matches the repository environment; release admission remains for maintainers.
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "ADistanceSetDimensionImprovement"
+file = "ADistanceSetDimensionImprovement.lean"
+module = "FtpEvalBench.ADistanceSetDimensionImprovement"
+challenge = "ADistanceSetDimensionImprovement/Challenge.lean"
+shape = "proof"
+track = "solved"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "5717bf557b7c103d"
+  reviewed_by_a_person = false

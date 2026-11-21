@@ -31053,21 +31053,514 @@
       "challenge": "Sun_TateShafarevich/Challenge.lean",
       "mathdb_number": 355259,
       "mathdb_id": "c577366a-ad98-435b-97bb-4a38680eabf2"
+    },
+    "ADistanceSetDimensionImprovement": {
+      "module": "FtpEvalBench.ADistanceSetDimensionImprovement",
+      "display_label": "ADistanceSetDimensionImprovement",
+      "task_id": "9e9f88f0-8efe-512f-a2f2-8e392f03205c",
+      "question_id": "authored:DistanceSetDimensionImprovement",
+      "target_hash": "5717bf557b7c103d",
+      "shape": "proof",
+      "track": "solved",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/377119/ADistanceSetDimensionImprovement.lean#Problem.Target",
+      "challenge": "ADistanceSetDimensionImprovement/Challenge.lean",
+      "mathdb_number": 377119
+    },
+    "AKeletiLineSegmentExtension": {
+      "module": "FtpEvalBench.AKeletiLineSegmentExtension",
+      "display_label": "AKeletiLineSegmentExtension",
+      "task_id": "6af2b2e3-8dd3-5a84-bb37-53e90f9706e9",
+      "question_id": "authored:KeletiLineSegmentExtension",
+      "target_hash": "6dc530e9223a52eb",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/367269/AKeletiLineSegmentExtension.lean#Problem.Target",
+      "challenge": "AKeletiLineSegmentExtension/Challenge.lean",
+      "mathdb_number": 367269
+    },
+    "AShiftedProductInterior": {
+      "module": "FtpEvalBench.AShiftedProductInterior",
+      "display_label": "AShiftedProductInterior",
+      "task_id": "7dedd2c3-50c3-5565-8646-a3acb2e372b8",
+      "question_id": "authored:ShiftedProductInterior",
+      "target_hash": "94ee69c6c2e49961",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/375707/AShiftedProductInterior.lean#Problem.Target",
+      "challenge": "AShiftedProductInterior/Challenge.lean",
+      "mathdb_number": 375707
+    },
+    "AFullMeasureUniversality": {
+      "module": "FtpEvalBench.AFullMeasureUniversality",
+      "display_label": "AFullMeasureUniversality",
+      "task_id": "80ba635f-e2c5-5b14-886f-34da19a506dd",
+      "question_id": "authored:FullMeasureUniversality",
+      "target_hash": "07950d714c4c05eb",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/365068/AFullMeasureUniversality.lean#Problem.Target",
+      "challenge": "AFullMeasureUniversality/Challenge.lean",
+      "mathdb_number": 365068
+    },
+    "ASpecialLinearSymmetries": {
+      "module": "FtpEvalBench.ASpecialLinearSymmetries",
+      "display_label": "ASpecialLinearSymmetries",
+      "task_id": "c59199eb-5e4a-57d9-9604-827895c8e3be",
+      "question_id": "authored:SpecialLinearSymmetries",
+      "target_hash": "898e32db8f7593d0",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/366503/ASpecialLinearSymmetries.lean#Problem.Target",
+      "challenge": "ASpecialLinearSymmetries/Challenge.lean",
+      "mathdb_number": 366503
+    },
+    "ADynFarkhiConvexification": {
+      "module": "FtpEvalBench.ADynFarkhiConvexification",
+      "display_label": "ADynFarkhiConvexification",
+      "task_id": "779f2e91-8e98-5991-9ec3-9d8072a66432",
+      "question_id": "authored:DynFarkhiConvexification",
+      "target_hash": "9f9114bb5d732e1f",
+      "shape": "proof",
+      "track": "solved",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/375200/ADynFarkhiConvexification.lean#Problem.Target",
+      "challenge": "ADynFarkhiConvexification/Challenge.lean",
+      "mathdb_number": 375200
+    },
+    "AFullMeasureStrongMeagerness": {
+      "module": "FtpEvalBench.AFullMeasureStrongMeagerness",
+      "display_label": "AFullMeasureStrongMeagerness",
+      "task_id": "31013db0-42ea-535e-8429-b5d604b987ad",
+      "question_id": "authored:FullMeasureStrongMeagerness",
+      "target_hash": "ce7469af17db3940",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/366243/AFullMeasureStrongMeagerness.lean#Problem.Target",
+      "challenge": "AFullMeasureStrongMeagerness/Challenge.lean",
+      "mathdb_number": 366243
+    },
+    "AAlonQuadraticRadicalZeros": {
+      "module": "FtpEvalBench.AAlonQuadraticRadicalZeros",
+      "display_label": "AAlonQuadraticRadicalZeros",
+      "task_id": "c022cb3a-4ead-54cb-a38f-252404f157ec",
+      "question_id": "authored:AlonQuadraticRadicalZeros",
+      "target_hash": "0fd2769d88eced0d",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/405181/AAlonQuadraticRadicalZeros.lean#Problem.Target",
+      "challenge": "AAlonQuadraticRadicalZeros/Challenge.lean",
+      "mathdb_number": 405181
+    },
+    "AFiniteFieldRadialExceptions": {
+      "module": "FtpEvalBench.AFiniteFieldRadialExceptions",
+      "display_label": "AFiniteFieldRadialExceptions",
+      "task_id": "7213170b-1f70-562c-b757-b9f7eba01b13",
+      "question_id": "authored:FiniteFieldRadialExceptions",
+      "target_hash": "2dd92d7d880a7c16",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/354639/AFiniteFieldRadialExceptions.lean#Problem.Target",
+      "challenge": "AFiniteFieldRadialExceptions/Challenge.lean",
+      "mathdb_number": 354639
+    },
+    "ARestrictedMarstrandAnalytic": {
+      "module": "FtpEvalBench.ARestrictedMarstrandAnalytic",
+      "display_label": "ARestrictedMarstrandAnalytic",
+      "task_id": "751a622f-4548-5712-a1c1-b3c287fa535a",
+      "question_id": "authored:RestrictedMarstrandAnalytic",
+      "target_hash": "32a00d6a67182f8b",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/371029/ARestrictedMarstrandAnalytic.lean#Problem.Target",
+      "challenge": "ARestrictedMarstrandAnalytic/Challenge.lean",
+      "mathdb_number": 371029
+    },
+    "AEuclideanSteinitz": {
+      "module": "FtpEvalBench.AEuclideanSteinitz",
+      "display_label": "AEuclideanSteinitz",
+      "task_id": "06b45911-d1c0-5197-869a-c47a9b537ce5",
+      "question_id": "authored:EuclideanSteinitz",
+      "target_hash": "c6b82bee20a3c9e3",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/368422/AEuclideanSteinitz.lean#Problem.Target",
+      "challenge": "AEuclideanSteinitz/Challenge.lean",
+      "mathdb_number": 368422
+    },
+    "ASquareAnnulusPlanks": {
+      "module": "FtpEvalBench.ASquareAnnulusPlanks",
+      "display_label": "ASquareAnnulusPlanks",
+      "task_id": "0bc61fa1-6ec6-5679-89af-30642a244cac",
+      "question_id": "authored:SquareAnnulusPlanks",
+      "target_hash": "b491e4cb49b962d1",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/414286/ASquareAnnulusPlanks.lean#Problem.Target",
+      "challenge": "ASquareAnnulusPlanks/Challenge.lean",
+      "mathdb_number": 414286
+    },
+    "ACubeAnnulusPlanks": {
+      "module": "FtpEvalBench.ACubeAnnulusPlanks",
+      "display_label": "ACubeAnnulusPlanks",
+      "task_id": "c4f59f0b-140d-5e1f-a364-d63d0bf22cc8",
+      "question_id": "authored:CubeAnnulusPlanks",
+      "target_hash": "a1530ab5ef3a89e7",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/406477/ACubeAnnulusPlanks.lean#Problem.Target",
+      "challenge": "ACubeAnnulusPlanks/Challenge.lean",
+      "mathdb_number": 406477
+    },
+    "AHandelmanIntegrability": {
+      "module": "FtpEvalBench.AHandelmanIntegrability",
+      "display_label": "AHandelmanIntegrability",
+      "task_id": "87113ad1-f9cc-5888-b974-f507e9c547ac",
+      "question_id": "authored:HandelmanIntegrability",
+      "target_hash": "4650156c5f0ea300",
+      "shape": "proof",
+      "track": "solved",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/361902/AHandelmanIntegrability.lean#Problem.Target",
+      "challenge": "AHandelmanIntegrability/Challenge.lean",
+      "mathdb_number": 361902
+    },
+    "AReciprocalQuadraticRiemannSums": {
+      "module": "FtpEvalBench.AReciprocalQuadraticRiemannSums",
+      "display_label": "AReciprocalQuadraticRiemannSums",
+      "task_id": "2dbf0c76-1e7a-5b66-ad21-0d83e31c0abf",
+      "question_id": "authored:ReciprocalQuadraticRiemannSums",
+      "target_hash": "ab21ab1091faf90f",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/360607/AReciprocalQuadraticRiemannSums.lean#Problem.Target",
+      "challenge": "AReciprocalQuadraticRiemannSums/Challenge.lean",
+      "mathdb_number": 360607
+    },
+    "AThreeSpaceGromovHausdorff": {
+      "module": "FtpEvalBench.AThreeSpaceGromovHausdorff",
+      "display_label": "AThreeSpaceGromovHausdorff",
+      "task_id": "cff02b87-cdce-5f49-bc95-1cdca8fa8c4b",
+      "question_id": "authored:ThreeSpaceGromovHausdorff",
+      "target_hash": "0e4642680ec8f4a3",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/350674/AThreeSpaceGromovHausdorff.lean#Problem.Target",
+      "challenge": "AThreeSpaceGromovHausdorff/Challenge.lean",
+      "mathdb_number": 350674
+    },
+    "ALogarithmicBrunnMinkowski": {
+      "module": "FtpEvalBench.ALogarithmicBrunnMinkowski",
+      "display_label": "ALogarithmicBrunnMinkowski",
+      "task_id": "07af1644-2b73-5f9e-8289-771387ae4dd5",
+      "question_id": "authored:LogarithmicBrunnMinkowski",
+      "target_hash": "01b6fd876d4cfe30",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/373243/ALogarithmicBrunnMinkowski.lean#Problem.Target",
+      "challenge": "ALogarithmicBrunnMinkowski/Challenge.lean",
+      "mathdb_number": 373243
+    },
+    "ATwoFixedPointJacobian": {
+      "module": "FtpEvalBench.ATwoFixedPointJacobian",
+      "display_label": "ATwoFixedPointJacobian",
+      "task_id": "aa42e409-bfa8-53b9-844f-dca451bdc67e",
+      "question_id": "authored:TwoFixedPointJacobian",
+      "target_hash": "048e8e4c25a2161f",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/380823/ATwoFixedPointJacobian.lean#Problem.Target",
+      "challenge": "ATwoFixedPointJacobian/Challenge.lean",
+      "mathdb_number": 380823
+    },
+    "AFurstenbergOrbitDimensions": {
+      "module": "FtpEvalBench.AFurstenbergOrbitDimensions",
+      "display_label": "AFurstenbergOrbitDimensions",
+      "task_id": "2085885a-76e3-5710-92b7-d701d1bb8546",
+      "question_id": "authored:FurstenbergOrbitDimensions",
+      "target_hash": "63275f10bfb561be",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/349088/AFurstenbergOrbitDimensions.lean#Problem.Target",
+      "challenge": "AFurstenbergOrbitDimensions/Challenge.lean",
+      "mathdb_number": 349088
+    },
+    "AUnevenOrthogonalMassPartitions": {
+      "module": "FtpEvalBench.AUnevenOrthogonalMassPartitions",
+      "display_label": "AUnevenOrthogonalMassPartitions",
+      "task_id": "603eb679-16b5-560e-9c15-797785ddaa25",
+      "question_id": "authored:UnevenOrthogonalMassPartitions",
+      "target_hash": "3852fe5543d3619f",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/405456/AUnevenOrthogonalMassPartitions.lean#Problem.Target",
+      "challenge": "AUnevenOrthogonalMassPartitions/Challenge.lean",
+      "mathdb_number": 405456
+    },
+    "AOptimalPartialPlankCovering": {
+      "module": "FtpEvalBench.AOptimalPartialPlankCovering",
+      "display_label": "AOptimalPartialPlankCovering",
+      "task_id": "1a20866a-8a28-5d46-ae18-7b6b1f39f3c8",
+      "question_id": "authored:OptimalPartialPlankCovering",
+      "target_hash": "7db88ec987ba8001",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/376378/AOptimalPartialPlankCovering.lean#Problem.Target",
+      "challenge": "AOptimalPartialPlankCovering/Challenge.lean",
+      "mathdb_number": 376378
+    },
+    "AKrooHomogeneousApproximation": {
+      "module": "FtpEvalBench.AKrooHomogeneousApproximation",
+      "display_label": "AKrooHomogeneousApproximation",
+      "task_id": "9cc6344b-dba2-5830-a5cf-d96f43bc123d",
+      "question_id": "authored:KrooHomogeneousApproximation",
+      "target_hash": "841a7105e4fd3034",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/414215/AKrooHomogeneousApproximation.lean#Problem.Target",
+      "challenge": "AKrooHomogeneousApproximation/Challenge.lean",
+      "mathdb_number": 414215
+    },
+    "AKalaiTwoConvexComponents": {
+      "module": "FtpEvalBench.AKalaiTwoConvexComponents",
+      "display_label": "AKalaiTwoConvexComponents",
+      "task_id": "7516179c-a67e-5373-ade3-7d69da11294a",
+      "question_id": "authored:KalaiTwoConvexComponents",
+      "target_hash": "87df2e76d0caa910",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/383538/AKalaiTwoConvexComponents.lean#Problem.Target",
+      "challenge": "AKalaiTwoConvexComponents/Challenge.lean",
+      "mathdb_number": 383538
+    },
+    "ALineAllEvenThreeSpace": {
+      "module": "FtpEvalBench.ALineAllEvenThreeSpace",
+      "display_label": "ALineAllEvenThreeSpace",
+      "task_id": "f8953bad-81f4-517a-915c-e54c9bb07fd0",
+      "question_id": "authored:LineAllEvenThreeSpace",
+      "target_hash": "4b8347f1c6c6ad85",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/414217/ALineAllEvenThreeSpace.lean#Problem.Target",
+      "challenge": "ALineAllEvenThreeSpace/Challenge.lean",
+      "mathdb_number": 414217
+    },
+    "ARamosMassPartitions": {
+      "module": "FtpEvalBench.ARamosMassPartitions",
+      "display_label": "ARamosMassPartitions",
+      "task_id": "3d97feb8-57e1-5195-b97d-801cfac03b1b",
+      "question_id": "authored:RamosMassPartitions",
+      "target_hash": "1ebd25302908a3f5",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/348149/ARamosMassPartitions.lean#Problem.Target",
+      "challenge": "ARamosMassPartitions/Challenge.lean",
+      "mathdb_number": 348149
+    },
+    "ATverbergVrecica": {
+      "module": "FtpEvalBench.ATverbergVrecica",
+      "display_label": "ATverbergVrecica",
+      "task_id": "0f48890b-3737-58a4-9629-859c5f425656",
+      "question_id": "authored:TverbergVrecica",
+      "target_hash": "8e33bde7340842de",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/364497/ATverbergVrecica.lean#Problem.Target",
+      "challenge": "ATverbergVrecica/Challenge.lean",
+      "mathdb_number": 364497
+    },
+    "ATotallySeparableSausage": {
+      "module": "FtpEvalBench.ATotallySeparableSausage",
+      "display_label": "ATotallySeparableSausage",
+      "task_id": "09566706-6d5c-58d2-b07e-d14911806d22",
+      "question_id": "authored:TotallySeparableSausage",
+      "target_hash": "151518b08c53eafa",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/364138/ATotallySeparableSausage.lean#Problem.Target",
+      "challenge": "ATotallySeparableSausage/Challenge.lean",
+      "mathdb_number": 364138
+    },
+    "AGrunbaumOrthogonalPartitions": {
+      "module": "FtpEvalBench.AGrunbaumOrthogonalPartitions",
+      "display_label": "AGrunbaumOrthogonalPartitions",
+      "task_id": "f3131b8b-457d-52bf-946b-73f59709ec38",
+      "question_id": "authored:GrunbaumOrthogonalPartitions",
+      "target_hash": "ab9bec09cb31c421",
+      "shape": "proof",
+      "track": "open",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/364279/AGrunbaumOrthogonalPartitions.lean#Problem.Target",
+      "challenge": "AGrunbaumOrthogonalPartitions/Challenge.lean",
+      "mathdb_number": 364279
+    },
+    "AAshCatoiuDirectionalLipschitz": {
+      "module": "FtpEvalBench.AAshCatoiuDirectionalLipschitz",
+      "display_label": "AAshCatoiuDirectionalLipschitz",
+      "task_id": "78b5a97d-ace6-513b-9589-9d9c7cadda7a",
+      "question_id": "authored:AshCatoiuDirectionalLipschitz",
+      "target_hash": "1c1fb66bd73d8e75",
+      "shape": "proof",
+      "track": "solved",
+      "part": null,
+      "pair_id": null,
+      "source": "mathdb-lean",
+      "source_revision": "",
+      "source_locator": "problems/348867/AAshCatoiuDirectionalLipschitz.lean#Problem.Target",
+      "challenge": "AAshCatoiuDirectionalLipschitz/Challenge.lean",
+      "mathdb_number": 348867
     }
   },
   "under_review": [
+    "AAlonQuadraticRadicalZeros",
     "AAndersonExtendedStates",
+    "AAshCatoiuDirectionalLipschitz",
     "ABirchSwinnertonDyer",
+    "ACubeAnnulusPlanks",
+    "ADistanceSetDimensionImprovement",
+    "ADynFarkhiConvexification",
+    "AEuclideanSteinitz",
+    "AFiniteFieldRadialExceptions",
     "AFourierRestriction",
+    "AFullMeasureStrongMeagerness",
+    "AFullMeasureUniversality",
+    "AFurstenbergOrbitDimensions",
+    "AGrunbaumOrthogonalPartitions",
+    "AHandelmanIntegrability",
     "AInvariantSubspaceProblem",
     "AJacobianConjectureTwoVariables_prove",
     "AJacobianConjectureTwoVariables_refute",
+    "AKalaiTwoConvexComponents",
+    "AKeletiLineSegmentExtension",
+    "AKrooHomogeneousApproximation",
+    "ALineAllEvenThreeSpace",
+    "ALogarithmicBrunnMinkowski",
     "AMatrixMultiplicationExponent",
     "AOneWayFunctions_prove",
     "AOneWayFunctions_refute",
     "AOneWayPermutations_prove",
     "AOneWayPermutations_refute",
+    "AOptimalPartialPlankCovering",
+    "ARamosMassPartitions",
+    "AReciprocalQuadraticRiemannSums",
+    "ARestrictedMarstrandAnalytic",
+    "AShiftedProductInterior",
     "ASmoothFourDimensionalPoincare",
+    "ASpecialLinearSymmetries",
+    "ASquareAnnulusPlanks",
+    "AThreeSpaceGromovHausdorff",
+    "ATotallySeparableSausage",
+    "ATverbergVrecica",
+    "ATwoFixedPointJacobian",
+    "AUnevenOrthogonalMassPartitions",
     "BBorweinSineSeries_borwein_sine_series",
     "BBugeaudDistributionModuloOne_Problem10_4_spectrum_xi_alpha_pow_countable",
     "BBugeaudDistributionModuloOne_Problem10_53_problem_10_53",
@@ -42152,6 +42645,93 @@
       },
       "Sun_TateShafarevich": {
         "target_hash": "d67c2a656e529dfa"
+      },
+      "ADistanceSetDimensionImprovement": {
+        "target_hash": "5717bf557b7c103d"
+      },
+      "AKeletiLineSegmentExtension": {
+        "target_hash": "6dc530e9223a52eb"
+      },
+      "AShiftedProductInterior": {
+        "target_hash": "94ee69c6c2e49961"
+      },
+      "AFullMeasureUniversality": {
+        "target_hash": "07950d714c4c05eb"
+      },
+      "ASpecialLinearSymmetries": {
+        "target_hash": "898e32db8f7593d0"
+      },
+      "ADynFarkhiConvexification": {
+        "target_hash": "9f9114bb5d732e1f"
+      },
+      "AFullMeasureStrongMeagerness": {
+        "target_hash": "ce7469af17db3940"
+      },
+      "AAlonQuadraticRadicalZeros": {
+        "target_hash": "0fd2769d88eced0d"
+      },
+      "AFiniteFieldRadialExceptions": {
+        "target_hash": "2dd92d7d880a7c16"
+      },
+      "ARestrictedMarstrandAnalytic": {
+        "target_hash": "32a00d6a67182f8b"
+      },
+      "AEuclideanSteinitz": {
+        "target_hash": "c6b82bee20a3c9e3"
+      },
+      "ASquareAnnulusPlanks": {
+        "target_hash": "b491e4cb49b962d1"
+      },
+      "ACubeAnnulusPlanks": {
+        "target_hash": "a1530ab5ef3a89e7"
+      },
+      "AHandelmanIntegrability": {
+        "target_hash": "4650156c5f0ea300"
+      },
+      "AReciprocalQuadraticRiemannSums": {
+        "target_hash": "ab21ab1091faf90f"
+      },
+      "AThreeSpaceGromovHausdorff": {
+        "target_hash": "0e4642680ec8f4a3"
+      },
+      "ALogarithmicBrunnMinkowski": {
+        "target_hash": "01b6fd876d4cfe30"
+      },
+      "ATwoFixedPointJacobian": {
+        "target_hash": "048e8e4c25a2161f"
+      },
+      "AFurstenbergOrbitDimensions": {
+        "target_hash": "63275f10bfb561be"
+      },
+      "AUnevenOrthogonalMassPartitions": {
+        "target_hash": "3852fe5543d3619f"
+      },
+      "AOptimalPartialPlankCovering": {
+        "target_hash": "7db88ec987ba8001"
+      },
+      "AKrooHomogeneousApproximation": {
+        "target_hash": "841a7105e4fd3034"
+      },
+      "AKalaiTwoConvexComponents": {
+        "target_hash": "87df2e76d0caa910"
+      },
+      "ALineAllEvenThreeSpace": {
+        "target_hash": "4b8347f1c6c6ad85"
+      },
+      "ARamosMassPartitions": {
+        "target_hash": "1ebd25302908a3f5"
+      },
+      "ATverbergVrecica": {
+        "target_hash": "8e33bde7340842de"
+      },
+      "ATotallySeparableSausage": {
+        "target_hash": "151518b08c53eafa"
+      },
+      "AGrunbaumOrthogonalPartitions": {
+        "target_hash": "ab9bec09cb31c421"
+      },
+      "AAshCatoiuDirectionalLipschitz": {
+        "target_hash": "1c1fb66bd73d8e75"
       }
     },
     "releases": [
@@ -48732,15 +49312,20 @@
         {
           "amended_at": "2026-11-11T10:36:00+00:00",
           "change": "added sun-prize (19 tasks): MathDB's live Justin Sun Prize statements, copied from MathDB's stored statements with `import MathDBUtil` written as `import FormalConjecturesUtil`; not produced by a release run"
+        },
+        {
+          "manifest_hash": "743b74519421af42",
+          "amended_at": "2026-11-21T22:08:00+00:00",
+          "change": "Add 29 authored geometry and analysis statements with challenges and MathDB number mappings. Task IDs are locally generated UUIDs; MathDB statement IDs await assignment. Recompute distribution counts from the published contents."
         }
       ],
       "counts": {
         "collections": 14,
-        "tasks": 1971,
-        "questions": 1275,
-        "under_review": 1971
+        "tasks": 1622,
+        "questions": 1075,
+        "under_review": 1622
       },
-      "manifest_hash": "743b74519421af42"
+      "manifest_hash": "16779bc69cc94265"
     }
   },
   "mathdb": {
@@ -48752,11 +49337,11 @@
     ],
     "resolved_at": "2026-10-15",
     "counts": {
-      "resolved": 1046,
+      "resolved": 1075,
       "absent_from_mathdb": 0,
       "unresolved": 0,
       "not_an_erdos_problem": 0,
-      "problems": 1046
+      "problems": 1075
     },
     "note": "MathDB's own post number and row id for each problem it has a record of. `mathdb_number` is MathDB's handle behind /p/<n>: permanent within one MathDB database and never reused, but issued per row at creation, so it is not derivable and is recorded rather than used as a folder name. It is NOT the Erdos number. `state` keeps four things apart: MathDB has a record; MathDB answered that it has none; the lookup never got an answer, which is not evidence of absence; and the problem is not an Erdos problem, so there was nothing to look up.",
     "problems": {
@@ -60562,6 +61147,180 @@
         "mathdb_id": "c577366a-ad98-435b-97bb-4a38680eabf2",
         "mathdb_url": "https://mathdb.com/p/355259",
         "resolved_via": "added on 2026-11-11 with MathDB's Justin Sun Prize statement for this problem"
+      },
+      "authored:DistanceSetDimensionImprovement": {
+        "state": "resolved",
+        "mathdb_number": 377119,
+        "mathdb_url": "https://mathdb.com/p/377119/the-distance-set-dimension-improvement-conjecture",
+        "resolved_via": "Public MathDB page identifies Katz-Tao Distance Conjecture 1.4; matched against arXiv:math/0101195v1, p. 3. Internal row UUID not obtained."
+      },
+      "authored:KeletiLineSegmentExtension": {
+        "state": "resolved",
+        "mathdb_number": 367269,
+        "mathdb_url": "https://mathdb.com/p/367269/keleti-s-line-segment-extension-conjecture",
+        "resolved_via": "Public MathDB page identifies Keleti line segment extension; matched against arXiv:2502.17655v1, Conjecture 1.13. Internal row UUID not obtained."
+      },
+      "authored:ShiftedProductInterior": {
+        "state": "resolved",
+        "mathdb_number": 375707,
+        "mathdb_url": "https://mathdb.com/p/375707/the-shifted-product-nonempty-interior-conjecture-for-product",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:FullMeasureUniversality": {
+        "state": "resolved",
+        "mathdb_number": 365068,
+        "mathdb_url": "https://mathdb.com/p/365068/full-measure-universality-conjecture",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:SpecialLinearSymmetries": {
+        "state": "resolved",
+        "mathdb_number": 366503,
+        "mathdb_url": "https://mathdb.com/p/366503/hausdorff-dimensional-packing-conjecture-for-special-linear",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:DynFarkhiConvexification": {
+        "state": "resolved",
+        "mathdb_number": 375200,
+        "mathdb_url": "https://mathdb.com/p/375200/dyn-farkhi-conjecture-on-hausdorff-convexification-under-min",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:FullMeasureStrongMeagerness": {
+        "state": "resolved",
+        "mathdb_number": 366243,
+        "mathdb_url": "https://mathdb.com/p/366243/the-full-measure-universality-and-strongly-meager-sets-conje",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:AlonQuadraticRadicalZeros": {
+        "state": "resolved",
+        "mathdb_number": 405181,
+        "mathdb_url": "https://mathdb.com/p/405181/n-alon-s-question-on-zeros-of-sums-of-square-roots-maxwell-s",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:FiniteFieldRadialExceptions": {
+        "state": "resolved",
+        "mathdb_number": 354639,
+        "mathdb_url": "https://mathdb.com/p/354639/finite-field-radial-projection-exceptional-set-conjecture",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:RestrictedMarstrandAnalytic": {
+        "state": "resolved",
+        "mathdb_number": 371029,
+        "mathdb_url": "https://mathdb.com/p/371029/restricted-marstrand-projection-conjecture-for-analytic-fami",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:EuclideanSteinitz": {
+        "state": "resolved",
+        "mathdb_number": 368422,
+        "mathdb_url": "https://mathdb.com/p/368422/bergstrom-s-conjecture-on-the-euclidean-steinitz-constant",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:SquareAnnulusPlanks": {
+        "state": "resolved",
+        "mathdb_number": 414286,
+        "mathdb_url": "https://mathdb.com/p/414286/bezdek-s-plank-covering-conjecture-for-square-annuli",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:CubeAnnulusPlanks": {
+        "state": "resolved",
+        "mathdb_number": 406477,
+        "mathdb_url": "https://mathdb.com/p/406477/cube-annulus-plank-covering-conjecture",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:HandelmanIntegrability": {
+        "state": "resolved",
+        "mathdb_number": 361902,
+        "mathdb_url": "https://mathdb.com/p/361902/handelman-s-integrability-conjecture-for-log-convex-function",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:ReciprocalQuadraticRiemannSums": {
+        "state": "resolved",
+        "mathdb_number": 360607,
+        "mathdb_url": "https://mathdb.com/p/360607/conjecture-on-the-monotonicity-of-riemann-sums-for-reciproca",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:ThreeSpaceGromovHausdorff": {
+        "state": "resolved",
+        "mathdb_number": 350674,
+        "mathdb_url": "https://mathdb.com/p/350674/three-space-common-ambient-realization-conjecture-for-gromov",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:LogarithmicBrunnMinkowski": {
+        "state": "resolved",
+        "mathdb_number": 373243,
+        "mathdb_url": "https://mathdb.com/p/373243/the-logarithmic-brunn-minkowski-conjecture-for-origin-symmet",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:TwoFixedPointJacobian": {
+        "state": "resolved",
+        "mathdb_number": 380823,
+        "mathdb_url": "https://mathdb.com/p/380823/the-two-fixed-point-jacobian-eigenvalue-conjecture",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:FurstenbergOrbitDimensions": {
+        "state": "resolved",
+        "mathdb_number": 349088,
+        "mathdb_url": "https://mathdb.com/p/349088/furstenberg-s-dimension-conjecture-for-multiplicatively-inde",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:UnevenOrthogonalMassPartitions": {
+        "state": "resolved",
+        "mathdb_number": 405456,
+        "mathdb_url": "https://mathdb.com/p/405456/barany-s-conjecture-on-uneven-orthogonal-mass-partitions",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:OptimalPartialPlankCovering": {
+        "state": "resolved",
+        "mathdb_number": 376378,
+        "mathdb_url": "https://mathdb.com/p/376378/the-optimal-partial-plank-covering-conjecture-for-convex-bod",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:KrooHomogeneousApproximation": {
+        "state": "resolved",
+        "mathdb_number": 414215,
+        "mathdb_url": "https://mathdb.com/p/414215/kroo-s-homogeneous-polynomial-approximation-conjecture",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:KalaiTwoConvexComponents": {
+        "state": "resolved",
+        "mathdb_number": 383538,
+        "mathdb_url": "https://mathdb.com/p/383538/gil-kalai-s-helly-type-question-for-two-component-convex-set",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:LineAllEvenThreeSpace": {
+        "state": "resolved",
+        "mathdb_number": 414217,
+        "mathdb_url": "https://mathdb.com/p/414217/all-even-sets-in-r3-conjecture",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:RamosMassPartitions": {
+        "state": "resolved",
+        "mathdb_number": 348149,
+        "mathdb_url": "https://mathdb.com/p/348149/ramos-s-grunbaum-hadwiger-ramos-mass-partition-conjecture",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:TverbergVrecica": {
+        "state": "resolved",
+        "mathdb_number": 364497,
+        "mathdb_url": "https://mathdb.com/p/364497/tverberg-vrecica-conjecture",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:TotallySeparableSausage": {
+        "state": "resolved",
+        "mathdb_number": 364138,
+        "mathdb_url": "https://mathdb.com/p/364138/fejes-toth-s-sausage-conjecture-for-ts-packings-of-unit-ball",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:GrunbaumOrthogonalPartitions": {
+        "state": "resolved",
+        "mathdb_number": 364279,
+        "mathdb_url": "https://mathdb.com/p/364279/grunbaum-s-orthogonal-line-equipartition-conjecture",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
+      },
+      "authored:AshCatoiuDirectionalLipschitz": {
+        "state": "resolved",
+        "mathdb_number": 348867,
+        "mathdb_url": "https://mathdb.com/p/348867/ash-catoiu-conjecture-on-directional-and-relative-lipschitz",
+        "resolved_via": "Public MathDB page matched to the cited primary source; internal row UUID not obtained."
       }
     },
     "by_mathdb_number": {
@@ -61610,7 +62369,36 @@
       "406267": "wotw:GraphConjecture61",
       "406268": "wotw:GraphConjecture63",
       "406269": "wotw:GraphConjecture85",
-      "355259": "sun-prize:TateShafarevich"
+      "355259": "sun-prize:TateShafarevich",
+      "377119": "authored:DistanceSetDimensionImprovement",
+      "367269": "authored:KeletiLineSegmentExtension",
+      "375707": "authored:ShiftedProductInterior",
+      "365068": "authored:FullMeasureUniversality",
+      "366503": "authored:SpecialLinearSymmetries",
+      "375200": "authored:DynFarkhiConvexification",
+      "366243": "authored:FullMeasureStrongMeagerness",
+      "405181": "authored:AlonQuadraticRadicalZeros",
+      "354639": "authored:FiniteFieldRadialExceptions",
+      "371029": "authored:RestrictedMarstrandAnalytic",
+      "368422": "authored:EuclideanSteinitz",
+      "414286": "authored:SquareAnnulusPlanks",
+      "406477": "authored:CubeAnnulusPlanks",
+      "361902": "authored:HandelmanIntegrability",
+      "360607": "authored:ReciprocalQuadraticRiemannSums",
+      "350674": "authored:ThreeSpaceGromovHausdorff",
+      "373243": "authored:LogarithmicBrunnMinkowski",
+      "380823": "authored:TwoFixedPointJacobian",
+      "349088": "authored:FurstenbergOrbitDimensions",
+      "405456": "authored:UnevenOrthogonalMassPartitions",
+      "376378": "authored:OptimalPartialPlankCovering",
+      "414215": "authored:KrooHomogeneousApproximation",
+      "383538": "authored:KalaiTwoConvexComponents",
+      "414217": "authored:LineAllEvenThreeSpace",
+      "348149": "authored:RamosMassPartitions",
+      "364497": "authored:TverbergVrecica",
+      "364138": "authored:TotallySeparableSausage",
+      "364279": "authored:GrunbaumOrthogonalPartitions",
+      "348867": "authored:AshCatoiuDirectionalLipschitz"
     }
   },
   "collections": [

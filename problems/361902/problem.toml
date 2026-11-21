@@ -1,0 +1,35 @@
+# authored:HandelmanIntegrability -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:HandelmanIntegrability"
+mathdb_number = 361902
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "A positive log-convex function h on (0,infinity) is integrable there if h(n)/h(n+1) tends to one and h(x)^2/h(2x) is integrable there."
+notes = "Brian Simanek, On Some Convexity Questions of Handelman, arXiv:2402.10970v1, Conjecture 1 and Theorem 2. https://arxiv.org/pdf/2402.10970v1 Positivity and log-convexity are imposed only on the positive half-line. Values of the total Lean function outside that domain are irrelevant. The natural-number ratio sequence starts at n+1, avoiding the excluded endpoint zero; a finite index shift does not change the limit. IntegrableOn is Lebesgue integrability. The primary paper proves this conjecture as Theorem 2; its negative result concerns a different, converse question. MathDB: https://mathdb.com/p/361902/handelman-s-integrability-conjecture-for-log-convex-function. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/361902/AHandelmanIntegrability.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AHandelmanIntegrability"
+file = "AHandelmanIntegrability.lean"
+module = "FtpEvalBench.AHandelmanIntegrability"
+challenge = "AHandelmanIntegrability/Challenge.lean"
+shape = "proof"
+track = "solved"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "4650156c5f0ea300"
+  reviewed_by_a_person = false

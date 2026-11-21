@@ -17,7 +17,7 @@ benchmark.json           the release record: every obligation, its hash and its 
 verify.py                checks the folders against benchmark.json
 ```
 
-1593 obligations in 1046 problems. All of them are on MathDB.
+1622 obligations in 1075 problems. All of them are on MathDB.
 
 ## The Lean project
 
@@ -63,7 +63,7 @@ by a release run; MathDB's copies import `MathDBUtil`, a one-line alias for
 
 | shape | `Problem.Target` | the solver supplies | count |
 |---|---|---|---|
-| `proof` | `Target : Prop` | a proof | 419 |
+| `proof` | `Target : Prop` | a proof | 448 |
 | `prove` / `refute` | `Target : Prop` | a proof of either direction of one open question | 383 pairs |
 | `decide` | `Target (verdict : Prop) : Prop` | a verdict and a proof, graded against a frozen answer | 384 |
 | `value` | `Target (value : τ) : Prop` | an object and a proof about it; no answer is known | 24 |

@@ -1,0 +1,35 @@
+# authored:KrooHomogeneousApproximation -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:KrooHomogeneousApproximation"
+mathdb_number = 414215
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "Every continuous real function on the boundary of an origin-symmetric convex body can be uniformly approximated by sums of two homogeneous polynomials of consecutive degrees n and n+1, with arbitrarily small error for every sufficiently large n."
+notes = "Kroo, Homogeneous polynomial approximation on convex and star like domains, Dolomites Research Notes on Approximation 16 (2023), Section 5, Problem 1. https://drna.padovauniversitypress.it/system/files/papers/KrooSurvey2023.pdf The function is defined only on the boundary, via a ContinuousMap from its subtype. The epsilon formulation requires an approximating pair for every sufficiently large degree, not just some arbitrarily large degrees. Mathlib IsHomogeneous permits the zero polynomial, as does the homogeneous polynomial vector space in the source. Polynomial evaluation uses the ordinary real coordinates of Euclidean space. MathDB records a recent claimed solution; this is only a formal statement. MathDB: https://mathdb.com/p/414215/kroo-s-homogeneous-polynomial-approximation-conjecture. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/414215/AKrooHomogeneousApproximation.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AKrooHomogeneousApproximation"
+file = "AKrooHomogeneousApproximation.lean"
+module = "FtpEvalBench.AKrooHomogeneousApproximation"
+challenge = "AKrooHomogeneousApproximation/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "841a7105e4fd3034"
+  reviewed_by_a_person = false

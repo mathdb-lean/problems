@@ -1,0 +1,35 @@
+# authored:FullMeasureStrongMeagerness -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:FullMeasureStrongMeagerness"
+mathdb_number = 366243
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "A real set is full-measure universal exactly when it is strongly meager; moreover, no nonempty perfect real set is full-measure universal."
+notes = "Jung, Lai and Mooroogen, Fifty years of the Erdos similarity conjecture, arXiv:2412.11062v2, Conjecture 4.3(1)-(2). https://arxiv.org/html/2412.11062v2 Both assertions on the MathDB page are included as a conjunction. Null sets and full-measure sets need not be Borel. Affine scale is nonzero. Nonemptiness of the perfect set is an explicit interpretation of the source: the empty set is Perfect in Mathlib and is trivially full-measure universal, so the non-universality assertion cannot include it. The source does not explicitly state this convention. No countability or measurability assumption is imposed on the arbitrary set X. MathDB: https://mathdb.com/p/366243/the-full-measure-universality-and-strongly-meager-sets-conje. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/366243/AFullMeasureStrongMeagerness.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AFullMeasureStrongMeagerness"
+file = "AFullMeasureStrongMeagerness.lean"
+module = "FtpEvalBench.AFullMeasureStrongMeagerness"
+challenge = "AFullMeasureStrongMeagerness/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ce7469af17db3940"
+  reviewed_by_a_person = false

@@ -1,0 +1,35 @@
+# authored:TotallySeparableSausage -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:TotallySeparableSausage"
+mathdb_number = 364138
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "For 3 <= d <= 41 and N > 1, the convex hull of a totally separable packing of N unit balls has volume at least that of N consecutively tangent collinear unit balls."
+notes = "Bezdek and Langi, On separability in discrete geometry, arXiv:2407.20169v2, Definition 14 and Conjecture 3. https://arxiv.org/html/2407.20169v2 For every ordered pair of distinct balls, a unit normal and offset specify a separating hyperplane avoiding the interior of every ball. The unit-normal inequalities express distances at least one from this hyperplane, allowing tangency. They also force distinct centers and non-overlapping interiors. The comparison packing has centers 2*i*u for a unit vector u, so adjacent balls touch and the center segment has length 2(N-1). Quantifying all unit vectors avoids selecting a coordinate axis and gives the same comparison volume by rotation invariance. MathDB: https://mathdb.com/p/364138/fejes-toth-s-sausage-conjecture-for-ts-packings-of-unit-ball. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/364138/ATotallySeparableSausage.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "ATotallySeparableSausage"
+file = "ATotallySeparableSausage.lean"
+module = "FtpEvalBench.ATotallySeparableSausage"
+challenge = "ATotallySeparableSausage/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "151518b08c53eafa"
+  reviewed_by_a_person = false

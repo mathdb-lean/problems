@@ -1,0 +1,35 @@
+# authored:SpecialLinearSymmetries -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:SpecialLinearSymmetries"
+mathdb_number = 366503
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "A compact planar set E is contained in a line if a family R of determinant-one linear symmetries preserving E has Hausdorff dimension greater than three halves of the Hausdorff dimension of E."
+notes = "Hung, Pham and Slavov, arXiv:2501.01697v2, Conjecture 1.8. https://arxiv.org/html/2501.01697v2 R is an arbitrary set of special-linear matrices; it is not required to be a subgroup. Its dimension is computed after inclusion in the space of real 2-by-2 matrices. The product metric there is bi-Lipschitz equivalent to the Euclidean metric on four entries, giving the same Hausdorff dimension. The conclusion is containment in a full affine line. MathDB: https://mathdb.com/p/366503/hausdorff-dimensional-packing-conjecture-for-special-linear. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/366503/ASpecialLinearSymmetries.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "ASpecialLinearSymmetries"
+file = "ASpecialLinearSymmetries.lean"
+module = "FtpEvalBench.ASpecialLinearSymmetries"
+challenge = "ASpecialLinearSymmetries/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "898e32db8f7593d0"
+  reviewed_by_a_person = false

@@ -1,0 +1,35 @@
+# authored:TwoFixedPointJacobian -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:TwoFixedPointJacobian"
+mathdb_number = 380823
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "If a continuously differentiable self-map of a positive-dimensional real Euclidean space has two distinct fixed points, its Jacobian has a nonzero complex eigenvalue at some point."
+notes = "Campbell, Unipotent Jacobian Matrices and Univalent Maps, arXiv:math/9907157v2, Conjecture 6. https://arxiv.org/pdf/math/9907157 The Jacobian is formed by applying the real Frechet derivative to the standard basis vectors. Eigenvalues are complex, even though the map and derivative are real. A root of the characteristic polynomial is exactly a complex eigenvalue. The point witnessing a nonzero eigenvalue need not be a fixed point. ContDiff of order one ensures the derivative is defined at every point, so the fallback value of fderiv outside differentiability is irrelevant. MathDB: https://mathdb.com/p/380823/the-two-fixed-point-jacobian-eigenvalue-conjecture. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/380823/ATwoFixedPointJacobian.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "ATwoFixedPointJacobian"
+file = "ATwoFixedPointJacobian.lean"
+module = "FtpEvalBench.ATwoFixedPointJacobian"
+challenge = "ATwoFixedPointJacobian/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "048e8e4c25a2161f"
+  reviewed_by_a_person = false

@@ -1,0 +1,35 @@
+# authored:KalaiTwoConvexComponents -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:KalaiTwoConvexComponents"
+mathdb_number = 383538
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "In dimension d at least two, a family of n at least d+2 sets has an intersection consisting of exactly two nonempty closed convex components if every subfamily of size 1, 2, 3 or d+1 has such an intersection."
+notes = "Menara, A Helly-Type Theorem for two-component convex sets, arXiv:2608.17805v1, Theorem 4.2. https://arxiv.org/html/2608.17805v1 The MathDB question uses the strengthened formulation of Theorem 4.2, not merely nonemptiness of the total intersection. Two disjoint nonempty closed convex pieces are exactly the connected components: convexity makes each connected, and each is relatively clopen in their union. No boundedness or compactness is assumed. The size-one condition includes the hypothesis on each individual set. The 2026 source claims a proof; this file supplies only its statement. MathDB: https://mathdb.com/p/383538/gil-kalai-s-helly-type-question-for-two-component-convex-set. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/383538/AKalaiTwoConvexComponents.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AKalaiTwoConvexComponents"
+file = "AKalaiTwoConvexComponents.lean"
+module = "FtpEvalBench.AKalaiTwoConvexComponents"
+challenge = "AKalaiTwoConvexComponents/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "87df2e76d0caa910"
+  reviewed_by_a_person = false

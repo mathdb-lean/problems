@@ -1,0 +1,35 @@
+# authored:ReciprocalQuadraticRiemannSums -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:ReciprocalQuadraticRiemannSums"
+mathdb_number = 360607
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "For f_b(x)=1/(1-bx+x^2), the left Riemann sums are neither nondecreasing nor nonincreasing for 1/2 < b < 1, and are nondecreasing for beta < b <= 2. The right sums are neither nondecreasing nor nonincreasing for 1 < b < 3/2, and are nonincreasing for beta < b < 2, where beta=(3+sqrt(13))/4."
+notes = "Ludovick Bouthat, On the monotonicity of left and right Riemann sums, arXiv:2311.01208v2, Conjecture 3.2 and definitions in Section 1.1. https://arxiv.org/html/2311.01208v2 All four assertions in Conjecture 3.2 are included. Lean index n denotes the sum on n+1 equal subintervals, so Monotone and Antitone range over every positive subdivision count. The left sum omits x=1 and includes x=0; the right sum does the reverse. The singular parameter b=2 occurs only in the left-sum assertion, so no evaluation at its pole is used. The source leaves Conjecture 3.2 open except for its left-sum endpoint b=2. MathDB: https://mathdb.com/p/360607/conjecture-on-the-monotonicity-of-riemann-sums-for-reciproca. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/360607/AReciprocalQuadraticRiemannSums.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AReciprocalQuadraticRiemannSums"
+file = "AReciprocalQuadraticRiemannSums.lean"
+module = "FtpEvalBench.AReciprocalQuadraticRiemannSums"
+challenge = "AReciprocalQuadraticRiemannSums/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "ab21ab1091faf90f"
+  reviewed_by_a_person = false

@@ -1,0 +1,35 @@
+# authored:UnevenOrthogonalMassPartitions -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:UnevenOrthogonalMassPartitions"
+mathdb_number = 405456
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "There are an absolutely continuous planar probability measure and t in (0,1/4) for which no two perpendicular lines give cyclic region masses t,t,1/2-t,1/2-t."
+notes = "Martinez-Sandoval, Counterexamples and symmetry for uneven orthogonal mass partitions in the plane, arXiv:2609.16757v1, Problem 1.2 and Theorem 1.4. https://arxiv.org/html/2609.16757v1 This is the existence of a counterexample stated on MathDB, not the opposite universal partition assertion. The cited recent preprint claims this negative answer; no proof is supplied here. Unit orthogonal normals describe every pair of perpendicular affine lines through their common intersection. The four quadrants are listed cyclically. All rotations and reversals of the cyclic order are covered by quantifying over all ordered orthonormal pairs. Open quadrants are valid because absolute continuity makes every boundary line null. MathDB: https://mathdb.com/p/405456/barany-s-conjecture-on-uneven-orthogonal-mass-partitions. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/405456/AUnevenOrthogonalMassPartitions.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AUnevenOrthogonalMassPartitions"
+file = "AUnevenOrthogonalMassPartitions.lean"
+module = "FtpEvalBench.AUnevenOrthogonalMassPartitions"
+challenge = "AUnevenOrthogonalMassPartitions/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "3852fe5543d3619f"
+  reviewed_by_a_person = false

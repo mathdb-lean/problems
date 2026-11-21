@@ -1,0 +1,35 @@
+# authored:RestrictedMarstrandAnalytic -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:RestrictedMarstrandAnalytic"
+mathdb_number = 371029
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "For an analytic one-parameter family of linear maps from R^n to R^m, n >= m, if each linear subspace has maximal possible image dimension except at finitely many parameters in [0,1], every Borel set has maximal possible Hausdorff image dimension for almost every parameter in [0,1]."
+notes = "Jiahan Du, Restricted Marstrand projection theorem for general families of linear subspaces, arXiv:2510.16671v2, Conjecture 1.5. https://arxiv.org/html/2510.16671v2 AnalyticOnNhd on the compact parameter interval expresses real analyticity near each parameter, equivalent to coordinatewise analyticity in these finite-dimensional spaces. The finite exceptional set may depend on the subspace; the null exceptional set may depend on the Borel set. The maps are arbitrary linear maps, not assumed orthogonal projections. ContinuousLinearMap imposes no extra restriction in finite dimensions. MathDB: https://mathdb.com/p/371029/restricted-marstrand-projection-conjecture-for-analytic-fami. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/371029/ARestrictedMarstrandAnalytic.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "ARestrictedMarstrandAnalytic"
+file = "ARestrictedMarstrandAnalytic.lean"
+module = "FtpEvalBench.ARestrictedMarstrandAnalytic"
+challenge = "ARestrictedMarstrandAnalytic/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "32a00d6a67182f8b"
+  reviewed_by_a_person = false

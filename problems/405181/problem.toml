@@ -1,0 +1,35 @@
+# authored:AlonQuadraticRadicalZeros -- contribution metadata prepared for review.
+# No release run, MathDB-issued statement UUID, or conversion audit is claimed.
+
+problem_id = "authored:AlonQuadraticRadicalZeros"
+mathdb_number = 405181
+collection = "authored"
+tasks = 1
+reviewed_by_a_person = false
+prose = "A nonzero real linear combination of n square roots of everywhere positive real polynomials of degree at most two has at most 2n distinct real zeros."
+notes = "Binyamini, Kiro, Logunov, Novikov and Zakharov, arXiv:2609.02871v1, introduction and Theorem 1.1. https://arxiv.org/html/2609.02871v1 This uses the positive-polynomial formulation on MathDB, including constant polynomials. Not identically zero means nonzero at some real point, not merely that some coefficient is nonzero. Set.encard counts distinct zeros and also excludes an infinite zero set. The cited September 2026 preprint claims a proof; track remains open consistently with the public MathDB record pending independent review. MathDB: https://mathdb.com/p/405181/n-alon-s-question-on-zeros-of-sums-of-square-roots-maxwell-s. MathDB row and statement UUIDs await maintainer assignment/confirmation."
+
+[source]
+name = "mathdb-lean"
+file = "problems/405181/AAlonQuadraticRadicalZeros.lean"
+
+[policy]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+allowed_imports = ["Init", "Std", "Batteries", "Aesop", "Qq", "Plausible", "Mathlib", "FormalConjecturesForMathlib", "FormalConjecturesUtil", "MathDBLib"]
+
+[[task]]
+id = "AAlonQuadraticRadicalZeros"
+file = "AAlonQuadraticRadicalZeros.lean"
+module = "FtpEvalBench.AAlonQuadraticRadicalZeros"
+challenge = "AAlonQuadraticRadicalZeros/Challenge.lean"
+shape = "proof"
+track = "open"
+declaration = "Target"
+
+  [task.environment]
+  lean = "leanprover/lean4:v4.33.1"
+  mathlib_rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+  [task.evidence]
+  target_hash = "0fd2769d88eced0d"
+  reviewed_by_a_person = false
